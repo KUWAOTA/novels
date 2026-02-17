@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constrain — アイデアツリー</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #0d1117;
+            --bg-surface: #161b22;
+            --bg-card: #1c2333;
+            --border: #30363d;
+            --text: #e6edf3;
+            --text-dim: #8b949e;
+            --text-muted: #6e7681;
+            --accent-preferred: #56d364;
+            --accent-candidate: #d29922;
+            --accent-deferred: #8b949e;
+            --accent-rejected: #f85149;
+            --accent-branch: #58a6ff;
+            --accent-main: #bc8cff;
+            --glow-preferred: rgba(86, 211, 100, 0.15);
+            --glow-candidate: rgba(210, 153, 34, 0.15);
+            --line-color: #30363d;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Noto Sans JP', sans-serif;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* ── Header ── */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: linear-gradient(180deg, var(--bg) 0%, rgba(13, 17, 23, 0.95) 80%, rgba(13, 17, 23, 0) 100%);
+            padding: 20px 32px 40px;
+            pointer-events: none;
+        }
+
+        .header>* {
+            pointer-events: auto;
+        }
+
+        .header h1 {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--text);
+            letter-spacing: 0.5px;
+        }
+
+        .header h1 span {
+            color: var(--accent-main);
+            font-weight: 700;
+        }
+
+        .header .subtitle {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* ── Legend ── */
+        .legend {
+            position: fixed;
+            top: 20px;
+            right: 32px;
+            z-index: 100;
+            display: flex;
+            gap: 16px;
+            font-size: 11px;
+            color: var(--text-dim);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .legend-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        /* ── Canvas ── */
+        .canvas-wrapper {
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            cursor: grab;
+        }
+
+        .canvas-wrapper:active {
+            cursor: grabbing;
+        }
+
+        .canvas {
+            position: relative;
+            min-width: 3200px;
+            min-height: 2400px;
+            padding: 100px 60px 60px;
+        }
+
+        /* ── SVG lines ── */
+        .lines-svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .conn-line {
+            stroke: var(--line-color);
+            stroke-width: 2;
+            fill: none;
+            opacity: 0.6;
+            transition: opacity 0.3s, stroke 0.3s;
+        }
+
+        .conn-line.highlight {
+            stroke: var(--accent-branch);
+            opacity: 1;
+            stroke-width: 2.5;
+        }
+
+        /* ── Nodes ── */
+        .node {
+            position: absolute;
+            z-index: 10;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+        }
+
+        .node:hover {
+            transform: scale(1.04);
+            z-index: 20;
+        }
+
+        .node-inner {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 14px 18px;
+            min-width: 200px;
+            max-width: 280px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .node-inner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            border-radius: 12px 0 0 12px;
+        }
+
+        .node.status-preferred .node-inner {
+            border-color: rgba(86, 211, 100, 0.3);
+        }
+
+        .node.status-preferred .node-inner::before {
+            background: var(--accent-preferred);
+        }
+
+        .node.status-preferred:hover .node-inner {
+            box-shadow: 0 0 20px var(--glow-preferred);
+        }
+
+        .node.status-candidate .node-inner {
+            border-color: rgba(210, 153, 34, 0.3);
+        }
+
+        .node.status-candidate .node-inner::before {
+            background: var(--accent-candidate);
+        }
+
+        .node.status-candidate:hover .node-inner {
+            box-shadow: 0 0 20px var(--glow-candidate);
+        }
+
+        .node.status-deferred .node-inner {
+            border-color: rgba(139, 148, 158, 0.2);
+            opacity: 0.7;
+        }
+
+        .node.status-deferred .node-inner::before {
+            background: var(--accent-deferred);
+        }
+
+        .node.status-rejected .node-inner {
+            border-color: rgba(248, 81, 73, 0.2);
+            opacity: 0.5;
+        }
+
+        .node.status-rejected .node-inner::before {
+            background: var(--accent-rejected);
+        }
+
+        .node.is-act .node-inner {
+            background: linear-gradient(135deg, var(--bg-card), #1e2740);
+            border-color: rgba(188, 140, 255, 0.3);
+        }
+
+        .node.is-act .node-inner::before {
+            background: var(--accent-main);
+        }
+
+        .node.is-branch-root .node-inner {
+            background: linear-gradient(135deg, var(--bg-card), #1c2b3a);
+            border-color: rgba(88, 166, 255, 0.3);
+        }
+
+        .node.is-branch-root .node-inner::before {
+            background: var(--accent-branch);
+        }
+
+        .node-id {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .node-label {
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.5;
+            color: var(--text);
+            margin-bottom: 6px;
+        }
+
+        .node-desc {
+            font-size: 11px;
+            line-height: 1.6;
+            color: var(--text-dim);
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .node-value {
+            margin-top: 8px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            color: var(--accent-candidate);
+            background: rgba(210, 153, 34, 0.08);
+            padding: 3px 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .node-status-badge {
+            position: absolute;
+            top: 8px;
+            right: 10px;
+            font-size: 9px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        .badge-preferred {
+            background: rgba(86, 211, 100, 0.15);
+            color: var(--accent-preferred);
+        }
+
+        .badge-candidate {
+            background: rgba(210, 153, 34, 0.15);
+            color: var(--accent-candidate);
+        }
+
+        .badge-deferred {
+            background: rgba(139, 148, 158, 0.1);
+            color: var(--accent-deferred);
+        }
+
+        .badge-rejected {
+            background: rgba(248, 81, 73, 0.1);
+            color: var(--accent-rejected);
+        }
+
+        .node-issue {
+            margin-top: 6px;
+            font-size: 10px;
+            color: var(--accent-rejected);
+            background: rgba(248, 81, 73, 0.08);
+            padding: 4px 8px;
+            border-radius: 4px;
+            line-height: 1.5;
+        }
+
+        .node-issue::before {
+            content: '⚠ ';
+        }
+
+        /* ── Detail Panel ── */
+        .detail-panel {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 200;
+            background: linear-gradient(180deg, rgba(13, 17, 23, 0) 0%, var(--bg) 15%, var(--bg-surface) 100%);
+            padding: 60px 32px 28px;
+            transform: translateY(100%);
+            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            max-height: 45vh;
+            overflow-y: auto;
+        }
+
+        .detail-panel.open {
+            transform: translateY(0);
+        }
+
+        .detail-panel-close {
+            position: absolute;
+            top: 20px;
+            right: 28px;
+            background: none;
+            border: 1px solid var(--border);
+            color: var(--text-dim);
+            width: 28px;
+            height: 28px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+
+        .detail-panel-close:hover {
+            background: var(--bg-card);
+        }
+
+        .detail-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .detail-header h2 {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .detail-body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .detail-section h3 {
+            font-size: 11px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 6px;
+        }
+
+        .detail-section p {
+            font-size: 13px;
+            line-height: 1.7;
+            color: var(--text-dim);
+        }
+
+        .detail-section .mono {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: var(--accent-candidate);
+        }
+
+        /* ── Zoom controls ── */
+        .zoom-controls {
+            position: fixed;
+            bottom: 20px;
+            right: 28px;
+            z-index: 150;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .zoom-btn {
+            width: 36px;
+            height: 36px;
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            color: var(--text);
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+
+        .zoom-btn:hover {
+            background: var(--bg-card);
+        }
+
+        /* ── Branch label on lines ── */
+        .branch-label {
+            position: absolute;
+            z-index: 5;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            color: var(--accent-branch);
+            background: var(--bg);
+            padding: 2px 8px;
+            border-radius: 4px;
+            border: 1px solid rgba(88, 166, 255, 0.2);
+            white-space: nowrap;
+        }
+
+        /* ── Animations ── */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .node {
+            animation: fadeInUp 0.5s ease backwards;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1><span>Constrain</span> — アイデアツリー</h1>
+        <div class="subtitle">⚠ マッキー読了前のdraft — 全ての分岐は可能性です。ノードをクリックして詳細を確認</div>
+    </div>
+
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-dot" style="background:var(--accent-preferred)"></div>preferred
+        </div>
+        <div class="legend-item">
+            <div class="legend-dot" style="background:var(--accent-candidate)"></div>candidate
+        </div>
+        <div class="legend-item">
+            <div class="legend-dot" style="background:var(--accent-deferred)"></div>deferred
+        </div>
+        <div class="legend-item">
+            <div class="legend-dot" style="background:var(--accent-main)"></div>幕 (Act)
+        </div>
+        <div class="legend-item">
+            <div class="legend-dot" style="background:var(--accent-branch)"></div>分岐点
+        </div>
+    </div>
+
+    <div class="canvas-wrapper" id="canvasWrapper">
+        <div class="canvas" id="canvas">
+            <svg class="lines-svg" id="linesSvg"></svg>
+        </div>
+    </div>
+
+    <div class="detail-panel" id="detailPanel">
+        <button class="detail-panel-close" id="detailClose">✕</button>
+        <div class="detail-header" id="detailHeader"></div>
+        <div class="detail-body" id="detailBody"></div>
+    </div>
+
+    <div class="zoom-controls">
+        <button class="zoom-btn" id="zoomIn">+</button>
+        <button class="zoom-btn" id="zoomOut">−</button>
+        <button class="zoom-btn" id="zoomReset" style="font-size:11px;">⌂</button>
+    </div>
+
+    <script>
+        // ═══════════════════════════════════════════════════════
+        // DATA — All story ideas structured as a tree
+        // ═══════════════════════════════════════════════════════
+        const nodes = [
+            // ── Column layout guide ──
+            // col0=80  col1=400  col2=720  col3=1040  col4=1360  col5=1680  col6=2000  col7=2320  col8=2640  col9=2960
+
+            // ── ROOT ──
+            { id: 'root', label: 'Constrain', desc: '言語の厳密さと曖昧さを通じて、人と人がわかり合うこと・世界を広げることの本質に迫る物語', parent: null, status: 'preferred', type: 'root', x: 80, y: 440 },
+
+            // ── ACT 1 ──
+            { id: 'act1', label: 'ACT 1 — 原点\n再現性への目覚め', desc: '子供時代〜青年期。ASD傾向により空気が読めず傷ついてきた主人公が、再現性と厳密な言語に救われるまで', parent: 'root', status: 'preferred', type: 'act', x: 400, y: 440 },
+
+            { id: 'M-1-1', label: '空気が読めない孤立', desc: 'ASD傾向により共感のルールが分からず地雷を踏みいじめられる。Aから空気が読めないことを攻撃される', parent: 'act1', status: 'preferred', type: 'beat', value: '安全 → 危険 (孤立)', x: 720, y: 60 },
+            { id: 'M-1-2', label: '再現性の発見', desc: '母の「努力しろ」に再現性がないことに気づく。カフェで集中できる法則を自力で発見。環境という変数に依存することを学ぶ', parent: 'M-1-1', status: 'preferred', type: 'beat', value: '無力 → 手段の獲得', x: 720, y: 220 },
+            { id: 'M-1-3', label: '先生との出会い', desc: '数学/物理の熱い先生と出会い、言語によって分かり合える美しさを知る。実は人間との繋がりが生じているのに気づかない', parent: 'M-1-2', status: 'preferred', type: 'beat', value: '孤立 → 繋がりの萌芽', irony: '人間との繋がりに気づかず、言語のルール的側面だけを吸収', x: 720, y: 380 },
+            { id: 'M-1-4', label: '仮説モデルで適応', desc: '他者の行動を説明する仮説モデルを構築。再現可能な言語化で適応していく。暗黙の了解で生きている他者よりも他者のことが分かるようになる', parent: 'M-1-3', status: 'preferred', type: 'beat', value: '不適応 → 適応（過剰適応の兆し）', x: 720, y: 540 },
+            { id: 'M-1-5', label: '承認の獲得', desc: '同じく凸凹がある女性から尊敬・恋心を抱かれる。自信をつけていく', parent: 'M-1-4', status: 'preferred', type: 'beat', value: '孤立 → 承認', x: 720, y: 690 },
+
+            { id: 'act1-climax', label: 'ACT1 クライマックス\n再現性の絶対視', desc: '再現性と厳密さこそが正しいという信念を確立。曖昧さを排除する思想へと傾倒し始める', parent: 'M-1-5', status: 'preferred', type: 'climax', value: '再現性を絶対視する世界観の完成', x: 720, y: 850 },
+
+            // ── ACT 2 ──
+            { id: 'act2', label: 'ACT 2 — 上昇と歪み\nいけ好かないエリート', desc: '社会人時代。曖昧さを排除し、Constrainを開発・成功する。しかし無自覚に加害者になる', parent: 'act1-climax', status: 'preferred', type: 'act', x: 1040, y: 440 },
+
+            { id: 'M-2-1', label: 'エリート化', desc: '曖昧な表現をする人を不誠実（嘘つき・危険）とみなすようになる。いけ好かないエリートになる', parent: 'act2', status: 'preferred', type: 'beat', value: '適応 → 支配/排他', x: 1280, y: 160 },
+            { id: 'M-2-2', label: 'Constrain開発', desc: 'Haskellで書かれた文章作成コンパイラ「Constrain」を開発。理科系の作文技術に則った厳密で明確で紛れのない文を強制するツール。主人公の写し身', parent: 'M-2-1', status: 'preferred', type: 'beat', x: 1280, y: 340 },
+            { id: 'M-2-3', label: 'ビジネス成功', desc: 'ビジネス向けにウケて成功。Constrain事業をベンチャーCTOとして経営', parent: 'M-2-2', status: 'preferred', type: 'beat', value: '能力 → 社会的成功', x: 1280, y: 500 },
+            { id: 'M-2-4', label: '立場の逆転 — Aへの加害', desc: '下請けテスターとして登場したA（かつてのいじめっ子）を厳密な言葉で追い詰める。いじめられっ子がいじめっ子に。本人は気づいていない', parent: 'M-2-3', status: 'preferred', type: 'beat', value: '正義 → 加害（無自覚）', irony: 'いじめをする人間が嫌いだからConstrainを作ったのに、自分がいじめている', x: 1280, y: 680 },
+
+            // ── BRANCHING POINT ──
+            { id: 'branch-point', label: '🔀 分岐点\nACT3 への複数の道', desc: 'ここからストーリーがいくつかの方向に分岐する。どのルートでも最終的に「物事はブーリアンではない」「曖昧さにも価値がある」に到達する', parent: 'M-2-4', status: 'preferred', type: 'branch-point', x: 1600, y: 680 },
+
+            // ═══════════ BRANCH: faith-collapse (PREFERRED) ═══════════
+            { id: 'branch-fc', label: '★ 信仰崩壊ルート\n+-思考のmisleading', desc: '再現性が善か悪かと+-でmisleadingして、「そこじゃない、もっと俯瞰しろ」と上から読者に叩きつける', parent: 'branch-point', status: 'preferred', type: 'branch-root', x: 1920, y: 280 },
+
+            { id: 'FC-1', label: 'Bとの出会い', desc: 'Bはクリエーター（元心理士→表現者）。再現性がある言葉は使わないがめちゃくちゃで居心地がいい。主人公に新たな発見をくれる', parent: 'branch-fc', status: 'preferred', type: 'beat', value: '閉塞 → 新鮮さ', x: 2240, y: 30 },
+            { id: 'FC-2', label: 'Constrainが表現を殺す', desc: 'BがConstrainを使ってみる。彼女の表現が即物的になり、ウケるようにはなるが「これは私じゃない」とBが言う', parent: 'FC-1', status: 'preferred', type: 'beat', value: '成功 → 亀裂', issue: 'これだけでは弱い — もっと不可逆な衝撃が必要', x: 2240, y: 200 },
+            { id: 'FC-3', label: '色の喪失', desc: '主人公がConstrainを通じてしか話さなくなる。Bに「あなたには色がなくなった」「何を楽しみに生きてるの？」と問われる', parent: 'FC-2', status: 'preferred', type: 'beat', value: '支配 → 空虚', x: 2240, y: 380 },
+            { id: 'FC-4', label: '瓦解', desc: '「何のために生きているか」に答えられない。Bから「自分の感情にすら耳を傾けないのに、ご都合主義で定義した『生きる理由』に価値なんてあるの？」', parent: 'FC-3', status: 'preferred', type: 'climax', value: '確信 → 瓦解', issue: '瓦解が内面的すぎて分かりづらい懸念', x: 2240, y: 560 },
+            { id: 'FC-5', label: '誤った反応 — 全否定', desc: '客観的観測機だと信じていたのに不安定な感情の産物。Constrainすら辞めようとする。事業撤退で後戻りできない痛みを負う', parent: 'FC-4', status: 'preferred', type: 'beat', value: '瓦解 → 破壊的行動', issue: '全て投げ出す=ブーリアン思考。これも間違い', x: 2240, y: 740 },
+            { id: 'FC-6', label: '旅', desc: '全て捨てて旅に出る。いろんな楽しみに気づく。Bの言葉を理解していく。感情はノイズではない。Constrainも間違いではない', parent: 'FC-5', status: 'preferred', type: 'beat', value: '破壊 → 再発見', x: 2560, y: 640 },
+            { id: 'FC-7', label: 'いじめの自覚', desc: '自分がAをいじめていたことに気づく。いじめをする人間が嫌いだからConstrainを作っていたのに。自己嫌悪', parent: 'FC-6', status: 'preferred', type: 'beat', value: '無自覚 → 自己嫌悪', x: 2880, y: 500 },
+            { id: 'FC-8', label: 'Bによる抱擁', desc: '「人を苦しめた感情も、自己嫌悪の感情も、何もかも傷つけて無かったことにしてはならないのよ」主人公は「抱擁なんだ」と気づく', parent: 'FC-7', status: 'preferred', type: 'beat', value: '自己嫌悪 → 抱擁の理解', x: 2880, y: 680 },
+            { id: 'FC-9', label: 'Aとの抱擁', desc: '距離を置かれていたAと関係を再構築。Aの家庭環境の問題を知る。行動原理レベルで理解した上で泣きながら抱擁する', parent: 'FC-8', status: 'preferred', type: 'climax', value: '断絶 → 抱擁', x: 2880, y: 860 },
+            { id: 'FC-end', label: '「旅は楽しかった？」', desc: 'Bに「旅は楽しかった？」と聞かれる。物事はブーリアンではない。再現性は間違いではない。曖昧さにも価値がある', parent: 'FC-9', status: 'preferred', type: 'ending', x: 3200, y: 860 },
+
+            // ═══════════ BRANCH: romance-crisis (DEFERRED) ═══════════
+            { id: 'branch-rc', label: '⏸ 恋愛クライシスルート', desc: 'BとConstrainの衝突を恋愛のクライシスにするルート。「こんな重い話書いてるのにたかが恋愛をクライシスにしたくない」', parent: 'branch-point', status: 'deferred', type: 'branch-root', x: 1920, y: 1000 },
+            { id: 'RC-1', label: '表現が死ぬ', desc: 'BがConstrainを使い、表現が死ぬ', parent: 'branch-rc', status: 'deferred', type: 'beat', x: 2240, y: 1000 },
+            { id: 'RC-2', label: '「色がなくなった、じゃあね」', desc: '別れを切り出される', parent: 'RC-1', status: 'deferred', type: 'beat', x: 2560, y: 1000 },
+            { id: 'RC-3', label: '恋人の喪失で変わる', desc: '恋人の喪失をきっかけに主人公が変わる', parent: 'RC-2', status: 'deferred', type: 'beat', x: 2880, y: 1000 },
+            { id: 'rc-issue', label: '❌ テーマの重さに対して弱い', desc: 'テーマの重さに対して恋愛がクライシスでは弱い。もっと実存的な衝撃が必要', parent: 'branch-rc', status: 'rejected', type: 'note', x: 2240, y: 1160 },
+
+            // ═══════════ BRANCH: travel-awakening (CANDIDATE) ═══════════
+            { id: 'branch-ta', label: '? 旅での覚醒ルート', desc: '全て捨てて旅に出る。旅の中でill-definedな言語の持つ創造性・冒険性に触れ、曖昧さの価値に気づく', parent: 'FC-5', status: 'candidate', type: 'branch-root', x: 2560, y: 820 },
+            { id: 'TA-1', label: '言葉で世界を見せてもらう', desc: '他者の頭の中で描き出された世界が自分のと違っても豊か。「こんな現象をstrictly definedな言葉で扱えるでしょうか？ むりです」', parent: 'branch-ta', status: 'candidate', type: 'beat', x: 2560, y: 980 },
+
+            // ═══════════ BRANCH: constrain-evangelism (CANDIDATE) ═══════════
+            { id: 'branch-ce', label: '? Constrain布教→暴走', desc: '主人公がConstrainを普及させすぎて、自分自身もConstrainを通じてしか誰とも喋らなくなる。色が消えた世界に気づく', parent: 'branch-point', status: 'candidate', type: 'branch-root', x: 1920, y: 1340 },
+            { id: 'CE-1', label: 'Constrainでしか話さない', desc: 'Constrainを通じてしか話さなくなる → 「何を楽しみに生きてるの」と問われる → 生きる意味あるのか？', parent: 'branch-ce', status: 'candidate', type: 'beat', x: 2240, y: 1340 },
+            { id: 'ce-note', label: '統合可能', desc: 'branch/faith-collapse と統合可能。信仰崩壊ルートの一要素として使える', parent: 'branch-ce', status: 'candidate', type: 'note', x: 2240, y: 1500 },
+
+            // ═══════════ BRANCH: single-focus (DEFERRED) ═══════════
+            { id: 'branch-sf', label: '⏸ 単一責任ルート\n厳密さ獲得のみ', desc: '曖昧さの受容パートを削り、再現性・厳密さを獲得するまでだけの物語。別の作品として書く可能性', parent: 'act1', status: 'deferred', type: 'branch-root', x: 240, y: 900 },
+            { id: 'sf-issue-1', label: '葛藤がない問題', desc: '解像度がどんどん上がるだけで葛藤ができなくなる', parent: 'branch-sf', status: 'deferred', type: 'note', x: 240, y: 1100 },
+            { id: 'sf-issue-2', label: '二つの話を混ぜてる？', desc: '曖昧さに行くところの描写に飛躍がないか。別のストーリーを二つ混ぜているだけかも（深掘りが足りないだけかもしれない）', parent: 'branch-sf', status: 'deferred', type: 'note', x: 540, y: 1100 },
+
+            // ── COMMON RESOLUTION ──
+            { id: 'resolution', label: '共通の到達点', desc: '再現性は間違いではない。物事はブーリアンではない。曖昧さにも価値がある。感情はノイズではない。Constrainも間違いではない。Aを行動原理レベルで理解し泣きながら抱擁', parent: null, status: 'preferred', type: 'resolution', x: 3200, y: 440 },
+        ];
+
+        // ═══════════════════════════════════════════════════════
+        // RENDER
+        // ═══════════════════════════════════════════════════════
+
+        const canvas = document.getElementById('canvas');
+        const svg = document.getElementById('linesSvg');
+        const detailPanel = document.getElementById('detailPanel');
+        const canvasWrapper = document.getElementById('canvasWrapper');
+
+        // Calculate required canvas size
+        let maxX = 0, maxY = 0;
+        nodes.forEach(n => {
+            if (n.x + 320 > maxX) maxX = n.x + 320;
+            if (n.y + 200 > maxY) maxY = n.y + 200;
+        });
+        canvas.style.minWidth = (maxX + 100) + 'px';
+        canvas.style.minHeight = (maxY + 100) + 'px';
+
+        // Draw nodes
+        const nodeElements = {};
+        nodes.forEach((n, i) => {
+            const el = document.createElement('div');
+            const classes = ['node', `status-${n.status}`];
+            if (n.type === 'act') classes.push('is-act');
+            if (n.type === 'branch-root' || n.type === 'branch-point') classes.push('is-branch-root');
+            el.className = classes.join(' ');
+            el.style.left = n.x + 'px';
+            el.style.top = n.y + 'px';
+            el.style.animationDelay = (i * 0.03) + 's';
+            el.dataset.id = n.id;
+
+            let inner = `<div class="node-inner">`;
+            inner += `<span class="node-status-badge badge-${n.status}">${n.status}</span>`;
+            inner += `<div class="node-id">${n.id}</div>`;
+            inner += `<div class="node-label">${n.label.replace(/\n/g, '<br>')}</div>`;
+            inner += `<div class="node-desc">${n.desc}</div>`;
+            if (n.value) inner += `<div class="node-value">${n.value}</div>`;
+            if (n.issue) inner += `<div class="node-issue">${n.issue}</div>`;
+            inner += `</div>`;
+            el.innerHTML = inner;
+
+            el.addEventListener('click', () => showDetail(n));
+            canvas.appendChild(el);
+            nodeElements[n.id] = el;
+        });
+
+        // Draw connections
+        function getNodeCenter(el) {
+            const rect = el.getBoundingClientRect();
+            const canvasRect = canvas.getBoundingClientRect();
+            return {
+                x: el.offsetLeft + el.offsetWidth / 2,
+                y: el.offsetTop + el.offsetHeight / 2,
+                right: el.offsetLeft + el.offsetWidth,
+                left: el.offsetLeft,
+                top: el.offsetTop,
+                bottom: el.offsetTop + el.offsetHeight,
+                width: el.offsetWidth,
+                height: el.offsetHeight
+            };
+        }
+
+        function drawLines() {
+            // Wait for layout
+            requestAnimationFrame(() => {
+                svg.innerHTML = '';
+                nodes.forEach(n => {
+                    if (!n.parent || !nodeElements[n.parent] || !nodeElements[n.id]) return;
+                    const from = getNodeCenter(nodeElements[n.parent]);
+                    const to = getNodeCenter(nodeElements[n.id]);
+
+                    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+
+                    // Determine connection points
+                    let x1, y1, x2, y2;
+                    const dx = to.left - from.right;
+                    const dy = Math.abs(from.y - to.y);
+
+                    if (dx > -20) {
+                        // Target is to the right
+                        x1 = from.right;
+                        y1 = from.y;
+                        x2 = to.left;
+                        y2 = to.y;
+                    } else if (to.top > from.bottom) {
+                        // Target is below
+                        x1 = from.x;
+                        y1 = from.bottom;
+                        x2 = to.x;
+                        y2 = to.top;
+                    } else {
+                        x1 = from.right;
+                        y1 = from.y;
+                        x2 = to.left;
+                        y2 = to.y;
+                    }
+
+                    const midX = (x1 + x2) / 2;
+                    const d = `M ${x1} ${y1} C ${midX} ${y1}, ${midX} ${y2}, ${x2} ${y2}`;
+                    path.setAttribute('d', d);
+                    path.classList.add('conn-line');
+                    path.dataset.from = n.parent;
+                    path.dataset.to = n.id;
+
+                    if (n.status === 'preferred') {
+                        path.style.stroke = 'rgba(86,211,100,0.3)';
+                    } else if (n.type === 'branch-root' || n.type === 'branch-point') {
+                        path.style.stroke = 'rgba(88,166,255,0.3)';
+                    }
+
+                    svg.appendChild(path);
+                });
+
+                // Draw special connection: resolution
+                const branchFc = nodeElements['FC-end'];
+                const resolution = nodeElements['resolution'];
+                if (branchFc && resolution) {
+                    const from = getNodeCenter(branchFc);
+                    const to = getNodeCenter(resolution);
+                    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                    const x1 = from.right; const y1 = from.y;
+                    const x2 = to.left; const y2 = to.y;
+                    const midX = (x1 + x2) / 2;
+                    path.setAttribute('d', `M ${x1} ${y1} C ${midX} ${y1}, ${midX} ${y2}, ${x2} ${y2}`);
+                    path.classList.add('conn-line');
+                    path.style.stroke = 'rgba(86,211,100,0.4)';
+                    path.style.strokeDasharray = '6,4';
+                    svg.appendChild(path);
+                }
+            });
+        }
+
+        setTimeout(drawLines, 100);
+        window.addEventListener('resize', drawLines);
+
+        // ═══════════════════════════════════════════════════════
+        // DETAIL PANEL
+        // ═══════════════════════════════════════════════════════
+
+        function showDetail(n) {
+            const header = document.getElementById('detailHeader');
+            const body = document.getElementById('detailBody');
+
+            const statusColors = {
+                preferred: 'var(--accent-preferred)',
+                candidate: 'var(--accent-candidate)',
+                deferred: 'var(--accent-deferred)',
+                rejected: 'var(--accent-rejected)'
+            };
+
+            header.innerHTML = `
+    <span style="color:${statusColors[n.status]};font-size:20px;">●</span>
+    <h2>${n.label.replace(/\n/g, ' — ')}</h2>
+    <span class="node-status-badge badge-${n.status}" style="font-size:11px;">${n.status}</span>
+  `;
+
+            let bodyHtml = `
+    <div class="detail-section">
+      <h3>概要</h3>
+      <p>${n.desc}</p>
+    </div>
+  `;
+
+            if (n.value) {
+                bodyHtml += `
+      <div class="detail-section">
+        <h3>価値変化 (Value Change)</h3>
+        <p class="mono">${n.value}</p>
+      </div>
+    `;
+            }
+
+            if (n.irony) {
+                bodyHtml += `
+      <div class="detail-section">
+        <h3>ドラマティック・アイロニー</h3>
+        <p>${n.irony}</p>
+      </div>
+    `;
+            }
+
+            if (n.issue) {
+                bodyHtml += `
+      <div class="detail-section">
+        <h3>⚠ 課題・懸念</h3>
+        <p style="color:var(--accent-rejected)">${n.issue}</p>
+      </div>
+    `;
+            }
+
+            bodyHtml += `
+    <div class="detail-section">
+      <h3>ID / タイプ</h3>
+      <p class="mono">${n.id} — ${n.type}</p>
+      ${n.parent ? `<p style="margin-top:4px;font-size:11px;color:var(--text-muted)">親: ${n.parent}</p>` : ''}
+    </div>
+  `;
+
+            body.innerHTML = bodyHtml;
+            detailPanel.classList.add('open');
+
+            // Highlight connected lines
+            document.querySelectorAll('.conn-line').forEach(l => l.classList.remove('highlight'));
+            document.querySelectorAll(`.conn-line[data-to="${n.id}"], .conn-line[data-from="${n.id}"]`).forEach(l => l.classList.add('highlight'));
+        }
+
+        document.getElementById('detailClose').addEventListener('click', () => {
+            detailPanel.classList.remove('open');
+            document.querySelectorAll('.conn-line').forEach(l => l.classList.remove('highlight'));
+        });
+
+        // ═══════════════════════════════════════════════════════
+        // ZOOM
+        // ═══════════════════════════════════════════════════════
+
+        let scale = 1;
+        function setZoom(s) {
+            scale = Math.max(0.3, Math.min(2, s));
+            canvas.style.transform = `scale(${scale})`;
+            canvas.style.transformOrigin = '0 0';
+        }
+
+        document.getElementById('zoomIn').addEventListener('click', () => setZoom(scale + 0.15));
+        document.getElementById('zoomOut').addEventListener('click', () => setZoom(scale - 0.15));
+        document.getElementById('zoomReset').addEventListener('click', () => { setZoom(1); canvasWrapper.scrollTo(0, 200); });
+
+        // Initial scroll to show root
+        setTimeout(() => { canvasWrapper.scrollTo(0, 200); }, 200);
+    </script>
+</body>
+
+</html>
