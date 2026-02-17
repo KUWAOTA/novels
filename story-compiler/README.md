@@ -34,6 +34,14 @@ story-compiler/
 │   ├── 13_scene-transition.yaml    # シーン遷移 + バックストーリー + フラッシュバック
 │   ├── 14_causal-chain.yaml        # 因果関係の鎖（論理の穴検出）
 │   ├── 15_genre-constraints.yaml   # ジャンル制約（約束事）
+│   ├── 16_choice-and-expression.yaml # 選択の真正性 + テキスト表現制約
+│   ├── 17_symbolism-and-image.yaml   # 象徴 + 中核イメージ
+│   ├── 18_tension-dynamics.yaml      # 緊張リズム制約
+│   ├── 19_scene-mastery.yaml         # シーン変換原理 + 配置最適化
+│   ├── 20_interpretation-layer.yaml  # 解釈生成レイヤ
+│   ├── 21_character-dimension.yaml   # キャラクターの次元（矛盾）
+│   ├── 22_cast-design.yaml           # キャスト設計（存在価値=Action/Reaction）
+│   ├── 23_character-components.yaml  # 性格描写と実像
 │   └── _EXTENSION_TEMPLATE.yaml    # 新モジュール追加用テンプレート
 │
 ├── templates/                # 執筆用テンプレート

@@ -1,0 +1,109 @@
+# ============================================================
+# Module: Character Dimension
+# Source: Robert McKee "Character" — 次元と矛盾
+# Version: 1.0
+# ============================================================
+# マッキー『キャラクター』における「次元（Dimension）」の定義：
+# 「次元とは、矛盾（Contradiction）である」
+#
+# キャラクターの深みは、特徴の数ではなく、
+# 「一貫した矛盾」の存在によって生まれる。
+# 表面的な特徴（Characterization）と、深層性格（True Character）の
+# 間に矛盾があるとき、そのキャラクターは「次元がある」と言える。
+# ============================================================
+
+module_id: character_dimension
+module_name: "キャラクターの次元（Character Dimension）"
+source: "McKee 'Character'"
+
+# ============================================================
+# 次元設計（Designing Dimensions）
+# ============================================================
+dimension_structure:
+  description: >
+    キャラクターに次元を与えるには、矛盾する特性をペアで持たせる。
+    この矛盾は、状況や圧力によって使い分けられるか、
+    あるいは葛藤の源泉となるものでなければならない。
+
+  # 矛盾のパターン
+  contradiction_types:
+    - surface_vs_deep:
+        description: "外見/振る舞い（表）と 本性（裏）の矛盾"
+        example: "見た目は天使だが、中身は悪魔"
+    - role_vs_desire:
+        description: "社会的役割と 個人的欲望の矛盾"
+        example: "法を守るべき警官だが、法を破ってでも復讐したい"
+    - trait_vs_trait:
+        description: "性格特性同士の矛盾"
+        example: "非常に知的だが、感情的には未熟"
+    - past_vs_present:
+        description: "過去の自分と 現在の自分の矛盾"
+        example: "元平和主義者の殺人兵器"
+
+# ============================================================
+# 検証ルール（Validation Rules）
+# ============================================================
+validation_rules:
+
+  # 1. 次元（矛盾）の必須性
+  # ------------------------------------------------------------
+  require_protagonist_dimension:
+    applies_to: Character(protagonist)
+    check:
+      has_contradiction:
+        severity: compile_error
+        condition: "dimensions list is empty"
+        message: >
+          主人公に「次元（矛盾）」が定義されていません。
+          魅力的で立体的なキャラクターには、少なくとも1つの
+          明確な矛盾（Contradiction）が必要です。
+          例: [表面: 冷酷な殺し屋] vs [深層: 植物を愛する心]
+
+  # 2. 矛盾の証明（Show, Don't Tell）
+  # ------------------------------------------------------------
+  dimension_revelation:
+    description: >
+      設定された矛盾は、物語の中で「圧力（Pressure）」がかかった時に
+      選択（Choice）を通じて証明されなければならない。
+    
+    check:
+      proven_under_pressure:
+        severity: warning
+        condition: "contradiction defines but no scene reveals it"
+        message: >
+          設定された矛盾が、具体的なシーンでの選択として描かれていません。
+          「説明」だけでは次元になりません。圧力をかけて矛盾を露呈させてください。
+
+  # 3. キャストの次元
+  # ------------------------------------------------------------
+  require_antagonist_dimension:
+    applies_to: Character(antagonist)
+    check:
+      has_contradiction:
+        severity: warning  # 悪役は一次元的でも機能するが、多次元の方が強力
+        condition: "dimensions list is empty"
+        message: >
+          敵対者に次元（矛盾）がありません。
+          強力な敵対者は、しばしば魅力的な矛盾を持っています。
+          （例: 非常に礼儀正しいサイコパス）
+
+# ============================================================
+# データ構造（Schema）
+# ============================================================
+schema:
+  Character:
+    dimensions:
+      type: list
+      item_structure:
+        trait_a: "表面的な特性 / 一方の極 (例: 優しさ)"
+        trait_b: "矛盾する特性 / もう一方の極 (例: 残虐性)"
+        manifestation: "この矛盾がどのように表れるか (例: 動物には優しいが人間には冷酷)"
+        revelation_scene_id: "この矛盾が露呈/証明されるシーンID"
+
+# ============================================================
+# ヒント
+# ============================================================
+tips:
+  - "3次元、4次元のキャラクターとは、3つ、4つの矛盾を抱えていることを意味する。"
+  - "最も強力な矛盾は、キャラクターの「善の中心」と対立するものかもしれない。"
+  - "矛盾がないキャラクターは、どんなに風変わりな特徴を持っていても『平坦（Flat）』である。"

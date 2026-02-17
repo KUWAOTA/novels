@@ -70,6 +70,9 @@ active_modules:
   - 18_tension-dynamics      # 緊張リズム制約
   - 19_scene-mastery         # シーン変換原理 + 配置最適化
   - 20_interpretation-layer  # 解釈生成レイヤ（Insight Engine）
+  - 21_character-dimension   # キャラクターの次元（矛盾）
+  - 22_cast-design           # キャスト設計（Action/Reactionによる存在価値）
+  - 23_character_components  # 性格描写(Characterization)と実像(True Character)
 ```
 
 ---
@@ -85,6 +88,7 @@ active_modules:
 
 ### Phase 1: Blueprint Check（設計図チェック）
 - `06_protagonist` の必須変数が定義されているか
+- `23_character_components` の実像（True Character）が定義されているか
 - `05_controlling-concept` の統制概念/対立概念が宣言されているか
 - `04_story-triangle` の幕数が最低3か
 
@@ -112,6 +116,8 @@ active_modules:
 - `12_exposition` の情報ペーシングカーブ
 - `14_causal-chain` の契機→クライマックス因果整合
 - `06_protagonist` の敵対力制約 + 善の中心
+- `21_character-dimension` の次元（矛盾）検証
+- `22_cast-design` のアクション/リアクション存在価値チェック
 - `07_action-definition` の行動影響検証
 
 ---

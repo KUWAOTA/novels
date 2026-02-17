@@ -1,0 +1,85 @@
+# ============================================================
+# Module: Character Components
+# Source: Robert McKee "Character" — 性格描写と実像
+# Version: 1.0
+# ============================================================
+# キャラクターは二つの主要な側面で構成される：
+# 1. 性格描写（Characterization）：観察可能な表面的な特徴の総体
+# 2. 実像（True Character）：圧力下での選択によってのみ明らかになる本質
+# 
+# 物語の深みは、これら二つの側面が「矛盾」または「対立」する時に生まれる。
+# ============================================================
+
+module_id: character_components
+module_name: "性格描写と実像（Characterization & True Character）"
+source: "McKee 'Character'"
+
+# ============================================================
+# 定義：性格描写（Characterization）
+# ============================================================
+characterization:
+  description: >
+    観察可能なすべての人間的性質の総和。
+    他人から見て取れるもの、ユニークにするもの。
+  components:
+    - physical:     "年齢、性別、体格、人種、外見的特徴"
+    - mannerism:    "話し方、仕草、癖、姿勢"
+    - social:       "職業、階級、宗教、政治的立場、家族構成"
+    - personality:  "表面的な態度、人柄、気質（陽気、陰気など）"
+    - intellect:    "知識、IQ、教育レベル"
+
+# ============================================================
+# 定義：実像（True Character）
+# ============================================================
+true_character:
+  description: >
+    圧力の下でどのような選択をするかによってのみ明かされる本質。
+    表面的な特徴は嘘をつくかもしれないが、極限状態の選択は嘘をつけない。
+  components:
+    - deep_motive:  "心の奥底にある動機、根源的な欲求"
+    - core_value:   "基本的価値観（何を最も大切にするか）"
+    - will_power:   "逆境に立ち向かう意志の強さ"
+
+# ============================================================
+# コンパイル検証ルール
+# ============================================================
+validation:
+
+  # 1. 実像の定義必須
+  # ------------------------------------------------------------
+  missing_true_character:
+    applies_to: Character(protagonist)
+    check:
+      is_defined:
+        severity: compile_error
+        condition: "true_character is undefined or empty"
+        message: >
+          主人公の「実像（True Character）」が定義されていません。
+          表面的な「性格描写」だけではキャラクターは完成しません。
+          圧力下で露呈する本性（動機・価値観）を定義してください。
+
+  # 2. 表裏の乖離（Gap）の推奨
+  # ------------------------------------------------------------
+  characterization_vs_true_character_gap:
+    applies_to: Character(protagonist)
+    check:
+      has_contrast:
+        severity: info
+        condition: "no contrast between characterization and true_character"
+        message: >
+          性格描写と実像が一致しすぎています。
+          「見た目通りの人」は退屈になりがちです。
+          表面（例：荒っぽい）と内面（例：繊細）にギャップを作ることを推奨します。
+
+  # 3. 圧力下の露呈
+  # ------------------------------------------------------------
+  revelation_mechanism:
+    applies_to: Story
+    check:
+      mechanism_exists:
+        severity: warning
+        condition: "scenes do not pressure protagonist enough to reveal true_character"
+        message: >
+          実像を露呈させるための十分な「圧力」がかかるシーンが見当たりません。
+          実像は平時の会話ではなく、ジレンマのある選択（圧力）によってのみ証明されます。
+
