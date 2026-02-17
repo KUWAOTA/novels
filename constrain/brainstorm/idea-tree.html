@@ -505,11 +505,13 @@
         <button class="zoom-btn" id="zoomReset" style="font-size:11px;">⌂</button>
     </div>
 
+    <script src="data/ideas.js?v=1"></script>
     <script>
         // ═══════════════════════════════════════════════════════
         // DATA — All story ideas structured as a tree
         // ═══════════════════════════════════════════════════════
-        const nodes = [
+        const nodes = window.STORY_NODES;
+        /* const nodes_backup = [
             // ── Column layout guide ──
             // col0=80  col1=400  col2=720  col3=1040  col4=1360  col5=1680  col6=2000  col7=2320  col8=2640  col9=2960
 
@@ -575,7 +577,7 @@
 
             // ── COMMON RESOLUTION ──
             { id: 'resolution', label: '共通の到達点', desc: '再現性は間違いではない。物事はブーリアンではない。曖昧さにも価値がある。感情はノイズではない。Constrainも間違いではない。Aを行動原理レベルで理解し泣きながら抱擁', parent: null, status: 'preferred', type: 'resolution', x: 3200, y: 440 },
-        ];
+        ]; */
 
         // ═══════════════════════════════════════════════════════
         // RENDER
@@ -834,8 +836,8 @@
                 <h2 style="font-size:16px;">💡 新しいアイデアを提案</h2>
             </div>
             <p style="font-size:11px; color:var(--text-muted); margin-bottom:16px; line-height:1.4;">
-                現在、GitHub Pages上での直接保存はできません。<br>
-                アイデアを入力し、<strong>「Issueで提案」</strong>するか、<strong>YAMLをコピー</strong>して管理者に送ってください。
+                変更に開いた設計にするため、データは <code>data/ideas.js</code> に分離されました。<br>
+                アイデアを入力し、<strong>「Issueで提案」</strong>すると、管理者がフィードバックを反映します。
             </p>
             
             <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-bottom:12px;">
