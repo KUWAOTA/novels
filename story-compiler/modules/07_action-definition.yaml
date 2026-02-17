@@ -60,10 +60,30 @@ required_fields:
 # ============================================================
 risk_progression:
   must_increase_over_time: true
-  description: "物語が進むにつれ、リスクは増大しなければならない"
+  description: >
+    物語が進むにつれ、リスクは段階的に増大しなければならない。
+    リスクの増大がなければ物語は停滞する。
+
+  escalation_requirements:
+    scene_level:
+      description: "シーン間でリスクが停滞していないか"
+      check: "前シーンのリスク ≤ 現シーンのリスク"
+    act_level:
+      description: "幕ごとにリスクの基準が上昇しているか"
+      check: "Act N のリスク基準 < Act N+1 のリスク基準"
+    climax_maximum:
+      description: "クライマックスの幕でリスクが最大に達するか"
+      check: "最終幕のリスクが全幕中最大"
+
   stagnation_or_reversal:
     severity: warning
-    message: "リスクが停滞または減少しています"
+    message: "リスクが停滞または減少しています。段階的な増大を確認してください"
+
+  risk_regression:
+    severity: warning
+    message: >
+      リスクが前の段階より低下しています。
+      意図的な小休止でない場合、物語の推進力が失われます。
 
 # ============================================================
 # 葛藤の複雑さ
@@ -90,3 +110,42 @@ validation:
   no_risk:
     severity: compile_error
     message: "リスクが定義されていません。リスクのない行動はドラマではありません"
+
+# ============================================================
+# 行動影響検証（Action Impact Validation）
+# ============================================================
+action_impact_validation:
+  impact_progression_checker:
+    purpose: >
+      キャラクターの行動が社会的影響（社会・制度・集団への影響）
+      または個人的影響（親密な人間関係・内面への深い影響）のいずれかに
+      意味のある進展をもたらしているか確認する。
+      中立的・無結果な行動は停滞のリスク。
+
+    applies_to:
+      - Action
+      - Beat
+      - Scene
+
+    required_declaration:
+      impact_domain:
+        options:
+          - personal       # 内面・親密な人間関係への深い影響
+          - social         # 社会・集団・制度への影響
+
+    progression_rule:
+      description: >
+        物語の進行に伴い、行動は影響領域（personalまたはsocial）を
+        より明確に/より強く示すべき。
+
+    compile_time_checks:
+
+      no_meaningful_impact_detected:
+        description: >
+          行動がpersonalにもsocialにも影響を与えていない場合、
+          フィラーとして機能している可能性。
+        action: warning
+        message: >
+          行動影響警告：この行動は個人的関係/内面にも社会的領域にも
+          有意な影響を与えていません。
+          個人的な賭けを強化するか、結果を外側に広げることを検討してください。

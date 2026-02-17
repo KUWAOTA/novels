@@ -1,0 +1,202 @@
+# ============================================================
+# Module: Exposition Validation & Curiosity-Driven Information
+# Source: Robert McKee "Story" — 情報提示と説明の構造制約
+# Version: 0.1
+# ============================================================
+# 情報は「説明」として差し込んではならない。
+# 情報とは「答え」であり、答えは問いがなければ意味を持たない。
+# 情報は 葛藤 × 行動 × 失敗 の中で露出すべき。
+# ============================================================
+
+module_id: exposition
+module_name: "情報提示制約（Exposition Validation）"
+source: "McKee 'Story'"
+
+# ============================================================
+# Part 1: 説明的情報の検出
+# ============================================================
+exposition_validation:
+  purpose: >
+    設定・背景・キャラクター特性を説明的に流し込むこと（info dump）を検出する。
+    自然な情報提示とは：
+      ✔ 情報が葛藤の中で露出する
+      ✔ 行動の結果として分かる
+      ✔ 誤解・衝突・選択に絡んでいる
+
+  applies_to:
+    - Scene
+    - Dialogue
+    - NarrativeBlock
+
+  # ---- 3軸評価メトリクス ----
+  evaluation_metrics:
+
+    contextualization_score:
+      description: >
+        情報が葛藤/アクション中に露出した割合。
+        ContextualizationScore = (conflict/action中の情報) / (総情報提示単位)
+      threshold_warning: 0.6
+      low_means: "説明的（expository）"
+
+    value_coupling_score:
+      description: >
+        情報が価値変化や意思決定に結びついた割合。
+        ValueCouplingScore = (価値変化に紐づく情報) / (総情報単位)
+      threshold_warning: 0.5
+      low_means: "設定説明（background explanation）"
+
+    dialogue_naturalness:
+      description: "セリフが情報伝達装置になっていないかの検出"
+      checks:
+        - characters_stating_known_facts       # 相手がすでに知っていることを言っている
+        - long_uninterrupted_background_monologue  # 不自然に長い背景説明
+        - dialogue_without_conflict_or_tension  # 説明文と同じ役割の会話
+
+  # ---- コンパイル時チェック ----
+  compile_time_checks:
+
+    exposition_dump_detected:
+      condition: "contextualization_score < 0.6"
+      action: warning
+      message: >
+        情報が葛藤やアクションの文脈外で提示されています。
+        説明的な情報露出になっている可能性があります。
+
+    weak_value_coupling:
+      condition: "value_coupling_score < 0.5"
+      action: warning
+      message: >
+        背景情報が価値変化や意思決定と結びついていません。
+        設定説明に留まっている可能性があります。
+
+    unnatural_dialogue_exposition:
+      action: warning
+      message: >
+        セリフが情報提示装置として機能している可能性があります。
+        自然な対話になっていないか確認してください。
+
+# ============================================================
+# Part 2: 好奇心駆動の情報提示
+# ============================================================
+curiosity_driven_exposition:
+  purpose: >
+    情報は読者の好奇心が構造的に生成された時にのみ提示すべき。
+    情報とは「答え」であり、問いがなければ意味を持たない。
+    InformationImpact = CuriosityLevel × ValueRelevance × TimingPrecision
+    → Curiosityが0なら Impactも0。
+
+  applies_to:
+    - Scene
+    - Dialogue
+    - NarrativeBlock
+
+  # 情報提示の前提条件
+  required_before_information:
+    - active_question_present        # 直前に疑問が生まれているか (true/false)
+    - curiosity_level                # 好奇心レベル (0.0 - 1.0)
+    - question_linked_to_value_axis  # その疑問が価値軸と関連しているか (true/false)
+
+  thresholds:
+    minimum_curiosity: 0.6
+
+  # NGパターン
+  anti_patterns:
+    - "興味が生まれていないのに説明"
+    - "ただの世界観補足"
+    - "作者都合の情報整理"
+
+  compile_time_checks:
+
+    premature_information_delivery:
+      condition: "curiosity_level < minimum_curiosity"
+      action: warning
+      message: >
+        十分な好奇心が生成される前に情報が提示されています。
+        提示を遅らせるか、先に疑問を強化してください。
+
+    no_active_question:
+      condition: "active_question_present == false"
+      action: warning
+      message: >
+        構造的な疑問が提示されないまま情報が露出しています。
+
+    information_not_value_linked:
+      condition: "question_linked_to_value_axis == false"
+      action: warning
+      message: >
+        情報が中心的な価値軸や葛藤に結びついていません。
+        装飾的な説明になるリスクがあります。
+
+# ============================================================
+# 高度な制約（上級者向け）
+# ============================================================
+advanced_constraints:
+  information_always_causes_misunderstanding:
+    enabled: false
+    description: "情報は必ず誤解を生むべき（より厳しい制約）"
+
+  information_linked_to_intent:
+    enabled: false
+    description: "情報は誰かの意図と結びつくべき"
+
+  information_changes_relationship:
+    enabled: false
+    description: "情報提示は必ず関係性を変えるべき"
+
+# ============================================================
+# 情報ペーシング（Information Pacing）
+# ============================================================
+information_pacing:
+  purpose: >
+    明確化と情報提示がクライマックスに向けて
+    重要度の上昇カーブに従うことを保証する。
+    本質は「認知負荷 × 感情勾配の制御」。
+
+  applies_to:
+    - Story
+    - Act
+    - Scene
+
+  required_annotation:
+    information_units:
+      - id
+      - importance_score       # 0.0 - 1.0
+      - first_introduced_at    # 構造的位置
+      - relevance_to_climax    # 0.0 - 1.0
+
+  validation_rules:
+
+    importance_curve_monotonicity:
+      description: >
+        幕ごとの平均重要度は後半の幕に向けて
+        上昇すべき。
+      action: warning
+      message: >
+        情報の重要度が後半の幕に向けて上昇していません。
+        より高インパクトな情報開示の順序変更や保留を検討してください。
+
+    premature_high_importance_dump:
+      description: >
+        高重要度情報（>0.8）が構造的必然性なく
+        早い段階で開示されている。
+      action: warning
+      message: >
+        高重要度情報が早すぎる段階で開示されています。
+        後半の緊張を平坦にする可能性があります。
+
+    climax_information_weight:
+      description: >
+        クライマックス直前の情報は
+        最高重要度層に属するべき。
+      action: warning
+      message: >
+        クライマックス前の情報に十分な比重がありません。
+
+    unresolved_low_importance_overexposure:
+      description: >
+        物語後半に過剰な低重要度情報があると
+        ペーシングの強度が低下する。
+      action: warning
+      message: >
+        低重要度情報が物語後半に現れすぎています。
+        ペーシングを損なう可能性があります。

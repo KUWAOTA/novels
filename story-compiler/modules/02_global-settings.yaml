@@ -74,6 +74,15 @@ fields:
     type: string
     description: "主要登場人物のリストと役割定義"
 
+  mentality:
+    required: true
+    type: string
+    description: >
+      心性（mentality）: 主人公の世界認知・解釈・反応の基本モード。
+      一時的な感情よりも安定しており、感情評価に先行し形を与える。
+      例: 「楽観的に世界を信じるが裏切りに極端に弱い」
+      例: 「全てを疑い、証拠なしに信用しない」
+
   # オプションフィールド
   world_values:
     required: false
@@ -84,6 +93,27 @@ fields:
     required: false
     type: string
     description: "この世界の社会ルール・タブー"
+
+# ============================================================
+# 感情評価の心性依存ルール
+# ============================================================
+affect_dynamics:
+  emotional_evaluation:
+    evaluation_order:
+      rule: mentality_first
+      description: >
+        感情の極性や情動変化を評価する際は、まず心性（mentality）を
+        参照し、そこから感情（+/-）を導出すること。
+        心性 → 世界認知 → 感情反応 の順序を守る。
+    compile_time_checks:
+      emotion_without_mentality_reference:
+        description: >
+          心性に根拠づけずに感情評価が定義された場合、
+          その感情は恣意的/表面的になる可能性がある。
+        action: warning
+        message: >
+          感情評価に心性への明示的な連結がありません。
+          心性（mentality）とその世界観から遡って感情を再評価してください。
 
 # ============================================================
 # 制約ルール
@@ -102,6 +132,30 @@ enforcement:
   setting_contradiction:
     severity: compile_error
     message: "既存の世界設定と矛盾する定義が検出されました"
+
+# ============================================================
+# 設定ドリフト検出
+# ============================================================
+setting_drift_detection:
+  description: >
+    設定と構成／内容が乖離した場合に整合性エラーを出す。
+    設定修正時は他要素との不整合点を差分エラーとして列挙する。
+
+  checks:
+    content_setting_divergence:
+      severity: compile_error
+      message: >
+        物語の内容が宣言された世界設定と乖離しています。
+        設定を更新するか、内容を修正してください。
+
+    setting_modification_impact:
+      severity: warning
+      description: >
+        設定を変更した場合、その設定に依存する全ての要素
+        （シーン、キャラクター、プロット）への影響を差分として列挙する。
+      message: >
+        設定変更により以下の要素に不整合が生じる可能性があります。
+        影響範囲を確認してください。
 
 # 設定の詳細度と検証の厳密さの関係
 detail_threshold:

@@ -1,0 +1,130 @@
+# ============================================================
+# Module: Choice Integrity & Textual Expression
+# Source: Robert McKee "Story" — 選択の真正性・テキスト表現制約
+# Version: 0.1
+# ============================================================
+# 選択とは「善/悪」の二項対立ではない。
+# 真の選択は、どちらにも利があり、
+# 観測者によって評価が逆転するジレンマである。
+# テキストは説明ではなく、サブテキストで語る。
+# ============================================================
+
+module_id: choice_and_expression
+module_name: "選択の真正性 + テキスト表現（Choice & Expression）"
+source: "McKee 'Story'"
+
+# ============================================================
+# Part 1: 選択の真正性（Choice Integrity）
+# ============================================================
+choice_integrity:
+  genuine_choice_checker:
+    purpose: >
+      善/悪、正/誤の道徳的二項対立として描かれた選択で、
+      主人公が「悪い方」を選ぶ内的理由が一切ない場合、
+      それは選択ではなく必然である。
+      真の選択 = 観測者Aにとっては＋でBにとってはーとなる
+      ジレンマ的構造。
+
+    applies_to:
+      - Action
+      - DecisionPoint
+
+    inputs_required:
+      - options_considered          # 最低2つの選択肢のリスト
+      - protagonist_reasoning       # 各選択肢を選べる理由
+      - perceived_good_for_self     # 各選択肢が主人公にとっての「良さ」
+
+    compile_time_checks:
+
+      moral_binary_without_viable_alternative:
+        description: >
+          選択が善/悪、正/誤で語られているのに、
+          「悪い/誤った」選択肢に主人公にとっての信頼できる利益がない場合、
+          それは選択ではなく必然。
+        action: warning
+        message: >
+          偽ジレンマの可能性があります（道徳的二項対立）。
+          拒否された選択肢にも信頼できる「主人公にとっての良さ」を追加するか、
+          道徳的ラベルから離れて葛藤を再構成してください。
+
+      insufficient_options:
+        description: "選択肢が1つしかない場合、選択とは言えない"
+        action: warning
+        message: >
+          選択肢が不足しています。
+          真の選択には最低2つの実質的な選択肢が必要です。
+
+    dilemma_structure:
+      description: >
+        真の選択（ジレンマ）の条件：
+        1. 選択肢Aは観測者Xにとって＋、観測者Yにとってー
+        2. 選択肢Bは観測者Xにとってー、観測者Yにとって＋
+        3. 主人公はどちらにも内的な理由を持つ
+        4. どちらを選んでも何かを失う
+
+    notes:
+      enforcement_level: warning_only
+      rationale: >
+        これは物語の品質/ジレンマ強度のチェックであり、
+        構造的破綻ではない。
+
+# ============================================================
+# Part 2: テキスト表現制約（Textual Expression）
+# ============================================================
+textual_expression:
+
+  explicitness_checker:
+    purpose: >
+      意味・感情・テーマ・動機がサブテキストではなく
+      明示的に説明されている過剰説明テキストを検出する。
+
+    applies_to:
+      - Sentence
+      - Paragraph
+      - Scene
+
+    compile_time_checks:
+
+      excessive_explanation_detected:
+        description: >
+          文章がアクション/結果/文脈から推論可能な
+          感情・意図・テーマ・道徳的結論を直接説明している場合。
+        action: warning
+        message: >
+          テキストが過剰に説明的である可能性があります。
+          サブテキスト（行動、コントラスト、省略）で
+          表現することを検討してください。
+
+  revision_guidance:
+    when_editing_text:
+      rule: >
+        作者がテキストを直接修正しようとする場合、
+        まず下層のサブテキストを検査・調整するよう促す。
+      action:
+        type: advisory_prompt
+        message: >
+          テキストを書き直す前に、伝わっているサブテキストを確認してください。
+          問題は言葉遣いにあるのか、それともその下にある暗示された意味にあるのか？
+
+  subtext_inference_engine:
+    purpose: >
+      作者専用のデバッグ支援。
+      暗示的なサブテキストを明示化して作者に提示する。
+
+    inputs:
+      - surface_text
+      - context  # 先行するアクション、結果、価値状態
+
+    runtime_behavior:
+      generate_inferred_subtext:
+        description: >
+          テキスト自体を変更せず、
+          テキストから推論される可能性のあるサブテキストを列挙する。
+        visibility: author_only
+
+    output:
+      inferred_subtext_candidates:
+        format: list
+        usage: >
+          作者が推論されたサブテキストを確認し、
+          意図した意味と一致するか、構造的修正が必要かを判断する。

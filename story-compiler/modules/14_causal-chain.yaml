@@ -1,0 +1,177 @@
+# ============================================================
+# Module: Causal Chain Integrity (論理の穴検出)
+# Source: Robert McKee "Story" — 因果関係の鎖 (P448)
+# Version: 0.1
+# ============================================================
+# ストーリーは因果関係の鎖で構成される。
+# この鎖の一部が欠けている状態＝「穴」。
+# 穴があると物語の説得力が崩壊する。
+# ============================================================
+
+module_id: causal_chain
+module_name: "因果関係の鎖（Causal Chain Integrity）"
+source: "McKee 'Story' P448"
+
+# ============================================================
+# 因果関係の定義
+# ============================================================
+causal_chain:
+  description: >
+    物語の全ての出来事は因果の鎖で繋がっていなければならない。
+    各イベントは前のイベントの結果であり、次のイベントの原因となる。
+    この鎖が途切れた部分が「論理の穴」である。
+
+  applies_to:
+    - Event
+    - Beat
+    - Scene
+    - Sequence
+    - Act
+
+  # 各単位の必須フィールド
+  required_per_unit:
+    cause:
+      required: true
+      type: string
+      description: "この出来事が起きた原因（前の出来事との因果リンク）"
+
+    consequence:
+      required: true
+      type: string
+      description: "この出来事が引き起こす結果（次の出来事への因果リンク）"
+
+    causal_link_type:
+      required: true
+      type: enum
+      values:
+        - direct        # 直接的因果（AがBを引き起こす）
+        - indirect      # 間接的因果（Aの結果CがBに影響）
+        - character      # キャラクターの選択による因果
+        - environmental  # 環境/状況による因果
+      description: "因果関係の種類"
+
+# ============================================================
+# 穴（ホール）の検出
+# ============================================================
+hole_detection:
+  description: >
+    因果関係の鎖の一部が欠けている「穴」状態を検出する。
+    穴があると物語の構造的整合性が損なわれる。
+
+  types:
+    missing_cause:
+      description: "結果はあるが原因が不明なイベント"
+      severity: compile_error
+      message: >
+        このイベントの原因が定義されていません。
+        因果関係の鎖に穴があります。
+        See: McKee 'Story' P448
+
+    missing_consequence:
+      description: "原因はあるが結果が描かれないイベント"
+      severity: warning
+      message: >
+        このイベントの結果が描かれていません。
+        放置された因果は物語の説得力を損ないます。
+
+    unmotivated_action:
+      description: "動機が不十分なキャラクターアクション"
+      severity: warning
+      message: >
+        キャラクターのアクションに十分な動機が示されていません。
+        なぜその行動をとるのか、因果的に根拠づけてください。
+
+    coincidence_overuse:
+      description: "偶然の多用（因果ではなく偶然による展開）"
+      severity: warning
+      message: >
+        偶然に依存した展開が検出されました。
+        偶然は物語を開始できるが、解決には使えません。
+
+# ============================================================
+# 構造レベルの整合性チェック
+# ============================================================
+structural_coherence:
+  scene_to_scene:
+    description: "シーン間の因果的接続の検証"
+    check: "前のシーンの結果が次のシーンの原因に反映されているか"
+
+  sequence_to_sequence:
+    description: "シーケンス間の因果的接続の検証"
+    check: "シーケンスの積み重ねが幕の転換に因果的に寄与しているか"
+
+  act_to_act:
+    description: "幕間の因果的接続の検証"
+    check: "各幕の結末が次の幕の起点を因果的に生成しているか"
+
+  compile_time_checks:
+
+    causal_gap_in_diff:
+      description: >
+        diffで因果関係の鎖の一部が欠けている「穴」状態を発見した場合の警告。
+      action: warning
+      message: >
+        因果関係の鎖に穴が検出されました。
+        McKee 'Story' P448 を参照してください。
+
+    orphan_event:
+      description: "前後のイベントと因果的に接続されていない孤立イベント"
+      action: compile_error
+      message: >
+        このイベントは因果の鎖から切り離されています。
+        原因と結果の両方を明示してください。
+
+# ============================================================
+# 契機事件→クライマックスの因果整合（Causality Validation）
+# ============================================================
+causality_validation:
+  inciting_to_climax_coherence:
+    purpose: >
+      契機事件（Inciting Incident）がクライマックスを
+      因果的・テーマ的に必然化しているか検証する。
+      クライマックスは契機事件からの破壊に対して
+      避けがたく到達する地点でなければならない。
+
+    applies_to:
+      - Story
+      - Act
+
+    evaluation_model:
+      coherence_factors:
+        causal_chain_strength:
+          description: >
+            契機事件からアクション、エスカレーション、
+            不可逆的コミットメントを経てクライマックスに至る
+            因果リンクの強度。
+          weight: 0.4
+        desire_continuity:
+          description: >
+            契機事件で生成された欲望と、
+            クライマックスで解決（または失敗）する欲望の一貫性。
+          weight: 0.25
+        value_axis_alignment:
+          description: >
+            契機事件で破壊された価値軸と、
+            クライマックスで解決される価値軸の整合性。
+          weight: 0.2
+        thematic_echo:
+          description: >
+            契機事件で暗示的に導入された統制概念が、
+            クライマックスで対峙・結晶化される度合い。
+          weight: 0.15
+
+    scoring:
+      scale: "0.0 - 1.0"
+      minimum_threshold: 0.65
+
+    compile_time_checks:
+
+      coherence_below_threshold:
+        description: >
+          契機事件とクライマックス間の因果的/テーマ的整合スコアが
+          最低閾値を超えない場合、関係が恣意的に感じられる。
+        action: warning
+        message: >
+          契機事件–クライマックス間の整合性が閾値以下です。
+          クライマックスが契機事件から十分に必然化されていない可能性があります。
+          因果的エスカレーション、欲望の一貫性、価値軸の整合を強化してください。

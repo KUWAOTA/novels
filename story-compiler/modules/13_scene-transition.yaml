@@ -1,0 +1,154 @@
+# ============================================================
+# Module: Scene Transition & Backstory / Flashback Rules
+# Source: Robert McKee "Story" — シーン遷移・バックストーリー制約
+# Version: 0.1
+# ============================================================
+# シーン遷移は「アクション」か「バックストーリーの露出」でしか
+# 正当に駆動されない。それ以外の転換は基本的に弱い。
+# 過去は「説明」ではなく「現在を爆発させる装置」である。
+# ============================================================
+
+module_id: scene_transition
+module_name: "シーン遷移制約（Scene Transition Rules）"
+source: "McKee 'Story'"
+
+# ============================================================
+# Part 1: シーン遷移ルール
+# ============================================================
+scene_transition_rule:
+  purpose: >
+    全てのシーン遷移がアクションまたはバックストーリー露出によって
+    駆動されることを強制する。
+
+  applies_to:
+    - Scene
+
+  required_arguments:
+    transition_trigger:
+      type: enum
+      allowed:
+        - action                # アクション（主人公の行動による転換）
+        - backstory_revelation  # バックストーリー露出（過去の真実による転換）
+
+  compile_time_checks:
+
+    invalid_transition_type:
+      action: compile_error
+      message: >
+        シーン遷移はアクションまたはバックストーリー露出のいずれかで
+        駆動されなければなりません。
+
+    no_transition_trigger_defined:
+      action: compile_error
+      message: >
+        シーン遷移のトリガーが未定義です。
+        transition_trigger を指定してください。
+
+# ============================================================
+# Part 2: バックストーリー露出ルール
+# ============================================================
+backstory_revelation_rules:
+  purpose: >
+    バックストーリー露出のタイミングと構造的正当性を制御する。
+    バックストーリーは情報ではなく、
+    現在の行動の意味を再定義する装置である。
+
+  # 露出の前提条件
+  required_conditions:
+    - active_conflict_present    # 現在の葛藤と直結しているか
+    - curiosity_level >= 0.6     # 読者が疑問を抱いているか
+    - value_axis_linked == true  # 価値軸に変化を与えるか
+
+  # 構造的効果の必須項目
+  structural_effect_required:
+    - redefines_current_action_meaning  # 現在の行動の意味を再定義する
+    - shifts_value_state                # 価値状態を変化させる
+
+  # バックストーリーは現在のアクションを妨害する形で出る
+  additional_constraints:
+    must_disrupt_present_action:
+      description: >
+        バックストーリー露出は主人公の現在のアクション軌道を
+        妨害、遅延、または方向転換させなければならない。
+        - 現在の決断を揺らす
+        - 行動を遅らせる
+        - 価値判断を変える
+      condition: "present_action_trajectory_changed == false"
+      action: warning
+      message: >
+        バックストーリーが現在のアクションを変化させていません。
+        受動的な説明になるリスクがあります。
+
+  # 衝撃値とタイミング制約
+  impact_scoring:
+    description: "バックストーリーは衝撃値（impact_score）が高い爆発物"
+    act_constraints:
+      act_1: "低衝撃のバックストーリーのみ"
+      act_2_late_and_after: "高衝撃のバックストーリーを配置"
+    note: >
+      最も衝撃的なバックストーリーは「読者がそれを知りたい状態」で
+      「最大効果地点」でのみ使うべき。
+
+  compile_time_checks:
+
+    premature_backstory_reveal:
+      condition: "curiosity_level < 0.6"
+      action: warning
+      message: >
+        十分な好奇心が生成される前にバックストーリーが露出しています。
+
+    decorative_backstory:
+      condition: "value_axis_linked == false"
+      action: warning
+      message: >
+        バックストーリーが中心的な価値軸や葛藤に結びついていません。
+
+    no_value_shift_from_backstory:
+      condition: "shifts_value_state == false"
+      action: warning
+      message: >
+        バックストーリーが価値状態を変化させていません。
+        情報の流し込みになるリスクがあります。
+
+# ============================================================
+# Part 3: フラッシュバック制約
+# ============================================================
+flashback_usage_rules:
+  purpose: >
+    フラッシュバックが説明的挿入ではなく構造的に意味を持つことを保証する。
+    フラッシュバックの正当な機能は：
+      - 現在の価値状態を変える
+      - 観客の解釈を変える
+      - 行動の意味を再定義する
+    このどれかがないなら、ただの説明。
+
+  required_conditions:
+    - redefines_present_meaning        # 現在の意味を再定義するか (true/false)
+    - shifts_value_state               # 価値状態を変化させるか (true/false)
+    - alters_audience_interpretation   # 観客の解釈を変えるか (true/false)
+
+  compile_time_checks:
+
+    flashback_without_meaning:
+      condition: >
+        redefines_present_meaning == false
+        and shifts_value_state == false
+        and alters_audience_interpretation == false
+      action: warning
+      message: >
+        フラッシュバックに構造的インパクトがありません。
+        説明ではなく変容装置として機能していない可能性があります。
+
+    flashback_without_conflict_link:
+      condition: "active_conflict_present == false"
+      action: warning
+      message: >
+        アクティブな葛藤がない状態でフラッシュバックが挿入されています。
+        より緊張度の高いポイントに移動を検討してください。
+
+    excessive_flashback_density:
+      description: >
+        フラッシュバックが多すぎると前進の推進力が失われる。
+      action: warning
+      message: >
+        フラッシュバックの頻度が物語の推進力を削いでいる可能性があります。

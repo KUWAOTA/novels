@@ -20,16 +20,20 @@ story-compiler/
 │
 ├── modules/                  # 原則モジュール（独立して追加・編集可能）
 │   ├── 01_core-structure.yaml      # 構造単位の定義
-│   ├── 02_global-settings.yaml     # 世界設定ゲート
+│   ├── 02_global-settings.yaml     # 世界設定ゲート + 心性 + ドリフト検出
 │   ├── 03_climax-rules.yaml        # クライマックス制約
 │   ├── 04_story-triangle.yaml      # 物語三角形（Arc/Mini/Anti）
 │   ├── 05_controlling-concept.yaml # 統制概念と価値軸
-│   ├── 06_protagonist.yaml         # 主人公モデル
-│   ├── 07_action-definition.yaml   # アクション定義（ハードロック）
+│   ├── 06_protagonist.yaml         # 主人公モデル + 心性連動 + 表裏
+│   ├── 07_action-definition.yaml   # アクション定義 + リスク段階増大
 │   ├── 08_inciting-incident.yaml   # 契機事件
 │   ├── 09_subplot.yaml             # サブプロット
 │   ├── 10_meaning.yaml             # 意味の生成条件
 │   ├── 11_surprise.yaml            # 驚き検証
+│   ├── 12_exposition.yaml          # 情報提示制約 + 好奇心駆動
+│   ├── 13_scene-transition.yaml    # シーン遷移 + バックストーリー + フラッシュバック
+│   ├── 14_causal-chain.yaml        # 因果関係の鎖（論理の穴検出）
+│   ├── 15_genre-constraints.yaml   # ジャンル制約（約束事）
 │   └── _EXTENSION_TEMPLATE.yaml    # 新モジュール追加用テンプレート
 │
 ├── templates/                # 執筆用テンプレート

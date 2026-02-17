@@ -1,0 +1,100 @@
+# ============================================================
+# Module: Scene Mastery (シーン変換 + 配置最適化)
+# Source: Robert McKee "Story" — before/after対比 + シーン配列
+# Version: 0.1
+# ============================================================
+# シーンは変化の単位。
+# before/afterの対比でこそ変化が可視化される。
+# シーン配列は最適化問題であり、
+# 複数候補から構造的品質を最大化する配列を選ぶ。
+# ============================================================
+
+module_id: scene_mastery
+module_name: "シーン変換 + 配置最適化（Scene Mastery）"
+source: "McKee 'Story'"
+
+# ============================================================
+# Part 1: シーン変換原理（Before/After Contrast Model）
+# ============================================================
+scene_transformation_principle:
+  before_after_contrast_model:
+    purpose: >
+      各シーンを「共有要素」と「対立要素」の
+      before/afterの対比として構造化して変化を表現する。
+
+    applies_to:
+      - Scene
+
+    dimensions:
+      - character_trait       # キャラクターの特性
+      - character_behavior    # キャラクターの行動
+      - location              # 場所
+      - dialogue_mode         # 対話のモード
+      - imagery_or_setting    # イメージ/設定
+      - conceptual_frame      # 概念的フレーム
+
+    required_structure:
+      before_state:
+        shared_elements: required      # 対比の基盤（共有される要素）
+        opposing_elements: required    # 対立する要素
+      after_state:
+        shared_elements: required
+        opposing_elements: required
+
+    compile_time_checks:
+
+      no_meaningful_contrast_detected:
+        description: >
+          before/after の状態が主要な次元のいずれにおいても
+          構造的対比を示さない場合、変化が不十分。
+        action: warning
+        message: >
+          シーンに明確な対比ベースの変換がありません。
+          共有要素と対立要素を再定義することを検討してください。
+
+# ============================================================
+# Part 2: シーン配置最適化（Scene Arrangement Phase）
+# ============================================================
+scene_arrangement_phase:
+  optimization_model:
+    phase: scene_composition
+    purpose: >
+      複数の可能なシーン順序/配置を評価し、
+      構造的品質を最大化するものを選択する。
+
+    evaluation_dimensions:
+      - unity_and_variety_balance         # 統一性と多様性のバランス
+      - pacing_curve                      # ペーシングカーブ
+      - rhythm_and_tempo                  # リズムとテンポ
+      - social_personal_progression       # 社会的/個人的影響の進行
+      - symbolic_density_growth           # 象徴密度の成長
+      - irony_density                     # アイロニー密度
+      - transition_principle_integrity    # 遷移原則の整合性
+
+    scoring_model:
+      scale: "0.0 - 1.0"
+      aggregation_method: weighted_sum
+      weights:
+        unity_and_variety_balance: 0.18
+        pacing_curve: 0.14
+        rhythm_and_tempo: 0.14
+        social_personal_progression: 0.14
+        symbolic_density_growth: 0.10
+        irony_density: 0.10
+        transition_principle_integrity: 0.20
+
+    selection_rule:
+      generate_candidate_arrangements: true
+      minimum_candidates: 3
+      choose_max_score: true
+
+    compile_time_checks:
+
+      insufficient_candidate_variation:
+        description: >
+          最小候補数より少ないシーン配置しか検討されていない場合、
+          最適化が早すぎる可能性がある。
+        action: warning
+        message: >
+          必要なシーン配置候補数に達していません。
+          追加の構造的順列を検討してください。

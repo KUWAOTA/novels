@@ -1,0 +1,190 @@
+# ============================================================
+# Module: Symbolism & Core Image
+# Source: Robert McKee "Story" — 象徴 + 中核イメージ
+# Version: 0.1
+# ============================================================
+# 象徴はオプションの加算的品質。
+# 自然に立ち上がった象徴はボーナス、
+# 強制的に挿入された象徴はエラー。
+# 中核イメージは物語の最終的な価値状態の結晶。
+# ============================================================
+
+module_id: symbolism_and_image
+module_name: "象徴 + 中核イメージ（Symbolism & Core Image）"
+source: "McKee 'Story'"
+
+# ============================================================
+# Part 1: 象徴（Symbolism）
+# ============================================================
+symbolism:
+  symbolic_image_scoring:
+    purpose: >
+      象徴はオプションの加算的品質として扱う。
+      自然に発生した象徴的イメージ/シーンを検出し加点する。
+      一方で強制的/不自然な象徴はアンチパターンとしてフラグする。
+
+    applies_to:
+      - Image
+      - Motif
+      - Scene
+
+    scoring_model:
+      scale: "0.0 - 1.0"
+      additive_bonus:
+        enabled: true
+        max_bonus: 0.25
+
+      factors:
+        recurrence_with_variation:
+          description: "同一イメージ/モチーフが反復しつつ文脈で意味が変奏している"
+          weight: 0.35
+        causal_naturalness:
+          description: "物語の因果・状況・人物行動の結果として自然に出現している"
+          weight: 0.35
+        thematic_resonance:
+          description: "統制概念/価値軸に対して暗黙に響いている（説明しない）"
+          weight: 0.30
+
+    detection:
+      symbolic_candidate_extraction:
+        description: >
+          反復するイメージ、オブジェクト、設定、行動、感覚モチーフで
+          価値変化やターニングポイントと相関するものを特定する。
+        report_to_author:
+          when_detected: true
+          output:
+            - symbol_candidates
+            - supporting_occurrences
+            - inferred_symbolic_links    # 作者専用（デバッグ）
+            - bonus_score_estimate
+
+  forced_symbolism_checker:
+    purpose: >
+      象徴が因果や行動から生まれるのではなく、
+      「作者の意図」で差し込まれた場合にエラーを出す。
+
+    triggers:
+      explicit_symbol_declaration:
+        patterns:
+          - "これは〜の象徴だ"
+          - "象徴している"
+          - "つまり〜ということだ"
+      noncausal_insertion:
+        description: >
+          象徴的イメージが状況的必然性、キャラクターの動機、
+          因果的セットアップなしに出現する。
+          特にキービートの近くで「意味を持たせるため」だけに差し込まれる。
+      shallow_repetition:
+        description: >
+          モチーフが文脈的な進化なしに反復する（再評価/変奏なし）。
+          象徴ではなくラベルとして機能している。
+
+    compile_time_checks:
+      forced_symbolism_detected:
+        action: compile_error
+        message: >
+          強制的な象徴が検出されました。
+          明示的なラベリングを除去するか、
+          イメージがアクション・結果・価値変化の構造から
+          自然に出現するよう再構築してください。
+
+  integration:
+    with_subtext:
+      note: "象徴はサブテキスト（暗示）として機能すべき。説明されたテーマは象徴ではない"
+    with_controlling_idea:
+      constraint: "symbol_candidates_should_resonate_with_controlling_idea"
+      violation:
+        action: warning
+        message: >
+          象徴候補が統制概念と整合していない可能性があります。
+          意図的な多様性かテーマ的ドリフトか確認してください。
+
+# ============================================================
+# Part 2: 中核イメージ（Core Image Validation）
+# ============================================================
+core_image_validation:
+  applies_to:
+    - Story
+    - Act
+
+  definition: >
+    中核イメージは物語の中心的価値状態と統制概念の
+    結晶化された最終的な体現である。
+    単独でも複数でも良いが、
+    象徴の捏造ではなく構造の収束から自然に生まれなければならない。
+
+  required_phase:
+    enforcement_stage:
+      - structural_phase: warning_if_missing
+      - final_phase: strong_warning_if_missing
+
+  declaration:
+    core_images:
+      type: list
+      min_items: 0
+      description: >
+        作者は1つ以上の中核イメージを宣言できる。
+        各イメージは以下を参照する必要がある：
+        - central_value_axis（中心価値軸）
+        - final_value_state（最終価値状態）
+        - controlling_idea（統制概念）
+        - embodiment_form (action | situation | visual | relational)
+
+  scoring_model:
+    CoreImageScore:
+      components:
+        value_finality_alignment:
+          description: "イメージが最終価値状態を明確に表しているか"
+          weight: 0.25
+        controlling_idea_embodiment:
+          description: "テーマが説明ではなく体現されているか"
+          weight: 0.25
+        structural_convergence:
+          description: "先行する幕と選択がこのイメージに向かって論理的に収束しているか"
+          weight: 0.25
+        emotional_compression:
+          description: "イメージが複数の先行する緊張を一つの瞬間に圧縮しているか"
+          weight: 0.25
+      threshold_warning: 0.6
+      threshold_strong_warning: 0.45
+
+  compile_time_checks:
+
+    missing_core_image_structural_phase:
+      action: warning
+      message: >
+        構造フェーズで中核イメージが検出されませんでした。
+        クライマックスが最終イメージに結晶化するか検討してください。
+
+    missing_core_image_final_phase:
+      action: strong_warning
+      message: >
+        最終稿に結晶化された中核イメージがありません。
+        クライマックスが持続的な構造的印象を残さない可能性があります。
+
+    weak_core_image:
+      condition: "CoreImageScore < threshold_warning"
+      action: warning
+      message: >
+        宣言された中核イメージが最終価値状態と
+        統制概念を十分に体現していない可能性があります。
+
+    fabricated_symbol_alert:
+      description: >
+        イメージが先行する構造的蓄積やモチーフなしに
+        クライマックスでのみ導入された場合を検出。
+      condition: "structural_convergence < 0.4"
+      action: warning
+      message: >
+        中核イメージが人為的に挿入された印象です。
+        先行するモチーフの伏線または因果的収束を強化してください。
+
+    excessive_core_images:
+      description: >
+        複数の中核イメージが同じ統制概念に収束しない場合、
+        テーマの拡散リスクがある。
+      condition: "core_images_count > 1 and thematic_divergence_detected == true"
+      action: warning
+      message: >
+        テーマ的収束のない複数の中核イメージが検出されました。
+        意味の統一性を確認してください。

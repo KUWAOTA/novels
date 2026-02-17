@@ -68,6 +68,175 @@ empathy_check:
     - "主人公のリスクが読者に伝わるか"
 
 # ============================================================
+# 善の中心（Good Center Requirement）
+# ============================================================
+good_center_requirement:
+  purpose: >
+    主人公は道徳的整合性に関わらず、
+    観客の共感を可能にする「善の中心」（ポジティブな核心的価値/資質）
+    を持たなければならない。
+
+  applies_to:
+    - Character(protagonist)
+    - Story
+
+  required_arguments:
+    good_center:
+      description: >
+        観客が感情的に掴める正の核心特性/価値。
+        例: 忠誠心、愛情、勇気、脆さ、誠実さ
+    evidence_scenes:
+      description: >
+        good_center が行動/反応を通じて「示される」シーンのID。
+        テキストとして「説明」されるのではなく。
+
+  compile_time_checks:
+
+    missing_good_center:
+      action: warning
+      message: >
+        主人公に明確な「善の中心」がありません。
+        共感/エンゲージメントのリスクがあります。
+
+    told_not_shown_good_center:
+      action: warning
+      message: >
+        善の中心が行動ではなく説明として提示されています。
+        行動/反応を通じて示してください。
+
+    good_center_contradiction_without_cost:
+      description: >
+        主人公が善の中心に反する行動をした場合、
+        代償/罪悪感/影響がなければ一貫性を損なう。
+      action: warning
+      message: >
+        善の中心の違反に代償がありません。一貫性のリスク。
+
+# ============================================================
+# 心性と感情の連動
+# ============================================================
+mentality_linkage:
+  description: >
+    主人公の感情反応は心性（mentality, global_settingsで定義）から
+    導出されなければならない。感情が心性と無関係に変動する場合は警告。
+  rule: >
+    感情評価は mentality_first の原則に従う。
+    心性 → 世界認知 → 状況解釈 → 感情反応 の順序で導出する。
+  check:
+    emotion_detached_from_mentality:
+      severity: warning
+      message: >
+        主人公の感情反応が心性と整合していません。
+        心性から遡って感情を再評価してください。
+
+# ============================================================
+# 表の性格と実像（Surface vs True Nature）
+# ============================================================
+characterization:
+  surface_vs_true_nature:
+    description: >
+      表の性格描写と実像のズレを構造的に定義する。
+      キャラクターの深みは「見せている自分」と「本当の自分」の
+      ギャップから生まれる。このギャップが物語を通じて明らかになることで
+      キャラククターアークが形成される。
+    status: hook  # 具体設計は未定だが構造として保持
+    fields:
+      surface_persona:
+        type: string
+        required: false
+        description: "他者に見せている性格・行動パターン"
+      true_nature:
+        type: string
+        required: false
+        description: "圧力下で露出する本当の性格"
+      gap_revelation_timing:
+        type: string
+        required: false
+        description: "実像が明らかになるタイミング（例: Act2クライマックス）"
+    compile_time_checks:
+      gap_undefined:
+        severity: info
+        condition: "surface_persona defined but true_nature undefined"
+        message: >
+          表の性格は定義されていますが、実像が未定義です。
+          深みのあるキャラクターには両面の定義を検討してください。
+
+# ============================================================
+# 敵対力制約（Antagonistic Force Constraint）
+# ============================================================
+antagonistic_force_constraint:
+  purpose: >
+    消極的・惰性的な主人公が行動を起こすには、
+    十分な敵対的圧力（外部からの強制力）が必要。
+    行動は「性格 × 圧力」の関数である。
+    圧力が低いなら行動は嘘になる。
+
+  applies_to:
+    - Story
+    - Act
+    - Scene
+    - Action
+
+  protagonist_profile:
+    required_declaration:
+      baseline_drive_level:        # high | medium | low
+        type: enum
+        values: [high, medium, low]
+        description: "主人公の基本的な行動駆動レベル"
+      avoidance_tendency:          # high | medium | low
+        type: enum
+        values: [high, medium, low]
+        description: "主人公の回避傾向"
+
+  antagonistic_force:
+    layers:
+      - internal        # 恐れ・欠落・欲望
+      - interpersonal   # 人間関係的圧力
+      - social          # 制度・集団・権力
+    required_arguments:
+      force_magnitude:          # numeric 0.0 - 1.0
+        type: float
+        range: "0.0 - 1.0"
+      escalation_curve:         # increasing | static | decreasing
+        type: enum
+        values: [increasing, static, decreasing]
+
+  validation_logic:
+    condition: >
+      if protagonist_profile.baseline_drive_level == low
+         or protagonist_profile.avoidance_tendency == high
+      then required_force_threshold: 0.7
+      else required_force_threshold: 0.4
+
+  compile_time_checks:
+
+    insufficient_antagonistic_pressure:
+      description: >
+        消極的主人公なのに敵対力が閾値を超えていない場合、
+        行動が動機づけ不足に感じられる。
+      action: compile_error
+      message: >
+        敵対力が消極的主人公の行動を正当化するには不十分です。
+
+    no_escalation_detected:
+      description: >
+        敵対力が時間経過で上昇しない場合、
+        主人公の行動が停滞する。
+      action: warning
+      message: >
+        敵対力にエスカレーションがありません。
+        増大する圧力で苦闘を正当化してください。
+
+    no_reckless_struggle_detected:
+      description: >
+        低駆動の主人公には少なくとも1つのフェーズで
+        圧力下の不釣り合いな/無謀な行動が必要。
+      action: warning
+      message: >
+        消極的主人公に敵対的圧力下での
+        無謀なもがきが見られません。
+
+# ============================================================
 # スコープ
 # ============================================================
 scope:

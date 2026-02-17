@@ -47,14 +47,13 @@ AI:
 | ⚠️ `warning` | ベストプラクティスからの逸脱 | リスク停滞、安い驚きの兆候 |
 | ℹ️ `info` | 推奨事項・深みの追加ヒント | アイロニーの機会 |
 
-### 4フェーズのコンパイル
-
 ```
 Phase 0: Gate Check     → 世界設定が揃っているか？
 Phase 1: Blueprint      → 主人公・テーマ・幕数が定義されているか？
 Phase 2: Structure      → 各シーンに価値変化があるか？契機事件は適切か？
 Phase 3: Meaning        → クライマックスは意味に満ちているか？
 Phase 4: Balance        → テーマが説教臭くないか？サブプロットのバランスは？
+Phase 5: Quality        → 選択真正性・象徴・緊張リズム・行動影響・敵対力
 ```
 
 ---
@@ -66,16 +65,25 @@ Phase 4: Balance        → テーマが説教臭くないか？サブプロッ�
 | # | モジュール | 検証内容 | 主なルール |
 |---|-----------|---------|-----------|
 | 01 | [構造単位](story-compiler/modules/01_core-structure.yaml) | Event→Beat→Scene→Sequence→Act→Story | 全単位に価値変化が必須 |
-| 02 | [世界設定](story-compiler/modules/02_global-settings.yaml) | 時代・舞台・ジャンル等 | 未定義なら構築に進めない |
+| 02 | [世界設定](story-compiler/modules/02_global-settings.yaml) | 時代・舞台・ジャンル・心性・ドリフト検出 | 未定義なら構築に進めない |
 | 03 | [クライマックス](story-compiler/modules/03_climax-rules.yaml) | 不可逆性・意味強度 | MeaningIntensity算出 |
 | 04 | [物語三角形](story-compiler/modules/04_story-triangle.yaml) | Arc/Mini/Anti + 幕数 | 最低3幕、6幕超えで警告 |
 | 05 | [統制概念](story-compiler/modules/05_controlling-concept.yaml) | テーマ + 対立概念 | 教条主義チェック |
-| 06 | [主人公](story-compiler/modules/06_protagonist.yaml) | 意志・欲望・共感 | 欲望の対象が必須 |
-| 07 | [アクション](story-compiler/modules/07_action-definition.yaml) | 行動→期待→結果→ギャップ | ギャップ0は無意味なシーン |
+| 06 | [主人公](story-compiler/modules/06_protagonist.yaml) | 意志・欲望・心性・表裏・敵対力 | 消極的主人公には強い圧力が必要 |
+| 07 | [アクション](story-compiler/modules/07_action-definition.yaml) | 行動→期待→結果→ギャップ・影響検証 | personal/social影響必須 |
 | 08 | [契機事件](story-compiler/modules/08_inciting-incident.yaml) | 伏線・配置・準備 | 25%以内に発生必須 |
 | 09 | [サブプロット](story-compiler/modules/09_subplot.yaml) | 意図宣言・ドリフト検出 | メインとの関連性スコア |
 | 10 | [意味と結末](story-compiler/modules/10_meaning.yaml) | 意味の生成条件 | 曖昧さの品質チェック |
 | 11 | [驚き](story-compiler/modules/11_surprise.yaml) | 安い驚き vs 構造的驚き | 遡及的必然性の確認 |
+| 12 | [情報提示](story-compiler/modules/12_exposition.yaml) | 説明検出・好奇心駆動・情報ペーシング | 重要度カーブがクライマックスに向け上昇 |
+| 13 | [シーン遷移](story-compiler/modules/13_scene-transition.yaml) | 遷移トリガー・バックストーリー・フラッシュバック | 遷移はaction/backstoryのみ |
+| 14 | [因果関係](story-compiler/modules/14_causal-chain.yaml) | 因果の穴検出・契機→クライマックス整合 | 因果整合スコア ≥ 0.65 |
+| 15 | [ジャンル制約](story-compiler/modules/15_genre-constraints.yaml) | ジャンルの約束事 | 違反はエラー、差し替え可能 |
+| 16 | [選択・表現](story-compiler/modules/16_choice-and-expression.yaml) | 選択の真正性・テキスト過剰説明・サブテキスト | 偶ジレンマ検出、説明よりサブテキストが先 |
+| 17 | [象徴・イメージ](story-compiler/modules/17_symbolism-and-image.yaml) | 象徴検出・中核イメージ検証 | 自然発生は加点、強制はエラー |
+| 18 | [緊張リズム](story-compiler/modules/18_tension-dynamics.yaml) | 緊張/緩和宣言・リズム加速・休憩検出 | クライマックス前に緩和必須 |
+| 19 | [シーン習熟](story-compiler/modules/19_scene-mastery.yaml) | before/after対比・シーン配置最適化 | 構造的変化のないシーンは警告 |
+| 20 | [解釈生成](story-compiler/modules/20_interpretation-layer.yaml) | Insight（洞察）の直接記述禁止 | InsightはTextではなく読者の脳内で再生 |
 
 ---
 
@@ -117,8 +125,8 @@ Phase 4: Balance        → テーマが説教臭くないか？サブプロッ�
 | ソース | 追加予定のモジュール |
 |--------|-------------------|
 | McKee『Character』 | キャラクターアーク、次元の深さ、キャラクター関係性 |
-| McKee『Dialogue』 | サブテキスト、対話の原則、説明の技法 |
-| 独自拡張 | 心性・ムード、ジャンル固有の制約 |
+| McKee『Dialogue』 | 対話の原則 |
+| 独自拡張 | ムード・トーン制御 |
 
 ---
 
@@ -129,7 +137,7 @@ novels/
 ├── README.md                          ← このファイル
 ├── story-compiler/                    ← 物語構造コンパイラ本体
 │   ├── system-prompt.md                  AIに渡すシステムプロンプト
-│   ├── modules/                          原則モジュール (11本)
+│   ├── modules/                          原則モジュール (20本)
 │   ├── templates/                        執筆用テンプレート
 │   └── workflows/                        ワークフロー手順
 └── old/                               ← 過去の小説メモ・断片

@@ -1,0 +1,96 @@
+# ============================================================
+# Module: Interpretation Layer (解釈生成レイヤ)
+# Source: Robert McKee "Story" — Insight Engine
+# Version: 0.1
+# ============================================================
+# Insight（理解・洞察）は「出力」ではなく「副作用」。
+# 作者は insight_target（観客に最終的に到達してほしい理解）を
+# 持っていても、文章には書けない。
+# テキストに許されるのは action と result のみ。
+# Insight は読者の頭の中でのみ発生する。
+# ============================================================
+
+module_id: interpretation_layer
+module_name: "解釈生成レイヤ（Insight Engine）"
+source: "McKee 'Story'"
+
+# ============================================================
+# Insight Engine 定義
+# ============================================================
+insight_engine:
+  inputs:
+    insight_target:
+      description: "観客に最終的に到達してほしい理解（明示しない）"
+      required: true
+
+    value_axis:
+      description: "評価軸（価値の増減を測る基準）"
+      required: true
+
+    controlling_idea:
+      description: "統制概念（物語内では暗黙）"
+      required: true
+
+  # ============================================================
+  # コンパイル時検証
+  # ============================================================
+  compile_time_checks:
+
+    value_axis_activation:
+      description: "各選択・行動が value_axis を動かしているか"
+      failure: compile_error
+
+    causal_chain_integrity:
+      description: "行動 → 結果 → 価値変化 が因果的に成立しているか"
+      failure: compile_error
+
+    no_deus_ex_machina:
+      description: "偶然・説明・作者都合で答えが出ていないか"
+      failure: compile_error
+
+  # ============================================================
+  # ランタイム制約（テキスト生成時）
+  # ============================================================
+  runtime_constraints:
+
+    question_generation:
+      description: "観客の中に「なぜ？」という疑問を生成する状況を作る"
+      explicit_questions_allowed: false
+
+    output_visibility:
+      allowed_outputs:
+        - action            # 行動
+        - result            # 結果
+      forbidden_outputs:
+        - explanation        # 説明
+        - insight_statement   # 洞察の直接記述
+        - thematic_summary   # テーマのまとめ
+
+  # ============================================================
+  # 出力モデル
+  # ============================================================
+  output_model:
+    produced_effect:
+      description: >
+        Insight はシステムが出力するのではなく、
+        観察された行動–結果の連鎖を通じて
+        観客の認知の中で再構成される。
+    validation:
+      insight_directly_stated:
+        action: compile_error
+        message: >
+          Insight（洞察/教訓/テーマ的結論）がテキストに
+          直接記述されています。
+          Insight は行動と結果のみを通じて
+          読者の中で再構成されなければなりません。
+
+  # ============================================================
+  # 連携
+  # ============================================================
+  integration:
+    with_meaning:
+      note: "10_meaning モジュールの意味生成条件と連動"
+    with_controlling_concept:
+      note: "05_controlling-concept の教条主義チェックと連動"
+    with_textual_expression:
+      note: "16_choice-and-expression のサブテキスト制約と連動"

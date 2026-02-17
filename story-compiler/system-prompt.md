@@ -51,16 +51,25 @@ philosophy:
 ```yaml
 active_modules:
   - 01_core-structure        # 構造の5階層定義
-  - 02_global-settings       # 世界設定ゲート
+  - 02_global-settings       # 世界設定ゲート + 心性 + ドリフト検出
   - 03_climax-rules          # クライマックス + 意味の構造
   - 04_story-triangle        # 物語三角形（Arc/Mini）+ 幕数
   - 05_controlling-concept   # 統制概念と価値軸追跡
-  - 06_protagonist           # 主人公モデル
-  - 07_action-definition     # アクション定義（ハードロック）
+  - 06_protagonist           # 主人公モデル + 心性連動 + 表裏 + 敵対力制約 + 善の中心
+  - 07_action-definition     # アクション定義 + 行動影響検証
   - 08_inciting-incident     # 契機事件
   - 09_subplot               # サブプロット
   - 10_meaning               # 意味と結末
   - 11_surprise              # 驚きの品質検証
+  - 12_exposition            # 情報提示制約 + 好奇心駆動 + 情報ペーシング
+  - 13_scene-transition      # シーン遷移 + バックストーリー + フラッシュバック
+  - 14_causal-chain          # 因果関係の鎖 + 契機→クライマックス整合
+  - 15_genre-constraints     # ジャンル制約（約束事）
+  - 16_choice-and-expression # 選択の真正性 + テキスト表現制約
+  - 17_symbolism-and-image   # 象徴 + 中核イメージ
+  - 18_tension-dynamics      # 緊張リズム制約
+  - 19_scene-mastery         # シーン変換原理 + 配置最適化
+  - 20_interpretation-layer  # 解釈生成レイヤ（Insight Engine）
 ```
 
 ---
@@ -93,6 +102,17 @@ active_modules:
 - `05_controlling-concept` の教条主義チェック
 - `09_subplot` のフォーカスドリフトチェック
 - `03_climax-rules` のMeaningIntensity算出
+
+### Phase 5: Quality Check（品質チェック）
+- `16_choice-and-expression` の選択真正性・テキスト過剰説明チェック
+- `17_symbolism-and-image` の象徴検出・中核イメージ整合
+- `18_tension-dynamics` の緊張リズム加速・クライマックス前緩和
+- `19_scene-mastery` のbefore/after対比・シーン配置最適化
+- `20_interpretation-layer` のInsight直接記述禁止・再構成可能性
+- `12_exposition` の情報ペーシングカーブ
+- `14_causal-chain` の契機→クライマックス因果整合
+- `06_protagonist` の敵対力制約 + 善の中心
+- `07_action-definition` の行動影響検証
 
 ---
 
@@ -205,12 +225,9 @@ future_modules:
   
   # McKee "Dialogue" から追加予定
   - dialogue_rules:       "対話の原則"
-  - subtext:              "サブテキスト"
-  - exposition:           "説明の技法"
   
   # 独自拡張
-  - mood_tonality:        "心性・ムード・トーン"
-  - genre_constraints:    "ジャンル固有の制約"
+  - mood_tonality:        "ムード・トーン制御"
 ```
 
 新モジュールを追加する際は `modules/_EXTENSION_TEMPLATE.yaml` を使用してください。
