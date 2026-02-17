@@ -264,6 +264,20 @@
                 ]
             },
             {
+                id: '04_story-triangle',
+                name: 'Story Triangle',
+                filename: '04_story-triangle.yaml',
+                source: "McKee 'Story' - Plot types",
+                description: 'プロットの形式（Archplot, Miniplot, Antiplot）を定義する。形式に応じて適用される制約ルールセットが切り替わる。',
+                errors: 0,
+                params: [
+                    { name: 'plot_type', type: 'enum', required: true, desc: '[archplot, miniplot, antiplot]' }
+                ],
+                validations: [
+                    { code: 'consistency_check', severity: 'warning', message: '選択されたプロット形式と実際の構造特性が矛盾しています（例: Archplotなのに受動的主人公）。', logic: 'plot_type == archplot AND protagonist.active == false' }
+                ]
+            },
+            {
                 id: '05_controlling-concept',
                 name: 'Controlling Concept',
                 filename: '05_controlling-concept.yaml',
@@ -302,6 +316,21 @@
                 ]
             },
             {
+                id: '07_action-definition',
+                name: 'Action Definition',
+                filename: '07_action-definition.yaml',
+                source: "McKee 'Story' - Action",
+                description: '「アクション」とは単なる「動き」ではなく、「期待と結果のギャップを生む意図的な行動」である。ギャップのない行動は「ただの活動（activity）」として警告される。',
+                params: [
+                    { name: 'intention', type: 'string', required: true, desc: 'キャラクターの意図・期待' },
+                    { name: 'result', type: 'string', required: true, desc: '実際の反応・結果' },
+                    { name: 'gap', type: 'boolean', required: true, desc: '期待と結果にズレがあるか' }
+                ],
+                validations: [
+                    { code: 'activity_warning', severity: 'warning', message: '期待と結果のギャップがありません。これは「アクション」ではなく「活動」です。', logic: 'intention == result' }
+                ]
+            },
+            {
                 id: '08_inciting-incident',
                 name: 'Inciting Incident',
                 filename: '08_inciting-incident.yaml',
@@ -315,6 +344,51 @@
                 validations: [
                     { code: 'late_incident', severity: 'warning', message: '契機事件の発生が遅すぎます（全量の15%以降）。', logic: 'incident.position > total_length * 0.15' },
                     { code: 'no_disruption', severity: 'compile_error', message: '主人公の生活バランスを崩していません。', logic: 'balance_change == 0' }
+                ]
+            },
+            {
+                id: '09_subplot',
+                name: 'Subplot Specs',
+                filename: '09_subplot.yaml',
+                source: "McKee 'Story' - Subplot",
+                description: 'サブプロットの定義。メインプロットとは異なる価値軸で展開し、メインプロットとテーマ的に共鳴または対比される必要がある。',
+                params: [
+                    { name: 'relationship_to_main', type: 'enum', required: true, desc: '[thematic_contradiction, resonance, complicate]' }
+                ],
+                validations: [
+                    { code: 'distraction_warning', severity: 'warning', message: 'サブプロットがメインプロットのクライマックスを邪魔しています。', logic: 'subplot.climax.position == main.climax.position' }
+                ]
+            },
+            {
+                id: '10_meaning',
+                name: 'Meaning',
+                filename: '10_meaning.yaml',
+                source: "McKee 'Story' - Meaning",
+                description: '「美的な感情（Aesthetic Emotion）」の生成。思考と感情の同時発火を「意味」と定義し、その最大化を目指す。',
+                params: [],
+                validations: [
+                    { code: 'separation_warning', severity: 'warning', message: '感情と思考が分離しています。これらは同時に起こるべきです。', logic: 'emotion_peak != insight_peak' }
+                ]
+            },
+            {
+                id: '11_surprise',
+                name: 'Surprise',
+                filename: '11_surprise.yaml',
+                source: "McKee 'Story' - Curiosity",
+                description: '好奇心（Curiosity）とサスペンス（Suspense）の管理。チープな驚きではなく、後になって「必然だった」と分かる「真の驚き」を要求。',
+                validations: [
+                    { code: 'cheap_surprise', severity: 'error', message: '必然性のない驚きです。読者は騙されたと感じます。', logic: 'surprise.foreshadowing == NULL' }
+                ]
+            },
+            {
+                id: '12_exposition',
+                name: 'Exposition (Show Don\'t Tell)',
+                filename: '12_exposition.yaml', // Grouping related
+                source: "McKee 'Story' - Exposition",
+                description: '説明的情報の管理。台詞に情報を詰め込む「Info Dump」を検出し、情報の劇的な提示（争いの中での露出など）を推奨。',
+                errors: 1,
+                validations: [
+                    { code: 'info_dump', severity: 'warning', message: '台詞中の情報密度が高すぎます。不自然な会話です。', logic: 'dialogue.info_density > 0.6' }
                 ]
             },
             {
@@ -370,13 +444,53 @@
             {
                 id: '16_choice-and-expression',
                 name: 'Choice & Expression',
-                filename: '12_exposition.yaml', // Grouping related
+                filename: '16_choice-and-expression.yaml',
                 source: "McKee 'Story' - Choice",
                 description: '真の選択（ジレンマ）の定義。善vs悪の偽の選択ではなく、善vs善、悪vs悪の選択を要求する。',
                 errors: 1,
                 params: [],
                 validations: [
                     { code: 'fake_choice', severity: 'compile_error', message: '選択が明白すぎます（善vs悪）。ジレンマになっていません。', logic: 'choice.option_a.value != choice.option_b.value' }
+                ]
+            },
+            {
+                id: '17_symbolism-and-image',
+                name: 'Symbolism & Image',
+                filename: '17_symbolism-and-image.yaml',
+                source: "McKee 'Story' - Symbolism",
+                description: '象徴とイメージシステム。象徴は「後から自然に立ち上がる」べきもので、強制されるものではない。',
+                validations: [
+                    { code: 'forced_symbolism', severity: 'warning', message: '象徴が不自然に強調されています。', logic: 'symbol.repetition > threshold AND narrative_relevance < low' }
+                ]
+            },
+            {
+                id: '18_tension-dynamics',
+                name: 'Tension Dynamics',
+                filename: '18_tension-dynamics.yaml',
+                source: "McKee 'Story' - Rhythm",
+                description: '緊張と緩和のリズム。クライマックスの前に必ず「緩和」が必要。一本調子な緊張は読者を麻痺させる。',
+                validations: [
+                    { code: 'monotone_tension', severity: 'warning', message: '緊張の緩和がありません。読者が疲弊します。', logic: 'tension_duration > threshold' }
+                ]
+            },
+            {
+                id: '19_scene-mastery',
+                name: 'Scene Mastery',
+                filename: '19_scene-mastery.yaml',
+                source: "McKee 'Story' - Composition",
+                description: 'シーン配置の最適化。同じ意味を持つシーンの重複を避け、効果が最大になる順序を探索する。',
+                validations: [
+                    { code: 'repetitive_scene', severity: 'info', message: '同じ価値変化を持つシーンが重複しています。統合を検討してください。', logic: 'sceneA.value_change == sceneB.value_change' }
+                ]
+            },
+            {
+                id: '20_interpretation-layer',
+                name: 'Interpretation Layer',
+                filename: '20_interpretation-layer.yaml',
+                source: "McKee 'Story' - Insight",
+                description: '解釈レイヤー。Insight（洞察）は読者の脳内で発生するもの。テキストに答えを書いてしまっていないかチェックする。',
+                validations: [
+                    { code: 'explicit_insight', severity: 'warning', message: '洞察（テーマの答え）を台詞で語らせています。サブテキストに埋め込んでください。', logic: 'dialogue.content contains theme.statement' }
                 ]
             }
         ];
