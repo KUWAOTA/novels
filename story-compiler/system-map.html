@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Compiler — System Map</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+        :root {
+            --bg: #0f172a;
+            --bg-card: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #334155;
+            --accent: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.2);
+            --error: #ef4444;
+            --warning: #f59e0b;
+            --info: #10b981;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            padding: 40px;
+            min-height: 100vh;
+        }
+
+        header {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(to right, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 24px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Module Card */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+            border-color: var(--accent);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--accent);
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        .module-id {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: var(--accent);
+            background: rgba(59, 130, 246, 0.1);
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 4px;
+        }
+
+        .source {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .desc {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Constraints Tags */
+        .constraints {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            font-size: 10px;
+            padding: 3px 8px;
+            border-radius: 99px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .tag.error {
+            background: rgba(239, 68, 68, 0.15);
+            color: var(--error);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+
+        .tag.warning {
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--warning);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+
+        .tag.info {
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--info);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
+        /* Section Dividers */
+        .section-title {
+            grid-column: 1 / -1;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin: 40px 0 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Story Compiler System Map</h1>
+        <p class="subtitle">
+            Robert McKeeの「Story」に基づく物語構造コンパイラの制約一覧。<br>
+            物語が構造的に成立しているか、品質リスクがないかを各モジュールが検証します。
+        </p>
+    </header>
+
+    <div class="grid">
+
+        <!-- ======================== CORE ======================== -->
+        <div class="section-title">Core Architecture (骨格)</div>
+
+        <div class="card">
+            <div class="module-id">01_core-structure</div>
+            <h2>Core Structure</h2>
+            <div class="source">構造定義</div>
+            <p class="desc">Act, Sequence, Scene, Beatという物語の階層構造を定義。全ての物語単位が「変化」を持つことを強制する。</p>
+            <div class="constraints">
+                <span class="tag error">Structure Error</span>
+                <span class="tag warning">Value Stagnation</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="module-id">02_global-settings</div>
+            <h2>Global Settings</h2>
+            <div class="source">世界観・前提</div>
+            <p class="desc">時代、期間、場所、争点などのグローバル設定。これらが未定義の場合、コンパイルは開始されない。</p>
+            <div class="constraints">
+                <span class="tag error">Missing Field</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="module-id">05_controlling-concept</div>
+            <h2>Controlling Concept</h2>
+            <div class="source">統制概念・テーマ</div>
+            <p class="desc">物語の「主旨」と「カウンターアイデア」を定義。物語全体が単一のテーマのもとに統一されているかを検証。</p>
+            <div class="constraints">
+                <span class="tag error">Didacticism (説教臭さ)</span>
+                <span class="tag warning">Thematic Noise</span>
+            </div>
+        </div>
+
+        <!-- ======================== CHARACTER ======================== -->
+        <div class="section-title">Character & Act (人物・構成)</div>
+
+        <div class="card">
+            <div class="module-id">06_protagonist</div>
+            <h2>Protagonist Model</h2>
+            <div class="source">主人公</div>
+            <p class="desc">主人公の意志、欲望、共感性を定義。受動的すぎる主人公や、行動を起こさない主人公を検出する。</p>
+            <div class="constraints">
+                <span class="tag error">Passive Protagonist</span>
+                <span class="tag warning">Weak Motivation</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="module-id">03_climax-rules</div>
+            <h2>Climax Rules</h2>
+            <div class="source">クライマックス</div>
+            <p class="desc">物語の不可逆的な変化点。クライマックスが存在しない、または弱い（後戻り可能である）場合エラーとする。</p>
+            <div class="constraints">
+                <span class="tag error">Missing Climax</span>
+                <span class="tag error">Reversible Change</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="module-id">08_inciting-incident</div>
+            <h2>Inciting Incident</h2>
+            <div class="source">契機事件</div>
+            <p class="desc">物語を開始させる事件。主人公のバランスを崩し、欲望を喚起するもの。これが遅すぎる場合警告。</p>
+            <div class="constraints">
+                <span class="tag warning">Late Incident</span>
+                <span class="tag error">No Disruption</span>
+            </div>
+        </div>
+
+        <!-- ======================== PLOT LOGIC ======================== -->
+        <div class="section-title">Logic & Transitions (論理・遷移)</div>
+
+        <div class="card">
+            <div class="module-id">14_causal-chain</div>
+            <h2>Causal Chain</h2>
+            <div class="source">因果の鎖</div>
+            <p class="desc">出来事AがBを引き起こすという因果の連続性。偶然に頼りすぎた展開や、脈絡のない断絶を「穴」として検出。</p>
+            <div class="constraints">
+                <span class="tag error">Broken Chain</span>
+                <span class="tag warning">Deus Ex Machina</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="module-id">13_scene-transition</div>
+            <h2>Scene Transition</h2>
+            <div class="source">シーン遷移</div>
+            <p class="desc">シーン間の接続ルール。単なる「そして」「次に」ではなく、「しかし」「だから」で繋がるべき。</p>
+            <div class="constraints">
+                <span class="tag warning">Weak Transition</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="module-id">15_genre-constraints</div>
+            <h2>Genre Constraints</h2>
+            <div class="source">ジャンル</div>
+            <p class="desc">選択したジャンル固有の「約束事」を守っているか。必須シーン（オブリガトリー・シーン）の欠如をチェック。</p>
+            <div class="constraints">
+                <span class="tag error">Missing Convention</span>
+            </div>
+        </div>
+
+        <!-- ======================== EXPRESSION ======================== -->
+        <div class="section-title">Expression & Quality (表現・品質)</div>
+
+        <div class="card">
+            <div class="module-id">12_exposition</div>
+            <h2>Exposition</h2>
+            <div class="source">説明・露骨</div>
+            <p class="desc">台詞による過度な説明（Info Dump）や、直接的な感情描写を検出。「見せて魅せる（Show, Don't Tell）」を推奨。</p>
+            <div class="constraints">
+                <span class="tag warning">Info Dump</span>
+                <span class="tag info">Direct Emotion</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="module-id">16_choice-and-expression</div>
+            <h2>Choice & Expression</h2>
+            <div class="source">選択の真正性</div>
+            <p class="desc">選択が「善vs悪」になっていないか。「善vs善」または「悪vs悪」のジレンマのみが真の性格を明らかにする。</p>
+            <div class="constraints">
+                <span class="tag error">Fake Choice</span>
+                <span class="tag info">Subtext Opportunity</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="module-id">19_scene-mastery</div>
+            <h2>Scene Mastery</h2>
+            <div class="source">シーン最適化</div>
+            <p class="desc">Before/Afterの対比による変化の最大化。シーン配置の最適化を提案。</p>
+            <div class="constraints">
+                <span class="tag info">Weak Contrast</span>
+                <span class="tag info">Optimized Order</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="module-id">20_interpretation-layer</div>
+            <h2>Interpretation Layer</h2>
+            <div class="source">解釈生成</div>
+            <p class="desc">Insight（洞察）は読者の脳内で発生するもの。テキストに「答え」を書いてしまっていないかをチェック。</p>
+            <div class="constraints">
+                <span class="tag warning">Explicit Insight</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -803,6 +803,147 @@
         document.getElementById('zoomOut').addEventListener('click', () => setZoom(scale - 0.15));
         document.getElementById('zoomReset').addEventListener('click', () => { setZoom(1); canvasWrapper.scrollTo(0, 200); });
 
+        // ═══════════════════════════════════════════════════════
+        // EDITOR MODE (Collaboration UI)
+        // ═══════════════════════════════════════════════════════
+
+        // 1. Create Editor UI Elements
+        const editorBtn = document.createElement('button');
+        editorBtn.textContent = '＋ アイデアを追加';
+        editorBtn.className = 'zoom-btn'; // Reuse style + overwrite
+        editorBtn.style.width = 'auto';
+        editorBtn.style.padding = '0 16px';
+        editorBtn.style.fontSize = '12px';
+        editorBtn.style.fontWeight = '600';
+        editorBtn.style.background = 'var(--accent-branch)';
+        editorBtn.style.borderColor = 'transparent';
+        editorBtn.style.marginBottom = '10px';
+        editorBtn.onclick = openEditor;
+
+        document.querySelector('.zoom-controls').prepend(editorBtn);
+
+        const editorPanel = document.createElement('div');
+        editorPanel.className = 'detail-panel'; // Reuse panel style
+        editorPanel.style.height = '60vh';
+        editorPanel.style.maxHeight = '60vh';
+        editorPanel.style.zIndex = '250';
+        editorPanel.id = 'editorPanel';
+        editorPanel.innerHTML = `
+            <button class="detail-panel-close" id="editorClose">✕</button>
+            <div class="detail-header" style="margin-bottom:8px;">
+                <h2 style="font-size:16px;">💡 新しいアイデアを提案</h2>
+            </div>
+            <p style="font-size:11px; color:var(--text-muted); margin-bottom:16px; line-height:1.4;">
+                現在、GitHub Pages上での直接保存はできません。<br>
+                アイデアを入力し、<strong>「Issueで提案」</strong>するか、<strong>YAMLをコピー</strong>して管理者に送ってください。
+            </p>
+            
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-bottom:12px;">
+                <div>
+                    <label style="font-size:10px; color:var(--text-muted); display:block; margin-bottom:4px;">親ノード (Parent)</label>
+                    <select id="editParent" style="width:100%; padding:6px; background:var(--bg-surface); border:1px solid var(--border); color:var(--text); border-radius:6px; font-size:12px;"></select>
+                </div>
+                <div>
+                    <label style="font-size:10px; color:var(--text-muted); display:block; margin-bottom:4px;">ID (例: FC-10)</label>
+                    <input id="editId" type="text" placeholder="自動生成" style="width:100%; padding:6px; background:var(--bg-surface); border:1px solid var(--border); color:var(--text); border-radius:6px; font-size:12px;">
+                </div>
+            </div>
+
+            <div style="margin-bottom:12px;">
+                <label style="font-size:10px; color:var(--text-muted); display:block; margin-bottom:4px;">タイトル (Label)</label>
+                <input id="editLabel" type="text" style="width:100%; padding:6px; background:var(--bg-surface); border:1px solid var(--border); color:var(--text); border-radius:6px; font-size:12px;">
+            </div>
+
+            <div style="margin-bottom:12px;">
+                <label style="font-size:10px; color:var(--text-muted); display:block; margin-bottom:4px;">内容・詳細 (Description)</label>
+                <textarea id="editDesc" rows="3" style="width:100%; padding:6px; background:var(--bg-surface); border:1px solid var(--border); color:var(--text); border-radius:6px; font-family:sans-serif; font-size:12px;"></textarea>
+            </div>
+
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-bottom:20px;">
+                 <div>
+                    <label style="font-size:10px; color:var(--text-muted); display:block; margin-bottom:4px;">ステータス</label>
+                    <select id="editStatus" style="width:100%; padding:6px; background:var(--bg-surface); border:1px solid var(--border); color:var(--text); border-radius:6px; font-size:12px;">
+                        <option value="candidate">Candidate (候補)</option>
+                        <option value="preferred">Preferred (有力)</option>
+                        <option value="deferred">Deferred (保留)</option>
+                        <option value="rejected">Rejected (却下)</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="font-size:10px; color:var(--text-muted); display:block; margin-bottom:4px;">価値変化 (Value Change)</label>
+                    <input id="editValue" type="text" placeholder="例: 絶望 → 希望" style="width:100%; padding:6px; background:var(--bg-surface); border:1px solid var(--border); color:var(--text); border-radius:6px; font-size:12px;">
+                </div>
+            </div>
+
+            <div style="display:flex; gap:12px;">
+                <a id="btnIssue" target="_blank" href="#" style="flex:1; text-align:center; padding:10px; background:var(--bg-card); border:1px solid var(--border); border-radius:6px; color:var(--text); text-decoration:none; font-size:12px; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:6px; transition:0.2s;">
+                    <span style="font-size:14px;">🐙</span> Issueで提案
+                </a>
+                <button id="btnCopy" style="flex:1; padding:10px; background:var(--accent-branch); border:none; border-radius:6px; color:white; font-weight:600; cursor:pointer; font-size:12px;">
+                    📋 YAMLコピー
+                </button>
+            </div>
+        `;
+        document.body.appendChild(editorPanel);
+
+        // 2. Logic
+        function openEditor() {
+            const select = document.getElementById('editParent');
+            select.innerHTML = '';
+            // Sort nodes by ID for easier finding
+            const sorted = [...nodes].sort((a, b) => a.id.localeCompare(b.id));
+            sorted.forEach(n => {
+                const opt = document.createElement('option');
+                opt.value = n.id;
+                opt.textContent = `${n.id}: ${n.label.replace(/\\n/g, ' ')}`;
+                select.appendChild(opt);
+            });
+            editorPanel.classList.add('open');
+            document.getElementById('detailPanel').classList.remove('open');
+            updateIssueLink();
+        }
+
+        document.getElementById('editorClose').addEventListener('click', () => {
+            editorPanel.classList.remove('open');
+        });
+
+        function generateYAML() {
+            const id = document.getElementById('editId').value || 'NEW-ID';
+            const label = document.getElementById('editLabel').value || 'タイトルなし';
+            const desc = document.getElementById('editDesc').value || '';
+            const parent = document.getElementById('editParent').value;
+            const status = document.getElementById('editStatus').value;
+            const value = document.getElementById('editValue').value;
+
+            return `- id: ${id}\n  label: "${label}"\n  description: >\n    ${desc.replace(/\\n/g, '\\n    ')}\n  parent: "${parent}"\n  status: ${status}\n  type: beat${value ? `\n  value_change: "${value}"` : ''}`;
+        }
+
+        function updateIssueLink() {
+            const yaml = generateYAML();
+            const label = document.getElementById('editLabel').value || 'New Idea';
+            const desc = document.getElementById('editDesc').value || '';
+            const title = `[Idea]: ${label}`;
+            const body = `新しいアイデアの提案です。\n\n\`\`\`yaml\n${yaml}\n\`\`\`\n\n**概要:**\n${desc}`;
+
+            const btn = document.getElementById('btnIssue');
+            btn.href = `https://github.com/KUWAOTA/novels/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+        }
+
+        document.getElementById('btnCopy').addEventListener('click', () => {
+            const yaml = generateYAML();
+            navigator.clipboard.writeText(yaml).then(() => {
+                const btn = document.getElementById('btnCopy');
+                const orig = btn.textContent;
+                btn.textContent = '✅ Copied!';
+                setTimeout(() => { btn.textContent = orig; }, 2000);
+            });
+        });
+
+        ['editId', 'editLabel', 'editDesc', 'editParent', 'editStatus', 'editValue'].forEach(id => {
+            document.getElementById(id).addEventListener('input', updateIssueLink);
+            document.getElementById(id).addEventListener('change', updateIssueLink);
+        });
+
         // Initial scroll to show root
         setTimeout(() => { canvasWrapper.scrollTo(0, 200); }, 200);
     </script>
