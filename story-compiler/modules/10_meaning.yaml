@@ -1,0 +1,57 @@
+# ============================================================
+# Module: Meaning & Ambiguous Ending
+# Source: Robert McKee "Story" — 意味 + 結末の類型
+# Version: 0.2
+# ============================================================
+# 「意味がある物語」とは何か、を構造化。
+# 意図的な曖昧さと、ただの曖昧さを区別する。
+# ============================================================
+
+module_id: meaning
+module_name: "意味と結末（Meaning & Ending）"
+source: "McKee 'Story'"
+
+# ============================================================
+# 意味の必要条件  
+# ============================================================
+meaning_conditions:
+  required:
+    - value_change_occurred: true        # 価値が動いたか
+    - irreversibility: true              # 不可逆か
+    - audience_model_update: true        # 受け手の世界モデルが更新されるか
+  optional:
+    - irony: false                       # アイロニーは増幅器
+
+# ============================================================
+# 曖昧な結末（Optional Compiler）
+# ============================================================
+ambiguous_ending:
+  enabled_by_flag: "ambiguousEnding"
+  purpose:
+    distinguish_intended_ambiguity_from_vagueness: true
+    description: >
+      「意図的な二面性」と「単なるぼんやり」を区別する。
+      MiniPlot系では意図的な曖昧さが許容されるが、
+      構造的な裏付けが必要。
+
+  requirements_for_intended_ambiguity:
+    - "二つの解釈がそれぞれ因果的に成立する"
+    - "読者にどちらの解釈を選ぶか委ねている意図が明確"
+    - "両方の解釈が統制概念と整合する"
+
+  vague_ambiguity_detected:
+    severity: warning_or_error
+    message: "曖昧さが意図的でない可能性があります。二面性を構造化してください"
+
+# ============================================================
+# アイロニー
+# ============================================================
+irony_evaluation:
+  description: >
+    アイロニーとは、表面の出来事と深層の意味が反転している状態。
+    クライマックスでアイロニーが成立すると意味密度が最大化する。
+  detection:
+    - "表面的な勝利が実質的な敗北"
+    - "表面的な敗北が実質的な勝利"
+    - "主人公の行動が皮肉な結果を生む"
+  bonus_if_present: true

@@ -1,0 +1,42 @@
+# ============================================================
+# Scene Template — シーン設計テンプレート
+# ============================================================
+
+type: Scene
+id: ""                       # 例: S1, ACT1-SEQ1-S1
+summary: ""                  # 1行要約
+
+# 価値軸と変化
+axes: []                     # このシーンで動く価値軸
+value_change:
+  axis: ""                   # メインの価値軸
+  from: ""                   # 変化前の状態
+  to: ""                     # 変化後の状態
+  cause: ""                  # 変化の原因
+
+# 連続性
+continuity:
+  time: ""                   # いつ
+  space: ""                  # どこ
+  pov: ""                    # 誰の視点
+  state: {}                  # 世界状態のスナップショット
+  links: []                  # 前後のシーンへのリンク
+
+# アクション（シーン内のアクション/リアクションの連鎖）
+beats:
+  - id: ""
+    action: ""               # 主人公が何をしたか
+    expectation: ""          # 期待した結果
+    result: ""               # 実際の結果
+    gap: ""                  # ギャップ
+    risk: ""                 # リスク
+    conflict_types: []       # internal | personal | non_personal
+
+# 統制概念参照
+controlling_refs: []         # 参照する統制概念
+
+# サブプロットフラグ
+subplot_ref: ""              # サブプロットIDがあれば記入
+
+# 子要素
+children: []

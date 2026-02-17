@@ -1,0 +1,112 @@
+# ============================================================
+# Module: Climax Rules & Meaning Evaluation
+# Source: Robert McKee "Story" — クライマックス + 意味の構造
+# Version: 0.2
+# ============================================================
+# クライマックスは物語の最重要ノード。
+# ここが弱ければ物語全体が崩壊する。
+# コンパイラは「意味に満ちたクライマックス」を構造的に保証する。
+# ============================================================
+
+module_id: climax_rules
+module_name: "クライマックス制約（Climax Rules）"
+source: "McKee 'Story'"
+
+# クライマックスを実装できる構造レベル
+implemented_by:
+  - Act
+  - Story
+
+# ============================================================
+# 基本条件
+# ============================================================
+conditions:
+  irreversible_change_required: true
+  description: "クライマックスの価値変化は不可逆でなければならない"
+
+# ============================================================
+# 意味の生成条件（Meaning Definition）
+# ============================================================
+meaning_definition:
+  definition: >
+    Meaning is the irreversible value-linked transformation
+    that forces an update in the audience's world-model.
+    （意味とは、不可逆な価値連動変容であり、
+    受け手の世界モデルの更新を強いるもの）
+
+  necessary_conditions:
+    - value_change          # 価値が動いている
+    - irreversibility       # 戻せない
+    - world_model_update    # 受け手の認知を揺さぶる
+
+  optional_amplifiers:
+    - irony_amplifier       # アイロニーが意味を増幅
+
+  output:
+    - audience_cognitive_shift      # 認知シフト
+    - audience_emotional_activation # 感情の発火
+
+# ============================================================
+# クライマックス専用 MeaningScore
+# ============================================================
+climax_meaning_evaluation:
+  required_conditions:
+    - central_value_axis_resolved     # 中央価値軸が決着
+    - irreversible_value_state        # 不可逆な価値状態
+    - causal_chain_complete           # 因果連鎖が完結
+    - controlling_idea_embodied       # 統制概念が体現されている
+    - expectation_peak_gap            # 期待と結果の最大ギャップ
+
+  scoring:
+    formula: >
+      MeaningIntensity =
+        ValueShiftMagnitude *
+        IrreversibilityFactor *
+        CausalDensity *
+        ExpectationGap *
+        ControllingIdeaConvergence
+    scale: "0.0 to 1.0"
+    warning_threshold: 0.75
+    error_threshold: 0.3
+
+  prior_choice_convergence:
+    description: "すべての主要な事前選択がクライマックスに貢献しているか"
+    rule: "∀ prior_choice: contributes_to_climax == true"
+    violation: warning
+
+# ============================================================
+# コンパイル検証ルール
+# ============================================================
+validation:
+  no_climax:
+    severity: compile_error
+    applies_to: [Act, Story]
+    message: "幕/ストーリーにクライマックスが定義されていません"
+
+  reversible_change:
+    severity: compile_error
+    message: "クライマックスの価値変化が可逆的です。不可逆的な変化が必要です"
+
+  missing_central_value_resolution:
+    severity: compile_error
+    message: "中央価値軸がクライマックスで決着していません"
+
+  weak_causal_chain:
+    severity: compile_error
+    message: "契機事件からクライマックスへの因果連鎖が不十分です"
+
+  controlling_idea_not_embodied:
+    severity: compile_error
+    message: "統制概念がクライマックスで体現されていません（言語化ではなく体験として）"
+
+  low_expectation_gap:
+    severity: warning
+    message: "期待と結果のギャップがクライマックスで最大になっていません"
+
+  gradient_decrease:
+    severity: warning
+    message: "前段より価値勾配が小さくなっています（失速の兆候）"
+
+  low_meaning_intensity:
+    severity: warning
+    message: "MeaningIntensityスコアが閾値を下回っています"

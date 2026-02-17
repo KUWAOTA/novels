@@ -1,0 +1,120 @@
+# ============================================================
+# Module: Global Settings (Mandatory Gate)
+# Source: Robert McKee "Story" — 設定レイヤ
+# Version: 0.2
+# ============================================================
+# 物語の執筆を開始する前に、世界観の基本設定を宣言しなければならない。
+# プログラミングにおけるconfig/envのように、
+# これが定義されないと構造構築が始められない。
+# ============================================================
+
+module_id: global_settings
+module_name: "世界設定ゲート（Global Settings Gate）"
+source: "McKee 'Story'"
+
+gate:
+  required_before_start: true
+  description: >
+    この設定が完了するまでシーン/幕/ストーリーの構築に進めない。
+    コンパイラはまずこのチェックを走らせる。
+
+# 必須フィールド
+fields:
+  era:
+    required: true
+    type: string
+    description: "時代設定（例: 現代, 中世ヨーロッパ, 近未来2050年）"
+
+  duration:
+    required: true
+    type: string
+    description: "物語が扱う時間幅（例: 3日間, 1年, 一生涯）"
+
+  setting:
+    required: true
+    type: string
+    description: "主要舞台（例: 東京渋谷, 架空都市ネオアカデミア）"
+
+  conflict_level:
+    required: true
+    type: enum
+    values: [internal, personal, non_personal, combined]
+    description: >
+      葛藤のレベル。
+      internal = 内面的, personal = 対人的, 
+      non_personal = 社会/環境的, combined = 複合
+
+  livelihood:
+    required: true
+    type: string
+    description: "登場人物がどうやって生計を立てているか"
+
+  power_structure:
+    required: true
+    type: string
+    description: "誰が主人公に対して権力を持ち、どのように行使するか"
+
+  genre:
+    required: true
+    type: string
+    description: "主ジャンル（例: サスペンス, 恋愛, SF, 文学）"
+
+  backstory:
+    required: true
+    type: string
+    description: "物語開始前に起きた重要な出来事"
+
+  character_origins:
+    required: true
+    type: string
+    description: "主要キャラクターの出自・背景"
+
+  cast_definition:
+    required: true
+    type: string
+    description: "主要登場人物のリストと役割定義"
+
+  # オプションフィールド
+  world_values:
+    required: false
+    type: string
+    description: "この世界で人々が何を大切にしているか"
+
+  social_rules:
+    required: false
+    type: string
+    description: "この世界の社会ルール・タブー"
+
+# ============================================================
+# 制約ルール
+# ============================================================
+enforcement:
+  undefined_required_settings:
+    severity: compile_error
+    message: "必須の世界設定が未定義です。物語構築を開始できません"
+
+  late_consistent_definition:
+    severity: allowed
+    description: >
+      設定を後から追加・詳細化することは許可。
+      ただし既存設定と矛盾する場合はエラー。
+
+  setting_contradiction:
+    severity: compile_error
+    message: "既存の世界設定と矛盾する定義が検出されました"
+
+# 設定の詳細度と検証の厳密さの関係
+detail_threshold:
+  required_for_completion: true
+  more_detail_means_stricter_validation: true
+  description: >
+    設定を詳細に書くほど、シーン内でその設定との矛盾チェックが厳しくなる。
+    これは意図的な設計で、詳細な世界観を作るほど一貫性が保証される。
+
+# ベストチョイス原則
+best_choice_principle:
+  preferred_alternatives: 3
+  single_option_allowed_with_warning: true
+  description: >
+    設定の各要素について、可能であれば3つの選択肢を検討すること。
+    単一案しかない場合はwarning（ただし進行は可能）。

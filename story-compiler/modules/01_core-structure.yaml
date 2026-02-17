@@ -1,0 +1,106 @@
+# ============================================================
+# Module: Core Structural Types
+# Source: Robert McKee "Story" — 構造の5階層
+# Version: 0.2
+# ============================================================
+# 物語はネストされた構造単位で構成される。
+# 各単位は同じ基本インターフェースを持つ（フラクタル構造）。
+# 上位ほどクライマックスと価値変化の振幅が大きい。
+# ============================================================
+
+module_id: core_structure
+module_name: "物語構造単位（Story Architecture）"
+source: "McKee 'Story'"
+
+structural_units:
+  # 最小単位から最大単位へ
+  types:
+    - Event     # 物理的行動・発話の最小単位
+    - Beat      # アクション/リアクションの交換単位
+    - Scene     # 連続する時空間内で価値が変化する単位
+    - Sequence  # シーンの連なり。独自の小クライマックスを持つ
+    - Act       # シーケンスの連なり。重大な価値変化を持つ
+    - Story     # 全体。最大のクライマックスで統制概念が証明される
+
+  # 全単位に共通する必須プロパティ（インターフェース）
+  common_interface:
+    id:
+      type: string
+      required: true
+      description: "一意の識別子（例: S1, ACT2, SEQ1-3）"
+
+    summary:
+      type: string
+      required: true
+      description: "何が起きるかの1行要約"
+
+    value_axes:
+      type: list[string]
+      required: true
+      description: "この単位で動く価値軸（例: 正義⇔不正義, 愛⇔孤独）"
+
+    value_change:
+      type: object
+      required: true
+      description: "価値のfrom → to変化"
+      fields:
+        axis: { type: string, required: true }
+        from: { type: string, required: true }
+        to:   { type: string, required: true }
+        cause: { type: string, required: true, description: "なぜ変化したか" }
+
+    continuity:
+      type: object
+      required: true
+      description: "連続性の追跡"
+      fields:
+        time:  { type: string, required: true }
+        space: { type: string, required: true }
+        pov:   { type: string, required: true }
+        state: { type: object, required: false, description: "世界状態のスナップショット" }
+        links: { type: list, required: false, description: "前後の単位へのリンク" }
+
+    children:
+      type: list
+      required: false
+      description: "子単位のリスト"
+
+    controlling_refs:
+      type: list[string]
+      required: false
+      description: "参照する統制概念ID"
+
+  # フラクタル構造の制約
+  fractal_constraint:
+    description: >
+      すべての構造単位はクライマックス構造と葛藤構造を持つ。
+      ただし粒度に応じて振幅が異なる。
+    scale_rule:
+      - "Event: 微小な価値シフト"
+      - "Beat: 小さな価値シフト"  
+      - "Scene: 明確な価値変化（+⇔-）"
+      - "Sequence: 中程度の価値変化"
+      - "Act: 大きな価値変化（不可逆）"
+      - "Story: 最大の価値変化（不可逆 + 統制概念の証明）"
+
+# ============================================================
+# コンパイル検証ルール
+# ============================================================
+validation:
+  missing_value_change:
+    severity: compile_error
+    message: "構造単位に価値変化（value_change）が定義されていません"
+
+  missing_id:
+    severity: compile_error
+    message: "構造単位にIDが定義されていません"
+
+  empty_children_in_upper_unit:
+    severity: warning
+    applies_to: [Scene, Sequence, Act, Story]
+    message: "上位構造単位に子がありません。分割を検討してください"
+
+  scale_violation:
+    severity: warning
+    description: "下位単位の価値変化振幅が上位を超えている"
+    message: "子単位の価値変化が親単位より大きい可能性があります"

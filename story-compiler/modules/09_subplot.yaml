@@ -1,0 +1,79 @@
+# ============================================================
+# Module: Subplot Rules
+# Source: Robert McKee "Story" — サブプロット
+# Version: 0.2
+# ============================================================
+# サブプロットはオプションだが、
+# 存在する場合は意図とメインプロットとの関係性を宣言する。
+# ============================================================
+
+module_id: subplot
+module_name: "サブプロット制約（Subplot Rules）"
+source: "McKee 'Story'"
+
+optional: true
+
+# ============================================================
+# 意図の宣言
+# ============================================================
+intent_declaration:
+  required: true
+  options:
+    - negate_controlling_concept     # 統制概念を否定する
+    - resonate_controlling_concept   # 統制概念を共鳴で補強
+    - delay_inciting_incident        # 契機事件を遅延させる
+    - complicate_main_plot           # メインプロットを複雑化
+
+  missing_intent:
+    severity: warning
+    message: "サブプロットの意図が宣言されていません"
+
+# ============================================================
+# フォーカスドリフトチェック
+# ============================================================
+focus_drift_check:
+  subplot_overwhelms_main:
+    severity: warning
+    message: "サブプロットがメインプロットより支配的になっています"
+
+# ============================================================
+# 共感シフトチェック
+# ============================================================
+empathy_shift:
+  subplot_protagonist_exceeds_main:
+    severity: warning
+    message: "サブプロットの主人公への共感がメイン主人公を超えています"
+
+# ============================================================
+# オフスクリーン構造
+# ============================================================
+offscreen_structure:
+  allowed: true
+  description: "サブプロットの一部はオフスクリーンで進行可能"
+
+# ============================================================
+# メインプロットとの関連性
+# ============================================================
+relation_to_main_plot:
+  relevance_score_required: true
+  low_relevance:
+    meaning: parallel_plot
+    action:
+      severity: warning
+      message: "メインプロットとの関連性が低い（独立したパラレルプロットの可能性）"
+
+  relevance_metrics:
+    - contribution_to_controlling_concept   # 統制概念への貢献
+    - value_change_coupling                 # 価値変化の連動
+    - causal_links                          # 因果リンク
+    - shared_characters_or_stakes           # 共有キャラクター/ステークス
+    - temporal_alignment                    # 時間軸の整合
+
+# ============================================================
+# 最後の幕のチェック
+# ============================================================
+penultimate_act:
+  climax_must_raise_strong_question: true
+  failure:
+    severity: warning
+    message: "最後から2番目の幕のクライマックスが十分な問いを生んでいません"

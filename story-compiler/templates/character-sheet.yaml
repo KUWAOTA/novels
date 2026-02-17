@@ -1,0 +1,37 @@
+# ============================================================
+# Character Sheet — キャラクターシートテンプレート
+# ============================================================
+# 現在は McKee "Story" の主人公モデルに基づく。
+# 将来 McKee "Character" のモジュール追加で拡張予定。
+# ============================================================
+
+character:
+  name: ""
+  role: ""                   # protagonist | antagonist | supporting | minor
+
+  # 基本設定
+  origin: ""                 # 出自・背景
+  livelihood: ""             # 生計手段
+
+  # 主人公モデル変数（roleがprotagonistの場合は必須）
+  will: ""                   # 意志力
+  desire: ""                 # 意識的な欲望
+  unconscious_desire: ""     # 無意識の欲望（オプション）
+  object_of_desire: ""       # 欲望の対象
+  disposition: ""            # 性格傾向
+
+  # 共感ポイント
+  empathy_hooks:
+    - ""                     # 読者が共感できる要素を記載
+
+  # 関係性
+  relationships:
+    - character: ""
+      relation: ""           # ally | rival | love | mentor | ...
+      dynamic: ""            # 関係性の変化の方向
+
+  # 将来拡張用
+  # _future:
+  #   character_arc: ""      # McKee "Character" から
+  #   dimensions: []         # 性格の多次元性
+  #   contradictions: []     # 内面の矛盾

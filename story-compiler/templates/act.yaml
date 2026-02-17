@@ -1,0 +1,40 @@
+# ============================================================
+# Act Template — 幕設計テンプレート
+# ============================================================
+
+type: Act
+id: ""                       # 例: ACT1, ACT2
+act_type: ""                 # ArcAct | MiniAct
+summary: ""                  # 1行要約
+
+# 価値変化
+value_change:
+  axis: ""                   # メインの価値軸
+  from: ""
+  to: ""
+  cause: ""
+
+# クライマックス
+climax:
+  summary: ""                # クライマックスの概要
+  irreversible: false        # 不可逆的か
+  meaning_evaluation:
+    central_value_axis_resolved: false
+    irreversible_value_state: false
+    causal_chain_complete: false
+    controlling_idea_embodied: false
+    expectation_peak_gap: false
+
+# 連続性
+continuity:
+  time_span: ""              # この幕が扱う時間範囲
+  dominant_concept: ""       # この幕で優勢な概念（controlling / opposing）
+
+# 構造
+sequences:
+  - id: ""
+    summary: ""
+    scenes: []
+
+# サブプロットとの交差
+subplot_intersections: []

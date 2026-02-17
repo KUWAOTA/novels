@@ -1,0 +1,87 @@
+# ============================================================
+# Module: Inciting Incident
+# Source: Robert McKee "Story" — 契機事件
+# Version: 0.2
+# ============================================================
+# 契機事件は物語のエンジンを始動する最重要イベント。
+# 均衡を破壊し、主人公に欲望を生じさせ、
+# 物語全体の因果連鎖の起点となる。
+# ============================================================
+
+module_id: inciting_incident
+module_name: "契機事件（Inciting Incident）"
+source: "McKee 'Story'"
+
+# ============================================================
+# 必須引数
+# ============================================================
+arguments:
+  foreshadowing:
+    required: true
+    type: string
+    description: "事前に仕込まれた伏線"
+
+  payoff:
+    required: true
+    type: string
+    description: "伏線の回収方法"
+
+# ============================================================
+# 条件
+# ============================================================
+conditions:
+  balance_must_be_broken: true
+  description_balance: "均衡状態が明確に存在し、それが破壊される"
+
+  protagonist_must_react: true
+  description_react: "主人公がこの事件に何らかの反応を示す"
+
+# ============================================================
+# 欲望の生成
+# ============================================================
+desire_generation:
+  conscious_or_unconscious_required: true
+  conflict_type_required: true
+  description: >
+    契機事件は主人公に欲望（意識的 or 無意識的）を生じさせ、
+    同時に葛藤を生み出す。
+
+# ============================================================
+# 配置の制約
+# ============================================================
+placement:
+  must_occur_by_fraction: 0.25
+  description: "物語全体の最初の25%以内に発生すること"
+  late_occurrence:
+    severity: compile_error
+    message: "契機事件の配置が遅すぎます（25%以内に配置してください）"
+
+# ============================================================
+# 準備の制約
+# ============================================================
+preparation:
+  reader_understands_protagonist_enough: true
+  description: >
+    契機事件が発生する前に、読者が主人公を十分理解していること。
+    共感のための最低限の準備が必要。
+  insufficient_preparation:
+    severity: compile_error
+    message: "主人公の紹介が不十分なまま契機事件が発生しています"
+
+# ============================================================
+# レディネスチェック
+# ============================================================
+readiness_check:
+  prerequisites_met_but_not_triggered:
+    severity: compile_error
+    message: "契機事件の条件が揃っているのに発火していません"
+
+# ============================================================
+# 初期行動の不可逆性チェック
+# ============================================================
+early_action_risk_check:
+  scope: "action1_and_action2_after_inciting_incident"
+  must_be_irreversible: true
+  reversible_risk:
+    severity: warning
+    message: "契機事件直後のアクションのリスクが可逆的です"

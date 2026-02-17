@@ -1,0 +1,79 @@
+# ============================================================
+# Module: Controlling Concept & Value Tracking
+# Source: Robert McKee "Story" — 統制概念
+# Version: 0.2
+# ============================================================
+# 統制概念（テーマ）は物語全体を貫く中心命題。
+# 価値軸はその概念が表現される具体的なスケール。
+# コンパイラは教条主義（一方的な主張）を検出・警告する。
+# ============================================================
+
+module_id: controlling_concept
+module_name: "統制概念と価値軸（Controlling Concept & Values）"
+source: "McKee 'Story'"
+
+# ============================================================
+# 概念の定義
+# ============================================================
+concepts:
+  controlling_concept:
+    scope: global
+    type: string
+    required: true
+    description: >
+      物語が最終的に「証明」する命題。
+      例: 「正義は自己犠牲を通じてのみ勝利する」
+
+  opposing_concept:
+    scope: global
+    type: string
+    required: true
+    description: >
+      統制概念に対立する命題。
+      例: 「正義を追求する者は破滅する」
+
+# ============================================================
+# シーケンスごとの要件
+# ============================================================
+per_sequence_requirement:
+  dominant_concept_must_be_declared: true
+  description: >
+    各シーケンスでどちらの概念が優勢か宣言する。
+    物語は統制概念と対立概念の間を揺れ動く。
+
+# ============================================================
+# 教条主義チェック
+# ============================================================
+didacticism_check:
+  description: >
+    統制概念と対立概念のバランスが極端に偏っている場合、
+    教条的な（説教臭い）物語になっている可能性がある。
+  detection:
+    - "統制概念が常に優勢で、対立概念が一度も勝たない"
+    - "対立概念の担い手が一面的な悪役"
+    - "結末が最初から予測できる"
+  imbalance_detected:
+    severity: compile_error_or_major_warning
+    message: "統制概念と対立概念のバランスが極端に偏っています（教条主義の兆候）"
+
+# ============================================================
+# 価値軸追跡
+# ============================================================
+values:
+  tracking:
+    per_unit_declaration_required: true
+    description: "各構造単位で、どの価値軸がどう動いたか宣言する"
+    plus_minus_movement_required: true
+    description_detail: >
+      すべてのシーンで価値が +（向上）か -（悪化）の
+      いずれかに動いていなければならない。
+      横ばいは無効（何も起きていないシーン）。
+
+  gradient:
+    description: "ストーリー全体で価値変化の振幅が増大していくか"
+    insufficient_change:
+      severity: compile_error
+      message: "価値変化が不十分です。シーンに意味がありません"
+    stagnation:
+      severity: warning
+      message: "価値の停滞が検出されました"

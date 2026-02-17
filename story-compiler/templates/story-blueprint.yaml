@@ -1,0 +1,99 @@
+# ============================================================
+# Story Blueprint — ストーリー全体設計図テンプレート
+# このテンプレートを埋めることで物語の骨格を定義する
+# ============================================================
+
+# ──────────────────────────────────────
+# Phase 0: Global Settings (Gate)
+# ──────────────────────────────────────
+global_settings:
+  era: ""                    # 時代設定
+  duration: ""               # 物語の時間幅
+  setting: ""                # 主要舞台
+  conflict_level: ""         # internal | personal | non_personal | combined
+  livelihood: ""             # 登場人物の生計
+  power_structure: ""        # 権力構造
+  genre: ""                  # 主ジャンル
+  backstory: ""              # 物語開始前の重要事象
+  character_origins: ""      # 主要キャラの出自
+  cast_definition: ""        # 登場人物リスト
+
+  # オプション
+  world_values: ""           # 世界の価値観
+  social_rules: ""           # 社会ルール・タブー
+
+# ──────────────────────────────────────
+# Phase 1: Story Design
+# ──────────────────────────────────────
+story:
+  type: ""                   # Arc | Mini
+  
+  controlling_concept: ""    # 統制概念（テーマ命題）
+  opposing_concept: ""       # 対立概念
+
+  protagonist:
+    name: ""
+    will: ""                 # 意志力
+    desire: ""               # 意識的欲望
+    unconscious_desire: ""   # 無意識の欲望（オプション）
+    object_of_desire: ""     # 欲望の対象
+    disposition: ""          # 性格傾向
+
+  inciting_incident:
+    summary: ""              # 契機事件の概要
+    foreshadowing: ""        # 伏線
+    payoff: ""               # 伏線の回収
+    placement: ""            # 配置（例: "第1幕 シーン3"）
+
+# ──────────────────────────────────────
+# Phase 2: Act Structure
+# ──────────────────────────────────────
+acts:
+  - id: ACT1
+    type: ""                 # ArcAct | MiniAct
+    summary: ""
+    value_change:
+      axis: ""
+      from: ""
+      to: ""
+      cause: ""
+    climax:
+      summary: ""
+      irreversible: false
+    sequences: []
+
+  - id: ACT2
+    type: ""
+    summary: ""
+    value_change:
+      axis: ""
+      from: ""
+      to: ""
+      cause: ""
+    climax:
+      summary: ""
+      irreversible: false
+    sequences: []
+
+  - id: ACT3
+    type: ""
+    summary: ""
+    value_change:
+      axis: ""
+      from: ""
+      to: ""
+      cause: ""
+    climax:
+      summary: ""
+      irreversible: false
+      meaning_intensity: 0.0    # クライマックスの意味密度
+    sequences: []
+
+# ──────────────────────────────────────
+# Subplot（オプション）
+# ──────────────────────────────────────
+subplots: []
+# - id: SUB1
+#   intent: ""               # negate | resonate | delay | complicate
+#   summary: ""
+#   relation_to_main: ""

@@ -1,0 +1,92 @@
+# ============================================================
+# Module: Action Definition (Hard Lock)
+# Source: Robert McKee "Story" — アクションの原則
+# Version: 0.2
+# ============================================================
+# すべてのアクション（主人公の行動）は
+# 厳密な型定義に従わなければならない。
+# これがストーリーのエンジンであり、
+# 欠落があれば即座にcompile_error。
+# ============================================================
+
+module_id: action_definition
+module_name: "アクション定義（Action Definition）"
+source: "McKee 'Story'"
+
+# ============================================================
+# 必須フィールド
+# ============================================================
+required_fields:
+  action:
+    type: string
+    required: true
+    description: "主人公が何をしたか（具体的な行動）"
+
+  expectation:
+    type: string
+    required: true
+    description: "主人公がその行動に対して期待した結果"
+
+  result:
+    type: string
+    required: true
+    description: "実際に起きた結果"
+
+  gap:
+    type: string
+    required: true
+    description: >
+      期待と結果のギャップ。
+      このギャップが大きいほどドラマチック。
+      ギャップ = 0（期待通り）はシーンとして無意味。
+
+  risk:
+    type: string
+    required: true
+    description: >
+      この行動に伴うリスク。
+      主人公は何を失う可能性があったか。
+
+  conflict_types:
+    type: list[enum]
+    required: true
+    values: [internal, personal, non_personal]
+    description: >
+      このアクションが引き起こす葛藤の種類。
+      最低1つ必須。2つ以上推奨。
+
+# ============================================================
+# リスク進行ルール
+# ============================================================
+risk_progression:
+  must_increase_over_time: true
+  description: "物語が進むにつれ、リスクは増大しなければならない"
+  stagnation_or_reversal:
+    severity: warning
+    message: "リスクが停滞または減少しています"
+
+# ============================================================
+# 葛藤の複雑さ
+# ============================================================
+conflict_complexity:
+  minimum_types_required: 2
+  description: "ストーリー全体で最低2種類の葛藤タイプが必要"
+  insufficient_complexity:
+    severity: warning
+    message: "葛藤の種類が単一です。多層的な葛藤を検討してください"
+
+# ============================================================
+# コンパイル検証ルール
+# ============================================================
+validation:
+  missing_fields:
+    severity: compile_error
+    message: "アクション定義の必須フィールドが欠落しています"
+
+  zero_gap:
+    severity: warning
+    message: "期待と結果のギャップがありません（何も起きていない）"
+
+  no_risk:
+    severity: compile_error
+    message: "リスクが定義されていません。リスクのない行動はドラマではありません"

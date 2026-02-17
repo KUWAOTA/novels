@@ -1,0 +1,53 @@
+# ============================================================
+# Module: Story Triangle & Act Count
+# Source: Robert McKee "Story" — 物語三角形
+# Version: 0.2
+# ============================================================
+# ArcPlot（アーキプロット）/MiniPlot（ミニプロット）/
+# AntiPlot（アンチプロット）の分類と、幕数の制約。
+# ============================================================
+
+module_id: story_triangle
+module_name: "物語三角形と幕数制約（Story Triangle）"
+source: "McKee 'Story'"
+
+# ============================================================
+# 幕タイプの定義
+# ============================================================
+act_types:
+  ArcAct:
+    description: "古典的な閉じた構造。強いクライマックス。"
+    requires_climax: true
+    requires_irreversible_change: true
+    ending: Closed
+
+  MiniAct:
+    description: "開かれた結末。余韻を残す。"
+    ending: Open_or_SemiOpen
+
+  AntiPlot:
+    description: "反構造。現在は未サポート。"
+    supported: false
+    note: "将来の拡張で対応可能"
+
+# ============================================================
+# 幕数の制約
+# ============================================================
+act_count:
+  minimum: 3
+  minimum_violation:
+    severity: compile_error
+    message: "最低3幕が必要です"
+  warning_threshold: 6
+  warning_message: "6幕を超える場合、構造の複雑さに注意してください"
+
+# ============================================================
+# ストーリータイプの宣言
+# ============================================================
+story_type_declaration:
+  required: true
+  options:
+    - Arc       # 古典的な閉じた構造
+    - Mini      # オープンエンディング
+  severity_if_missing: compile_error
+  message: "ストーリータイプ（Arc/Mini）を宣言してください"
