@@ -4,355 +4,410 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Story Compiler — System Map</title>
+    <title>Story Compiler System Map (API Spec)</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
-
-        :root {
-            --bg: #0f172a;
-            --bg-card: #1e293b;
-            --text: #f8fafc;
-            --text-muted: #94a3b8;
-            --border: #334155;
-            --accent: #3b82f6;
-            --accent-glow: rgba(59, 130, 246, 0.2);
-            --error: #ef4444;
-            --warning: #f59e0b;
-            --info: #10b981;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            background: var(--bg);
-            color: var(--text);
             font-family: 'Inter', sans-serif;
-            padding: 40px;
-            min-height: 100vh;
+            background-color: #0f172a;
+            color: #f8fafc;
         }
 
-        header {
-            margin-bottom: 60px;
-            text-align: center;
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
         }
 
-        h1 {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 12px;
-            background: linear-gradient(to right, #60a5fa, #a78bfa);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
         }
 
-        p.subtitle {
-            color: var(--text-muted);
-            font-size: 16px;
-            max-width: 600px;
-            margin: 0 auto;
-            line-height: 1.6;
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
 
-        /* Grid Layout */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-            gap: 24px;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        /* Module Card */
         .card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 24px;
-            transition: transform 0.2s, box-shadow 0.2s;
-            position: relative;
-            overflow: hidden;
+            background-color: #1e293b;
+            border: 1px solid #334155;
         }
 
         .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-            border-color: var(--accent);
-        }
-
-        .card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: var(--accent);
-            opacity: 0;
-            transition: opacity 0.2s;
-        }
-
-        .card:hover::before {
-            opacity: 1;
-        }
-
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 16px;
-        }
-
-        .module-id {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 11px;
-            color: var(--accent);
-            background: rgba(59, 130, 246, 0.1);
-            padding: 4px 8px;
-            border-radius: 4px;
-            margin-bottom: 8px;
-            display: inline-block;
-        }
-
-        h2 {
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 1.4;
-            margin-bottom: 4px;
-        }
-
-        .source {
-            font-size: 11px;
-            color: var(--text-muted);
-        }
-
-        .desc {
-            font-size: 13px;
-            color: var(--text-muted);
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        /* Constraints Tags */
-        .constraints {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .tag {
-            font-size: 10px;
-            padding: 3px 8px;
-            border-radius: 99px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-        }
-
-        .tag.error {
-            background: rgba(239, 68, 68, 0.15);
-            color: var(--error);
-            border: 1px solid rgba(239, 68, 68, 0.3);
-        }
-
-        .tag.warning {
-            background: rgba(245, 158, 11, 0.15);
-            color: var(--warning);
-            border: 1px solid rgba(245, 158, 11, 0.3);
-        }
-
-        .tag.info {
-            background: rgba(16, 185, 129, 0.15);
-            color: var(--info);
-            border: 1px solid rgba(16, 185, 129, 0.3);
-        }
-
-        /* Section Dividers */
-        .section-title {
-            grid-column: 1 / -1;
-            font-size: 13px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--text-muted);
-            margin: 40px 0 16px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            align-items: center;
-            gap: 12px;
+            border-color: #475569;
         }
     </style>
 </head>
 
-<body>
+<body class="h-screen overflow-hidden flex flex-col">
 
-    <header>
-        <h1>Story Compiler System Map</h1>
-        <p class="subtitle">
-            Robert McKeeの「Story」に基づく物語構造コンパイラの制約一覧。<br>
-            物語が構造的に成立しているか、品質リスクがないかを各モジュールが検証します。
-        </p>
-    </header>
-
-    <div class="grid">
-
-        <!-- ======================== CORE ======================== -->
-        <div class="section-title">Core Architecture (骨格)</div>
-
-        <div class="card">
-            <div class="module-id">01_core-structure</div>
-            <h2>Core Structure</h2>
-            <div class="source">構造定義</div>
-            <p class="desc">Act, Sequence, Scene, Beatという物語の階層構造を定義。全ての物語単位が「変化」を持つことを強制する。</p>
-            <div class="constraints">
-                <span class="tag error">Structure Error</span>
-                <span class="tag warning">Value Stagnation</span>
+    <div id="app" class="flex-1 flex flex-col h-full">
+        <!-- Header -->
+        <header class="bg-slate-900 border-b border-slate-800 p-4 flex justify-between items-center shrink-0">
+            <div>
+                <h1
+                    class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-400">
+                    Story Compiler System Map
+                </h1>
+                <p class="text-xs text-slate-400 mt-1">Version 0.2 — Robert McKee "Story" Based Narrative Validation
+                    Engine</p>
             </div>
-        </div>
-
-        <div class="card">
-            <div class="module-id">02_global-settings</div>
-            <h2>Global Settings</h2>
-            <div class="source">世界観・前提</div>
-            <p class="desc">時代、期間、場所、争点などのグローバル設定。これらが未定義の場合、コンパイルは開始されない。</p>
-            <div class="constraints">
-                <span class="tag error">Missing Field</span>
+            <div class="text-right text-xs text-slate-500">
+                <p>Repository: <a href="https://github.com/KUWAOTA/novels"
+                        class="text-blue-400 hover:underline">KUWAOTA/novels</a></p>
             </div>
+        </header>
+
+        <!-- Main Layout -->
+        <div class="flex-1 flex overflow-hidden">
+
+            <!-- Sidebar -->
+            <aside class="w-80 bg-slate-900 border-r border-slate-800 flex flex-col">
+                <div class="p-4 border-b border-slate-800">
+                    <input v-model="searchQuery" type="text" placeholder="Search modules..."
+                        class="w-full bg-slate-800 border-none rounded px-3 py-2 text-sm text-slate-200 focus:ring-1 focus:ring-blue-500 placeholder-slate-500">
+                </div>
+                <div class="flex-1 overflow-y-auto p-2 space-y-1">
+                    <div v-for="mod in filteredModules" :key="mod.id" @click="selectedModule = mod"
+                        :class="{'bg-blue-600/20 text-blue-300 border-l-2 border-blue-500': selectedModule.id === mod.id, 'text-slate-400 hover:bg-slate-800 hover:text-slate-200 border-l-2 border-transparent': selectedModule.id !== mod.id}"
+                        class="cursor-pointer px-3 py-3 rounded-r text-sm transition-colors duration-150">
+                        <div class="font-bold truncate">{{ mod.name }}</div>
+                        <div class="flex justify-between items-center mt-1">
+                            <span class="font-mono text-[10px] opacity-70">{{ mod.id }}</span>
+                            <span v-if="mod.errors > 0" class="text-[10px] bg-red-500/10 text-red-400 px-1.5 rounded">{{
+                                mod.errors }} ERR</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Content Area -->
+            <main class="flex-1 overflow-y-auto bg-slate-950 p-8 relative">
+                <div v-if="selectedModule" class="max-w-4xl mx-auto pb-20">
+
+                    <!-- Module Header -->
+                    <div class="mb-8">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span
+                                class="bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded text-xs font-mono border border-blue-500/30">
+                                {{ selectedModule.id }}
+                            </span>
+                            <span class="text-xs text-slate-500 font-mono">
+                                {{ selectedModule.filename }}
+                            </span>
+                        </div>
+                        <h2 class="text-3xl font-bold text-slate-100 mb-2">{{ selectedModule.name }}</h2>
+                        <div class="text-sm text-slate-400 italic mb-4">
+                            Source: {{ selectedModule.source }}
+                        </div>
+                        <p
+                            class="text-slate-300 leading-relaxed text-sm bg-slate-900/50 p-4 rounded-lg border border-slate-800">
+                            {{ selectedModule.description }}
+                        </p>
+                    </div>
+
+                    <!-- Inputs & Parameters -->
+                    <div v-if="selectedModule.params && selectedModule.params.length > 0" class="mb-10">
+                        <h3 class="text-lg font-bold text-slate-200 mb-4 flex items-center gap-2">
+                            <span class="w-1 h-4 bg-teal-500 rounded-full"></span>
+                            Configuration Schema (Inputs)
+                        </h3>
+                        <div class="overflow-x-auto rounded-lg border border-slate-700 bg-slate-900">
+                            <table class="w-full text-left text-sm">
+                                <thead class="bg-slate-800 text-slate-400 uppercase text-xs font-semibold">
+                                    <tr>
+                                        <th class="px-4 py-3">Variable Name</th>
+                                        <th class="px-4 py-3">Type</th>
+                                        <th class="px-4 py-3">Required</th>
+                                        <th class="px-4 py-3">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-800">
+                                    <tr v-for="param in selectedModule.params" :key="param.name"
+                                        class="hover:bg-slate-800/50">
+                                        <td class="px-4 py-3 font-mono text-teal-300 font-medium">{{ param.name }}</td>
+                                        <td class="px-4 py-3 text-purple-300 font-mono text-xs">{{ param.type }}</td>
+                                        <td class="px-4 py-3">
+                                            <span v-if="param.required"
+                                                class="text-orange-400 text-xs font-bold">YES</span>
+                                            <span v-else class="text-slate-600 text-xs">NO</span>
+                                        </td>
+                                        <td class="px-4 py-3 text-slate-400">{{ param.desc }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Logic & Algorithms -->
+                    <div v-if="selectedModule.logic" class="mb-10">
+                        <h3 class="text-lg font-bold text-slate-200 mb-4 flex items-center gap-2">
+                            <span class="w-1 h-4 bg-purple-500 rounded-full"></span>
+                            Core Logic / Algorithms
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div v-for="(item, key) in selectedModule.logic" :key="key" class="card rounded-lg p-4">
+                                <h4 class="font-bold text-slate-200 mb-2 text-sm">{{ key }}</h4>
+                                <pre
+                                    class="p-3 bg-slate-950 rounded border border-slate-800 text-slate-400 font-mono text-xs whitespace-pre-wrap">{{ item }}</pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Validations -->
+                    <div class="mb-10">
+                        <h3 class="text-lg font-bold text-slate-200 mb-4 flex items-center gap-2">
+                            <span class="w-1 h-4 bg-rose-500 rounded-full"></span>
+                            Validation Rules (Compile Constraints)
+                        </h3>
+                        <div class="grid gap-4">
+                            <div v-for="rule in selectedModule.validations" :key="rule.code"
+                                class="card rounded-lg p-4 border-l-4" :class="{
+                                    'border-l-rose-500': rule.severity === 'compile_error',
+                                    'border-l-amber-500': rule.severity === 'warning',
+                                    'border-l-emerald-500': rule.severity === 'info'
+                                }">
+                                <div class="flex justify-between items-start mb-2">
+                                    <div class="flex items-center gap-2">
+                                        <span class="font-mono text-xs font-bold px-2 py-0.5 rounded text-slate-950"
+                                            :class="{
+                                                'bg-rose-500': rule.severity === 'compile_error',
+                                                'bg-amber-500': rule.severity === 'warning',
+                                                'bg-emerald-500': rule.severity === 'info'
+                                            }">
+                                            {{ rule.severity.toUpperCase().replace('COMPILE_', '') }}
+                                        </span>
+                                        <span class="font-mono text-slate-300 font-bold text-sm">{{ rule.code }}</span>
+                                    </div>
+                                </div>
+                                <p class="text-slate-300 text-sm mb-2 font-medium">{{ rule.message }}</p>
+                                <p v-if="rule.logic"
+                                    class="text-slate-500 text-xs border-t border-slate-700/50 pt-2 mt-2 font-mono">
+                                    <span class="text-slate-600">TRIGGER: </span> {{ rule.logic }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div v-else class="h-full flex items-center justify-center text-slate-600">
+                    <p>Select a module from the sidebar to view specifications.</p>
+                </div>
+            </main>
         </div>
-
-        <div class="card">
-            <div class="module-id">05_controlling-concept</div>
-            <h2>Controlling Concept</h2>
-            <div class="source">統制概念・テーマ</div>
-            <p class="desc">物語の「主旨」と「カウンターアイデア」を定義。物語全体が単一のテーマのもとに統一されているかを検証。</p>
-            <div class="constraints">
-                <span class="tag error">Didacticism (説教臭さ)</span>
-                <span class="tag warning">Thematic Noise</span>
-            </div>
-        </div>
-
-        <!-- ======================== CHARACTER ======================== -->
-        <div class="section-title">Character & Act (人物・構成)</div>
-
-        <div class="card">
-            <div class="module-id">06_protagonist</div>
-            <h2>Protagonist Model</h2>
-            <div class="source">主人公</div>
-            <p class="desc">主人公の意志、欲望、共感性を定義。受動的すぎる主人公や、行動を起こさない主人公を検出する。</p>
-            <div class="constraints">
-                <span class="tag error">Passive Protagonist</span>
-                <span class="tag warning">Weak Motivation</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="module-id">03_climax-rules</div>
-            <h2>Climax Rules</h2>
-            <div class="source">クライマックス</div>
-            <p class="desc">物語の不可逆的な変化点。クライマックスが存在しない、または弱い（後戻り可能である）場合エラーとする。</p>
-            <div class="constraints">
-                <span class="tag error">Missing Climax</span>
-                <span class="tag error">Reversible Change</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="module-id">08_inciting-incident</div>
-            <h2>Inciting Incident</h2>
-            <div class="source">契機事件</div>
-            <p class="desc">物語を開始させる事件。主人公のバランスを崩し、欲望を喚起するもの。これが遅すぎる場合警告。</p>
-            <div class="constraints">
-                <span class="tag warning">Late Incident</span>
-                <span class="tag error">No Disruption</span>
-            </div>
-        </div>
-
-        <!-- ======================== PLOT LOGIC ======================== -->
-        <div class="section-title">Logic & Transitions (論理・遷移)</div>
-
-        <div class="card">
-            <div class="module-id">14_causal-chain</div>
-            <h2>Causal Chain</h2>
-            <div class="source">因果の鎖</div>
-            <p class="desc">出来事AがBを引き起こすという因果の連続性。偶然に頼りすぎた展開や、脈絡のない断絶を「穴」として検出。</p>
-            <div class="constraints">
-                <span class="tag error">Broken Chain</span>
-                <span class="tag warning">Deus Ex Machina</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="module-id">13_scene-transition</div>
-            <h2>Scene Transition</h2>
-            <div class="source">シーン遷移</div>
-            <p class="desc">シーン間の接続ルール。単なる「そして」「次に」ではなく、「しかし」「だから」で繋がるべき。</p>
-            <div class="constraints">
-                <span class="tag warning">Weak Transition</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="module-id">15_genre-constraints</div>
-            <h2>Genre Constraints</h2>
-            <div class="source">ジャンル</div>
-            <p class="desc">選択したジャンル固有の「約束事」を守っているか。必須シーン（オブリガトリー・シーン）の欠如をチェック。</p>
-            <div class="constraints">
-                <span class="tag error">Missing Convention</span>
-            </div>
-        </div>
-
-        <!-- ======================== EXPRESSION ======================== -->
-        <div class="section-title">Expression & Quality (表現・品質)</div>
-
-        <div class="card">
-            <div class="module-id">12_exposition</div>
-            <h2>Exposition</h2>
-            <div class="source">説明・露骨</div>
-            <p class="desc">台詞による過度な説明（Info Dump）や、直接的な感情描写を検出。「見せて魅せる（Show, Don't Tell）」を推奨。</p>
-            <div class="constraints">
-                <span class="tag warning">Info Dump</span>
-                <span class="tag info">Direct Emotion</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="module-id">16_choice-and-expression</div>
-            <h2>Choice & Expression</h2>
-            <div class="source">選択の真正性</div>
-            <p class="desc">選択が「善vs悪」になっていないか。「善vs善」または「悪vs悪」のジレンマのみが真の性格を明らかにする。</p>
-            <div class="constraints">
-                <span class="tag error">Fake Choice</span>
-                <span class="tag info">Subtext Opportunity</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="module-id">19_scene-mastery</div>
-            <h2>Scene Mastery</h2>
-            <div class="source">シーン最適化</div>
-            <p class="desc">Before/Afterの対比による変化の最大化。シーン配置の最適化を提案。</p>
-            <div class="constraints">
-                <span class="tag info">Weak Contrast</span>
-                <span class="tag info">Optimized Order</span>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="module-id">20_interpretation-layer</div>
-            <h2>Interpretation Layer</h2>
-            <div class="source">解釈生成</div>
-            <p class="desc">Insight（洞察）は読者の脳内で発生するもの。テキストに「答え」を書いてしまっていないかをチェック。</p>
-            <div class="constraints">
-                <span class="tag warning">Explicit Insight</span>
-            </div>
-        </div>
-
     </div>
 
+    <script>
+        const { createApp, ref, computed } = Vue;
+
+        const modulesData = [
+            {
+                id: '01_core-structure',
+                name: 'Core Structural Types',
+                filename: '01_core-structure.yaml',
+                source: "Robert McKee 'Story'",
+                description: '物語の基本構造（階層）を定義するインターフェース。全ての物語単位（EventからActまで）で共通のプロパティ（ID, Summary, ValueChange）を強制するフラクタル構造。',
+                errors: 2,
+                params: [
+                    { name: 'id', type: 'string', required: true, desc: '一意の識別子（例: S1, ACT2）' },
+                    { name: 'summary', type: 'string', required: true, desc: '出来事の1行要約' },
+                    { name: 'value_change', type: 'object', required: true, desc: '価値のfrom→to変化と原因' },
+                    { name: 'value_axes', type: 'list[string]', required: true, desc: '変動する価値軸（例: 愛/憎しみ）' },
+                    { name: 'continuity', type: 'object', required: true, desc: '時間・場所・POVの連続性定義' }
+                ],
+                validations: [
+                    { code: 'missing_value_change', severity: 'compile_error', message: '全ての構造単位には価値変化（from->to）が必要です。変化のないシーンは死んでいます。', logic: 'value_change undefined OR value_change.from == value_change.to' },
+                    { code: 'missing_id', severity: 'compile_error', message: '構造単位にIDが定義されていません。', logic: 'id IS NULL' },
+                    { code: 'scale_violation', severity: 'warning', message: '下位単位（Beat）の価値変化が上位（Scene）より大きすぎます。', logic: 'diff(child.value) > diff(parent.value)' }
+                ]
+            },
+            {
+                id: '02_global-settings',
+                name: 'Global Settings Gate',
+                filename: '02_global-settings.yaml',
+                source: "McKee 'Story' - Setting",
+                description: '物語世界の基本法則（時代、期間、場所、争点レベル）を定義するゲート。これが宣言されない限り、ストーリー構造のコンパイルは開始されない。',
+                errors: 1,
+                params: [
+                    { name: 'era', type: 'string', required: true, desc: '時代設定（例: 現代, 2050年）' },
+                    { name: 'duration', type: 'string', required: true, desc: '物語全体の期間（例: 3日間）' },
+                    { name: 'setting', type: 'string', required: true, desc: '物理的舞台（例: 渋谷）' },
+                    { name: 'conflict_level', type: 'enum', required: true, desc: '[internal, personal, non_personal, combined]' },
+                    { name: 'livelihood', type: 'string', required: true, desc: '登場人物の生計手段' }
+                ],
+                validations: [
+                    { code: 'missing_field_gate', severity: 'compile_error', message: '必須のグローバル設定が欠落しています。Era, Duration, Setting等は必須です。', logic: 'Any required field IS NULL' }
+                ]
+            },
+            {
+                id: '03_climax-rules',
+                name: 'Climax Rules',
+                filename: '03_climax-rules.yaml',
+                source: "McKee 'Story' - Climax",
+                description: '物語の最重要ノードであるクライマックスの構造的要件。不可逆な価値変化と、統制概念（Theme）の証明を強制する。',
+                errors: 4,
+                params: [
+                    { name: 'climax_beat', type: 'beat_ref', required: true, desc: 'クライマックスを含むビートID' },
+                    { name: 'irreversible_change', type: 'boolean', required: true, desc: '変化が不可逆であるか' }
+                ],
+                logic: {
+                    'MeaningIntensity Formula': 'Meaning = ValueShift * Irreversibility * CausalDensity * ExpectationGap',
+                    'Meaning Definition': '意味とは、不可逆な価値連動変容であり、受け手の世界モデルの更新を強いるもの。'
+                },
+                validations: [
+                    { code: 'no_climax', severity: 'compile_error', message: 'Act/Storyにクライマックスが定義されていません。', logic: 'climax node not found in unit' },
+                    { code: 'reversible_change', severity: 'compile_error', message: 'クライマックスの変化が可逆的です。後戻りできない変化が必要です。', logic: 'irreversible_change == false' },
+                    { code: 'controlling_idea_not_embodied', severity: 'compile_error', message: '統制概念がクライマックスで体現されていません。', logic: 'climax.outcome != controlling_concept.proof' },
+                    { code: 'low_meaning_intensity', severity: 'warning', message: 'MeaningIntensityスコアが閾値(0.75)を下回っています。', logic: 'score < 0.75' }
+                ]
+            },
+            {
+                id: '05_controlling-concept',
+                name: 'Controlling Concept',
+                filename: '05_controlling-concept.yaml',
+                source: "McKee 'Story' - Theme",
+                description: '物語を統制する中心命題（Theme）。「教条主義（Didacticism）」を回避し、対立概念とのバランスを検証する。',
+                errors: 1,
+                params: [
+                    { name: 'controlling_concept', type: 'string', required: true, desc: '証明される命題（例: 愛は死を超える）' },
+                    { name: 'opposing_concept', type: 'string', required: true, desc: '対立する命題（例: 愛は死に敗北する）' }
+                ],
+                validations: [
+                    { code: 'didacticism_warning', severity: 'warning', message: '対立概念が弱すぎます。説教臭い物語になるリスクがあります。', logic: 'opposing_concept.weight < 0.3' }
+                ]
+            },
+            {
+                id: '06_protagonist',
+                name: 'Protagonist Model',
+                filename: '06_protagonist.yaml',
+                source: "McKee 'Story' - Character",
+                description: '主人公の行動設計。意志(Will)、欲望(Desire)、共感性(Empathy)をモデル化し、受動的な主人公や動機不足を検出する。',
+                errors: 0,
+                params: [
+                    { name: 'will', type: 'string', required: true, desc: '意志力。困難に行動する力' },
+                    { name: 'desire', type: 'string', required: true, desc: '意識的な欲望' },
+                    { name: 'unconscious_desire', type: 'string', required: false, desc: '無意識の欲望（推奨）' },
+                    { name: 'good_center', type: 'string', required: true, desc: '共感の核となる善性・資質' }
+                ],
+                logic: {
+                    'Antagonistic Force Logic': 'If protagonist.drive == low THEN required_antagonistic_force > 0.7 ELSE > 0.4',
+                    'Mentality Linkage': 'Mentality -> WorldView -> Interpretation -> Emotion -> Action'
+                },
+                validations: [
+                    { code: 'insufficient_antagonistic_pressure', severity: 'compile_error', message: '消極的主人公に対して敵対圧力が不足しています。これでは動きません。', logic: 'protagonist.drive=low AND force < 0.7' },
+                    { code: 'missing_good_center', severity: 'warning', message: '主人公に「善の中心（共感ポイント）」が定義されていません。', logic: 'good_center IS NULL' },
+                    { code: 'told_not_shown_good_center', severity: 'warning', message: '善の中心が行動ではなく説明されています。', logic: 'good_center.evidence_scenes IS EMPTY' }
+                ]
+            },
+            {
+                id: '08_inciting-incident',
+                name: 'Inciting Incident',
+                filename: '08_inciting-incident.yaml',
+                source: "McKee 'Story' - Plot",
+                description: '物語を開始させる「契機事件」。日常のバランスを根本的に崩し、主人公に反応を強制するイベント。',
+                errors: 1,
+                params: [
+                    { name: 'incident_type', type: 'enum', required: true, desc: '[causal, coincidental]' },
+                    { name: 'value_at_stake', type: 'string', required: true, desc: 'リスクに晒された価値' }
+                ],
+                validations: [
+                    { code: 'late_incident', severity: 'warning', message: '契機事件の発生が遅すぎます（全量の15%以降）。', logic: 'incident.position > total_length * 0.15' },
+                    { code: 'no_disruption', severity: 'compile_error', message: '主人公の生活バランスを崩していません。', logic: 'balance_change == 0' }
+                ]
+            },
+            {
+                id: '13_scene-transition',
+                name: 'Scene Transition',
+                filename: '13_scene-transition.yaml',
+                source: "McKee 'Story' - Structure",
+                description: 'シーン間の接続の品質。因果関係のない単なる時間経過（And then...）を排除する。',
+                errors: 0,
+                params: [
+                    { name: 'transition_type', type: 'enum', required: true, desc: '[action, revelation, decision]' }
+                ],
+                validations: [
+                    { code: 'weak_transition', severity: 'warning', message: 'シーン接続が弱いです。「しかし」「だから」で接続してください。', logic: 'link_type == "temporal_only"' }
+                ]
+            },
+            {
+                id: '14_causal-chain',
+                name: 'Causal Chain Integrity',
+                filename: '14_causal-chain.yaml',
+                source: "McKee 'Story' - Logic",
+                description: '因果の鎖（Causal Chain）。原因なき結果、結果なき原因を「論理の穴」として検出し、デウス・エクス・マキナを防ぐ。',
+                errors: 2,
+                params: [
+                    { name: 'cause', type: 'ref', required: true, desc: 'このイベントの原因' },
+                    { name: 'consequence', type: 'ref', required: true, desc: 'このイベントが引き起こす結果' },
+                    { name: 'causal_link_type', type: 'enum', required: true, desc: '[direct, indirect, character, environmental]' }
+                ],
+                logic: {
+                    'Coherence Scoring': 'Inciting Incident -> Climax の因果的整合性スコアを算出'
+                },
+                validations: [
+                    { code: 'missing_cause', severity: 'compile_error', message: '原因が不明なイベントです（穴）。', logic: 'cause IS NULL' },
+                    { code: 'orphan_event', severity: 'compile_error', message: '因果の鎖から孤立しています。', logic: 'cause IS NULL AND consequence IS NULL' },
+                    { code: 'coincidence_overuse', severity: 'warning', message: '偶然に依存しすぎています。', logic: 'coincidence_count > threshold' },
+                    { code: 'coherence_below_threshold', severity: 'warning', message: '契機事件とクライマックスの整合性が低いです。', logic: 'coherence_score < 0.65' }
+                ]
+            },
+            {
+                id: '15_genre-constraints',
+                name: 'Genre Constraints',
+                filename: '15_genre-constraints.yaml',
+                source: "McKee 'Story' - Genre",
+                description: 'ジャンルごとの必須要素（Conventions）とオブリガトリーシーン。読者の期待に応えるための約束事。',
+                errors: 1,
+                params: [
+                    { name: 'genre', type: 'string', required: true, desc: '選択されたジャンル' }
+                ],
+                validations: [
+                    { code: 'missing_convention', severity: 'compile_error', message: 'ジャンルの必須要素が欠けています。', logic: 'genre.required_scenes NOT IN story' }
+                ]
+            },
+            {
+                id: '16_choice-and-expression',
+                name: 'Choice & Expression',
+                filename: '12_exposition.yaml', // Grouping related
+                source: "McKee 'Story' - Choice",
+                description: '真の選択（ジレンマ）の定義。善vs悪の偽の選択ではなく、善vs善、悪vs悪の選択を要求する。',
+                errors: 1,
+                params: [],
+                validations: [
+                    { code: 'fake_choice', severity: 'compile_error', message: '選択が明白すぎます（善vs悪）。ジレンマになっていません。', logic: 'choice.option_a.value != choice.option_b.value' }
+                ]
+            }
+        ];
+
+        const app = createApp({
+            setup() {
+                const searchQuery = ref('');
+                const modules = ref(modulesData);
+                const selectedModule = ref(modulesData[0]);
+
+                const filteredModules = computed(() => {
+                    if (!searchQuery.value) return modules.value;
+                    const q = searchQuery.value.toLowerCase();
+                    return modules.value.filter(m =>
+                        m.name.toLowerCase().includes(q) ||
+                        m.id.toLowerCase().includes(q) ||
+                        m.description.toLowerCase().includes(q)
+                    );
+                });
+
+                return {
+                    searchQuery,
+                    modules,
+                    selectedModule,
+                    filteredModules
+                };
+            }
+        });
+
+        app.mount('#app');
+    </script>
 </body>
 
 </html>
