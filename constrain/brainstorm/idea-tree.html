@@ -725,72 +725,103 @@
         // DETAIL PANEL
         // ═══════════════════════════════════════════════════════
 
-        function showDetail(n) {
+        function showNodeDetail(node) {
+            const panel = document.getElementById('detailPanel');
             const header = document.getElementById('detailHeader');
             const body = document.getElementById('detailBody');
 
+            // Header color based on status
             const statusColors = {
                 preferred: 'var(--accent-preferred)',
                 candidate: 'var(--accent-candidate)',
                 deferred: 'var(--accent-deferred)',
                 rejected: 'var(--accent-rejected)'
             };
+            const color = statusColors[node.status] || 'var(--text)';
 
             header.innerHTML = `
-    <span style="color:${statusColors[n.status]};font-size:20px;">●</span>
-    <h2>${n.label.replace(/\n/g, ' — ')}</h2>
-    <span class="node-status-badge badge-${n.status}" style="font-size:11px;">${n.status}</span>
-  `;
+                <div style="width:12px; height:12px; border-radius:50%; background:${color};"></div>
+                <h2 style="margin:0; flex:1;">${escapeHtml(node.label.replace(/\n/g, ' — '))}</h2>
+                <span class="mono" style="opacity:0.5; font-size:11px;">ID: ${node.id}</span>
+            `;
 
-            let bodyHtml = `
-    <div class="detail-section">
-      <h3>概要</h3>
-      <p>${n.desc}</p>
-    </div>
-  `;
+            body.innerHTML = `
+                <div class="detail-section" style="grid-column: 1 / -1;">
+                    <h3>Description</h3>
+                    <p style="font-size:14px; white-space: pre-wrap;">${escapeHtml(node.desc || 'No description.')}</p>
+                </div>
+                ${node.value ? `
+                <div class="detail-section">
+                    <h3>Value Charge</h3>
+                    <span class="node-value">${escapeHtml(node.value)}</span>
+                </div>` : ''}
+                <div class="detail-section">
+                    <h3>Status</h3>
+                    <span class="node-status-badge badge-${node.status}" style="position:static;">${node.status}</span>
+                </div>
+                <div class="detail-section" style="grid-column: 1 / -1; margin-top:10px; border-top:1px solid var(--border); padding-top:10px;">
+                     <h3>Edit Controls (Experimental)</h3>
+                     <p style="font-size:11px; opacity:0.7;">Drag nodes to rearrange. Double click to edit text (Not implemented yet).</p>
+                </div>
+            `;
 
-            if (n.value) {
-                bodyHtml += `
-      <div class="detail-section">
-        <h3>価値変化 (Value Change)</h3>
-        <p class="mono">${n.value}</p>
-      </div>
-    `;
-            }
-
-            if (n.irony) {
-                bodyHtml += `
-      <div class="detail-section">
-        <h3>ドラマティック・アイロニー</h3>
-        <p>${n.irony}</p>
-      </div>
-    `;
-            }
-
-            if (n.issue) {
-                bodyHtml += `
-      <div class="detail-section">
-        <h3>⚠ 課題・懸念</h3>
-        <p style="color:var(--accent-rejected)">${n.issue}</p>
-      </div>
-    `;
-            }
-
-            bodyHtml += `
-    <div class="detail-section">
-      <h3>ID / タイプ</h3>
-      <p class="mono">${n.id} — ${n.type}</p>
-      ${n.parent ? `<p style="margin-top:4px;font-size:11px;color:var(--text-muted)">親: ${n.parent}</p>` : ''}
-    </div>
-  `;
-
-            body.innerHTML = bodyHtml;
-            detailPanel.classList.add('open');
+            panel.classList.add('open');
 
             // Highlight connected lines
             document.querySelectorAll('.conn-line').forEach(l => l.classList.remove('highlight'));
-            document.querySelectorAll(`.conn-line[data-to="${n.id}"], .conn-line[data-from="${n.id}"]`).forEach(l => l.classList.add('highlight'));
+            document.querySelectorAll(`.conn-line[data-to="${node.id}"], .conn-line[data-from="${node.id}"]`).forEach(l => l.classList.add('highlight'));
         }
+
+        // ── Drag and Drop Implementation ──
+        let isDragging = false;
+        let dragNode = null;
+        let dragOffsetX = 0;
+        let dragOffsetY = 0;
+
+        document.getElementById('canvas').addEventListener('mousedown', e => {
+            const potentialNode = e.target.closest('.node');
+            if (potentialNode) {
+                isDragging = true;
+                dragNode = potentialNode;
+                const rect = dragNode.getBoundingClientRect();
+                dragOffsetX = e.clientX - rect.left;
+                dragOffsetY = e.clientY - rect.top;
+                dragNode.style.zIndex = 100;
+                e.stopPropagation(); // Prevent canvas panning
+            }
+        });
+
+        document.addEventListener('mousemove', e => {
+            if (!isDragging || !dragNode) return;
+
+            // Calculate new position relative to canvas
+            const canvasRect = document.getElementById('canvas').getBoundingClientRect();
+            const x = e.clientX - canvasRect.left - dragOffsetX;
+            const y = e.clientY - canvasRect.top - dragOffsetY;
+
+            dragNode.style.left = `${x}px`;
+            dragNode.style.top = `${y}px`;
+
+            // Update lines while dragging
+            requestAnimationFrame(drawLines);
+        });
+
+        document.addEventListener('mouseup', () => {
+            if (isDragging && dragNode) {
+                isDragging = false;
+                dragNode.style.zIndex = '';
+
+                // Update underlying data model (in a real app, you'd save this)
+                const nodeId = dragNode.dataset.id;
+                const nodeData = nodes.find(n => n.id === nodeId);
+                if (nodeData) {
+                    nodeData.x = parseInt(dragNode.style.left);
+                    nodeData.y = parseInt(dragNode.style.top);
+                    console.log(`Updated position for ${nodeId}: x=${nodeData.x}, y=${nodeData.y}`);
+                }
+                dragNode = null;
+            }
+        });
 
         document.getElementById('detailClose').addEventListener('click', () => {
             detailPanel.classList.remove('open');
