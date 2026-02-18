@@ -789,9 +789,13 @@
         let dragNode = null;
         let dragOffsetX = 0;
         let dragOffsetY = 0;
+        let dragStartX = 0;
+        let dragStartY = 0;
+        let hasDragged = false;
+        const DRAG_THRESHOLD = 5; // pixels
 
         document.getElementById('canvas').addEventListener('mousedown', e => {
-            if (e.button === 2) { // Right click
+            if (e.button === 2) { // Right click (Connect)
                 const node = e.target.closest('.node');
                 if (node) {
                     isConnecting = true;
@@ -804,16 +808,25 @@
                     tempLine.style.strokeDasharray = '5,5';
                     svg.appendChild(tempLine);
                     e.stopPropagation();
+                    e.preventDefault();
                 }
-            } else if (e.button === 0) { // Left click
+            } else if (e.button === 0) { // Left click (Drag or Click)
                 const potentialNode = e.target.closest('.node');
                 if (potentialNode) {
-                    isDragging = true;
+                    // Prepare for potential drag, but don't start yet
+                    isDragging = false;
+                    hasDragged = false;
                     dragNode = potentialNode;
+
+                    // Store initial position to calculate threshold
+                    dragStartX = e.clientX;
+                    dragStartY = e.clientY;
+
                     const rect = dragNode.getBoundingClientRect();
                     dragOffsetX = e.clientX - rect.left;
                     dragOffsetY = e.clientY - rect.top;
-                    dragNode.style.zIndex = 100;
+
+                    // Don't verify drag yet, wait for move
                     e.stopPropagation();
                 }
             }
@@ -821,12 +834,9 @@
 
         document.addEventListener('mousemove', e => {
             const canvasRect = document.getElementById('canvas').getBoundingClientRect();
-            const x = (e.clientX - canvasRect.left) / scale; // Adjust for scale if implemented, currently scale=1 logic needs verify
-            const y = (e.clientY - canvasRect.top) / scale;
-
+            // Connecting logic (Right drag)
             if (isConnecting && connectStartNode) {
-                const navScale = scale || 1; // Fallback
-                // Update temp line
+                const navScale = scale || 1;
                 const startRect = connectStartNode.getBoundingClientRect();
                 const startX = (startRect.left + startRect.width / 2 - canvasRect.left) / navScale;
                 const startY = (startRect.top + startRect.height / 2 - canvasRect.top) / navScale;
@@ -836,73 +846,83 @@
 
                 const d = `M ${startX} ${startY} L ${curX} ${curY}`;
                 tempLine.setAttribute('d', d);
+                return;
             }
 
-            if (isDragging && dragNode) {
-                // Dragging logic
-                const navScale = scale || 1;
-                const newX = (e.clientX - canvasRect.left - dragOffsetX) / navScale;
-                const newY = (e.clientY - canvasRect.top - dragOffsetY) / navScale;
+            // Dragging logic (Left drag)
+            if (dragNode) {
+                // Check if moved enough to count as drag
+                if (!isDragging && !hasDragged) {
+                    const dist = Math.sqrt(Math.pow(e.clientX - dragStartX, 2) + Math.pow(e.clientY - dragStartY, 2));
+                    if (dist > DRAG_THRESHOLD) {
+                        isDragging = true;
+                        hasDragged = true;
+                        dragNode.style.zIndex = 100;
+                    }
+                }
 
-                dragNode.style.left = `${newX}px`;
-                dragNode.style.top = `${newY}px`;
-                requestAnimationFrame(drawLines);
+                if (isDragging) {
+                    const navScale = scale || 1;
+                    const newX = (e.clientX - canvasRect.left - dragOffsetX) / navScale;
+                    const newY = (e.clientY - canvasRect.top - dragOffsetY) / navScale;
+
+                    dragNode.style.left = `${newX}px`;
+                    dragNode.style.top = `${newY}px`;
+                    requestAnimationFrame(drawLines);
+                }
             }
         });
 
         document.addEventListener('mouseup', e => {
+            // Right click release (End Connect)
             if (isConnecting) {
                 const targetNode = e.target.closest('.node');
                 if (targetNode && targetNode !== connectStartNode) {
                     const parentId = connectStartNode.dataset.id;
                     const childId = targetNode.dataset.id;
-                    console.log(`Connected ${parentId} to ${childId}`);
-                    // In a real app, update data model here
                     const childData = nodes.find(n => n.id === childId);
                     if (childData) {
                         if (!childData.parent) childData.parent = parentId;
                         else if (Array.isArray(childData.parent)) childData.parent.push(parentId);
                         else childData.parent = [childData.parent, parentId];
                         drawLines();
+                        alert(`Connected: ${parentId} -> ${childId}`);
                     }
-                    alert(`Connected: ${parentId} -> ${childId}`);
                 }
-
-                if (tempLine) {
-                    tempLine.remove();
-                    tempLine = null;
-                }
+                if (tempLine) { tempLine.remove(); tempLine = null; }
                 isConnecting = false;
                 connectStartNode = null;
             }
 
-            if (isDragging) {
-                isDragging = false;
-                if (dragNode) dragNode.style.zIndex = '';
+            // Left click release (End Drag or Click)
+            if (dragNode) {
+                if (isDragging) {
+                    // It was a drag operation
+                    isDragging = false;
+                    dragNode.style.zIndex = '';
 
-                // Update position data
-                if (dragNode) {
+                    // Update position data
                     const nodeId = dragNode.dataset.id;
                     const nodeData = nodes.find(n => n.id === nodeId);
                     if (nodeData) {
                         nodeData.x = parseInt(dragNode.style.left);
                         nodeData.y = parseInt(dragNode.style.top);
                     }
+                } else if (!hasDragged) {
+                    // It was a click operation (didn't move enough)
+                    const nodeId = dragNode.dataset.id;
+                    const nodeData = nodes.find(n => n.id === nodeId);
+                    if (nodeData) {
+                        showNodeDetail(nodeData);
+                    }
                 }
                 dragNode = null;
+                hasDragged = false;
             }
         });
 
-        // Click event for details (Separate from drag)
-        document.getElementById('canvas').addEventListener('click', e => {
-            const node = e.target.closest('.node');
-            // Only show details if not just finished dragging/connecting
-            if (node && !isDragging && !isConnecting) {
-                const nodeId = node.dataset.id;
-                const nodeData = nodes.find(n => n.id === nodeId);
-                if (nodeData) showNodeDetail(nodeData);
-            }
-        });
+        // Click event removed because mouseup handles it now
+        // document.getElementById('canvas').addEventListener('click', ...
 
         document.getElementById('detailClose').addEventListener('click', () => {
             detailPanel.classList.remove('open');
