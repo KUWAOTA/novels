@@ -26,11 +26,18 @@ window.STORY_NODES = [
     { id: 'Tragedy-Start', parent: 'branch_point', label: '悲劇と統合\n(自殺・崩壊編)', description: '厳密さを武器にした結果、悲劇が起きる。\n一度全てを否定し、そこから統合へ向かう。', x: 1600, y: 100, type: 'act', status: 'preferred' },
 
     { id: 'Tragedy-1', parent: 'Tragedy-Start', label: 'Aへの尋問', description: 'ミスをしたAを「何故？」と詰め続ける。\n正義の執行のつもりだが、実は復讐。', x: 1750, y: 100, type: 'beat', status: 'preferred', value_change: '正義 → 暴力' },
-    { id: 'Tragedy-2', parent: 'Tragedy-1', label: 'Aの自殺', description: 'Aが自殺（または未遂）。\n「完璧な言葉」が人を殺した事実。', x: 1900, y: 100, type: 'beat', status: 'preferred', value_change: '勝利 → 喪失' },
-    { id: 'Tragedy-3', parent: 'Tragedy-2', label: '復讐欲の自覚', description: '正義だと思っていた行動の裏に、\n「Aを傷つけたい」という昏い欲望があったと気づく。\n自分は正義の執行者ではなく、ただの復讐者だった。', x: 2050, y: 100, type: 'beat', status: 'preferred', value_change: '保身 → 自己嫌悪' },
-    { id: 'Tragedy-4', parent: 'Tragedy-3', label: '全否定', description: '自分という人間が信じられなくなり、\nConstrainを即座に停止・全ルール撤廃。\n武器を捨てる。', x: 2200, y: 100, type: 'beat', status: 'preferred', value_change: '確信 → 拒絶' },
-    { id: 'Tragedy-5', parent: 'Tragedy-4', label: '組織の崩壊', description: 'ルールがなくなり、現場は大混乱。\n社員「ガイドラインを戻してくれ！」', x: 2350, y: 100, type: 'beat', status: 'preferred', value_change: '自由 → 混沌' },
-    { id: 'Tragedy-6', parent: 'Tragedy-5', label: 'ジンテーゼ', description: '厳密さ（構造）は必要だが、\nそれを罰（武器）に使ってはいけない。\n「優しい厳密さ」への統合。', x: 2500, y: 100, type: 'climax', status: 'preferred', value_change: '否定 → 統合' },
+
+    // TRAGEDY BRANCH A: Suicide Route
+    { id: 'Tragedy-2A', parent: 'Tragedy-1', label: 'Aの自殺', description: 'Aが自殺（または未遂）。\n「完璧な言葉」が人を殺した事実。', x: 1900, y: 50, type: 'beat', status: 'preferred', value_change: '勝利 → 喪失' },
+
+    // TRAGEDY BRANCH B: Realization Route
+    { id: 'Tragedy-2B', parent: 'Tragedy-1', label: '復讐欲の自覚', description: '正義だと思っていた行動の裏に、\n「Aを傷つけたい」という昏い欲望があったと気づく。', x: 1900, y: 200, type: 'beat', status: 'preferred', value_change: '保身 → 自己嫌悪' },
+
+    // MERGE
+    { id: 'Tragedy-Merge', parent: ['Tragedy-2A', 'Tragedy-2B'], label: '全否定', description: '「自分は間違っていた」\n自信の喪失により、Constrainを即座に停止。\n全ルール撤廃。', x: 2150, y: 100, type: 'beat', status: 'preferred', value_change: '確信 → 拒絶' },
+
+    { id: 'Tragedy-5', parent: 'Tragedy-Merge', label: '組織の崩壊', description: 'ルールがなくなり、現場は大混乱。\n社員「ガイドラインを戻してくれ！」', x: 2300, y: 100, type: 'beat', status: 'preferred', value_change: '自由 → 混沌' },
+    { id: 'Tragedy-6', parent: 'Tragedy-5', label: 'ジンテーゼ', description: '厳密さ（構造）は必要だが、\nそれを罰（武器）に使ってはいけない。\n「優しい厳密さ」への統合。', x: 2450, y: 100, type: 'climax', status: 'preferred', value_change: '否定 → 統合' },
 
     // ══════════════════════════════════════════════════════════════
     // BRANCH: Rigorous Triumph (OLD PREFERRED -> CANDIDATE)

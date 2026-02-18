@@ -647,50 +647,56 @@
             requestAnimationFrame(() => {
                 svg.innerHTML = '';
                 nodes.forEach(n => {
-                    if (!n.parent || !nodeElements[n.parent] || !nodeElements[n.id]) return;
-                    const from = getNodeCenter(nodeElements[n.parent]);
-                    const to = getNodeCenter(nodeElements[n.id]);
+                    if (!n.parent) return;
 
-                    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                    const parents = Array.isArray(n.parent) ? n.parent : [n.parent];
 
-                    // Determine connection points
-                    let x1, y1, x2, y2;
-                    const dx = to.left - from.right;
-                    const dy = Math.abs(from.y - to.y);
+                    parents.forEach(parentId => {
+                        if (!nodeElements[parentId] || !nodeElements[n.id]) return;
 
-                    if (dx > -20) {
-                        // Target is to the right
-                        x1 = from.right;
-                        y1 = from.y;
-                        x2 = to.left;
-                        y2 = to.y;
-                    } else if (to.top > from.bottom) {
-                        // Target is below
-                        x1 = from.x;
-                        y1 = from.bottom;
-                        x2 = to.x;
-                        y2 = to.top;
-                    } else {
-                        x1 = from.right;
-                        y1 = from.y;
-                        x2 = to.left;
-                        y2 = to.y;
-                    }
+                        const from = getNodeCenter(nodeElements[parentId]);
+                        const to = getNodeCenter(nodeElements[n.id]);
 
-                    const midX = (x1 + x2) / 2;
-                    const d = `M ${x1} ${y1} C ${midX} ${y1}, ${midX} ${y2}, ${x2} ${y2}`;
-                    path.setAttribute('d', d);
-                    path.classList.add('conn-line');
-                    path.dataset.from = n.parent;
-                    path.dataset.to = n.id;
+                        const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
 
-                    if (n.status === 'preferred') {
-                        path.style.stroke = 'rgba(86,211,100,0.3)';
-                    } else if (n.type === 'branch-root' || n.type === 'branch-point') {
-                        path.style.stroke = 'rgba(88,166,255,0.3)';
-                    }
+                        // Determine connection points
+                        let x1, y1, x2, y2;
+                        const dx = to.left - from.right;
 
-                    svg.appendChild(path);
+                        if (dx > -20) {
+                            // Target is to the right
+                            x1 = from.right;
+                            y1 = from.y;
+                            x2 = to.left;
+                            y2 = to.y;
+                        } else if (to.top > from.bottom) {
+                            // Target is below
+                            x1 = from.x;
+                            y1 = from.bottom;
+                            x2 = to.x;
+                            y2 = to.top;
+                        } else {
+                            x1 = from.right;
+                            y1 = from.y;
+                            x2 = to.left;
+                            y2 = to.y;
+                        }
+
+                        const midX = (x1 + x2) / 2;
+                        const d = `M ${x1} ${y1} C ${midX} ${y1}, ${midX} ${y2}, ${x2} ${y2}`;
+                        path.setAttribute('d', d);
+                        path.classList.add('conn-line');
+                        path.dataset.from = parentId;
+                        path.dataset.to = n.id;
+
+                        if (n.status === 'preferred') {
+                            path.style.stroke = 'rgba(86,211,100,0.3)';
+                        } else if (n.type === 'branch-root' || n.type === 'branch-point') {
+                            path.style.stroke = 'rgba(88,166,255,0.3)';
+                        }
+
+                        svg.appendChild(path);
+                    });
                 });
 
                 // Draw special connection: resolution
