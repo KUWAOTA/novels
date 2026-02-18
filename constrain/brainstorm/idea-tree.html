@@ -772,6 +772,18 @@
             document.querySelectorAll(`.conn-line[data-to="${node.id}"], .conn-line[data-from="${node.id}"]`).forEach(l => l.classList.add('highlight'));
         }
 
+        // ── Connect Nodes (Right-Click Drag) ──
+        let isConnecting = false;
+        let connectStartNode = null;
+        let tempLine = null;
+
+        document.getElementById('canvas').addEventListener('contextmenu', e => {
+            const node = e.target.closest('.node');
+            if (node) {
+                e.preventDefault(); // Prevent context menu on nodes
+            }
+        });
+
         // ── Drag and Drop Implementation ──
         let isDragging = false;
         let dragNode = null;
@@ -779,47 +791,116 @@
         let dragOffsetY = 0;
 
         document.getElementById('canvas').addEventListener('mousedown', e => {
-            const potentialNode = e.target.closest('.node');
-            if (potentialNode) {
-                isDragging = true;
-                dragNode = potentialNode;
-                const rect = dragNode.getBoundingClientRect();
-                dragOffsetX = e.clientX - rect.left;
-                dragOffsetY = e.clientY - rect.top;
-                dragNode.style.zIndex = 100;
-                e.stopPropagation(); // Prevent canvas panning
+            if (e.button === 2) { // Right click
+                const node = e.target.closest('.node');
+                if (node) {
+                    isConnecting = true;
+                    connectStartNode = node;
+
+                    // Create temp line
+                    tempLine = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                    tempLine.classList.add('conn-line');
+                    tempLine.style.stroke = 'var(--text-accent)';
+                    tempLine.style.strokeDasharray = '5,5';
+                    svg.appendChild(tempLine);
+                    e.stopPropagation();
+                }
+            } else if (e.button === 0) { // Left click
+                const potentialNode = e.target.closest('.node');
+                if (potentialNode) {
+                    isDragging = true;
+                    dragNode = potentialNode;
+                    const rect = dragNode.getBoundingClientRect();
+                    dragOffsetX = e.clientX - rect.left;
+                    dragOffsetY = e.clientY - rect.top;
+                    dragNode.style.zIndex = 100;
+                    e.stopPropagation();
+                }
             }
         });
 
         document.addEventListener('mousemove', e => {
-            if (!isDragging || !dragNode) return;
-
-            // Calculate new position relative to canvas
             const canvasRect = document.getElementById('canvas').getBoundingClientRect();
-            const x = e.clientX - canvasRect.left - dragOffsetX;
-            const y = e.clientY - canvasRect.top - dragOffsetY;
+            const x = (e.clientX - canvasRect.left) / scale; // Adjust for scale if implemented, currently scale=1 logic needs verify
+            const y = (e.clientY - canvasRect.top) / scale;
 
-            dragNode.style.left = `${x}px`;
-            dragNode.style.top = `${y}px`;
+            if (isConnecting && connectStartNode) {
+                const navScale = scale || 1; // Fallback
+                // Update temp line
+                const startRect = connectStartNode.getBoundingClientRect();
+                const startX = (startRect.left + startRect.width / 2 - canvasRect.left) / navScale;
+                const startY = (startRect.top + startRect.height / 2 - canvasRect.top) / navScale;
 
-            // Update lines while dragging
-            requestAnimationFrame(drawLines);
+                const curX = (e.clientX - canvasRect.left) / navScale;
+                const curY = (e.clientY - canvasRect.top) / navScale;
+
+                const d = `M ${startX} ${startY} L ${curX} ${curY}`;
+                tempLine.setAttribute('d', d);
+            }
+
+            if (isDragging && dragNode) {
+                // Dragging logic
+                const navScale = scale || 1;
+                const newX = (e.clientX - canvasRect.left - dragOffsetX) / navScale;
+                const newY = (e.clientY - canvasRect.top - dragOffsetY) / navScale;
+
+                dragNode.style.left = `${newX}px`;
+                dragNode.style.top = `${newY}px`;
+                requestAnimationFrame(drawLines);
+            }
         });
 
-        document.addEventListener('mouseup', () => {
-            if (isDragging && dragNode) {
-                isDragging = false;
-                dragNode.style.zIndex = '';
+        document.addEventListener('mouseup', e => {
+            if (isConnecting) {
+                const targetNode = e.target.closest('.node');
+                if (targetNode && targetNode !== connectStartNode) {
+                    const parentId = connectStartNode.dataset.id;
+                    const childId = targetNode.dataset.id;
+                    console.log(`Connected ${parentId} to ${childId}`);
+                    // In a real app, update data model here
+                    const childData = nodes.find(n => n.id === childId);
+                    if (childData) {
+                        if (!childData.parent) childData.parent = parentId;
+                        else if (Array.isArray(childData.parent)) childData.parent.push(parentId);
+                        else childData.parent = [childData.parent, parentId];
+                        drawLines();
+                    }
+                    alert(`Connected: ${parentId} -> ${childId}`);
+                }
 
-                // Update underlying data model (in a real app, you'd save this)
-                const nodeId = dragNode.dataset.id;
-                const nodeData = nodes.find(n => n.id === nodeId);
-                if (nodeData) {
-                    nodeData.x = parseInt(dragNode.style.left);
-                    nodeData.y = parseInt(dragNode.style.top);
-                    console.log(`Updated position for ${nodeId}: x=${nodeData.x}, y=${nodeData.y}`);
+                if (tempLine) {
+                    tempLine.remove();
+                    tempLine = null;
+                }
+                isConnecting = false;
+                connectStartNode = null;
+            }
+
+            if (isDragging) {
+                isDragging = false;
+                if (dragNode) dragNode.style.zIndex = '';
+
+                // Update position data
+                if (dragNode) {
+                    const nodeId = dragNode.dataset.id;
+                    const nodeData = nodes.find(n => n.id === nodeId);
+                    if (nodeData) {
+                        nodeData.x = parseInt(dragNode.style.left);
+                        nodeData.y = parseInt(dragNode.style.top);
+                    }
                 }
                 dragNode = null;
+            }
+        });
+
+        // Click event for details (Separate from drag)
+        document.getElementById('canvas').addEventListener('click', e => {
+            const node = e.target.closest('.node');
+            // Only show details if not just finished dragging/connecting
+            if (node && !isDragging && !isConnecting) {
+                const nodeId = node.dataset.id;
+                const nodeData = nodes.find(n => n.id === nodeId);
+                if (nodeData) showNodeDetail(nodeData);
             }
         });
 
