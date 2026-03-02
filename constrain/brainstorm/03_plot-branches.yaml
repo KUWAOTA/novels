@@ -228,6 +228,24 @@ branch_rigorous_triumph:
 
   beat_sequence:
     - id: RT-1
+      label: "非効率の排除"
+      description: >
+        主人公は曖昧な感情論や非論理的な習慣を
+        「バグ」として次々と指摘し、修正していく。
+        周囲は反発するが、成果が出るため黙るしかない。
+        「言葉を正せば、世界は正しくなる」と確信する。
+      value_change: "摩擦 → 支配"
+
+    - id: RT-2
+      label: "世界のデバッグ"
+      description: >
+        主人公は自信を深め、世界のあらゆる「バグ（曖昧さ）」を
+        Constrain（厳密な定義）で修正していく。
+        世界がクリアになり、多くの人が救われる（ように見える）。
+        主人公は世界と分かり合えたと感じる。
+      value_change: "混沌 → 秩序"
+
+    - id: RT-3
       label: "Aへの断罪"
       description: >
         Tragedyルートの「Aへの尋問」に対応（ここが分岐点）。

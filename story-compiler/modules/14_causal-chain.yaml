@@ -1,7 +1,7 @@
 # ============================================================
 # Module: Causal Chain Integrity (論理の穴検出)
-# Source: Robert McKee "Story" — 因果関係の鎖 (P448)
-# Version: 0.1
+# Source: Robert McKee "Story" P448 + "Character" 鑑識眼/因果章
+# Version: 0.2
 # ============================================================
 # ストーリーは因果関係の鎖で構成される。
 # この鎖の一部が欠けている状態＝「穴」。
@@ -175,3 +175,134 @@ causality_validation:
           契機事件–クライマックス間の整合性が閾値以下です。
           クライマックスが契機事件から十分に必然化されていない可能性があります。
           因果的エスカレーション、欲望の一貫性、価値軸の整合を強化してください。
+
+# ============================================================
+# イベント→人生変化の還元制約（Plot Question Reduction）
+# Source: McKee "Character" — 「プロットの問いは全て、
+#   キャラクターの人生をどう変えるかに還元される」
+# ============================================================
+plot_question_reduction:
+  purpose: >
+    すべての主要イベント（Turning Point / Crisis / Climax）は
+    「この出来事は、主人公（または焦点人物）の人生の
+    どの価値軸をどう変えるか？」に還元できなければならない。
+    還元できないイベントは「飾り」「説明」「ノイズ」の疑い。
+
+  applies_to:
+    - TurningPoint
+    - Crisis
+    - Climax
+    - MajorEvent
+
+  life_change_categories:
+    value_shift:
+      description: "価値観（何が善/重要か）が反転・更新される"
+    relationship_power_shift:
+      description: "人間関係の力学が変わる（支配↔被支配、信頼↔不信、依存↔自立）"
+    desire_priority_shift:
+      description: "欲望/恐れの優先順位が入れ替わる"
+    self_deception_shift:
+      description: "自己欺瞞が強化される or 崩れる"
+    irreversible_constraint:
+      description: >-
+        "取り返しのつかない"制約が増える
+        （失職、破局、罪、誓約など）
+
+  required_per_major_event:
+    life_change_description:
+      required: true
+      type: string
+      description: >-
+        このイベントが焦点人物の人生をどう変えるかの記述。
+        上記カテゴリの少なくとも1つに該当しなければならない。
+
+  compile_time_checks:
+
+    event_not_reducible_to_life_change:
+      description: >
+        主要イベントが人生の価値変化に還元できない場合、
+        そのイベントはドラマとして機能していない可能性がある。
+      action: warning
+      message: >
+        主要イベントがキャラクターの人生の価値変化に
+        還元できません。このイベントは「飾り」「説明」
+        「ノイズ」になっていないか確認してください。
+        (McKee: Major event must be reducible to
+        "how it changes the character's life/value.")
+
+    event_caused_by_happening_not_choice:
+      description: >
+        主要イベントがキャラクターの選択/行動ではなく、
+        単なる出来事（偶然・外部介入・作者の都合）に
+        よって引き起こされている場合。
+      action: warning
+      message: >
+        主要イベントがキャラクターの選択/行動の結果ではなく、
+        単なる出来事によって引き起こされています。
+        人生が変わるのはキャラの選択の帰結であるべきです。
+        (McKee: Each major event must be caused by
+        a prior character choice/action, not mere happening.)
+
+# ============================================================
+# 因果鎖の最低単位（Causal Chain Minimum Unit）
+# Source: McKee "Character" — 因果関係の型
+# ============================================================
+causal_chain_minimum_unit:
+  purpose: >
+    因果の鎖の各リンクは、単純な「出来事→反応」ではなく
+    「出来事→内面露出→選択→行為→結果→次の出来事」
+    という構造を持つべき。
+    出来事も心理も単体では原因にならない。
+    原因として成立するのは「圧力下の選択（行為）」。
+
+  chain_structure:
+    - step: event
+      description: >-
+        外部からの出来事（トリガー）。キャラを動かすが、
+        それだけでは物語を前進させる「原因」には不足。
+    - step: inner_exposure
+      description: >-
+        出来事によってキャラクターの内面
+        （価値観・欲望・恐れ・自己欺瞞）が露出する。
+    - step: choice
+      description: >-
+        露出した内面と状況の圧力が「選択」を生む。
+        選択がないなら、その出来事はドラマとして弱い。
+    - step: action
+      description: >-
+        選択が具体的行為として実行される。
+        決意だけでは因果が進まない。
+    - step: consequence
+      description: >-
+        行為が外界を変え、次の出来事を必然化する。
+        反作用が次の場面を因果的に生成する。
+
+  validation_checks:
+
+    event_without_choice:
+      description: >
+        出来事がキャラクターに選択を迫る状況を
+        作っていない場合、ドラマとして弱い。
+      severity: warning
+      message: >
+        出来事がキャラクターに「選ばせる状況」を
+        作っていません。選択のない出来事はニュースで
+        終わります。圧力下の選択を設計してください。
+
+    action_without_inner_connection:
+      description: >
+        重要行為が、直前の内面状態
+        （欲望・恐れ・信念）と接続できない場合。
+      severity: warning
+      message: >
+        重要行為がキャラクターの内面状態（欲望・恐れ・信念）
+        と接続できません。動機の欠落の疑いがあります。
+
+    choice_without_consequence:
+      description: >
+        選択が行為になっておらず、内面独白で終わっている場合。
+      severity: warning
+      message: >
+        選択が行為として実行されていません。
+        決意だけでは因果が進みません。
+        選択を行為に変換し、外界を変えてください。
