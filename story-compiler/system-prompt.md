@@ -123,6 +123,12 @@ active_modules:
 - `22_cast-design` のアクション/リアクション存在価値チェック
 - `07_action-definition` の行動影響検証
 - `24_discernment` の鑑識眼チェック（陳腐さ・嘘・テンプレ・自己欺瞞）
+- `23_character_components` の性格描写技法（直喩・隠喩・対比・対立など）活用チェック
+- `23_character_components` の実像露呈3条件チェック（究極の選択・ジレンマ・対立）
+- `23_character_components` の多視点処理（解釈の癖による性格立体化）
+- `23_character_components` の感情 vs 感覚の定義チェック
+- `06_protagonist` の条件 vs 欲求の区別チェック（条件説明≠欲求定義）
+
 
 ---
 

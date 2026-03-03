@@ -1,7 +1,7 @@
 # ============================================================
 # Module: Protagonist Model
-# Source: Robert McKee "Story" — 主人公設計
-# Version: 0.2
+# Source: Robert McKee "Story" — 主人公設計 + "Character" — 欲求と動機
+# Version: 0.3
 # ============================================================
 # 主人公は物語のエンジン。
 # 意志（will）と欲望（desire）が行動を駆動し、
@@ -10,7 +10,7 @@
 
 module_id: protagonist
 module_name: "主人公モデル（Protagonist Model）"
-source: "McKee 'Story'"
+source: "McKee 'Story' + 'Character'"
 
 # ============================================================
 # 必須変数
@@ -244,6 +244,90 @@ scope:
   note: >
     主人公の性格は物語を通じて固定か、変化するか。
     将来的にアーク（character arc）対応を検討。
+
+# ============================================================
+# 内から生じる動機タクソノミー（Inner Motivation Taxonomy）
+# Source: McKee "Character" p151
+# ============================================================
+inner_motivation_taxonomy:
+  purpose: >
+    主人公を行動へと駆り立てる「内から生じる動機」の分類。
+    desire フィールドを設計する際のヒントとして提示する。
+    これらは相互に重複・複合しうる。
+  motivations:
+    - eternal_life:       "永遠の命への欲求"
+    - survival:           "生存への欲求"
+    - balance:            "バランス（例：正義/不正義の価値要素が-に傾くと復讐をするなど）"
+    - pleasure:           "快楽"
+    - sex:                "セックス"
+    - power:              "権力"
+    - empathy:            "共感（理解されたい・繋がりたい）"
+    - desire:
+        subtypes:
+          - greed:        "貪欲"
+          - envy:         "羨望"
+          - jealousy:     "嫉妬"
+    - curiosity:          "好奇心"
+    - meaning:            "意味（人生に意味を与えたいなどの願望）"
+    - fulfillment:        "充足感"
+    - transcendence:      "超越した存在への願望"
+  hint: >
+    欲求を一文で定義すること。
+    例：「完全に理解されたい」「曖昧さを排除したい」「世界を再現可能にしたい」
+
+# ============================================================
+# 条件 vs 欲求の区別（Condition vs. Desire）
+# Source: McKee "Character" — 欲求がエンジン
+# ============================================================
+condition_vs_desire:
+  principle: >
+    社会的状況や環境は「原因」ではなく「条件」。
+    キャラクターを動かすのは、あくまで欲求（desire）である。
+    貧困は犯罪の「原因」ではない。犯罪を選ぶのはキャラクター。
+    同じ条件でも選択が異なるのがキャラクターの性格を立ち上げる。
+
+  chain:
+    - step: condition
+      description: "外的条件（家庭・文化・時代・圧力）→ 行動を決定しない"
+    - step: desire
+      description: "内的欲求（何を欲しているか）→ 行動のエンジン"
+    - step: choice
+      description: "選択→ 性格が現れる"
+
+  design_steps:
+    step1: "条件を書き出す（家庭・文化・時代・圧力）"
+    step2: "それとは独立に「欲求」を一文で書く"
+    step3: "同じ条件で別の選択肢も考える（逃げる/迎合する/暴力化する/笑いに変えるなど）。その中でこのキャラクターはどれを選ぶか。そこが性格。"
+
+  compile_time_checks:
+
+    desire_conflated_with_condition:
+      description: >
+        欲求が「〇〇な環境だったからこうなった」という因果説明になっている場合。
+      severity: warning
+      message: >
+        欲求が環境条件の説明になっています。
+        「〇〇な家庭で育ったからこうなった」はドラマではなく説明です。
+        条件から独立した欲求を一文で定義してください。
+        (McKee: Conditions are not causes; desire is the engine.)
+
+    desire_undefined:
+      description: >
+        主人公の欲求（desire）が未定義の場合。
+      severity: compile_error
+      message: >
+        主人公の欲求（desire）が定義されていません。
+        欲求がなければ行動の根拠がなく、物語が動きません。
+
+    thought_novel_weak_desire:
+      description: >
+        思想系・テーマ主導の小説で、条件説明が多く欲求が弱い場合。
+        人物が「論文の例」になるリスク。
+      severity: warning
+      message: >
+        思想系作品で欲求の定義が弱い傾向があります。
+        条件の説明が多く、欲求が薄いと人物は「論文の例」になります。
+        欲求が明確なとき、思想は行動に変わります。
 
 # ============================================================
 # 将来の拡張予定

@@ -1,7 +1,7 @@
 # ============================================================
 # Module: Character Components
 # Source: Robert McKee "Character" — 性格描写と実像
-# Version: 1.0
+# Version: 1.1
 # ============================================================
 # キャラクターは二つの主要な側面で構成される：
 # 1. 性格描写（Characterization）：観察可能な表面的な特徴の総体
@@ -27,6 +27,23 @@ characterization:
     - social:       "職業、階級、宗教、政治的立場、家族構成"
     - personality:  "表面的な態度、人柄、気質（陽気、陰気など）"
     - intellect:    "知識、IQ、教育レベル"
+
+  # Source: McKee "Character" p146
+  techniques:
+    description: >
+      性格描写を行う際に用いる技法。
+      複数を組み合わせることでキャラクターが立体化する。
+    list:
+      - direct_simile:      "直喩：キャラクターを別の何かに直接たとえる"
+      - metaphor:           "隠喩：明示せずにたとえる"
+      - association:        "連想：キャラクターが何を想起させるかで性格を暗示"
+      - contrast:           "対比：別の人物や状況と並べて際立たせる"
+      - conflict:           "対立：他者・状況との衝突を通じて性格を露出させる"
+      - self_evaluation:    "自己評価：本人が自分をどう見ているかを示す"
+      - others_evaluation:  "他者からの評価：周囲がどう見ているかを示す"
+    hint: >
+      少なくとも2つ以上の技法を用いてキャラクターを描写することを推奨する。
+      「説明」ではなく「示す」技法（対比・対立・評価）を優先する。
 
 # ============================================================
 # 定義：実像（True Character）
@@ -82,4 +99,88 @@ validation:
         message: >
           実像を露呈させるための十分な「圧力」がかかるシーンが見当たりません。
           実像は平時の会話ではなく、ジレンマのある選択（圧力）によってのみ証明されます。
+
+  # 4. 実像を露呈させる3条件
+  # Source: McKee "Character" — 実像の露呈
+  # ------------------------------------------------------------
+  true_character_revelation_conditions:
+    description: >
+      実像（True Character）は以下の3つの状況によってのみ明らかになる。
+      これらが1つも存在しない場合、実像はキャラクター説明に留まる。
+    conditions:
+      - ultimate_choice:  "究極の選択：どちらかを選べば何かを失う、ゼロサムの岐路"
+      - dilemma:          "ジレンマ：どの選択肢も代償を伴い、容易に決断できない状況"
+      - conflict:         "対立：他者・自己・状況との衝突が選択を強いる"
+    compile_check:
+      severity: warning
+      condition: "none of the 3 revelation conditions present in protagonist arc"
+      message: >
+        実像を露呈させる条件（究極の選択・ジレンマ・対立）が
+        主人公のアークに存在しません。
+        圧力のないキャラクターは「性格説明」で終わります。
+
+# ============================================================
+# 多視点処理（Multi-Viewpoint Processing）
+# Source: McKee "Character" — 視点移動による性格の立体化
+# ============================================================
+multi_viewpoint_processing:
+  purpose: >
+    同一の出来事を複数の視点から解釈し、
+    その「解釈の癖」の一貫性がキャラクターの性格を形成する。
+    「全ての視点に立つ」とは、視点移動によって性格の輪郭を削り出すこと。
+
+  chain_structure:
+    - step: event
+      description: "出来事を固定する（例：友人に無視された）"
+    - step: multi_viewpoint_interpretation
+      description: >
+        以下の視点から順に解釈を生成する。
+        重要なのは「事実」ではなく「解釈」。
+      viewpoints:
+        - protagonist:  "本人はどう解釈するか"
+        - other_party:  "相手（相手がいる場合）はどう解釈するか"
+        - third_party:  "第三者の目にはどう見えるか"
+        - author:       "作家視点：このシーンのテーマ的意味は何か"
+        - reader:       "読者はどちらを信じるか、何を感じるか"
+    - step: select_revealing_interpretation
+      description: >
+        複数の解釈の中から「性格が見える解釈」だけを残す。
+        残すべきは「事実」ではなく「解釈の癖」。
+        例：すぐ被害解釈する人間か、確認しに行く人間か、忘れようとする人間か。
+
+  heuristic:
+    contradiction_signal: >
+      視点間で矛盾が生じたとき、キャラクターは立体化する。
+      矛盾がなければ、その描写は「ニュース」で終わる。
+
+  hint: >
+    interpretation_formula: >
+      for each event:
+        for each viewpoint:
+          generate interpretation
+        select interpretation that reveals inner contradiction
+
+# ============================================================
+# 感情と感覚の区別（Emotion vs. Sensation）
+# Source: McKee "Character" — 内的状態の分類
+# ============================================================
+emotion_vs_sensation:
+  definitions:
+    emotion:
+      description: "短時間で急激に振れる内的状態。特定の出来事によって引き起こされる。"
+      examples: ["怒り", "喜び", "悲しみ", "恐怖", "驚き"]
+    sensation:
+      description: "一日中・慢性的に感じる鈍い内的状態。背景として持続する。"
+      examples: ["どんよりした不安", "漠然とした虚無感", "慢性的な疲弊", "低い充足感"]
+  importance: >
+    感情はシーン単位で描写されるが、感覚はキャラクターの「ベース」として機能する。
+    感覚を定義すると、感情の振れ幅がリアルになる。
+    例：感覚が「慢性的な孤独」のキャラクターは、
+    「友人との会話」という出来事に対して過剰な喜びや疑心を示しやすい。
+  compile_check:
+    severity: info
+    condition: "sensation of protagonist is undefined"
+    message: >
+      主人公の「感覚（慢性的な内的状態）」が未定義です。
+      感情の振れ幅の根拠として、ベースとなる感覚の定義を検討してください。
 
