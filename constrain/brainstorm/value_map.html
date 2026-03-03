@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>constrain — 価値要素マップ v2</title>
+  <title>constrain — 仮プロット・価値要素マップ v3</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -41,8 +41,8 @@
       text-align: center;
       font-size: 1.8rem;
       font-weight: 300;
-      letter-spacing: 0.15em;
-      margin-bottom: 8px;
+      letter-spacing: 0.2em;
+      margin-bottom: 6px;
       background: linear-gradient(135deg, var(--accent-warm), var(--accent-purple));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -51,19 +51,25 @@
     .subtitle {
       text-align: center;
       color: var(--text-dim);
-      font-size: 0.85rem;
-      margin-bottom: 48px;
+      font-size: 0.82rem;
+      margin-bottom: 56px;
+      letter-spacing: 0.05em;
     }
 
     .section-title {
-      font-size: 1.1rem;
-      font-weight: 600;
+      font-size: 1rem;
+      font-weight: 700;
       margin-bottom: 20px;
-      padding-left: 12px;
+      padding-left: 14px;
       border-left: 3px solid var(--accent-warm);
-      max-width: 1000px;
+      max-width: 960px;
       margin-left: auto;
       margin-right: auto;
+      letter-spacing: 0.05em;
+    }
+
+    .section-title.cyan {
+      border-left-color: var(--accent-cyan);
     }
 
     .section-title.green {
@@ -78,307 +84,102 @@
       border-left-color: var(--accent-gold);
     }
 
-    .section-title.cyan {
-      border-left-color: var(--accent-cyan);
+    .section-title.purple {
+      border-left-color: var(--accent-purple);
     }
 
-    /* ---- 歩き方のメタファー ---- */
-    .metaphor-box {
-      max-width: 1000px;
+    /* ======= THEME BOX ======= */
+    .theme-box {
+      max-width: 960px;
       margin: 0 auto 48px;
-      background: linear-gradient(135deg, rgba(106, 232, 232, 0.05), rgba(160, 106, 232, 0.05));
-      border: 1px solid rgba(106, 232, 232, 0.2);
+      background: linear-gradient(135deg, rgba(106, 232, 232, .05), rgba(160, 106, 232, .05));
+      border: 1px solid rgba(106, 232, 232, .2);
       border-radius: 16px;
-      padding: 32px;
+      padding: 28px 32px;
     }
 
-    .metaphor-box h3 {
+    .theme-box h3 {
       color: var(--accent-cyan);
-      font-size: 1rem;
+      font-size: .95rem;
       margin-bottom: 16px;
     }
 
-    .metaphor-grid {
+    .theme-grid {
       display: grid;
-      grid-template-columns: 1fr 60px 1fr;
+      grid-template-columns: 1fr 48px 1fr;
       gap: 12px;
       align-items: center;
     }
 
-    .metaphor-card {
+    .theme-card {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 16px;
+      border-radius: 10px;
+      padding: 14px 16px;
       text-align: center;
     }
 
-    .metaphor-card h4 {
-      font-size: 0.9rem;
-      margin-bottom: 8px;
+    .theme-card h4 {
+      font-size: .85rem;
+      margin-bottom: 6px;
     }
 
-    .metaphor-card p {
-      font-size: 0.78rem;
+    .theme-card p {
+      font-size: .76rem;
       color: var(--text-dim);
       line-height: 1.5;
     }
 
-    .metaphor-center {
+    .theme-mid {
       text-align: center;
       color: var(--text-dim);
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
 
-    .metaphor-conclusion {
-      margin-top: 20px;
-      padding: 16px;
-      background: rgba(106, 232, 232, 0.08);
+    .theme-conclusion {
+      margin-top: 16px;
+      padding: 14px 18px;
+      background: rgba(106, 232, 232, .07);
       border-radius: 8px;
-      font-size: 0.85rem;
+      font-size: .83rem;
       line-height: 1.7;
       color: var(--accent-cyan);
       text-align: center;
     }
 
-    /* ---- 価値要素ペア ---- */
-    .value-pairs {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 16px;
-      max-width: 1000px;
-      margin: 0 auto 48px;
-    }
-
-    .value-pair {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-      transition: transform 0.2s, border-color 0.2s;
-    }
-
-    .value-pair:hover {
-      transform: translateY(-2px);
-      border-color: var(--accent-warm);
-    }
-
-    .value-pair .pair-row {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      width: 100%;
-      justify-content: center;
-    }
-
-    .value-pole {
-      font-size: 0.9rem;
-      font-weight: 600;
-      padding: 6px 14px;
-      border-radius: 8px;
-      min-width: 80px;
-      text-align: center;
-    }
-
-    .pole-positive {
-      background: rgba(106, 232, 160, 0.15);
-      color: var(--accent-green);
-    }
-
-    .pole-negative {
-      background: rgba(232, 106, 122, 0.15);
-      color: var(--accent-red);
-    }
-
-    .pole-negation {
-      background: rgba(160, 106, 232, 0.15);
-      color: var(--accent-purple);
-    }
-
-    .arrow {
-      color: var(--text-dim);
-      font-size: 1.2rem;
-    }
-
-    .value-note {
-      font-size: 0.78rem;
-      color: var(--text-dim);
-      text-align: center;
-      margin-top: 4px;
-      line-height: 1.5;
-    }
-
-    .value-label {
-      font-size: 0.7rem;
-      color: var(--text-dim);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 2px;
-    }
-
-    /* ---- キャラクター ---- */
-    .characters {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-      max-width: 1000px;
-      margin: 0 auto 48px;
-    }
-
-    .character-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 20px;
-      transition: transform 0.2s;
-    }
-
-    .character-card:hover {
-      transform: translateY(-2px);
-    }
-
-    .char-name {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    .char-tag {
-      display: inline-block;
-      font-size: 0.7rem;
-      padding: 2px 8px;
-      border-radius: 4px;
-      margin: 2px 2px;
-    }
-
-    .tag-warm {
-      background: rgba(232, 146, 106, 0.2);
-      color: var(--accent-warm);
-    }
-
-    .tag-cool {
-      background: rgba(106, 158, 232, 0.2);
-      color: var(--accent-cool);
-    }
-
-    .tag-green {
-      background: rgba(106, 232, 160, 0.2);
-      color: var(--accent-green);
-    }
-
-    .tag-purple {
-      background: rgba(160, 106, 232, 0.2);
-      color: var(--accent-purple);
-    }
-
-    .tag-red {
-      background: rgba(232, 106, 122, 0.2);
-      color: var(--accent-red);
-    }
-
-    .tag-gold {
-      background: rgba(232, 200, 106, 0.2);
-      color: var(--accent-gold);
-    }
-
-    .tag-cyan {
-      background: rgba(106, 232, 232, 0.2);
-      color: var(--accent-cyan);
-    }
-
-    .char-desc {
-      font-size: 0.82rem;
-      color: var(--text-dim);
-      margin-top: 10px;
-      line-height: 1.6;
-    }
-
-    /* ---- 否定の否定 ---- */
-    .negation-chart {
-      max-width: 1000px;
-      margin: 0 auto 48px;
-    }
-
-    .negation-row {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 12px;
-      flex-wrap: wrap;
-    }
-
-    .negation-cell {
-      padding: 10px 16px;
-      border-radius: 8px;
-      font-size: 0.85rem;
-      font-weight: 500;
-      text-align: center;
-      min-width: 120px;
-    }
-
-    .neg-label {
-      font-size: 0.65rem;
-      color: var(--text-dim);
-      min-width: 80px;
-      text-align: right;
-    }
-
-    .neg-arrow {
-      color: var(--text-dim);
-      font-size: 0.9rem;
-    }
-
-    .neg-pos {
-      background: rgba(106, 232, 160, 0.12);
-      color: var(--accent-green);
-      border: 1px solid rgba(106, 232, 160, 0.25);
-    }
-
-    .neg-con {
-      background: rgba(232, 106, 122, 0.12);
-      color: var(--accent-red);
-      border: 1px solid rgba(232, 106, 122, 0.25);
-    }
-
-    .neg-neg {
-      background: rgba(160, 106, 232, 0.12);
-      color: var(--accent-purple);
-      border: 1px solid rgba(160, 106, 232, 0.25);
-    }
-
-    /* ---- タイムライン ---- */
+    /* ======= PLOT TIMELINE ======= */
     .timeline {
-      max-width: 1000px;
-      margin: 0 auto 48px;
+      max-width: 960px;
+      margin: 0 auto 56px;
       position: relative;
     }
 
     .timeline::before {
       content: '';
       position: absolute;
-      left: 24px;
+      left: 22px;
       top: 0;
       bottom: 0;
       width: 2px;
-      background: linear-gradient(to bottom, var(--accent-cool), var(--accent-warm), var(--accent-purple), var(--accent-red), var(--accent-gold), transparent);
+      background: linear-gradient(to bottom,
+          var(--accent-cool), var(--accent-green),
+          var(--accent-warm), var(--accent-red),
+          var(--accent-gold), var(--accent-purple),
+          var(--accent-green));
     }
 
     .timeline-item {
       display: flex;
       align-items: flex-start;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
+      padding-left: 54px;
       position: relative;
-      padding-left: 56px;
     }
 
     .timeline-dot {
       position: absolute;
-      left: 16px;
-      top: 4px;
+      left: 14px;
+      top: 6px;
       width: 18px;
       height: 18px;
       border-radius: 50%;
@@ -391,40 +192,66 @@
       border-color: var(--accent-cool);
     }
 
-    .dot-warm {
-      border-color: var(--accent-warm);
-    }
-
     .dot-green {
       border-color: var(--accent-green);
+    }
+
+    .dot-warm {
+      border-color: var(--accent-warm);
     }
 
     .dot-red {
       border-color: var(--accent-red);
     }
 
-    .dot-purple {
-      border-color: var(--accent-purple);
-    }
-
     .dot-gold {
       border-color: var(--accent-gold);
     }
 
-    .dot-mystery {
-      border-color: var(--accent-gold);
-      animation: pulse 2s infinite;
+    .dot-purple {
+      border-color: var(--accent-purple);
     }
 
-    @keyframes pulse {
+    .dot-crisis {
+      border-color: var(--accent-red);
+      box-shadow: 0 0 0 4px rgba(232, 106, 122, .2);
+      animation: pulsered 2s infinite;
+    }
+
+    .dot-climax {
+      border-color: var(--accent-gold);
+      width: 22px;
+      height: 22px;
+      left: 12px;
+      box-shadow: 0 0 0 6px rgba(232, 200, 106, .15);
+      animation: pulsegold 1.5s infinite;
+    }
+
+    .dot-end {
+      border-color: var(--accent-green);
+    }
+
+    @keyframes pulsered {
 
       0%,
       100% {
-        box-shadow: 0 0 0 0 rgba(232, 200, 106, 0.4);
+        box-shadow: 0 0 0 0 rgba(232, 106, 122, .4);
       }
 
       50% {
-        box-shadow: 0 0 0 8px rgba(232, 200, 106, 0);
+        box-shadow: 0 0 0 8px rgba(232, 106, 122, 0);
+      }
+    }
+
+    @keyframes pulsegold {
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 4px rgba(232, 200, 106, .3);
+      }
+
+      50% {
+        box-shadow: 0 0 0 12px rgba(232, 200, 106, 0);
       }
     }
 
@@ -434,195 +261,400 @@
       border-radius: 12px;
       padding: 16px 20px;
       flex: 1;
+      transition: border-color .2s;
     }
 
-    .timeline-period {
-      font-size: 0.72rem;
+    .timeline-content:hover {
+      border-color: var(--border);
+    }
+
+    .timeline-content.climax-card {
+      border: 2px solid var(--accent-gold);
+      background: linear-gradient(135deg, rgba(232, 200, 106, .05), rgba(232, 106, 122, .05));
+    }
+
+    .timeline-content.ending-card {
+      border: 2px solid var(--accent-green);
+      background: rgba(106, 232, 160, .03);
+    }
+
+    .tl-period {
+      font-size: .68rem;
       color: var(--text-dim);
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 4px;
+      letter-spacing: .1em;
+      margin-bottom: 3px;
     }
 
-    .timeline-event {
-      font-size: 0.95rem;
-      font-weight: 600;
-      margin-bottom: 6px;
+    .tl-event {
+      font-size: .95rem;
+      font-weight: 700;
+      margin-bottom: 8px;
     }
 
-    .timeline-values {
+    .tl-desc {
+      font-size: .8rem;
+      color: var(--text-dim);
+      line-height: 1.65;
+    }
+
+    .tl-desc strong {
+      color: var(--text);
+    }
+
+    .tl-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 4px;
-      margin-top: 8px;
+      margin-top: 10px;
     }
 
-    .value-shift {
-      font-size: 0.72rem;
-      padding: 3px 8px;
+    .tag {
+      font-size: .68rem;
+      padding: 2px 8px;
       border-radius: 4px;
-      background: var(--surface2);
-      border: 1px solid var(--border);
     }
 
-    .shift-up {
-      border-color: rgba(106, 232, 160, 0.3);
+    .tag-up {
+      background: rgba(106, 232, 160, .12);
       color: var(--accent-green);
     }
 
-    .shift-down {
-      border-color: rgba(232, 106, 122, 0.3);
+    .tag-down {
+      background: rgba(232, 106, 122, .12);
       color: var(--accent-red);
     }
 
-    .shift-turn {
-      border-color: rgba(232, 200, 106, 0.3);
+    .tag-turn {
+      background: rgba(232, 200, 106, .12);
       color: var(--accent-gold);
     }
 
-    .timeline-desc {
-      font-size: 0.8rem;
-      color: var(--text-dim);
-      line-height: 1.5;
-      margin-top: 6px;
+    .tag-note {
+      background: rgba(160, 106, 232, .12);
+      color: var(--accent-purple);
     }
 
-    /* ---- クライマックスの空白 ---- */
-    .climax-zone {
-      max-width: 1000px;
+    /* ======= CHARACTERS ======= */
+    .chars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 14px;
+      max-width: 960px;
       margin: 0 auto 48px;
+    }
+
+    .char-card {
       background: var(--surface);
-      border: 2px dashed var(--accent-gold);
-      border-radius: 16px;
-      padding: 32px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    .char-name {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .char-tag {
+      display: inline-block;
+      font-size: .68rem;
+      padding: 2px 7px;
+      border-radius: 4px;
+      margin: 2px;
+    }
+
+    .ct-cool {
+      background: rgba(106, 158, 232, .2);
+      color: var(--accent-cool);
+    }
+
+    .ct-red {
+      background: rgba(232, 106, 122, .2);
+      color: var(--accent-red);
+    }
+
+    .ct-green {
+      background: rgba(106, 232, 160, .2);
+      color: var(--accent-green);
+    }
+
+    .ct-purple {
+      background: rgba(160, 106, 232, .2);
+      color: var(--accent-purple);
+    }
+
+    .ct-warm {
+      background: rgba(232, 146, 106, .2);
+      color: var(--accent-warm);
+    }
+
+    .ct-gold {
+      background: rgba(232, 200, 106, .2);
+      color: var(--accent-gold);
+    }
+
+    .ct-cyan {
+      background: rgba(106, 232, 232, .2);
+      color: var(--accent-cyan);
+    }
+
+    .char-desc {
+      font-size: .78rem;
+      color: var(--text-dim);
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    /* ======= VALUE PAIRS ======= */
+    .value-pairs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 14px;
+      max-width: 960px;
+      margin: 0 auto 48px;
+    }
+
+    .value-pair {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .vp-label {
+      font-size: .68rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: .1em;
+    }
+
+    .vp-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .vp-pole {
+      font-size: .85rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 7px;
+      min-width: 80px;
       text-align: center;
     }
 
-    .climax-zone h3 {
+    .pole-pos {
+      background: rgba(106, 232, 160, .15);
+      color: var(--accent-green);
+    }
+
+    .pole-neg {
+      background: rgba(232, 106, 122, .15);
+      color: var(--accent-red);
+    }
+
+    .pole-neg2 {
+      background: rgba(160, 106, 232, .15);
+      color: var(--accent-purple);
+    }
+
+    .vp-arrow {
+      color: var(--text-dim);
+      font-size: 1.1rem;
+    }
+
+    .vp-note {
+      font-size: .75rem;
+      color: var(--text-dim);
+      text-align: center;
+      line-height: 1.5;
+      margin-top: 2px;
+    }
+
+    /* ======= NEGATION ======= */
+    .neg-chart {
+      max-width: 960px;
+      margin: 0 auto 48px;
+    }
+
+    .neg-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .neg-cell {
+      padding: 9px 14px;
+      border-radius: 8px;
+      font-size: .82rem;
+      font-weight: 500;
+      text-align: center;
+      min-width: 100px;
+    }
+
+    .neg-lbl {
+      font-size: .62rem;
+      color: var(--text-dim);
+      min-width: 72px;
+      text-align: right;
+    }
+
+    .neg-arr {
+      color: var(--text-dim);
+      font-size: .85rem;
+    }
+
+    .neg-p {
+      background: rgba(106, 232, 160, .1);
+      color: var(--accent-green);
+      border: 1px solid rgba(106, 232, 160, .2);
+    }
+
+    .neg-c {
+      background: rgba(232, 106, 122, .1);
+      color: var(--accent-red);
+      border: 1px solid rgba(232, 106, 122, .2);
+    }
+
+    .neg-n {
+      background: rgba(160, 106, 232, .1);
+      color: var(--accent-purple);
+      border: 1px solid rgba(160, 106, 232, .2);
+    }
+
+    /* ======= CLIMAX CONFIRM ======= */
+    .climax-confirm {
+      max-width: 960px;
+      margin: 0 auto 48px;
+      background: linear-gradient(135deg, rgba(232, 200, 106, .06), rgba(232, 106, 122, .06));
+      border: 2px solid var(--accent-gold);
+      border-radius: 16px;
+      padding: 32px;
+    }
+
+    .climax-confirm h3 {
       color: var(--accent-gold);
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+
+    .climax-confirm .sub {
+      font-size: .78rem;
+      color: var(--text-dim);
+      margin-bottom: 20px;
+    }
+
+    .climax-scene {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 20px;
+      font-size: .83rem;
+      line-height: 1.8;
+      color: var(--text-dim);
+    }
+
+    .climax-scene strong {
+      color: var(--text);
+    }
+
+    .climax-scene .quote {
+      border-left: 3px solid var(--accent-gold);
+      padding-left: 14px;
+      margin: 12px 0;
+      color: var(--accent-warm);
+      font-style: italic;
+    }
+
+    .climax-scene .action {
+      border-left: 3px solid var(--accent-cool);
+      padding-left: 14px;
+      margin: 12px 0;
+      color: var(--accent-cool);
+    }
+
+    .climax-checks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+    }
+
+    .climax-check {
+      background: var(--surface2);
+      border: 1px solid rgba(106, 232, 160, .15);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: .78rem;
+      line-height: 1.5;
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+    }
+
+    .check-icon {
+      color: var(--accent-green);
+      flex-shrink: 0;
+      font-size: .9rem;
+    }
+
+    .check-label {
+      color: var(--accent-gold);
+      font-size: .65rem;
+      display: block;
+      margin-bottom: 2px;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+    }
+
+    /* ======= OPEN Q ======= */
+    .open-q {
+      max-width: 960px;
+      margin: 0 auto 48px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 32px;
+    }
+
+    .open-q h3 {
+      color: var(--accent-warm);
+      font-size: .95rem;
       margin-bottom: 16px;
     }
 
-    .climax-constraints {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 12px;
-      margin-top: 20px;
-      text-align: left;
-    }
-
-    .constraint {
+    .q-item {
       background: var(--surface2);
       border: 1px solid var(--border);
       border-radius: 8px;
       padding: 12px 16px;
-      font-size: 0.82rem;
-      line-height: 1.5;
+      margin-bottom: 10px;
+      font-size: .82rem;
+      line-height: 1.6;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
     }
 
-    .constraint-label {
-      font-size: 0.7rem;
-      color: var(--accent-gold);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 4px;
+    .q-num {
+      color: var(--accent-warm);
+      font-weight: 700;
+      flex-shrink: 0;
     }
 
-    /* ---- 構造的問題 ---- */
-    .problem-zone {
-      max-width: 1000px;
-      margin: 0 auto 48px;
-      background: var(--surface);
-      border: 2px solid var(--accent-red);
-      border-radius: 16px;
-      padding: 32px;
-    }
-
-    .problem-zone h3 {
-      color: var(--accent-red);
-      font-size: 1.1rem;
-      margin-bottom: 16px;
-      text-align: center;
-    }
-
-    .problem-item {
-      background: rgba(232, 106, 122, 0.06);
-      border: 1px solid rgba(232, 106, 122, 0.15);
-      border-radius: 8px;
-      padding: 16px;
-      margin-bottom: 12px;
-    }
-
-    .problem-item h4 {
-      color: var(--accent-red);
-      font-size: 0.85rem;
-      margin-bottom: 8px;
-    }
-
-    .problem-item p {
-      font-size: 0.82rem;
+    .q-text {
       color: var(--text-dim);
-      line-height: 1.6;
     }
 
-    .problem-item .highlight {
-      color: var(--accent-gold);
-      font-weight: 600;
-    }
-
-    /* ---- パラドックス ---- */
-    .paradox-zone {
-      max-width: 1000px;
-      margin: 0 auto 48px;
-      background: linear-gradient(135deg, rgba(232, 200, 106, 0.05), rgba(232, 106, 122, 0.05));
-      border: 2px solid var(--accent-gold);
-      border-radius: 16px;
-      padding: 32px;
-      text-align: center;
-    }
-
-    .paradox-zone h3 {
-      color: var(--accent-gold);
-      font-size: 1.1rem;
-      margin-bottom: 20px;
-    }
-
-    .paradox-cards {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      text-align: left;
-    }
-
-    .paradox-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 16px;
-    }
-
-    .paradox-card h4 {
-      font-size: 0.8rem;
-      margin-bottom: 8px;
-      color: var(--accent-gold);
-    }
-
-    .paradox-card p {
-      font-size: 0.8rem;
-      color: var(--text-dim);
-      line-height: 1.6;
-    }
-
-    .paradox-question {
-      margin-top: 20px;
-      padding: 16px;
-      background: rgba(232, 200, 106, 0.1);
-      border-radius: 8px;
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--accent-gold);
-      line-height: 1.6;
+    .q-text strong {
+      color: var(--text);
     }
   </style>
 </head>
@@ -630,516 +662,478 @@
 <body>
 
   <h1>constrain</h1>
-  <p class="subtitle">価値要素マップ v2 — 構造の可視化と診断</p>
+  <p class="subtitle">仮プロット + 価値要素マップ v3</p>
 
-  <!-- ====== 歩き方のメタファー ====== -->
-  <div class="section-title cyan">中心テーマ：歩き方のメタファー</div>
-  <div class="metaphor-box">
-    <h3>🦿 世界を歩くルートは一つではない</h3>
-    <div class="metaphor-grid">
-      <div class="metaphor-card" style="border-top: 3px solid var(--accent-cool);">
-        <h4 style="color: var(--accent-cool);">主人公の足 = 義足（精度）</h4>
-        <p>
-          ASDにより「普通の足」（共感・空気読み）が使えない。<br>
-          代わりに「義足」（厳密な言語、数式、コード）で世界を歩く。<br>
-          この足で、世界を高い解像度で見ることができる。
-        </p>
+  <!-- =============================== -->
+  <!-- テーマ                          -->
+  <!-- =============================== -->
+  <div class="section-title cyan">中心テーマ ── 歩き方のメタファー</div>
+  <div class="theme-box">
+    <h3>🦿 世界の歩き方は一つではない</h3>
+    <div class="theme-grid">
+      <div class="theme-card" style="border-top: 3px solid var(--accent-cool);">
+        <h4 style="color:var(--accent-cool)">主人公の足 ＝ 義足（精度）</h4>
+        <p>ASDで「普通の足」（共感・空気読み）が使えない。<br>言語・数式・コードという義足で歩く。<br>世界を高い解像度で見られる。</p>
       </div>
-      <div class="metaphor-center">≠</div>
-      <div class="metaphor-card" style="border-top: 3px solid var(--accent-red);">
-        <h4 style="color: var(--accent-red);">いじめっ子の足 = 素足（空気読み）</h4>
-        <p>
-          虐待家庭で「空気を読む力」を生存本能として獲得。<br>
-          曖昧な共感でしか世界を掴めない。IQが低く精度の足は履けない。<br>
-          でもそれで「歩けている」。それが彼/彼女の歩き方。
-        </p>
+      <div class="theme-mid">≠</div>
+      <div class="theme-card" style="border-top: 3px solid var(--accent-red);">
+        <h4 style="color:var(--accent-red)">いじめっ子の足 ＝ 素足（空気読み）</h4>
+        <p>虐待家庭で「空気を読む力」を生存本能として獲得。<br>低IQで義足は履けない。でもそれが彼/彼女の歩き方。</p>
       </div>
     </div>
-    <div class="metaphor-conclusion">
-      <strong>主人公の過ち：</strong>「義足の方が優れている」と信じ、他人の足を切って義足を強制したこと。<br>
-      <strong>着地点：</strong>歩き方は足でも義足でもいい。他人の足を切らなくてもいい。<br>
-      困っている人がいれば、その人に適した歩き方を教えればいい。<br>
-      <strong>敵など誰もいない。</strong>攻撃する人間には満たされなさがあるだけ。
+    <div class="theme-conclusion">
+      <strong>主人公の過ち</strong>：「義足の方が優れている」と信じ、他人の素足を切って義足を強制したこと。善意で。<br>
+      <strong>着地点</strong>：歩き方は足でも義足でもいい。他人の足を切らなくてもいい——困っている人がいれば、その人に適した歩き方を教えればいい。<br>
+      <strong style="color:var(--accent-green)">敵など誰もいない。攻撃する人間には満たされなさがあるだけ。</strong>
     </div>
   </div>
 
-  <!-- ====== 価値要素ペア ====== -->
-  <div class="section-title">価値要素の対立軸（更新版）</div>
-  <div class="value-pairs">
+  <!-- =============================== -->
+  <!-- キャラクター                    -->
+  <!-- =============================== -->
+  <div class="section-title">キャラクターと価値の配置</div>
+  <div class="chars">
 
-    <div class="value-pair">
-      <div class="value-label">中心軸（修正）</div>
-      <div class="pair-row">
-        <span class="value-pole pole-positive">共に歩む</span>
-        <span class="arrow">⟷</span>
-        <span class="value-pole pole-negative">自分の歩き方を強制する</span>
-      </div>
-      <div class="value-note">精度 vs 曖昧ではない。<br>「異なる認知のあり方を認め合えるか」が本質。</div>
-    </div>
-
-    <div class="value-pair">
-      <div class="value-label">行為の本質</div>
-      <div class="pair-row">
-        <span class="value-pole pole-positive">教育（適した歩き方）</span>
-        <span class="arrow">⟷</span>
-        <span class="value-pole pole-negation">善意の暴力</span>
-      </div>
-      <div class="value-note">「あなたのために言っている」が最も残酷な暴力。<br>悪意なら対抗できる。善意には対抗できない。</div>
-    </div>
-
-    <div class="value-pair">
-      <div class="value-label">根源的欲求</div>
-      <div class="pair-row">
-        <span class="value-pole pole-positive">愛される</span>
-        <span class="arrow">⟷</span>
-        <span class="value-pole pole-negative">孤立</span>
-      </div>
-      <div class="value-note">主人公＝父に愛された → いじめっ子の嫉妬の原点<br>いじめっ子＝愛されなかった → 虐待した親に依存し続ける</div>
-    </div>
-
-    <div class="value-pair">
-      <div class="value-label">自己認識</div>
-      <div class="pair-row">
-        <span class="value-pole pole-positive">正しさ</span>
-        <span class="arrow">⟷</span>
-        <span class="value-pole pole-negation">無自覚の暴力</span>
-      </div>
-      <div class="value-note">主人公は「正しいことを正しく言っている」と信じている。<br>善意から離さず教育 → うつ病 → 自殺未遂。</div>
-    </div>
-
-    <div class="value-pair">
-      <div class="value-label">鏡像 — 幼少期</div>
-      <div class="pair-row">
-        <span class="value-pole pole-negative">空気を読め</span>
-        <span class="arrow">→</span>
-        <span class="value-pole pole-negative">読めない（ASD）</span>
-      </div>
-      <div class="value-note">いじめっ子 → 主人公：「できないこと」を強いる暴力</div>
-    </div>
-
-    <div class="value-pair">
-      <div class="value-label">鏡像 — 青年期</div>
-      <div class="pair-row">
-        <span class="value-pole pole-negative">厳密に答えろ</span>
-        <span class="arrow">→</span>
-        <span class="value-pole pole-negative">答えられない（低IQ）</span>
-      </div>
-      <div class="value-note">主人公 → いじめっ子：まったく同じ構造の暴力</div>
-    </div>
-
-  </div>
-
-  <!-- ====== キャラクター ====== -->
-  <div class="section-title">キャラクターと価値の配置（更新版）</div>
-  <div class="characters">
-
-    <div class="character-card" style="border-left: 3px solid var(--accent-cool);">
-      <div class="char-name" style="color: var(--accent-cool);">主人公（CTO）</div>
+    <div class="char-card" style="border-left:3px solid var(--accent-cool)">
+      <div class="char-name" style="color:var(--accent-cool)">主人公（CTO）</div>
       <div>
-        <span class="char-tag tag-cool">ASD</span>
-        <span class="char-tag tag-cool">言語の精度</span>
-        <span class="char-tag tag-green">CTO・ベンチャー</span>
-        <span class="char-tag tag-red">善意の暴力者</span>
+        <span class="char-tag ct-cool">ASD</span>
+        <span class="char-tag ct-cool">言語の精度</span>
+        <span class="char-tag ct-cyan">マスク強迫症</span>
+        <span class="char-tag ct-red">善意の加害者</span>
       </div>
       <div class="char-desc">
-        表情が読めない → 言葉に頼る → 言語で世界を制御 → 曖昧な人を糾弾。<br>
-        武器：定義の厳密な言葉、コード、論理<br>
-        盲点：自分の歩き方が唯一の正解だと思い込んでいる<br>
-        <strong>善意から、いじめっ子を「教育」し、追い詰める。</strong>
+        自分の感情が読まれることへの恐怖から強迫的にマスクを外せない。<br>
+        「義足（精度）こそ唯一の正しい歩き方」と信じ、いじめっ子を善意で追い詰める。<br>
+        クライマックスで生まれて初めてマスクを外す。
       </div>
     </div>
 
-    <div class="character-card" style="border-left: 3px solid var(--accent-red);">
-      <div class="char-name" style="color: var(--accent-red);">いじめっ子（庶務・派遣）</div>
+    <div class="char-card" style="border-left:3px solid var(--accent-red)">
+      <div class="char-name" style="color:var(--accent-red)">いじめっ子</div>
       <div>
-        <span class="char-tag tag-red">虐待被害者</span>
-        <span class="char-tag tag-warm">空気を読む力</span>
-        <span class="char-tag tag-purple">庶務・派遣</span>
-        <span class="char-tag tag-red">親を介護（依存）</span>
-        <span class="char-tag tag-gold">IQが低い</span>
+        <span class="char-tag ct-red">虐待被害者</span>
+        <span class="char-tag ct-warm">空気読みの達人</span>
+        <span class="char-tag ct-purple">低IQ・庶務派遣</span>
+        <span class="char-tag ct-red">親を殺害</span>
       </div>
       <div class="char-desc">
-        崩れた家庭 → 空気を読まないと危険 → 空気で主人公を支配（幼少期）<br>
-        青年期：高い教育を受けられず、リモート庶務として主人公の会社に。<br>
-        善意の主人公は知らない。主人公に「空気読め」と言ってた暴力が、逆に返ってきてることを。<br>
-        <strong>うつ病→保険金自殺未遂（親のために死ぬ＝最後まで依存）</strong>
+        崩れた家庭で空気読みを生存本能として獲得。低IQで高い教育を受けられず。<br>
+        虐待した親を介護するためリモート庶務として主人公の会社に。<br>
+        善意の教育に対抗できずうつ病→依存する親を殺害→自殺へ。
       </div>
     </div>
 
-    <div class="character-card" style="border-left: 3px solid var(--accent-green);">
-      <div class="char-name" style="color: var(--accent-green);">父（故人）</div>
+    <div class="char-card" style="border-left:3px solid var(--accent-green)">
+      <div class="char-name" style="color:var(--accent-green)">父（故人）</div>
       <div>
-        <span class="char-tag tag-green">人格者・救世主</span>
-        <span class="char-tag tag-green">愛の源泉</span>
-        <span class="char-tag tag-gold">中高時代に死去</span>
+        <span class="char-tag ct-green">人格者・救世主</span>
+        <span class="char-tag ct-green">愛の源泉</span>
+        <span class="char-tag ct-gold">中高時代に死去</span>
       </div>
       <div class="char-desc">
-        主人公を無条件に愛した存在。主人公の言語獲得を支えた。<br>
-        いじめっ子を悪く言うと「悲しそうな目」をした。<br>
-        → 「その子にはその子の歩き方がある」ことへの哀しみ？<br>
-        <strong>死後、主人公はこの目の意味を解読できないまま。</strong>
+        主人公を無条件に愛した唯一の存在。主人公の言語獲得を支えた。<br>
+        いじめっ子を悪く言うと「悲しそうな目」をした——言語ではなく表情で。<br>
+        主人公はその意味を、クライマックスまで解読できない。
       </div>
     </div>
 
-    <div class="character-card" style="border-left: 3px solid var(--accent-purple);">
-      <div class="char-name" style="color: var(--accent-purple);">母</div>
+    <div class="char-card" style="border-left:3px solid var(--accent-purple)">
+      <div class="char-name" style="color:var(--accent-purple)">母</div>
       <div>
-        <span class="char-tag tag-purple">曖昧の象徴</span>
-        <span class="char-tag tag-warm">善意</span>
-        <span class="char-tag tag-red">情緒不安定</span>
+        <span class="char-tag ct-purple">曖昧の象徴</span>
+        <span class="char-tag ct-warm">善意</span>
+        <span class="char-tag ct-red">情緒不安定</span>
       </div>
       <div class="char-desc">
-        悪意なく主人公を守ろうとするが、感情的で振り回す。<br>
-        頼んでもいないことをして、感謝がないとキレる。<br>
-        主人公にとって「曖昧さは害」という確信を強める存在。<br>
-        <strong>※ 主人公は母と同じことをいじめっ子にしている（善意のおせっかい）</strong>
+        悪意なく主人公を守ろうとするが、感情的で振り回す。善意のおせっかいで怒る。<br>
+        主人公の「曖昧さ＝悪」の確信を強化する存在。<br>
+        ※主人公はいじめっ子に、母と全く同じことをしている。
       </div>
     </div>
 
   </div>
 
-  <!-- ====== 否定の否定 ====== -->
-  <div class="section-title">否定の否定（McKee）— 更新版</div>
-  <div class="negation-chart">
-
-    <div class="negation-row">
-      <span class="neg-label">ポジティブ</span>
-      <span class="negation-cell neg-pos">教育・導き</span>
-      <span class="neg-arrow">→</span>
-      <span class="neg-label">その反対</span>
-      <span class="negation-cell neg-con">放置・無関心</span>
-      <span class="neg-arrow">→</span>
-      <span class="neg-label">否定の否定</span>
-      <span class="negation-cell neg-neg">善意の教育で人を殺す</span>
-    </div>
-
-    <div class="negation-row">
-      <span class="neg-label">ポジティブ</span>
-      <span class="negation-cell neg-pos">理解</span>
-      <span class="neg-arrow">→</span>
-      <span class="neg-label">その反対</span>
-      <span class="negation-cell neg-con">無知</span>
-      <span class="neg-arrow">→</span>
-      <span class="neg-label">否定の否定</span>
-      <span class="negation-cell neg-neg">「理解」という名の支配</span>
-    </div>
-
-    <div class="negation-row">
-      <span class="neg-label">ポジティブ</span>
-      <span class="negation-cell neg-pos">共に歩む</span>
-      <span class="neg-arrow">→</span>
-      <span class="neg-label">その反対</span>
-      <span class="negation-cell neg-con">孤立</span>
-      <span class="neg-arrow">→</span>
-      <span class="neg-label">否定の否定</span>
-      <span class="negation-cell neg-neg">他人の足を切って自分の足で歩かせる</span>
-    </div>
-
-    <div class="negation-row">
-      <span class="neg-label">ポジティブ</span>
-      <span class="negation-cell neg-pos">愛される</span>
-      <span class="neg-arrow">→</span>
-      <span class="neg-label">その反対</span>
-      <span class="negation-cell neg-con">愛されない</span>
-      <span class="neg-arrow">→</span>
-      <span class="neg-label">否定の否定</span>
-      <span class="negation-cell neg-neg">愛された者が死すら親のためにする者を生む</span>
-    </div>
-
-  </div>
-
-  <!-- ====== タイムライン ====== -->
-  <div class="section-title">物語のタイムライン — 価値の転換点</div>
+  <!-- =============================== -->
+  <!-- 仮プロット タイムライン         -->
+  <!-- =============================== -->
+  <div class="section-title green">仮プロット ── タイムライン</div>
   <div class="timeline">
 
+    <!-- 幼少期 -->
     <div class="timeline-item">
       <div class="timeline-dot dot-blue"></div>
       <div class="timeline-content">
-        <div class="timeline-period">幼少期</div>
-        <div class="timeline-event">いじめの始まり</div>
-        <div class="timeline-desc">
-          いじめっ子は主人公の「空気の読めなさ」を攻撃し、父との関係に嫉妬。<br>
-          「空気を読め」＝主人公にできないことを強いる暴力。<br>
-          母は感情的に振り回しながら守ろうとする。
+        <div class="tl-period">第一章 ── 幼少期</div>
+        <div class="tl-event">いじめの始まり</div>
+        <div class="tl-desc">
+          いじめっ子は主人公の「空気の読めなさ」を武器に攻撃する。<br>
+          動機は主人公と<strong>父との愛の関係への嫉妬</strong>。「あいつは僕より劣っているのに愛されている」。<br>
+          母は感情的に守ろうとするが、情緒的に振り回す。<br>
+          父はいじめっ子を悪く言う主人公に、<strong>言葉ではなく悲しそうな目で返す</strong>。
         </div>
-        <div class="timeline-values">
-          <span class="value-shift shift-down">安全 → 危険</span>
-          <span class="value-shift shift-down">愛される → 攻撃される</span>
+        <div class="tl-tags">
+          <span class="tag tag-down">安全 → 危険</span>
+          <span class="tag tag-down">愛される → 攻撃される</span>
+          <span class="tag tag-note">父の目 = 未解読メッセージ</span>
         </div>
       </div>
     </div>
 
+    <!-- 少年期① -->
     <div class="timeline-item">
       <div class="timeline-dot dot-green"></div>
       <div class="timeline-content">
-        <div class="timeline-period">少年期</div>
-        <div class="timeline-event">言語という「義足」の獲得</div>
-        <div class="timeline-desc">
-          世界を精密に記述する言葉を覚える。数式、定義、コード。<br>
-          父がその成長を見守り、支える。「義足で歩ける」ようになる。
+        <div class="tl-period">第二章 ── 少年期</div>
+        <div class="tl-event">「義足」の獲得</div>
+        <div class="tl-desc">
+          世界を精密に記述する言語・数式・コードを覚える。<strong>義足で歩けるようになる。</strong><br>
+          父がその成長を見守り、支える。これが主人公にとって最も安全な時間。<br>
+          しかし「曖昧さ＝悪」という確信も同時に育ってゆく。<br>
+          感情が読まれることへの恐怖 → <strong>強迫的にマスクが外せなくなる。</strong>
         </div>
-        <div class="timeline-values">
-          <span class="value-shift shift-up">混乱 → 秩序</span>
-          <span class="value-shift shift-up">無力 → 力を得る</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-dot dot-warm"></div>
-      <div class="timeline-content">
-        <div class="timeline-period">少年期</div>
-        <div class="timeline-event">「曖昧さ＝悪」の確信 — 義足の絶対視</div>
-        <div class="timeline-desc">
-          「言葉の定義が曖昧な人は世界を理解していない」と信じる。<br>
-          母の情緒的な振る舞いがこの確信を強化。<br>
-          「義足こそが唯一の正しい歩き方」という信念の成立。
-        </div>
-        <div class="timeline-values">
-          <span class="value-shift shift-turn">理解 → 支配の萌芽</span>
-          <span class="value-shift shift-down">共に歩む → 自分の歩き方を強制する（萌芽）</span>
+        <div class="tl-tags">
+          <span class="tag tag-up">無力 → 力を得る</span>
+          <span class="tag tag-turn">理解 → 支配の萌芽</span>
         </div>
       </div>
     </div>
 
+    <!-- 父の死 -->
     <div class="timeline-item">
       <div class="timeline-dot dot-red"></div>
       <div class="timeline-content">
-        <div class="timeline-period">中高時代</div>
-        <div class="timeline-event">父の死</div>
-        <div class="timeline-desc">
+        <div class="tl-period">第三章 ── 中高時代</div>
+        <div class="tl-event" style="color:var(--accent-red)">父の死</div>
+        <div class="tl-desc">
           唯一の安全基地が失われる。<br>
-          父のいじめっ子への「悲しそうな目」の意味は未解読のまま封印される。<br>
-          「曖昧さ＝悪」の確信は修正される機会を失う。
+          父の「悲しそうな目」の意味は<strong>未解読のまま封印される</strong>。<br>
+          「曖昧さ＝悪」の確信は修正される機会を失い、固定される。<br>
+          主人公は独力でもがかなければならない。
         </div>
-        <div class="timeline-values">
-          <span class="value-shift shift-down">愛される → 喪失</span>
-          <span class="value-shift shift-turn">導かれる → 独力で歩む</span>
+        <div class="tl-tags">
+          <span class="tag tag-down">愛される → 喪失</span>
+          <span class="tag tag-turn">導かれる → 独力で歩む</span>
         </div>
       </div>
     </div>
 
+    <!-- 青年期 再会 -->
     <div class="timeline-item">
       <div class="timeline-dot dot-purple"></div>
       <div class="timeline-content">
-        <div class="timeline-period">青年期（20代）</div>
-        <div class="timeline-event">いじめっ子の再登場 — 支配構造の逆転</div>
-        <div class="timeline-desc">
-          CTO としてベンチャーを率いる主人公。<br>
-          いじめっ子はリモート庶務の派遣社員として部下に（田舎の親を介護中）。<br>
-          主人公は善意から「教育」を始める → 厳密に答えられるまで離さない。
+        <div class="tl-period">第四章 ── 青年期（20代）</div>
+        <div class="tl-event">いじめっ子の再登場 ── 支配構造の逆転</div>
+        <div class="tl-desc">
+          主人公はCTOとしてベンチャーを率いる。言語（コード）で世界を高解像度で見ている。<br>
+          いじめっ子は<strong>リモート庶務の派遣社員として部下</strong>になる。田舎の親を介護するため。<br>
+          <strong>主人公は善意から「教育」を開始。厳密に答えられるまで離さない。</strong><br>
+          いじめっ子は主人公が善意だとわかる（空気読みの達人）——だから対抗できない。<br>
+          母が主人公にしたことと、主人公がいじめっ子にしていることは同じ構造。
         </div>
-        <div class="timeline-values">
-          <span class="value-shift shift-turn">被害者 → 加害者（無自覚）</span>
-          <span class="value-shift shift-turn">善意 → 善意の暴力</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-dot dot-red"></div>
-      <div class="timeline-content">
-        <div class="timeline-period">青年期（20代）</div>
-        <div class="timeline-event">いじめっ子の崩壊 → 保険金自殺未遂</div>
-        <div class="timeline-desc">
-          善意の教育に対抗できない（悪意がないと空気で読み取れてしまう）。<br>
-          うつ病発症。稼ぐ自信を喪失。<br>
-          親のために保険金をかけて自殺を図る＝最後まで親への依存。
-        </div>
-        <div class="timeline-values">
-          <span class="value-shift shift-down">生存 → 死</span>
-          <span class="value-shift shift-down">自立 → 究極の依存（死んですら親のため）</span>
+        <div class="tl-tags">
+          <span class="tag tag-turn">被害者 → 加害者（無自覚）</span>
+          <span class="tag tag-turn">善意 → 善意の暴力</span>
+          <span class="tag tag-note">主人公 ＝ 母の鏡像</span>
         </div>
       </div>
     </div>
 
+    <!-- いじめっ子の過去を知る -->
     <div class="timeline-item">
       <div class="timeline-dot dot-gold"></div>
       <div class="timeline-content">
-        <div class="timeline-period">青年期（20代）</div>
-        <div class="timeline-event">いじめっ子の過去を知る</div>
-        <div class="timeline-desc">
-          虐待被害者であったこと。空気を読む力は生存本能だったこと。<br>
-          IQが低く、「厳密に」は本質的にできなかったこと。<br>
-          主人公は初めて鏡像を見る — 自分がされたことと同じことをしていた。
+        <div class="tl-period">第四章 後半</div>
+        <div class="tl-event">いじめっ子の過去を知る</div>
+        <div class="tl-desc">
+          いじめっ子が虐待被害者であったことを主人公は初めて知る。<br>
+          空気読みは生存本能だったこと。低IQで「厳密に」は本質的に難しいこと。<br>
+          主人公は<strong>自分がかつてされたことと同じことをしていた</strong>と認識し始める。<br>
+          しかし「厳密な言動でもいじめっ子を救えると思ってしまう」——まだ気づけていない。
         </div>
-        <div class="timeline-values">
-          <span class="value-shift shift-turn">正しさ → 加害の認識</span>
-          <span class="value-shift shift-turn">父の「悲しそうな目」の意味が迫る</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-dot dot-mystery"></div>
-      <div class="timeline-content" style="border: 2px dashed var(--accent-gold);">
-        <div class="timeline-period">青年期</div>
-        <div class="timeline-event" style="color: var(--accent-gold);">【クライマックス — 未定】</div>
-        <div class="timeline-desc">
-          主人公の「取り返しのつかないアクション」。<br>
-          プレッシャーの下での選択。<br>
-          何を選び、何を失うのか？
-        </div>
-        <div class="timeline-values">
-          <span class="value-shift shift-turn">？？？</span>
+        <div class="tl-tags">
+          <span class="tag tag-turn">見えていなかった → 見え始める</span>
+          <span class="tag tag-note">父の目の意味が迫る</span>
         </div>
       </div>
     </div>
 
+    <!-- 崩壊 -->
     <div class="timeline-item">
-      <div class="timeline-dot dot-green"></div>
-      <div class="timeline-content">
-        <div class="timeline-period">エンディング</div>
-        <div class="timeline-event">抱擁</div>
-        <div class="timeline-desc">
-          いじめてきた相手を抱擁できるようになる。<br>
+      <div class="timeline-dot dot-crisis"></div>
+      <div class="timeline-content" style="border-color: rgba(232,106,122,.35);">
+        <div class="tl-period">第五章 ── 危機（Crisis）</div>
+        <div class="tl-event" style="color:var(--accent-red)">いじめっ子の崩壊——両親殺害</div>
+        <div class="tl-desc">
+          善意の教育によりうつ病発症。稼ぐ自信を完全に喪失。<br>
+          虐待した親を介護しながら、追い詰められていく。<br>
+          <strong>ついに依存してきた両親を殺害する。</strong>（依存の果ての暴力 = 切り離せなかった繋がりの断絶）<br>
+          <strong>血のついたナイフを持って、主人公の会社のビルへ来る。</strong>
+        </div>
+        <div class="tl-tags">
+          <span class="tag tag-down">依存 → 殺害（究極の断絶）</span>
+          <span class="tag tag-down">善意の教育が引き金を引いた</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- クライマックス -->
+    <div class="timeline-item">
+      <div class="timeline-dot dot-climax"></div>
+      <div class="timeline-content climax-card">
+        <div class="tl-period">第五章 ── クライマックス（CLIMAX）</div>
+        <div class="tl-event" style="color:var(--accent-gold)">🔥 マスクを外す——「お前に死んでほしくない」</div>
+        <div class="tl-desc">
+          <div class="climax-scene">
+            <strong>ビルのロビーor廊下。血だらけのナイフを持ったいじめっ子が現れる。</strong><br>
+            周囲は逃げる。主人公だけが残る——背景を知っているから。<br><br>
+            <div class="quote">「お前に悪意があったわけじゃないって、わかってた。<br>ずっと羨ましかった。<br>……殺せないよ。知ってたよ。じゃあね。」</div>
+            泣きながら言って、屋上へ向かう。<br><br>
+            <div class="action">主人公、追いかける。<br>
+              論理で止めようとする。言葉を組み立てようとする。<br>
+              ——構築できない。初めて、精度が届かない場所に立つ。</div><br>
+            <div class="quote">「お前に死んでほしくないんだあああああ——！」</div>
+            <div class="action">マスクを外して、叫ぶ。</div>
+            義足を脱いだ。防衛を捨てた。見られてしまった。取り返しがつかない。<br><br>
+            いじめっ子、<strong>止まる。</strong><br>
+            空気読みの達人として、その叫びの中に「本物」を感じた。<br>
+            誰かが自分のために、できないことをしている——初めて。
+          </div>
+        </div>
+        <div class="tl-tags">
+          <span class="tag tag-turn">精度 → 叫び</span>
+          <span class="tag tag-turn">マスクを外す = 義足を脱ぐ</span>
+          <span class="tag tag-up">父の目の意味が今わかる</span>
+          <span class="tag tag-down">主人公の加害の結果を目の前に見る</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- エンディング -->
+    <div class="timeline-item">
+      <div class="timeline-dot dot-end"></div>
+      <div class="timeline-content ending-card">
+        <div class="tl-period">エンディング ── 数年後</div>
+        <div class="tl-event" style="color:var(--accent-green)">刑務所の面会室——抱擁</div>
+        <div class="tl-desc">
+          いじめっ子は逮捕・収監。<br>
+          数年後、<strong>主人公が面会に来る。</strong>（理屈ではなく体で動く選択）<br><br>
           世界の解像度が上がり、世界が鮮やかに見える。<br>
-          歩き方は一つじゃない。敵など誰もいない。
+          義足でも素足でも歩ける。他人の足を切らなくてもいい。<br>
+          <strong>敵など誰もいなかった。</strong><br><br>
+          ガラス越しの面会室で——<strong>抱擁。</strong>
         </div>
-        <div class="timeline-values">
-          <span class="value-shift shift-up">強制 → 共に歩む</span>
-          <span class="value-shift shift-up">理解 → 本当の理解（他者の歩き方を認める）</span>
+        <div class="tl-tags">
+          <span class="tag tag-up">共に歩む</span>
+          <span class="tag tag-up">理解 → 本当の理解</span>
+          <span class="tag tag-up">父の悲しそうな目の意味、完全に解読</span>
         </div>
       </div>
     </div>
 
   </div>
 
-  <!-- ====== 構造的問題 ====== -->
-  <div class="problem-zone">
-    <h3>🚨 クライマックスが見つからない構造的理由</h3>
+  <!-- =============================== -->
+  <!-- 価値要素の対立軸                -->
+  <!-- =============================== -->
+  <div class="section-title">価値要素の対立軸</div>
+  <div class="value-pairs">
 
-    <div class="problem-item">
-      <h4>問題1：主人公の武器が万能すぎる</h4>
-      <p>
-        「精度」は汎用的な道具。己の誤りを認識した後も、精度で解決策を見つけられる。<br>
-        <span class="highlight">「厳密な言動でも、いじめっ子を救えると思ってしまう」</span> — これが問題の核。<br>
-        主人公が何かを「捨てる」必要がない → ジレンマが生まれない → クライマックスにならない。
-      </p>
+    <div class="value-pair">
+      <div class="vp-label">中心軸</div>
+      <div class="vp-row">
+        <span class="vp-pole pole-pos">共に歩む</span>
+        <span class="vp-arrow">⟷</span>
+        <span class="vp-pole pole-neg">自分の歩き方を強制する</span>
+      </div>
+      <div class="vp-note">精度 vs 曖昧ではない。<br>「異なる認知のあり方を認め合えるか」が本質。</div>
     </div>
 
-    <div class="problem-item">
-      <h4>問題2：「誤りを認める」は不可逆か？</h4>
-      <p>
-        主人公が「自分は間違っていた」と気づくことは重要だが、<br>
-        <span class="highlight">認知の変化は「アクション」ではない。</span><br>
-        マッキーのクライマックスは「主人公が選んで動く」こと。何を選ぶのか？
-      </p>
+    <div class="value-pair">
+      <div class="vp-label">行為の本質</div>
+      <div class="vp-row">
+        <span class="vp-pole pole-pos">教育（適した歩き方）</span>
+        <span class="vp-arrow">⟷</span>
+        <span class="vp-pole pole-neg2">善意の暴力</span>
+      </div>
+      <div class="vp-note">「あなたのために言っている」が最も残酷な暴力。<br>悪意なら対抗できる。善意には対抗できない。</div>
     </div>
 
-    <div class="problem-item">
-      <h4>問題3：「人を救える」のに何が不可逆なのか？</h4>
-      <p>
-        いじめっ子の自殺未遂は取り返しがつかない出来事だが、<br>
-        <span class="highlight">それは主人公のアクションではなく、主人公に「起きたこと」。</span><br>
-        主人公自身が何を「する」のかが空白のまま。
-      </p>
+    <div class="value-pair">
+      <div class="vp-label">根源的欲求</div>
+      <div class="vp-row">
+        <span class="vp-pole pole-pos">愛される</span>
+        <span class="vp-arrow">⟷</span>
+        <span class="vp-pole pole-neg">愛されない</span>
+      </div>
+      <div class="vp-note">主人公＝父に愛された → いじめっ子の嫉妬の原点<br>いじめっ子＝愛されなかった → 虐待した親にすら依存</div>
+    </div>
+
+    <div class="value-pair">
+      <div class="vp-label">幼少期の鏡像</div>
+      <div class="vp-row">
+        <span class="vp-pole pole-neg">「空気を読め」</span>
+        <span class="vp-arrow">→</span>
+        <span class="vp-pole pole-neg">読めない（ASD）</span>
+      </div>
+      <div class="vp-note">いじめっ子が主人公にできないことを強いた暴力</div>
+    </div>
+
+    <div class="value-pair">
+      <div class="vp-label">青年期の鏡像</div>
+      <div class="vp-row">
+        <span class="vp-pole pole-neg">「厳密に答えろ」</span>
+        <span class="vp-arrow">→</span>
+        <span class="vp-pole pole-neg">答えられない（低IQ）</span>
+      </div>
+      <div class="vp-note">主人公がいじめっ子にできないことを強いた暴力<br>= 全く同じ構造</div>
+    </div>
+
+    <div class="value-pair">
+      <div class="vp-label">依存と自立</div>
+      <div class="vp-row">
+        <span class="vp-pole pole-pos">自立・自由</span>
+        <span class="vp-arrow">⟷</span>
+        <span class="vp-pole pole-neg">依存（離れられない）</span>
+      </div>
+      <div class="vp-note">いじめっ子は死んでも親から離れられなかった。<br>殺害すら「依存の断絶」の最終形。</div>
     </div>
 
   </div>
 
-  <!-- ====== パラドックス ====== -->
-  <div class="paradox-zone">
-    <h3>🔑 この物語が抱えるパラドックス</h3>
+  <!-- =============================== -->
+  <!-- 否定の否定                      -->
+  <!-- =============================== -->
+  <div class="section-title purple">否定の否定（McKee）</div>
+  <div class="neg-chart">
 
-    <div class="paradox-cards">
-      <div class="paradox-card">
-        <h4>主人公の精度は「義足」</h4>
-        <p>
-          ASDの主人公にとって精度は代替手段。否定すべきものではない。<br>
-          「精度を捨てろ」では「障害者に障害を治せ」と言うのと同じ。<br>
-          だから「武器を捨てる」クライマックスは成立しない。
-        </p>
-      </div>
-      <div class="paradox-card">
-        <h4>でもその義足で人を蹴っている</h4>
-        <p>
-          問題は義足そのものではなく、義足で他人を蹴ること。<br>
-          しかも善意で蹴っている（教育のつもり）。<br>
-          この区別を主人公はどうやって体で理解するのか？
-        </p>
-      </div>
-      <div class="paradox-card">
-        <h4>いじめっ子の自殺未遂</h4>
-        <p>
-          いじめっ子は主人公の「善意」に逆らえない（悪意がないとわかるから）。<br>
-          保険金自殺＝死んですら親のため＝究極の依存。<br>
-          主人公の精度がこの結末を作った。
-        </p>
-      </div>
-      <div class="paradox-card">
-        <h4>母との相似</h4>
-        <p>
-          母も善意で主人公にとって不要なことをし、感謝を要求した。<br>
-          主人公は母と同じことをいじめっ子にしている。<br>
-          ——このことに主人公は気づいているか？
-        </p>
-      </div>
+    <div class="neg-row">
+      <span class="neg-lbl">ポジティブ</span>
+      <span class="neg-cell neg-p">教育・導き</span>
+      <span class="neg-arr">→</span>
+      <span class="neg-lbl">その反対</span>
+      <span class="neg-cell neg-c">放置・無関心</span>
+      <span class="neg-arr">→</span>
+      <span class="neg-lbl">否定の否定</span>
+      <span class="neg-cell neg-n">善意の教育で人を殺す</span>
     </div>
 
-    <div class="paradox-question">
-      クライマックスを見つけるための問い：<br>
-      「精度を捨てる」のではなく、「精度で人を蹴ること」をやめるために、<br>
-      主人公は具体的に何を<strong>する</strong>のか？<br>
-      そしてそれはなぜ<strong>取り返しがつかない</strong>のか？<br><br>
-      あるいは——そもそもクライマックスの「不可逆性」は、<br>
-      主人公の行為にあるのではなく、<br>
-      <strong>いじめっ子の自殺未遂という結果が主人公に刻む傷</strong>にあるのか？
+    <div class="neg-row">
+      <span class="neg-lbl">ポジティブ</span>
+      <span class="neg-cell neg-p">理解</span>
+      <span class="neg-arr">→</span>
+      <span class="neg-lbl">その反対</span>
+      <span class="neg-cell neg-c">無知</span>
+      <span class="neg-arr">→</span>
+      <span class="neg-lbl">否定の否定</span>
+      <span class="neg-cell neg-n">「理解」という名の支配</span>
+    </div>
+
+    <div class="neg-row">
+      <span class="neg-lbl">ポジティブ</span>
+      <span class="neg-cell neg-p">共に歩む</span>
+      <span class="neg-arr">→</span>
+      <span class="neg-lbl">その反対</span>
+      <span class="neg-cell neg-c">孤立</span>
+      <span class="neg-arr">→</span>
+      <span class="neg-lbl">否定の否定</span>
+      <span class="neg-cell neg-n">他人の足を切って自分の足で歩かせる</span>
+    </div>
+
+    <div class="neg-row">
+      <span class="neg-lbl">ポジティブ</span>
+      <span class="neg-cell neg-p">愛される</span>
+      <span class="neg-arr">→</span>
+      <span class="neg-lbl">その反対</span>
+      <span class="neg-cell neg-c">愛されない</span>
+      <span class="neg-arr">→</span>
+      <span class="neg-lbl">否定の否定</span>
+      <span class="neg-cell neg-n">愛された者が、愛されなかった者を死に追い込む</span>
+    </div>
+
+  </div>
+
+  <!-- =============================== -->
+  <!-- クライマックス検証               -->
+  <!-- =============================== -->
+  <div class="section-title gold">クライマックス検証 ── McKeeチェックリスト</div>
+  <div class="climax-confirm">
+    <h3>🔥 クライマックス確定版</h3>
+    <p class="sub">「マスクを外して叫ぶ」——このアクションは全ての制約を満たしているか</p>
+    <div class="climax-checks">
+      <div class="climax-check">
+        <span class="check-icon">✓</span>
+        <div><span class="check-label">McKee: 主人公のアクション</span>主人公が「マスクを外して叫ぶ」という能動的な選択をする</div>
+      </div>
+      <div class="climax-check">
+        <span class="check-icon">✓</span>
+        <div><span class="check-label">McKee: 不可逆性</span>マスクを外した姿を見られた。防衛を捨てた瞬間は取り消せない</div>
+      </div>
+      <div class="climax-check">
+        <span class="check-icon">✓</span>
+        <div><span class="check-label">McKee: 最大プレッシャー</span>文字通り人が今死ぬかどうかの瞬間</div>
+      </div>
+      <div class="climax-check">
+        <span class="check-icon">✓</span>
+        <div><span class="check-label">McKee: 実像の暴露</span>論理家が言葉を失い、叫ぶだけになる ── 本当の姿</div>
+      </div>
+      <div class="climax-check">
+        <span class="check-icon">✓</span>
+        <div><span class="check-label">テーマ: 義足を脱ぐ</span>精度（義足）が届かない場所で、別の方法で動く</div>
+      </div>
+      <div class="climax-check">
+        <span class="check-icon">✓</span>
+        <div><span class="check-label">テーマ: 精度は否定しない</span>義足は「脱ぐ」だけで「捨てない」</div>
+      </div>
+      <div class="climax-check">
+        <span class="check-icon">✓</span>
+        <div><span class="check-label">構造: 鏡像の完成</span>「空気を読め」→「私が読もうとする」へ逆転</div>
+      </div>
+      <div class="climax-check">
+        <span class="check-icon">✓</span>
+        <div><span class="check-label">父の遺産</span>父が言葉でなく表情で伝えたことを、主人公が今やっている</div>
+      </div>
+      <div class="climax-check">
+        <span class="check-icon">✓</span>
+        <div><span class="check-label">リアリティ</span>的外れで不器用。でもそれがリアル。完璧な表情読みは嘘くさい</div>
+      </div>
+      <div class="climax-check">
+        <span class="check-icon">✓</span>
+        <div><span class="check-label">着地への接続</span>停まったいじめっ子と、数年後の刑務所面会室へ繋がる</div>
+      </div>
     </div>
   </div>
 
-  <!-- ====== クライマックスの制約条件（更新版） ====== -->
-  <div class="climax-zone">
-    <h3>🔥 クライマックスが満たすべき条件（更新版）</h3>
-    <p style="color: var(--text-dim); font-size: 0.85rem; margin-bottom: 16px;">
-      以下の制約を同時に満たすアクションが、クライマックスになる
-    </p>
-    <div class="climax-constraints">
-      <div class="constraint">
-        <div class="constraint-label">McKee: アクション</div>
-        主人公が「選んで動く」こと。出来事ではなく選択。
-      </div>
-      <div class="constraint">
-        <div class="constraint-label">McKee: 不可逆性</div>
-        行動した後、元には戻れない。その選択は取り消せない。
-      </div>
-      <div class="constraint">
-        <div class="constraint-label">McKee: 実像の暴露</div>
-        プレッシャー下での選択が主人公の本質を暴く。
-      </div>
-      <div class="constraint">
-        <div class="constraint-label">テーマ: 精度は否定しない</div>
-        精度＝義足は否定されない。問題は「蹴る」こと。
-      </div>
-      <div class="constraint">
-        <div class="constraint-label">テーマ: 善意の暴力の清算</div>
-        "あなたのために" の暴力性に向き合うこと。
-      </div>
-      <div class="constraint">
-        <div class="constraint-label">構造: 鏡像の完成</div>
-        主人公がかつてされたことと同じことをしていたと悟る。
-      </div>
-      <div class="constraint">
-        <div class="constraint-label">構造: 母との相似</div>
-        善意のおせっかいで人を壊す — 母と同じ構造。
-      </div>
-      <div class="constraint">
-        <div class="constraint-label">父の遺産</div>
-        父の「悲しそうな目」の意味がこの瞬間に作動する。
-      </div>
-      <div class="constraint">
-        <div class="constraint-label">着地への接続</div>
-        このアクションの後に「抱擁」に至れること。
-      </div>
-      <div class="constraint">
-        <div class="constraint-label">リアリティ</div>
-        嘘くさくない。痛々しくてリアル。
-      </div>
+  <!-- =============================== -->
+  <!-- 未解決の問い                    -->
+  <!-- =============================== -->
+  <div class="section-title">未解決の問い（次に詰めること）</div>
+  <div class="open-q">
+    <h3>📌 まだ決まっていないこと</h3>
+    <div class="q-item">
+      <span class="q-num">1</span>
+      <div class="q-text"><strong>いじめっ子が主人公のビルへ来る動機</strong>を深める。「死ぬ前に羨ましかったと伝えたい」だけでは弱いかもしれない。何か他の動機が混ざっているか？</div>
+    </div>
+    <div class="q-item">
+      <span class="q-num">2</span>
+      <div class="q-text"><strong>マスクの設定</strong>を物語のどの時点から描くか。強迫症として早い段階から描くのか、青年期になって初めて強くなるのか。</div>
+    </div>
+    <div class="q-item">
+      <span class="q-num">3</span>
+      <div class="q-text"><strong>「殺せないよ知ってたよ」</strong>の意味を深める。主人公を殺せないのか、自分を殺せないと思っていたのに殺せたのか、どちらを指すのか。</div>
+    </div>
+    <div class="q-item">
+      <span class="q-num">4</span>
+      <div class="q-text"><strong>エンディングの時間軸</strong>。数年後の刑務所面会室——主人公は何を経て面会に来るのか。その間の主人公はどう変化するのか。</div>
+    </div>
+    <div class="q-item">
+      <span class="q-num">5</span>
+      <div class="q-text"><strong>時代設定の確定</strong>。97年生まれと同じか少し前か。いじめ・発達障害への不理解を描くために時代を遡らせるか。</div>
     </div>
   </div>
 
-  <div style="text-align: center; color: var(--text-dim); font-size: 0.75rem; padding: 20px 0;">
-    constrain brainstorm — 価値要素マップ v2
+  <div style="text-align:center; color:var(--text-dim); font-size:.72rem; padding:24px 0;">
+    constrain brainstorm ── 仮プロット + 価値要素マップ v3
   </div>
 
 </body>
