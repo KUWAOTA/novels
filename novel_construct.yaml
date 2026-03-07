@@ -1,0 +1,233 @@
+# ============================================================
+# Novel Construct YAML — 小説仮想コンパイラ定義ファイル
+# ============================================================
+# Robert McKee『Character』の理論体系をベースに、
+# 小説の構造・キャラクター・テーマを体系的に定義する。
+# このファイルに情報を蓄積していくことで、
+# 物語全体の整合性と深みを管理する「仮想コンパイラ」として機能する。
+# ============================================================
+
+# ----------------------------------------------------------
+# 1. メタ情報 (Meta)
+# ----------------------------------------------------------
+meta:
+  title: ""                        # 作品タイトル
+  subtitle: ""                     # サブタイトル（あれば）
+  genre: ""                        # ジャンル
+  subgenre: ""                     # サブジャンル
+  target_audience: ""              # 想定読者層
+  tone: ""                         # トーン（例: ダーク、ユーモラス、叙情的）
+  pov: ""                          # 視点（一人称 / 三人称限定 / 三人称全知 / etc.）
+  setting_era: ""                  # 時代設定
+  setting_location: ""             # 舞台
+  estimated_length: ""             # 想定文字数 / ページ数
+  status: "planning"               # ステータス: planning / drafting / revising / completed
+  created_at: "2026-02-16"
+  updated_at: "2026-02-16"
+
+# ----------------------------------------------------------
+# 2. テーマ / コントローリング・アイデア (Theme)
+# ----------------------------------------------------------
+# McKee: 物語のコントローリング・アイデアは
+# 「価値（value）＋原因（cause）」で表現される。
+theme:
+  controlling_idea: ""             # 一文で表現するコントローリング・アイデア
+  thematic_value: ""               # テーマの価値（例: 正義、愛、自由）
+  thematic_counter_value: ""       # 反価値（例: 不義、憎しみ、束縛）
+  thematic_question: ""            # テーマの問い（物語が探求する問い）
+  premise: ""                      # プレミス（物語の前提命題）
+
+# ----------------------------------------------------------
+# 3. キャラクター設計 (Characters)
+# ----------------------------------------------------------
+# McKee『Character』の核心理論に基づく多層的キャラクター設計
+characters:
+
+  # --- 主人公 (Protagonist) ---
+  protagonist:
+    name: ""
+    role: "protagonist"
+
+    # --- 外面的特性 (Characterization / 外的キャラクタリゼーション) ---
+    # McKee: キャラクタリゼーション＝観察可能な特性の総体
+    characterization:
+      age: ""
+      gender: ""
+      appearance: ""               # 外見描写
+      occupation: ""               # 職業
+      social_class: ""             # 社会的階層
+      education: ""                # 教育背景
+      speech_pattern: ""           # 話し方の特徴
+      habits: ""                   # 習慣・癖
+      mannerisms: []               # 仕草・マナリズム
+
+    # --- 真のキャラクター (True Character / 内面) ---
+    # McKee: 真のキャラクター＝プレッシャー下での選択によって露わになる
+    true_character:
+      core_trait: ""               # 核となる性格特性
+      values: []                   # 信じている価値観
+      unconscious_desire: ""       # 無意識の欲求
+      conscious_desire: ""         # 意識的な欲求・目標
+      contradiction: ""            # 内的矛盾（外面と内面のギャップ）
+      vulnerability: ""            # 脆弱性・弱点
+      strength: ""                 # 本質的な強さ
+
+    # --- キャラクターの次元 (Dimensions) ---
+    # McKee: 次元＝矛盾する性質の共存
+    dimensions:
+      - dimension: ""              # 矛盾する特性のペア（例: "優しいが残酷"）
+        context: ""                # その矛盾が表面化する状況
+
+    # --- キャラクター・アーク (Character Arc) ---
+    # McKee: 物語を通じたキャラクターの内的変化
+    arc:
+      starting_state: ""           # 物語開始時の内面状態
+      catalyst: ""                 # 変化のきっかけ
+      midpoint_state: ""           # 中間点での状態
+      crisis_choice: ""            # クライシスでの選択
+      ending_state: ""             # 物語終了時の内面状態
+      arc_type: ""                 # アーク類型: positive / negative / flat / circular
+
+    # --- バックストーリー ---
+    backstory:
+      key_events: []               # 人格形成に影響を与えた過去の出来事
+      wound: ""                    # 心の傷（過去のトラウマ）
+      ghost: ""                    # ゴースト（過去から引きずるもの）
+      formative_relationships: []  # 人格形成に影響した人間関係
+
+    # --- 欲求の構造 (Desire Structure) ---
+    # McKee: 意識的欲求 vs 無意識的欲求
+    desire:
+      conscious_goal: ""           # 意識的な目標（外的）
+      unconscious_need: ""         # 無意識的な必要性（内的）
+      gap_between: ""              # 意識的目標と無意識の必要性のギャップ
+
+  # --- アンタゴニスト / 対立する力 (Antagonist) ---
+  antagonist:
+    name: ""
+    role: "antagonist"
+    characterization:
+      age: ""
+      gender: ""
+      appearance: ""
+      occupation: ""
+    true_character:
+      core_trait: ""
+      values: []
+      motivation: ""               # 動機
+      worldview: ""                # 世界観
+    relationship_to_protagonist: "" # 主人公との関係性
+    thematic_role: ""              # テーマにおける役割
+
+  # --- その他のキャラクター (Supporting Cast) ---
+  # McKee: キャストデザイン＝キャラクター同士の対比と補完
+  supporting_cast: []
+  # 以下のフォーマットで追加:
+  # - name: ""
+  #   role: ""                     # 役割（メンター、トリックスター、etc.）
+  #   function: ""                 # 物語における機能
+  #   relationship_to_protagonist: ""
+  #   characterization:
+  #     age: ""
+  #     occupation: ""
+  #   true_character:
+  #     core_trait: ""
+  #     values: []
+  #   arc:
+  #     starting_state: ""
+  #     ending_state: ""
+
+# ----------------------------------------------------------
+# 4. キャストデザイン (Cast Design)
+# ----------------------------------------------------------
+# McKee: キャラクター群全体の設計原則
+cast_design:
+  principle: ""                    # キャストデザインの原則
+  contrast_pairs: []               # 対比関係にあるキャラクターのペア
+  # - [キャラA, キャラB, 対比の軸]
+  thematic_spectrum: ""            # テーマに対する各キャラの立ち位置
+
+# ----------------------------------------------------------
+# 5. 物語構造 (Structure)
+# ----------------------------------------------------------
+# McKee的構造論に基づく
+structure:
+
+  # --- 三幕構成 ---
+  act_1:
+    setup: ""                      # セットアップ / 日常世界
+    inciting_incident: ""          # インサイティング・インシデント（発端事件）
+    first_act_climax: ""           # 第一幕のクライマックス
+
+  act_2:
+    progressive_complications: []  # 段階的な複雑化（障害のエスカレーション）
+    midpoint: ""                   # ミッドポイント
+    crisis: ""                     # クライシス（究極の選択）
+    second_act_climax: ""          # 第二幕のクライマックス
+
+  act_3:
+    climax: ""                     # クライマックス
+    resolution: ""                 # レゾリューション（解決）
+    final_image: ""                # 最終イメージ
+
+  # --- シーン設計メモ ---
+  key_scenes: []
+  # - scene_number: 1
+  #   beat: ""                     # ビート（価値の転換点）
+  #   value_shift: ""              # 価値の変化（例: hope → despair）
+  #   turning_point: ""            # ターニングポイント
+  #   characters_involved: []
+
+# ----------------------------------------------------------
+# 6. 対立構造 (Conflict Design)
+# ----------------------------------------------------------
+# McKee: 三つのレベルの対立
+conflict:
+  inner_conflict: ""               # 内的対立（自分自身との葛藤）
+  personal_conflict: ""            # 個人的対立（人間関係の葛藤）
+  extra_personal_conflict: ""      # 超個人的対立（社会・環境・運命との葛藤）
+
+# ----------------------------------------------------------
+# 7. 世界観 / 設定 (World)
+# ----------------------------------------------------------
+world:
+  physical:
+    geography: ""                  # 地理
+    climate: ""                    # 気候
+    technology_level: ""           # テクノロジーレベル
+  social:
+    political_system: ""           # 政治体制
+    economy: ""                    # 経済構造
+    culture: ""                    # 文化・風習
+    social_rules: []               # 社会のルール・規範
+  constraints: []                  # 物語世界の制約
+  unique_elements: []              # この世界固有の要素
+
+# ----------------------------------------------------------
+# 8. 感情アーク / リーダーの体験設計 (Reader Experience)
+# ----------------------------------------------------------
+reader_experience:
+  opening_emotion: ""              # 冒頭で喚起したい感情
+  emotional_journey: []            # 感情の推移（リスト形式）
+  catharsis: ""                    # カタルシス（浄化体験）
+  closing_emotion: ""              # 読後に残したい感情
+  empathy_anchors: []              # 共感のアンカーポイント
+
+# ----------------------------------------------------------
+# 9. メモ / 読書ノート (Notes)
+# ----------------------------------------------------------
+# McKee『Character』からの学びや気づきを蓄積する
+notes:
+  mckee_insights: []               # マッキーの理論からのインサイト
+  # - chapter: ""
+  #   insight: ""
+  #   application: ""              # 自作への適用方法
+
+  creative_ideas: []               # 創作アイデアメモ
+  # - idea: ""
+  #   related_to: ""               # 関連する要素（キャラ名、テーマ等）
+
+  revision_log: []                 # 修正ログ
+  # - date: ""
+  #   change: ""
+  #   reason: ""

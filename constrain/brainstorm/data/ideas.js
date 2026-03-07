@@ -2,70 +2,349 @@ window.STORY_NODES = [
     // ══════════════════════════════════════════════════════════════
     // MAIN TRUCK
     // ══════════════════════════════════════════════════════════════
-    { id: 'root', label: 'Constrain', description: '物語の開始', x: 50, y: 300, type: 'start' },
+    {
+        id: 'root',
+        label: 'Constrain',
+        description: '物語の開始\n\nテーマ：厳密な理解を必要とする人間が、不完全な社会と共存する方法を見つける話。\n\n価値軸：理解による救済 → 理解できなくても愛する',
+        x: 50, y: 350,
+        type: 'start'
+    },
 
+    // ══════════════════════════════════════════════════════════════
+    // CHARACTER PROFILES (横軸の補助ノード)
+    // ══════════════════════════════════════════════════════════════
+    {
+        id: 'char_triangle',
+        label: '▲ 三角構造',
+        description: '【三角構造の設計】\n\n①主人公（厳密の担い手）\n  厳密に理解すれば世界は救える\n  強み：厳密な言語/分析\n  弱点：曖昧さを許せない、共感が弱い\n\n②恋人（鏡像キャラ） \n  厳密な理解がなければ生きられない人\n  社会の無理解で死んだ→主人公の信念根拠\n  主人公を理解できた数少ない人\n\n③いじめっ子（逆像キャラ）\n  厳密さの世界に押し潰された人\n  厳密な評価制度に勝てず、世界を憎む\n\n★クライマックスで三点が同時成立する',
+        note: '・恋人：厳密がなければ生きられない → 厳密は「救い」\n・いじめっ子：厳密で壊れた → 厳密は「暴力」\n・主人公：両方を理解する → 矛盾を抱えたまま愛する\n\nこの三角形がなければクライマックスは成立しない',
+        x: 50, y: 700,
+        type: 'note',
+        status: 'preferred'
+    },
+
+    // ══════════════════════════════════════════════════════════════
     // ACT 1
-    { id: 'act1', label: 'ACT 1\n原点: 再現性の獲得', description: 'ASD的傾向といじめ。\nルールなき感情の世界から、\n再現性のある科学の世界への逃避と適応。', x: 250, y: 300, type: 'act', status: 'preferred', value_change: '孤立 → 適応' },
+    // ══════════════════════════════════════════════════════════════
+    {
+        id: 'act1',
+        label: 'ACT 1\n原点: 再現性の獲得',
+        description: 'ASD的傾向といじめ。\nルールなき感情の世界から、\n再現性のある科学の世界への逃避と適応。',
+        x: 250, y: 350,
+        type: 'act',
+        status: 'preferred',
+        value_change: '孤立 → 適応'
+    },
 
-    { id: 'M-1-1', parent: 'act1', label: 'いじめと孤立', description: '空気が読めず地雷を踏む。\n再現性のない「努力しろ」への絶望。', x: 380, y: 300, type: 'beat', status: 'preferred', value_change: '安全 → 危険' },
-    { id: 'M-1-2', parent: 'M-1-1', label: '法則の発見', description: 'カフェで集中できる法則を発見。\n自分でルールを見つける喜び。', x: 510, y: 300, type: 'beat', status: 'preferred', value_change: '無力 → 手段' },
-    { id: 'M-1-3', parent: 'M-1-2', label: '師との出会い', description: '物理教師との出会い。\n「言葉で分かり合える」体験。', x: 640, y: 300, type: 'beat', status: 'preferred' },
-    { id: 'M-1-4', parent: 'M-1-3', label: '過剰適応', description: '他者の行動モデルを作成。\n本能で生きる他者より他者を理解する。', x: 770, y: 300, type: 'beat', status: 'preferred' },
-    { id: 'M-1-5', parent: 'M-1-4', label: '統計的思考への萌芽', description: '全てを演繹(公式)で解くのは無理だと悟る。\n「だいたいこうなる」という統計的・曖昧な予測\nを許容し始める（ゴールへの端緒）。', x: 900, y: 300, type: 'beat', status: 'candidate' },
+    // 主人公の起源ノート（変更あり）
+    {
+        id: 'protagonist_origin',
+        parent: 'act1',
+        label: '主人公の起源',
+        description: '・最初はむしろ感覚派・空想的であったが、社会適応のために厳密さで自分を塗り固めた\n・豊かな感覚世界を持っていたが、自分でそれを「つぶした」\n→ 失われた世界の取り戻し、または「厳密でない美しさ」を知る旅がゴール？',
+        note: 'ゴール弧①：人間と人間でコミュニケーションできない苦しみを理解し、曖昧さを許容できるようになる（演繹的→統計的）\n\nゴール弧②（現在優先）：「理解できなくても愛せる」を発見する。\n厳密さは捨てない。ただし「厳密でない理解」も許すようになる。\n\n★ 主人公の誤信念（初期）:\n「世界は厳密に記述できる」\n「正しく説明すれば人は理解する」\n「誤解 = 言語の不備」\n← これが物語を通じて崩れていく',
+        x: 250, y: 600,
+        type: 'note',
+        status: 'candidate'
+    },
 
+    // M-1-X メインビート
+    {
+        id: 'M-1-1',
+        parent: 'act1',
+        label: 'いじめと孤立',
+        description: '空気が読めず地雷を踏む。\n再現性のない「努力しろ」という言葉への絶望。\n感情で動く世界に居場所がない。',
+        x: 420, y: 350,
+        type: 'beat',
+        status: 'preferred',
+        value_change: '安全 → 危険'
+    },
+    {
+        id: 'M-1-2',
+        parent: 'M-1-1',
+        label: '法則の発見',
+        description: 'カフェで集中できる法則を発見。\n自分でルールを見つける喜び。\n「再現できる世界」への扉が開く。',
+        x: 580, y: 350,
+        type: 'beat',
+        status: 'preferred',
+        value_change: '無力 → 手段'
+    },
+    {
+        id: 'M-1-3',
+        parent: 'M-1-2',
+        label: '師との出会い',
+        description: '物理教師との出会い。\n「言葉で分かり合える」体験。\n人間との繋がりに気づかず、言語の論理的側面だけを吸収。',
+        x: 740, y: 350,
+        type: 'beat',
+        status: 'preferred'
+    },
+
+    // ★ 新規：恋人との出会いと死
+    {
+        id: 'M-1-lover',
+        parent: 'M-1-3',
+        label: '★ 恋人との出会い\n（鏡像キャラ）',
+        description: '学生時代の恋人。父親以外で唯一心を許せた存在。\n主人公と同じ認知特性を持つ鏡像キャラクター。\n\n※ 彼女は厳密な理解を必要とする人間だった。\n社会の曖昧さに適応できず、周囲の力のなさで差別・疎外され、\n自分を責め、社会への怒りを内側に向け死を選ぶ。',
+        note: '【恋人の物語的機能】\n①「厳密な理解があれば生きられた人」の象徴\n→ 主人公の信念「だから社会は厳密でなければならない」の根拠\n\n②「理解が届かなかった悲劇」の証明\n→ 父=理解の成功例 / 恋人=理解の失敗例\n\n③主人公との分岐点\n・主人公：父という理解者がいた → 生き残る\n・恋人：理解者がいなかった → 死ぬ\n→「理解される経験が生存につながる」\n\n④誤信念の補強\n彼女の死が主人公に「社会はもっと厳密でなければならない」という強い確信を与える。\n→これが物語の推進力になる。\n\n⑤クライマックスで思い出す存在\niじめっ子を「抱きしめる」直前、主人公は彼女を思い出す',
+        x: 900, y: 200,
+        type: 'beat',
+        status: 'preferred',
+        value_change: '孤立 → 初めての理解'
+    },
+    {
+        id: 'M-1-lover-death',
+        parent: 'M-1-lover',
+        label: '★ 恋人の死（自殺）',
+        description: '恋人が自殺。\n社会が厳密でなかったことで、彼女は救えなかった。\n\n主人公の誤信念が確定する瞬間：\n「社会がもっと厳密なら彼女は死ななかった」\n「だから厳密でなければならない」',
+        note: '恋人の死の意味（二重構造）：\n①社会の罪 / 社会の限界（誰かが悪い、ではなく社会が未熟だった）\n②「厳密さ=救命装置」の証拠\n\n物語終盤での再定義：\n「彼女は厳密さを必要としていた」\n「同時に、社会はそれを提供できなかった」\n→ 両方を受け入れることが主人公の成長',
+        x: 1060, y: 200,
+        type: 'beat',
+        status: 'preferred',
+        value_change: '愛 → 喪失・使命感'
+    },
+
+    {
+        id: 'M-1-4',
+        parent: 'M-1-3',
+        label: '過剰適応',
+        description: '他者の行動モデルを作成。\n本能で生きる他者より他者を理解する。\n→ しかし共感ではなく「解析」',
+        x: 900, y: 450,
+        type: 'beat',
+        status: 'preferred'
+    },
+    {
+        id: 'M-1-5',
+        parent: 'M-1-4',
+        label: '統計的思考への萌芽\n（誤信念の確立）',
+        description: '全てを演繹(公式)で解くのは無理だと悟る。\n「だいたいこうなる」という統計的・曖昧な予測を許容し始める。\n\n★ この頃に恋人の死をきっかけとした誤信念完成：\n「社会を厳密にすれば誰も傷つかない」',
+        x: 1060, y: 450,
+        type: 'beat',
+        status: 'preferred',
+        value_change: '孤独 → 確信（誤った確信）'
+    },
+
+    // ══════════════════════════════════════════════════════════════
     // ACT 2
-    { id: 'act2', parent: 'M-1-5', label: 'ACT 2\n上昇と歪み', description: '社会人編。\n曖昧さを悪とし、厳密さを強制する\n「Constrain」の開発と成功。', x: 1080, y: 300, type: 'act', status: 'preferred', value_change: '適応 → 支配' },
+    // ══════════════════════════════════════════════════════════════
+    {
+        id: 'act2',
+        parent: 'M-1-5',
+        label: 'ACT 2\n上昇と歪み',
+        description: '社会人編。\n曖昧さを悪とし、厳密さを強制する\n「Constrain」の開発と成功。\n\n誤信念が行動原理になり、無自覚に加害者となる。',
+        x: 1240, y: 450,
+        type: 'act',
+        status: 'preferred',
+        value_change: '適応 → 支配'
+    },
 
-    { id: 'M-2-1', parent: 'act2', label: '厳密さの拒絶者', description: '「言葉に厳しいと怒る人」に遭遇。\n適応するため、表面上は厳密さを隠し、\n愚かなふりをしてやり過ごす処世術を身につける。\nしかし内心のストレスは限界に達する。', x: 1210, y: 300, type: 'beat', status: 'preferred', value_change: '忍耐 → 爆発' },
-    { id: 'M-2-2', parent: 'M-2-1', label: 'Constrain開発', description: 'Haskell製。\n隠していた厳密さを解放する場所。\n自分だけの「正しい世界」を作る。', x: 1340, y: 300, type: 'beat', status: 'preferred' },
-    { id: 'M-2-3', parent: 'M-2-2', label: '成功と再会', description: 'ビジネスで大成功。\nかつてのいじめっ子Aが下請けとして現れる。', x: 1470, y: 300, type: 'beat', status: 'preferred', value_change: '劣等 → 優位' },
-    { id: 'branch_point', parent: 'M-2-3', label: '分岐点', description: 'ここから物語が大きく分かれる', x: 1600, y: 300, type: 'point' },
+    {
+        id: 'M-2-1',
+        parent: 'act2',
+        label: '厳密さの拒絶者',
+        description: '「言葉に厳しいと怒る人」に遭遇。\n適応するため、表面上は厳密さを隠し、\n愚かなふりをしてやり過ごす処世術を身につける。\nしかし内心のストレスは限界に達する。',
+        x: 1400, y: 350,
+        type: 'beat',
+        status: 'preferred',
+        value_change: '忍耐 → 爆発'
+    },
+    {
+        id: 'M-2-2',
+        parent: 'M-2-1',
+        label: 'Constrain開発',
+        description: 'Haskell製。\n隠していた厳密さを解放する場所。\n自分だけの「正しい世界」を作る。\n\n→ 厳密であることを罰として使い始める起点。',
+        x: 1560, y: 350,
+        type: 'beat',
+        status: 'preferred'
+    },
+    {
+        id: 'M-2-3',
+        parent: 'M-2-2',
+        label: '成功と再会',
+        description: 'ビジネスで大成功。\nかつてのいじめっ子（同期エリート）が現れる。\n\n★いじめっ子の背景（変更後）:\n・医者の家系/高学歴家庭→教育虐待\n・「成績=愛情」という歪んだ価値観で育つ\n・東大クラスの才能型主人公と同じ環境で\n  努力型として天才と対峙してきた過去\n・才能の差=世界の不公平 という認識を形成',
+        note: '【いじめっ子（仮名A）のキャラクター設計】\n\n背景：医者の家系（または高学歴家庭）。教育虐待。\n  → 100点以外は失敗、偏差値で人格評価。\n  → 存在価値=能力、という構造\n\n才能との衝突：東大クラス環境で「努力では越えられない才能」に直面\n  → 努力=正義 が 努力=無力 に\n  → 才能=悪、世界は不正義 という認識\n\n男性ジェンダー圧：家を継ぐ、男として成功するべき圧\n  → 弱さを見せられない → 苦しみ→攻撃に変換\n\nいじめの形：物理暴力より社会的破壊（評判操作・孤立・精神攻撃）\n\n主人公との関係：主人公=才能=世界の不公平の象徴\n→ 負けを認められないから「才能ある者を破壊」する方向へ\n\n★ 恋人との鏡像対比：\n  恋人：厳密が足りない社会で死んだ\n  いじめっ子：厳密の世界で塗り汚された\n→ 厳密が「救い」でもあり「暴力」でもある構造',
+        x: 1720, y: 350,
+        type: 'beat',
+        status: 'preferred',
+        value_change: '劣等 → 優位'
+    },
+
+    // 善意の加害と失敗の蓄積
+    {
+        id: 'M-2-good-harm',
+        parent: 'M-2-3',
+        label: '「善意の暴力」の蓄積\n（クライマックス前準備①）',
+        description: '主人公の厳密な指導・追及が\n「善意」として成立しながら部下・同僚を追い詰める場面群。\n\n周囲は主人公を有能で善良と見ているため止めない。\nいじめっ子は感謝しながら傷ついていく。\n\n→ 主人公の誤信念の副作用が顕在化してくる段階',
+        note: '【前準備①：いじめっ子の崩壊の予兆（段階的）】\n・会議で論理的議論に過剰反応\n・睡眠不足・精神的不安定が漏れる\n・家族問題（親との関係）が垣間見える\n・努力が評価されない決定的な出来事\n\n読者が「この人は危ない」と感じる準備が必要\n\n【前準備②：主人公の価値観の揺れ】\n・正しく説明したのに人間関係が壊れる\n・恋人の死の原因を再解釈する瞬間\n・論理の限界を小さく体験する場面群\n（「理解の失敗の前兆」として機能させる）',
+        x: 1900, y: 350,
+        type: 'beat',
+        status: 'preferred',
+        value_change: '正義 → 暴力（無自覚）'
+    },
+
+    // いじめっ子の認識
+    {
+        id: 'M-2-mirror_recognition',
+        parent: 'M-2-good-harm',
+        label: '鏡像の認識\n（クライマックス前準備②）',
+        description: '主人公がいじめっ子に\n「この人は俺に似ている」と気づく瞬間。\n\n二人とも：孤独、社会からの疎外感、\n異なる形での「世界への怒り」。\n\n主人公：才能があったから生き残った\nいじめっ子：才能がなかったから壊れた\n\n→ 抱きしめる行為の準備（鏡像関係の確認）',
+        note: '前準備③ 主人公といじめっ子の接続が必要\n\n・二人の共通点の発見（孤独、努力、社会への違和感）\n・主人公がいじめっ子の苦しみを「俺と同じだ」と理解する\n・しかし理解しても解決できないことに気づく\n\n→ 最終的な抱きしめる行動が「思いつき」でなく\n  「必然の行動」に見えるために必須の伏線',
+        x: 2060, y: 350,
+        type: 'beat',
+        status: 'preferred',
+        value_change: '敵意 → 認識'
+    },
+
+    {
+        id: 'branch_point',
+        parent: 'M-2-mirror_recognition',
+        label: '分岐点',
+        description: 'ここから物語が大きく分かれる',
+        x: 2220, y: 350,
+        type: 'point'
+    },
 
     // ══════════════════════════════════════════════════════════════
-    // BRANCH: Tragedy & Synthesis (NEW PREFERRED)
+    // BRANCH: Tragedy & Synthesis (MAIN — 抱擁クライマックス)
     // ══════════════════════════════════════════════════════════════
-    { id: 'Tragedy-Start', parent: 'branch_point', label: '悲劇と統合\n(自殺・崩壊編)', description: '厳密さを武器にした結果、悲劇が起きる。\n一度全てを否定し、そこから統合へ向かう。', x: 1730, y: 100, type: 'act', status: 'preferred' },
+    {
+        id: 'Tragedy-Start',
+        parent: 'branch_point',
+        label: '★★★ メインルート\n悲劇・暴走・抱擁',
+        description: '厳密さを武器にした結果、いじめっ子が暴走。\n主人公はいじめっ子を撃たれながらも抱きしめることを選ぶ。\n\nクライマックス：\n「理解 → 愛」への軸移動\n「論理の極致 → 論理の限界 → 身体の選択」',
+        x: 2400, y: 150,
+        type: 'act',
+        status: 'preferred'
+    },
 
-    { id: 'Tragedy-1', parent: 'Tragedy-Start', label: 'Aへの尋問', description: 'ミスをしたAを「何故？」と詰め続ける。\n正義の執行のつもりだが、実は復讐。', x: 1880, y: 100, type: 'beat', status: 'preferred', value_change: '正義 → 暴力' },
+    // ★ クライマックス前準備
+    {
+        id: 'Tragedy-breakdown',
+        parent: 'Tragedy-Start',
+        label: 'いじめっ子の崩壊\n（段階的）',
+        description: 'ゆっくり壊れていく過程（突然の発狂ではない）:\n・睡眠/仕事/介護/金銭/自己像の順に崩れていく\n・论理社会での完全な敗北の自覚\n・「才能=悪」から「世界=敵」へのエスカレーション\n\n→ 両親を殺す（教育虐待の歴史の終着）\n→ 会社/同僚への襲撃',
+        note: '崩壊の5段階（アイデア）:\n①睡眠が崩れる\n②仕事の失敗が重なる\n③家族（親）との関係が臨界点に\n④金銭的追い詰め\n⑤自己像の完全崩壊→「こんな世界なら壊してやる」\n\n読者は「この人は危ない」と事前に感じている状態が必要',
+        x: 2560, y: 100,
+        type: 'beat',
+        status: 'preferred',
+        value_change: '苦しみ → 暴走'
+    },
 
-    // TRAGEDY BRANCH A: Suicide Route
-    { id: 'Tragedy-2A', parent: 'Tragedy-1', label: 'Aの自殺', description: 'Aが自殺（または未遂）。\n「完璧な言葉」が人を殺した事実。', x: 2030, y: 50, type: 'beat', status: 'preferred', value_change: '勝利 → 喪失' },
+    {
+        id: 'Tragedy-1',
+        parent: 'Tragedy-breakdown',
+        label: '「完全な理解」の達成\nと無力の発見',
+        description: '暴走直前。\n主人公はいじめっ子の全てを理解する：\n・教育虐待、才能差、努力の崩壊、男性ジェンダー圧\n・恋人の死との鏡像関係\n\nしかし「理解が解決を生まない」瞬間に気づく。\n→ 理解の限界が確定する',
+        x: 2720, y: 100,
+        type: 'beat',
+        status: 'preferred',
+        value_change: '完全理解 → 無力の自覚'
+    },
 
-    // TRAGEDY BRANCH B: Realization Route
-    { id: 'Tragedy-2B', parent: 'Tragedy-1', label: '復讐欲の自覚', description: '正義だと思っていた行動の裏に、\n「Aを傷つけたい」という昏い欲望があったと気づく。', x: 2030, y: 200, type: 'beat', status: 'preferred', value_change: '保身 → 自己嫌悪' },
+    // ★ クライマックス本体
+    {
+        id: 'Tragedy-climax',
+        parent: 'Tragedy-1',
+        label: '★ クライマックス\n撃たれながら抱きしめる',
+        description: '【シーン】\nいじめっ子が銃を持って暴走。\n主人公は逃げる隙があるのに、警備員も呼べるのに、\n撃たれながらもいじめっ子を抱きしめ続ける。\n\n【価値変化】\n論理的に正しい行動（逃げる・助けを呼ぶ）を選ばない\n→ 「合理 → 非合理」\n→ 「理解 → 愛」\n→ 「言語 → 身体」\n\n【なぜ抱きしめるのか】\nこの瞬間、主人公は全員を思い出す：\n・恋人（厳密が足りない社会で死んだ）\n・いじめっ子（厳密の世界で壊れた）\n・父・同僚・すれ違った全ての人間\n→ 人は誰かを傷つける/傷つけられる/助ける\n→ それでも人は生きている\n→ この世界を肯定する',
+        note: '【抱きしめる行為の意味】\n「救う」ではなく\n「この世界に、お前も含まれている」という宣言\n\n【行動の制約（この行動が成立する条件）】\n①厳密さを否定しない\n②恋人の死の意味を保つ（厳密さは必要だった）\n③いじめっ子の苦しみと向き合う\n④状況を正確に理解している（衝動ではない）\n⑤人間社会を拒絶しない\n⑥社会全体ではなく目の前の人に行動する\n\n【哲学的な結論】\n「世界は壊れている。それでも人は生きている。だから人生を肯定する。」\n→ 希望の物語ではなく「絶望を理解した後の肯定」\n\n【恋人の言葉】\nこの行動の根拠は「論理」でも「倫理」でもなく\n恋人の「生きて」という言葉かもしれない',
+        x: 2880, y: 100,
+        type: 'climax',
+        status: 'preferred',
+        value_change: '理解による救済 → 存在による共存'
+    },
 
-    // MERGE
-    { id: 'Tragedy-Merge', parent: ['Tragedy-2A', 'Tragedy-2B'], label: '全否定', description: '「自分は間違っていた」\n自信の喪失により、Constrainを即座に停止。\n全ルール撤廃。', x: 2280, y: 100, type: 'beat', status: 'preferred', value_change: '確信 → 拒絶' },
-
-    { id: 'Tragedy-5', parent: 'Tragedy-Merge', label: '組織の崩壊', description: 'ルールがなくなり、現場は大混乱。\n社員「ガイドラインを戻してくれ！」', x: 2430, y: 100, type: 'beat', status: 'preferred', value_change: '自由 → 混沌' },
-    { id: 'Tragedy-6', parent: 'Tragedy-5', label: 'ジンテーゼ', description: '厳密さ（構造）は必要だが、\nそれを罰（武器）に使ってはいけない。\n「優しい厳密さ」への統合。', x: 2580, y: 100, type: 'climax', status: 'preferred', value_change: '否定 → 統合' },
+    {
+        id: 'Tragedy-after',
+        parent: 'Tragedy-climax',
+        label: '終局\n「理解できない世界を愛する」',
+        description: '主人公は最終的に到達する：\n「厳密さは必要」\n「しかし社会は不完全」\n「それでも人間を愛せる」\n\n→ 世界は理解できる部分もある / できない部分もある\n→ 制御から共存へ\n→ 単一の世界モデルから複数の世界モデルへ',
+        note: '【人物弧の完成】\n「社会が厳密なら救える」\n   ↓\n「厳密で社会を変えようとする」\n   ↓\n「厳密さが別の傷を生む」\n   ↓\n「社会は不完全だと理解する」\n   ↓\n「それでも人間を愛せる」\n\n【テーマ一文】\n厳密さで世界を守ろうとした人間が\n誤解と傷でできた社会を\nそれでも愛せるようになる話\n\n【新人賞の方向性】\n文學界新人賞・新潮新人賞が最も合いそう\n（倫理衝突型クライマックスが評価されやすい）',
+        x: 3040, y: 100,
+        type: 'beat',
+        status: 'preferred',
+        value_change: '確信 → 受容'
+    },
 
     // ══════════════════════════════════════════════════════════════
     // BRANCH: Rigorous Triumph (OLD PREFERRED -> CANDIDATE)
     // ══════════════════════════════════════════════════════════════
-    { id: 'RT-Start', parent: 'branch_point', label: '厳密化の勝利\n(単一責任編)', description: '曖昧さに逃げず、厳密化を突き詰める。\nしかし勝利の代償として痛みが残る。', x: 1600, y: 300, type: 'act', status: 'preferred' },
+    {
+        id: 'RT-Start',
+        parent: 'branch_point',
+        label: '厳密化の勝利\n(単一責任編)',
+        description: '曖昧さに逃げず、厳密化を突き詰める。\nしかし勝利の代償として痛みが残る。',
+        x: 2220, y: 400,
+        type: 'act',
+        status: 'candidate'
+    },
 
-    { id: 'RT-1', parent: 'RT-Start', label: '非効率の排除', description: '曖昧な感情論や慣習を「バグ」として修正。\n成果は出るが周囲との摩擦は放置。\n「言葉を正せば世界は正しくなる」', x: 1750, y: 300, type: 'beat', status: 'preferred', value_change: '摩擦 → 支配' },
-    { id: 'RT-2', parent: 'RT-1', label: '世界のデバッグ', description: '世界の「曖昧さ（バグ）」を修正しまくる。\n世界がクリアになり、自信を深める。', x: 1900, y: 300, type: 'beat', status: 'preferred', value_change: '混沌 → 秩序' },
-    { id: 'RT-3', parent: 'RT-2', label: 'Aへの断罪', description: 'Aの感情的な苦しみを「定義不足」と一刀両断。\n論理で圧倒し、勝利する。', x: 2050, y: 300, type: 'beat', status: 'preferred', value_change: '対立 → 圧倒' },
-    { id: 'RT-4', parent: 'RT-3', label: '問い (Ending)', description: 'Aは論破され傷ついて去る。\n残されたのは完璧な論理と、胸の痛み。\n「バグは取れた。これでよかったのか？」', x: 2200, y: 300, type: 'beat', status: 'preferred', value_change: '勝利 → 実存的敗北' },
+    { id: 'RT-1', parent: 'RT-Start', label: '非効率の排除', description: '曖昧な感情論や慣習を「バグ」として修正。\n成果は出るが周囲との摩擦は放置。\n「言葉を正せば世界は正しくなる」', x: 2380, y: 400, type: 'beat', status: 'candidate', value_change: '摩擦 → 支配' },
+    { id: 'RT-2', parent: 'RT-1', label: '世界のデバッグ', description: '世界の「曖昧さ（バグ）」を修正しまくる。\n世界がクリアになり、自信を深める。', x: 2540, y: 400, type: 'beat', status: 'candidate', value_change: '混沌 → 秩序' },
+    { id: 'RT-3', parent: 'RT-2', label: 'Aへの断罪', description: 'Aの感情的な苦しみを「定義不足」と一刀両断。\n論理で圧倒し、勝利する。', x: 2700, y: 400, type: 'beat', status: 'candidate', value_change: '対立 → 圧倒' },
+    {
+        id: 'RT-4',
+        parent: 'RT-3',
+        label: '問い (Ending)',
+        description: 'Aは論破され傷ついて去る。\n残されたのは完璧な論理と、胸の痛み。\n「バグは取れた。これでよかったのか？」',
+        x: 2860, y: 400,
+        type: 'beat',
+        status: 'candidate',
+        value_change: '勝利 → 実存的敗北'
+    },
 
     // ══════════════════════════════════════════════════════════════
     // BRANCH: Faith Collapse (REJECTED) - 旅に出る編
     // ══════════════════════════════════════════════════════════════
-    { id: 'FC-Start', parent: 'branch_point', label: '信仰崩壊\n(旅に出る編)', description: '厳密さが瓦解し、旅に出る。\nカタルシスへの論理不足のためボツ。', x: 1600, y: 500, type: 'act', status: 'rejected' },
+    {
+        id: 'FC-Start',
+        parent: 'branch_point',
+        label: '信仰崩壊\n(旅に出る編)',
+        description: '厳密さが瓦解し、旅に出る。\nカタルシスへの論理不足のためボツ候補。\n\n恋人・いじめっ子の三角構造が薄くなる問題あり。',
+        x: 2220, y: 600,
+        type: 'act',
+        status: 'rejected'
+    },
 
-    { id: 'FC-1', parent: 'FC-Start', label: 'Bとの出会い', description: 'めちゃくちゃなBに惹かれる', x: 1750, y: 500, type: 'beat', status: 'rejected' },
-    { id: 'FC-2', parent: 'FC-1', label: 'Constrainの亀裂', description: 'Bが色を失う', x: 1900, y: 500, type: 'beat', status: 'rejected' },
-    { id: 'FC-4', parent: 'FC-2', label: '瓦解・旅へ', description: '生きる意味を問われ答えられず。\n全て捨てて旅に出る。', x: 2050, y: 500, type: 'beat', status: 'rejected' },
-    { id: 'FC-6', parent: 'FC-4', label: '旅', description: '旅の中で曖昧さの価値を知る。\n（詳細未定）', x: 2200, y: 500, type: 'beat', status: 'rejected' },
-    { id: 'FC-7', parent: 'FC-6', label: 'いじめの自覚', description: '自分がAをいじめていたと気づく', x: 2350, y: 500, type: 'beat', status: 'rejected' },
-    { id: 'FC-8', parent: 'FC-7', label: 'Bの抱擁', description: '痛みも肯定される', x: 2500, y: 500, type: 'beat', status: 'rejected' },
-    { id: 'FC-9', parent: 'FC-8', label: 'Aとの抱擁', description: '論理を超えた和解', x: 2650, y: 500, type: 'beat', status: 'rejected' },
+    { id: 'FC-1', parent: 'FC-Start', label: 'Bとの出会い', description: 'めちゃくちゃなBに惹かれる', x: 2380, y: 600, type: 'beat', status: 'rejected' },
+    { id: 'FC-2', parent: 'FC-1', label: 'Constrainの亀裂', description: 'Bが色を失う', x: 2540, y: 600, type: 'beat', status: 'rejected' },
+    { id: 'FC-4', parent: 'FC-2', label: '瓦解・旅へ', description: '生きる意味を問われ答えられず。\n全て捨てて旅に出る。', x: 2700, y: 600, type: 'beat', status: 'rejected' },
+    { id: 'FC-6', parent: 'FC-4', label: '旅', description: '旅の中で曖昧さの価値を知る。\n（詳細未定）', x: 2860, y: 600, type: 'beat', status: 'rejected' },
+    { id: 'FC-7', parent: 'FC-6', label: 'いじめの自覚', description: '自分がAをいじめていたと気づく', x: 3020, y: 600, type: 'beat', status: 'rejected' },
+    { id: 'FC-8', parent: 'FC-7', label: 'Bの抱擁', description: '痛みも肯定される', x: 3180, y: 600, type: 'beat', status: 'rejected' },
+    { id: 'FC-9', parent: 'FC-8', label: 'Aとの抱擁', description: '論理を超えた和解', x: 3340, y: 600, type: 'beat', status: 'rejected' },
 
     // ══════════════════════════════════════════════════════════════
-    // OTHER BRANCHES
+    // OTHER BRANCHES & NOTES
     // ══════════════════════════════════════════════════════════════
-    { id: 'RC-Start', parent: 'branch_point', label: '恋愛クライシス', description: '恋愛トラブルが主軸。\nテーマに対して軽いため保留。', x: 1600, y: 700, type: 'act', status: 'deferred' },
-    { id: 'CE-Note', parent: 'branch_point', label: '没ネタ: 過剰普及', description: 'Constrainが普及しすぎて\n世界の色が消える', x: 1600, y: 850, type: 'note', status: 'candidate' }
+    {
+        id: 'RC-Start',
+        parent: 'branch_point',
+        label: '恋愛クライシス',
+        description: '恋愛トラブルが主軸。\nテーマに対して軽いため保留。',
+        x: 2220, y: 780,
+        type: 'act',
+        status: 'deferred'
+    },
+    {
+        id: 'CE-Note',
+        parent: 'branch_point',
+        label: '没ネタ: 過剰普及',
+        description: 'Constrainが普及しすぎて\n世界の色が消える',
+        x: 2220, y: 900,
+        type: 'note',
+        status: 'candidate'
+    },
+
+    // ══════════════════════════════════════════════════════════════
+    // THEME & STRUCTURE REFERENCE NODE
+    // ══════════════════════════════════════════════════════════════
+    {
+        id: 'theme_node',
+        label: '📌 テーマ設計メモ',
+        description: '【価値変化弧（完全版）】\n「理解すれば救える」\n   ↓\n「理解しても救えない」\n   ↓\n「理解できなくても寄り添える」\n\n【クライマックムの条件】\n①厳密さを否定しない\n②恋人の死の意味を保つ\n③いじめっ子の苦しみと向き合う\n④状況を正確に理解している\n⑤人間社会を拒絶しない',
+        note: '【主人公が最後に手放すもの】\n×「厳密さ」（これは手放さない）\n×「他者を救えるという信念」（不完全な形で残る）\n○「完全理解でなければ動けない」という信念\n\n【残す問い】\n「なぜ人間社会を愛せるのか」\n候補：\n①恋人の「生きて」という言葉\n②次の世代（子供・後輩）\n③人間の弱さそのもの（壊れながらも生きる事実）\n\n【ジャンル定義】\n現代思想小説／社会心理文学\n→ 文學界新人賞・新潮新人賞が最適',
+        x: 50, y: 1050,
+        type: 'note',
+        status: 'preferred'
+    }
 ];

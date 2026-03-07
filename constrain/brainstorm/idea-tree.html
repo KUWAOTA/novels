@@ -467,7 +467,7 @@
 
     <div class="header">
         <h1><span>Constrain</span> — アイデアツリー</h1>
-        <div class="subtitle">⚠ マッキー読了前のdraft — 全ての分岐は可能性です。ノードをクリックして詳細を確認</div>
+        <div class="subtitle">🔄 girlfriend.md反映版 — 三角構造（恋人/主人公/いじめっ子）とクライマックス（抱擁）を追加。ノードをクリックして詳細を確認</div>
     </div>
 
     <div class="legend">
@@ -506,7 +506,7 @@
         <button class="zoom-btn" id="zoomReset" style="font-size:11px;">⌂</button>
     </div>
 
-    <script src="data/ideas.js?v=4"></script>
+    <script src="data/ideas.js?v=5"></script>
     <script>
         // ═══════════════════════════════════════════════════════
         // DATA — All story ideas structured as a tree
@@ -615,7 +615,7 @@
             inner += `<span class="node-status-badge badge-${n.status}">${n.status}</span>`;
             inner += `<div class="node-id">${n.id}</div>`;
             inner += `<div class="node-label">${n.label.replace(/\n/g, '<br>')}</div>`;
-            inner += `<div class="node-desc">${n.desc}</div>`;
+            inner += `<div class="node-desc">${n.description || n.desc || ''}</div>`;
             if (n.value) inner += `<div class="node-value">${n.value}</div>`;
             if (n.issue) inner += `<div class="node-issue">${n.issue}</div>`;
             inner += `</div>`;
@@ -725,7 +725,7 @@
         // DETAIL PANEL
         // ═══════════════════════════════════════════════════════
 
-        function showNodeDetail(node) {
+        function showDetail(node) {
             const panel = document.getElementById('detailPanel');
             const header = document.getElementById('detailHeader');
             const body = document.getElementById('detailBody');
@@ -745,16 +745,32 @@
                 <span class="mono" style="opacity:0.5; font-size:11px;">ID: ${node.id}</span>
             `;
 
+            const desc = node.description || node.desc || 'No description.';
+
             body.innerHTML = `
                 <div class="detail-section" style="grid-column: 1 / -1;">
-                    <h3>Description</h3>
-                    <p style="font-size:14px; white-space: pre-wrap;">${escapeHtml(node.desc || 'No description.')}</p>
+                    <h3>Summary</h3>
+                    <p style="font-size:14px; white-space: pre-wrap;">${escapeHtml(desc)}</p>
                 </div>
+
+                ${node.note ? `
+                <div class="detail-section" style="grid-column: 1 / -1; margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border);">
+                    <h3>Detailed Notes</h3>
+                    <div style="font-size:13px; line-height: 1.6; color: var(--text); white-space: pre-wrap; background: rgba(0,0,0,0.2); padding: 12px; border-radius: 6px; border: 1px solid var(--border);">${escapeHtml(node.note)}</div>
+                </div>
+                ` : ''}
+
                 ${node.value ? `
                 <div class="detail-section">
                     <h3>Value Charge</h3>
                     <span class="node-value">${escapeHtml(node.value)}</span>
                 </div>` : ''}
+                ${node.value_change ? `
+                <div class="detail-section">
+                    <h3>Value Change</h3>
+                    <span class="node-value" style="background:rgba(88,166,255,0.1); color:var(--accent-branch);">${escapeHtml(node.value_change)}</span>
+                </div>` : ''}
+
                 <div class="detail-section">
                     <h3>Status</h3>
                     <span class="node-status-badge badge-${node.status}" style="position:static;">${node.status}</span>
@@ -789,13 +805,9 @@
         let dragNode = null;
         let dragOffsetX = 0;
         let dragOffsetY = 0;
-        let dragStartX = 0;
-        let dragStartY = 0;
-        let hasDragged = false;
-        const DRAG_THRESHOLD = 5; // pixels
 
         document.getElementById('canvas').addEventListener('mousedown', e => {
-            if (e.button === 2) { // Right click (Connect)
+            if (e.button === 2) { // Right click
                 const node = e.target.closest('.node');
                 if (node) {
                     isConnecting = true;
@@ -808,25 +820,16 @@
                     tempLine.style.strokeDasharray = '5,5';
                     svg.appendChild(tempLine);
                     e.stopPropagation();
-                    e.preventDefault();
                 }
-            } else if (e.button === 0) { // Left click (Drag or Click)
+            } else if (e.button === 0) { // Left click
                 const potentialNode = e.target.closest('.node');
                 if (potentialNode) {
-                    // Prepare for potential drag, but don't start yet
-                    isDragging = false;
-                    hasDragged = false;
+                    isDragging = true;
                     dragNode = potentialNode;
-
-                    // Store initial position to calculate threshold
-                    dragStartX = e.clientX;
-                    dragStartY = e.clientY;
-
                     const rect = dragNode.getBoundingClientRect();
                     dragOffsetX = e.clientX - rect.left;
                     dragOffsetY = e.clientY - rect.top;
-
-                    // Don't verify drag yet, wait for move
+                    dragNode.style.zIndex = 100;
                     e.stopPropagation();
                 }
             }
@@ -834,9 +837,12 @@
 
         document.addEventListener('mousemove', e => {
             const canvasRect = document.getElementById('canvas').getBoundingClientRect();
-            // Connecting logic (Right drag)
+            const x = (e.clientX - canvasRect.left) / scale; // Adjust for scale if implemented, currently scale=1 logic needs verify
+            const y = (e.clientY - canvasRect.top) / scale;
+
             if (isConnecting && connectStartNode) {
-                const navScale = scale || 1;
+                const navScale = scale || 1; // Fallback
+                // Update temp line
                 const startRect = connectStartNode.getBoundingClientRect();
                 const startX = (startRect.left + startRect.width / 2 - canvasRect.left) / navScale;
                 const startY = (startRect.top + startRect.height / 2 - canvasRect.top) / navScale;
@@ -846,83 +852,73 @@
 
                 const d = `M ${startX} ${startY} L ${curX} ${curY}`;
                 tempLine.setAttribute('d', d);
-                return;
             }
 
-            // Dragging logic (Left drag)
-            if (dragNode) {
-                // Check if moved enough to count as drag
-                if (!isDragging && !hasDragged) {
-                    const dist = Math.sqrt(Math.pow(e.clientX - dragStartX, 2) + Math.pow(e.clientY - dragStartY, 2));
-                    if (dist > DRAG_THRESHOLD) {
-                        isDragging = true;
-                        hasDragged = true;
-                        dragNode.style.zIndex = 100;
-                    }
-                }
+            if (isDragging && dragNode) {
+                // Dragging logic
+                const navScale = scale || 1;
+                const newX = (e.clientX - canvasRect.left - dragOffsetX) / navScale;
+                const newY = (e.clientY - canvasRect.top - dragOffsetY) / navScale;
 
-                if (isDragging) {
-                    const navScale = scale || 1;
-                    const newX = (e.clientX - canvasRect.left - dragOffsetX) / navScale;
-                    const newY = (e.clientY - canvasRect.top - dragOffsetY) / navScale;
-
-                    dragNode.style.left = `${newX}px`;
-                    dragNode.style.top = `${newY}px`;
-                    requestAnimationFrame(drawLines);
-                }
+                dragNode.style.left = `${newX}px`;
+                dragNode.style.top = `${newY}px`;
+                requestAnimationFrame(drawLines);
             }
         });
 
         document.addEventListener('mouseup', e => {
-            // Right click release (End Connect)
             if (isConnecting) {
                 const targetNode = e.target.closest('.node');
                 if (targetNode && targetNode !== connectStartNode) {
                     const parentId = connectStartNode.dataset.id;
                     const childId = targetNode.dataset.id;
+                    console.log(`Connected ${parentId} to ${childId}`);
+                    // In a real app, update data model here
                     const childData = nodes.find(n => n.id === childId);
                     if (childData) {
                         if (!childData.parent) childData.parent = parentId;
                         else if (Array.isArray(childData.parent)) childData.parent.push(parentId);
                         else childData.parent = [childData.parent, parentId];
                         drawLines();
-                        alert(`Connected: ${parentId} -> ${childId}`);
                     }
+                    alert(`Connected: ${parentId} -> ${childId}`);
                 }
-                if (tempLine) { tempLine.remove(); tempLine = null; }
+
+                if (tempLine) {
+                    tempLine.remove();
+                    tempLine = null;
+                }
                 isConnecting = false;
                 connectStartNode = null;
             }
 
-            // Left click release (End Drag or Click)
-            if (dragNode) {
-                if (isDragging) {
-                    // It was a drag operation
-                    isDragging = false;
-                    dragNode.style.zIndex = '';
+            if (isDragging) {
+                isDragging = false;
+                if (dragNode) dragNode.style.zIndex = '';
 
-                    // Update position data
+                // Update position data
+                if (dragNode) {
                     const nodeId = dragNode.dataset.id;
                     const nodeData = nodes.find(n => n.id === nodeId);
                     if (nodeData) {
                         nodeData.x = parseInt(dragNode.style.left);
                         nodeData.y = parseInt(dragNode.style.top);
                     }
-                } else if (!hasDragged) {
-                    // It was a click operation (didn't move enough)
-                    const nodeId = dragNode.dataset.id;
-                    const nodeData = nodes.find(n => n.id === nodeId);
-                    if (nodeData) {
-                        showNodeDetail(nodeData);
-                    }
                 }
                 dragNode = null;
-                hasDragged = false;
             }
         });
 
-        // Click event removed because mouseup handles it now
-        // document.getElementById('canvas').addEventListener('click', ...
+        // Click event for details (Separate from drag)
+        document.getElementById('canvas').addEventListener('click', e => {
+            const node = e.target.closest('.node');
+            // Only show details if not just finished dragging/connecting
+            if (node && !isDragging && !isConnecting) {
+                const nodeId = node.dataset.id;
+                const nodeData = nodes.find(n => n.id === nodeId);
+                if (nodeData) showNodeDetail(nodeData);
+            }
+        });
 
         document.getElementById('detailClose').addEventListener('click', () => {
             detailPanel.classList.remove('open');

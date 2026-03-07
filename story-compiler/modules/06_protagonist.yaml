@@ -6,6 +6,13 @@
 # 主人公は物語のエンジン。
 # 意志（will）と欲望（desire）が行動を駆動し、
 # 読者の共感（empathy）が物語への没入を保証する。
+# 
+# v0.3: McKee "Character" より以下を追加
+#   - 自己の4層構造（圧力モデル）
+#   - 主人公の8つの素質（未定義チェック）
+#   - 性格描写の3つの役割
+#   - 象徴化過剰チェック
+#   - サブプロット主人公チェック
 # ============================================================
 
 module_id: protagonist
@@ -130,36 +137,296 @@ mentality_linkage:
         心性から遡って感情を再評価してください。
 
 # ============================================================
-# 表の性格と実像（Surface vs True Nature）
+# 自己の4層構造 — 圧力モデル（McKee "Character"）
 # ============================================================
-characterization:
-  surface_vs_true_nature:
+# v0.2の「表/裏の2層」を「4層の圧力構造」に拡張。
+# 通常時は内層が外層を決定し、
+# 危機（圧力）下では外層から順に剥がれ最深部が露出する（劇的露出モデル）。
+# ============================================================
+self_layers:
+  description: >
+    キャラクターは単層ではなく、社会的仮面から無意識までの
+    "圧力構造"を持つ。通常時は隠れた自己→中核→個人→社会の
+    順で決定されるが、ドラマでは逆方向に剥離が起きる。
+  model: pressure  # 因果モデルではなく劇的露出モデル
+
+  layers:
+    social_self:
+      order: 1  # 最外層
+      type: string
+      required: false
+      description: >
+        公的役割・職業・肩書き・他者から見える人格。
+        世界に対する表面出力。
+    personal_self:
+      order: 2
+      type: string
+      required: false
+      description: >
+        親密な関係（恋人・家族・親友）で見せる顔。
+        限定された他者への出力。
+    core_self:
+      order: 3
+      type: string
+      required: false
+      description: >
+        信念・価値観・恐れ・欲望。
+        行動選択アルゴリズム。
+    hidden_self:
+      order: 4  # 最深層
+      type: string
+      required: false
+      description: >
+        本人も知らない衝動・抑圧された欲望・否認している価値観。
+        中核を書き換える潜在変数。
+
+  pressure_design:
     description: >
-      表の性格描写と実像のズレを構造的に定義する。
-      キャラクターの深みは「見せている自分」と「本当の自分」の
-      ギャップから生まれる。このギャップが物語を通じて明らかになることで
-      キャラククターアークが形成される。
-    status: hook  # 具体設計は未定だが構造として保持
+      「どの圧力でどの層が破れるか」を設計する。
+      これが物語エンジンになる。
     fields:
-      surface_persona:
-        type: string
+      pressure_sequence:
+        type: list
         required: false
-        description: "他者に見せている性格・行動パターン"
-      true_nature:
-        type: string
-        required: false
-        description: "圧力下で露出する本当の性格"
-      gap_revelation_timing:
-        type: string
-        required: false
-        description: "実像が明らかになるタイミング（例: Act2クライマックス）"
-    compile_time_checks:
-      gap_undefined:
-        severity: info
-        condition: "surface_persona defined but true_nature undefined"
-        message: >
-          表の性格は定義されていますが、実像が未定義です。
-          深みのあるキャラクターには両面の定義を検討してください。
+        description: >
+          圧力による層の剥離順序。
+          例: ["Act1: 社会的自己の崩壊", "Act2: 個人的自己の崩壊",
+               "Act3: 中核の揺らぎ → 隠れた自己の露出"]
+
+  compile_time_checks:
+    layers_undefined:
+      severity: info
+      condition: "fewer than 2 layers defined"
+      message: >
+        自己の層が2層未満しか定義されていません。
+        最低でも社会的自己と中核の自己を設計すると深みが出ます。
+    hidden_self_unused:
+      severity: info
+      condition: "hidden_self undefined"
+      message: >
+        隠れた自己が未定義です。決定的啓示の根拠として、
+        本人も気づいていない衝動や欲望を設計すると転換が強くなります。
+    no_pressure_sequence:
+      severity: warning
+      condition: "self_layers defined but pressure_sequence undefined"
+      message: >
+        自己の4層は定義されていますが、圧力による剥離順序が未定義です。
+        「どの危機でどの層が破れるか」を設計してください。
+
+# ============================================================
+# 性格描写の3つの役割（McKee "Character"）
+# ============================================================
+characterization_roles:
+  description: >
+    性格描写には3つの構造的役割がある。
+    これらが欠けるとキャラクターが機能不全を起こす。
+  roles:
+    credibility:
+      description: >
+        信頼性 — 行動と内面が整合していると読者が感じられる状態。
+        性格描写がないと行動は「作者の都合」に見える。
+        性格描写は未来の選択を"予告"する装置。
+      check: "行動根拠が設計されているか"
+    uniqueness:
+      description: >
+        個性 — 他の登場人物と交換不能であること。
+        「奇抜さ」ではなく「固有の矛盾」が個性を作る。
+      check: "他キャラと交換可能になっていないか"
+    curiosity:
+      description: >
+        好奇心 — 読者に「まだ見ていない側面がある」と感じさせること。
+        未開示の層。4層構造の段階的露出と直結する。
+      check: "未開示情報が設計されているか"
+
+  compile_time_checks:
+    credibility_weak:
+      severity: warning
+      message: >
+        主人公の行動が性格設計から自然に導出されていません。
+        「この人ならこの選択をする」と読者が思えるか確認してください。
+    uniqueness_weak:
+      severity: info
+      message: >
+        主人公が他キャラクターと交換可能な状態です。
+        固有の矛盾や癖を追加してください。
+    curiosity_depleted:
+      severity: warning
+      message: >
+        主人公の未開示情報が枯渇しています。
+        読者の好奇心を維持するための「隠された層」を確保してください。
+
+# ============================================================
+# 信憑性制約 — 潜在可能性モデル（McKee "Character"）
+# ============================================================
+credibility_constraint:
+  description: >
+    決定的啓示（キャラクターの転換点）が成立するための制約。
+    信憑性は「連続性」ではなく「潜在可能性の存在」で担保される。
+    突然に見える転換でも、伏線として「隠れた自己」が布線されていれば成立する。
+  principle: >
+    読者が「ああ、もともとこうなる可能性はあった」と感じられるか。
+    主人公を「思想の装置」にせず「思想に振り回される人間」として描く。
+  fields:
+    latent_potential:
+      type: string
+      required: false
+      description: >
+        転換を支える潜在的可能性。
+        本人が否認しているが微細に存在する感覚。
+        例: 「再現性では満たされない感覚が以前から微細にある」
+  compile_time_checks:
+    revelation_without_potential:
+      severity: compile_error
+      condition: "decisive revelation exists but latent_potential undefined"
+      message: >
+        決定的啓示に対する潜在可能性が未定義です。
+        転換前に伏線（隠れた自己の布線）がなければ、
+        読者は「作者が思想を変えさせただけ」と感じます。
+
+# ============================================================
+# 主人公の8つの素質 — 未定義チェック（McKee "Character"）
+# ============================================================
+# エラーにはしない。「設計の抜け漏れ検出」が目的。
+# 「欠けている」と「意図的に弱い」は違う。
+# 段階化: A=warning（推進力）、B=info-high（読者接続）、C=info（深み）
+# ============================================================
+protagonist_traits:
+  description: >
+    マッキーの8つの素質を「必須条件」ではなく「未定義チェック」として実装。
+    目的は「何も考えていない項目があるか？」の検出。
+    各項目の状態: 0=未定義, 1=意図的に弱い, 2=明確に強い
+  traits:
+    willpower:
+      label: "意志の力"
+      level: A  # 物語の推進力として不可欠
+      severity_if_undefined: warning
+      description: "困難に直面しても行動を起こす力"
+    complexity:
+      label: "複雑さ"
+      level: B
+      severity_if_undefined: info
+      description: "単純な善悪ではない多層性"
+    facets:
+      label: "多面性"
+      level: B
+      severity_if_undefined: info
+      description: "場面・関係性によって異なる顔を見せること"
+    empathy:
+      label: "感情移入できる"
+      level: B
+      severity_if_undefined: info
+      description: "読者が共感（理解）できるポイント"
+    curiosity_inducing:
+      label: "好奇心を掻き立てる"
+      level: C
+      severity_if_undefined: info
+      description: "まだ知らない側面があると感じさせる力"
+    interior_depth:
+      label: "豊かな内面"
+      level: C
+      severity_if_undefined: info
+      description: "表面に出ない思考・感情・記憶の厚み"
+    adaptability:
+      label: "変化への対応力"
+      level: C
+      severity_if_undefined: info
+      description: "危機に際して変容する能力（意図的に低いも設計として有効）"
+    truth_perception:
+      label: "真実を見抜く力"
+      level: C
+      severity_if_undefined: info
+      description: "状況の本質を見通す力（低いことも物語装置になる）"
+
+  compile_time_checks:
+    trait_undefined:
+      severity: "per-trait (A=warning, B/C=info)"
+      condition: "trait state == 0 (undefined)"
+      message_template: >
+        主人公の「{trait_label}」が設計上未定義です。
+        意図的に弱い場合は intentional_weak: true を設定してください。
+
+# ============================================================
+# 象徴化過剰チェック（McKee "Character"）
+# ============================================================
+symbolism_overload_check:
+  description: >
+    主人公の資質が象徴的方向に膨らむほど、信憑性が失われる。
+    象徴化のしすぎ = 人間ではなく「理念」「記号」になること。
+    × 象徴を作ってから人間を貼る
+    ○ 人間を描いたら結果的に象徴に見える
+  principle: >
+    主人公は理念の看板ではない。行動する人間だ。
+    「思想の装置」ではなく「思想に振り回される人間」であること。
+  human_elements:
+    - "感情でブレる瞬間"
+    - "矛盾を抱えている"
+    - "自分の理論を守るために非合理なことをする"
+    - "欠点がある"
+    - "制限がある"
+  compile_time_checks:
+    symbolism_overload:
+      severity: info
+      condition: >
+        protagonist traits are highly aligned without contradictions,
+        no human_elements defined or all traits at level 2
+      message: >
+        主人公の資質が理念的に整理されすぎています。
+        具体的な矛盾・制限・失敗経験を追加すると信憑性が増します。
+        「思想の装置」ではなく「思想に振り回される人間」を描いてください。
+
+# ============================================================
+# サブプロット主人公チェック（McKee "Character"）
+# ============================================================
+# 未定義ならINFOヒントを出す（best-effort要素）
+# ============================================================
+subprotagonist_check:
+  description: >
+    サブプロット主人公（B主人公）を作った際の、
+    ベター要素の未定義検出。欠けていてもエラーにはしない。
+  fields:
+    link_to_main:
+      type: enum
+      values: [mirror, contrast, complement, interference]
+      description: "主プロットとの関係タイプ（鏡像/対照/補完/干渉）"
+    desire:
+      type: string
+      description: "B主人公の欲望（主主人公と独立していること）"
+    conflict:
+      type: string
+      description: "外的葛藤＋内的葛藤のどちらか最低1つ"
+    arc:
+      type: string
+      description: "変化する/変化しない（硬直も設計としてOK）を明示"
+    theme_function:
+      type: string
+      description: "テーマを別角度から照らす役割"
+    intersection:
+      type: string
+      description: "主プロットへの影響点（いつ・何を・どう変えるか）"
+    ending:
+      type: string
+      description: "サブプロットの終点（合流/決裂/置き去り/反転）"
+    credibility_root:
+      type: string
+      description: "行動の根（潜在可能性の根拠：過去・習慣・価値観）"
+
+  compile_time_checks:
+    subprotagonist_field_undefined:
+      severity: info
+      condition: "subprotagonist declared but field undefined"
+      messages:
+        link_to_main: >
+          サブ主人公の「主プロットとの関係タイプ」が未定義です。
+          鏡像/対照/補完/干渉のどれかを設計すると収束が強くなります。
+        desire: >
+          サブ主人公の「欲望」が未定義です。
+          主人公と同じ目的だと駒化しやすいので、独立目的を設計してください。
+        intersection: >
+          サブプロットの「交差点」が未定義です。
+          主プロットの選択を変える圧力/情報/代償のどれを渡すか決めてください。
+        credibility_root: >
+          サブ主人公の「信憑性の根」が未定義です。
+          その人物がその選択をする潜在可能性の根拠を設計してください。
 
 # ============================================================
 # 敵対力制約（Antagonistic Force Constraint）
@@ -243,7 +510,27 @@ scope:
   global_or_time_dependent: undecided
   note: >
     主人公の性格は物語を通じて固定か、変化するか。
-    将来的にアーク（character arc）対応を検討。
+    4層構造の圧力設計と連動して検討する。
+
+# ============================================================
+# 制作時の運用原則（McKee "Character"）
+# ============================================================
+# コンパイラのルールではなく、執筆モードでの指針。
+# ============================================================
+writing_guidance:
+  scene_level_check: >
+    シーンを書く前に考えるのは3つだけ:
+    1. この行動はその人の性格から自然か？（信頼性）
+    2. 他のキャラでも代替できないか？（個性）
+    3. まだ読者が知らない面は残っているか？（好奇心）
+  internal_conflict_first: >
+    外側の事件より内側の衝突を先に設計する。
+    「この場面で主人公の中で何と何がぶつかっているか？」
+  anti_symbolism: >
+    創作時に"象徴を作ろう"と考えないこと。
+    人間を書けば結果として象徴になる。逆にやると信憑性が死ぬ。
+    理念を削る → 反応を書く → 矛盾を書く。
+    「思想の説明」ではなく「思想に振り回される瞬間」を書く。
 
 # ============================================================
 # 内から生じる動機タクソノミー（Inner Motivation Taxonomy）
@@ -333,6 +620,5 @@ condition_vs_desire:
 # 将来の拡張予定
 # ============================================================
 # _future_extensions:
-#   - character_arc: "McKee 'Character' から追加予定"
-#   - character_dimension: "次元の深さ定義"
 #   - character_web: "キャラクター間の関係性マップ"
+#   - dialogue_rules: "McKee 'Dialogue' から追加予定"

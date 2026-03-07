@@ -55,7 +55,7 @@ active_modules:
   - 03_climax-rules          # クライマックス + 意味の構造
   - 04_story-triangle        # 物語三角形（Arc/Mini）+ 幕数
   - 05_controlling-concept   # 統制概念と価値軸追跡
-  - 06_protagonist           # 主人公モデル + 心性連動 + 表裏 + 敵対力制約 + 善の中心
+  - 06_protagonist           # 主人公モデル + 4層圧力構造 + 8素質チェック + 信憑性制約 + 敵対力制約 + 善の中心
   - 07_action-definition     # アクション定義 + 行動影響検証
   - 08_inciting-incident     # 契機事件
   - 09_subplot               # サブプロット
