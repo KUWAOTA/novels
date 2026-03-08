@@ -1,0 +1,140 @@
+<mxfile host="app.diagrams.net" modified="2026-03-08T17:50:00.000Z" agent="Antigravity" version="24.0.0" type="device">
+  <diagram id="girlfriend-idea-map" name="girlfriendIdeaアイデア差込マップ">
+    <mxGraphModel dx="3200" dy="2800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- TITLE -->
+        <mxCell id="title" value="&lt;b&gt;girlfriendIdea.md — シーン素材差込マップ&lt;/b&gt;&lt;br&gt;恋人との実体験エピソードをどこに差し込むか" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=16;fontColor=#1B3A5C;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="250" y="-220" width="700" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- ============================== -->
+        <!-- ACT STRUCTURE (simplified copy) -->
+        <!-- ============================== -->
+        <mxCell id="act1" value="&lt;b&gt;ACT 1 — 小学生&lt;/b&gt;&lt;br&gt;ASD疎外・父の教え・A男嫉妬・父の死" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontColor=#1B3A5C;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="0" width="220" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="act2" value="&lt;b&gt;ACT 2 — 中学&lt;/b&gt;&lt;br&gt;B子と出会い・いじめ加速・B子の幸福死" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontColor=#3D1F5C;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="310" y="0" width="220" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="act3" value="&lt;b&gt;ACT 3 — 灘～東大&lt;/b&gt;&lt;br&gt;エリート適応・厳密さへの確信" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F0;strokeColor=#2C6FAC;fontColor=#1B3A5C;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="570" y="0" width="220" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="act4" value="&lt;b&gt;ACT 4 — 社会人&lt;/b&gt;&lt;br&gt;Google Japan・善意の教育・A男崩壊" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontColor=#6E3B0A;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="830" y="0" width="220" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="act5" value="&lt;b&gt;ACT 5 — クライマックス&lt;/b&gt;&lt;br&gt;A男自殺企図・主人公の選択" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0E0;strokeColor=#C0392B;fontColor=#5C1B1B;fontSize=10;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="0" width="220" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a12" style="strokeWidth=2;strokeColor=#4A7FB5;" edge="1" parent="1" source="act1" target="act2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a23" style="strokeWidth=2;strokeColor=#4A7FB5;" edge="1" parent="1" source="act2" target="act3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a34" style="strokeWidth=2;strokeColor=#4A7FB5;" edge="1" parent="1" source="act3" target="act4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a45" style="strokeWidth=2;strokeColor=#C0392B;" edge="1" parent="1" source="act4" target="act5"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- ============================== -->
+        <!-- EPISODE CARDS (from girlfriendIdea.md) -->
+        <!-- ============================== -->
+
+        <mxCell id="ep_title" value="&lt;b&gt;恋人エピソード素材（GF-001〜005）&lt;/b&gt;" style="text;html=1;align=left;fontSize=14;fontColor=#2E86C1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="90" width="400" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- GF-001: 掃除の衝突 -->
+        <mxCell id="gf001" value="&lt;b&gt;GF-001: 掃除命令の衝突&lt;/b&gt;&lt;br&gt;&lt;br&gt;「親の家だから掃除するのが筋」&lt;br&gt;→ 正義ベースの命令 vs 交渉構造&lt;br&gt;&lt;br&gt;&lt;b&gt;核:&lt;/b&gt; 要求の正当性ではなく&lt;br&gt;「要求の提示形式」が暴力になる&lt;br&gt;&lt;br&gt;&lt;b&gt;恋人:&lt;/b&gt; そこまで厳密に言葉を&lt;br&gt;運用するのは無理" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4E5F7;strokeColor=#2E86C1;fontColor=#1B3A5C;fontSize=9;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="50" y="130" width="240" height="160" as="geometry"/>
+        </mxCell>
+
+        <!-- GF-002: 決めつけの応酬 -->
+        <mxCell id="gf002" value="&lt;b&gt;GF-002: 決めつけの応酬&lt;/b&gt;&lt;br&gt;&lt;br&gt;恋人「母親の話だから感情的になったんでしょ」&lt;br&gt;→ 自分の契機と違う決めつけへの嫌悪&lt;br&gt;→ 理解を求めて構造を説明&lt;br&gt;→ 恋人「あなたも決めつけるやん」&lt;br&gt;→ 泣く → 「今は話せない」&lt;br&gt;&lt;br&gt;&lt;b&gt;核:&lt;/b&gt; 理解を求める行為が&lt;br&gt;理解不能感を増幅させる逆説" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4E5F7;strokeColor=#2E86C1;fontColor=#1B3A5C;fontSize=9;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="310" y="130" width="240" height="170" as="geometry"/>
+        </mxCell>
+
+        <!-- GF-003: 工数最小化 -->
+        <mxCell id="gf003" value="&lt;b&gt;GF-003:「工数を最小化したい」&lt;/b&gt;&lt;br&gt;&lt;br&gt;恋人の歩み寄り提案に対して&lt;br&gt;「掃除の工数を最小化したい」&lt;br&gt;と返してしまう&lt;br&gt;&lt;br&gt;&lt;b&gt;核:&lt;/b&gt; 関係調整モード vs 最適化モード&lt;br&gt;愛と効率の衝突" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4E5F7;strokeColor=#2E86C1;fontColor=#1B3A5C;fontSize=9;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="570" y="130" width="240" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- GF-004: LINE おばちゃん事件 -->
+        <mxCell id="gf004" value="&lt;b&gt;GF-004: LINE文面おばちゃん事件&lt;/b&gt;&lt;br&gt;&lt;br&gt;言語レイヤー vs 感情レイヤーの全面衝突&lt;br&gt;• 「チン萎えするなあ」→泣く&lt;br&gt;• 説明を試みる→「もういいよ」→抱擁で遮断&lt;br&gt;• 「感情レイヤーで話してますか？」→「はい」&lt;br&gt;• 「創作にメモっていい？」→「悲しい」→泣く&lt;br&gt;&lt;br&gt;&lt;b&gt;核:&lt;/b&gt; 涙が出た時「黙って抱きしめる」のみが&lt;br&gt;正解になる制約＝行動の不平等" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4E5F7;strokeColor=#2E86C1;fontColor=#1B3A5C;fontSize=9;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="830" y="130" width="260" height="180" as="geometry"/>
+        </mxCell>
+
+        <!-- GF-005: 感情負荷の発見 -->
+        <mxCell id="gf005" value="&lt;b&gt;GF-005: 感情負荷の概念&lt;/b&gt;&lt;br&gt;&lt;br&gt;認知負荷だけでなく&lt;br&gt;「一時感情負荷」も設計変数に&lt;br&gt;入れなければならない&lt;br&gt;&lt;br&gt;恋人：表情等の非言語から判断&lt;br&gt;著者：原因分析→システム設計&lt;br&gt;&lt;br&gt;&lt;b&gt;核:&lt;/b&gt; 評価関数の定義域が違う" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4E5F7;strokeColor=#2E86C1;fontColor=#1B3A5C;fontSize=9;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="130" width="230" height="160" as="geometry"/>
+        </mxCell>
+
+        <!-- ============================== -->
+        <!-- MAPPING ARROWS: Episodes → ACTs -->
+        <!-- ============================== -->
+
+        <!-- GF-001 → ACT4 -->
+        <mxCell id="gf001_act4" value="ACT4: 主人公がA男に&lt;br&gt;厳密に答えさせる= GF-001構造" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#2E86C1;dashed=1;html=1;fontSize=8;fontColor=#2E86C1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="gf001" target="act4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="170" y="85"/><mxPoint x="940" y="85"/></Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- GF-002 → ACT4 -->
+        <mxCell id="gf002_act4" value="ACT4: 善意の教育で&lt;br&gt;A男を泣かせる→同じ構造" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#2E86C1;dashed=1;html=1;fontSize=8;fontColor=#2E86C1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="gf002" target="act4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="430" y="80"/><mxPoint x="940" y="80"/></Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- GF-003 → ACT4 -->
+        <mxCell id="gf003_act4" value="ACT4: Constrainの&lt;br&gt;最適化思考が暴力になる" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#2E86C1;dashed=1;html=1;fontSize=8;fontColor=#2E86C1;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="gf003" target="act4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- GF-004 → ACT2 + ACT5 -->
+        <mxCell id="gf004_act2" value="ACT2: B子との会話で&lt;br&gt;主人公は言語、B子は感情。&lt;br&gt;だが B子は泣かず受け入れる&lt;br&gt;＝GF-004の逆像" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#7B4F9E;dashed=1;html=1;fontSize=8;fontColor=#7B4F9E;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="gf004" target="act2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="960" y="-30"/><mxPoint x="420" y="-30"/></Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="gf004_act5" value="ACT5: 言葉が通じない相手を&lt;br&gt;「黙って抱きしめる」が&lt;br&gt;クライマックスの鍵になりうる" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=3;strokeColor=#C0392B;dashed=1;html=1;fontSize=8;fontColor=#C0392B;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="gf004" target="act5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- GF-005 → テーマ全体 -->
+        <mxCell id="gf005_theme" value="テーマ直結:&lt;br&gt;「理解できなくても寄り添える」&lt;br&gt;= 感情負荷を受け入れること" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#28A745;dashed=1;html=1;fontSize=8;fontColor=#28A745;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="gf005" target="act5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ============================== -->
+        <!-- INSIGHT BOXES -->
+        <!-- ============================== -->
+        <mxCell id="insight_title" value="&lt;b&gt;構造的洞察 — どこに差し込むと面白いか&lt;/b&gt;" style="text;html=1;align=left;fontSize=14;fontColor=#C0392B;" vertex="1" parent="1">
+          <mxGeometry x="50" y="340" width="500" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="ins1" value="&lt;b&gt;💡 ACT2 — B子はGF-004の逆像&lt;/b&gt;&lt;br&gt;&lt;br&gt;GF-004では恋人が泣いて会話を遮断する。&lt;br&gt;B子は逆：主人公のキツい言葉を&lt;br&gt;「優しさ」として受け入れてしまう。&lt;br&gt;&lt;br&gt;→ B子の受容は美しく見えるが、&lt;br&gt;それは「自己肯定感の低さ」の裏返し。&lt;br&gt;主人公は自分が受容されていると誤解するが、&lt;br&gt;B子は&lt;b&gt;退けるだけの自己価値を持っていない&lt;/b&gt;。&lt;br&gt;&lt;br&gt;→ 読者は後からこの構造に気づいて震える" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=#FFC107;fontColor=#6E3B0A;fontSize=9;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="50" y="380" width="300" height="200" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="ins2" value="&lt;b&gt;💡 ACT4 — GF-001/002/003が重なる地獄&lt;/b&gt;&lt;br&gt;&lt;br&gt;主人公がA男を「教育」するシーンで&lt;br&gt;3つのエピソードが全て再現される：&lt;br&gt;&lt;br&gt;• &lt;b&gt;GF-001:&lt;/b&gt; 正義命令で行動を強制&lt;br&gt;• &lt;b&gt;GF-002:&lt;/b&gt; 理解を求めるほど追い詰める&lt;br&gt;• &lt;b&gt;GF-003:&lt;/b&gt; 最適化言語で歩み寄りを殺す&lt;br&gt;&lt;br&gt;→ A男にとっては教育虐待の再現。&lt;br&gt;主人公はB子を救えなかった自分を&lt;br&gt;償おうとしているのに、構造的には&lt;br&gt;&lt;b&gt;A男の父親と同じことをしている。&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=#FFC107;fontColor=#6E3B0A;fontSize=9;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="370" y="380" width="310" height="220" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="ins3" value="&lt;b&gt;💡 ACT5 — 「黙って抱きしめる」の再定義&lt;/b&gt;&lt;br&gt;&lt;br&gt;GF-004で著者が困惑した「涙の制約」：&lt;br&gt;泣かれたら黙って抱きしめるしかない。&lt;br&gt;&lt;br&gt;A男が自殺を企図するとき、&lt;br&gt;主人公は&lt;b&gt;言葉で救おうとする&lt;/b&gt;はず。&lt;br&gt;でもそれは全ACTで失敗し続けた方法。&lt;br&gt;&lt;br&gt;→ &lt;font color=&quot;#C0392B&quot;&gt;&lt;b&gt;クライマックスは&lt;br&gt;「言葉を手放して寄り添う」ことが&lt;br&gt;不可逆な選択になる瞬間。&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;GF-005の発見：認知負荷だけでなく&lt;br&gt;感情負荷を受け入れることが&lt;br&gt;「理解できなくても寄り添える」の正体。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0E0;strokeColor=#C0392B;strokeWidth=2;fontColor=#5C1B1B;fontSize=9;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="700" y="380" width="310" height="260" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="ins4" value="&lt;b&gt;💡 通底する対立軸&lt;/b&gt;&lt;br&gt;&lt;br&gt;全エピソードに共通する構造：&lt;br&gt;&lt;br&gt;&lt;b&gt;論理レイヤー&lt;/b&gt;（主人公/著者）&lt;br&gt;  評価関数 = システム最適化&lt;br&gt;  感情 = 原因のリアクション&lt;br&gt;&lt;br&gt;&lt;b&gt;感情レイヤー&lt;/b&gt;（恋人/B子/A男）&lt;br&gt;  評価関数 = 今この瞬間の感情&lt;br&gt;  言葉 = 気持ちを伝える手段&lt;br&gt;&lt;br&gt;→ これはまさにConstrainそのもの。&lt;br&gt;「well-defined vs ill-defined」の&lt;br&gt;コミュニケーション版。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontColor=#1B4332;fontSize=9;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="380" width="280" height="240" as="geometry"/>
+        </mxCell>
+
+        <!-- LEGEND -->
+        <mxCell id="legend" value="&lt;b&gt;凡例&lt;/b&gt;　🔵 青破線=素材→ACT差込先　🟣 紫=B子接続　🔴 赤太線=クライマックス接続　🟢 緑=テーマ接続　🟡 黄=構造的洞察" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#CCCCCC;fontColor=#333333;fontSize=10;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="50" y="660" width="700" height="40" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
