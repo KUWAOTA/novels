@@ -96,7 +96,7 @@ window.scrollTo(0, 0);
 2. 新しいエントリを適切なセクションに追加:
    - `raw_material` にはID付きで追加（例: `RM-001`, `RM-002`）
    - `source_thread`, `date`, `thematic_value`, `connection_to_core_theme` を必ず含める
-3. idea-tree.html/data/ideas.js への反映が必要かも判断
+3. `mckee_structure.drawio` や `plot_history.md` への反映が必要かも判断
 
 ### 6. 完了報告
 
@@ -125,7 +125,8 @@ novel/
 │   │   ├── 05_references.yaml
 │   │   ├── 06_meta-notes.yaml
 │   │   └── 07_logline-candidates.yaml
-│   └── idea-tree.html       # アイデアの可視化
+│   ├── mckee_structure.drawio  # McKee構造分析の可視化（draw.io）
+│   └── current_plot.md      # 現在プロット（ユーザー直接編集）
 │
 └── novel_construct.yaml     # 小説全体構造
 ```
