@@ -1,0 +1,95 @@
+<mxfile host="Electron" modified="2024-03-09T00:00:00.000Z" agent="Mozilla/5.0" version="21.2.8" type="device">
+  <diagram id="FocusStructure" name="主人公の内部構造と変遷">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Phase 1: 仮説と適応 -->
+        <mxCell id="phase1_bg" value="Phase 1: 仮説構築と社会適応&#10;（論理による世界の制御）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;verticalAlign=top;align=left;spacing=10;fontSize=18;fontStyle=1;arcSize=5" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="320" height="480" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p1_input" value="他者の感情 / 非言語情報&#10;（ノイズ・バグとして認識）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="240" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p1_process" value="主人公の仮説モデル&#10;（クレバーで不器用な変換器）&#10;・変数の抽出&#10;・事象の論理化&#10;・「あるべき姿」への最適化" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="80" y="240" width="240" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p1_output" value="社会適応（一時的成功）&#10;＝「世界は厳密にすれば制御可能だ」&#10;という使命感の強化" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="80" y="400" width="240" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="p1_input" target="p1_process">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="p1_process" target="p1_output">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+
+        <!-- Phase 2: 致命的エラーと破綻 -->
+        <mxCell id="phase2_bg" value="Phase 2: 使命感の破綻&#10;（論理モデルの崩壊）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;fontColor=#333333;strokeColor=#d6b656;verticalAlign=top;align=left;spacing=10;fontSize=18;fontStyle=1;arcSize=5" vertex="1" parent="1">
+          <mxGeometry x="400" y="40" width="320" height="480" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2_crisis" value="制御不能な「不完全さ」の直面&#10;（A男の崩壊 / B子の死など）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="440" y="120" width="240" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2_conflict" value="内部モデル・エラー&#10;「厳密に正しいこと（論理）」と&#10;「目の前の現実」が乖離する" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="440" y="240" width="240" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p2_break" value="強いられる選択&#10;「世界をバグとして切り捨てるか」&#10;「自分の使命感を捨てるか」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="440" y="400" width="240" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="p2_crisis" target="p2_conflict">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="p2_conflict" target="p2_break">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="edge_p1_p2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;dashed=1;" edge="1" parent="1" source="p1_process" target="p2_crisis">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+
+        <!-- Phase 3: 受容 -->
+        <mxCell id="phase3_bg" value="Phase 3: 不完全性の受容&#10;（新しい世界との接続）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;fontColor=#333333;strokeColor=#9673a6;verticalAlign=top;align=left;spacing=10;fontSize=18;fontStyle=1;arcSize=5" vertex="1" parent="1">
+          <mxGeometry x="760" y="40" width="320" height="480" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p3_drop" value="「厳密に良い方へせねば」という&#10;使命感の放棄" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="800" y="240" width="240" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p3_accept" value="不完全な人間・事象を&#10;バグではなく「そのまま」愛する&#10;（非論理的な解の受容）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="800" y="400" width="240" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="edge5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="p3_drop" target="p3_accept">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_p2_p3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=3;" edge="1" parent="1" source="p2_break" target="p3_drop">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="500" />
+              <mxPoint x="920" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- The True Focus Core -->
+        <mxCell id="focus_core" value="◆ USER'S TRUE FOCUS ◆&#10;この「仮説構築の不器用さ」と「使命感を手放すまでの内面の力学」こそが作品のコア。&#10;設定パラメータ（名前、時代、病名等）は、この力学を成立させるための単なる「ダミー変数」にすぎない。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f9f7ed;strokeColor=#d6b656;fontSize=16;fontColor=#333333;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="560" width="1040" height="80" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

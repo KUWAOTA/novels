@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- ===== タイトル ===== -->
+    <mxCell id="title" value="えあち 作品マップ（2026-03-09）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="420" y="20" width="600" height="40" as="geometry" />
+    </mxCell>
+
+    <!-- ===== 軸ラベル ===== -->
+    <mxCell id="axis-dark" value="← タブー/ダーク" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="60" y="80" width="200" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="axis-light" value="ライト/純情 →" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;fontSize=13;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="1260" y="80" width="200" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="axis-short" value="短編↑" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="680" y="90" width="80" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="axis-long" value="↓長編" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontStyle=2;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="680" y="930" width="80" height="30" as="geometry" />
+    </mxCell>
+
+    <!-- ===== 十字線 ===== -->
+    <mxCell id="hline" value="" style="endArrow=none;html=1;strokeColor=#cccccc;strokeWidth=1;dashed=1;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="100" y="530" as="sourcePoint" />
+        <mxPoint x="1420" y="530" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="vline" value="" style="endArrow=none;html=1;strokeColor=#cccccc;strokeWidth=1;dashed=1;" edge="1" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="760" y="120" as="sourcePoint" />
+        <mxPoint x="760" y="960" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+
+    <!-- ===== 象限ラベル ===== -->
+    <mxCell id="q1label" value="【強みゾーン】\nタブー×短編" style="text;html=1;strokeColor=none;fillColor=#FFF3CD;align=center;verticalAlign=middle;fontSize=11;fontColor=#856404;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="120" y="140" width="130" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="q2label" value="【実験ゾーン】\n純情×短編" style="text;html=1;strokeColor=none;fillColor=#D1ECF1;align=center;verticalAlign=middle;fontSize=11;fontColor=#0C5460;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="1260" y="140" width="130" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="q3label" value="【挑戦ゾーン】\nタブー×長編" style="text;html=1;strokeColor=none;fillColor=#D4EDDA;align=center;verticalAlign=middle;fontSize=11;fontColor=#155724;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="120" y="870" width="130" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="q4label" value="【苦手ゾーン】\n純情×長編" style="text;html=1;strokeColor=none;fillColor=#F8D7DA;align=center;verticalAlign=middle;fontSize=11;fontColor=#721C24;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="1260" y="870" width="130" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- ===== 作品ノード ===== -->
+
+    <!-- metamorphose: タブー×中編 → 左上寄り -->
+    <mxCell id="metamorphose" value="&lt;b&gt;metamorphose&lt;/b&gt;&lt;br&gt;★36いいね&lt;br&gt;3話・~8000字&lt;br&gt;仮面エリート×加害衝動&lt;br&gt;視点転換が白眉" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF8C00;strokeColor=#CC6600;fontColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="200" y="200" width="180" height="100" as="geometry" />
+    </mxCell>
+
+    <!-- マチアプ: タブー×短〜中編 -->
+    <mxCell id="machiap" value="&lt;b&gt;マチアプ&lt;/b&gt;&lt;br&gt;★25いいね&lt;br&gt;7話+・~6000字&lt;br&gt;振られることへの性的興奮&lt;br&gt;ふわるんの反転" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF6B6B;strokeColor=#CC0000;fontColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="420" y="250" width="180" height="100" as="geometry" />
+    </mxCell>
+
+    <!-- 三角関数: やや詩的/短 -->
+    <mxCell id="sankaku" value="&lt;b&gt;三角関数/駄作&lt;/b&gt;&lt;br&gt;掌編~500字&lt;br&gt;詩的×感情の物質化&lt;br&gt;即投稿推奨" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9B59B6;strokeColor=#6C3483;fontColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="900" y="160" width="160" height="90" as="geometry" />
+    </mxCell>
+
+    <!-- 初めて友達を切ったひ: タブー×短編（グロ先行） -->
+    <mxCell id="tomodachi" value="&lt;b&gt;初めて友達を切ったひ&lt;/b&gt;&lt;br&gt;短編~3000字&lt;br&gt;障害者×勇者のグロ&lt;br&gt;テーマが霞みがち" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E67E22;strokeColor=#CA6F1E;fontColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="300" y="380" width="180" height="90" as="geometry" />
+    </mxCell>
+
+    <!-- 大学までの人: タブー〜中程度・中編（自伝的） -->
+    <mxCell id="daigaku" value="&lt;b&gt;大学までの人&lt;/b&gt;&lt;br&gt;中編~3000字&lt;br&gt;発達障害×毒親×劣等感&lt;br&gt;自伝的・説明的すぎ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F39C12;strokeColor=#B7770D;fontColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="530" y="450" width="180" height="90" as="geometry" />
+    </mxCell>
+
+    <!-- 贄の王: タブー×短編（ファンタジー） -->
+    <mxCell id="nie" value="&lt;b&gt;贄の王&lt;/b&gt;&lt;br&gt;短編+設定~3000字&lt;br&gt;予知能力×侵略&lt;br&gt;設定に本文が追いつかず" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BDC3C7;strokeColor=#7F8C8D;fontColor=#2C3E50;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="550" y="320" width="170" height="90" as="geometry" />
+    </mxCell>
+
+    <!-- 神戸を出る: タブー〜中程度・長編 -->
+    <mxCell id="kobe" value="&lt;b&gt;神戸を出る&lt;/b&gt;&lt;br&gt;長編~25000字（未完）&lt;br&gt;エリート×貧困不良の逃避行&lt;br&gt;神戸の格差リアル描写&lt;br&gt;★★★★☆ 分割投稿で化ける" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#27AE60;strokeColor=#1E8449;fontColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="220" y="640" width="200" height="120" as="geometry" />
+    </mxCell>
+
+    <!-- 一方通行: タブー×長編（設定のみ） -->
+    <mxCell id="ippoutsuuko" value="&lt;b&gt;一方通行&lt;/b&gt;&lt;br&gt;設定資料のみ（本文なし）&lt;br&gt;風俗嬢×アイドル×性被害&lt;br&gt;設定★★★★★ 本文化急務" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2980B9;strokeColor=#1A5276;fontColor=#FFFFFF;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="440" y="700" width="200" height="100" as="geometry" />
+    </mxCell>
+
+    <!-- ウンコ剣士（なろう）: ギャグ×長編 -->
+    <mxCell id="unko" value="&lt;b&gt;ウンコ剣士（なろう）&lt;/b&gt;&lt;br&gt;41話・最多話数&lt;br&gt;ギャグ系ファンタジー&lt;br&gt;別ラインで管理推奨" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECF0F1;strokeColor=#95A5A6;fontColor=#7F8C8D;fontSize=11;dashed=1;" vertex="1" parent="1">
+      <mxGeometry x="1050" y="750" width="180" height="90" as="geometry" />
+    </mxCell>
+
+    <!-- スリランカ昆虫（note）: ライト×短 -->
+    <mxCell id="srilanka" value="&lt;b&gt;スリランカ昆虫日記&lt;/b&gt;&lt;br&gt;★11いいね・2025年8月&lt;br&gt;実体験エッセイ&lt;br&gt;趣味の世界観" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#2C3E50;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1100" y="280" width="180" height="90" as="geometry" />
+    </mxCell>
+
+    <!-- ===== 推奨投稿優先順位ラベル ===== -->
+    <mxCell id="p1" value="①優先" style="text;html=1;strokeColor=#FF0000;fillColor=#FFCCCC;align=center;verticalAlign=middle;fontSize=10;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="230" y="770" width="60" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="p2" value="②優先" style="text;html=1;strokeColor=#FF6600;fillColor=#FFE5CC;align=center;verticalAlign=middle;fontSize=10;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="450" y="810" width="60" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="p3" value="③即投稿" style="text;html=1;strokeColor=#9900CC;fillColor=#ECD9F7;align=center;verticalAlign=middle;fontSize=10;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="908" y="255" width="64" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="p4" value="④続きを" style="text;html=1;strokeColor=#CC0000;fillColor=#FFCCCC;align=center;verticalAlign=middle;fontSize=10;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="428" y="355" width="64" height="20" as="geometry" />
+    </mxCell>
+
+    <!-- ===== 凡例 ===== -->
+    <mxCell id="legend-title" value="凡例" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="1300" y="300" width="60" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="legend1" value="投稿済み（note）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF6B6B;strokeColor=#CC0000;fontColor=#FFFFFF;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="1280" y="340" width="150" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="legend2" value="未投稿・投稿推奨" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#27AE60;strokeColor=#1E8449;fontColor=#FFFFFF;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="1280" y="380" width="150" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="legend3" value="設定資料のみ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2980B9;strokeColor=#1A5276;fontColor=#FFFFFF;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="1280" y="420" width="150" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="legend4" value="別ライン（なろう）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ECF0F1;strokeColor=#95A5A6;fontColor=#7F8C8D;fontSize=10;dashed=1;" vertex="1" parent="1">
+      <mxGeometry x="1280" y="460" width="150" height="30" as="geometry" />
+    </mxCell>
+
+    <!-- ===== 強みゾーン強調枠 ===== -->
+    <mxCell id="sweetspot" value="★ スイートスポット（最大の強み）" style="text;html=1;strokeColor=#FF8C00;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#CC6600;" vertex="1" parent="1">
+      <mxGeometry x="140" y="160" width="320" height="30" as="geometry" />
+    </mxCell>
+    <mxCell id="sweetspot-border" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#FF8C00;strokeWidth=3;dashed=1;" vertex="1" parent="1">
+      <mxGeometry x="140" y="190" width="520" height="420" as="geometry" />
+    </mxCell>
+
+  </root>
+</mxGraphModel>
