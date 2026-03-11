@@ -22,3 +22,9 @@
 1. `CLAUDE.md` で作品の核を確認する
 2. 必要なら `../story-compiler/modules/` を参照して構造面の抜けを点検する
 3. 新しい案は `brainstorm/setting_idea/` など派生ファイルに追記し、`current_plot.md` は触らない
+
+## Prompt Normalization Rule
+
+- 依頼が曖昧なら、先に `../.agent/skills/prompt-refinement/SKILL.md` のテンプレートへ内部変換してから扱う
+- `current_plot.md` を触る可能性があるとき、または候補出しと確定更新の境界が曖昧なときだけ確認質問をする
+- それ以外は「候補」として整理し、仮定を短く示して進める

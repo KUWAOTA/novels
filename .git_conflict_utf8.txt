@@ -1,2 +1,2 @@
-﻿constrain/brainstorm/data/ideas.js
+constrain/brainstorm/data/ideas.js
 story-compiler/modules/06_protagonist.yaml

@@ -71,3 +71,12 @@
 ## Antigravity スキル
 
 - `.agent/instructions.md` — プロジェクトレベルのエージェント指示（日本語）
+- `../.agent/skills/prompt-refinement/SKILL.md` — 雑な依頼を実行前に構造化する共通テンプレート
+
+## Prompt Normalization Rule
+
+依頼が短文、抽象的、または断片的な場合は、`../.agent/skills/prompt-refinement/SKILL.md` を先に適用する。
+
+- まず候補出しか確定更新かを判定する
+- `current_plot.md` に触れる恐れがある場合だけ確認する
+- 致命的な不足がなければ、既存テーマに沿う候補として進める

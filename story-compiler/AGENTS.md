@@ -28,3 +28,9 @@
 ## Change Rule
 
 - 新規モジュールや更新を行う場合は、`system-prompt.md` と `README.md` への反映漏れを確認する
+
+## Prompt Normalization Rule
+
+- 依頼が短く曖昧なら、先に `../.agent/skills/prompt-refinement/SKILL.md` を参照して、目的、対象、成果物を構造化する
+- 新規モジュール追加か既存修正か不明な場合だけ、短く確認してから着手する
+- 既存ファイルから対象が推定できる場合は、仮定を示してそのまま進める
