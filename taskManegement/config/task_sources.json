@@ -1,0 +1,22 @@
+[
+  {
+    "path": "school/prepare.md",
+    "parser": "school_prepare",
+    "area": "school"
+  },
+  {
+    "path": "constrain/brainstorm/writing_issues.md",
+    "parser": "constrain_writing_issues",
+    "area": "constrain"
+  },
+  {
+    "path": "constrain/brainstorm/setting_idea/HANDOVER_TO_CODEX.md",
+    "parser": "constrain_setting_handover",
+    "area": "constrain"
+  },
+  {
+    "path": "taskManegement/inbox/manual_tasks.md",
+    "parser": "manual_markdown",
+    "area": "manual"
+  }
+]

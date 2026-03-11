@@ -1,0 +1,95 @@
+{
+  "timezone": "Asia/Tokyo",
+  "weekday_slots": [
+    {
+      "label": "退勤後の会社1時間",
+      "start": "17:15",
+      "end": "18:15",
+      "energy": "medium",
+      "location": "office"
+    },
+    {
+      "label": "夜の主作業",
+      "start": "20:00",
+      "end": "21:30",
+      "energy": "high"
+    },
+    {
+      "label": "夜の第2ブロック",
+      "start": "21:45",
+      "end": "22:45",
+      "energy": "medium"
+    },
+    {
+      "label": "就寝前の整理",
+      "start": "22:50",
+      "end": "23:15",
+      "energy": "low"
+    }
+  ],
+  "weekend_slots": [
+    {
+      "label": "週末午前の予備枠",
+      "start": "10:00",
+      "end": "11:30",
+      "energy": "medium",
+      "optional": true
+    },
+    {
+      "label": "週末夜の予備枠",
+      "start": "20:00",
+      "end": "21:30",
+      "energy": "high",
+      "optional": true
+    }
+  ],
+  "continuity_guard": {
+    "enabled": true,
+    "fallback_title": "会社で1時間だけ続ける",
+    "fallback_minutes": 60,
+    "stale_days_before_fallback": 1,
+    "known_devices": [
+      "TakumanoMacBook-Pro.local",
+      "desktop"
+    ]
+  },
+  "default_effort_minutes": {
+    "low": 25,
+    "medium": 45,
+    "high": 90
+  },
+  "routine_tasks": [
+    {
+      "title": "週次レビュー: outputs を見て翌週の重みを調整する",
+      "area": "system",
+      "priority": "medium",
+      "effort_minutes": 20,
+      "energy": "low",
+      "cadence": "weekly"
+    },
+    {
+      "title": "Constrain の本文か設定を1ブロック進める",
+      "area": "constrain",
+      "priority": "medium",
+      "effort_minutes": 90,
+      "energy": "high",
+      "cadence": "twice_weekly"
+    },
+    {
+      "title": "読書入力: 30-50ページ読み、要点を3行メモする",
+      "area": "reading",
+      "priority": "medium",
+      "effort_minutes": 45,
+      "energy": "medium",
+      "cadence": "three_times_weekly"
+    },
+    {
+      "title": "会社での1時間をログする",
+      "area": "system",
+      "priority": "medium",
+      "effort_minutes": 10,
+      "energy": "low",
+      "cadence": "weekly"
+    }
+  ]
+}

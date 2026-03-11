@@ -6,7 +6,12 @@
 
 - `constrain/AGENTS.md`: 小説「Constrain」の執筆・設定生成・ブレスト時の案内
 - `story-compiler/AGENTS.md`: Story Compiler の構造検証ルール参照時の案内
+- `taskManegement/AGENTS.md`: ワークスペース全体のタスク抽出・優先度付け・週次整理の案内
 - `.agent/skills/prompt-refinement/SKILL.md`: 雑な依頼を実行前に構造化する共通テンプレート
+
+## Workspace Skills
+
+- `.agent/skills/task-management/SKILL.md`: Markdown 群からタスクを抽出し、`taskManegement/outputs/` を再生成する
 
 ## Working Rule
 
