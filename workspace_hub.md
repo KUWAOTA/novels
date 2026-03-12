@@ -37,6 +37,7 @@ tags:
 ## Root Notes
 
 - [[README]]
+- [[remote/README]]
 - `novel_construct.yaml`
 - `.workspace/` は運用用のため hub 対象外
 - `.agent/` と `.claude/` はエージェント運用用のため hub 対象外

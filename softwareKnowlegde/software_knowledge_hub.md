@@ -17,6 +17,7 @@ Obsidian、編集環境、AI 活用メモの hub です。
 ## Editor Notes
 
 - [[softwareKnowlegde/editor-comparison-for-novel-2026-03-11]]
+- [[softwareKnowlegde/mobile-ssh-codex-setup-2026-03-12]]
 
 ## Related Hubs
 
