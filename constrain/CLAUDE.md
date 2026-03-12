@@ -40,8 +40,13 @@
 | `brainstorm/plot_history.md` | 全プロット履歴データベース | AG / Claude Code |
 | `brainstorm/mckee_structure.drawio` | McKee構造分析の可視化 | AG / Claude Code |
 | `brainstorm/writing_issues.md` | 未解決の設定問題リスト | AG / Claude Code |
-| `agents_story/ACT1/` | ACT1本文（5シーン） | AG / Claude Code |
-| `agents_story/ACT2/` | ACT2本文（5シーン） | AG / Claude Code |
+| `agents_story/ACT1/` | ACT1本文（5シーン）⚠️ AI生成草稿・参考のみ | AG / Claude Code |
+| `agents_story/ACT2/` | ACT2本文（5シーン）⚠️ AI生成草稿・参考のみ | AG / Claude Code |
+
+## agents_story の扱いについて
+
+`agents_story/ACT1/` および `ACT2/` のシーンファイルは**AIが生成した草稿**であり、ユーザーが承認した正式原稿ではない。
+設定・描写・台詞を「確定した事実」として前提にしないこと。詳細は `agents_story/README.md` を参照。
 
 ## 執筆フォーマット規約
 
