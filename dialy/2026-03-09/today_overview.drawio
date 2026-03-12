@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <mxCell id="title" value="2026-03-11 宿題の全体像&#xa;3/15 体験入学を受け身で終わらせない準備" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=24;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="500" y="20" width="920" height="70" as="geometry" />
+    </mxCell>
+
+    <mxCell id="goal" value="今日のゴール&#xa;学校が良さそうかではなく&#xa;自分の創作課題に効くかを判断できる状態にする" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="700" y="110" width="520" height="110" as="geometry" />
+    </mxCell>
+
+    <mxCell id="notdo" value="今日やらないこと&#xa;・立派な答えの完成&#xa;・学校向けの模範解答づくり&#xa;・気分だけ整えて満足" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="120" y="120" width="270" height="120" as="geometry" />
+    </mxCell>
+
+    <mxCell id="arrival" value="今日の到達点&#xa;1. 見学目的を1段落で書けた&#xa;2. 書きたいものと今の課題を分けて書けた&#xa;3. 当日の質問または観点を1つ作れた" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="1510" y="120" width="280" height="130" as="geometry" />
+    </mxCell>
+
+    <mxCell id="p1" value="最優先1&#xa;何を書きたいのか" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="120" y="300" width="500" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="p1body" value="目的&#xa;・学校の話が自分に必要か判断する軸を先に作る&#xa;&#xa;書く内容&#xa;・ひとことで: constrain&#xa;・今書きたい題材&#xa;・なぜそれを書きたいか&#xa;&#xa;まだ足りない点&#xa;・作品像と問題意識を切り分ける&#xa;・必要な学びが構成訓練か文章/批評かを書く&#xa;&#xa;創作への返り&#xa;・今後も何を核に書くかを定める" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF3FF;strokeColor=#6C8EBF;fontSize=13;align=left;spacingLeft=8;" vertex="1" parent="1">
+      <mxGeometry x="120" y="390" width="500" height="290" as="geometry" />
+    </mxCell>
+
+    <mxCell id="p2" value="最優先2&#xa;今の課題は何か" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="710" y="300" width="500" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="p2body" value="目的&#xa;・学校が良さそうかではなく、自分の課題に効くかで見る&#xa;&#xa;書く項目&#xa;・技術面の課題&#xa;・習慣面の課題&#xa;・環境面の課題&#xa;・今すぐ変えられること&#xa;&#xa;判断の観点&#xa;・能力不足か作業設計不足か&#xa;・学校でないと解決しづらい課題は何か&#xa;・一人でも改善できる課題は何か&#xa;&#xa;創作への返り&#xa;・進学判断と同時に自習方針も立つ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF7EA;strokeColor=#82B366;fontSize=13;align=left;spacingLeft=8;" vertex="1" parent="1">
+      <mxGeometry x="710" y="390" width="500" height="290" as="geometry" />
+    </mxCell>
+
+    <mxCell id="p3" value="最優先3&#xa;当日に確認したいことを1つ作る" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="1300" y="300" width="500" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="p3body" value="目的&#xa;・準備メモを、見学で検証できる問いに変える&#xa;&#xa;候補&#xa;・小説志向かつ構成/論理に関心が強い人にこの場はどう効くか&#xa;・課題や講評は作品を前進させる形で返ってくるか&#xa;・通うことで書く量と質のどちらが伸びそうか&#xa;&#xa;意味&#xa;・見学を受け身にしない&#xa;・なんとなく良かったを避ける&#xa;・相性確認として使える" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF1E6;strokeColor=#D79B00;fontSize=13;align=left;spacingLeft=8;" vertex="1" parent="1">
+      <mxGeometry x="1300" y="390" width="500" height="290" as="geometry" />
+    </mxCell>
+
+    <mxCell id="line1" value="" style="endArrow=block;endFill=1;strokeColor=#7EA6E0;strokeWidth=2;" edge="1" parent="1" source="goal" target="p1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="line2" value="" style="endArrow=block;endFill=1;strokeColor=#82B366;strokeWidth=2;" edge="1" parent="1" source="goal" target="p2">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="line3" value="" style="endArrow=block;endFill=1;strokeColor=#D79B00;strokeWidth=2;" edge="1" parent="1" source="goal" target="p3">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="timelineTitle" value="時間ブロック" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="120" y="730" width="200" height="30" as="geometry" />
+    </mxCell>
+
+    <mxCell id="t1" value="17:15-18:15&#xa;会社で1時間だけ続ける&#xa;目的: 着火して夜の摩擦を下げる&#xa;状態: 完了" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="120" y="780" width="280" height="120" as="geometry" />
+    </mxCell>
+    <mxCell id="t2" value="20:00-21:30&#xa;主作業&#xa;最優先1を掘る&#xa;出力: 書きたいものの核" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF3FF;strokeColor=#6C8EBF;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="500" y="780" width="280" height="120" as="geometry" />
+    </mxCell>
+    <mxCell id="t3" value="21:45-22:45&#xa;第2ブロック&#xa;最優先2を言語化&#xa;出力: 課題の比較軸" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF7EA;strokeColor=#82B366;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="880" y="780" width="280" height="120" as="geometry" />
+    </mxCell>
+    <mxCell id="t4" value="22:50-23:15&#xa;就寝前の整理&#xa;最優先3を作る&#xa;出力: 当日確認する質問/観点" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF1E6;strokeColor=#D79B00;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="1260" y="780" width="280" height="120" as="geometry" />
+    </mxCell>
+    <mxCell id="t5" value="余力があれば&#xa;・持ち物とアクセス確認&#xa;・比較用の質問を1つ追加" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE5CD;strokeColor=#B45F06;fontSize=12;dashed=1;" vertex="1" parent="1">
+      <mxGeometry x="1610" y="780" width="190" height="120" as="geometry" />
+    </mxCell>
+
+    <mxCell id="flow1" value="" style="endArrow=block;endFill=1;strokeColor=#999999;strokeWidth=2;" edge="1" parent="1" source="t1" target="t2">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow2" value="" style="endArrow=block;endFill=1;strokeColor=#999999;strokeWidth=2;" edge="1" parent="1" source="t2" target="t3">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow3" value="" style="endArrow=block;endFill=1;strokeColor=#999999;strokeWidth=2;" edge="1" parent="1" source="t3" target="t4">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="flow4" value="" style="endArrow=block;endFill=1;strokeColor=#999999;strokeWidth=2;dashed=1;" edge="1" parent="1" source="t4" target="t5">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="map1" value="対応" style="text;html=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="610" y="730" width="60" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="map2" value="対応" style="text;html=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="990" y="730" width="60" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="map3" value="対応" style="text;html=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+      <mxGeometry x="1370" y="730" width="60" height="20" as="geometry" />
+    </mxCell>
+
+    <mxCell id="linkp1" value="" style="endArrow=none;strokeColor=#6C8EBF;strokeWidth=2;dashed=1;" edge="1" parent="1" source="p1body" target="t2">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="linkp2" value="" style="endArrow=none;strokeColor=#82B366;strokeWidth=2;dashed=1;" edge="1" parent="1" source="p2body" target="t3">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="linkp3" value="" style="endArrow=none;strokeColor=#D79B00;strokeWidth=2;dashed=1;" edge="1" parent="1" source="p3body" target="t4">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

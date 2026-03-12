@@ -1,0 +1,41 @@
+<mxGraphModel><root><mxCell id="0"/><mxCell id="1" parent="0"/>
+
+<!-- A: 書きたいものを明確にする（中心） -->
+<mxCell id="A" value="A&#xa;書きたいものを&#xa;明確にする" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;" vertex="1" parent="1"><mxGeometry x="320" y="240" width="160" height="80" as="geometry"/></mxCell>
+
+<!-- A1 題材 -->
+<mxCell id="A1" value="A1 題材&#xa;何について書くか&#xa;―――――――&#xa;現状: constrainたたき台あり&#xa;OK条件: 一文で言える" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1"><mxGeometry x="40" y="60" width="210" height="90" as="geometry"/></mxCell>
+<mxCell id="e1" edge="1" source="A" target="A1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+<!-- A2 主題 -->
+<mxCell id="A2" value="A2 主題・テーマ&#xa;何を言いたいか&#xa;―――――――&#xa;現状: 「加害性の受容」あり&#xa;OK条件: 動機と繋がっている" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1"><mxGeometry x="40" y="200" width="210" height="90" as="geometry"/></mxCell>
+<mxCell id="e2" edge="1" source="A" target="A2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+<!-- A3 形式 -->
+<mxCell id="A3" value="A3 形式&#xa;小説 or シナリオ？&#xa;―――――――&#xa;現状: 未決定&#xa;OK条件: 学校選びと整合する" style="rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1"><mxGeometry x="40" y="340" width="210" height="90" as="geometry"/></mxCell>
+<mxCell id="e3" edge="1" source="A" target="A3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+<!-- A4 動機 -->
+<mxCell id="A4" value="A4 動機&#xa;なぜこれを書くか&#xa;―――――――&#xa;現状: ある程度書けている&#xa;OK条件: 他の動機と切り分けられる" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1"><mxGeometry x="40" y="480" width="210" height="90" as="geometry"/></mxCell>
+<mxCell id="e4" edge="1" source="A" target="A4" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+<!-- B: 今の課題 -->
+<mxCell id="B" value="B&#xa;今の自分の課題&#xa;を書く" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=13;" vertex="1" parent="1"><mxGeometry x="600" y="160" width="150" height="80" as="geometry"/></mxCell>
+
+<!-- C: 体験入学の質問 -->
+<mxCell id="C" value="C&#xa;当日の質問・観点&#xa;を作る" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=13;" vertex="1" parent="1"><mxGeometry x="600" y="320" width="150" height="80" as="geometry"/></mxCell>
+
+<!-- A→B接続: A2+A3が埋まると -->
+<mxCell id="eAB" value="A2(主題)+A3(形式)が埋まると&#xa;→技術課題の種類が判断できる" style="edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#82b366;fontSize=10;" edge="1" source="A" target="B" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+<!-- B→C接続 -->
+<mxCell id="eBC" value="課題が明確になると&#xa;→質問が作れる" style="edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#82b366;fontSize=10;" edge="1" source="B" target="C" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+<!-- A→C接続: A1+A2 -->
+<mxCell id="eAC" value="A1+A2で&#xa;学校との相性軸ができる" style="edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#6c8ebf;fontSize=10;" edge="1" source="A" target="C" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+<!-- 凡例 -->
+<mxCell id="leg1" value="🟡 現状あり（詰める必要あり）" style="text;fontSize=11;" vertex="1" parent="1"><mxGeometry x="600" y="460" width="200" height="30" as="geometry"/></mxCell>
+<mxCell id="leg2" value="🔴 未決定（今日の最優先）" style="text;fontSize=11;" vertex="1" parent="1"><mxGeometry x="600" y="490" width="200" height="30" as="geometry"/></mxCell>
+
+</root></mxGraphModel>

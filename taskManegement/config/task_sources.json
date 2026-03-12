@@ -10,7 +10,7 @@
     "area": "constrain"
   },
   {
-    "path": "constrain/brainstorm/setting_idea/HANDOVER_TO_CODEX.md",
+    "path": "constrain/brainstorm/handover_to_claude.md",
     "parser": "constrain_setting_handover",
     "area": "constrain"
   },

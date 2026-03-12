@@ -26,3 +26,4 @@
 - `school/prepare.md` など参照元は基本的に読み取り用
 - `constrain/brainstorm/current_plot.md` は編集しない
 - 日付は `2026-03-11` 基準ではなく、実行日のローカル日付で再計算する
+- 日付単位のメモや宿題フォルダは `taskManegement/` 直下に置かず、`dialy/task_snapshots/YYYY-MM-DD/` に集約する

@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="constrain-mckee" name="Constrain McKee構造分析">
-        <mxGraphModel dx="766" dy="932" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+        <mxGraphModel dx="1693" dy="894" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -190,7 +190,7 @@
                 <mxCell id="cc78" style="strokeWidth=1;strokeColor=#C0392B;dashed=1;" parent="1" source="c7" target="c8" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="b_title" value="&lt;b&gt;因果連鎖 — B子&lt;/b&gt;" style="text;html=1;align=left;fontSize=14;fontColor=#7B4F9E;" vertex="1" parent="1">
+                <mxCell id="b_title" value="&lt;b&gt;因果連鎖 — B子&lt;/b&gt;" style="text;html=1;align=left;fontSize=14;fontColor=#7B4F9E;" parent="1" vertex="1">
                     <mxGeometry x="50" y="800" width="300" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="b1" value="B子：知的障害&lt;br&gt;社会に適応できない" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontColor=#3D1F5C;fontSize=9;" parent="1" vertex="1">

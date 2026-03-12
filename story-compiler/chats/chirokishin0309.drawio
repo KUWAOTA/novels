@@ -1,0 +1,278 @@
+<mxfile host="65bd71144e">
+    <diagram id="CXy8aDsGBKS1gQz4anWs" name="Page-1">
+        <mxGraphModel dx="2802" dy="1070" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="50" width="680" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="110" width="180" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="創作におけるAction" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="298.75" y="60" width="252.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="成果の判定" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="120" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="336.25" y="110" width="180" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="output" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="366.25" y="120" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="110" width="180" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="ひらめき準備？" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="580" y="120" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="x ＜ 0.35" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="280" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="y：いじれない項" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="280" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="1- x - y" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="575" y="280" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="output" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="366.25" y="650" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="output" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="401.25" y="610" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="output" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="425" y="580" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="output" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="640" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="output" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="348.13" y="590" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="output" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="620" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="output" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="580" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="output" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="451.25" y="540" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="output" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="486.25" y="570" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="280" y="720" as="sourcePoint"/>
+                        <mxPoint x="570" y="720" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="280" y="720" as="sourcePoint"/>
+                        <mxPoint x="280" y="420" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="output" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="590" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="endArrow=none;dashed=1;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="280" y="720" as="sourcePoint"/>
+                        <mxPoint x="600" y="440" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="620" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="33">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="570" y="600" as="sourcePoint"/>
+                        <mxPoint x="280" y="640" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="制御項では？" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="580" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="830" width="470" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="練習による学習効率を上げるoutput制御項" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="220.63" y="840" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="890" width="120" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="ダメかの判断&lt;br&gt;&lt;br&gt;AI可能" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="900" width="60" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="295" y="890" width="120" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="手札&lt;br&gt;&lt;br&gt;言語化できないほど大量&lt;br&gt;&lt;br&gt;AIに不向き" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="313.13" y="900" width="85" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="890" width="120" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="練習&lt;br&gt;or&lt;br&gt;input&lt;br&gt;に相関がありそう！" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="590" y="510" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="練習量&lt;br&gt;or&lt;br&gt;inout量" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="580" y="720" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="言葉&lt;br&gt;の知識&lt;br&gt;&lt;br&gt;AI可能&lt;br&gt;&lt;br&gt;しっくりこない言葉" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="455" y="907.5" width="90" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" style="edgeStyle=none;html=1;" edge="1" parent="1" source="54">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="360" y="1470" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="54" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="120.63" y="1140" width="470" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="inputによる学習効率を上げるoutput制御項" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="221.26" y="1150" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="150.63" y="1200" width="120" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="創作技術&lt;br&gt;→本で可能&lt;br&gt;&lt;br&gt;創作細かい話&lt;br&gt;→何を構築している？&lt;br&gt;（言語化報酬が少ない）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="1200" width="120" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="295.63" y="1200" width="120" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="感動・モチベ&lt;br&gt;美に気づくこと&lt;br&gt;&lt;br&gt;自分が取りこぼした感性に気づける？&lt;br&gt;&lt;br&gt;自分に聞いてなぜ美しいかを言語化した方がいいのでは？&lt;br&gt;&lt;br&gt;→　AI伴走可能？&lt;br&gt;&lt;br&gt;→AIに精読を要求させるのはありかも" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="298.75" y="1200" width="111.25" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0.5;rotation=-180;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="1330" width="120" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="知ってる知見&lt;br&gt;しか得られない！" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="1380" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="980" width="40" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="僕はoutput型かも" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;size=20;position=0.5;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="880" width="100" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="別議題：AI自体に中毒性があるのは？！" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+                    <mxGeometry x="120.63" y="1520" width="479.37" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="" style="shape=flexArrow;endArrow=classic;html=1;width=75;endSize=21.55;endWidth=66;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="760" y="604.5" as="sourcePoint"/>
+                        <mxPoint x="930" y="604.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="81" value="練習を楽しくする方が、&lt;br&gt;価値があるのでは？" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="80">
+                    <mxGeometry x="-0.2443" y="-2" relative="1" as="geometry">
+                        <mxPoint x="21" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="82" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="120" y="480" as="sourcePoint"/>
+                        <mxPoint x="270" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="85" value="ここが観測できないのはやばいのでは？" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="440" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="960" y="560" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="920" y="510" width="340" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="初心者が気づけないこと：ちょっと&lt;br&gt;&lt;br&gt;中級者が気づけないこと：多い" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="990" y="520" width="230" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="では、中級者は初歩的な欠陥をつくらないのか？&lt;br&gt;&lt;br&gt;→　偽、いいところと欠陥はトレードオフな時がある" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="885" y="705" width="310" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="そんなとこにこだわるより、&lt;br&gt;練習した方が効果的！！" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="860" y="1070" width="210" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="600" y="950" as="sourcePoint"/>
+                        <mxPoint x="950" y="1060" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="96" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=1.009;exitY=0.146;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="54" target="94">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="900" y="1110" as="sourcePoint"/>
+                        <mxPoint x="950" y="1060" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="97" value="書きたいもの" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1320" y="410" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="できあがるもの&lt;br&gt;：つまんない" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1320" y="520" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="97" target="98">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1240" y="530" as="sourcePoint"/>
+                        <mxPoint x="1290" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="100" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1290" y="480" as="sourcePoint"/>
+                        <mxPoint x="1370" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="102" value="　　　　AIができること&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="1100" y="210" width="200" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" value="　　　　人間ができること&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="900" y="210" width="200" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="910" y="130" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" value="こっちの着目したほうがいいぜ&lt;br&gt;&lt;br&gt;感情：いつもあるわけじゃない" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;size=10;position=0.05;position2=0;" vertex="1" parent="1">
+                    <mxGeometry x="950" y="10" width="200" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="1470" y="340" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="112" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="1570" y="380" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="113" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="1370" y="250" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="114" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="1760" y="250" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="115" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="1680" y="380" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="116" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+                    <mxGeometry x="1870" y="320" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="117" value="" style="endArrow=classic;html=1;entryX=0.047;entryY=0.351;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="106" target="112">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1480" y="400" as="sourcePoint"/>
+                        <mxPoint x="1530" y="350" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="118" value="実はイケてる時は勝手に頭の中でつながっている&lt;br&gt;&lt;br&gt;ちろきしん：なんかうまくいくんすよ&lt;br&gt;&lt;br&gt;-&amp;gt;　無意識がプロットを考えているのかな？&lt;br&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
+                    <mxGeometry x="1510" y="30" width="320" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="119" value="output時に頭の中で考えているものを、&lt;br&gt;１行１行全部メモする。&lt;br&gt;それをAIに食わせて評価させる。のとかどう？" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;size=20;position=0.83;position2=0;" vertex="1" parent="1">
+                    <mxGeometry x="610" y="810" width="320" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

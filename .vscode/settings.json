@@ -1,0 +1,6 @@
+{
+  "workbench.panel.defaultLocation": "bottom",
+  "workbench.secondarySideBar.defaultVisibility": "visible",
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.defaultLocation": "panel"
+}

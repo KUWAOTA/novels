@@ -1,0 +1,223 @@
+{
+  "main": {
+    "id": "690d8b64dfa1cfe5",
+    "type": "split",
+    "children": [
+      {
+        "id": "af41fe8e89ea2702",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "892c6cc742f7cf98",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新規タブ"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "db48808ea0b56b1f",
+    "type": "split",
+    "children": [
+      {
+        "id": "a8dde454174e9b35",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ab25360049e130ed",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "ファイルエクスプローラ"
+            }
+          },
+          {
+            "id": "8c4adcac91e6ce08",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "0311",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "検索"
+            }
+          },
+          {
+            "id": "bc2210438bb6bba1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6d1bbd20fc675746",
+    "type": "split",
+    "children": [
+      {
+        "id": "12575a0c9dee5fa2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a0f437cd28fa13d4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "6c71b2f5629094c1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "4495a1d00462bb63",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "4189d2e28a3cfcdc",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "ba818c0ce5b1cae4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:クイックスイッチャーを開く": false,
+      "graph:グラフビューを開く": false,
+      "canvas:新規キャンバスを作成": false,
+      "daily-notes:今日のデイリーノートを開く": false,
+      "templates:テンプレートを挿入": false,
+      "command-palette:コマンドパレットを開く": false,
+      "bases:新規ベースを作成": false
+    }
+  },
+  "active": "892c6cc742f7cf98",
+  "lastOpenFiles": [
+    "old/hikisugi.md",
+    "dialy/2026-03-12/today.md",
+    "dialy/2026-03-12",
+    "dialy/2026-03-11/today_overview.drawio",
+    "dialy/2026-03-11/deleted/question.md",
+    "old/三角関数.md",
+    "dialy/2026-03-11/deleted/today_overview.drawio",
+    "dialy/2026-03-11/deleted/today.md",
+    "dialy/2026-03-11/deleted",
+    "old/legacy_fragments_hub.md",
+    "dialy/2026-03-11/question.md",
+    "README.md",
+    "dialy/2026-03-09/0309.md",
+    "constrain/constrain_hub.md",
+    "softwareKnowlegde/obs.md",
+    "school/prepare.md",
+    "constrain/prompt_library/girlfriend_idea.md",
+    "constrain/prompt_library/girlfriend.md",
+    "constrain/prompt_library/current_over.md",
+    "constrain/prompt_library/agents_story.md",
+    "constrain/prompt_library",
+    "constrain/brainstorm/archive/意見.md",
+    "constrain/brainstorm/archive/めも",
+    "constrain/brainstorm/archive/ideanote.md",
+    "constrain/brainstorm/archive/07_logline-candidates.yaml",
+    "constrain/brainstorm/archive/06_meta-notes.yaml",
+    "constrain/brainstorm/archive/05_references.yaml",
+    "constrain/brainstorm/archive/04_world-settings.yaml",
+    "constrain/brainstorm/generated_drafts/agents_story/ACT4/05_橋へのメッセージ.md",
+    "constrain/brainstorm/generated_drafts/agents_story/ACT4/04_鏡の構造.md",
+    "constrain/brainstorm/generated_drafts/agents_story/ACT4/03_泣く理由が分からない.md",
+    "constrain/brainstorm/generated_drafts/agents_story/ACT4/02_正しい指導.md",
+    "constrain/brainstorm/generated_drafts/agents_story/ACT4/01_再会と善意の始まり.md",
+    "constrain/brainstorm/generated_drafts/agents_story/ACT3/05_A男の影.md",
+    "constrain/brainstorm/generated_drafts/agents_story/ACT3/04_Constrainの誕生.md",
+    "constrain/brainstorm/generated_drafts/agents_story/ACT3/03_夜の後悔とConstrainの名前.md",
+    "無題のファイル.canvas",
+    "無題のファイル 2.canvas",
+    "無題のファイル 1.canvas",
+    "Untitled 1.canvas",
+    "Untitled.canvas"
+  ]
+}

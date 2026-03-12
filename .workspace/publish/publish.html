@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+  <html lang="ja">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>novel</title>
+      <style>
+      @charset "UTF-8";
+      :root {
+        --font-size: 3.9466666666666663mm
+      }
+      html {
+      orphans: 1;
+      widows: 1;
+      color: black;
+      }
+
+      body{
+        writing-mode: vertical-rl;
+        color: black;
+      }
+
+      * {
+      margin: 0;
+      padding: 0;
+      }
+
+      @page {
+        size: 148mm 210mm;
+        block-size: calc(3.9466666666666663mm * 1.75 * 18 + (3.9466666666666663mm * 0.4));
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 8%;
+        margin-right: 8%;
+        /* 以下、マージンボックスに継承される */
+        font-size: 6pt;
+        font-family: "游明朝", "YuMincho", serif;
+        /* 本来不要（<span class="smaller"><span class="smaller">ルート要素の指定が継承される</span></span>）だが、現時点のvivliostyle.jsの制限により必要 */
+        vertical-align: top;
+      }
+
+      @page : first {
+        counter-reset: page 0;
+      }
+
+      @page :left {
+        margin-right: 6%;
+        margin-left: 10%;
+        @bottom-left {
+          content: "novel 42字×18行 "counter(page)"";
+          margin-left: 0mm;
+          margin-bottom: 5%;
+          writing-mode: horizontal-tb;
+          font-size:10q;
+          /* CSS仕様上は@pageルール内に書けばよいが、現時点のvivliostyle.jsの制限によりここに書く */
+      }
+    }
+      
+      @page :right {
+        margin-left: 6%;
+        margin-right: 10%;
+        /* border-bottom: 1pt solid black; */
+      /* 右下ノンブル */
+      @bottom-right {
+          content: "novel 42字×18行 "counter(page)"";
+          margin-right: 0mm;
+          margin-bottom: 5%;
+          writing-mode: horizontal-tb;
+          font-size:10q;
+          /* CSS仕様上は@pageルール内に書けばよいが、現時点のvivliostyle.jsの制限によりここに書く */
+      }
+      }
+  
+      html {
+      font-family: "游明朝", "YuMincho", serif;
+      font-weight: Medium;
+      text-align: justify;
+      hanging-punctuation: allow-end;
+      text-spacing: none;
+      }
+  
+      body{
+        break-before: left;
+
+        
+      }
+  
+      div#draft{
+        inline-size: calc(165.76mm + 0.5em);
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+      }
+
+      h1 {
+        /* 五行トリ2倍角 */
+        display:flex;
+        align-items: center;
+        block-size: calc(3.9466666666666663mm * 1.75 * 5);
+        /* フォント */
+        font-weight: Extrabold;
+        letter-spacing: 0.25em;
+        font-size: calc(3.9466666666666663mm * 2);
+        /* 字下げ */
+        text-indent: 0;
+        /* 直後の改ページ・改段禁止 */
+      }
+  
+      h2 {
+        /* 二行トリ1.6倍角 */
+        display:flex;
+        align-items: center;
+        block-size: calc(3.9466666666666663mm * 1.75 * 2);
+        /* フォント */
+        font-weight: Extrabold;
+        font-size: calc(3.9466666666666663mm * 1.6);
+        /* 字下げ */
+        text-indent: calc(3.9466666666666663mm * 1 * 1);
+        /* 直後の改ページ・改段禁止 */
+      }
+
+      h3 {
+        /* 一行トリ1.2倍角 */
+        display:flex;
+        align-items: center;
+        block-size: calc(3.9466666666666663mm * 1.75);
+        /* フォント */
+        font-weight: demi-bold;
+        font-size: calc(3.9466666666666663mm * 1.2);
+        /* 字下げ */
+        text-indent: calc(3.9466666666666663mm * 1 * 1);
+        /* 直後の改ページ・改段禁止 */
+        page-break-after:avoid;
+      }
+
+      h4,h5,h6 {
+        /* 一行トリ1.2倍角 */
+        display:flex;
+        align-items: center;
+        block-size: calc(3.9466666666666663mm * 1.75);
+        /* フォント */
+        font-weight: demi-bold;
+        font-size: calc(3.9466666666666663mm * 1);
+        /* 字下げ */
+        text-indent: calc(3.9466666666666663mm * 1 * 1);
+        /* 直後の改ページ・改段禁止 */
+        page-break-after:avoid;
+      }
+
+      h1 + h2 {
+      margin-block-start: 16pt;
+      }
+
+      p + h3 {
+        margin-block-start: calc(3.9466666666666663mm * 1.75);
+      }
+      
+      p.ruby-offset {
+       margin-right: -0.15em;
+      }
+
+      body.vertical-rl ruby > rt {
+        font-size: 0.5em;
+        width: 0.75em;
+      }
+
+      body.horizontal-tb ruby > rt {
+        font-size: 0.5em;
+        width: 0.75em;
+      }
+
+      p {
+        font-size: 3.9466666666666663mm;
+        line-height: 1.75;
+        inline-size: calc(165.76mm + 0.5em);
+        text-indent: 0em;
+        hanging-punctuation: allow-end;
+        line-break:strict;
+        page-break-inside: auto;
+      }
+
+    div.indent-1 p:first-of-type, div.indent-2 p:first-of-type, div.indent-3 p:first-of-type{
+      padding-block-start: calc( 3.9466666666666663mm * 1.75);
+      }
+
+      div.indent-1 p:last-of-type, div.indent-2 p:last-of-type, div.indent-3 p:last-of-type{
+      padding-block-end: calc( 3.9466666666666663mm * 1.75);
+      }
+
+    
+    div.indent-1 p{
+    inline-size: calc( calc(165.76mm + 0.5em) - 3.9466666666666663mm);
+    padding-inline-start: calc( 3.9466666666666663mm);
+    }
+
+    div.indent-2 p{
+    inline-size: calc( calc(165.76mm + 0.5em) - (3.9466666666666663mm * 2));
+    padding-inline-start: calc(3.9466666666666663mm * 2);
+    }
+
+    div.indent-3 p{
+    inline-size: calc( calc(165.76mm + 0.5em) - (3.9466666666666663mm * 3));
+    padding-inline-start: calc(3.9466666666666663mm * 3);
+    }
+
+    p.goth {
+    margin-inline-start: 3em;
+    font-family: "游ゴシック", "YuGothic", san-serif;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    }
+
+    p.align-rb {
+    text-align: end;
+    }
+
+    p.goth + p.goth {
+    margin-block-start: -1em;
+    }
+
+    div.codes {
+    display: inline-block;
+    margin: 3em 1em;
+    writing-mode: horizontal-tb;
+    padding: 1em;
+    font-family: "Courier", monospace;
+    font-size: 0.8em;
+    }
+  
+    div.codes p {
+    text-orientation: sideways;
+    }
+
+    p.star {
+    text-indent: 3em;
+    margin-right: 16pt;
+    margin-left: 16pt;
+    }
+
+    hr {
+    border: none;
+    border-right: 1pt solid black;
+    block-size: 6em;
+    margin: auto 8.5pt;
+    }
+
+    /* 縦中横 */
+    .tcy {
+    -webkit-text-combine: horizontal;
+    text-combine: horizontal;
+    -ms-text-combine-horizontal: all;
+    text-combine-horizontal: digit 2;
+    text-combine-upright: digit 2;
+    }
+
+    span.bottom {
+      display: block;
+      float: right;
+    }
+    
+    span.bottom-1 {
+      display: block;
+      float: right;
+      padding-inline-end: 1em;
+    }
+    
+    span.bottom-2 {
+      display: block;
+      float: right;
+      padding-inline-end: 2em;
+    }
+    
+    span.bottom-3 {
+      display: block;
+      float: right;
+      padding-inline-end: 3em;
+    }
+        
+
+    /* 圏点（<span class="smaller">ゴマ</span>） */
+    em.side-dot, em.sesame_dot {
+    font-style: normal;
+    -webkit-text-emphasis-style: sesame;
+    text-emphasis-style: sesame;
+    margin-block-start: -1em;
+    display: inline-block;
+    }
+
+    /*著作者*/
+    .author {
+    position: absolute;
+    bottom: 0;
+    font-size: 8.5pt;
+    margin-inline-start: 50pt;
+    letter-spacing: normal;
+    }
+
+    /*画像＋キャプション*/
+    figure {
+    display: block;
+    width: 236pt;
+    -ms-writing-mode: lr-tb;
+    -webkit-writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb;
+    }
+
+    figure img {
+    width: 100%;
+    block-size: auto;
+    vertical-align: bottom;
+    }
+
+    figcaption {
+    text-align: start;
+    font-size: 7pt;
+    }
+
+    /*奥付*/
+    .colophon {
+    font-size: 7pt;
+    margin-right: 48pt;
+    }
+    /* 級さげ */
+    span.smaller{
+        font-size:6.5pt
+    }
+  
+    div.comment {
+        display:none;
+    }
+
+    p.blank {
+        color:transparent;
+    }
+
+    span.blank{
+      display:none;
+    }
+    </style>
+  </head>
+  <body class="vertical-rl">
+  <div id="draft">
+  <p id="l-0">「⾦⿂」 </p><p id="l-1" class="blank">_ </p><p id="l-2"> あちらこちらで雪が溶け始めていた。幾つもの屋根や軒から溶けた氷雪が落下して、⼼</p><p id="l-3">地よい⾳をパチパチと⽴てている。 </p><p id="l-4"> 各所の残雪の溶解を眺め、またそれが⿎膜に響くのを楽しみながら、私は、喫煙室に到</p><p id="l-5">着していた。 </p><p id="l-6"> K ⼤学の喫煙室は全⻑１０メートル、奥⾏き４メートル程の⽩い四⾓の掘⽴て⼩屋で、</p><p id="l-7">⼤学付属のファミリーマートと学⾷の間にあった。 </p><p id="l-8"> 「え、タバコ吸うようになったの？」 </p><p id="l-9">喫煙所に⼊った時、私を認めた聡太は驚きの声を上げた。私は中央のデスクに近づき、ハ</p><p id="l-10">ンドバックからAdo がイラストの限定ポーチを取り出す。ポーチからhi-lite と通学中に購</p><p id="l-11">⼊したライターを取り出した。 </p><p id="l-12">「ええ」 </p><p id="l-13">と私は⾃⾝たっぷりに答えた。 </p><p id="l-14">「とうとう喫煙者デビューですよ」 </p><p id="l-15">「おぉ、良かったね」 </p><p id="l-16">吸い殻⼊れを挟んで、しゃがんでいた悠⽊が⾔った。彼は⾃分のタバコの吸い殻を指</p><p id="l-17">で、ポイッと吸い殻⼊れに投げ捨げ捨てて、新しいタバコを取り出しライターを点⽕す</p><p id="l-18">る。 </p><p id="l-19">私もタバコに点⽕し、煙を⼝に含んだ。そしてそれをふぅーと吐き出した。悠⽊が怪訝な</p><p id="l-20">顔をした。 </p><p id="l-21" class="blank">_ </p><p id="l-22">「そりゃね、⾦⿂って⾔うんだよ」 </p><p id="l-23">私達はガッキで、拓也の学⾷が準備されるのを待っていた。 </p><p id="l-24">「⾦⿂が頬を膨らませて、餌を⾷べようと⼝をパクパクさせてるみたいだからね。それ</p><p id="l-25">で怪訝な顔をされたんだな」 </p><p id="l-26"> 多種の昼⾷の混在した匂いが⿐腔を刺した。卵。カレー。ラッキョウ。パスタ。ラーメ</p><p id="l-27">ン。私は吐き気を覚え、⼿で軽く⼝を抑えた。 </p><p id="l-28"> 「今⽇は何のゼリー？」 </p><p id="l-29"> 「ウイダーインゼリーの鉄分の奴」 </p><p id="l-30"> 「昨⽇も同じやつじゃん」 </p><p id="l-31"> 「別に何だって構わないだろ。これが好きなんだよ」 </p><p id="l-32" class="blank">_  </p><p id="l-33"> 我々は拓也の照り焼きチキンセットを貰ってから、窓際のゆったり座れる椅⼦に腰をか</p><p id="l-34">けた。 </p><p id="l-35"> 「いつも思うんだけどさ」 </p><p id="l-36">⾷事の途中で、拓也が⾔った。 </p><p id="l-37">「薬の量増えてない？」 </p><p id="l-38">「増えてない。むしろ減った。幻影を⾒てるんだ。お前は。あるいは並⾏世界に移動した</p><p id="l-39">か」 </p><p id="l-40">「俺は別の次元に降り⽴ったのか」 </p><p id="l-41">「そうだ。別の次元に降り⽴ったのだ。俺の薬の量を除いて全てが同じのな」 </p><p id="l-42">「それは⼤分別の世界だろ。薬の量が増減してれば、お前の健康状態も変わるんだから」 </p><p id="l-43">「ちょっとゴミ捨ててくる」 </p><p id="l-44">私は⽴ち上がって、吸い尽くしたin ゼリーの紫を燃えるゴミに投げ捨てた。そして席に戻</p><p id="l-45">り、バッグから⽔筒を取り出し、６錠の薬を⾒つめる。いつも薬を飲む時も吐き気がす</p><p id="l-46">る。 </p><p id="l-47">「⼤丈夫？」 </p><p id="l-48">拓也が⼼配する。 </p><p id="l-49">「⼤丈夫」 </p><p id="l-50">私は薬を半分づつ⼝に含み、それを飲み⼲し、ピルケースをバッグに仕舞い込む。 </p><p id="l-51">「なんでタバコ始めたの？メンタルにも悪いでしょ」 </p><p id="l-52">「悪いけど…、ほら、俺休学して友達がお前と後数⼈しかいないんだよ。だから、喫煙所</p><p id="l-53">で友達増えないかなって。お前ら先に全員卒業するし」 </p><p id="l-54">「バカだねぇ〜。このご時世にタバコを始めて、その理由が友達作りかい」 </p><p id="l-55">「別に悪かねぇだろ。あと、エアタバコもやめられるし」 </p><p id="l-56">「エアタバコ⽌まるの？実際に喫煙したら」 </p><p id="l-57">「⽌まった」 </p><p id="l-58">エアタバコについては説明を要するだろう。つまりこうだ。タバコを挟むときと同じ指に</p><p id="l-59">して、吸うときと同じ動作をする。これがエアタバコだ。タバコを吸いたいが、親に禁⽌</p><p id="l-60">されてむず痒かった時、⾃然と無意識的にやるようになっていた。恥ずかしいから⼈前で</p><p id="l-61">決してやらないようにしていたのだが、喫煙を始めてからすっかり消え失せた。 </p><p id="l-62" class="blank">_ </p><p id="l-63">「じゃあな！」 </p><p id="l-64">我々は⼤学の理学館前で別れた。拓也はまだ授業がある。私は、早く帰らなくてはならな</p><p id="l-65">い。授業は終わった。体⼒はもう尽きかけていた。 </p><p id="l-66" class="blank">_ </p><p id="l-67">“ヒロセさん！よかったらこの後２１時からお話しませんか？” </p><p id="l-68">１９時頃、連絡が来た。私は少し迷ってから。 </p><p id="l-69">“はい！ぜひお話しましょう！” </p><p id="l-70">と返信した。そして課題のテキストを読もうとプリントアウトしたファイルに⽬を戻し</p><p id="l-71">た。何度集中しようとしても、⽂字は踊り、⽂章は錯綜した。眼球が私の知らぬうちにス</p><p id="l-72">トライキを起こして⾼速回転でもしてるのかもしれない。私はテキストの⽂章を⾳読しな</p><p id="l-73">がらペンで⽂字に起こし、無理やり内容を頭に叩き込んだ。激しい頭痛がしてきたが我慢</p><p id="l-74">した。 </p><p id="l-75"> 連絡をくれたのは、たまたまdiscord で数⽇前出会った⼥性だった。歳は⼀歳年上で、</p><p id="l-76">私と同じ障害を抱えていると本⼈は語った。 </p><p id="l-77"> 我々が出会ったサーバーから私は抜けてしまったのに、彼⼥はコンタクトをとってくれ</p><p id="l-78">た。それは私の虚栄⼼を満たした。彼⼥と喋っていて別段⾯⽩いわけではないが、その虚</p><p id="l-79">栄⼼が歓楽であり、つまらない彼⼥との会話を⽳埋めした。 </p><p id="l-80"> 彼⼥とは結局１〜２時間ほど歓談した。楽しかった。 </p><p id="l-81" class="blank">_ </p><p id="l-82"> 「結局⼈との繋がりが⼤事だと思っててさ」 </p><p id="l-83">私はタバコの煙をまず⼝に溜めてから、ぐいと肺に吸い込んだ。そしてそれから吐き出し</p><p id="l-84">た。それがdiscord で知⼈に教えてもらったタバコの吸い⽅だった。 </p><p id="l-85"> 「喫煙所でタバコ友達が増えないかなって」 </p><p id="l-86">「なるほどね」 </p><p id="l-87">悠⽊が答えた。彼はもうタバコを吸い終えていた。冬だと⾔うのに上着を着ていない。そ</p><p id="l-88">の痩⾝と相まって、寒そうだった。 </p><p id="l-89">「まぁ、確かに俺が智や聡太と仲良くなったんのも喫煙所やったからな」 </p><p id="l-90">悠⽊はもう⼀本タバコを取り出した。喫煙所には我々だけだった。 </p><p id="l-91">「コツは、⼈を⼀⼈噛ませることやと思う。俺は聡太と英語のクラスが同じで喫煙所で仲</p><p id="l-92">が深まって、聡太は智とドイツ語の授業がおんなじで仲良くなったから紹介してくれて、</p><p id="l-93">仲良くなった感じやもん」 </p><p id="l-94">「なるほどね」 </p><p id="l-95">私はタバコを吸いながら腕を組み、⽬を閉じる。そして腕を解きタバコの灰を捨てる。 </p><p id="l-96">「喫煙所に知り合い悠⽊しか今んとこいないから、たまに⼈紹介してくれたりする？」 </p><p id="l-97">「いいよ。もちろん」 </p><p id="l-98" class="blank">_ </p><p id="l-99"> 「ごめん！俺明⽇から⼀週間、ちょっと⼤学休むは」 </p><p id="l-100">「は？何で？」 </p><p id="l-101">拓也は腕組みをして俯く。我々はラーメン屋に居た。⼤学の近くのラーメン屋“ぽれぽ</p><p id="l-102">れ”。徒歩１５分もないから、お昼休みに来ることができる。⾃慢は豚⾻ラーメン。ここの</p><p id="l-103">匂いは不思議と私の吐き気を刺激しなかった。今⽇は私が珍しく昼⾷を⾷べれそうなの</p><p id="l-104">で、ここにきていた。 </p><p id="l-105">「⻘⼭に居る彼⼥がさ、⾃殺するって⾔っててさ。ちょっと⼀週間彼⼥のメンタルケアし</p><p id="l-106">てくるわ」 </p><p id="l-107">「えぇ〜。またかよ。この前も⾃殺するする詐欺してお前を呼び寄せてたじゃん」 </p><p id="l-108">「まぁ、そうだけどさ」 </p><p id="l-109">拓也はラーメンに無料の⽩⽶を⼊れに席を⽴ち、戻ってきた。 </p><p id="l-110">「可愛いからいいんだよ」 </p><p id="l-111">呆れる私の前で、拓也はご飯を⼀⼼に掻き込んでいた。 </p><p id="l-112" class="blank">_ </p><p id="l-113">拓也はdiscord で出会った友⼈だった。たまたま同じ⼤学ということでウマが合い、いつ</p><p id="l-114">も飯を⾷べるようになった。互いに⼤学での友⼈は少なかった。 </p><p id="l-115" class="blank">_ </p><p id="l-116">“ヒロセさん。私⾃殺未遂で、精神病棟に⼊院することになっちゃったよ。でも私、ヒロセ</p><p id="l-117">さんのこと、付き合いたい位好きなんだよ。だから私のこと、忘れないでね” </p><p id="l-118">件のdiscord の⼥性から突如連絡があった。そんなこと⾔われても、困る。昔から、別段</p><p id="l-119">付き合いたくない⼥性から告⽩されたことが何度かある。皆んな悪い意味でおかしな⼈達</p><p id="l-120">だった。周囲の⼈間のレベルでその⼈のレベルを押し計れるともいうが、私の男性的魅⼒</p><p id="l-121">はその程度ということだろうか？⾃殺未遂の⼥性に変な返答もできないし、どうしたもの</p><p id="l-122">か…。 </p><p id="l-123" class="blank">_ </p><p id="l-124">「⼀緒に勉強していいかな？」 </p><p id="l-125">タバコを吸い終わって喫煙所から⽴ち去さろうとする悠⽊と聡太に話かけた。⼆⼈は顔を</p><p id="l-126">⾒合わせてから、「もちろん」と悠⽊が⾔った。 </p><p id="l-127" class="blank">_ </p><p id="l-128" class="blank">_ </p><p id="l-129" class="blank">_ </p><p id="l-130" class="blank">_ </p><p id="l-131" class="blank">_ </p><p id="l-132" class="blank">_ </p><p id="l-133" class="blank">_ </p><p id="l-134" class="blank">_ </p><p id="l-135" class="blank">_</p>
+  </div>
+  </body>
+  </html>

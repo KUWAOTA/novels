@@ -25,6 +25,8 @@ taskManegement/
     └── rebuild_task_board.py
 ```
 
+日付ごとの宿題メモや当日メモは `taskManegement/` 直下に置かず、`dialy/task_snapshots/YYYY-MM-DD/` で管理する。
+
 ## 基本運用
 
 1. 参照元ファイルを更新する

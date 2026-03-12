@@ -877,7 +877,7 @@ audience:
 
 ## 13. 恋人エピソード素材（girlfriendIdea.md）— 2026-03-08追加
 
-> ソース: `constrain/prompt/girlfirendIdea.md`（著者の恋人との実体験ログ）  
+> ソース: `constrain/prompt_library/girlfriend_idea.md`（著者の恋人との実体験ログ）  
 > 差込マップ: `constrain/brainstorm/girlfriend_idea_map.drawio`
 
 ### エピソード一覧

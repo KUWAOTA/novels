@@ -45,3 +45,10 @@ Claude Codeからも同じ操作を行う際は、これらの定義を参照す
 
 - `constrain/CLAUDE.md` — 小説プロジェクトの詳細コンテキスト
 - `story-compiler/CLAUDE.md` — story-compilerの詳細コンテキスト
+## Editor And Knowledge DB Rule
+
+- Obsidian はメインエディタとして使わず、知識ベースとして使う。
+- 主な編集作業は VS Code または Antigravity を優先する。
+- Claude Code がこのリポジトリ内に新しいファイルを作成したとき、またはユーザーがこのリポジトリへ新しいファイルを追加したことが分かったときは、その内容を Obsidian の知識ベースへ反映する必要があるかを確認する。
+- 反映が必要な場合は、Obsidian 側の関連メモ、参照リンク、マップ、比較シートなどを更新して知識ベースを保守する。
+- 反映の目的は Obsidian を編集基盤に戻すことではなく、知識ベースとしての整合性を保つことにある。

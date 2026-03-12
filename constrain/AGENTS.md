@@ -12,8 +12,9 @@
 
 - `CLAUDE.md`: 作品テーマ、主要人物、ACT 構造、重要ファイル一覧
 - `.agent/instructions.md`: ブレインストーミング運用上の追加ルール
-- `brainstorm/setting_idea/HANDOVER_TO_CODEX.md`: 現在の大量アイデア生成タスクの引き継ぎ
-- `brainstorm/setting_idea/01_protagonist_settings.md`: 既存の主人公設定アイデア集
+- `brainstorm/generated_drafts/setting_idea/HANDOVER_TO_CODEX.md`: 現在の大量アイデア生成タスクの引き継ぎ
+- `.agent/skills/constrain-setting-curation/SKILL.md`: setting_idea を採用判断可能な形式に整えるためのローカル skill
+- `brainstorm/generated_drafts/setting_idea/01_protagonist_settings.md`: 既存の主人公設定アイデア集
 - `brainstorm/writing_issues.md`: 未解決課題
 - `../story-compiler/AGENTS.md`: 構造検証ルール参照先
 
@@ -21,7 +22,7 @@
 
 1. `CLAUDE.md` で作品の核を確認する
 2. 必要なら `../story-compiler/modules/` を参照して構造面の抜けを点検する
-3. 新しい案は `brainstorm/setting_idea/` など派生ファイルに追記し、`current_plot.md` は触らない
+3. 新しい案は `brainstorm/generated_drafts/setting_idea/` など派生ファイルに追記し、`current_plot.md` は触らない
 
 ## Prompt Normalization Rule
 

@@ -1,0 +1,94 @@
+<mxfile host="65bd71144e">
+    <diagram id="8u2wWjCMu2pJQj8FjOkP" name="Page-1">
+        <mxGraphModel dx="951" dy="464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="2026-03-11 判断のための1枚&#xa;学校が良さそうかではなく 創作課題に効くかを見る" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=24;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="20" width="1080" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="goal" value="今日ここでやること&#xa;答えを完成させることではなく&#xa;何を一緒に考えるべきかを切り分ける" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=18;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="650" y="100" width="620" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="notdo" value="今日はやらない&#xa;・学校向けの模範解答づくり&#xa;・自分を評価し切ること&#xa;・思いつきで課題を増やすこと" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontSize=13;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="105" width="280" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrival" value="今日の到達点&#xa;・本当に考えるべき issue が1本見えた&#xa;・sub issue の漏れ/重複が見えた&#xa;・次の1手が1つに絞れた" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=13;" parent="1" vertex="1">
+                    <mxGeometry x="1530" y="105" width="300" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="issue" value="中心 issue&#xa;3/15 の体験入学が&#xa;自分の創作課題に効くかを判断するには&#xa;今 何を見極めればよいか" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=19;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="250" width="560" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="checkTitle" value="issue の妥当性チェック" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=18;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="270" width="220" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="checkBox" value="この issue は本質か？&#xa;1. 学校選びではなく 創作判断に直結しているか&#xa;2. 今日の作業で前進が見えるか&#xa;3. これが整理できると 当日の質問が作れるか" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=13;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="315" width="420" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="meceTitle" value="sub issue の切り方" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=18;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="500" width="220" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="sub1" value="A. 書きたい核&#xa;何を書きたいのか&#xa;なぜそれを書きたいのか" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF3FF;strokeColor=#6C8EBF;fontSize=15;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="545" width="260" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="sub2" value="B. 今の詰まり&#xa;何が足りず&#xa;どこで止まっているのか" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF7EA;strokeColor=#82B366;fontSize=15;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="545" width="260" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="sub3" value="C. 学校に期待する役割&#xa;その詰まりのうち&#xa;学校でしか取りにくいものは何か" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF1E6;strokeColor=#D79B00;fontSize=15;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="545" width="300" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="meceNote" value="この3つで見る理由&#xa;・A は方向の話&#xa;・B は現在地の話&#xa;・C は外部手段の必要性の話&#xa;&#xa;重複が出たら分類が甘い&#xa;抜けがあるなら 判断条件がまだ足りない" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=13;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="685" width="520" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="workTitle" value="今 一緒に詰めること" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=18;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1040" y="430" width="240" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="work1" value="1. A を 2-3 文で言う&#xa;例: constrain / なぜ自分にとって重要か" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF3FF;strokeColor=#6C8EBF;fontSize=13;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="1040" y="475" width="360" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="work2" value="2. B を列挙する&#xa;技術・習慣・環境で出しつつ&#xa;能力不足か 作業設計不足かを分ける" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF7EA;strokeColor=#82B366;fontSize=13;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="1040" y="585" width="360" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="work3" value="3. C を絞る&#xa;学校でしか得にくい支援か&#xa;一人でも改善可能かを分ける" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF1E6;strokeColor=#D79B00;fontSize=13;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="1040" y="710" width="360" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="qaTitle" value="最後に作るもの" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=18;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1470" y="430" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="qaBox" value="当日に持っていく問い&#xa;この学校は 自分の詰まりのうち&#xa;どれを どう改善できる場なのか" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=15;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1470" y="475" width="320" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="qaExample" value="観点の例&#xa;・講評は構成や論理まで具体的か&#xa;・書く量を増やす仕組みがあるか&#xa;・自分の題材に合う訓練があるか" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=13;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="1470" y="620" width="320" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="line1" value="" style="endArrow=block;endFill=1;strokeColor=#6C8EBF;strokeWidth=2;" parent="1" source="goal" target="issue" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="line2" value="" style="endArrow=block;endFill=1;strokeColor=#999999;strokeWidth=2;" parent="1" source="issue" target="checkBox" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="line3" value="" style="endArrow=block;endFill=1;strokeColor=#6C8EBF;strokeWidth=2;" parent="1" source="issue" target="sub1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="line4" value="" style="endArrow=block;endFill=1;strokeColor=#82B366;strokeWidth=2;" parent="1" source="issue" target="sub2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="line5" value="" style="endArrow=block;endFill=1;strokeColor=#D79B00;strokeWidth=2;" parent="1" source="issue" target="sub3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="line6" value="" style="endArrow=block;endFill=1;strokeColor=#6C8EBF;strokeWidth=2;dashed=1;" parent="1" source="sub1" target="work1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="line7" value="" style="endArrow=block;endFill=1;strokeColor=#82B366;strokeWidth=2;dashed=1;" parent="1" source="sub2" target="work2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="line8" value="" style="endArrow=block;endFill=1;strokeColor=#D79B00;strokeWidth=2;dashed=1;" parent="1" source="sub3" target="work3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="line9" value="" style="endArrow=block;endFill=1;strokeColor=#666666;strokeWidth=2;" parent="1" source="work3" target="qaBox" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
