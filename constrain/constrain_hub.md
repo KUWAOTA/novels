@@ -34,6 +34,10 @@ tags:
 - `constrain/.workspace/conversation_extract/extracted_conversation.json`
 - `constrain/.workspace/conversation_extract/extract_conversation.py`
 
+## Research
+
+- [[constrain/lavel/constrain_awards_research_2026-03-13]]
+
 ## Related Hubs
 
 - [[story-compiler/story_compiler_hub]]
