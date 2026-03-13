@@ -11,10 +11,14 @@
             "id": "892c6cc742f7cf98",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "constrain/main/childhood.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新規タブ"
+              "title": "childhood"
             }
           }
         ]
@@ -178,19 +182,25 @@
   },
   "active": "892c6cc742f7cf98",
   "lastOpenFiles": [
-    "old/hikisugi.md",
+    "dialy/2026-03-09/0309.md",
+    "dialy/2026-03-09/0309_moeko_line_memo.md",
+    "dialy/2026-03-09/0310.md",
+    "dialy/2026-03-09/0310_moeko_line.md",
+    "dialy/2026-03-10/0310.md",
+    "dialy/2026-03-10/0310_moeko_line.md",
+    "dialy/2026-03-11/deleted/today.md",
+    "dialy/2026-03-11/deleted/question.md",
     "dialy/2026-03-12/today.md",
+    "constrain/main/childhood.md",
+    "old/hikisugi.md",
     "dialy/2026-03-12",
     "dialy/2026-03-11/today_overview.drawio",
-    "dialy/2026-03-11/deleted/question.md",
     "old/三角関数.md",
     "dialy/2026-03-11/deleted/today_overview.drawio",
-    "dialy/2026-03-11/deleted/today.md",
     "dialy/2026-03-11/deleted",
     "old/legacy_fragments_hub.md",
     "dialy/2026-03-11/question.md",
     "README.md",
-    "dialy/2026-03-09/0309.md",
     "constrain/constrain_hub.md",
     "softwareKnowlegde/obs.md",
     "school/prepare.md",
@@ -208,12 +218,6 @@
     "constrain/brainstorm/archive/04_world-settings.yaml",
     "constrain/brainstorm/generated_drafts/agents_story/ACT4/05_橋へのメッセージ.md",
     "constrain/brainstorm/generated_drafts/agents_story/ACT4/04_鏡の構造.md",
-    "constrain/brainstorm/generated_drafts/agents_story/ACT4/03_泣く理由が分からない.md",
-    "constrain/brainstorm/generated_drafts/agents_story/ACT4/02_正しい指導.md",
-    "constrain/brainstorm/generated_drafts/agents_story/ACT4/01_再会と善意の始まり.md",
-    "constrain/brainstorm/generated_drafts/agents_story/ACT3/05_A男の影.md",
-    "constrain/brainstorm/generated_drafts/agents_story/ACT3/04_Constrainの誕生.md",
-    "constrain/brainstorm/generated_drafts/agents_story/ACT3/03_夜の後悔とConstrainの名前.md",
     "無題のファイル.canvas",
     "無題のファイル 2.canvas",
     "無題のファイル 1.canvas",
