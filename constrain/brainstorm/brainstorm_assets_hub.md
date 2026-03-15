@@ -26,6 +26,12 @@ tags:
 - `constrain/brainstorm/archive/07_logline-candidates.yaml`
 - `constrain/brainstorm/archive/めも`
 
+## Motif / Episode References
+
+- [[constrain/brainstorm/diary_motif_focus_mismatch]] — 日記(2026-03-15)から抽出した「焦点ズレ」モチーフとACT別エピソード案
+- [[constrain/brainstorm/asd_episode_reference]] — ASDコミュニケーショントラブルのエピソード集
+- [[constrain/brainstorm/scene_ideas_bullying]] — いじめシーンのアイデア
+
 ## Visual Assets
 
 - `constrain/brainstorm/girlfriend_idea_map.drawio`
