@@ -1,0 +1,175 @@
+<mxGraphModel adaptiveColors="auto" dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- START -->
+    <mxCell id="2" value="シーンに&#xa;場所の描写がある" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="490" y="40" width="220" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- Q1 -->
+    <mxCell id="3" value="描写の役割は何か？" style="rhombus;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="480" y="160" width="240" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- START → Q1 -->
+    <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="2" target="3" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- FLAT: 単なる情報提示 -->
+    <mxCell id="4" value="⚠ WARNING&#xa;場の感覚なし&#xa;舞台が背景にとどまっている" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcccc;strokeColor=#cc0000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="120" y="320" width="200" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- Q1 → FLAT -->
+    <mxCell id="e2" value="単なる情報提示&#xa;（どこにいるかの説明だけ）" style="edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitFixed=0;entryX=0.5;entryY=0;entryFixed=0;" edge="1" source="3" target="4" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="300" y="280" />
+          <mxPoint x="220" y="280" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- FIX -->
+    <mxCell id="5" value="改善案&#xa;① キャラの感情状態と場所を接続する&#xa;② テーマを場所に投影する&#xa;③ 天気・光・音で感情を象徴する" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe4cc;strokeColor=#cc6600;fontSize=10;align=left;" vertex="1" parent="1">
+      <mxGeometry x="60" y="460" width="320" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- FLAT → FIX -->
+    <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="4" target="5" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Q2 -->
+    <mxCell id="6" value="何と接続しているか？&#xa;（複数選択可）" style="rhombus;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="800" y="300" width="220" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- Q1 → Q2 -->
+    <mxCell id="e4" value="機能的描写&#xa;（何かと接続している）" style="edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitFixed=0;entryX=0.5;entryY=0;entryFixed=0;" edge="1" source="3" target="6" parent="1">
+      <mxGeometry relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="600" y="280" />
+          <mxPoint x="910" y="280" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+
+    <!-- C1: キャラクターの内面 -->
+    <mxCell id="7" value="🔗 キャラクターの内面&#xa;（感情・欲望・恐れ・自己欺瞞）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="600" y="460" width="200" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- C2: テーマ -->
+    <mxCell id="8" value="🔗 テーマ・統制概念&#xa;（Controlling Concept）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="820" y="460" width="200" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- C3: 価値軸 -->
+    <mxCell id="9" value="🔗 物語の価値軸&#xa;（価値の状態と対応）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1040" y="460" width="200" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- C4: 天気 -->
+    <mxCell id="10" value="🔗 天気・感覚的要素&#xa;（象徴的機能）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1260" y="460" width="200" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- Q2 → C1〜C4 -->
+    <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="6" target="7" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="6" target="8" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="6" target="9" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="6" target="10" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- Q3 -->
+    <mxCell id="11" value="接続の方向は？" style="rhombus;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="810" y="600" width="200" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- C1〜C4 → Q3 -->
+    <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="7" target="11" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="8" target="11" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="9" target="11" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="10" target="11" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- MIRROR -->
+    <mxCell id="12" value="✅ 鏡（増幅）&#xa;場がキャラの状態を反射・強調&#xa;例）孤独なキャラ ← 廃れた街角" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ccffcc;strokeColor=#006600;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="580" y="760" width="210" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- CONTRAST -->
+    <mxCell id="13" value="✅ 対比（対置）&#xa;場がキャラの状態と逆を示す&#xa;例）絶望のキャラ ← 賑やかな祭り" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ccffcc;strokeColor=#006600;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="820" y="760" width="210" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- SYMBOL -->
+    <mxCell id="14" value="✅ 象徴（メタファー）&#xa;場が抽象的意味を担う&#xa;例）腐敗のテーマ ← 朽ちた建物" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ccffcc;strokeColor=#006600;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1060" y="760" width="210" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- Q3 → MIRROR/CONTRAST/SYMBOL -->
+    <mxCell id="e13" value="鏡（増幅）" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="11" target="12" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e14" value="対比" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="11" target="13" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e15" value="象徴" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="11" target="14" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- DEPTH -->
+    <mxCell id="15" value="深度チェック&#xa;（接続は表面的か深いか）" style="rhombus;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="810" y="920" width="200" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- MIRROR/CONTRAST/SYMBOL → DEPTH -->
+    <mxCell id="e16" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="12" target="15" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e17" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="13" target="15" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e18" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="14" target="15" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- EXCELLENT -->
+    <mxCell id="16" value="🌟 EXCELLENT&#xa;場の感覚が多層的に機能&#xa;複数の意味を同時に担っている" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#99ff99;strokeColor=#004400;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="620" y="1080" width="210" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- OK -->
+    <mxCell id="17" value="📝 INFO：基本レベル&#xa;追加の意味層を検討できます" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffcc;strokeColor=#999900;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1000" y="1080" width="210" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- DEPTH → EXCELLENT/OK -->
+    <mxCell id="e19" value="深い接続&#xa;（複数の軸で機能）" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="15" target="16" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e20" value="浅い接続&#xa;（単一の軸のみ）" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="15" target="17" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+  </root>
+</mxGraphModel>

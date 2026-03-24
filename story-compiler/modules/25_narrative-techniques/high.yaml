@@ -1,0 +1,80 @@
+# ============================================================
+# Narrative Techniques — 高優先度 (High Priority)
+# Source: David Lodge "The Art of Fiction"
+# Version: 0.1
+# ============================================================
+# シーン設計時に常に検討すべき強力な手札。
+# ============================================================
+
+priority: high
+
+techniques:
+
+  teenage_skaz:
+    id: teenage_skaz
+    name: "ティーンエイジスカース（Teenage Skaz）"
+    source_chapter: 4
+    description: >
+      あえて素朴で未熟な語り手の声（訛り・非文・口語）を使う。
+      その未熟な語りを通して、語り手自身が理解している以上の
+      叡智やメタ的真実を読者がハッと受け取る技術。
+    effects:
+      - "皮肉（irony）の生成"
+      - "哀切さ（pathos）の生成"
+      - "読者の優越的共感"
+    applicable_when:
+      - "語り手が子供・ティーン・教育水準の低い人物"
+      - "POVモジュールで resolution_mode: subject_native が選択されている"
+      - "読者が語り手より多くの情報を持っている状況"
+    constrain_usage:
+      - "幼少期シーンで幼い語り手を使い、読者だけが先の展開の残酷さを知っている構造"
+      - "未熟なキャラクターの一人称パート"
+    compiler_integration:
+      trigger_from: "28_pov.yaml — resolution_mode: subject_native かつ語り手が未熟"
+      action: info
+      message: >
+        ティーンエイジスカース適用可能。
+        未熟な語り手のカメラを使っています。
+        読者がメタ的叡智を受け取る構造になっているか確認してください。
+
+  interior_monologue:
+    id: interior_monologue
+    name: "内的独白（Interior Monologue）"
+    source_chapter: 10
+    description: >
+      意識をそのまま読者に流し込む技術。
+      キャラクターの内面をフィルタなしで直接描写する。
+    effects:
+      - "深い内面の可視化"
+      - "読者とキャラクターの心理的距離の縮小"
+    tradeoffs:
+      - "描写が細かくなるため物語の進行が遅くなる（大きなデメリット）"
+    applicable_when:
+      - "キャラクターの内面変化が物語の核心であるシーン"
+      - "決定的な選択の直前・直後"
+    compiler_integration:
+      action: info
+      message: >
+        内的独白を使用中。進行速度が落ちることを意識してください。
+        このシーンに内的独白が必要な理由（価値変化・決定的選択等）を確認してください。
+
+  defamiliarization:
+    id: defamiliarization
+    name: "異化（Defamiliarization）"
+    source_chapter: 11
+    description: >
+      慣習によって普通とされている事象を、あえて別の観点から
+      眺めて描写する技術。当たり前を異質なものに見せる。
+    effects:
+      - "読者の認知の揺さぶり"
+      - "慣習化された物事への新鮮な視点の提供"
+      - "テーマの深化"
+    applicable_when:
+      - "日常的なシーンに深い意味を持たせたいとき"
+      - "キャラクターの世界観の独自性を示したいとき"
+      - "読者の既存認識を崩したいとき"
+    compiler_integration:
+      action: info
+      message: >
+        異化の使用を検討してください。
+        このシーンの慣習的描写を別の観点から再構成できますか？

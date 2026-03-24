@@ -1,0 +1,135 @@
+# ============================================================
+# Module: Point of View (視点管理)
+# Source: David Lodge "The Art of Fiction" — Chapter 6
+# Version: 0.1
+# ============================================================
+# 誰の目でどの解像度で世界を映すか。
+# POVポリシーを最初に宣言させ、逸脱をエラーにする。
+# ティーンエイジスカース（高優先度テクニック）との連動あり。
+# ============================================================
+
+module_id: pov
+module_name: "視点管理（Point of View）"
+source: "David Lodge 'The Art of Fiction' Chapter 6"
+
+# ============================================================
+# POVポリシー宣言（物語開始前に必須）
+# ============================================================
+pov_policy:
+  declaration_required: true
+  applies_to: [Story, Act, Scene]
+
+  fields:
+
+    pov_type:
+      required: true
+      type: enum
+      values:
+        - first_person              # 一人称（私）
+        - third_person_limited      # 三人称限定（特定人物に追随）
+        - third_person_omniscient   # 三人称全知
+        - second_person             # 二人称（珍しい）
+        - free_indirect_discourse   # 自由間接文体（得体のしれない三人称）
+      description: "物語全体またはシーン単位の視点タイプ"
+
+    camera_subject:
+      required: true
+      type: string
+      description: >
+        誰の上にカメラが置かれているか。
+        「どのキャラクターの経験を軸に世界を映すか」を明記する。
+
+    resolution_mode:
+      required: true
+      type: enum
+      values:
+        - subject_native:
+            description: >
+              カメラ主体の認知能力レベルそのままで描写する。
+              未熟な主体なら、その主体が想像しうることしか描けない。
+              ティーンエイジスカースの発動条件となる。
+        - elevated_narrator:
+            description: >
+              三人称で主体より高い洞察・観察力を付与して描写する。
+              主体の認知外のことも語り手が見抜いて描ける。
+      description: >
+        カメラ解像度の設定。
+        subject_native: 主体の能力そのまま。
+        elevated_narrator: 語り手が代弁的に高い洞察で描く。
+
+    per_scene_override:
+      required: false
+      type: boolean
+      default: false
+      description: >
+        シーンごとにカメラ（camera_subject・resolution_mode）を
+        変更することを許可するか。
+        falseの場合、全シーンで宣言済みPOVに従う。
+
+# ============================================================
+# ティーンエイジスカースとの連動
+# ============================================================
+teenage_skaz_integration:
+  description: >
+    resolution_mode が subject_native かつ
+    camera_subject の成熟度が低い（子供・ティーン・未熟なキャラ）場合、
+    ティーンエイジスカース適用可能として info を出す。
+  trigger:
+    resolution_mode: subject_native
+    camera_subject_maturity: low
+  action: info
+  message: >
+    ティーンエイジスカースが適用可能な状態です。
+    未熟な語り手のカメラを使っています。
+    読者がメタ的叡智を受け取る構造（irony / pathos）を
+    意図的に設計してください。
+    → 詳細: 25_narrative-techniques/high.yaml#teenage_skaz
+
+# ============================================================
+# コンパイル検証ルール
+# ============================================================
+compile_time_checks:
+
+  pov_policy_not_declared:
+    description: "物語（またはシーン）開始前にPOVポリシーが宣言されていない"
+    action: compile_error
+    message: >
+      POVポリシーが宣言されていません。
+      pov_type / camera_subject / resolution_mode を定義してください。
+
+  pov_violation_camera_shift:
+    description: >
+      per_scene_override: false のとき、
+      シーン内でカメラの主体が変わる。
+    action: compile_error
+    message: >
+      POVポリシー違反：シーン内でカメラ主体が変わっています。
+      per_scene_override: true を設定するか、POVを統一してください。
+
+  pov_violation_resolution_shift:
+    description: >
+      宣言した resolution_mode からシーン内で逸脱している。
+    action: compile_error
+    message: >
+      POVポリシー違反：解像度モードが宣言と異なります。
+      subject_native で宣言しているのに語り手が主体を超えた洞察を示していないか確認してください。
+
+  subject_native_beyond_cognition:
+    description: >
+      resolution_mode: subject_native のとき、
+      camera_subject が認識しえない情報・感情を語り手が描写している。
+    action: warning
+    message: >
+      subject_nativeモードです。
+      カメラ主体が認知しえない内容を描写しています。
+      主体の知覚・想像の範囲内に収めてください。
+      または resolution_mode を elevated_narrator に変更してください。
+
+  no_reason_for_pov_change:
+    description: >
+      per_scene_override: true のときに、
+      シーンごとのPOV変更理由が未定義。
+    action: warning
+    message: >
+      シーンごとにPOVを切り替えていますが、その理由が定義されていません。
+      各シーンのPOV選択に意図はありますか？

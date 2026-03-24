@@ -1,0 +1,125 @@
+# ============================================================
+# Module: Show vs Tell (描写 vs 語り)
+# Source: David Lodge "The Art of Fiction" — Chapter 26
+# Version: 0.1
+# ============================================================
+# 描写: viewから世界を示し、読者に解釈を与える。
+# 語り（要約）: 解釈を要約して直接伝える。
+# 語りは「面白くない部分」と「本筋から逸れた面白すぎる部分」を
+# 圧縮して伝えるツール。
+# 要約のみの小説は論文・レポートになる。
+# ============================================================
+
+module_id: show_vs_tell
+module_name: "描写 vs 語り（Show vs Tell）"
+source: "David Lodge 'The Art of Fiction' Chapter 26"
+
+# ============================================================
+# 前提条件（必須設定）
+# ============================================================
+prerequisites:
+  scene_theme:
+    required: true
+    description: >
+      このシーン（またはパート）の「本題」（何を描きたいか）。
+      未定義の場合、compile_error を出す。
+    compile_time_checks:
+      missing_scene_theme:
+        action: compile_error
+        message: >
+          シーンの「本題」（scene_theme）が定義されていません。
+          描写と語りの判断は本題なしには行えません。
+          このシーンで描きたいことを先に定義してください。
+
+# ============================================================
+# 描写 vs 語り の判定アルゴリズム
+# ============================================================
+selection_algorithm:
+  description: >
+    以下のフローで描写か語りかを判定する。
+    面白さスコアは value_change（価値変化）の有無・大きさで測る（McKee基準）。
+
+  flow:
+    step_1:
+      condition: "face_character_count >= 4"
+      action: "語りを推奨"
+      reason: >
+        人物が多い場合、描写は情報過多になりやすい。
+        語りで圧縮して情報を整理せよ。
+      compiler_action: info
+      message: "登場人物が多いシーンです。語り（要約）で情報を圧縮することを検討してください。"
+
+    step_2:
+      condition: "value_change_score < threshold（閾値: 0.3）"
+      action: "語りを選択"
+      reason: >
+        McKee基準で価値変化が小さい = 面白さが低い。
+        描写に値しない。語りで通過せよ。
+      compiler_action: info
+      message: >
+        このシーンの価値変化スコアが低い（面白さが低い）です。
+        描写ではなく語り（要約）での通過を検討してください。
+
+    step_3:
+      condition: "value_change_score >= threshold AND is_off_theme == true"
+      action: "語りを選択"
+      reason: >
+        面白いが本題から逸れている = 本筋を妨げる面白さ。
+        語りで圧縮して通過せよ。
+      compiler_action: warning
+      message: >
+        このシーンは面白いですが本題から逸れています。
+        語り（要約）で圧縮し、本題に戻ってください。
+        本題から意図的に逸れているなら is_intentional_digression: true を設定してください。
+
+    step_4:
+      condition: "value_change_score >= threshold AND is_off_theme == false"
+      action: "描写を試みよ"
+      reason: "面白く、本題にも沿っている。語りに逃げるな。"
+      compiler_action: info
+      message: >
+        このシーンは描写で勝負してください。
+        語りへの逃避は高等技術（明確な理由が必要）です。
+
+# ============================================================
+# 価値変化スコア（面白さの基準）
+# ============================================================
+value_change_scoring:
+  description: >
+    McKee理論に基づき、シーンの「面白さ」を価値変化（value change）で測る。
+    これは 19_scene-mastery.yaml および 07_action-definition.yaml と連動する。
+  scale: "0.0 - 1.0"
+  scoring_guide:
+    no_value_change: 0.0
+    minor_shift: 0.2
+    clear_shift: 0.4
+    significant_reversal: 0.7
+    dramatic_turning_point: 1.0
+  threshold: 0.3   # これ未満は語りを選択
+
+# ============================================================
+# コンパイル検証ルール
+# ============================================================
+compile_time_checks:
+
+  consecutive_narration_overuse:
+    description: "語り（要約）が3シーン以上連続している"
+    action: warning
+    message: >
+      語り（要約）が連続して使われています（3シーン以上）。
+      語りの連続は高等テクニックであり、明確な理由が必要です。
+      それが功を奏する理由を説明できますか？
+
+  description_without_value_change:
+    description: "描写を選択しているのに価値変化スコアが低い"
+    action: warning
+    message: >
+      価値変化の低いシーンを描写で書いています。
+      このシーンは語り（要約）で通過すべきではありませんか？
+
+  theme_undefined_fallback:
+    description: "本題が未定義のまま描写を続けている"
+    action: compile_error
+    message: >
+      本題（scene_theme）が未定義です。
+      描写するか語るかの判断ができません。先に本題を定義してください。

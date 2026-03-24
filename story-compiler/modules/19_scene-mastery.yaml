@@ -43,6 +43,23 @@ scene_transformation_principle:
 
     compile_time_checks:
 
+      epiphany_detected:
+        description: >
+          外的イベントが小さいにもかかわらず価値変化が大きいパターン。
+          ジョイス的エピファニー（日常の瞬間に意味が結晶化する一瞬）の可能性がある。
+          Source: David Lodge "The Art of Fiction" Chapter 32
+        detection_condition:
+          external_event_scale: low    # 外的に大きなことが起きていない
+          value_change_score: high     # しかし内的な価値変化は大きい
+        action: info
+        message: >
+          エピファニーの可能性があります。
+          日常的な瞬間から深い真実が結晶化する構造を意図していますか？
+          外的イベントは小さいのに内的変化が大きい場合、
+          そのギャップが意図的であることを確認してください。
+          → エピファニーとして機能させるには: 引き金（言葉・光景・動作）が
+            読者にとっても自然に意味を持つよう準備してください。
+
       no_meaningful_contrast_detected:
         description: >
           before/after の状態が主要な次元のいずれにおいても

@@ -1,0 +1,110 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="大阪文学学校 見学前要件整理">
+    <mxGraphModel adaptiveColors="auto" dx="1422" dy="762" grid="1" gridSize="10" guides="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- タイトル -->
+        <mxCell id="title" value="大阪文学学校 見学前 — 自分の要件整理" style="rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=default;fontSize=14;fontStyle=1;arcSize=10;" vertex="1" parent="1">
+          <mxGeometry x="190" y="295" width="500" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 現状 (top-left, blue) -->
+        <mxCell id="s1" value="現状" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="400" height="235" as="geometry" />
+        </mxCell>
+        <mxCell id="s1i1" value="・Constrain（長編小説・純文学）執筆中" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="s1">
+          <mxGeometry x="10" y="38" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s1i2" value="・技術知識は本で習得可能（講義は不要）" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="s1">
+          <mxGeometry x="10" y="66" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s1i3" value="・課題・締切がないと推進力が落ちる" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="s1">
+          <mxGeometry x="10" y="94" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s1i4" value="・適確なFBを受ける場がない" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="s1">
+          <mxGeometry x="10" y="122" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s1i5" value="・感情的に近い素材を一人で客観化できない" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="s1">
+          <mxGeometry x="10" y="150" width="380" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s1note" value="→ 必要なのは「講義」でなく「練習の場」" style="text;html=1;align=left;verticalAlign=top;fontStyle=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="s1">
+          <mxGeometry x="10" y="190" width="380" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- 欲しいもの (top-right, green) -->
+        <mxCell id="s2" value="欲しいもの（要件）" style="swimlane;startSize=30;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="460" y="40" width="420" height="235" as="geometry" />
+        </mxCell>
+        <mxCell id="s2i1" value="✓ 質の高いFB　→ 適確・傷つかない・軌道修正できる" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="s2">
+          <mxGeometry x="10" y="38" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s2i2" value="✓ 締切・課題のリズム（習慣化）" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="s2">
+          <mxGeometry x="10" y="72" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s2i3" value="✓ 見せ合える仲間（自走後も続く関係）" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="s2">
+          <mxGeometry x="10" y="106" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s2i4" value="✓ スタイル：道場型よりの「道場＋合評ミックス」" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="s2">
+          <mxGeometry x="10" y="140" width="400" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="s2i5" value="✗ 不要：講義・知識インプット（本で代替可）" style="text;html=1;align=left;verticalAlign=top;fontColor=#FF0000;" vertex="1" parent="s2">
+          <mxGeometry x="10" y="185" width="400" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- 当日確認すること (bottom-left, purple) -->
+        <mxCell id="s3" value="当日確認すること（質問）" style="swimlane;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="40" y="360" width="400" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="s3i1" value="Q1: 合評の雰囲気・FBの深さは？（指摘は言語化されるか）" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="s3">
+          <mxGeometry x="10" y="38" width="380" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s3i2" value="Q2: 課題の頻度・締切の仕組みは？（現実的なペースか）" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="s3">
+          <mxGeometry x="10" y="86" width="380" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s3i3" value="Q3: 受講生の層・雰囲気は？（仲間になれそうか）" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="s3">
+          <mxGeometry x="10" y="134" width="380" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s3i4" value="Q4: 講義 vs 合評・実習の時間比率は？" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="s3">
+          <mxGeometry x="10" y="182" width="380" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s3i5" value="Q5: FBは文章表現へか、構造へか、両方か？" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="s3">
+          <mxGeometry x="10" y="220" width="380" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- 半年後の成功像 (bottom-right, orange) -->
+        <mxCell id="s4" value="半年後の成功像" style="swimlane;startSize=30;fillColor=#ffe6cc;strokeColor=#d6b656;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="460" y="360" width="420" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="s4i1" value="✓ 技術の基礎が身についている" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="s4">
+          <mxGeometry x="10" y="38" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s4i2" value="✓ 見せ合える友人がいる" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="s4">
+          <mxGeometry x="10" y="80" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s4i3" value="✓ 正しいFBをもとに自走できる" style="text;html=1;align=left;verticalAlign=top;" vertex="1" parent="s4">
+          <mxGeometry x="10" y="122" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s4note" value="→ ゴールは「学校を卒業すること」でなく&#xa;　「学校なしで正しく書き続けられること」" style="text;html=1;align=left;verticalAlign=top;fontStyle=2;fillColor=#ffe6cc;strokeColor=#d6b656;" vertex="1" parent="s4">
+          <mxGeometry x="10" y="185" width="400" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- 矢印: タイトルから各セクションへ -->
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="title" target="s1" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="title" target="s2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="title" target="s3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="title" target="s4" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

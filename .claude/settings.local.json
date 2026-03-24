@@ -2,7 +2,12 @@
   "permissions": {
     "allow": [
       "Bash(git:*)",
-      "mcp__obsidian__search_notes"
+      "mcp__obsidian__search_notes",
+      "Bash(node -e \":*)",
+      "mcp__drawio__open_drawio_mermaid",
+      "Bash(find c:Usersukowu.claude -name *.json -not -path */projects/* -not -path */plugins/*)",
+      "Bash(find c:UsersukowuAppDataRoamingAntigravity -name *.json)",
+      "Bash(find c:UsersukowuAppDataLocalAntigravity -name *.json)"
     ]
   }
 }

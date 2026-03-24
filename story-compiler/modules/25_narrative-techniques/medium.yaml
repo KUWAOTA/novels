@@ -1,0 +1,113 @@
+# ============================================================
+# Narrative Techniques — 中優先度 (Medium Priority)
+# Source: David Lodge "The Art of Fiction"
+# Version: 0.1
+# ============================================================
+# 状況次第で有効な手札。必要に応じて参照する。
+# ============================================================
+
+priority: medium
+
+techniques:
+
+  epistolary:
+    id: epistolary
+    name: "書簡体小説（Epistolary Novel）"
+    source_chapter: 5
+    description: >
+      手紙・日記・メッセージ等の形式で物語を構成する手法。
+    effects:
+      - "複数の書き手を導入し、同じ出来事を違う視点から描ける"
+      - "特定の読み手に向けた語りが、読者の反応を規定し語りに制約を加える"
+    applicable_when:
+      - "複数の視点人物が同一の出来事を異なる解釈で経験するとき"
+      - "語り手の内面・意図を間接的に示したいとき"
+    compiler_integration:
+      action: info
+      message: >
+        書簡体形式を使用中。
+        ① 各書き手のバイアスが語りに反映されているか
+        ② 特定の読み手への意識が語りのトーンを規定しているか を確認してください。
+
+  intertextuality:
+    id: intertextuality
+    name: "間テキスト性（Intertextuality）"
+    source_chapter: 21
+    description: >
+      文体模倣・主題模倣・間接的言及・直接的引用・構造的並行関係など、
+      他のテキストとの関係性を利用する手法。
+    effects:
+      - "今後の展開の暗示"
+      - "テーマの重層化"
+      - "読者の既存知識との接続による意味の増幅"
+    applicable_when:
+      - "特定の文学作品・神話・歴史と意図的に響き合わせたいとき"
+      - "テーマを別の文脈から照射したいとき"
+    compiler_integration:
+      action: info
+      message: >
+        間テキスト性の参照先が設定されていますか？
+        引用・言及・並行構造が意図した効果を生んでいるか確認してください。
+
+  magic_realism:
+    id: magic_realism
+    name: "マジックリアリズム（Magic Realism）"
+    source_chapter: 24
+    description: >
+      衝撃的な現実を伝えるために、超常現象を使って表現する手法。
+      現実とファンタジーの境界を意図的に曖昧にする。
+    effects:
+      - "圧倒的な体験・変動を言語化する"
+      - "通常の現実描写では伝わらない感覚の表現"
+    applicable_when:
+      - "強烈な感情的体験・トラウマを描くとき"
+      - "現実の論理では説明できない人間的真実を表現したいとき"
+    constraint: "使用する場合は、その世界観ルールが作品内で一貫していること"
+    compiler_integration:
+      action: info
+      message: >
+        マジックリアリズムを使用中。
+        超常要素が現実の感情・体験を代弁しているか（恣意的でないか）を確認してください。
+        作品内の超常ルールが一貫しているかもチェックしてください。
+
+  surface_only:
+    id: surface_only
+    name: "表層にとどまる（Surface Only）"
+    source_chapter: 25
+    description: >
+      あえて内面の深いところを描かず、表層の描写にとどめることで
+      読者に解釈の余白を与え、先の展開を伏せる奥の手札。
+    effects:
+      - "読者の好奇心・期待の維持"
+      - "後の展開への伏線"
+      - "内面描写の不在が逆に不気味さ・謎を生む"
+    caution: "高等技術。意図なく使うと単に薄い描写になる"
+    applicable_when:
+      - "キャラクターの真意を意図的に隠したいとき"
+      - "後の展開で内面が明かされることで意味が変わるとき"
+    compiler_integration:
+      action: info
+      message: >
+        表層にとどまる技法を使用中（高等技術）。
+        この表層描写が後の展開で意味を持つ設計になっていますか？
+
+  ornate_style:
+    id: ornate_style
+    name: "凝った文章（Ornate Style / Self-imposed Rules）"
+    source_chapter: 20
+    description: >
+      小説に決まったルールはないが、自分なりのルールを課すことで
+      目的の効果を引き出す手法。一貫した文体ルールの自己設定。
+    effects:
+      - "作品固有の文体的個性の確立"
+      - "制約が創造性を引き出す"
+    requirement: "ルールを作品内で宣言・一貫して適用すること"
+    compiler_integration:
+      style_rules:
+        declaration_required: true
+        consistency_check: true
+      action: warning
+      trigger: "宣言されたルールからの逸脱を検出したとき"
+      message: >
+        凝った文章の自己ルールからの逸脱が検出されました。
+        意図的な逸脱ですか？ 意図的でなければ修正してください。

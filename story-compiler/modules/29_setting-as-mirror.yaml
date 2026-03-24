@@ -1,0 +1,99 @@
+# ============================================================
+# Module: Setting as Mirror (場の感覚)
+# Source: David Lodge "The Art of Fiction" — Chapter 12, 18
+# Version: 0.1
+# ============================================================
+# 場所の描写は「どこにいるか」の情報提示ではない。
+# キャラクターの内面・テーマ・価値軸・天気（象徴）と
+# 有機的に接続して初めて「場の感覚」が生まれる。
+# アルゴリズム設計図: story-compiler/diagrams/29_setting-as-mirror.drawio
+# ============================================================
+
+module_id: setting_as_mirror
+module_name: "場の感覚（Setting as Mirror）"
+source: "David Lodge 'The Art of Fiction' Chapters 12, 18"
+
+# ============================================================
+# 場の感覚の判定モデル
+# ============================================================
+evaluation_model:
+
+  step_1_role_check:
+    question: "この場所の描写は何をしているか？"
+    options:
+      informational:
+        description: "単なる情報提示（どこにいるかの説明のみ）"
+        result: WARNING — 場の感覚なし
+      functional:
+        description: "何か（内面・テーマ・価値軸・象徴）と接続している"
+        result: step_2へ進む
+
+  step_2_connection_check:
+    question: "何と接続しているか？（複数選択可）"
+    axes:
+      character_inner:
+        description: "キャラクターの内面（感情・欲望・恐れ・自己欺瞞）"
+      controlling_concept:
+        description: "テーマ・統制概念（Controlling Concept）"
+      value_axis:
+        description: "物語の価値軸（価値の状態と対応）"
+      weather_sensory:
+        description: "天気・感覚的要素（象徴的機能）"
+        note: "Lodge Chapter 18 — 天気はキャラ・テーマと同期させる象徴手段"
+
+  step_3_direction_check:
+    question: "接続の方向は？"
+    directions:
+      mirror:
+        name: "鏡（増幅）"
+        description: "場がキャラの状態を反射・強調する"
+        example: "孤独なキャラ ← 廃れた街角"
+      contrast:
+        name: "対比（対置）"
+        description: "場がキャラの状態と正反対を示す"
+        example: "絶望のキャラ ← 賑やかな祭り"
+      symbol:
+        name: "象徴（メタファー）"
+        description: "場が抽象的な意味を担う"
+        example: "腐敗のテーマ ← 朽ちた建物"
+
+  step_4_depth_check:
+    question: "接続の深度は？"
+    levels:
+      multilayer:
+        description: "複数の軸で同時に機能している"
+        result: EXCELLENT — 場の感覚が多層的に機能
+      single_layer:
+        description: "単一の軸のみ"
+        result: INFO — 基本レベル、追加の意味層を検討できる
+
+# ============================================================
+# コンパイル検証ルール
+# ============================================================
+compile_time_checks:
+
+  setting_purely_informational:
+    description: "場所の描写が情報提示のみで機能的接続がない"
+    action: warning
+    message: >
+      場所の描写が「どこにいるか」の説明にとどまっています。
+      場の感覚を生むために以下を検討してください：
+      ① キャラクターの内面状態と場所の質感を接続する
+      ② テーマ・統制概念を場所に投影する
+      ③ 天気・光・音・気温で感情や価値を象徴する
+
+  weather_without_symbolic_function:
+    description: "天気の描写があるが象徴的機能が設計されていない"
+    action: info
+    message: >
+      天気の描写があります。
+      この天気はキャラクターの感情状態・テーマと対応していますか？
+      意図的でない場合、読者に誤ったシグナルを送る可能性があります。
+
+  setting_described_without_character_context:
+    description: "場所描写がキャラの内面状態の定義なしに行われている"
+    action: info
+    message: >
+      このシーンでキャラクターの内面状態（感情・欲望・恐れ）が
+      定義されていないまま場所を描写しています。
+      場と内面を接続するには、まず内面状態を定義してください。

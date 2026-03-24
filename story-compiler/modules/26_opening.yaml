@@ -1,0 +1,86 @@
+# ============================================================
+# Module: Opening Validation (書き出し検証)
+# Source: David Lodge "The Art of Fiction" — Chapter 1
+# Version: 0.1
+# ============================================================
+# 書き出しは「引き摺り込む」という大役を持つ。
+# 読者は設定・人物を頭に入れるコストを払いながら、
+# それだけの価値があるかを無意識に判定している。
+# コンパイラはこのトレードオフを検証する。
+# ============================================================
+
+module_id: opening_validation
+module_name: "書き出し検証（Opening Validation）"
+source: "David Lodge 'The Art of Fiction' Chapter 1"
+
+# ============================================================
+# 読者コスト vs エンゲージメント のモデル
+# ============================================================
+cost_vs_engagement_model:
+  description: >
+    書き出しで読者にかかるコスト（記憶負荷）と、
+    読みたいと思わせる力（エンゲージメント）のバランスを検証する。
+    engagement_score >= reader_cost_score でなければ warning。
+
+  reader_cost_factors:
+    new_characters_introduced:
+      description: "冒頭に登場する新しい人物の数"
+      scoring: "1人あたり+0.15（上限0.6）"
+    new_settings_introduced:
+      description: "冒頭で提示される舞台設定の情報量"
+      scoring: "シンプル+0.0 / 複合+0.2 / 複雑+0.4"
+    unfamiliar_terminology:
+      description: "読者が覚えるべき造語・専門用語・固有名詞の数"
+      scoring: "1語あたり+0.1（上限0.5）"
+    narrative_complexity:
+      description: "文体の複雑さ（非線形時系列・多視点・実験的文体等）"
+      scoring: "線形+0.0 / 非線形+0.2 / 断片+0.4"
+
+  engagement_factors:
+    question_planted:
+      description: "冒頭で読者の中に問いが生まれているか（好奇心喚起）"
+      scoring: "なし+0.0 / 弱い問い+0.2 / 強い問い+0.4"
+    stakes_implied:
+      description: "何かが懸かっていることが暗示されているか"
+      scoring: "なし+0.0 / 弱い+0.15 / 明確+0.3"
+    character_hook:
+      description: "人物に興味を持たせる要素（独自性・謎・共感）があるか"
+      scoring: "なし+0.0 / 弱い+0.15 / 強い+0.3"
+    voice_distinctiveness:
+      description: "語りの声に個性・独自性があるか"
+      scoring: "凡庸+0.0 / 特徴的+0.2 / 強烈+0.4"
+
+# ============================================================
+# コンパイル検証ルール
+# ============================================================
+compile_time_checks:
+
+  engagement_below_cost:
+    description: >
+      engagement_score < reader_cost_score の状態。
+      読者に払わせるコストに見合う引力がない。
+    action: warning
+    message: >
+      書き出しの「読者コスト」が「エンゲージメント」を上回っています。
+      登場人物・設定・造語を減らすか、問い・賭け・声の強さを高めてください。
+
+  no_question_planted:
+    description: "書き出しに読者の問いが一切生まれていない"
+    action: warning
+    message: >
+      書き出しに「問い」が仕掛けられていません。
+      読者が「次はどうなるか」「これは何か」と引っ張られる要素を加えてください。
+
+  character_count_overload:
+    description: "冒頭4人以上の新キャラクターが登場する"
+    action: warning
+    message: >
+      書き出しに多すぎる人物が登場しています（4人以上）。
+      読者の記憶負荷が高くなります。整理を検討してください。
+
+  no_engagement_factors:
+    description: "エンゲージメント要素がすべてゼロ"
+    action: compile_error
+    message: >
+      書き出しに引力がありません。
+      問い・賭け・人物フック・声の個性のいずれかが必須です。

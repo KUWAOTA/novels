@@ -88,6 +88,21 @@ hole_detection:
         偶然に依存した展開が検出されました。
         偶然は物語を開始できるが、解決には使えません。
 
+    coincidence_feels_contrived:
+      description: >
+        偶然が作為的・都合よすぎると感じられる状態。
+        偶然が起きることは許容されるが、
+        「作者が意図的に仕組んだ」と読者に感じさせてはならない。
+        Source: David Lodge "The Art of Fiction" Chapter 33
+      severity: warning
+      message: >
+        この偶然は「作為的」に見えるリスクがあります。
+        偶然に作為が感じられないよう、以下を確認してください:
+        ① その偶然が起きる文脈・背景が自然に準備されているか
+        ② 偶然の前後に伏線（環境描写・人物の言動）が埋め込まれているか
+        ③ retroactive inevitability（振り返ると必然）として成立するか
+        → 関連: 11_surprise.yaml#surprise_without_retroactive_inevitability
+
 # ============================================================
 # 構造レベルの整合性チェック
 # ============================================================

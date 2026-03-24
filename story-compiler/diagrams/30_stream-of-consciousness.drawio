@@ -1,0 +1,147 @@
+<mxGraphModel adaptiveColors="auto" dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- タイトル -->
+    <mxCell id="title" value="意識の流れ（Stream of Consciousness）— 概念と2つの表現手法" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="200" y="20" width="900" height="40" as="geometry" />
+    </mxCell>
+
+    <!-- ========== 上段：意識の流れとは何か ========== -->
+    <mxCell id="concept_label" value="【意識の流れとは何か】" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="60" y="80" width="300" height="30" as="geometry" />
+    </mxCell>
+
+    <!-- 意識の流れ本体 -->
+    <mxCell id="soc" value="意識の流れ&#xa;（Stream of Consciousness）&#xa;&#xa;人間の内側で時刻とともに&#xa;絶え間なく変化し続けている&#xa;思考・感覚・感情の連続体。&#xa;論理的ではなく、断片的で、&#xa;連想的に流れる。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="60" y="120" width="260" height="140" as="geometry" />
+    </mxCell>
+
+    <!-- 小説との関係 -->
+    <mxCell id="relation" value="小説における役割&#xa;&#xa;意識の流れを描くことで、&#xa;読者をキャラクターの&#xa;主観的体験の中に「引きずり込む」。&#xa;外部の出来事より&#xa;内的体験を中心に据える手法。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="380" y="120" width="260" height="140" as="geometry" />
+    </mxCell>
+
+    <!-- soc → relation -->
+    <mxCell id="e_sr" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="soc" target="relation" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- 2つの表現手法 -->
+    <mxCell id="methods_label" value="【文章での表現手法（2種類）】" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="60" y="310" width="400" height="30" as="geometry" />
+    </mxCell>
+
+    <!-- ========== 左：内的独白 ========== -->
+    <mxCell id="im_header" value="① 内的独白&#xa;（Interior Monologue）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="60" y="350" width="260" height="60" as="geometry" />
+    </mxCell>
+
+    <mxCell id="im_what" value="何をするか&#xa;&#xa;キャラクターの意識を&#xa;フィルタなしで直接読者に流し込む。&#xa;「私は〜と思った」ではなく、&#xa;思考そのものを文章にする。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffde7;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="60" y="430" width="260" height="100" as="geometry" />
+    </mxCell>
+
+    <mxCell id="im_person" value="人称：一人称 or 三人称限定" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffde7;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="60" y="550" width="260" height="40" as="geometry" />
+    </mxCell>
+
+    <mxCell id="im_effect" value="効果&#xa;• 深い内面への没入感&#xa;• 読者がキャラと一体化する&#xa;• 断片的・非論理的な表現が可能" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fffde7;strokeColor=#d6b656;fontSize=11;align=left;" vertex="1" parent="1">
+      <mxGeometry x="60" y="610" width="260" height="80" as="geometry" />
+    </mxCell>
+
+    <mxCell id="im_cost" value="⚠ コスト&#xa;描写が細かくなるため&#xa;物語の進行が遅くなる（大きなデメリット）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcccc;strokeColor=#cc0000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="60" y="710" width="260" height="60" as="geometry" />
+    </mxCell>
+
+    <mxCell id="im_example" value="例（内的独白）&#xa;「腹が減った。いや、違う。腹じゃない。&#xa;あの顔だ。また出てきた。消えろ。&#xa;消えるわけない。ずっとここにいる。」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffefc1;strokeColor=#d6b656;fontSize=11;fontStyle=2;" vertex="1" parent="1">
+      <mxGeometry x="60" y="790" width="260" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- 内的独白フロー矢印 -->
+    <mxCell id="e_im1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="im_header" target="im_what" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e_im2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="im_what" target="im_person" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e_im3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="im_person" target="im_effect" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e_im4" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="im_effect" target="im_cost" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e_im5" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="im_cost" target="im_example" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ========== 右：自由間接文体 ========== -->
+    <mxCell id="fid_header" value="② 自由間接文体&#xa;（Free Indirect Discourse）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="400" y="350" width="280" height="60" as="geometry" />
+    </mxCell>
+
+    <mxCell id="fid_what" value="何をするか&#xa;&#xa;三人称の語り手が存在するが、&#xa;その語り手がキャラの意識に&#xa;「溶け込む」ように描写する。&#xa;「彼女は〜と思った」ではなく、&#xa;語り手の声とキャラの意識が&#xa;境界なく混ざり合う。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e8ff;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="400" y="430" width="280" height="120" as="geometry" />
+    </mxCell>
+
+    <mxCell id="fid_person" value="人称：三人称（しかし内側から）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e8ff;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="400" y="570" width="280" height="40" as="geometry" />
+    </mxCell>
+
+    <mxCell id="fid_effect" value="効果&#xa;• 語り手の客観性と内面への没入を両立&#xa;• 読者をキャラの生活に自然に引き込む&#xa;• 「得体のしれぬ語り手」の感覚&#xa;• 内的独白より進行速度を保ちやすい" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e8ff;strokeColor=#9673a6;fontSize=11;align=left;" vertex="1" parent="1">
+      <mxGeometry x="400" y="630" width="280" height="100" as="geometry" />
+    </mxCell>
+
+    <mxCell id="fid_key" value="✅ ポイント：声の境界の曖昧さ&#xa;語り手の声とキャラの意識の&#xa;どちらがしゃべっているか&#xa;読者にはっきり分からない状態が理想" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8d5f0;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="400" y="750" width="280" height="80" as="geometry" />
+    </mxCell>
+
+    <mxCell id="fid_example" value="例（自由間接文体）&#xa;「彼女は窓の外を見た。雨だった。&#xa;また雨か。傘を持ってくればよかった。&#xa;いや、傘なんてどうでもいい。&#xa;あの人のことが、頭から離れない。」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ead5f5;strokeColor=#9673a6;fontSize=11;fontStyle=2;" vertex="1" parent="1">
+      <mxGeometry x="400" y="850" width="280" height="90" as="geometry" />
+    </mxCell>
+
+    <!-- 自由間接文体フロー矢印 -->
+    <mxCell id="e_fid1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="fid_header" target="fid_what" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e_fid2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="fid_what" target="fid_person" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e_fid3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="fid_person" target="fid_effect" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e_fid4" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="fid_effect" target="fid_key" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e_fid5" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="fid_key" target="fid_example" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- 関係する上部への接続 -->
+    <mxCell id="e_rel_im" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="relation" target="im_header" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e_rel_fid" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="relation" target="fid_header" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ========== 右：比較まとめ ========== -->
+    <mxCell id="compare_label" value="【比較まとめ】" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="730" y="350" width="300" height="30" as="geometry" />
+    </mxCell>
+
+    <mxCell id="compare" value="比較項目　　　　|　内的独白　　|　自由間接文体&#xa;───────────────────────────&#xa;人称　　　　　　| 一・三人称　|　三人称&#xa;語り手の存在　　| ほぼなし　　|　薄くあり（溶け込む）&#xa;進行の速さ　　　| 遅い　　　　|　比較的速い&#xa;没入の強さ　　　| 非常に強い　|　強い（自然な形で）&#xa;フィルタ　　　　| なし（生の意識）|　薄いフィルタあり&#xa;読みやすさ　　　| 難しい場合あり|　読みやすい&#xa;断片性・非論理　| 高い　　　　|　中程度" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=11;align=left;fontFamily=monospace;" vertex="1" parent="1">
+      <mxGeometry x="730" y="390" width="560" height="190" as="geometry" />
+    </mxCell>
+
+    <!-- コンパイラへの組み込み示唆 -->
+    <mxCell id="compiler_label" value="【コンパイラへの組み込み示唆】" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="730" y="610" width="400" height="30" as="geometry" />
+    </mxCell>
+
+    <mxCell id="compiler" value="① 内的独白を使用中 → 進行速度低下の警告&#xa;　（27_show-vs-tell.yaml と連動：描写の密度チェック）&#xa;&#xa;② 自由間接文体を使用中 → 声の境界チェック&#xa;　「これは語り手の声か、キャラの意識か」が&#xa;　曖昧になっているかを確認する&#xa;&#xa;③ 28_pov.yaml との連動&#xa;　POVが first_person / free_indirect_discourse の場合、&#xa;　意識の流れモジュールを自動で有効化&#xa;&#xa;④ どちらも使わずに内面を説明口調で書いている場合&#xa;　→ INFO：意識の流れ手法の適用を検討してください" style="rounded=1;whiteSpace=wrap;html=1;fillColor=default;strokeColor=default;fontSize=11;align=left;" vertex="1" parent="1">
+      <mxGeometry x="730" y="650" width="560" height="220" as="geometry" />
+    </mxCell>
+
+  </root>
+</mxGraphModel>

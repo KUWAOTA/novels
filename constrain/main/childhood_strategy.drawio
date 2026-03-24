@@ -1,0 +1,1163 @@
+<mxfile host="65bd71144e">
+    <diagram name="Page 1: レイヤー構造と現在地" id="layer-structure">
+        <mxGraphModel dx="18" dy="464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title1" value="McKee 6層レイヤー構造 × childhood 現在地" style="text;html=1;fontSize=20;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="20" width="700" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="subtitle1" value="緑=充足 / 赤=欠落 / 黄=一部のみ" style="text;html=1;fontSize=12;fontColor=#888888;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="55" width="700" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow_abs" value="抽象" style="text;html=1;fontSize=14;fontStyle=1;fontColor=#666666;align=center;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="80" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow_con" value="具体" style="text;html=1;fontSize=14;fontStyle=1;fontColor=#666666;align=center;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="640" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="arrow_line" style="endArrow=classic;startArrow=classic;strokeColor=#999999;strokeWidth=2;endSize=8;startSize=8;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="60" y="115" as="sourcePoint"/>
+                        <mxPoint x="60" y="640" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="L1" value="&lt;b style=&#39;font-size:15px&#39;&gt;Story&lt;/b&gt;&lt;br&gt;統制概念 / クライマックスの形&lt;br&gt;&lt;i&gt;「なぜこの話を語るのか」&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=12;strokeWidth=2;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="90" width="300" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="S1" value="✅ 統制概念あり&lt;br&gt;✅ 5ACT構造あり" style="text;html=1;fontSize=12;align=left;fontColor=#28A745;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="95" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="L2" value="&lt;b style=&#39;font-size:15px&#39;&gt;Act&lt;/b&gt;&lt;br&gt;幕構造 / 大きな価値変化&lt;br&gt;&lt;i&gt;「何幕で、何が変わるか」&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=12;strokeWidth=2;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="200" width="300" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="S2" value="✅ current_plot.md に定義済み" style="text;html=1;fontSize=12;align=left;fontColor=#28A745;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="215" width="280" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="L3" value="&lt;b style=&#39;font-size:15px&#39;&gt;Sequence&lt;/b&gt;&lt;br&gt;シーンの連なり / 小クライマックス&lt;br&gt;&lt;i&gt;「どの順で見せるか」&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=12;strokeWidth=3;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="310" width="300" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="S3" value="❌ 設計なし（予測のみ）" style="text;html=1;fontSize=13;align=left;fontColor=#C0392B;fontStyle=1;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="310" width="280" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="S3b" value="← 問題の核心：橋の真ん中が空いている" style="text;html=1;fontSize=12;align=left;fontColor=#C0392B;fontStyle=2;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="345" width="350" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="L4" value="&lt;b style=&#39;font-size:15px&#39;&gt;Scene&lt;/b&gt;&lt;br&gt;価値変化の最小完結単位&lt;br&gt;&lt;i&gt;「何が起きるか」&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=#FFC107;fontSize=12;strokeWidth=2;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="420" width="300" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="S4" value="△ 冒頭シーンの意図のみ" style="text;html=1;fontSize=12;align=left;fontColor=#856404;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="435" width="250" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="L5" value="&lt;b style=&#39;font-size:15px&#39;&gt;Beat&lt;/b&gt;&lt;br&gt;アクション / リアクション&lt;br&gt;&lt;i&gt;「どう起きるか」&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=#FFC107;fontSize=12;strokeWidth=2;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="530" width="300" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="S5" value="△ 冒頭3文のみ" style="text;html=1;fontSize=12;align=left;fontColor=#856404;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="545" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="L6" value="&lt;b style=&#39;font-size:15px&#39;&gt;Text&lt;/b&gt;&lt;br&gt;語彙 / リズム / 比喩&lt;br&gt;&lt;i&gt;「どの言葉で書くか」&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=12;strokeWidth=2;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="640" width="300" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="S6" value="✅ 冒頭3文を書いた（声の検証済み）" style="text;html=1;fontSize=12;align=left;fontColor=#28A745;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="655" width="300" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#BBBBBB;strokeWidth=1;endArrow=classic;endSize=5;" parent="1" source="L1" target="L2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#BBBBBB;strokeWidth=1;endArrow=classic;endSize=5;" parent="1" source="L2" target="L3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e34" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#BBBBBB;strokeWidth=1;endArrow=classic;endSize=5;" parent="1" source="L3" target="L4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e45" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#BBBBBB;strokeWidth=1;endArrow=classic;endSize=5;" parent="1" source="L4" target="L5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e56" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#BBBBBB;strokeWidth=1;endArrow=classic;endSize=5;" parent="1" source="L5" target="L6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="bridge_note" value="上（Story/Act）と下（Text）はあるが&lt;br&gt;&lt;b&gt;中間（Sequence）がない&lt;/b&gt;&lt;br&gt;＝ 橋の両端だけで真ん中が空いている" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fillColor=#FFF3CD;strokeColor=#C0392B;strokeWidth=2;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="760" y="260" width="280" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="bridge_arrow" style="endArrow=classic;strokeColor=#C0392B;strokeWidth=2;dashed=1;endSize=6;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="760" y="330" as="sourcePoint"/>
+                        <mxPoint x="425" y="345" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram name="Page 2: 2点アンカー＋振り子モデル" id="pendulum-model">
+        <mxGraphModel dx="506" dy="464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title2" value="2点アンカー＋振り子モデル" style="text;html=1;fontSize=20;fontStyle=1;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="20" width="900" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="sec1_title" value="■ Step 1: Spine（背骨）— 2点だけ固定する" style="text;html=1;fontSize=14;fontStyle=1;align=left;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="70" width="500" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="anchor1" value="&lt;b style=&#39;font-size:14px&#39;&gt;契機事件&lt;/b&gt;&lt;br&gt;Inciting Incident&lt;br&gt;&lt;br&gt;&lt;i&gt;均衡の破壊&lt;/i&gt;&lt;br&gt;&lt;i&gt;欲望の生成&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C0392B;fontColor=#FFFFFF;strokeColor=#922B21;fontSize=12;strokeWidth=2;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="110" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="anchor1_note" value="🔒 固定" style="text;html=1;fontSize=11;fontStyle=1;fontColor=#C0392B;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="215" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="seq1" value="Seq.1&lt;br&gt;&lt;i&gt;価値変化1行&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FD;strokeColor=#5DADE2;fontSize=11;strokeWidth=1;dashed=1;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="260" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="seq2" value="Seq.2&lt;br&gt;&lt;i&gt;価値変化1行&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FD;strokeColor=#5DADE2;fontSize=11;strokeWidth=1;dashed=1;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="seq3" value="Seq.3&lt;br&gt;&lt;i&gt;価値変化1行&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FD;strokeColor=#5DADE2;fontSize=11;strokeWidth=1;dashed=1;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="seq4" value="Seq.4&lt;br&gt;&lt;i&gt;価値変化1行&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4FD;strokeColor=#5DADE2;fontSize=11;strokeWidth=1;dashed=1;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="740" y="130" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="seq_note" value="破線 ＝ 仮説（書きながら変えてよい）" style="text;html=1;fontSize=11;fontColor=#5DADE2;fontStyle=2;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="195" width="300" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="anchor2" value="&lt;b style=&#39;font-size:14px&#39;&gt;クライマックス&lt;/b&gt;&lt;br&gt;Climax&lt;br&gt;&lt;br&gt;&lt;i&gt;統制概念の試練&lt;/i&gt;&lt;br&gt;&lt;i&gt;最大の価値変化&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C0392B;fontColor=#FFFFFF;strokeColor=#922B21;fontSize=12;strokeWidth=2;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="920" y="110" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="anchor2_note" value="🔒 固定" style="text;html=1;fontSize=11;fontStyle=1;fontColor=#C0392B;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="920" y="215" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="spine_line" style="endArrow=classic;startArrow=classic;strokeColor=#C0392B;strokeWidth=3;dashed=0;endSize=6;startSize=6;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="160" as="sourcePoint"/>
+                        <mxPoint x="920" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="spine_label" value="Spine（背骨）" style="text;html=1;fontSize=11;fontStyle=1;fontColor=#C0392B;align=center;labelBackgroundColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="145" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_a1_s1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#999999;endArrow=classic;endSize=4;" parent="1" source="anchor1" target="seq1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_s1_s2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#999999;endArrow=classic;endSize=4;" parent="1" source="seq1" target="seq2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_s2_s3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#999999;endArrow=classic;endSize=4;" parent="1" source="seq2" target="seq3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_s3_s4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#999999;endArrow=classic;endSize=4;" parent="1" source="seq3" target="seq4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_s4_a2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeColor=#999999;endArrow=classic;endSize=4;" parent="1" source="seq4" target="anchor2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="sec2_title" value="■ Step 2-3: 振り子（Pendulum）— 書く⇄検証を繰り返す" style="text;html=1;fontSize=14;fontStyle=1;align=left;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="260" width="600" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_spine" value="&lt;b&gt;Spine&lt;/b&gt;&lt;br&gt;2点を仮定" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=12;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="310" width="130" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_seq1" value="&lt;b&gt;Sequence&lt;/b&gt;&lt;br&gt;1行の価値変化" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6EAF8;strokeColor=#5DADE2;fontSize=12;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="380" width="130" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_scene1" value="&lt;b&gt;Scene&lt;/b&gt;&lt;br&gt;シーンを書く" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5F5E3;strokeColor=#28A745;fontSize=12;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="450" width="130" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_check1" value="&lt;b&gt;検証&lt;/b&gt;&lt;br&gt;Seq.と整合？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FCF3CF;strokeColor=#F39C12;fontSize=11;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="355" width="130" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_scene2" value="&lt;b&gt;Scene&lt;/b&gt;&lt;br&gt;次のシーンへ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5F5E3;strokeColor=#28A745;fontSize=12;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="450" width="130" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_spine_check" value="&lt;b&gt;Spine検証&lt;/b&gt;&lt;br&gt;全体と整合？" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=11;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="310" width="140" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="ep1" value="↘ 降りる" style="endArrow=classic;strokeColor=#5DADE2;strokeWidth=2;endSize=6;fontColor=#5DADE2;fontSize=10;labelBackgroundColor=none;" parent="1" source="p_spine" target="p_seq1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ep2" value="↘ 降りる" style="endArrow=classic;strokeColor=#28A745;strokeWidth=2;endSize=6;fontColor=#28A745;fontSize=10;labelBackgroundColor=none;" parent="1" source="p_seq1" target="p_scene1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ep3" value="↗ 戻る" style="endArrow=classic;strokeColor=#F39C12;strokeWidth=2;endSize=6;fontColor=#F39C12;fontSize=10;labelBackgroundColor=none;" parent="1" source="p_scene1" target="p_check1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ep4" value="OK→次へ" style="endArrow=classic;strokeColor=#28A745;strokeWidth=2;endSize=6;fontColor=#28A745;fontSize=10;labelBackgroundColor=none;" parent="1" source="p_check1" target="p_scene2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ep5" value="NG→Seq.修正" style="endArrow=classic;strokeColor=#E74C3C;strokeWidth=2;endSize=6;dashed=1;fontColor=#E74C3C;fontSize=10;labelBackgroundColor=none;" parent="1" source="p_check1" target="p_seq1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="675" y="310"/>
+                            <mxPoint x="295" y="310"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ep6" value="↗ 全体検証" style="endArrow=classic;strokeColor=#C0392B;strokeWidth=2;endSize=6;fontColor=#C0392B;fontSize=10;labelBackgroundColor=none;" parent="1" source="p_scene2" target="p_spine_check" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ep7" value="NG→Spine修正" style="endArrow=classic;strokeColor=#E74C3C;strokeWidth=2;endSize=6;dashed=1;fontColor=#E74C3C;fontSize=10;labelBackgroundColor=none;" parent="1" source="p_spine_check" target="p_spine" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1030" y="280"/>
+                            <mxPoint x="105" y="280"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="key_principle" value="&lt;b style=&#39;font-size:13px&#39;&gt;核心原則&lt;/b&gt;&lt;br&gt;&lt;br&gt;振り子は「上」を修正することを恐れない。&lt;br&gt;Spine は「杭」ではなく「仮の杭」。&lt;br&gt;書くことで杭の位置が正確になっていく。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F9EBEA;strokeColor=#C0392B;fontSize=12;strokeWidth=2;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="540" width="420" height="90" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram name="Page 3: アプローチ比較" id="comparison">
+        <mxGraphModel dx="1215" dy="607" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="700" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title3" value="3つのアプローチ比較" style="text;html=1;fontSize=20;fontStyle=1;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="20" width="900" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="col1_header" value="&lt;b&gt;× ウォーターフォール&lt;/b&gt;&lt;br&gt;（全部決めてから書く）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=13;strokeWidth=2;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="80" width="300" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="col1_s" value="Story" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8E8E8;strokeColor=#999999;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="170" width="100" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="col1_a" value="Act" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8E8E8;strokeColor=#999999;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="225" width="100" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="col1_sq" value="Sequence" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8E8E8;strokeColor=#999999;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="280" width="100" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="col1_sc" value="Scene" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8E8E8;strokeColor=#999999;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="335" width="100" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="col1_t" value="Text" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8E8E8;strokeColor=#999999;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="390" width="100" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="col1_e1" style="endArrow=classic;strokeColor=#999999;strokeWidth=1;endSize=4;" parent="1" source="col1_s" target="col1_a" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="col1_e2" style="endArrow=classic;strokeColor=#999999;strokeWidth=1;endSize=4;" parent="1" source="col1_a" target="col1_sq" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="col1_e3" style="endArrow=classic;strokeColor=#999999;strokeWidth=1;endSize=4;" parent="1" source="col1_sq" target="col1_sc" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="col1_e4" style="endArrow=classic;strokeColor=#999999;strokeWidth=1;endSize=4;" parent="1" source="col1_sc" target="col1_t" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="col1_problem" value="問題：書けない話を&lt;br&gt;構成してしまう" style="text;html=1;fontSize=11;fontColor=#C0392B;fontStyle=2;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="440" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="col1_arrow_label" value="一方通行 ↓" style="text;html=1;fontSize=10;fontColor=#999999;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="260" y="280" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="col2_header" value="&lt;b&gt;× 脳死ボトムアップ&lt;/b&gt;&lt;br&gt;（書いてから構成を予測）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=#FFC107;fontSize=13;strokeWidth=2;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="80" width="300" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="col2_t" value="Text" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8E8E8;strokeColor=#999999;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="170" width="100" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="col2_sc" value="Scene" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8E8E8;strokeColor=#999999;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="225" width="100" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="col2_sq" value="Sequence?" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8E8E8;strokeColor=#999999;fontSize=11;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="280" width="100" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="col2_a" value="Act?" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8E8E8;strokeColor=#999999;fontSize=11;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="335" width="100" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="col2_s" value="Story?" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8E8E8;strokeColor=#999999;fontSize=11;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="390" width="100" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="col2_e1" style="endArrow=classic;strokeColor=#999999;strokeWidth=1;endSize=4;" parent="1" source="col2_t" target="col2_sc" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="col2_e2" style="endArrow=classic;strokeColor=#999999;strokeWidth=1;endSize=4;dashed=1;" parent="1" source="col2_sc" target="col2_sq" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="col2_e3" style="endArrow=classic;strokeColor=#999999;strokeWidth=1;endSize=4;dashed=1;" parent="1" source="col2_sq" target="col2_a" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="col2_e4" style="endArrow=classic;strokeColor=#999999;strokeWidth=1;endSize=4;dashed=1;" parent="1" source="col2_a" target="col2_s" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="col2_problem" value="問題：ゴールのない航路&lt;br&gt;上層が「予測」にすぎない" style="text;html=1;fontSize=11;fontColor=#856404;fontStyle=2;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="440" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="col2_arrow_label" value="一方通行 ↓&lt;br&gt;上は予測" style="text;html=1;fontSize=10;fontColor=#999999;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="280" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="col3_header" value="&lt;b&gt;○ 2点アンカー＋振り子&lt;/b&gt;&lt;br&gt;（仮説を置いて書き、検証し、修正する）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=13;strokeWidth=2;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="770" y="80" width="340" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="col3_spine" value="Spine&lt;br&gt;(2点固定)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="170" width="110" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="col3_sq" value="Sequence&lt;br&gt;(1行ずつ)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6EAF8;strokeColor=#5DADE2;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="240" width="110" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="col3_sc" value="Scene&lt;br&gt;(書く)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5F5E3;strokeColor=#28A745;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="310" width="110" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="col3_check" value="検証" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FCF3CF;strokeColor=#F39C12;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="375" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="col3_down1" style="endArrow=classic;strokeColor=#28A745;strokeWidth=2;endSize=5;" parent="1" source="col3_spine" target="col3_sq" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="col3_down2" style="endArrow=classic;strokeColor=#28A745;strokeWidth=2;endSize=5;" parent="1" source="col3_sq" target="col3_sc" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="col3_down3" style="endArrow=classic;strokeColor=#28A745;strokeWidth=2;endSize=5;" parent="1" source="col3_sc" target="col3_check" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="col3_up1" value="修正" style="endArrow=classic;strokeColor=#E74C3C;strokeWidth=2;endSize=5;dashed=1;fontColor=#E74C3C;fontSize=10;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="860" y="395" as="sourcePoint"/>
+                        <mxPoint x="860" y="265" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="col3_up2" value="修正" style="endArrow=classic;strokeColor=#E74C3C;strokeWidth=2;endSize=5;dashed=1;fontColor=#E74C3C;fontSize=10;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="850" y="390" as="sourcePoint"/>
+                        <mxPoint x="850" y="195" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="col3_label_down" value="↓ 降りる" style="text;html=1;fontSize=10;fontColor=#28A745;fontStyle=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="990" y="260" width="70" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="col3_label_up" value="↑ 戻る" style="text;html=1;fontSize=10;fontColor=#E74C3C;fontStyle=1;align=right;" parent="1" vertex="1">
+                    <mxGeometry x="790" y="290" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="col3_merit" value="双方向の行き来で&lt;br&gt;設計と執筆が同時に育つ" style="text;html=1;fontSize=11;fontColor=#28A745;fontStyle=2;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="830" y="440" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="books_title" value="&lt;b&gt;各参考書の位置づけ&lt;/b&gt;" style="text;html=1;fontSize=13;fontStyle=1;align=center;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="510" width="900" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="book_mckee" value="McKee &quot;Story&quot;&lt;br&gt;TD 70 : BU 30" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF5FB;strokeColor=#2980B9;fontSize=11;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="550" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="book_stc" value="SAVE THE CAT&lt;br&gt;TD 80 : BU 20" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF5FB;strokeColor=#2980B9;fontSize=11;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="550" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="book_truby" value="ストーリーの解剖学&lt;br&gt;TD 60 : BU 40" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF5FB;strokeColor=#2980B9;fontSize=11;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="550" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="book_char" value="McKee &quot;Character&quot;&lt;br&gt;TD 50 : BU 50" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF5FB;strokeColor=#2980B9;fontSize=11;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="670" y="550" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="book_lodge" value="小説の技巧&lt;br&gt;TD 20 : BU 80" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF5FB;strokeColor=#2980B9;fontSize=11;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="880" y="550" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="gradient_line" style="endArrow=classic;startArrow=classic;strokeColor=#2980B9;strokeWidth=2;endSize=6;startSize=6;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="40" y="620" as="sourcePoint"/>
+                        <mxPoint x="1060" y="620" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="grad_left" value="トップダウン寄り" style="text;html=1;fontSize=10;fontColor=#2980B9;fontStyle=2;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="625" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="grad_right" value="ボトムアップ寄り" style="text;html=1;fontSize=10;fontColor=#2980B9;fontStyle=2;align=right;" parent="1" vertex="1">
+                    <mxGeometry x="940" y="625" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="grad_recommend" value="▲ 推奨ゾーン" style="text;html=1;fontSize=11;fontColor=#28A745;fontStyle=1;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="625" width="120" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram name="Page 4: Spine構成部品 全概念マップ" id="spine-parts">
+        <mxGraphModel dx="506" dy="464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="p4_title" value="Spine（背骨）の構成部品 — McKee全概念マップ" style="text;html=1;fontSize=20;fontStyle=1;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="15" width="1200" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_subtitle" value="出典: McKee &quot;Story&quot; + McKee &quot;Character&quot;（★印は &quot;Character&quot; 由来）" style="text;html=1;fontSize=11;fontColor=#888888;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="48" width="1200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_spine_label" value="Spine（背骨）= 契機事件からクライマックスまでの因果の線" style="text;html=1;fontSize=13;fontStyle=5;fontColor=#C0392B;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="80" width="1000" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_spine_line" style="endArrow=classic;strokeColor=#C0392B;strokeWidth=4;endSize=8;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="170" as="sourcePoint"/>
+                        <mxPoint x="1200" y="170" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="p4_ii" value="&lt;b style=&#39;font-size:14px&#39;&gt;契機事件&lt;/b&gt;&lt;br&gt;Inciting Incident&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;① 均衡を破壊する&lt;br&gt;② 欲望を生じさせる&lt;br&gt;③ 25%以内に配置&lt;br&gt;④ 伏線→回収を持つ&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=12;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="110" width="200" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_climax" value="&lt;b style=&#39;font-size:14px&#39;&gt;クライマックス&lt;/b&gt;&lt;br&gt;Climax&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;① 不可逆の価値変化&lt;br&gt;② 統制概念が体現される&lt;br&gt;③ 因果鎖が完結する&lt;br&gt;④ 期待と結果の最大ギャップ&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=12;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="1100" y="110" width="210" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_balance" value="&lt;b&gt;均衡&lt;/b&gt;&lt;br&gt;Balance&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;主人公が&lt;br&gt;&quot;やっていける&quot;&lt;br&gt;主観的安定状態&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=11;strokeWidth=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="280" width="120" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_e_bal_ii" value="破壊される" style="endArrow=classic;strokeColor=#C0392B;strokeWidth=1;endSize=5;fontColor=#C0392B;fontSize=9;" parent="1" source="p4_balance" target="p4_ii" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_foreshadow" value="&lt;b&gt;伏線&lt;/b&gt;&lt;br&gt;Foreshadowing&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;契機事件の&lt;br&gt;事前仕込み&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=11;strokeWidth=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="220" y="280" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_e_fore_ii" value="回収" style="endArrow=classic;strokeColor=#C0392B;strokeWidth=1;endSize=5;fontColor=#C0392B;fontSize=9;" parent="1" source="p4_foreshadow" target="p4_ii" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_protag_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF5FB;strokeColor=#2980B9;fontSize=12;strokeWidth=2;dashed=0;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="270" width="540" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_protag_title" value="主人公モデル（Protagonist Model）" style="text;html=1;fontSize=14;fontStyle=1;fontColor=#2980B9;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="370" y="275" width="540" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_desire" value="&lt;b style=&#39;font-size:13px&#39;&gt;欲求 (Desire)&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;意識的: 主人公が追い求めるもの&lt;br&gt;無意識的: 本人が気づいていない本当の欲求&lt;br&gt;&lt;b&gt;← 物語のエンジン&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6EAF8;strokeColor=#2980B9;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="310" width="230" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_will" value="&lt;b&gt;意志 (Will)&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;困難に直面して&lt;br&gt;行動を起こす力&lt;br&gt;弱い = 受動的主人公&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6EAF8;strokeColor=#2980B9;fontSize=11;strokeWidth=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="310" width="130" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_disposition" value="&lt;b&gt;性向 (Disposition)&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;世界との関わり方&lt;br&gt;例: 注意深いが臆病&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6EAF8;strokeColor=#2980B9;fontSize=11;strokeWidth=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="810" y="310" width="130" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_cond" value="&lt;b&gt;★ 条件 (Condition)&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;家庭・文化・時代・圧力&lt;br&gt;= 外的環境&lt;br&gt;&lt;b style=&#39;color:#C0392B&#39;&gt;行動を決定しない&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCF3CF;strokeColor=#F39C12;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="430" width="170" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_cond_arrow" value="制約するが&lt;br&gt;決定しない" style="endArrow=classic;strokeColor=#F39C12;strokeWidth=2;endSize=5;dashed=1;fontColor=#F39C12;fontSize=9;" parent="1" source="p4_cond" target="p4_desire" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_choice" value="&lt;b&gt;★ 選択 (Choice)&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;同じ条件でも選択が異なる&lt;br&gt;→ そこに性格が現れる&lt;br&gt;&lt;b style=&#39;color:#2980B9&#39;&gt;欲求が選択を駆動する&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5F5E3;strokeColor=#28A745;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="430" width="170" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_desire_choice" value="駆動する" style="endArrow=classic;strokeColor=#2980B9;strokeWidth=2;endSize=5;fontColor=#2980B9;fontSize=9;" parent="1" source="p4_desire" target="p4_choice" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_layers" value="&lt;b&gt;★ 自己の4層構造&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:9px&#39;&gt;① 社会的自己（最外層）&lt;br&gt;② 個人的自己&lt;br&gt;③ 中核の自己&lt;br&gt;④ 隠れた自己（最深層）&lt;br&gt;&lt;br&gt;圧力で外から剥がれ&lt;br&gt;最深層が露出する&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8DAEF;strokeColor=#7D3C98;fontSize=11;strokeWidth=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="810" y="420" width="140" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_e_ii_desire" value="欲望を生じさせる" style="endArrow=classic;strokeColor=#2980B9;strokeWidth=2;endSize=6;fontColor=#2980B9;fontSize=10;" parent="1" source="p4_ii" target="p4_desire" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_cc" value="&lt;b style=&#39;font-size:13px&#39;&gt;統制概念&lt;/b&gt;&lt;br&gt;Controlling Idea&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;物語が最終的に&lt;br&gt;「証明」する命題&lt;br&gt;&lt;br&gt;クライマックスで&lt;br&gt;&lt;b&gt;体現&lt;/b&gt;される&lt;br&gt;（言語化ではなく体験）&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="1100" y="280" width="170" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_e_cc_climax" value="体現される" style="endArrow=classic;strokeColor=#28A745;strokeWidth=2;endSize=5;fontColor=#28A745;fontSize=9;" parent="1" source="p4_cc" target="p4_climax" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_opp" value="&lt;b&gt;対立概念&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;統制概念に対立する命題&lt;br&gt;交互に優勢になることで&lt;br&gt;教条主義を回避&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=11;strokeWidth=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="1100" y="460" width="170" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_e_cc_opp" value="拮抗" style="endArrow=classic;startArrow=classic;strokeColor=#999999;strokeWidth=1;endSize=4;startSize=4;fontColor=#999999;fontSize=9;" parent="1" source="p4_cc" target="p4_opp" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_value" value="&lt;b style=&#39;font-size:13px&#39;&gt;価値軸 (Value Axis)&lt;/b&gt;" style="text;html=1;fontSize=13;fontStyle=1;fontColor=#333;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="640" width="1000" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_val_line" style="endArrow=classic;startArrow=classic;strokeColor=#666;strokeWidth=3;endSize=8;startSize=8;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="690" as="sourcePoint"/>
+                        <mxPoint x="1200" y="690" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="p4_val_neg" value="&lt;b&gt;−&lt;/b&gt; 価値のマイナス極&lt;br&gt;&lt;i style=&#39;font-size:10px&#39;&gt;例: 孤立・誤解・暴力&lt;/i&gt;" style="text;html=1;fontSize=12;align=left;fontColor=#C0392B;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="700" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_val_pos" value="&lt;b&gt;+&lt;/b&gt; 価値のプラス極&lt;br&gt;&lt;i style=&#39;font-size:10px&#39;&gt;例: つながり・理解・愛&lt;/i&gt;" style="text;html=1;fontSize=12;align=right;fontColor=#28A745;" parent="1" vertex="1">
+                    <mxGeometry x="1000" y="700" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_val_desc" value="各シーンで + か − に動く。横ばいは無効。全体で振幅が増大する。" style="text;html=1;fontSize=11;fontColor=#666;align=center;fontStyle=2;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="700" width="600" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_causal" value="&lt;b&gt;因果鎖 (Causal Chain)&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;event → inner_exposure → choice → action → consequence&lt;br&gt;（出来事 → 内面露出 → 選択 → 行為 → 結果）&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666;fontSize=11;strokeWidth=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="180" width="480" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_causal_note" value="Spine上のすべてのノードはこの因果鎖で繋がる" style="text;html=1;fontSize=10;fontColor=#666;align=center;fontStyle=2;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="140" width="480" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_legend_box" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#CCCCCC;strokeWidth=1;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="770" width="1340" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_legend_title" value="凡例" style="text;html=1;fontSize=11;fontStyle=1;fontColor=#666;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="775" width="60" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_leg1" value="" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="800" width="20" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_leg1t" value="Spine構成要素（Story由来）" style="text;html=1;fontSize=10;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="797" width="180" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_leg2" value="" style="rounded=1;fillColor=#D6EAF8;strokeColor=#2980B9;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="800" width="20" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_leg2t" value="主人公モデル（Story + Character由来）" style="text;html=1;fontSize=10;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="797" width="250" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_leg3" value="" style="rounded=1;fillColor=#FCF3CF;strokeColor=#F39C12;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="800" width="20" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_leg3t" value="★ 条件 — Character由来の概念" style="text;html=1;fontSize=10;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="610" y="797" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_leg4" value="" style="rounded=1;fillColor=#D4EDDA;strokeColor=#28A745;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="830" y="800" width="20" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_leg4t" value="統制概念・価値軸" style="text;html=1;fontSize=10;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="860" y="797" width="140" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_leg5" value="" style="rounded=1;fillColor=#E8DAEF;strokeColor=#7D3C98;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="1020" y="800" width="20" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_leg5t" value="★ 4層圧力モデル（Character由来）" style="text;html=1;fontSize=10;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1050" y="797" width="250" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_leg_note" value="★ = McKee &quot;Character&quot; 由来。&quot;Story&quot; には載っていない概念。" style="text;html=1;fontSize=11;fontStyle=3;fontColor=#F39C12;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="830" width="500" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_e_choice_causal" value="行動になる" style="endArrow=classic;strokeColor=#28A745;strokeWidth=1;endSize=5;fontColor=#28A745;fontSize=9;dashed=1;" parent="1" source="p4_choice" target="p4_causal" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_e_desire_climax" value="欲求が最大限に試される瞬間 = クライマックス" style="endArrow=classic;strokeColor=#C0392B;strokeWidth=2;endSize=6;dashed=1;fontColor=#C0392B;fontSize=10;" parent="1" source="p4_desire" target="p4_climax" edge="1">
+                    <mxGeometry x="0.2807" y="22" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="700" y="115"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram name="Page 5: 欲求導出フロー (Q2詳細)" id="desire-flow">
+        <mxGraphModel dx="528" dy="419" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="p5_title" value="欲求（Desire）導出フロー — 条件の裏返しから独立した欲求へ" style="text;html=1;fontSize=18;fontStyle=1;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="15" width="1300" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2a_box" value="&lt;b style=&#39;font-size:13px&#39;&gt;Step 2-a: 条件の裏返しを書く（出発点）&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCF3CF;strokeColor=#F39C12;fontSize=12;strokeWidth=2;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="70" width="350" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2a_cond" value="&lt;b&gt;条件&lt;/b&gt;&lt;br&gt;父の死で孤立" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=11;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="140" width="130" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2a_arrow" value="裏返し" style="endArrow=classic;strokeColor=#E67E22;strokeWidth=2;endSize=5;fontColor=#E67E22;fontSize=10;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210" y="165" as="sourcePoint"/>
+                        <mxPoint x="270" y="165" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="p5_2a_flip" value="&lt;b&gt;裏返し欲求&lt;/b&gt;&lt;br&gt;「人とつながりたい」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=11;strokeWidth=1;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="140" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2a_warn" value="⚠ これはまだ欲求ではない。出発点にすぎない。" style="text;html=1;fontSize=10;fontColor=#E67E22;fontStyle=2;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="195" width="350" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2b_box" value="&lt;b style=&#39;font-size:13px&#39;&gt;Step 2-b: 「なぜ？」を3回掘る&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6EAF8;strokeColor=#2980B9;fontSize=12;strokeWidth=2;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="70" width="350" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2b_q1" value="「人とつながりたい」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF5FB;strokeColor=#5DADE2;fontSize=11;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="510" y="130" width="170" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2b_why1" value="なぜ？↓" style="text;html=1;fontSize=10;fontColor=#2980B9;fontStyle=1;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="570" y="167" width="60" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2b_q2" value="「一人だと自分が正しいか&lt;br&gt;確認できないから」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF5FB;strokeColor=#5DADE2;fontSize=11;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="190" width="180" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2b_why2" value="なぜ？↓" style="text;html=1;fontSize=10;fontColor=#2980B9;fontStyle=1;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="575" y="237" width="60" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2b_q3" value="「認知が歪んでいると&lt;br&gt;知っているから」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF5FB;strokeColor=#5DADE2;fontSize=11;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="260" width="170" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2b_why3" value="なぜ？↓" style="text;html=1;fontSize=10;fontColor=#2980B9;fontStyle=1;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="307" width="60" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2b_deep" value="&lt;b&gt;「世界を理解可能にしたい」&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2980B9;fontColor=#FFFFFF;strokeColor=#1A5276;fontSize=12;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="330" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2b_alt_label" value="別方向に掘ると:" style="text;html=1;fontSize=10;fontColor=#2980B9;fontStyle=2;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="730" y="130" width="120" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2b_alt1" value="「父との関係が&lt;br&gt;心地よかった」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF5FB;strokeColor=#5DADE2;fontSize=10;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="730" y="155" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2b_alt2" value="「相手の立場を&lt;br&gt;教えてくれた」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF5FB;strokeColor=#5DADE2;fontSize=10;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="740" y="215" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2b_alt3" value="&lt;b&gt;「父のように&lt;br&gt;言葉で人を救いたい」&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2980B9;fontColor=#FFFFFF;strokeColor=#1A5276;fontSize=11;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="730" y="280" width="160" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2b_ae1" style="endArrow=classic;strokeColor=#5DADE2;strokeWidth=1;endSize=4;" parent="1" source="p5_2b_alt1" target="p5_2b_alt2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2b_ae2" style="endArrow=classic;strokeColor=#5DADE2;strokeWidth=1;endSize=4;" parent="1" source="p5_2b_alt2" target="p5_2b_alt3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2c_box" value="&lt;b style=&#39;font-size:13px&#39;&gt;Step 2-c: 条件入れ替えテスト&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5F5E3;strokeColor=#28A745;fontSize=12;strokeWidth=2;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="420" width="350" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2c_desc" value="「父が死んでいなくても、この欲求を持ちうるか？」" style="text;html=1;fontSize=11;fontStyle=2;fontColor=#333;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="475" width="400" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2c_t1" value="「人とつながりたい」&lt;br&gt;&lt;b style=&#39;color:#C0392B&#39;&gt;✗ 父が生きていたら持たない&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=10;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="505" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2c_t2" value="「世界を理解可能にしたい」&lt;br&gt;&lt;b style=&#39;color:#28A745&#39;&gt;○ 父の影響で育った志向&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=10;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="505" width="210" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2c_t3" value="「父のように言葉で人を救いたい」&lt;br&gt;&lt;b style=&#39;color:#28A745&#39;&gt;○ 父がいても拡張しうる&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=10;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="505" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2d_box" value="&lt;b style=&#39;font-size:13px&#39;&gt;Step 2-d: 一文に仕上げる&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8DAEF;strokeColor=#7D3C98;fontSize=12;strokeWidth=2;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="600" width="350" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2d_a" value="&lt;b&gt;候補A&lt;/b&gt;&lt;br&gt;「世界を理解可能にしたい」&lt;br&gt;&lt;span style=&#39;font-size:9px&#39;&gt;→ Constrain統制概念の種&lt;br&gt;「精密さで守る」の原点&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7D3C98;fontColor=#FFFFFF;strokeColor=#5B2C6F;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="670" width="200" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_2d_b" value="&lt;b&gt;候補B&lt;/b&gt;&lt;br&gt;「父のように、言葉で人を救いたい」&lt;br&gt;&lt;span style=&#39;font-size:9px&#39;&gt;→ ACT4の加害行為の種&lt;br&gt;「救おうとして壊す」の原点&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7D3C98;fontColor=#FFFFFF;strokeColor=#5B2C6F;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="670" width="230" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_climax_title" value="&lt;b style=&#39;font-size:13px&#39;&gt;欲求 → クライマックス自動導出&lt;/b&gt;" style="text;html=1;fontSize=13;fontStyle=1;fontColor=#C0392B;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="600" width="350" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_cl_desire" value="欲求を一文で書く" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7D3C98;fontColor=#FFFFFF;strokeColor=#5B2C6F;fontSize=11;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="630" y="640" width="160" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_cl_test" value="「その欲求が最大限に&lt;br&gt;試される瞬間」を想像する" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=11;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="630" y="695" width="200" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_cl_e1" style="endArrow=classic;strokeColor=#C0392B;strokeWidth=2;endSize=5;" parent="1" source="p5_cl_desire" target="p5_cl_test" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_cl_success" value="&lt;b&gt;成功版&lt;/b&gt;&lt;br&gt;&lt;span style=&#39;font-size:9px&#39;&gt;B子を理解し救えた&lt;br&gt;（誤信の種が蒔かれる）&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=11;strokeWidth=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="640" width="170" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_cl_fail" value="&lt;b&gt;失敗版&lt;/b&gt;&lt;br&gt;&lt;span style=&#39;font-size:9px&#39;&gt;B子に拒絶される&lt;br&gt;「あなたの理解は私を見ていない」&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=11;strokeWidth=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="720" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_cl_e2" style="endArrow=classic;strokeColor=#28A745;strokeWidth=1;endSize=5;" parent="1" source="p5_cl_test" target="p5_cl_success" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_cl_e3" style="endArrow=classic;strokeColor=#C0392B;strokeWidth=1;endSize=5;" parent="1" source="p5_cl_test" target="p5_cl_fail" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_cl_pick" value="より不可逆的で&lt;br&gt;価値変化が大きいほうを選ぶ" style="text;html=1;fontSize=10;fontColor=#C0392B;fontStyle=3;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="1080" y="690" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_flow_ab" value="" style="endArrow=classic;strokeColor=#333;strokeWidth=3;endSize=8;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="410" y="92" as="sourcePoint"/>
+                        <mxPoint x="490" y="92" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="p5_flow_bc" value="" style="endArrow=classic;strokeColor=#333;strokeWidth=3;endSize=8;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="350" y="390" as="sourcePoint"/>
+                        <mxPoint x="210" y="420" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="p5_flow_cd" value="" style="endArrow=classic;strokeColor=#333;strokeWidth=3;endSize=8;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="225" y="570" as="sourcePoint"/>
+                        <mxPoint x="225" y="600" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram name="Page 6: 条件 vs 欲求 — なぜ裏返しでは駄目なのか" id="cond-vs-desire">
+        <mxGraphModel dx="916" dy="607" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="p6_title" value="条件（Condition） vs 欲求（Desire） — 構造的に何が違うのか" style="text;html=1;fontSize=20;fontStyle=1;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="15" width="1300" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_sub" value="出典: McKee &quot;Character&quot; — 条件は原因ではない。欲求がエンジンである。" style="text;html=1;fontSize=11;fontColor=#888;align=center;fontStyle=2;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="48" width="1300" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_sec1" value="■ モデル（Page 4 の拡大）" style="text;html=1;fontSize=14;fontStyle=1;fontColor=#333;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="80" width="400" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_cond" value="&lt;b style=&#39;font-size:14px&#39;&gt;条件 (Condition)&lt;/b&gt;&lt;br&gt;&lt;hr&gt;外的環境・変えられない前提&lt;br&gt;&lt;i style=&#39;font-size:10px&#39;&gt;家庭 / 文化 / 時代 / 身体 / 過去の出来事&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b style=&#39;color:#C0392B&#39;&gt;地面&lt;/b&gt;（キャラが立っている場所）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCF3CF;strokeColor=#F39C12;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="115" width="260" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_desire" value="&lt;b style=&#39;font-size:14px&#39;&gt;欲求 (Desire)&lt;/b&gt;&lt;br&gt;&lt;hr&gt;内的衝動・キャラが選ぶ方向&lt;br&gt;&lt;i style=&#39;font-size:10px&#39;&gt;「〜したい」「〜でありたい」「〜を証明したい」&lt;/i&gt;&lt;br&gt;&lt;br&gt;&lt;b style=&#39;color:#2980B9&#39;&gt;ベクトル&lt;/b&gt;（キャラが押す方向）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6EAF8;strokeColor=#2980B9;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="115" width="260" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_arrow_constrain" value="&lt;b&gt;制約するが&lt;br&gt;決定しない&lt;/b&gt;" style="endArrow=classic;strokeColor=#F39C12;strokeWidth=3;endSize=6;fontColor=#F39C12;fontSize=10;dashed=1;" parent="1" source="p6_cond" target="p6_desire" edge="1">
+                    <mxGeometry x="1" y="50" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="p6_choice" value="&lt;b&gt;選択&lt;/b&gt;&lt;br&gt;(Choice)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5F5E3;strokeColor=#28A745;fontSize=12;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="720" y="145" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_arrow_drive" value="&lt;b&gt;駆動する&lt;/b&gt;" style="endArrow=classic;strokeColor=#2980B9;strokeWidth=3;endSize=6;fontColor=#2980B9;fontSize=10;" parent="1" source="p6_desire" target="p6_choice" edge="1">
+                    <mxGeometry x="0.0321" y="33" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="p6_action" value="&lt;b&gt;行動&lt;/b&gt;&lt;br&gt;(Action)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666;fontSize=12;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="880" y="145" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_arrow_act" style="endArrow=classic;strokeColor=#666;strokeWidth=2;endSize=5;" parent="1" source="p6_choice" target="p6_action" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_scene" value="&lt;b&gt;次のシーン&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666;fontSize=12;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="1040" y="145" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_arrow_scene" style="endArrow=classic;strokeColor=#666;strokeWidth=2;endSize=5;" parent="1" source="p6_action" target="p6_scene" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_chain_label" value="条件 → 欲求 → 選択 → 行動 → 次のシーン … この鎖が物語を前に進める" style="text;html=1;fontSize=11;fontColor=#333;fontStyle=2;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="260" width="1100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_sec2" value="■ 条件の裏返しだとなぜ駄目か — 3つの理由" style="text;html=1;fontSize=14;fontStyle=1;fontColor=#333;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="300" width="600" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r1_box" value="" style="rounded=1;fillColor=#FFF3F3;strokeColor=#C0392B;strokeWidth=1;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="340" width="420" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r1_title" value="&lt;b&gt;理由1: 方向がない（ベクトルにならない）&lt;/b&gt;" style="text;html=1;fontSize=12;fontStyle=1;fontColor=#C0392B;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="345" width="400" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r1_ng" value="孤立している&lt;br&gt;↓ 裏返し&lt;br&gt;「つながりたい」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=10;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="375" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r1_ng_q" value="→ で、&lt;b&gt;どうやって？&lt;/b&gt;&lt;br&gt;→ 迎合？攻撃？理解？逃げる？&lt;br&gt;&lt;b style=&#39;color:#C0392B&#39;&gt;方向が決まらない&lt;/b&gt;" style="text;html=1;fontSize=10;fontColor=#666;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="195" y="375" width="250" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r1_ok" value="「世界を理解可能に&lt;br&gt;したい」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=10;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="460" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r1_ok_q" value="→ 相手の立場を言語化して説明する&lt;br&gt;→ 父のメソッドを再現しようとする&lt;br&gt;&lt;b style=&#39;color:#28A745&#39;&gt;次の行動が見える&lt;/b&gt;" style="text;html=1;fontSize=10;fontColor=#666;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="195" y="455" width="255" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r2_box" value="" style="rounded=1;fillColor=#FFF3F3;strokeColor=#C0392B;strokeWidth=1;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="340" width="420" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r2_title" value="&lt;b&gt;理由2: 性格が立たない（誰でも同じになる）&lt;/b&gt;" style="text;html=1;fontSize=12;fontStyle=1;fontColor=#C0392B;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="345" width="400" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r2_ng" value="&lt;b&gt;条件:&lt;/b&gt; 父が死んで孤立&lt;br&gt;&lt;b&gt;裏返し:&lt;/b&gt; 「つながりたい」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=10;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="375" width="180" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r2_ng_note" value="→ この欲求は&lt;b&gt;誰でも持つ&lt;/b&gt;&lt;br&gt;→ キャラAもBもCも同じ&lt;br&gt;→ &lt;b style=&#39;color:#C0392B&#39;&gt;交換可能な主人公&lt;/b&gt;" style="text;html=1;fontSize=10;fontColor=#666;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="695" y="370" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r2_ok_a" value="キャラA: 「理解で救いたい」→言語化" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=9;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="435" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r2_ok_b" value="キャラB: 「傷つきたくない」→壁を作る" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=9;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="472" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r2_ok_c" value="キャラC: 「復讐したい」→攻撃する" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=9;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="453" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r2_ok_note" value="同じ条件 × 異なる欲求 = &lt;b style=&#39;color:#28A745&#39;&gt;異なるキャラクター&lt;/b&gt;" style="text;html=1;fontSize=10;fontColor=#666;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="505" width="400" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r3_box" value="" style="rounded=1;fillColor=#FFF3F3;strokeColor=#C0392B;strokeWidth=1;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="940" y="340" width="400" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r3_title" value="&lt;b&gt;理由3: 試せない（クライマックスが導出不能）&lt;/b&gt;" style="text;html=1;fontSize=12;fontStyle=1;fontColor=#C0392B;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="950" y="345" width="380" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r3_ng" value="「つながりたい」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=11;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="380" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r3_ng_test" value="最大限に試す瞬間 = ？&lt;br&gt;「つながれない」？→ 漠然&lt;br&gt;&lt;b style=&#39;color:#C0392B&#39;&gt;シーンが浮かばない&lt;/b&gt;" style="text;html=1;fontSize=10;fontColor=#666;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1115" y="375" width="210" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r3_ok" value="「理解で人を救いたい」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=11;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="960" y="440" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r3_ok_test" value="最大限に試す瞬間 =&lt;br&gt;「理解したのに救えなかった」&lt;br&gt;or「理解が相手を傷つけた」&lt;br&gt;&lt;b style=&#39;color:#28A745&#39;&gt;具体的なシーンが見える&lt;/b&gt;" style="text;html=1;fontSize=10;fontColor=#666;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1135" y="430" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_r3_formula" value="&lt;b&gt;公式:&lt;/b&gt; クライマックス = 欲求が最大限に試される瞬間&lt;br&gt;欲求が漠然 → クライマックスも漠然 → 物語が締まらない" style="text;html=1;fontSize=10;fontColor=#C0392B;fontStyle=2;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="950" y="495" width="380" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_sec3" value="■ 理想的な欲求の形 — 4つの条件" style="text;html=1;fontSize=14;fontStyle=1;fontColor=#333;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="550" width="600" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_ideal1" value="&lt;b style=&#39;font-size:12px&#39;&gt;① 方法を含む&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;「〜したい」の中に&lt;br&gt;&lt;b&gt;HOW&lt;/b&gt;が入っている&lt;br&gt;&lt;br&gt;✗ つながりたい&lt;br&gt;○ &lt;b&gt;理解することで&lt;/b&gt;つながりたい&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF5FB;strokeColor=#2980B9;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="590" width="220" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_ideal2" value="&lt;b style=&#39;font-size:12px&#39;&gt;② キャラ固有&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;同じ条件の別キャラが&lt;br&gt;同じ欲求を持たない&lt;br&gt;&lt;br&gt;✗ 誰でも持つ欲求&lt;br&gt;○ &lt;b&gt;この子だけ&lt;/b&gt;の志向&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF5FB;strokeColor=#2980B9;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="590" width="220" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_ideal3" value="&lt;b style=&#39;font-size:12px&#39;&gt;③ 反証可能&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;「それが間違いだった」&lt;br&gt;と判明する瞬間を&lt;br&gt;想像できる&lt;br&gt;&lt;br&gt;= クライマックスの種&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF5FB;strokeColor=#2980B9;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="590" width="220" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_ideal4" value="&lt;b style=&#39;font-size:12px&#39;&gt;④ 次のシーンが書ける&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;この欲求を持つキャラが&lt;br&gt;次に何をするか&lt;br&gt;予測できる&lt;br&gt;&lt;br&gt;= 物語のエンジン&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF5FB;strokeColor=#2980B9;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="790" y="590" width="220" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_metaphor" value="&lt;b style=&#39;font-size:13px&#39;&gt;比喩で言うと&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;b&gt;条件&lt;/b&gt; = 地面（立っている場所）&lt;br&gt;&lt;b&gt;欲求&lt;/b&gt; = ベクトル（押す方向）&lt;br&gt;&lt;br&gt;条件の裏返し = 「ここにいたくない」（地面を否定しただけ）&lt;br&gt;独立した欲求 = 「あっちに行きたい」（方向が決まる）&lt;br&gt;&lt;br&gt;&lt;b&gt;地面を否定しても方向は生まれない。&lt;br&gt;方向が決まって初めて物語が動く。&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F9EBEA;strokeColor=#C0392B;fontSize=11;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="780" width="500" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_apply" value="&lt;b style=&#39;font-size:13px&#39;&gt;childhood への適用&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;b&gt;条件:&lt;/b&gt; 父の死 → 孤立（地面）&lt;br&gt;&lt;b&gt;裏返し:&lt;/b&gt; 「つながりたい」（地面の否定 → 方向なし）&lt;br&gt;&lt;br&gt;&lt;b&gt;独立した欲求の候補:&lt;/b&gt;&lt;br&gt;A「世界を理解可能にしたい」→ &lt;b&gt;理解&lt;/b&gt;という方向&lt;br&gt;B「父のように言葉で人を救いたい」→ &lt;b&gt;救済&lt;/b&gt;という方向&lt;br&gt;&lt;br&gt;どちらも4条件を満たす:&lt;br&gt;① 方法を含む（言語化/理解）&lt;br&gt;② この子固有（父の教育が背景）&lt;br&gt;③ 反証可能（理解しても救えない/傷つける）&lt;br&gt;④ 次のシーンが書ける（B子を理解しようとする）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=11;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="780" width="450" height="200" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram name="Page 7: childhood 現在の設計状況マップ" id="status-map">
+        <mxGraphModel dx="1081" dy="464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1050" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="p7_title" value="childhood 設計状況マップ（Page 4 の各ボックス × 充足度）" style="text;html=1;fontSize=20;fontStyle=1;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="15" width="1300" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_legend" value="🟢 確定済み　　🟡 素材あり・要修正　　🔴 未定義" style="text;html=1;fontSize=12;fontColor=#666;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="50" width="1300" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_spine_line" style="endArrow=classic;strokeColor=#C0392B;strokeWidth=4;endSize=8;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="160" as="sourcePoint"/>
+                        <mxPoint x="1200" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="p7_spine_label" value="Spine（背骨）" style="text;html=1;fontSize=12;fontStyle=5;fontColor=#C0392B;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="135" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_ii" value="&lt;b style=&#39;font-size:13px&#39;&gt;🟢 契機事件&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;✅ 出来事: 父の死&lt;br&gt;✅ 均衡破壊: 成立&lt;br&gt;✅ 伏線: 病気進行の示唆&lt;br&gt;⚠️ 欲望生成: 条件の裏返し&lt;br&gt;⚠️ 直後のアクション: 未定義&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=11;strokeWidth=3;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="90" width="220" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_climax" value="&lt;b style=&#39;font-size:13px&#39;&gt;🔴 クライマックス&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;❌ 未定義&lt;br&gt;❌ 3案あるが要件未達&lt;br&gt;&lt;br&gt;原因: 欲求が未確定のため&lt;br&gt;自動導出できない&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=11;strokeWidth=3;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="1100" y="90" width="220" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_balance" value="&lt;b&gt;🟢 均衡&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;✅ 父がいるから&lt;br&gt;翌日学校に行ける&lt;br&gt;（脆い均衡として成立）&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="260" width="150" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_e_bal" style="endArrow=classic;strokeColor=#28A745;strokeWidth=1;endSize=4;" parent="1" source="p7_balance" target="p7_ii" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_foreshadow" value="&lt;b&gt;🟢 伏線&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;✅ 父の病気進行&lt;br&gt;「面会も最後かな」&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="260" width="150" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_e_fore" style="endArrow=classic;strokeColor=#28A745;strokeWidth=1;endSize=4;" parent="1" source="p7_foreshadow" target="p7_ii" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_protag_box" value="" style="rounded=1;fillColor=#F8F9FA;strokeColor=#2980B9;fontSize=12;strokeWidth=2;dashed=0;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="250" width="520" height="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_protag_title" value="主人公モデル" style="text;html=1;fontSize=13;fontStyle=1;fontColor=#2980B9;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="255" width="520" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_desire" value="&lt;b style=&#39;font-size:12px&#39;&gt;🔴 欲求 (Desire)&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;❌ 「つながりたい」は条件の裏返し&lt;br&gt;&lt;br&gt;&lt;b&gt;候補A:&lt;/b&gt; 世界を理解可能にしたい&lt;br&gt;&lt;b&gt;候補B:&lt;/b&gt; 父のように言葉で人を救いたい&lt;br&gt;&lt;br&gt;→ &lt;b style=&#39;color:#C0392B&#39;&gt;ユーザーが選択する&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=11;strokeWidth=3;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="425" y="285" width="230" height="145" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_will" value="&lt;b&gt;🔴 意志 (Will)&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;❌ 未定義&lt;br&gt;困難に直面して&lt;br&gt;どう行動するか&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="285" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_disposition" value="&lt;b&gt;🟡 性向&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;⚠️ 断片的に存在&lt;br&gt;「認知が歪んでいる」&lt;br&gt;「父に依存的」&lt;br&gt;→ 一文にまとめる必要&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=#F39C12;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="820" y="285" width="140" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_condition" value="&lt;b&gt;🟢 条件&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;✅ 父の死で孤立&lt;br&gt;✅ ASD傾向&lt;br&gt;✅ いじめ環境&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="425" y="450" width="140" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_e_cond" value="制約" style="endArrow=classic;strokeColor=#F39C12;strokeWidth=2;endSize=5;dashed=1;fontColor=#F39C12;fontSize=9;" parent="1" source="p7_condition" target="p7_desire" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_choice" value="&lt;b&gt;🔴 選択&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;❌ 未定義&lt;br&gt;欲求確定後に導出&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="460" width="130" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_layers" value="&lt;b&gt;🔴 4層構造&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;❌ 未設計&lt;br&gt;社会的/個人的/&lt;br&gt;中核/隠れた自己&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=10;strokeWidth=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="770" y="420" width="130" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_e_ii_desire" value="欲望生成" style="endArrow=classic;strokeColor=#C0392B;strokeWidth=2;endSize=5;dashed=1;fontColor=#C0392B;fontSize=9;" parent="1" source="p7_ii" target="p7_desire" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_cc" value="&lt;b&gt;🟢 統制概念&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;✅ Constrain本編から継承&lt;br&gt;「精密さで守ろうとした人間が&lt;br&gt;完全な理解なしに愛せるように」&lt;br&gt;&lt;br&gt;⚠️ 短編固有の統制概念は&lt;br&gt;未定義（必要か要検討）&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="1080" y="270" width="210" height="155" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_e_cc" style="endArrow=classic;strokeColor=#28A745;strokeWidth=1;endSize=4;" parent="1" source="p7_cc" target="p7_climax" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_opp" value="&lt;b&gt;🟡 対立概念&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;⚠️ 暗黙的に存在&lt;br&gt;「精密な理解こそ&lt;br&gt;唯一の救済」&lt;br&gt;→ 明文化するとよい&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=#F39C12;fontSize=11;strokeWidth=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="1100" y="450" width="170" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_value_title" value="🟡 価値軸" style="text;html=1;fontSize=13;fontStyle=1;fontColor=#F39C12;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="630" width="1000" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_val_line" style="endArrow=classic;startArrow=classic;strokeColor=#F39C12;strokeWidth=3;endSize=8;startSize=8;dashed=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="675" as="sourcePoint"/>
+                        <mxPoint x="1200" y="675" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="p7_val_neg" value="孤立 / 無理解" style="text;html=1;fontSize=11;fontColor=#C0392B;fontStyle=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="680" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_val_pos" value="つながり / 理解" style="text;html=1;fontSize=11;fontColor=#28A745;fontStyle=1;align=right;" parent="1" vertex="1">
+                    <mxGeometry x="1050" y="680" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_val_note" value="⚠️ 本編から推測可能だが、短編としての価値軸を明文化していない" style="text;html=1;fontSize=10;fontColor=#F39C12;fontStyle=2;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="680" width="600" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_causal" value="&lt;b&gt;🔴 因果鎖&lt;/b&gt;&lt;br&gt;&lt;span style=&#39;font-size:10px&#39;&gt;❌ 契機事件後の event → inner_exposure → choice → action → consequence が未設計&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=11;strokeWidth=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="175" width="520" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_scale" value="&lt;b&gt;🔴 スケール&lt;/b&gt;&lt;br&gt;&lt;span style=&#39;font-size:10px&#39;&gt;❌ 超短編 / 短編 / 中編のどれか未決定。クライマックスの置き場に直結する。&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="630" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_summary_box" value="" style="rounded=1;fillColor=#F8F9FA;strokeColor=#666;strokeWidth=1;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="760" width="1280" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_summary_title" value="■ 残タスク一覧（依存順）" style="text;html=1;fontSize=14;fontStyle=1;fontColor=#333;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="770" width="400" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_t1" value="&lt;b&gt;❶ 欲求を確定&lt;/b&gt;&lt;br&gt;&lt;span style=&#39;font-size:9px&#39;&gt;候補A or B を選ぶ&lt;br&gt;4条件でテスト&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#28A745;fontColor=#FFF;strokeColor=#922B21;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="810" width="140" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_t2" value="&lt;b&gt;❷ クライマックス&lt;/b&gt;&lt;br&gt;&lt;span style=&#39;font-size:9px&#39;&gt;信念の反証パターンから&lt;br&gt;自動導出&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#28A745;fontColor=#FFF;strokeColor=#922B21;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="260" y="810" width="150" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_t3" value="&lt;b&gt;❸ スケール決定&lt;/b&gt;&lt;br&gt;&lt;span style=&#39;font-size:9px&#39;&gt;超短編/短編/中編&lt;br&gt;クライマックス次第&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#28A745;fontColor=#FFF;strokeColor=#922B21;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="810" width="140" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_t4" value="&lt;b&gt;❹ 主人公モデル補完&lt;/b&gt;&lt;br&gt;&lt;span style=&#39;font-size:9px&#39;&gt;意志/性向を一文化&lt;br&gt;選択パターン定義&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F39C12;fontColor=#FFF;strokeColor=#E67E22;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="670" y="810" width="150" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_t5" value="&lt;b&gt;❺ 因果鎖設計&lt;/b&gt;&lt;br&gt;&lt;span style=&#39;font-size:9px&#39;&gt;契機事件→クライマックス&lt;br&gt;の最低3ノード&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F39C12;fontColor=#FFF;strokeColor=#E67E22;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="880" y="810" width="150" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_t6" value="&lt;b&gt;❻ Sequence設計&lt;/b&gt;&lt;br&gt;&lt;span style=&#39;font-size:9px&#39;&gt;因果鎖をSequenceに&lt;br&gt;グルーピング&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2980B9;fontColor=#FFF;strokeColor=#1A5276;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="1090" y="810" width="150" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_tf1" style="endArrow=classic;strokeColor=#FFF;strokeWidth=3;endSize=6;" parent="1" source="p7_t1" target="p7_t2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_tf2" style="endArrow=classic;strokeColor=#FFF;strokeWidth=3;endSize=6;" parent="1" source="p7_t2" target="p7_t3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_tf3" style="endArrow=classic;strokeColor=#FFF;strokeWidth=3;endSize=6;" parent="1" source="p7_t3" target="p7_t4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_tf4" style="endArrow=classic;strokeColor=#FFF;strokeWidth=3;endSize=6;" parent="1" source="p7_t4" target="p7_t5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_tf5" style="endArrow=classic;strokeColor=#FFF;strokeWidth=3;endSize=6;" parent="1" source="p7_t5" target="p7_t6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_t_legend" value="🔴 = ブロッカー（これが決まらないと先に進めない）　　🟠 = 補完（並行可能）　　🔵 = 最終段階" style="text;html=1;fontSize=10;fontColor=#666;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="890" width="1200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_you_are_here" value="⬇ 次回はここから" style="text;html=1;fontSize=14;fontStyle=1;fontColor=#C0392B;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="920" width="180" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_you_arrow" style="endArrow=classic;strokeColor=#C0392B;strokeWidth=3;endSize=8;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="130" y="945" as="sourcePoint"/>
+                        <mxPoint x="130" y="880" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="p7_note1" value="❶が決まれば❷は自動導出。❶❷❸がSpineの完成。❹❺は並行可能。❻でAct→Sequenceに降りる。" style="text;html=1;fontSize=11;fontColor=#333;fontStyle=2;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="960" width="1200" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="p7_note2" value="Spine完成（❶❷❸）= rev.3。主人公モデル補完（❹）= rev.3.5。因果鎖＋Sequence（❺❻）= rev.4 → 執筆開始。" style="text;html=1;fontSize=11;fontColor=#333;fontStyle=2;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="985" width="1200" height="25" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram name="Page 8: 欲求の正体 — 生存メカニズムとしての言語化" id="desire-origin">
+        <mxGraphModel dx="1564" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="p8_title" value="欲求の正体 — 「知的分析」ではなく「生存メカニズム」" style="text;html=1;fontSize=22;fontStyle=1;align=center;fontColor=#333;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="10" width="1500" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_subtitle" value="なぜ A も B も納得いかないか — そして本当のエンジンはどこにあるか" style="text;html=1;fontSize=13;fontColor=#888;align=center;fontStyle=2;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="45" width="1500" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_sec1" value="■ A も B も「外から貼ったラベル」" style="text;html=1;fontSize=15;fontStyle=1;fontColor=#333;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="80" width="600" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_a_box" value="&lt;b&gt;候補A&lt;/b&gt;&lt;br&gt;「世界を理解可能にしたい」&lt;br&gt;&lt;br&gt;&lt;span style=&#39;color:#C0392B;font-size:10px&#39;&gt;→ 認識論の言葉&lt;br&gt;→ 子どもはこう思わない&lt;br&gt;→ 文芸評論家の言語&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=#F39C12;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="115" width="200" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_b_box" value="&lt;b&gt;候補B&lt;/b&gt;&lt;br&gt;「父のように言葉で人を救いたい」&lt;br&gt;&lt;br&gt;&lt;span style=&#39;color:#C0392B;font-size:10px&#39;&gt;→ 利他的すぎる&lt;br&gt;→ 父を失った直後の子は&lt;br&gt;　 他者を救う余裕はない&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=#F39C12;fontSize=11;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="260" y="115" width="200" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_problem" value="&lt;b style=&#39;color:#C0392B;font-size:13px&#39;&gt;共通の問題:&lt;/b&gt;&lt;br&gt;&lt;br&gt;どちらも&lt;b&gt;大人が振り返って言語化した&lt;/b&gt;もの。&lt;br&gt;子どもの内側から出てくる感覚ではない。&lt;br&gt;&lt;br&gt;McKeeフォーマットに当てはめようとして&lt;br&gt;&lt;b&gt;感情を殺してしまった&lt;/b&gt;。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=11;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="115" width="280" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_sec2" value="■ 子どもの内側で何が起きているか — 愛着理論（Bowlby）× 誤信念形成" style="text;html=1;fontSize=15;fontStyle=1;fontColor=#333;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="260" width="800" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_phase1_bg" value="" style="rounded=1;fillColor=#E8F8E8;strokeColor=#28A745;strokeWidth=1;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="300" width="380" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_phase1_title" value="▶ 父がいる時代 — 安全基地（Secure Base）" style="text;html=1;fontSize=12;fontStyle=1;fontColor=#28A745;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="305" width="360" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_ev1" value="クラスメイトに&lt;br&gt;ノートを破られる" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=10;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="335" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_ev2" value="&lt;b&gt;混乱&lt;/b&gt;&lt;br&gt;「なんで？」" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF;strokeColor=#999;fontSize=10;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="390" width="130" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_ev3" value="&lt;b&gt;父に話す&lt;/b&gt;&lt;br&gt;「あの子はね、お父さんに&lt;br&gt;怒られてて辛いんだよ」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=10;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="440" width="160" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_ev4" value="&lt;b&gt;「わかった！」&lt;/b&gt;&lt;br&gt;世界が整理される&lt;br&gt;安心が戻る" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=10;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="510" width="150" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_ev5" value="→ 翌日学校に行ける" style="text;html=1;fontSize=10;fontColor=#28A745;fontStyle=1;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="565" width="160" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_key_insight" value="&lt;b style=&#39;font-size:12px;color:#4A7FB5&#39;&gt;ここで子どもが学習すること&lt;/b&gt;&lt;hr&gt;&lt;span style=&#39;font-size:11px&#39;&gt;言葉にしてもらうと → 安心する&lt;br&gt;説明されると → 怖くなくなる&lt;br&gt;わかると → 大丈夫になる&lt;br&gt;&lt;br&gt;&lt;b style=&#39;font-size:13px;color:#2980B9&#39;&gt;「わかれば、大丈夫」&lt;/b&gt;&lt;br&gt;&lt;br&gt;これは知的活動ではない。&lt;br&gt;&lt;b&gt;恐怖を鎮める方法&lt;/b&gt;として&lt;br&gt;身体に刻まれた反応。&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF5FB;strokeColor=#2980B9;fontSize=11;strokeWidth=3;verticalAlign=top;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="235" y="335" width="175" height="225" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_a1" style="endArrow=classic;strokeColor=#999;strokeWidth=1;endSize=4;" parent="1" source="p8_ev1" target="p8_ev2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_a2" style="endArrow=classic;strokeColor=#999;strokeWidth=1;endSize=4;" parent="1" source="p8_ev2" target="p8_ev3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_a3" style="endArrow=classic;strokeColor=#999;strokeWidth=1;endSize=4;" parent="1" source="p8_ev3" target="p8_ev4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_phase2_bg" value="" style="rounded=1;fillColor=#FFF3F3;strokeColor=#C0392B;strokeWidth=1;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="300" width="380" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_phase2_title" value="▶ 父の死後 — 安全基地の喪失" style="text;html=1;fontSize=12;fontStyle=1;fontColor=#C0392B;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="305" width="360" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_ev2_1" value="クラスメイトに&lt;br&gt;何かされる" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=10;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="465" y="335" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_ev2_2" value="&lt;b&gt;混乱&lt;/b&gt;&lt;br&gt;「なんで？」" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF;strokeColor=#999;fontSize=10;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="465" y="390" width="130" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_ev2_3" value="&lt;b&gt;父がいない&lt;/b&gt;&lt;br&gt;説明してくれる人が&lt;br&gt;いない" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=10;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="465" y="440" width="145" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_ev2_4" value="&lt;b style=&#39;color:#C0392B&#39;&gt;恐怖が鎮まらない&lt;/b&gt;&lt;br&gt;世界が意味不明のまま&lt;br&gt;安心が戻らない" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=10;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="465" y="505" width="155" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_a2_1" style="endArrow=classic;strokeColor=#999;strokeWidth=1;endSize=4;" parent="1" source="p8_ev2_1" target="p8_ev2_2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_a2_2" style="endArrow=classic;strokeColor=#999;strokeWidth=1;endSize=4;" parent="1" source="p8_ev2_2" target="p8_ev2_3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_a2_3" style="endArrow=classic;strokeColor=#999;strokeWidth=1;endSize=4;" parent="1" source="p8_ev2_3" target="p8_ev2_4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_critical" value="&lt;b style=&#39;font-size:12px;color:#C0392B&#39;&gt;ここで子どもが選ぶこと&lt;/b&gt;&lt;hr&gt;&lt;span style=&#39;font-size:11px&#39;&gt;父がいないなら&lt;br&gt;&lt;b style=&#39;font-size:14px&#39;&gt;自分が父になる&lt;/b&gt;&lt;br&gt;&lt;br&gt;自分で説明する。&lt;br&gt;自分で言葉にする。&lt;br&gt;自分で「わかった」を作る。&lt;br&gt;&lt;br&gt;これは知的好奇心ではない。&lt;br&gt;&lt;b style=&#39;color:#C0392B&#39;&gt;パニックを止める&lt;br&gt;唯一の方法&lt;/b&gt;。&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=11;strokeWidth=3;verticalAlign=top;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="340" width="175" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_death_arrow" value="父の死" style="endArrow=classic;strokeColor=#C0392B;strokeWidth=5;endSize=10;fontColor=#C0392B;fontSize=13;fontStyle=1;" parent="1" edge="1">
+                    <mxGeometry x="-0.1" relative="1" as="geometry">
+                        <mxPoint x="425" y="480" as="sourcePoint"/>
+                        <mxPoint x="455" y="480" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="p8_sec3" value="■ 欲求の再定式化 — 3つの層" style="text;html=1;fontSize=15;fontStyle=1;fontColor=#333;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="260" width="600" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_layer1" value="&lt;b style=&#39;font-size:14px&#39;&gt;Layer 1: 身体感覚&lt;/b&gt;&lt;br&gt;（子どもが感じていること）&lt;hr&gt;&lt;span style=&#39;font-size:14px;color:#C0392B&#39;&gt;&lt;b&gt;怖い。わからない。&lt;br&gt;わかれば怖くなくなる。&lt;br&gt;だから言葉にする。&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&#39;font-size:10px;color:#888&#39;&gt;これが欲求の&lt;b&gt;生の形&lt;/b&gt;。&lt;br&gt;McKeeフォーマットに入れる前の、&lt;br&gt;キャラクターの中にある感覚。&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=11;strokeWidth=3;verticalAlign=top;align=left;spacingLeft=12;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="295" width="310" height="185" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_layer2" value="&lt;b style=&#39;font-size:14px&#39;&gt;Layer 2: 誤信念&lt;/b&gt;&lt;br&gt;（身体感覚が固まった信念）&lt;hr&gt;&lt;span style=&#39;font-size:14px;color:#2980B9&#39;&gt;&lt;b&gt;「言葉にすれば&lt;br&gt;　世界は安全になる」&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&#39;font-size:10px;color:#888&#39;&gt;Lisa Cron（Story Genius）の&lt;br&gt;&lt;b&gt;misbelief&lt;/b&gt; に相当。&lt;br&gt;元の文脈では正しかった（父の説明は&lt;br&gt;実際に世界を安全にした）。&lt;br&gt;それを&lt;b&gt;一般化した&lt;/b&gt;ところに歪みが生まれる。&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF5FB;strokeColor=#2980B9;fontSize=11;strokeWidth=3;verticalAlign=top;align=left;spacingLeft=12;" parent="1" vertex="1">
+                    <mxGeometry x="870" y="500" width="310" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_layer3" value="&lt;b style=&#39;font-size:14px&#39;&gt;Layer 3: McKee用語&lt;/b&gt;&lt;br&gt;（作者が構造分析するときの言語）&lt;hr&gt;&lt;b&gt;意識的欲求:&lt;/b&gt; 状況ごとに変わる&lt;br&gt;（友達がほしい、B子を助けたい、等）&lt;br&gt;&lt;br&gt;&lt;b&gt;無意識的欲求:&lt;/b&gt;&lt;br&gt;&lt;span style=&#39;color:#2980B9&#39;&gt;「理解＝安全」を証明し続けたい&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;隠れた信念:&lt;/b&gt;&lt;br&gt;&lt;span style=&#39;color:#C0392B&#39;&gt;「言葉にすれば世界は安全になる」&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span style=&#39;font-size:10px;color:#888&#39;&gt;A「理解可能にしたい」もB「言葉で救いたい」も&lt;br&gt;Layer 3 の言葉。間違ってはいないが&lt;br&gt;Layer 1 の手触りがないから納得できなかった。&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#666;fontSize=11;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=12;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="295" width="340" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_la1" value="固まると" style="endArrow=classic;strokeColor=#666;strokeWidth=2;endSize=5;fontColor=#666;fontSize=10;" parent="1" source="p8_layer1" target="p8_layer2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_la2" value="分析すると" style="endArrow=classic;strokeColor=#666;strokeWidth=2;endSize=5;fontColor=#666;fontSize=10;" parent="1" source="p8_layer2" target="p8_layer3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_sec4" value="■ 信念の成長弧 — childhood から ACT5 への接続" style="text;html=1;fontSize=15;fontStyle=1;fontColor=#333;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="700" width="800" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_arc_bg" value="" style="rounded=1;fillColor=#F8F9FA;strokeColor=#CCC;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="735" width="1510" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_arc1" value="&lt;b style=&#39;font-size:11px&#39;&gt;childhood&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;父が説明→安心&lt;br&gt;父が死ぬ→恐怖&lt;br&gt;自分で言葉にする&lt;br&gt;→安心が戻る&lt;br&gt;&lt;br&gt;&lt;b style=&#39;color:#C0392B&#39;&gt;「わかれば大丈夫」&lt;/b&gt;&lt;br&gt;の誕生&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=10;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="745" width="155" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_arc2" value="&lt;b style=&#39;font-size:11px&#39;&gt;ACT1 小学生&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;論理で虐めをかわす&lt;br&gt;「説明できれば&lt;br&gt;怖くない」の確認&lt;br&gt;&lt;br&gt;&lt;b&gt;信念の強化&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=#F39C12;fontSize=10;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="260" y="745" width="155" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_arc3" value="&lt;b style=&#39;font-size:11px&#39;&gt;ACT2 中学&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;B子に説明→通じる&lt;br&gt;「やっぱり言葉が&lt;br&gt;あれば救える」&lt;br&gt;B子の死→&lt;br&gt;「言葉が足りなかった」&lt;br&gt;&lt;br&gt;&lt;b&gt;信念の確信化&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=#F39C12;fontSize=10;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="745" width="170" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_arc4" value="&lt;b style=&#39;font-size:11px&#39;&gt;ACT3 灘〜東大&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;精密な人々の中で&lt;br&gt;初めて居場所を得る&lt;br&gt;「厳密さ＝正義」&lt;br&gt;&lt;br&gt;&lt;b&gt;信念の理論化&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF5FB;strokeColor=#2980B9;fontSize=10;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="745" width="155" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_arc5" value="&lt;b style=&#39;font-size:11px&#39;&gt;ACT4 Google&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;Aを「教育」する&lt;br&gt;善意の加害&lt;br&gt;「正しく説明した&lt;br&gt;のになぜ壊れる？」&lt;br&gt;&lt;br&gt;&lt;b style=&#39;color:#C0392B&#39;&gt;信念のひび割れ&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontSize=10;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="885" y="745" width="155" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_arc6" value="&lt;b style=&#39;font-size:11px&#39;&gt;ACT5 クライマックス&lt;/b&gt;&lt;br&gt;&lt;hr&gt;&lt;span style=&#39;font-size:10px&#39;&gt;Aの自殺未遂&lt;br&gt;信念の崩壊&lt;br&gt;&lt;br&gt;「わからなくても&lt;br&gt;　寄り添える」&lt;br&gt;&lt;br&gt;&lt;b style=&#39;color:#28A745&#39;&gt;信念の書き換え&lt;/b&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=10;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="1090" y="745" width="155" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_val_line" style="endArrow=classic;strokeColor=#C0392B;strokeWidth=3;endSize=8;dashed=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="137" y="920" as="sourcePoint"/>
+                        <mxPoint x="1167" y="920" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="p8_val_labels" value="&lt;span style=&#39;color:#C0392B&#39;&gt;わかれば大丈夫&lt;/span&gt;　→　&lt;span style=&#39;color:#F39C12&#39;&gt;理解すれば救える&lt;/span&gt;　→　&lt;span style=&#39;color:#2980B9&#39;&gt;厳密さ＝正義&lt;/span&gt;　→　&lt;span style=&#39;color:#7B4F9E&#39;&gt;正しいのになぜ？&lt;/span&gt;　→　&lt;span style=&#39;color:#28A745&#39;&gt;わからなくても愛せる&lt;/span&gt;" style="text;html=1;fontSize=10;fontStyle=1;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="935" width="1200" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_aa1" style="endArrow=classic;strokeColor=#888;strokeWidth=2;endSize=5;" parent="1" source="p8_arc1" target="p8_arc2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_aa2" style="endArrow=classic;strokeColor=#888;strokeWidth=2;endSize=5;" parent="1" source="p8_arc2" target="p8_arc3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_aa3" style="endArrow=classic;strokeColor=#888;strokeWidth=2;endSize=5;" parent="1" source="p8_arc3" target="p8_arc4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_aa4" style="endArrow=classic;strokeColor=#888;strokeWidth=2;endSize=5;" parent="1" source="p8_arc4" target="p8_arc5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_aa5" style="endArrow=classic;strokeColor=#888;strokeWidth=2;endSize=5;" parent="1" source="p8_arc5" target="p8_arc6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_sec5" value="■ 同じパターンを持つキャラクターたち — 「方法が牢獄になる」型" style="text;html=1;fontSize=15;fontStyle=1;fontColor=#333;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="960" width="800" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_para1" value="&lt;b&gt;Will Hunting&lt;/b&gt;&lt;br&gt;&lt;span style=&#39;font-size:9px&#39;&gt;虐待→「俺は誰もいらない」&lt;br&gt;知性で武装→壁が牢獄に&lt;br&gt;解除:「It&#39;s not your fault」&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#999;fontSize=10;strokeWidth=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="995" width="175" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_para2" value="&lt;b&gt;碇シンジ&lt;/b&gt;&lt;br&gt;&lt;span style=&#39;font-size:9px&#39;&gt;母の喪失→「必要とされたい」&lt;br&gt;EVAに乗る＝存在証明&lt;br&gt;方法（EVA）が心身を蝕む&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#999;fontSize=10;strokeWidth=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="235" y="995" width="175" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_para3" value="&lt;b&gt;Christopher&lt;/b&gt;&lt;br&gt;&lt;span style=&#39;font-size:9px&#39;&gt;（夜中に犬に起きた〜事件）&lt;br&gt;ASD→論理で世界を航行&lt;br&gt;論理で解けない問題に直面&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#999;fontSize=10;strokeWidth=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="430" y="995" width="175" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_para4" value="&lt;b&gt;Charlie&lt;/b&gt;&lt;br&gt;&lt;span style=&#39;font-size:9px&#39;&gt;（アルジャーノンに花束を）&lt;br&gt;知能＝救済と信じる&lt;br&gt;知能を得ても孤立は終わらず&lt;br&gt;知能を失っても愛は残る&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=#999;fontSize=10;strokeWidth=1;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="625" y="995" width="175" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_para5" value="&lt;b style=&#39;color:#4A7FB5&#39;&gt;Constrain 主人公&lt;/b&gt;&lt;br&gt;&lt;span style=&#39;font-size:9px&#39;&gt;父の喪失→「言葉にすれば大丈夫」&lt;br&gt;言語的精密さで武装&lt;br&gt;精密さが善意の加害になる&lt;br&gt;解除: わからなくても愛せる&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=10;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="820" y="995" width="190" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_pattern_summary" value="共通パターン: &lt;b&gt;喪失 → 生存メカニズムの発見 → 成功体験で強化 → 方法自体が牢獄になる → 方法を手放す&lt;/b&gt;" style="text;html=1;fontSize=11;fontColor=#333;fontStyle=2;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1100" width="1100" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_bottom_box" value="" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1135" width="1510" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="p8_bottom_text" value="&lt;b style=&#39;font-size:13px&#39;&gt;結論:&lt;/b&gt;  McKeeの「欲求」をいきなり書こうとしなくていい。&lt;br&gt;まず Layer 1（身体感覚）を書く:&lt;b&gt;「父がいなくて怖い。言葉にすると怖くなくなる。だから言葉にする。」&lt;/b&gt;&lt;br&gt;これが欲求の種。ここから Layer 2（信念）、Layer 3（McKee用語）は自動的に育つ。" style="text;html=1;fontSize=11;fontColor=#333;align=left;spacingLeft=20;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="1140" width="1490" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

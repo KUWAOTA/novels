@@ -1,0 +1,36 @@
+# ============================================================
+# Module Group: Narrative Techniques (手札カード管理)
+# Source: David Lodge "The Art of Fiction"
+# Version: 0.1
+# ============================================================
+# このディレクトリは「使える手札テクニック」を管理する。
+# 構造検証ルール（McKeeモジュール群）とは役割が異なる。
+# 用途: 執筆時の提案・選択肢の提示・適用可否チェック
+# ============================================================
+# Claude Code skillsから参照する場合:
+#   modules/25_narrative-techniques/high.yaml   → 高優先度テクニック
+#   modules/25_narrative-techniques/medium.yaml → 中優先度テクニック
+#   modules/25_narrative-techniques/low.yaml    → 低優先度テクニック
+# ============================================================
+
+module_group_id: narrative_techniques
+module_group_name: "手札テクニック管理（Narrative Techniques Card System）"
+source: "David Lodge 'The Art of Fiction'"
+
+priority_levels:
+  high:
+    description: "積極的に使うべき強力な手札。シーン設計時に常に検討する。"
+    file: "high.yaml"
+  medium:
+    description: "状況次第で有効な手札。必要に応じて参照する。"
+    file: "medium.yaml"
+  low:
+    description: "稀な状況で使う手札。過度な使用は避ける。"
+    file: "low.yaml"
+
+usage_in_compiler:
+  mode: suggestion   # error/warning ではなく提案モード
+  trigger: "シーン設計・執筆時"
+  note: >
+    これらは「違反検出」ではなく「適用候補の提示」である。
+    コンパイラはシーンの文脈に応じて適用可能な手札をinfoレベルで示す。

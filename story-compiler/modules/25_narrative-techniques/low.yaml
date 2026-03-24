@@ -1,0 +1,129 @@
+# ============================================================
+# Narrative Techniques — 低優先度 (Low Priority)
+# Source: David Lodge "The Art of Fiction"
+# Version: 0.1
+# ============================================================
+# 稀な状況で使う手札。過度な使用は避ける。
+# ============================================================
+
+priority: low
+
+techniques:
+
+  authorial_intrusion:
+    id: authorial_intrusion
+    name: "作者の介入（Authorial Intrusion）"
+    source_chapter: 2
+    description: >
+      作者が明示的に作品に介入する手法。
+      例：「作者の私があなたたちを〜の世界に誘います」
+    caution: "昨今では嫌われる手法。使い所を慎重に選ぶこと"
+    applicable_when:
+      - "メタフィクション的効果を狙うとき"
+      - "読者との直接的な関係を意図的に築くとき"
+    compiler_integration:
+      action: warning
+      message: >
+        作者の介入が検出されました。
+        現代の読者には受け入れられにくい技法です。
+        意図的な使用であることを確認してください。
+
+  suspense:
+    id: suspense
+    name: "サスペンス（Suspense）"
+    source_chapter: 3
+    description: >
+      あえてわからないことを用意し、読者を宙吊り（suspend）にすることで
+      「次にどうなるか」への注意を引く技術。
+    compiler_integration:
+      action: info
+      message: >
+        サスペンス要素が設定されています。
+        この「わからないこと」が解消されるタイミングと方法は設計されていますか？
+
+  mystery:
+    id: mystery
+    name: "ミステリー（Mystery）"
+    source_chapter: 7
+    description: >
+      「どうやってやったか」を軸に読者の注意を引く技術。
+      推理ものに限らず、精神分析・心理的謎にも応用可能。
+    compiler_integration:
+      action: info
+      message: >
+        ミステリー要素（どうやって？の謎）が設定されています。
+        解決時の retroactive inevitability（遡及的必然性）は確保されていますか？
+
+  list:
+    id: list
+    name: "リスト（List）"
+    source_chapter: 13
+    description: >
+      物をリストアップして並べる手法。
+      並べたものの特性によって多様な描写効果を生む。
+    effects:
+      - "豊穣さ・過剰さの表現"
+      - "カタログ的な網羅感"
+      - "リズムの変化"
+    compiler_integration:
+      action: info
+      message: >
+        リスト形式の描写を使用中。
+        リストの内容・順序がテーマや感情と対応していますか？
+
+  unreliable_narrator:
+    id: unreliable_narrator
+    name: "信用できない語り手（Unreliable Narrator）"
+    source_chapter: 34
+    description: >
+      語り手の認識・記憶・意図が信頼できない構造にする手法。
+      読者は語り手の言葉の裏を読む。
+    applicable_when:
+      - "語り手の自己欺瞞がテーマの核心であるとき"
+      - "語り手と読者の情報格差を意図的に設計するとき"
+    compiler_integration:
+      declaration_required: true
+      action: info
+      message: >
+        信用できない語り手を使用中。
+        語り手のバイアス・歪みが一貫して設計されていますか？
+        読者が気づくための手がかりは埋め込まれていますか？
+
+  exoticism:
+    id: exoticism
+    name: "異国性（Exoticism）"
+    source_chapter: 35
+    description: >
+      エキゾチックな海外・異文化を舞台にする手法。
+      異質な環境が物語に独特の色彩を与える。
+    compiler_integration:
+      action: info
+      message: >
+        異国・異文化の舞台を使用中。
+        その異質性が物語テーマと接続していますか？
+
+  sense_of_past:
+    id: sense_of_past
+    name: "過去の感覚（Sense of the Past）"
+    source_chapter: 28
+    description: >
+      中世等の過去の世界を描き、その時代固有の感覚・感触に
+      フォーカスする手法。近い過去が特に効果的。
+    compiler_integration:
+      action: info
+      message: >
+        過去の時代設定を使用中。
+        現代読者が異質さを感じながらも共感できる設計になっていますか？
+
+  imagined_future:
+    id: imagined_future
+    name: "未来を想像する（Imagined Future）"
+    source_chapter: 29
+    description: >
+      SF的手法。既知のイメージを使って未知の未来を想起させる。
+      時制は過去形が使われがち（オーウェル『1984』等）。
+    compiler_integration:
+      action: info
+      message: >
+        未来設定を使用中。
+        読者が知っているものを使って知らないものを描いていますか？
