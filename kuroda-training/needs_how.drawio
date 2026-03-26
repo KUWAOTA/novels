@@ -1,0 +1,96 @@
+<mxfile host="65bd71144e">
+    <diagram id="QBVC6j_Qp6z3A4_hBK8V" name="Page-1">
+        <mxGraphModel dx="1619" dy="916" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="920" math="0" shadow="0" adaptiveColors="auto">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="&lt;b style=&#39;font-size:16px&#39;&gt;進め方の案（たたき台）&lt;/b&gt;&lt;span style=&#39;font-size:11px;color:#999&#39;&gt;　— 黒田と要相談&lt;/span&gt;" style="text;html=1;fontSize=16;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="10" width="500" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="sec1" value="&lt;b&gt;毎週のサイクル&lt;/b&gt;" style="text;html=1;fontSize=13;fontStyle=1;fontColor=#00695C;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="45" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="c1" value="&lt;b style=&#39;font-size:13px&#39;&gt;① スコープ相談&lt;/b&gt;&lt;hr style=&#39;margin:3px 0&#39;&gt;&lt;span style=&#39;font-size:10px&#39;&gt;何を見るか / どの観点で切るか&lt;br&gt;FB形式を決める（赤入れ/総評/口頭）&lt;br&gt;何を自走し何を詰めるか切り分け&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=11;align=center;verticalAlign=top;spacingTop=4;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="80" width="260" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="c2" value="&lt;b style=&#39;font-size:13px&#39;&gt;② 書く（自走）&lt;/b&gt;&lt;hr style=&#39;margin:3px 0&#39;&gt;&lt;span style=&#39;font-size:10px&#39;&gt;プロット / サンプルシーン / 修正稿&lt;br&gt;AI活用OK&lt;br&gt;処方された本を読む&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;fontSize=11;align=center;verticalAlign=top;spacingTop=4;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="80" width="260" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="c3" value="&lt;b style=&#39;font-size:13px&#39;&gt;③ 提出 → 黒田FB&lt;/b&gt;&lt;hr style=&#39;margin:3px 0&#39;&gt;&lt;span style=&#39;font-size:10px&#39;&gt;診断（強み・弱み）を伝える&lt;br&gt;操作を提案する&lt;br&gt;効果の見通しを示す&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=11;align=center;verticalAlign=top;spacingTop=4;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="910" y="80" width="260" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="c4" value="&lt;b style=&#39;font-size:13px&#39;&gt;④ 修正・学習（自走）&lt;/b&gt;&lt;hr style=&#39;margin:3px 0&#39;&gt;&lt;span style=&#39;font-size:10px&#39;&gt;FBを反映して書き直す&lt;br&gt;修正稿を持って次の相談へ&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;fontSize=11;align=center;verticalAlign=top;spacingTop=4;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="250" width="260" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="ec12" style="rounded=1;strokeColor=#555;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="c1" target="c2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ec23" value="&lt;b&gt;週1締切&lt;/b&gt;" style="rounded=1;strokeColor=#C62828;strokeWidth=3;fontSize=10;fontColor=#C62828;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="c2" target="c3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ec34" style="rounded=1;strokeColor=#555;strokeWidth=2;exitX=0.3;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;curved=1;" parent="1" source="c3" target="c4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ec41" style="rounded=1;strokeColor=#555;strokeWidth=2;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;curved=1;" parent="1" source="c4" target="c1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="180" y="295"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="punish" value="破ったら課金（パニッシュメント型）&lt;br&gt;正当理由 = 体調不良・突発用事のみ" style="text;html=1;fontSize=9;fontColor=#C62828;fontStyle=2;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="740" y="55" width="220" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_consult_fb" value="詰まったら壁打ち" style="rounded=1;strokeColor=#1565C0;strokeWidth=1;dashed=1;dashPattern=4 4;fontSize=9;fontColor=#1565C0;fontStyle=2;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;curved=1;" parent="1" source="c1" target="c3" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="550" y="210"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="sec_fb" value="&lt;b&gt;FBのスタンス・スタイル（①の実現方法）&lt;/b&gt;" style="text;html=1;fontSize=13;fontStyle=1;fontColor=#2E7D32;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="370" width="400" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="fb_style" value="&lt;ul style=&quot;margin:2px 0;padding-left:16px;text-align:left;font-size:11px&quot;&gt;&lt;li&gt;&lt;b style=&quot;color: rgb(198, 40, 40);&quot;&gt;「なぜダメか」の言語化&lt;/b&gt; — 感想でなく機能不全の理由を説明してほしい&lt;/li&gt;&lt;li&gt;&lt;b&gt;できている部分も言語化&lt;/b&gt; — 何が効いているかも知りたい&lt;/li&gt;&lt;li&gt;&lt;b&gt;論理的な指導スタイルがうれしい:&lt;/b&gt;&lt;br&gt;　現状「〇〇」→ 望む方向「△△」→ 不足「□□」→ 必要スキル「＊＊」&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;書籍の処方&lt;/b&gt; — 課題に対して「これを読め」→ 自走で勉強する型&lt;/li&gt;&lt;li&gt;&lt;b&gt;心理的安全性&lt;/b&gt;があると嬉しい。傷つきやすいので。&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=11;align=left;verticalAlign=top;spacingTop=4;strokeWidth=2;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="398" width="560" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="sec2" value="&lt;b&gt;FB形式（毎回相談して決める）&lt;/b&gt;" style="text;html=1;fontSize=13;fontStyle=1;fontColor=#2E7D32;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="590" width="350" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="fb1" value="&lt;b&gt;原稿への赤入れ&lt;/b&gt;&lt;br&gt;&lt;span style=&#39;font-size:9px&#39;&gt;Word/Docs等で&lt;br&gt;該当箇所に直接コメント&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#66BB6A;fontSize=11;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="618" width="175" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="fb2" value="&lt;b&gt;総評&lt;/b&gt;&lt;br&gt;&lt;span style=&#39;font-size:9px&#39;&gt;全体の印象・方向性を&lt;br&gt;文章でまとめる&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#66BB6A;fontSize=11;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="225" y="618" width="175" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="fb3" value="&lt;b&gt;口頭ディスカッション&lt;/b&gt;&lt;br&gt;&lt;span style=&#39;font-size:9px&#39;&gt;通話や対面で&lt;br&gt;やりとり（理想）&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#66BB6A;fontSize=11;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="618" width="175" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="fb_note" value="※ どの形式がいいかのディスカッション・コンサル自体もお願いしたい&lt;br&gt;※ 最初はプロット・サンプルシーンが多い想定（いきなり全文ではない）" style="text;html=1;fontSize=9;fontStyle=2;fontColor=#888;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="693" width="500" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="sec3" value="&lt;b&gt;対象範囲（毎回スコープを決める）&lt;/b&gt;" style="text;html=1;fontSize=13;fontStyle=1;fontColor=#E65100;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="370" width="350" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="scope" value="&lt;ul style=&#39;margin:2px 0;padding-left:16px;text-align:left;font-size:11px&#39;&gt;&lt;li&gt;完成原稿のFB&lt;/li&gt;&lt;li&gt;プロット・構成の相談（書く前の段階）&lt;/li&gt;&lt;li&gt;アイデア出し・ブレスト&lt;/li&gt;&lt;li&gt;読書案内（「この課題ならこれを読め」）&lt;/li&gt;&lt;li&gt;他作品の分析（「この小説のここはなぜ効くか」）&lt;/li&gt;&lt;li&gt;McKee理論の適用が正しいかの確認&lt;/li&gt;&lt;li&gt;AI×人間の役割分担の相談&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#FFB74D;fontSize=11;align=left;verticalAlign=top;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="398" width="340" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="scope_note" value="何を強化し何を自分で進められるかを毎回相談" style="text;html=1;fontSize=9;fontStyle=2;fontColor=#888;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="593" width="340" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="sec4" value="&lt;b&gt;コミュニケーション&lt;/b&gt;" style="text;html=1;fontSize=13;fontStyle=1;fontColor=#6A1B9A;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="620" width="250" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="comm" value="&lt;ul style=&quot;margin:2px 0;padding-left:16px;text-align:left;font-size:11px&quot;&gt;&lt;li&gt;FB返却: 通話・対面が理想だが柔軟に&lt;/li&gt;&lt;li&gt;FBに対する質問ができる（双方向）&lt;/li&gt;&lt;li&gt;レスポンス速度: 自由でいい&lt;/li&gt;&lt;li&gt;定期ミーティング: 締切ごとで十分&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#BA68C8;fontSize=11;align=left;verticalAlign=top;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="648" width="280" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="sec5" value="&lt;b&gt;料金・契約&lt;/b&gt;" style="text;html=1;fontSize=13;fontStyle=1;fontColor=#6A1B9A;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="740" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="price" value="&lt;ul style=&quot;margin:2px 0;padding-left:16px;text-align:left;font-size:11px&quot;&gt;&lt;li&gt;&lt;b style=&quot;font-size:13px&quot;&gt;月2万台まで&lt;/b&gt;&lt;/li&gt;&lt;li&gt;参考: ムラマサ 55,000円/10回添削&lt;/li&gt;&lt;li&gt;月額 or 回数制は要相談&lt;/li&gt;&lt;li&gt;期間の目安も要相談&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#BA68C8;fontSize=11;align=left;verticalAlign=top;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="768" width="270" height="130" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

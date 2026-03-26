@@ -1,0 +1,130 @@
+<mxGraphModel adaptiveColors="auto" dx="0" dy="0" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+
+    <!-- ===== 現在地（コンテキスト） ===== -->
+    <mxCell id="ctx" value="&lt;b style='font-size:14px'&gt;現在地&lt;/b&gt;&lt;hr style='margin:4px 0'&gt;&lt;ul style='margin:2px 0;padding-left:18px;text-align:left'&gt;&lt;li&gt;長編小説「Constrain」（純文学・心理ドラマ）を執筆中&lt;/li&gt;&lt;li&gt;McKee理論等は独学で習得中 — &lt;b&gt;知識インプットは本で足りている&lt;/b&gt;&lt;/li&gt;&lt;li&gt;毎晩机に向かう習慣はある&lt;/li&gt;&lt;li&gt;スクールを複数検討・体験済み（シナリオセンター大阪、大阪文学学校 等）&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1565C0;fontSize=12;align=center;verticalAlign=top;spacingTop=2;" vertex="1" parent="1">
+      <mxGeometry x="200" y="20" width="800" height="130" as="geometry"/>
+    </mxCell>
+
+    <!-- 「にもかかわらず」ラベル -->
+    <mxCell id="lbl_despite" value="にもかかわらず" style="text;html=1;fontSize=11;fontStyle=2;fontColor=#999999;align=center;" vertex="1" parent="1">
+      <mxGeometry x="530" y="152" width="140" height="20" as="geometry"/>
+    </mxCell>
+
+    <!-- ===== 根本の課題 ===== -->
+    <mxCell id="root" value="&lt;b style='font-size:14px'&gt;一人で書いていて「前進している」実感が持てない&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCDD2;strokeColor=#C62828;fontSize=12;align=center;" vertex="1" parent="1">
+      <mxGeometry x="300" y="175" width="600" height="50" as="geometry"/>
+    </mxCell>
+
+    <!-- ctx → root -->
+    <mxCell id="e_ctx_root" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#999999;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="ctx" target="root" parent="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- 「原因を分解すると」ラベル -->
+    <mxCell id="lbl_decompose" value="原因を分解すると" style="text;html=1;fontSize=11;fontStyle=2;fontColor=#999999;align=center;" vertex="1" parent="1">
+      <mxGeometry x="530" y="228" width="140" height="20" as="geometry"/>
+    </mxCell>
+
+    <!-- ===== 3つの需要カテゴリ ===== -->
+
+    <!-- Need 1: 技術的FB -->
+    <mxCell id="n1" value="&lt;b&gt;需要① 技術的フィードバック&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="280" width="340" height="45" as="geometry"/>
+    </mxCell>
+
+    <!-- Need 2: 伴走 -->
+    <mxCell id="n2" value="&lt;b&gt;需要② 伴走・ペースメーカー&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="430" y="280" width="340" height="45" as="geometry"/>
+    </mxCell>
+
+    <!-- Need 3: 個別対応 -->
+    <mxCell id="n3" value="&lt;b&gt;需要③ 作品への個別対応&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="820" y="280" width="340" height="45" as="geometry"/>
+    </mxCell>
+
+    <!-- root → n1, n2, n3 -->
+    <mxCell id="e_root_n1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#E65100;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="root" target="n1" parent="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="e_root_n2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#E65100;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="root" target="n2" parent="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="e_root_n3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#E65100;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="root" target="n3" parent="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- ===== Why boxes ===== -->
+
+    <mxCell id="w1" value="&lt;b&gt;なぜ必要か&lt;/b&gt;&lt;br&gt;自分の弱点が自分では見えない。&lt;br&gt;独りでは軌道修正できない。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#F9A825;fontSize=11;align=center;" vertex="1" parent="1">
+      <mxGeometry x="40" y="360" width="340" height="70" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="w2" value="&lt;b&gt;なぜ必要か&lt;/b&gt;&lt;br&gt;一人だと推進力が落ちる。&lt;br&gt;締切・外圧があった方が書ける。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#F9A825;fontSize=11;align=center;" vertex="1" parent="1">
+      <mxGeometry x="430" y="360" width="340" height="70" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="w3" value="&lt;b&gt;なぜ必要か&lt;/b&gt;&lt;br&gt;書きたいものがすでにある。&lt;br&gt;汎用カリキュラムは需要と合わない。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDE7;strokeColor=#F9A825;fontSize=11;align=center;" vertex="1" parent="1">
+      <mxGeometry x="820" y="360" width="340" height="70" as="geometry"/>
+    </mxCell>
+
+    <!-- n→w edges -->
+    <mxCell id="e_n1_w1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#F9A825;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="n1" target="w1" parent="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="e_n2_w2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#F9A825;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="n2" target="w2" parent="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="e_n3_w3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#F9A825;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="n3" target="w3" parent="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- ===== Detail boxes (具体的に何が欲しいか) ===== -->
+
+    <mxCell id="d1" value="&lt;b&gt;具体的に欲しいもの&lt;/b&gt;&lt;hr style='margin:3px 0'&gt;&lt;ul style='margin:2px 0;padding-left:16px;text-align:left'&gt;&lt;li&gt;感想でなく&lt;b&gt;「なぜ機能していないか」&lt;/b&gt;の言語化&lt;/li&gt;&lt;li&gt;純文学・心理ドラマの文脈を理解した読み&lt;/li&gt;&lt;li&gt;書き直せるヒントが得られる指摘&lt;/li&gt;&lt;li&gt;心理的安全性（傷つけるより前進させる）&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=11;align=center;verticalAlign=top;spacingTop=2;" vertex="1" parent="1">
+      <mxGeometry x="40" y="465" width="340" height="160" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="d2" value="&lt;b&gt;具体的に欲しいもの&lt;/b&gt;&lt;hr style='margin:3px 0'&gt;&lt;ul style='margin:2px 0;padding-left:16px;text-align:left'&gt;&lt;li&gt;定期的な提出サイクル（&lt;b&gt;月1〜2回&lt;/b&gt;）&lt;/li&gt;&lt;li&gt;進捗を見てくれる・せっついてくれる存在&lt;/li&gt;&lt;li&gt;提出→講評→修正→再提出の&lt;b&gt;反復&lt;/b&gt;&lt;/li&gt;&lt;li&gt;習慣化のトリガーとなる外圧&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=11;align=center;verticalAlign=top;spacingTop=2;" vertex="1" parent="1">
+      <mxGeometry x="430" y="465" width="340" height="160" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="d3" value="&lt;b&gt;具体的に欲しいもの&lt;/b&gt;&lt;hr style='margin:3px 0'&gt;&lt;ul style='margin:2px 0;padding-left:16px;text-align:left'&gt;&lt;li&gt;&lt;b&gt;Constrainに伴走&lt;/b&gt;できる形式&lt;/li&gt;&lt;li&gt;汎用課題でなく作品ベースの指導&lt;/li&gt;&lt;li&gt;長編の構造・展開に踏み込めるFB&lt;/li&gt;&lt;li&gt;「好きな曲を弾けること」が先（黒田の指摘）&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;fontSize=11;align=center;verticalAlign=top;spacingTop=2;" vertex="1" parent="1">
+      <mxGeometry x="820" y="465" width="340" height="160" as="geometry"/>
+    </mxCell>
+
+    <!-- w→d edges -->
+    <mxCell id="e_w1_d1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#2E7D32;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="w1" target="d1" parent="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="e_w2_d2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#2E7D32;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="w2" target="d2" parent="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="e_w3_d3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#2E7D32;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="w3" target="d3" parent="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- ===== スクール探しからの学び ===== -->
+    <mxCell id="ins" value="&lt;b style='font-size:12px'&gt;スクール探しから見えたこと&lt;/b&gt;&lt;hr style='margin:3px 0'&gt;&lt;ul style='margin:2px 0;padding-left:16px;text-align:left'&gt;&lt;li&gt;シナリオセンター体験 → 講義型は「本で足りる」と実感&lt;/li&gt;&lt;li&gt;ムラマサ55,000円 → 黒田「需要に合ってない」&lt;/li&gt;&lt;li&gt;各スクール比較 → 必要なのはカリキュラムでなく&lt;b&gt;個別伴走&lt;/b&gt;&lt;/li&gt;&lt;li&gt;最重要は&lt;b&gt;「先生との相性」&lt;/b&gt;だった&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B1FA2;fontSize=11;align=center;verticalAlign=top;spacingTop=2;" vertex="1" parent="1">
+      <mxGeometry x="40" y="670" width="440" height="140" as="geometry"/>
+    </mxCell>
+
+    <!-- ===== 不要なもの ===== -->
+    <mxCell id="nn" value="&lt;b style='font-size:12px'&gt;✕ 不要なもの&lt;/b&gt;&lt;hr style='margin:3px 0'&gt;&lt;ul style='margin:2px 0;padding-left:16px;text-align:left'&gt;&lt;li&gt;講義・知識インプット → 本で代替可能&lt;/li&gt;&lt;li&gt;合評・読み合い → 目的ではない&lt;/li&gt;&lt;li&gt;デビュー・賞応募サポート → 今は不要&lt;/li&gt;&lt;li&gt;エンタメ特化のカリキュラム&lt;/li&gt;&lt;/ul&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;fontSize=11;align=center;verticalAlign=top;spacingTop=2;fontColor=#757575;" vertex="1" parent="1">
+      <mxGeometry x="560" y="670" width="340" height="140" as="geometry"/>
+    </mxCell>
+
+    <!-- ===== ゴール ===== -->
+    <mxCell id="goal" value="&lt;b style='font-size:13px'&gt;半年後の理想像&lt;/b&gt;&lt;br&gt;技術の基礎がつき、正しいFBをもとに&lt;br&gt;自走して正しい努力ができている" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#283593;fontSize=12;align=center;fontStyle=0;" vertex="1" parent="1">
+      <mxGeometry x="960" y="690" width="300" height="80" as="geometry"/>
+    </mxCell>
+
+    <!-- ins→n3 点線（示唆の関係） -->
+    <mxCell id="e_ins_n3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#7B1FA2;dashed=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.15;entryY=1;entryDx=0;entryDy=0;" edge="1" source="ins" target="d3" parent="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+  </root>
+</mxGraphModel>

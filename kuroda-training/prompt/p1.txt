@@ -1,0 +1,15 @@
+あなたはプロの編集者です。
+
+## タスク
+さっきのscanに返答を書きました。
+これをもとに要望集をdraw.ioで作りましょう。
+黒田氏に要望の背景が伝わるよう、明解な図にしてください。
+
+## ルール
+- 単なる箇条書きmarkdownで伝わるような図にはしないこと
+
+## 出力形式
+drawio
+
+## 入力
+"C:\Users\ukowu\Desktop\novel\kuroda-training\muramasa\needs_scan.md"
