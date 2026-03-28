@@ -1,0 +1,131 @@
+<mxGraphModel dx="1154" dy="537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" adaptiveColors="auto">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+
+    <!-- タイトル -->
+    <mxCell id="title" value="① テーマ文 — 説明スライド" style="text;html=1;align=center;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+      <mxGeometry x="40" y="20" width="900" height="36" as="geometry"/>
+    </mxCell>
+
+    <!-- Section 1: テーマ文 -->
+    <mxCell id="theme_box" value="テーマ文" style="swimlane;startSize=24;fillColor=#dae8fc;strokeColor=#4A7FB5;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+      <mxGeometry x="40" y="70" width="900" height="100" as="geometry"/>
+    </mxCell>
+    <mxCell id="theme_text" value="「厳密に定義された言葉」こそが人を救うと考えた主人公が、&#xa;曖昧さとディスコミュニケーションだらけの人間社会を、愛せるようになる話" style="rounded=1;fillColor=#ffffff;strokeColor=#4A7FB5;fontSize=14;fontStyle=1;align=center;" parent="theme_box" vertex="1">
+      <mxGeometry x="15" y="32" width="870" height="52" as="geometry"/>
+    </mxCell>
+
+    <!-- Arrow 1 -->
+    <mxCell id="arr1" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" parent="1" source="theme_box" target="explain_box" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- Section 2: それはどういうことか -->
+    <mxCell id="explain_box" value="それはどういうことか" style="swimlane;startSize=26;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+      <mxGeometry x="40" y="230" width="900" height="180" as="geometry"/>
+    </mxCell>
+    <mxCell id="ex1" value="「厳密さ」とは" style="swimlane;startSize=22;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" parent="explain_box" vertex="1">
+      <mxGeometry x="10" y="35" width="270" height="130" as="geometry"/>
+    </mxCell>
+    <mxCell id="ex1a" value="言語を正確に・再現可能に定義することで&#xa;人を理解し、救えると信じること。&#xa;&#xa;「決まりだから」「空気を読め」では納得できない。&#xa;「なぜそうなるか」まで言葉で明快に説明できれば&#xa;誰でも理解できる――という信仰。" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="ex1" vertex="1">
+      <mxGeometry x="5" y="25" width="260" height="95" as="geometry"/>
+    </mxCell>
+    <mxCell id="ex2" value="「曖昧さとディスコミュニケーション」とは" style="swimlane;startSize=22;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" parent="explain_box" vertex="1">
+      <mxGeometry x="295" y="35" width="310" height="130" as="geometry"/>
+    </mxCell>
+    <mxCell id="ex2a" value="言葉の解釈は話者の間で必ずズレる。&#xa;それを補うのが感情・空気読みだが、&#xa;感情や空気が読めない人は置いてけぼり。&#xa;この「ズレ」「置いてけぼり」こそが&#xa;争いや迫害を生み、&#xa;人々を苦しめていると主人公は思っている。" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="ex2" vertex="1">
+      <mxGeometry x="5" y="25" width="295" height="90" as="geometry"/>
+    </mxCell>
+    <mxCell id="ex3" value="「愛せるようになる」とは" style="swimlane;startSize=22;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" parent="explain_box" vertex="1">
+      <mxGeometry x="620" y="35" width="270" height="130" as="geometry"/>
+    </mxCell>
+    <mxCell id="ex3a" value="理解できなくても、それでも関わり続けることを選ぶこと。&#xa;&#xa;「正しく説明できれば救える」から&#xa;「説明できなくても受け入れる・抱擁する」へ。" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="ex3" vertex="1">
+      <mxGeometry x="5" y="30" width="255" height="90" as="geometry"/>
+    </mxCell>
+
+    <!-- Arrow 2 -->
+    <mxCell id="arr1b" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" parent="1" source="explain_box" target="rescue_box" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- Section 3: 「救う」とは何か（補足） -->
+    <mxCell id="rescue_box" value="「救う」とは何か — 主人公の定義と変化（テーマの核心）" style="swimlane;startSize=26;fillColor=#f8cecc;strokeColor=#C0392B;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+      <mxGeometry x="40" y="465" width="900" height="250" as="geometry"/>
+    </mxCell>
+    <mxCell id="resc1" value="主人公にとっての「救う」（誤信念）" style="swimlane;startSize=22;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=11;" parent="rescue_box" vertex="1">
+      <mxGeometry x="10" y="38" width="270" height="195" as="geometry"/>
+    </mxCell>
+    <mxCell id="resc1a" value="「救う」＝「正しく・厳密に理解させること」&#xa;&#xa;「相手が正確に理解できれば、生きられる。&#xa; 言葉が届かないのは言語が不正確だから。&#xa; だから厳密な言語が人を救う」&#xa;&#xa;→ B子を「救えなかった」のは&#xa;　空気読み社会が彼女に正確な言語を&#xa;　与えなかったから、という誤信念の根拠になる。" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="resc1" vertex="1">
+      <mxGeometry x="5" y="26" width="258" height="160" as="geometry"/>
+    </mxCell>
+    <mxCell id="resc2" value="B子の死の真実（読者だけが知る）" style="swimlane;startSize=22;fillColor=#E8DAEF;strokeColor=#8E44AD;fontSize=11;" parent="rescue_box" vertex="1">
+      <mxGeometry x="295" y="38" width="310" height="195" as="geometry"/>
+    </mxCell>
+    <mxCell id="resc2a" value="B子の死は「苦しみの果て」ではない。&#xa;&#xa;主人公と過ごした幸せの絶頂で&#xa;「このまま明日が来なければいい」と感じ、&#xa;自ら選んだ解放・幸福としての死。&#xa;&#xa;つまり主人公の「説明が届かなかったから死んだ」&#xa;という解釈は根本的に間違い。&#xa;&#xa;→「救えなかった」という罪悪感自体が&#xa;　誤りだが、主人公はそれを知らないまま生きる。" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="resc2" vertex="1">
+      <mxGeometry x="5" y="26" width="295" height="160" as="geometry"/>
+    </mxCell>
+    <mxCell id="resc3" value="ACT5での「救う」の再定義" style="swimlane;startSize=22;fillColor=#d5e8d4;strokeColor=#28A745;fontStyle=1;fontSize=11;" parent="rescue_box" vertex="1">
+      <mxGeometry x="620" y="38" width="270" height="195" as="geometry"/>
+    </mxCell>
+    <mxCell id="resc3a" value="旧：「救う」＝理解させること&#xa;　　　（完全に正確に説明し、わからせる）&#xa;&#xa;新：「救う」＝理解できなくても共にいること&#xa;　　　（わからなくても、そこにいる・受け入れる）&#xa;&#xa;厳密さを「捨てる」のではない。&#xa;「理解の外にある他者を、&#xa;それでも受け入れる」という選択。&#xa;&#xa;→ 価値変化弧の到達点" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="resc3" vertex="1">
+      <mxGeometry x="5" y="26" width="258" height="160" as="geometry"/>
+    </mxCell>
+
+    <!-- Arrow 3 -->
+    <mxCell id="arr2" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" parent="1" source="rescue_box" target="episode_box" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- Section 4: 物語の中でどう体現されるか -->
+    <mxCell id="episode_box" value="このテーマが物語の中でどう体現されるか" style="swimlane;startSize=26;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+      <mxGeometry x="40" y="770" width="900" height="210" as="geometry"/>
+    </mxCell>
+    <mxCell id="ep1" value="① 父と数式（ACT1）&#xa;&#xa;「なぜそうなるか」まで説明してくれた父。&#xa;「問いの言い換え」という手法を学ぶ。&#xa;&#xa;→ 厳密さ信仰の起源" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=10;align=left;spacingLeft=8;" parent="episode_box" vertex="1">
+      <mxGeometry x="10" y="38" width="200" height="150" as="geometry"/>
+    </mxCell>
+    <mxCell id="ep2" value="② B子の自殺（ACT2）&#xa;&#xa;厳密な言語が届かない&#xa;空気読みの社会で適応できず死んだ恋人。&#xa;&#xa;主人公の解釈：&#xa;「明快な言葉があれば生きられた」&#xa;→「救えなかった」誤信念が確立&#xa;&#xa;（真実：B子は幸福の中で選んだ死）" style="rounded=1;fillColor=#E8DAEF;strokeColor=#7B4F9E;fontSize=10;align=left;spacingLeft=8;" parent="episode_box" vertex="1">
+      <mxGeometry x="225" y="38" width="200" height="150" as="geometry"/>
+    </mxCell>
+    <mxCell id="ep3" value="③ A男への指導（ACT4）&#xa;&#xa;善意の厳密な指導がA男を壊す。&#xa;「正しく説明したのに人が壊れた」&#xa;という体験。&#xa;&#xa;→ 厳密さが暴力になる証拠&#xa;→「救う」の誤定義が露呈する" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;align=left;spacingLeft=8;" parent="episode_box" vertex="1">
+      <mxGeometry x="440" y="38" width="200" height="150" as="geometry"/>
+    </mxCell>
+    <mxCell id="ep4" value="④ クライマックス（ACT5）&#xa;&#xa;A男の自殺未遂に際し、&#xa;「理解できなくてもそれでも受け入れる」&#xa;を選択する。&#xa;&#xa;「救う」の再定義が体現される。&#xa;&#xa;→ テーマの到達点" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=10;align=left;spacingLeft=8;" parent="episode_box" vertex="1">
+      <mxGeometry x="680" y="38" width="200" height="150" as="geometry"/>
+    </mxCell>
+    <mxCell id="ep12" style="edgeStyle=orthogonalEdgeStyle;" parent="episode_box" source="ep1" target="ep2" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="ep23" style="edgeStyle=orthogonalEdgeStyle;" parent="episode_box" source="ep2" target="ep3" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="ep34" style="edgeStyle=orthogonalEdgeStyle;" parent="episode_box" source="ep3" target="ep4" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- Arrow 4 -->
+    <mxCell id="arr3" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" parent="1" source="episode_box" target="arc_box" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- Section 5: 価値変化弧 -->
+    <mxCell id="arc_box" value="価値変化弧（確定）— 主人公の内的変化" style="swimlane;startSize=26;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+      <mxGeometry x="40" y="1040" width="900" height="90" as="geometry"/>
+    </mxCell>
+    <mxCell id="arc1" value="理解すれば救える" style="rounded=1;fillColor=#f8cecc;strokeColor=#C0392B;fontSize=11;" parent="arc_box" vertex="1">
+      <mxGeometry x="30" y="35" width="200" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="arc2" value="理解しても救えない" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" parent="arc_box" vertex="1">
+      <mxGeometry x="350" y="35" width="200" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="arc3" value="理解できなくても寄り添える" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;" parent="arc_box" vertex="1">
+      <mxGeometry x="670" y="35" width="210" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="arc12" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" parent="arc_box" source="arc1" target="arc2" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="arc23" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" parent="arc_box" source="arc2" target="arc3" edge="1">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+  </root>
+</mxGraphModel>

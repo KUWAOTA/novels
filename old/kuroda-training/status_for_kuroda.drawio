@@ -1,0 +1,32 @@
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <mxCell id="2" value="flowchart TD
+    subgraph now[&quot;📍 現在地（おさかな）&quot;]
+        direction TB
+        p1[&quot;未完成プロット（大枠）&quot;]
+        p2[&quot;1章の書き始め&quot;]
+        p3[&quot;書き進め方を模索中\n＝ 原稿ゼロではない&quot;]
+        p1 --- p2 --- p3
+    end
+
+    q{{&quot;「準備フェーズ」\nいつ始められる？\n条件を教えてほしい&quot;}}
+
+    subgraph prep[&quot;黒田案：準備フェーズ（準備.png より）&quot;]
+        direction LR
+        subgraph kuro[&quot;黒田側&quot;]
+            k1[&quot;原稿を読む&quot;] --&gt; k2[&quot;課題洗い出し\n（テーマ・プロット・キャラ等）&quot;] --&gt; k3[&quot;改善案提示&quot;]
+        end
+        subgraph osk[&quot;おさかな側&quot;]
+            o1[&quot;レジュメ作成\n（テーマ一文・プロット概要・キャラリスト）&quot;]
+            o2[&quot;⚠️ 一日分書き進める\n← ここが未達&quot;]
+        end
+    end
+
+    now --&gt; q
+    q --&gt; prep" style="shape=mxgraph.flowchart.start_2;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="40" y="40" width="600" height="400" as="geometry"/>
+    </mxCell>
+  </root>
+</mxGraphModel>

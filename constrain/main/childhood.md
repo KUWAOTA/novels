@@ -1,4 +1,4 @@
-[後輩の指摘](obsidian://open?vault=novel&file=dialy%2F2026-03-09%2F0309)に影響を受け、
+[後輩の指摘](obsidian://open?vault=novel&file=diary%2F2026-03-09%2F0309)に影響を受け、
 あらめの羅針盤程度にプロットをとらえ、短編の小説から始めてみることにした。
 
 ## rev. 1

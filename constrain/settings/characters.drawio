@@ -1,0 +1,163 @@
+<mxfile host="65bd71144e">
+    <diagram id="oC5IHE3WH6aJU0VUZvO9" name="Page-1">
+        <mxGraphModel dx="797" dy="371" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" adaptiveColors="auto">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="③ 登場人物リスト — たたき台（黒田向け）" style="text;html=1;align=center;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="20" width="1280" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="tri" value="3人の関係図" style="swimlane;startSize=26;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="70" width="1280" height="175" as="geometry"/>
+                </mxCell>
+                <mxCell id="tri_b" value="B子（主人公と似た境遇）&#xa;空気が読めない＋社会に弾かれた&#xa;→ 主人公に「あれは厳密な言葉があれば救えた」&#xa;　という誤解を残して死ぬ" style="rounded=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontSize=11;" parent="tri" vertex="1">
+                    <mxGeometry x="90" y="40" width="290" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="tri_p" value="主人公&#xa;B子の死を誤解して背負い、A男を傷つけてしまう&#xa;→ 最終的に「理解できなくても愛せる」にたどり着く" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontStyle=1;fontSize=11;" parent="tri" vertex="1">
+                    <mxGeometry x="490" y="40" width="300" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="tri_a" value="A男（主人公と正反対の育ち）&#xa;厳しすぎる親（虐待）によって壊された&#xa;→ 主人公の「善意の指導」が&#xa;　「暴力だった」と証明される人物" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=11;" parent="tri" vertex="1">
+                    <mxGeometry x="900" y="40" width="290" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="te1" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#7B4F9E;strokeWidth=2;" parent="tri" source="tri_b" target="tri_p" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="te2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#E67E22;strokeWidth=2;" parent="tri" source="tri_a" target="tri_p" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="protag" value="主人公（名前未定）" style="swimlane;startSize=26;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="265" width="380" height="435" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_role" value="物語での装置としての役割" style="swimlane;startSize=20;fillColor=#b8d4ed;strokeColor=#2E6EA6;fontSize=10;fontStyle=1;" parent="protag" vertex="1">
+                    <mxGeometry x="10" y="35" width="360" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="p_role_a" value="「言葉を厳密にすれば人を救える」という信念を持ち行動する。&#xa;しかしその信念は、A男の崩壊によって否定される。&#xa;最終的に「理解できなくても愛することはできる」に気づく。&#xa;→ 読者が最初から最後まで追う中心人物。" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="p_role" vertex="1">
+                    <mxGeometry x="5" y="22" width="350" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="p1" value="属性" style="swimlane;startSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" parent="protag" vertex="1">
+                    <mxGeometry x="10" y="165" width="360" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="p1a" value="ASD傾向（作中では明示しない）&#xa;エンジニア（外資IT・東大卒）&#xa;" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="p1" vertex="1">
+                    <mxGeometry x="5" y="22" width="350" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p2" value="求めているもの・信じていること" style="swimlane;startSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" parent="protag" vertex="1">
+                    <mxGeometry x="10" y="255" width="360" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="p2a" value="表向き：「言語を厳密にすれば人を救える」&#xa;本音：「他者と本当に繋がりたい」&#xa;誤った信念：「理解すれば救える」&#xa;→ B子が苦しみの果てに死んだという誤解が根拠になっている" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="p2" vertex="1">
+                    <mxGeometry x="5" y="22" width="350" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="father" value="父（故人・第1幕で死去）" style="swimlane;startSize=26;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="265" width="280" height="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="f_role" value="物語での装置としての役割" style="swimlane;startSize=20;fillColor=#b8d4ed;strokeColor=#2E6EA6;fontSize=10;fontStyle=1;" parent="father" vertex="1">
+                    <mxGeometry x="10" y="35" width="260" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="f_role_a" value="主人公の「言葉の厳密さ」信仰の出発点となった人物。&#xa;亡くなった後も残した言葉と愛情が、&#xa;主人公とA男の両方の人生を動かし続けている。" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="f_role" vertex="1">
+                    <mxGeometry x="5" y="22" width="250" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="f1" value="属性" style="swimlane;startSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" parent="father" vertex="1">
+                    <mxGeometry x="10" y="150" width="260" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="f1a" value="研究者（京大卒）&#xa;主人公の唯一の理解者・愛の源泉&#xa;「問いを言い換える」ことを教えた人物&#xa;主人公の中学入学直後に死去（持病）" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="f1" vertex="1">
+                    <mxGeometry x="5" y="22" width="250" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="f2" value="物語での具体的な働き" style="swimlane;startSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" parent="father" vertex="1">
+                    <mxGeometry x="10" y="255" width="260" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="f2a" value="「問いを言い換える」教えが主人公の信念の核になる&#xa;A男はこの父が主人公に与えた&#xa;無条件の愛情（「百点取れなくてもいい子」）を&#xa;一生羨み、嫉妬する" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="f2" vertex="1">
+                    <mxGeometry x="5" y="22" width="250" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="f3" value="代表台詞&#xa;「百点取れなくても、お前はいい子なんだよ」&#xa;→ A男が一生引きずる言葉" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" parent="father" vertex="1">
+                    <mxGeometry x="10" y="350" width="260" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="bko" value="B子（故人・第2幕）" style="swimlane;startSize=26;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="740" y="265" width="290" height="490" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_role" value="物語での装置としての役割" style="swimlane;startSize=20;fillColor=#d5b8ed;strokeColor=#6B4F9E;fontSize=10;fontStyle=1;" parent="bko" vertex="1">
+                    <mxGeometry x="10" y="35" width="270" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="b_role_a" value="主人公に「厳密な言葉があれば救えた」という&#xa;誤った信念を植え付けた人物。&#xa;実際は苦しみの果てではなく、幸せの絶頂で&#xa;自分の意志で死んだ。&#xa;→ この主人公の誤解が物語全体を動かす" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="b_role" vertex="1">
+                    <mxGeometry x="5" y="22" width="260" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="b1" value="属性" style="swimlane;startSize=20;fillColor=#f3e8ff;strokeColor=#9673a6;fontSize=10;" parent="bko" vertex="1">
+                    <mxGeometry x="10" y="165" width="270" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="b1a" value="知的障害（空気が読めない ≠ ASD）&#xa;非常に優しく自己肯定感が低い&#xa;主人公のきつい言い方を「優しい」と感じる" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="b1" vertex="1">
+                    <mxGeometry x="5" y="22" width="260" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="b2" value="この人物がいる理由（主人公との関係）" style="swimlane;startSize=20;fillColor=#f3e8ff;strokeColor=#9673a6;fontSize=10;" parent="bko" vertex="1">
+                    <mxGeometry x="10" y="265" width="270" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="b2a" value="主人公と同じく「空気が読めない」タイプ&#xa;→主人公とは違い、知的障害起因&#xa;→ 主人公が自分を重ねて感情移入する&#xa;→ B子の死が主人公の人生の根拠になる" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="b2" vertex="1">
+                    <mxGeometry x="5" y="22" width="260" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b3" value="自殺の構造（ここが核心）" style="swimlane;startSize=20;fillColor=#f3e8ff;strokeColor=#9673a6;fontSize=10;" parent="bko" vertex="1">
+                    <mxGeometry x="10" y="355" width="270" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="b3a" value="凄惨ないじめを受けるも自分を責め続ける&#xa;主人公と会い、幸せの頂点で&#xa;「このまま死にたい」と思い自殺&#xa;&#xa;※ 主人公はB子が苦しみの果てに&#xa;　死んだと誤解している（← これが核心的な誤解）" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="b3" vertex="1">
+                    <mxGeometry x="5" y="22" width="260" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="aman" value="A男（第1幕→第4幕→第5幕）" style="swimlane;startSize=26;fillColor=#FDEBD0;strokeColor=#E67E22;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="1050" y="265" width="280" height="580" as="geometry"/>
+                </mxCell>
+                <mxCell id="am_role" value="物語での装置としての役割" style="swimlane;startSize=20;fillColor=#f8d4a0;strokeColor=#C06010;fontSize=10;fontStyle=1;" parent="aman" vertex="1">
+                    <mxGeometry x="10" y="35" width="260" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="am_role_a" value="主人公の「善意の厳しい指導」が&#xa;実は虐待の再演だったことを証明する人物。&#xa;A男が崩壊することで、主人公は&#xa;「自分の行いが暴力だった」と突きつけられる。" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="am_role" vertex="1">
+                    <mxGeometry x="5" y="22" width="250" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="am1" value="属性" style="swimlane;startSize=20;fillColor=#fef3e2;strokeColor=#d79b00;fontSize=10;" parent="aman" vertex="1">
+                    <mxGeometry x="10" y="160" width="260" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="am1a" value="努力型エリート（東工大卒）&#xa;コミュニケーション能力が高い&#xa;（親のご機嫌をうかがって育った）" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="am1" vertex="1">
+                    <mxGeometry x="5" y="22" width="250" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="am2" value="背景・傷" style="swimlane;startSize=20;fillColor=#fef3e2;strokeColor=#d79b00;fontSize=10;" parent="aman" vertex="1">
+                    <mxGeometry x="10" y="250" width="260" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="am2a" value="教育虐待（学年1位でないと暴力）&#xa;主人公への嫉妬の核心：&#xa;　「百点取れなくてもいい子」という&#xa;　無条件の愛を自分は知らない&#xa;才能型の主人公への「努力って何だったんだ」感" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="am2" vertex="1">
+                    <mxGeometry x="5" y="22" width="250" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="am3" value="いじめの手口" style="swimlane;startSize=20;fillColor=#fef3e2;strokeColor=#d79b00;fontSize=10;" parent="aman" vertex="1">
+                    <mxGeometry x="10" y="375" width="260" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="am3a" value="評判の操作・孤立・精神攻撃が中心&#xa;物理的な暴力は少ないが、&#xa;親にされた暴力だけは主人公にもしてしまう" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="am3" vertex="1">
+                    <mxGeometry x="5" y="22" width="250" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="am4" value="第4幕での展開" style="swimlane;startSize=20;fillColor=#fef3e2;strokeColor=#d79b00;fontSize=10;" parent="aman" vertex="1">
+                    <mxGeometry x="10" y="470" width="260" height="95" as="geometry"/>
+                </mxCell>
+                <mxCell id="am4a" value="主人公の「厳密な指導」が&#xa;A男の幼少期の虐待と同じ体験として刺さる&#xa;→ 崩壊・出社不能・自殺企図&#xa;→「自分の厳密さは暴力だった」を主人公に突きつける" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="am4" vertex="1">
+                    <mxGeometry x="5" y="22" width="250" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="supp_title" value="補足設定" style="text;html=1;align=left;fontSize=13;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="860" width="800" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="pa_a" value="主人公" style="swimlane;startSize=22;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="895" width="380" height="155" as="geometry"/>
+                </mxCell>
+                <mxCell id="pa_a_t" value="・母に刷り込み：「鈍臭いあんたが勉強すらできなかったらいじめられる」と&#xa;刷り込まれてきた&#xa;・A男を恨んでいたが「恨んで責めるのはA男と同レベル」と思っていた&#xa;　（父親の考え方と同じ）&#xa;・だから「善意から、厳密な教育で助けよう」とした&#xa;・A男は論理で反論できないため主人公は加害していると気づかない&#xa;&#xa;参考キャラクター：自分" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="pa_a" vertex="1">
+                    <mxGeometry x="5" y="24" width="368" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="fa_a" value="父｜参観日の場面（A男嫉妬の種）" style="swimlane;startSize=22;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="895" width="280" height="165" as="geometry"/>
+                </mxCell>
+                <mxCell id="fa_a_t" value="・普段は月1回、病院でしか会えない&#xa;　（持病。参観日に車いすで来るのがほぼ最後の機会）&#xa;・体が不自由なのに「100点取れなくても〇〇はいい子」と愛する&#xa;&#xa;A男の目には：&#xa;「あんな父に自分も愛されたかった」&#xa;→「なぜ自分の親は100点でなければ怒鳴るのか」&#xa;→ 嫉妬の根っこ" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="fa_a" vertex="1">
+                    <mxGeometry x="5" y="24" width="268" height="132" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_a" value="B子" style="swimlane;startSize=22;fillColor=#f3e8ff;strokeColor=#9673a6;fontSize=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="740" y="895" width="290" height="175" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_a_t" value="「否定されるのが当たり前すぎた」&#xa;→ それでもこちらを向いてくれた人が珍しくて好きになった&#xa;&#xa;・主人公のきつい言い方も「自分はけなされて当然」&#xa;　と思っているから退けようとしない&#xa;　なんなら優しいとすら思っている&#xa;・参考キャラクター：初恋、ざらりの主人公&#xa;・主人公と一緒に過ごした日、「今日死んでもよかった」と思った&#xa;・主人公が「論理で訂正」したとき、B子は感情を引っ込めた&#xa;・B子にとって死は解放・幸せ&#xa;　主人公は苦しみの果てと誤解している" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="ba_a" vertex="1">
+                    <mxGeometry x="5" y="24" width="278" height="112" as="geometry"/>
+                </mxCell>
+                <mxCell id="aa_a" value="A男｜両親との関係（重要な背景）" style="swimlane;startSize=22;fillColor=#fef3e2;strokeColor=#d79b00;fontSize=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1050" y="895" width="280" height="155" as="geometry"/>
+                </mxCell>
+                <mxCell id="aa_a_t" value="・暴力を振るってきた両親に依存・離れられない&#xa;　→ 現在も介護している&#xa;・リモートワークできる仕事を選んだ理由：&#xa;　田舎の親元を離れずに稼ぐため&#xa;&#xa;参考キャラクター：「タコピーの原罪」東くん" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="aa_a" vertex="1">
+                    <mxGeometry x="5" y="24" width="268" height="122" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

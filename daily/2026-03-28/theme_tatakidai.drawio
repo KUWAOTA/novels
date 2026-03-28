@@ -1,0 +1,100 @@
+<mxfile host="65bd71144e">
+    <diagram id="T2XdiojnscmklFUdVYHu" name="Page-1">
+        <mxGraphModel dx="2245" dy="649" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" adaptiveColors="auto">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="① テーマ一文 — 構想たたき台" style="text;html=1;align=center;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="20" width="900" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="A" value="現テーマ文（確定ベースライン）" style="swimlane;startSize=28;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="80" width="900" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="A1" value="「厳密さ」こそが人を救うと考えた主人公が、曖昧さとディスコミュニケーションだらけの人間社会を愛せるようになる話" style="rounded=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=13;fontStyle=1;" parent="A" vertex="1">
+                    <mxGeometry x="20" y="35" width="860" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="B" value="言葉の選択で悩んでいる部分　→　なんか言葉の選択で悩むの本質的じゃない気がしてきた。　多分、ここに関しては説明を下に添える方針で行こう。　ちょっと黒田に見せる。テーマ文＋その説明を次のdraw.ioでは作っていきましょうか。" style="swimlane;startSize=28;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="200" width="900" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="B1" value="「厳密さ」" style="swimlane;startSize=24;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" parent="B" vertex="1">
+                    <mxGeometry x="10" y="38" width="280" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="B1a" value="厳密さ（現在）&#xa;→ エンジニア的。伝わらないかも" style="rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;align=left;spacingLeft=6;" parent="B1" vertex="1">
+                    <mxGeometry x="10" y="30" width="260" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="B1b" value="言語化&#xa;→ 黒田には一番通りやすい候補" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;align=left;spacingLeft=6;" parent="B1" vertex="1">
+                    <mxGeometry x="10" y="80" width="260" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="B1c" value="再現性&#xa;→ 主人公の内的概念として正確だが抽象的" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" parent="B1" vertex="1">
+                    <mxGeometry x="10" y="130" width="260" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="B1d" value="定義・論理&#xa;→ 硬すぎる" style="rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;align=left;spacingLeft=6;" parent="B1" vertex="1">
+                    <mxGeometry x="10" y="180" width="260" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="B2" value="「守ろう」" style="swimlane;startSize=24;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" parent="B" vertex="1">
+                    <mxGeometry x="310" y="38" width="280" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="B2a" value="守ろうとした（現在）&#xa;→ 防衛？救済？意味がぶれる" style="rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;align=left;spacingLeft=6;" parent="B2" vertex="1">
+                    <mxGeometry x="10" y="30" width="260" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="B2b" value="救おうとした&#xa;→ 能動的・意志が明確になる" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;align=left;spacingLeft=6;" parent="B2" vertex="1">
+                    <mxGeometry x="10" y="80" width="260" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="B2c" value="制御しようとした&#xa;→ ニュートラル。少し機械的" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" parent="B2" vertex="1">
+                    <mxGeometry x="10" y="130" width="260" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="B2d" value="定義しようとした&#xa;→ エンジニア感強い。コアを突いている" style="rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;align=left;spacingLeft=6;" parent="B2" vertex="1">
+                    <mxGeometry x="10" y="180" width="260" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="B3" value="具体例が必要な理由" style="swimlane;startSize=24;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" parent="B" vertex="1">
+                    <mxGeometry x="610" y="38" width="280" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="B3a" value="テーマ文は象徴的すぎて&#xa;読むだけでは意味がブレる" style="rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;align=left;spacingLeft=6;" parent="B3" vertex="1">
+                    <mxGeometry x="10" y="30" width="260" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="B3b" value="具体例案：&#xa;「彼は分数の割り算の意味が分からないと先生に言えず、父だけが『俺もそうだ』と言ってくれた」&#xa;→ 「厳密さで世界を理解しようとした」の起源" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;align=left;spacingLeft=6;" parent="B3" vertex="1">
+                    <mxGeometry x="10" y="83" width="260" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="B3c" value="黒田への共有時は&#xa;テーマ文 + 1エピソードセットで渡す" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;align=left;spacingLeft=6;" parent="B3" vertex="1">
+                    <mxGeometry x="10" y="170" width="260" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="C" value="マッキー的構造（テーマ ≒ 統制概念）　マッキーの話はハイコンテキスト。だから　難しい言葉を使わずに、最初の信念-&gt;　主人公が信じている価値観の変遷　→　この小説を通じて伝えたいテーマ　とした方がいいと思う。" style="swimlane;startSize=28;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="510" width="900" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="C1" value="対立命題（opposing）&#xa;「厳密さだけが人を救い&#xa;正しい世界を作る」&#xa;= 主人公の誤信念" style="rounded=1;fillColor=#f8cecc;strokeColor=#C0392B;fontSize=11;align=left;spacingLeft=8;" parent="C" vertex="1">
+                    <mxGeometry x="10" y="40" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="C2" value="価値変化弧（確定）&#xa;&#xa;理解すれば救える&#xa;↓&#xa;理解しても救えない&#xa;↓&#xa;理解できなくても寄り添える" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" parent="C" vertex="1">
+                    <mxGeometry x="350" y="40" width="200" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="C3" value="統制命題（controlling）候補&#xa;「曖昧さを受け入れることで&#xa;人は他者の世界を旅し&#xa;真に抱擁できるようになる」&#xa;→ まだ❓確定していない" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;spacingLeft=8;" parent="C" vertex="1">
+                    <mxGeometry x="690" y="40" width="200" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ce1" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" parent="C" source="C1" target="C2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Ce2" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" parent="C" source="C2" target="C3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="C_note" value="⚠️ 悩み：「テーマ」と「統制概念」は同じ？ズレる？マッキー的には統制概念が上位概念。テーマ文は読者向け言い換え、という整理でいいか黒田に確認したい" style="rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" parent="C" vertex="1">
+                    <mxGeometry x="50" y="180" width="770" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="D" value="テーマを体現するエピソード（具体例セット）　こうやって別個に項目立てるんじゃなくて、テーマの説明をするためのスライドにしましょう。　そして、その具体例ノードにこの辺の具体例が来るようにしましょう。" style="swimlane;startSize=28;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="740" width="900" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="D1" value="① 父と数式（ACT1）&#xa;「問いの言い換え」&#xa;→ 再現性の起源&#xa;→ 厳密さ信仰のはじまり" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=10;align=left;spacingLeft=6;" parent="D" vertex="1">
+                    <mxGeometry x="10" y="40" width="195" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="D2" value="② B子の自殺（ACT2）&#xa;「厳密な言語があれば&#xa;彼女は生きられた」&#xa;→ 誤信念の確立" style="rounded=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontSize=10;align=left;spacingLeft=6;" parent="D" vertex="1">
+                    <mxGeometry x="220" y="40" width="195" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="D3" value="③ A男への指導（ACT4）&#xa;「正しい説明で人が壊れた」&#xa;→ 厳密さが暴力になる&#xa;→ 誤信念の崩壊" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;align=left;spacingLeft=6;" parent="D" vertex="1">
+                    <mxGeometry x="430" y="40" width="195" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="D4" value="④ クライマックス（ACT5）&#xa;「理解できなくても&#xa;それでも愛する」選択&#xa;→ テーマの体現" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=10;align=left;spacingLeft=6;" parent="D" vertex="1">
+                    <mxGeometry x="680" y="40" width="210" height="120" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

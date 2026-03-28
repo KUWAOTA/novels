@@ -1,0 +1,163 @@
+<mxGraphModel adaptiveColors="auto">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+
+    <!-- === Block0: フレーミング（誤解を防ぐ） === -->
+    <mxCell id="00" value="⚠️ 伝えるべき文脈（誤解防止）" style="swimlane;startSize=30;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="40" y="40" width="560" height="130" as="geometry"/>
+    </mxCell>
+    <mxCell id="01" value="❌「原稿ゼロ」という誤解" style="rounded=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="00">
+      <mxGeometry x="20" y="50" width="220" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="02" value="⭕「書き進め方を模索中」が正確" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="00">
+      <mxGeometry x="310" y="50" width="230" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="e00" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="00" source="01" target="02">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- Arrow 0 to 1 -->
+    <mxCell id="e_01" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="00" target="10">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- === Block1: 今の進捗（経緯つき） === -->
+    <mxCell id="10" value="① 今の進捗（何をやっていたか）" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="40" y="230" width="560" height="240" as="geometry"/>
+    </mxCell>
+    <mxCell id="11" value="大きめのプロットを作った" style="rounded=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="10">
+      <mxGeometry x="20" y="50" width="200" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="12" value="問題発生：大→小ブレイクダウンだと&#xa;各部分の自由度が死ぬ" style="rounded=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="10">
+      <mxGeometry x="20" y="130" width="200" height="55" as="geometry"/>
+    </mxCell>
+    <mxCell id="13" value="方針転換&#xa;・羅針盤として大枠を固める&#xa;・1章から実際に書き始める" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="10">
+      <mxGeometry x="310" y="90" width="230" height="75" as="geometry"/>
+    </mxCell>
+    <mxCell id="14" value="今あるもの：未完成プロット＋1章書き始め" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="10">
+      <mxGeometry x="160" y="185" width="240" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="10" source="11" target="12">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="10" source="12" target="13">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="e13" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="10" source="13" target="14">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- Arrow 1 to 2 -->
+    <mxCell id="e_12" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="10" target="20">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- === Block2: レジュメ草稿 === -->
+    <mxCell id="20" value="② レジュメ草稿（黒田に送る素材）" style="swimlane;startSize=30;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="40" y="540" width="560" height="370" as="geometry"/>
+    </mxCell>
+
+    <!-- テーマ -->
+    <mxCell id="21" value="テーマ（一文）" style="swimlane;startSize=22;fillColor=#e8f5e9;strokeColor=#82b366;fontSize=11;" vertex="1" parent="20">
+      <mxGeometry x="10" y="40" width="540" height="70" as="geometry"/>
+    </mxCell>
+    <mxCell id="21a" value="厳密さで世界を守ろうとした人間が、誤解と傷でできた社会を、それでも愛せるようになる話" style="rounded=1;fillColor=#ffffff;strokeColor=#82b366;align=left;spacingLeft=8;" vertex="1" parent="21">
+      <mxGeometry x="10" y="28" width="520" height="32" as="geometry"/>
+    </mxCell>
+
+    <!-- プロット -->
+    <mxCell id="22" value="プロット概要（転換点）" style="swimlane;startSize=22;fillColor=#e8f5e9;strokeColor=#82b366;fontSize=11;" vertex="1" parent="20">
+      <mxGeometry x="10" y="120" width="540" height="140" as="geometry"/>
+    </mxCell>
+    <mxCell id="22a" value="ACT1（小学生）&#xa;父の死" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=10;" vertex="1" parent="22">
+      <mxGeometry x="10" y="30" width="90" height="55" as="geometry"/>
+    </mxCell>
+    <mxCell id="22b" value="ACT2（中学）&#xa;B子の自殺" style="rounded=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontSize=10;" vertex="1" parent="22">
+      <mxGeometry x="115" y="30" width="90" height="55" as="geometry"/>
+    </mxCell>
+    <mxCell id="22c" value="ACT3（灘〜東大）&#xa;厳密さ＝救済の確信" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=10;" vertex="1" parent="22">
+      <mxGeometry x="220" y="30" width="90" height="55" as="geometry"/>
+    </mxCell>
+    <mxCell id="22d" value="ACT4（社会人）&#xa;A男崩壊" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;" vertex="1" parent="22">
+      <mxGeometry x="325" y="30" width="90" height="55" as="geometry"/>
+    </mxCell>
+    <mxCell id="22e" value="ACT5（クライマックス）&#xa;A男自殺未遂&#xa;→ 理解なき愛" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=10;" vertex="1" parent="22">
+      <mxGeometry x="430" y="30" width="100" height="55" as="geometry"/>
+    </mxCell>
+    <mxCell id="e22ab" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="22" source="22a" target="22b">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="e22bc" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="22" source="22b" target="22c">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="e22cd" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="22" source="22c" target="22d">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="e22de" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="22" source="22d" target="22e">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="22note" value="❓ ACT5の具体場面は未確定" style="text;strokeColor=none;fillColor=none;fontSize=10;fontColor=#FF0000;" vertex="1" parent="22">
+      <mxGeometry x="10" y="100" width="200" height="30" as="geometry"/>
+    </mxCell>
+
+    <!-- キャラリスト -->
+    <mxCell id="23" value="登場人物リスト" style="swimlane;startSize=22;fillColor=#e8f5e9;strokeColor=#82b366;fontSize=11;" vertex="1" parent="20">
+      <mxGeometry x="10" y="270" width="540" height="85" as="geometry"/>
+    </mxCell>
+    <mxCell id="23a" value="主人公&#xa;ASD傾向エンジニア&#xa;「厳密＝救済」" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=10;" vertex="1" parent="23">
+      <mxGeometry x="10" y="28" width="110" height="47" as="geometry"/>
+    </mxCell>
+    <mxCell id="23b" value="父（故人）&#xa;研究者・唯一の理解者&#xa;中1で死去" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=10;" vertex="1" parent="23">
+      <mxGeometry x="135" y="28" width="110" height="47" as="geometry"/>
+    </mxCell>
+    <mxCell id="23c" value="B子（故人）&#xa;知的障害・鏡像&#xa;中学時代に自殺" style="rounded=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontSize=10;" vertex="1" parent="23">
+      <mxGeometry x="260" y="28" width="110" height="47" as="geometry"/>
+    </mxCell>
+    <mxCell id="23d" value="A男&#xa;努力型エリート&#xa;いじめ→同僚→部下" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;" vertex="1" parent="23">
+      <mxGeometry x="385" y="28" width="110" height="47" as="geometry"/>
+    </mxCell>
+
+    <!-- Arrow 2 to 3 -->
+    <mxCell id="e_23" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="20" target="30">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- === Block3: 準備フェーズ タスク分担 === -->
+    <mxCell id="30" value="③ 準備フェーズ（準備.png より）" style="swimlane;startSize=30;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="40" y="980" width="560" height="220" as="geometry"/>
+    </mxCell>
+
+    <!-- おさかな側 -->
+    <mxCell id="31" value="おさかな側" style="swimlane;startSize=22;fillColor=#e8f5e9;strokeColor=#82b366;fontSize=11;" vertex="1" parent="30">
+      <mxGeometry x="10" y="40" width="260" height="155" as="geometry"/>
+    </mxCell>
+    <mxCell id="31a" value="✅ レジュメ作成（↑ Block②）" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="31">
+      <mxGeometry x="10" y="28" width="240" height="35" as="geometry"/>
+    </mxCell>
+    <mxCell id="31b" value="⬜ 一日の区切りまで書く&#xa;（ACT1-01を自分で書き直す？）" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="31">
+      <mxGeometry x="10" y="80" width="240" height="55" as="geometry"/>
+    </mxCell>
+
+    <!-- 黒田側 -->
+    <mxCell id="32" value="黒田側" style="swimlane;startSize=22;fillColor=#e3f2fd;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="30">
+      <mxGeometry x="290" y="40" width="260" height="155" as="geometry"/>
+    </mxCell>
+    <mxCell id="32a" value="原稿を読む" style="rounded=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="32">
+      <mxGeometry x="10" y="28" width="240" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="32b" value="課題洗い出し" style="rounded=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="32">
+      <mxGeometry x="10" y="72" width="240" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="32c" value="改善案提示・目標設定" style="rounded=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="32">
+      <mxGeometry x="10" y="115" width="240" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="e32ab" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="32" source="32a" target="32b">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="e32bc" style="edgeStyle=orthogonalEdgeStyle;" edge="1" parent="32" source="32b" target="32c">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+  </root>
+</mxGraphModel>

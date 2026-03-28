@@ -13,7 +13,7 @@ tags:
 - [[constrain/constrain_hub]]
 - [[story-compiler/story_compiler_hub]]
 - [[author/author_hub]]
-- [[dialy/diary_hub]]
+- [[diary/diary_hub]]
 - [[old/old_works_hub]]
 - [[taskManegement/task_management_hub]]
 
@@ -27,7 +27,7 @@ tags:
 
 - [[constrain/brainstorm/brainstorm_assets_hub]]
 - [[constrain/brainstorm/generated_drafts/generated_drafts_hub]]
-- [[dialy/daily_logs_hub]]
+- [[diary/daily_logs_hub]]
 - [[friends_novel/takahashi/takahashi_hub]]
 - [[old/legacy_fragments_hub]]
 - [[old/nissan_notes_hub]]

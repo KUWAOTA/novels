@@ -42,5 +42,5 @@ tags:
 
 - [[story-compiler/story_compiler_hub]]
 - [[author/author_hub]]
-- [[dialy/diary_hub]]
+- [[diary/diary_hub]]
 - [[workspace_hub]]

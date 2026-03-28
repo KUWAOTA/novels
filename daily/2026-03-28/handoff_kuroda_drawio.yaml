@@ -1,0 +1,45 @@
+task: 黒田への状況整理draw.io作成
+date: 2026-03-28
+
+context: |
+  黒田（友人・執筆メンター）へ現在の執筆状況を共有するdraw.ioを作る。
+  LINEで「ちょっと状況整理して見せる」と伝えた（p4.md参照）。
+  準備フェーズ（準備.png）はこの土日で終わらせる予定。
+
+current_files:
+  draft_drawio: kuroda-training/draft_for_kuroda.drawio
+  source_images:
+    - kuroda-training/prompt/準備.png   # 準備フェーズの定義
+    - kuroda-training/prompt/運用.png   # 運用フェーズの定義
+
+drawio_structure:
+  block1:
+    title: "① 今の進捗"
+    content:
+      - 書き進め方を模索中
+      - 未完成プロット（大枠）
+      - 1章の書き始め
+      - ⚠️ まだ本格的には書けていない
+  block2:
+    title: "② 準備フェーズ（準備.png より）"
+    osakana:
+      - レジュメ作成（テーマ一文・プロット概要・キャラリスト）
+      - 一日の区切りまで書き進める
+    kuroda:
+      - 原稿を読む → 課題洗い出し → 改善案提示・目標設定
+
+next_steps:
+  - draft_for_kuroda.drawio の内容を確認・調整
+  - 必要なら1文メッセージを添えて黒田に送付
+  - 準備フェーズ（レジュメ作成）を今日中に着手
+
+file_policy:
+  approved: true
+  kuroda_training: "確定成果物のみ（草案はdailyへ）"
+  daily: "Claudeの作業ログ・草案・たたき台"
+  diary: "ユーザーの日記フォルダ — AIは書かない"
+
+notes:
+  - 黒田は友人なので敬語不要
+  - draw.io は mcp__drawio__open_drawio_xml で作成（mermaidラッパーは文字化けする）
+  - kuroda-training/ 直下の既存 needs_*.drawio はそのまま（触らない）

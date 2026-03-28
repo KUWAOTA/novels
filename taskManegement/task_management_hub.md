@@ -21,7 +21,7 @@ tags:
 
 ## Related Clusters
 
-- 日記: [[dialy/diary_hub]]
+- 日記: [[diary/diary_hub]]
 - ソフトウェア知識: [[softwareKnowlegde/software_knowledge_hub]]
 - 学校: [[school/school_hub]]
 - ワークスペース全体: [[workspace_hub]]

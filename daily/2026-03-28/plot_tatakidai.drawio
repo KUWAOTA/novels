@@ -1,0 +1,138 @@
+<mxGraphModel adaptiveColors="auto">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+
+    <!-- タイトル -->
+    <mxCell id="title" value="② プロット — 構想たたき台（悩みポイント込み）" style="text;html=1;align=center;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="40" y="20" width="1300" height="40" as="geometry"/>
+    </mxCell>
+
+    <!-- === 物語のエール（結末） === -->
+    <mxCell id="goal" value="物語のエール（結末）" style="swimlane;startSize=24;fillColor=#f8cecc;strokeColor=#C0392B;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="40" y="70" width="1300" height="90" as="geometry"/>
+    </mxCell>
+    <mxCell id="goal1" value="A男が自殺を企図する。主人公は「自分の厳密さが人を殺した」に直面する。&#xa;しかし「厳密さを捨てる」ではなく「理解できなくても寄り添う」という選択をして終わる。&#xa;⚠️ 具体的な場面・台詞はまだ未設計" style="rounded=1;fillColor=#FFE0E0;strokeColor=#C0392B;fontSize=11;" vertex="1" parent="goal">
+      <mxGeometry x="20" y="30" width="1260" height="45" as="geometry"/>
+    </mxCell>
+
+    <!-- === ACT横フロー === -->
+    <!-- ACT1 -->
+    <mxCell id="act1" value="ACT 1 — 小学生" style="swimlane;startSize=26;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="40" y="200" width="230" height="250" as="geometry"/>
+    </mxCell>
+    <mxCell id="a1_1" value="ASD傾向で浮く&#xa;（空気が読めない）" style="rounded=1;fillColor=#ffffff;strokeColor=#4A7FB5;fontSize=10;" vertex="1" parent="act1">
+      <mxGeometry x="10" y="35" width="210" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="a1_2" value="父から「仮説→検証」&#xa;論理・数式の美しさを学ぶ" style="rounded=1;fillColor=#ffffff;strokeColor=#4A7FB5;fontSize=10;" vertex="1" parent="act1">
+      <mxGeometry x="10" y="85" width="210" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="a1_3" value="A男：嫉妬の始まり&#xa;（父の愛 + 成績への羨望）" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;" vertex="1" parent="act1">
+      <mxGeometry x="10" y="135" width="210" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="a1_turn" value="転換点：父の死（中1直後）&#xa;→ 孤立・誤信念の種" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontStyle=1;fontSize=10;" vertex="1" parent="act1">
+      <mxGeometry x="10" y="195" width="210" height="45" as="geometry"/>
+    </mxCell>
+
+    <!-- ACT2 -->
+    <mxCell id="act2" value="ACT 2 — 中学時代" style="swimlane;startSize=26;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="300" y="200" width="230" height="250" as="geometry"/>
+    </mxCell>
+    <mxCell id="a2_1" value="保健室登校→B子と出会う&#xa;（鏡像として慕う）" style="rounded=1;fillColor=#ffffff;strokeColor=#7B4F9E;fontSize=10;" vertex="1" parent="act2">
+      <mxGeometry x="10" y="35" width="210" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="a2_2" value="A男：教育虐待加速&#xa;いじめが過激化（双方苦しい）" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;" vertex="1" parent="act2">
+      <mxGeometry x="10" y="85" width="210" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="a2_3" value="主人公：論理でいじめを&#xa;かわす方法を見つける" style="rounded=1;fillColor=#ffffff;strokeColor=#7B4F9E;fontSize=10;" vertex="1" parent="act2">
+      <mxGeometry x="10" y="135" width="210" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="a2_turn" value="転換点：B子の自殺&#xa;→「厳密なら救えた」誤信念" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontStyle=1;fontSize=10;" vertex="1" parent="act2">
+      <mxGeometry x="10" y="195" width="210" height="45" as="geometry"/>
+    </mxCell>
+
+    <!-- ACT3 -->
+    <mxCell id="act3" value="ACT 3 — 灘〜東大" style="swimlane;startSize=26;fillColor=#D6E4F0;strokeColor=#2C6FAC;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="560" y="200" width="230" height="250" as="geometry"/>
+    </mxCell>
+    <mxCell id="a3_1" value="灘合格。A男：灘落ち&#xa;エリート環境でなじめる" style="rounded=1;fillColor=#ffffff;strokeColor=#2C6FAC;fontSize=10;" vertex="1" parent="act3">
+      <mxGeometry x="10" y="35" width="210" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="a3_2" value="「論理的な言語運用 =&#xa;馴染める場所」を確認" style="rounded=1;fillColor=#ffffff;strokeColor=#2C6FAC;fontSize=10;" vertex="1" parent="act3">
+      <mxGeometry x="10" y="85" width="210" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="a3_3" value="東大合格。A男：東大落ち→東工大&#xa;「B子を救えた」後悔" style="rounded=1;fillColor=#ffffff;strokeColor=#2C6FAC;fontSize=10;" vertex="1" parent="act3">
+      <mxGeometry x="10" y="135" width="210" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="a3_turn" value="転換点：厳密さ＝救済の確信が固着&#xa;⚠️内的変化のみ。外的イベント弱い" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=10;" vertex="1" parent="act3">
+      <mxGeometry x="10" y="195" width="210" height="45" as="geometry"/>
+    </mxCell>
+
+    <!-- ACT4 -->
+    <mxCell id="act4" value="ACT 4 — 社会人" style="swimlane;startSize=26;fillColor=#FDEBD0;strokeColor=#E67E22;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="820" y="200" width="230" height="250" as="geometry"/>
+    </mxCell>
+    <mxCell id="a4_1" value="Google Japan就職&#xa;主人公：実力。A男：コミュ力" style="rounded=1;fillColor=#ffffff;strokeColor=#E67E22;fontSize=10;" vertex="1" parent="act4">
+      <mxGeometry x="10" y="35" width="210" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="a4_2" value="主人公が先に昇進→A男が部下に&#xa;善意の「厳密な指導」開始" style="rounded=1;fillColor=#ffffff;strokeColor=#E67E22;fontSize=10;" vertex="1" parent="act4">
+      <mxGeometry x="10" y="85" width="210" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="a4_3" value="A男が崩壊→出社不能&#xa;主人公：「自分がA男と同じことをしている」気づき" style="rounded=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" vertex="1" parent="act4">
+      <mxGeometry x="10" y="135" width="210" height="50" as="geometry"/>
+    </mxCell>
+    <mxCell id="a4_turn" value="転換点：鏡像認識&#xa;→ 価値観の瓦解" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontStyle=1;fontSize=10;" vertex="1" parent="act4">
+      <mxGeometry x="10" y="200" width="210" height="40" as="geometry"/>
+    </mxCell>
+
+    <!-- ACT5 -->
+    <mxCell id="act5" value="ACT 5 — クライマックス" style="swimlane;startSize=26;fillColor=#FFE0E0;strokeColor=#C0392B;strokeWidth=2;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1080" y="200" width="260" height="250" as="geometry"/>
+    </mxCell>
+    <mxCell id="a5_1" value="A男が自殺を企図&#xa;（B子の自殺トラウマが呼応）" style="rounded=1;fillColor=#FFE0E0;strokeColor=#C0392B;fontSize=10;" vertex="1" parent="act5">
+      <mxGeometry x="10" y="35" width="240" height="45" as="geometry"/>
+    </mxCell>
+    <mxCell id="a5_2" value="⚠️ 未設計：&#xa;主人公はどう行動するか？&#xa;具体場面・台詞なし" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=10;" vertex="1" parent="act5">
+      <mxGeometry x="10" y="90" width="240" height="55" as="geometry"/>
+    </mxCell>
+    <mxCell id="a5_3" value="結末：「理解できなくても寄り添う」&#xa;= 厳密さ + 曖昧さの統合" style="rounded=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=10;" vertex="1" parent="act5">
+      <mxGeometry x="10" y="158" width="240" height="45" as="geometry"/>
+    </mxCell>
+    <mxCell id="a5_turn" value="転換点：不可逆な価値変化&#xa;（統制概念の体現）" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontStyle=1;fontSize=10;" vertex="1" parent="act5">
+      <mxGeometry x="10" y="212" width="240" height="30" as="geometry"/>
+    </mxCell>
+
+    <!-- ACT間の矢印 -->
+    <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" edge="1" parent="1" source="act1" target="act2">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="e23" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" edge="1" parent="1" source="act2" target="act3">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="e34" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" edge="1" parent="1" source="act3" target="act4">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="e45" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#C0392B;" edge="1" parent="1" source="act4" target="act5">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+
+    <!-- === 悩みポイント === -->
+    <mxCell id="worry_title" value="悩みポイント・未解決事項" style="text;html=1;fontSize=14;fontStyle=1;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+      <mxGeometry x="40" y="490" width="300" height="30" as="geometry"/>
+    </mxCell>
+
+    <mxCell id="w1" value="⚠️ ACT3の転換点が弱い&#xa;（内的確信のみ、外的事件なし）&#xa;→ 何か外部イベントを足すか？&#xa;→ それとも内的変化で十分か？" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=8;" vertex="1" parent="1">
+      <mxGeometry x="40" y="530" width="260" height="85" as="geometry"/>
+    </mxCell>
+    <mxCell id="w2" value="⚠️ ACT5の具体場面が未設計&#xa;McKee必要条件：&#xa;□ 中央価値軸が決着&#xa;□ 不可逆な価値変化&#xa;□ 期待と結果の最大ギャップ&#xa;→ 黒田に相談したい" style="rounded=1;fillColor=#f8cecc;strokeColor=#C0392B;fontSize=10;align=left;spacingLeft=8;" vertex="1" parent="1">
+      <mxGeometry x="320" y="530" width="260" height="105" as="geometry"/>
+    </mxCell>
+    <mxCell id="w3" value="⚠️ 大きなプロット vs 幼少期から書く問題&#xa;（0309 伊庭指摘）&#xa;・大→小ブレイクダウンだとキャラが動くたびに矛盾する&#xa;・羅針盤程度にとどめて、幼少期から書く方が正解では？&#xa;・幼少期の虐めパートだけ短編として先に完成させるのもあり&#xa;→ 今の自分の方針：大枠は羅針盤、ACT1から書き始める&#xa;→ 黒田はどう思う？" style="rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;align=left;spacingLeft=8;" vertex="1" parent="1">
+      <mxGeometry x="600" y="530" width="380" height="115" as="geometry"/>
+    </mxCell>
+    <mxCell id="w4" value="❓ B子の知的障害設定が重い&#xa;→ 伝わるか？受け入れられるか？&#xa;→ 黒田の反応を確認したい" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=8;" vertex="1" parent="1">
+      <mxGeometry x="1000" y="530" width="260" height="75" as="geometry"/>
+    </mxCell>
+
+  </root>
+</mxGraphModel>

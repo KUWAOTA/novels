@@ -1,0 +1,196 @@
+<mxfile host="65bd71144e">
+    <diagram id="d_act5" name="ACT5設計図">
+        <mxGraphModel dx="1366" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1300" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="Constrain — ACT5 クライマックス＆エピローグ 設計ブループリント（執筆準備用）" style="text;html=1;align=center;fontSize=17;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="15" width="1860" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="leg1" value="✅ 確定" style="rounded=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="58" width="80" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="leg2" value="🔶 有力案" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="108" y="58" width="80" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="leg3" value="❓ 未定・要設計" style="rounded=1;fillColor=#FFF3CD;strokeColor=#FFC107;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="196" y="58" width="110" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="leg4" value="🔴 核心（最重要）" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="314" y="58" width="120" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="leg5" value="★ クライマックス" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="442" y="58" width="120" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="secA" value="■ 価値弧の全体像 ——「理解すれば救える → 理解しても救えない → 理解できなくても寄り添える」" style="text;html=1;fontSize=12;fontStyle=1;fillColor=#F0F0F0;strokeColor=#AAAAAA;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="95" width="1860" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="vact1" value="&lt;b&gt;ACT1 小学生&lt;/b&gt;&lt;br&gt;父から論理・数式を学ぶ&lt;br&gt;誤信念の芽生え&lt;br&gt;&lt;font color=&#39;#28A745&#39;&gt;✅ 完成（5シーン）&lt;/font&gt;" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=10;align=center;verticalAlign=middle;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="130" width="270" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_v12" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#4A7FB5;" parent="1" source="vact1" target="vact2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="vact2" value="&lt;b&gt;ACT2 中学&lt;/b&gt;&lt;br&gt;B子と出会い / B子の自死&lt;br&gt;「厳密さで救えた」という誤解&lt;br&gt;&lt;font color=&#39;#28A745&#39;&gt;✅ 完成（5シーン）&lt;/font&gt;" style="rounded=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontSize=10;align=center;verticalAlign=middle;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="130" width="270" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_v23" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#7B4F9E;" parent="1" source="vact2" target="vact3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="vact3" value="&lt;b&gt;ACT3 灘〜東大&lt;/b&gt;&lt;br&gt;エリートで適応 /「厳密＝救済」確信&lt;br&gt;「B子をここに連れてこれれば」後悔&lt;br&gt;&lt;font color=&#39;#E67E22&#39;&gt;🔶 未執筆（概要確定）&lt;/font&gt;" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=10;align=center;verticalAlign=middle;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="130" width="290" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_v34" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#4A7FB5;" parent="1" source="vact3" target="vact4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="vact4" value="&lt;b&gt;ACT4 社会人（Google）&lt;/b&gt;&lt;br&gt;A男への「善意の加害」&lt;br&gt;厳密さが暴力だと気づき始める&lt;br&gt;&lt;font color=&#39;#E67E22&#39;&gt;🔶 未執筆（概要確定）&lt;/font&gt;" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;align=center;verticalAlign=middle;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="940" y="130" width="290" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_v45" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#C0392B;" parent="1" source="vact4" target="vact5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="vact5" value="&lt;b&gt;ACT5 クライマックス〜エピローグ&lt;/b&gt;&lt;br&gt;A男の自殺企図 / B子の記憶と対峙&lt;br&gt;「理解できなくても愛せる」への到達&lt;br&gt;&lt;font color=&#39;#C0392B&#39;&gt;🔴 これから設計 ← いまここ&lt;/font&gt;" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=10;fontStyle=1;align=center;verticalAlign=middle;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1260" y="130" width="620" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="secB" value="■ ACT5 ビート構造（McKee準拠）— 各ビートの出来事・価値変化・設計要否" style="text;html=1;fontSize=12;fontStyle=1;fillColor=#F0F0F0;strokeColor=#AAAAAA;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="218" width="1860" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="beat0" value="&lt;b&gt;[前段] ACT4末尾の状態&lt;/b&gt;&lt;hr/&gt;出来事: A男が崩壊・出社拒否&lt;br&gt;主人公:「正しく教えたのに…」&lt;br&gt;価値観に揺れが生じ始めている&lt;br&gt;&lt;br&gt;価値変化: 不安定 (−)&lt;br&gt;&lt;font color=&#39;#E67E22&#39;&gt;🔶 概要確定&lt;/font&gt;" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="254" width="260" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_b01" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#C0392B;" parent="1" source="beat0" target="beat1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="beat1" value="&lt;b&gt;[契機] A男の自殺企図&lt;/b&gt;&lt;hr/&gt;出来事: A男が自殺を企図する&lt;br&gt;（場所・状況・発見者は❓）&lt;br&gt;主人公: B子の記憶が&lt;br&gt;フラッシュバック → パニック&lt;br&gt;&lt;br&gt;価値変化: 危機的 (−−)&lt;br&gt;&lt;font color=&#39;#FFC107&#39;&gt;❓ 詳細は要設計&lt;/font&gt;" style="rounded=1;fillColor=#FFF3CD;strokeColor=#FFC107;fontSize=10;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="254" width="260" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_b12" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#C0392B;" parent="1" source="beat1" target="beat2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="beat2" value="&lt;b&gt;[誤信念の最後の発動]&lt;/b&gt;&lt;hr/&gt;主人公:「正しい言葉でもう一度&lt;br&gt;説明すれば救えるはずだ」&lt;br&gt;→ A男に拒絶される&lt;br&gt;（誤信念の最後の試み）&lt;br&gt;&lt;br&gt;価値変化: 悪化 (−−−)&lt;br&gt;&lt;font color=&#39;#FFC107&#39;&gt;❓ 要設計&lt;/font&gt;" style="rounded=1;fillColor=#FFF3CD;strokeColor=#FFC107;fontSize=10;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="254" width="260" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_b23" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#C0392B;" parent="1" source="beat2" target="beat3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="beat3" value="&lt;b&gt;🔴 [クライシス] 最大ジレンマ&lt;/b&gt;&lt;hr/&gt;「またあの時と同じだ」&lt;br&gt;誤信念の崩壊:&lt;br&gt;「厳密さがAを壊した = Bも&lt;br&gt;厳密さで死んだのではない」&lt;br&gt;&lt;b&gt;ジレンマ:「理解できないまま&lt;br&gt;傍にいるか / 正解を探すか」&lt;/b&gt;&lt;br&gt;価値変化: 最低点 (−最大)&lt;br&gt;&lt;font color=&#39;#C0392B&#39;&gt;🔴 核心・最重要設計箇所&lt;/font&gt;" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=10;fontStyle=1;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="890" y="254" width="275" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_b34" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#4A7FB5;" parent="1" source="beat3" target="beat4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="beat4" value="&lt;b&gt;★ [クライマックス] 主人公の選択&lt;/b&gt;&lt;hr/&gt;「わからない。でも傍にいる。」&lt;br&gt;→ 言葉なしの行動で示す&lt;br&gt;統制概念が初めて体現される瞬間&lt;br&gt;B子への誤解が内面で解ける&lt;br&gt;（厳密さが彼女を救えたのではなく&lt;br&gt;　愛そのものが答えだった）&lt;br&gt;価値変化: 最大反転 (+最大)&lt;br&gt;&lt;font color=&#39;#FFC107&#39;&gt;❓ 具体シーンは要設計&lt;/font&gt;" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=10;fontStyle=1;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1195" y="254" width="280" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_b45" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#28A745;" parent="1" source="beat4" target="beat5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="beat5" value="&lt;b&gt;[エピローグ] 新しい平衡&lt;/b&gt;&lt;hr/&gt;主人公の新たな状態&lt;br&gt;「理解できなくても今日を生きる」&lt;br&gt;読後感ターゲット: （要決定）&lt;br&gt;&lt;br&gt;→ Step1で決めた感情から&lt;br&gt;　逆算して設計する&lt;br&gt;&lt;br&gt;価値変化: 安定（新）(+)&lt;br&gt;&lt;font color=&#39;#FFC107&#39;&gt;❓ 逆算設計&lt;/font&gt;" style="rounded=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=10;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1505" y="254" width="375" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="secC" value="■ 今から決めるべき項目" style="text;html=1;fontSize=12;fontStyle=1;fillColor=#F0F0F0;strokeColor=#AAAAAA;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="448" width="870" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="p1hdr" value="【優先度1】執筆開始前に必須の決定事項" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#F5C6CB;strokeColor=#C0392B;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="482" width="870" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="p1a" value="&lt;b&gt;❓ 読後感ターゲット&lt;/b&gt;&lt;br&gt;「本を閉じた読者にどんな感情を残すか」&lt;br&gt;例: 悲しいけど温かい / 苦しいけど前を向ける / 静かな解放感&lt;br&gt;→ これが全設計の出発点（Step 1）" style="rounded=1;fillColor=#FFF3CD;strokeColor=#FFC107;fontSize=10;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="516" width="420" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="p1b" value="&lt;b&gt;❓ 統制概念の最終確定&lt;/b&gt;&lt;br&gt;現状: 「曖昧さを受け入れることで…」（未確定）&lt;br&gt;→ クライマックスシーンと照合して1文に決める&lt;br&gt;→ McKee: クライマックスで体現されなければエラー" style="rounded=1;fillColor=#FFF3CD;strokeColor=#FFC107;fontSize=10;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="516" width="430" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="p1c" value="&lt;b&gt;❓ クライマックスシーンの形式&lt;/b&gt;&lt;br&gt;「どこで、主人公はどう行動するか」&lt;br&gt;（言葉か / 沈黙か / 身体的動作か）&lt;br&gt;→ 右の候補案A/B/Cを参照" style="rounded=1;fillColor=#FFF3CD;strokeColor=#FFC107;fontSize=10;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="604" width="420" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="p1d" value="&lt;b&gt;❓ エピローグの象徴的ラストシーン&lt;/b&gt;&lt;br&gt;「最後の1場面を書く / ラスト1文だけ書く」&lt;br&gt;→ 完成度は問わない。まず書く。&lt;br&gt;→ 右の候補案A/B/Cを参照" style="rounded=1;fillColor=#FFF3CD;strokeColor=#FFC107;fontSize=10;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="604" width="430" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="p2hdr" value="【優先度2】下書き開始後でいい事項" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#D4EDDA;strokeColor=#28A745;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="692" width="870" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="p2a" value="&lt;b&gt;🔶 A男の自殺企図の具体状況&lt;/b&gt;&lt;br&gt;場所 / 方法 / 発見者" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="726" width="270" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="p2b" value="&lt;b&gt;🔶 B子フラッシュバックの挿入タイミング&lt;/b&gt;&lt;br&gt;Beat1か / Beat3（クライシス）直前か" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="726" width="280" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="p2c" value="&lt;b&gt;🔶 A男とのその後の関係性&lt;/b&gt;&lt;br&gt;和解 / 沈黙の共存 / 断絶" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="726" width="290" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="mckee_note" value="&lt;b&gt;McKee チェック（story-compiler準拠）&lt;/b&gt;&lt;br&gt;① 中央価値軸がクライマックスで決着すること&lt;br&gt;② 統制概念が「言語化」でなく「体験」として体現されること&lt;br&gt;③ 契機事件（B子の死）からクライマックスへの因果連鎖が完結すること&lt;br&gt;④ 対立概念（厳密さ=暴力）がクライマックス前に十分に勝っていること" style="rounded=1;fillColor=#E8F4FD;strokeColor=#2196F3;fontSize=10;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="798" width="870" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="secD" value="■ 候補シーン案（参考 — 最終決定はユーザーが行う）" style="text;html=1;fontSize=12;fontStyle=1;fillColor=#F0F0F0;strokeColor=#AAAAAA;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="910" y="448" width="970" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="cs_cl_hdr" value="★ クライマックス 候補シーン" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="910" y="482" width="970" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="cs_cl_a" value="&lt;b&gt;案A「病院の廊下」&lt;/b&gt;&lt;hr/&gt;A男が自殺未遂後、病院へ。&lt;br&gt;主人公が見舞いに行くが言葉が出ない。&lt;br&gt;拒絶されても帰らず廊下に座り続ける。&lt;br&gt;→ 行動そのものが統制概念を体現&lt;br&gt;&lt;i&gt;強み: 静か・純文学的・内面描写の余地大&lt;/i&gt;" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=10;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="910" y="514" width="295" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="cs_cl_b" value="&lt;b&gt;案B「SOSの夜」&lt;/b&gt;&lt;hr/&gt;深夜、意味不明なA男のメッセージ。&lt;br&gt;意味はわからないが体が動いて駆けつける。&lt;br&gt;論理でなく衝動が主人公を動かす。&lt;br&gt;→ 「理解の不要性」を行動で示す&lt;br&gt;&lt;i&gt;強み: テンポ・緊急感・B子との対比&lt;/i&gt;" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=10;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1215" y="514" width="295" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="cs_cl_c" value="&lt;b&gt;案C「B子との重ね合わせ」&lt;/b&gt;&lt;hr/&gt;危機の瞬間、主人公がB子を思い出す。&lt;br&gt;「あの時できなかったことを今する。」&lt;br&gt;B子への後悔がA男への行動に変換。&lt;br&gt;→ 因果連鎖が最も強く、テーマ回収明確&lt;br&gt;&lt;i&gt;強み: 全ACTの集大成感・構造的驚き&lt;/i&gt;" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=10;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1520" y="514" width="350" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="cs_ep_hdr" value="[エピローグ] 候補シーン" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#D4EDDA;strokeColor=#28A745;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="910" y="637" width="970" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="cs_ep_a" value="&lt;b&gt;案A「名前を呼ぶ」&lt;/b&gt;&lt;hr/&gt;主人公が初めてA男を名前で呼ぶ。&lt;br&gt;（またはA男が主人公を名前で呼ぶ）&lt;br&gt;&lt;br&gt;ラスト案:「まだ彼の苦しみはわからない。&lt;br&gt;でも、名前を呼んだ。」" style="rounded=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=10;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="910" y="669" width="295" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="cs_ep_b" value="&lt;b&gt;案B「父のノートを閉じる」&lt;/b&gt;&lt;hr/&gt;父から教わった数式のノートを閉じる。&lt;br&gt;「父も全部は教えてくれなかった。&lt;br&gt;でも愛されていた。」&lt;br&gt;→ 父 → B子 → A男の内的連鎖が完結" style="rounded=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=10;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1215" y="669" width="295" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="cs_ep_c" value="&lt;b&gt;案C「何もしない午後」&lt;/b&gt;&lt;hr/&gt;何も特別なことが起きない普通の一日。&lt;br&gt;主人公がただ生きている。&lt;br&gt;どこかに「Constrain（制約）」という&lt;br&gt;言葉がさりげなく落ちている。" style="rounded=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=10;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1520" y="669" width="350" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="irony_note" value="&lt;b&gt;★ アイロニー構造（McKee: 意味を増幅する）&lt;/b&gt;&lt;br&gt;B子は「厳密な言葉がなかったから死んだ」と主人公は誤解していた&lt;br&gt;A男は「厳密な言葉のせいで壊れた」のが真実だった&lt;br&gt;→ クライマックスで「厳密さは答えではなかった」が同時に証明される" style="rounded=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontSize=10;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="910" y="787" width="970" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="secE" value="■ 執筆進め方フロー（逆算アプローチ — 上位設定を詰めすぎず手を動かす）" style="text;html=1;fontSize=12;fontStyle=1;fillColor=#F0F0F0;strokeColor=#AAAAAA;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="902" width="1860" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="fl1" value="&lt;b&gt;Step 1 ★最優先&lt;/b&gt;&lt;br&gt;読後感を決める&lt;br&gt;（感情ターゲット）&lt;br&gt;&lt;br&gt;「本を閉じた読者に&lt;br&gt;何を感じてほしいか」&lt;br&gt;これが全設計の起点" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=10;fontStyle=1;align=center;verticalAlign=middle;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="936" width="200" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_f12" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#C0392B;" parent="1" source="fl1" target="fl2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="fl2" value="&lt;b&gt;Step 2&lt;/b&gt;&lt;br&gt;エピローグの&lt;br&gt;ラスト1場面を書く&lt;br&gt;&lt;br&gt;完成度は問わない。&lt;br&gt;案A/B/Cを参考に&lt;br&gt;まず書いてみる" style="rounded=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=10;align=center;verticalAlign=middle;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="936" width="200" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_f23" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#28A745;" parent="1" source="fl2" target="fl3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="fl3" value="&lt;b&gt;Step 3&lt;/b&gt;&lt;br&gt;クライマックスの&lt;br&gt;「選択の瞬間」を書く&lt;br&gt;&lt;br&gt;1シーンだけ。&lt;br&gt;全体構成は後でいい。&lt;br&gt;案A/B/Cを参考に" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=10;align=center;verticalAlign=middle;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="936" width="200" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_f34" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#4A7FB5;" parent="1" source="fl3" target="fl4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="fl4" value="&lt;b&gt;Step 4&lt;/b&gt;&lt;br&gt;「クライシス（Beat3）」&lt;br&gt;を逆算設計する&lt;br&gt;&lt;br&gt;「この選択を迫られる&lt;br&gt;最大のジレンマは何か」&lt;br&gt;Beat3を確定する" style="rounded=1;fillColor=#FFF3CD;strokeColor=#FFC107;fontSize=10;align=center;verticalAlign=middle;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="936" width="200" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_f45" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#FFC107;" parent="1" source="fl4" target="fl5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="fl5" value="&lt;b&gt;Step 5&lt;/b&gt;&lt;br&gt;ACT5全体の&lt;br&gt;ト書き（骨格）を書く&lt;br&gt;&lt;br&gt;Beat1〜5を繋げる。&lt;br&gt;詳細は後。&lt;br&gt;骨格だけ書く。" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;align=center;verticalAlign=middle;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="940" y="936" width="200" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_f56" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#E67E22;" parent="1" source="fl5" target="fl6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="fl6" value="&lt;b&gt;Step 6&lt;/b&gt;&lt;br&gt;黒田に渡す&lt;br&gt;（Draft for Kuroda）&lt;br&gt;&lt;br&gt;フィードバックを受けて&lt;br&gt;詳細シーンを&lt;br&gt;肉付けしていく" style="rounded=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=10;fontStyle=1;align=center;verticalAlign=middle;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1170" y="936" width="200" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="balance_note" value="&lt;b&gt;💡 上位設定を詰めすぎないための原則&lt;/b&gt;&lt;br&gt;Step 1〜3は「まず手を動かして書く」が目的。&lt;br&gt;感情ターゲットを決め、エピローグ1場面・クライマックス1場面を実際に書く。&lt;br&gt;骨格（Step 5）は書いた後でいい。設定を詰めすぎて手が止まる前に、まず1場面書く。&lt;br&gt;「あとで変わる可能性の高い下書きのト書き」で十分。" style="rounded=1;fillColor=#E8F4FD;strokeColor=#2196F3;fontSize=10;align=left;verticalAlign=top;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1400" y="936" width="480" height="140" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

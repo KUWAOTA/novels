@@ -15,6 +15,6 @@ tags:
 
 ## Related Hubs
 
-- [[dialy/diary_hub]]
+- [[diary/diary_hub]]
 - [[taskManegement/task_management_hub]]
 - [[workspace_hub]]
