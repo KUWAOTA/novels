@@ -1,0 +1,319 @@
+<mxfile host="65bd71144e">
+    <diagram id="d_canvas" name="シーン書き出しキャンバス">
+        <mxGraphModel dx="942" dy="516" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="7800" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="Constrain — シーン・台詞 書き出しキャンバス（ビートごと）" style="text;html=1;align=center;fontSize=18;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="10" width="2380" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="instr" value="&lt;font color=&#39;#666&#39;&gt;黒田:「各章の一番の盛り上がりだけ仮で書く。台詞一言でもいい。頭に浮かんでいる映像を書き出す。」→ 各ビートの枠をダブルクリックしてガーッと書き込む。完成度不要。&lt;/font&gt;" style="text;html=1;align=left;fontSize=11;fillColor=#E8F4FD;strokeColor=#2196F3;rounded=1;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="50" width="2380" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="act1_hdr" value="ACT 1 — 小学生（父と論理 / いじめの始まり / 父の死）　✅ 5シーン完成" style="text;html=1;fontSize=13;fontStyle=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;align=left;spacingLeft=10;rounded=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="100" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1b1_hdr" value="① ASD傾向で浮いている — リアルに「まあそれはうくわな」という納得をもって胸がキリキリするくらいに描く" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="132" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1b1_scene" value="&lt;font color=&quot;#BBB&quot;&gt;&lt;b&gt;📝 シーン&lt;/b&gt; — どんな場面？ 何が起きる？ 空気感は？&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="164" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1b1_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt; — 一言でもいい&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="164" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1b1_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="292" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1b2_hdr" value="② 父に仮説・論理・数式を教わり美しさを知る — 父の人間的すごさ、鮮やかな導き方で読者を感動させる" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="427" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1b2_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt; — 父はどう教える？ どんな数式？ どんな会話？&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="459" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1b2_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt; — 父と子の会話&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="459" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1b2_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="587" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1b3_hdr" value="③ いじめっ子が嫉妬 — 鈍くさいのに父に愛されている主人公が幸せそうに見えた。参観日が契機。" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#FDEBD0;strokeColor=#E67E22;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="722" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1b3_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt; — 参観日の様子、いじめっ子の視点、嫉妬の瞬間…&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="754" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1b3_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt; — 「父さん！今日も100点だったよ！」「100点取れなくても〇〇はいい子なんだよ」&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="754" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1b3_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="882" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1b4_hdr" value="④ 中学入学直後、父の死 — 主人公の唯一の理解者・愛の源泉を失う" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#F5C6CB;strokeColor=#C0392B;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="1017" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1b4_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt; — 死をどう知る？ 病院？ 最後の会話？&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="1049" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1b4_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt; — 父の最後の言葉？&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="1049" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1b4_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="1177" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="act2_hdr" value="ACT 2 — 中学時代（B子との出会い / いじめ激化 / B子の自殺）　✅ 5シーン完成" style="text;html=1;fontSize=13;fontStyle=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;align=left;spacingLeft=10;rounded=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="1320" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b1_hdr" value="① 保健室登校でB子と知り合う — 絶望の中、別クラスのB子と出会う" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="1352" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b1_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt; — 保健室の空気、最初の会話、B子の第一印象…&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="1384" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b1_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="1384" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b1_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="1512" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b2_hdr" value="② A男への教育虐待が加速 / いじめ過激化 — どちらの側に立っても苦しい描写にしたい" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#FDEBD0;strokeColor=#E67E22;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="1647" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b2_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt; — いじめの具体的な場面、A男の家庭、A男の内面…&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="1679" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b2_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="1679" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b2_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="1807" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b3_hdr" value="③ B子が心のよりどころに / 主人公が論理でいじめを防御 — 対照的にB子への虐めは過激化" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="1942" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b3_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt; — B子との日常、主人公の防御方法、B子が救えない状況…&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="1974" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b3_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="1974" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b3_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="2102" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b4_hdr" value="④ B子とのデート — 幸せの絶頂" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="2237" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b4_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt; — デートの場所、2人の会話、幸せの描写…&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="2269" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b4_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="2269" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b4_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="2397" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b5_hdr" value="⑤ B子の自殺 — 幸せの絶頂で「明日が来なければいい」と自ら死を選ぶ（主人公は苦しみの末と誤解）" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#F5C6CB;strokeColor=#C0392B;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="2532" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b5_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt; — B子の最後、主人公がどう知るか、その瞬間…&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="2564" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b5_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt; — B子の最後の言葉？&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="2564" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b5_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="2692" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="act3_hdr" value="ACT 3 — 灘高校〜東大（エリート適応 / 厳密＝救済の確信 / B子への後悔）　🔶 未執筆・概要確定" style="text;html=1;fontSize=13;fontStyle=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;align=left;spacingLeft=10;rounded=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="2835" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3b1_hdr" value="① 灘に合格（Aは落ちる→二番手校）" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="2867" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3b1_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt; — 合格発表、Aとの明暗、主人公の心境…&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="2899" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3b1_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="2899" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3b1_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="3027" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3b2_hdr" value="② エリート環境で打ち解ける — 論理的言語が通じる世界。初めて「通じる」体験" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="3162" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3b2_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt; — 灘での日常、友人との会話、「通じた」瞬間…&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="3194" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3b2_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="3194" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3b2_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="3322" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3b3_hdr" value="③「B子をここに連れてこれれば」後悔 — こんなコミュニティにB子がいれば救えたのに" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="3457" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3b3_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt; — B子を思い出す瞬間、何がきっかけで思い出す？&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="3489" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3b3_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="3489" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3b3_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="3617" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3b4_hdr" value="④ 厳密＝救済の確信を深める — 厳密な言葉を運用する人々のコミュニティでの成功体験" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="3752" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3b4_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="3784" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3b4_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="3784" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3b4_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="3912" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3b5_hdr" value="⑤ 東大合格（Aは後期東工大）— Aは「主人公に負けるな」と叩かれて東大を受けるも落ちる" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#FDEBD0;strokeColor=#E67E22;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="4047" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3b5_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="4079" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3b5_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="4079" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3b5_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="4207" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="act4_hdr" value="ACT 4 — 社会人 Google Japan（A男との再会 / 善意の加害 / A男崩壊）　🔶 未執筆・概要確定" style="text;html=1;fontSize=13;fontStyle=1;fillColor=#FDEBD0;strokeColor=#E67E22;align=left;spacingLeft=10;rounded=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="4350" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b1_hdr" value="① Google就職 — 主人公は実力、A男はコミュ力で採用される" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#FDEBD0;strokeColor=#E67E22;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="4382" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b1_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt; — 入社の様子、オフィス、再会の瞬間…&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="4414" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b1_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="4414" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b1_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="4542" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b2_hdr" value="② 過去トラウマの想起 — ノブレスオブリージュ志向、過去を清算せねばと葛藤" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#FDEBD0;strokeColor=#E67E22;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="4677" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b2_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="4709" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b2_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="4709" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b2_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="4837" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b3_hdr" value="③ Aのストーキング — 主人公に負けたくなくて同じ職場に来る" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#FDEBD0;strokeColor=#E67E22;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="4972" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b3_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="5004" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b3_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="5004" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b3_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="5132" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b4_hdr" value="④ 主人公が先に昇進→A男が部下になる" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#FDEBD0;strokeColor=#E67E22;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="5267" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b4_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="5299" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b4_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="5299" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b4_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="5427" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b5_hdr" value="⑤ 善意の「教育」→無自覚な加害 — 厳密に答えられるまで離さない。Aの目的は勝つことなので詰められるのは地獄" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#F5C6CB;strokeColor=#C0392B;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="5562" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b5_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt; — 1on1の場面、主人公の「指導」、A男の表情…&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="5594" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b5_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt; — 主人公の「正しい」指導の言葉&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="5594" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b5_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="5722" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b6_hdr" value="⑥ A男崩壊・出社拒否" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#F5C6CB;strokeColor=#C0392B;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="5857" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b6_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt; — A男が来なくなる日、周囲の反応、主人公の気づき…&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="5889" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b6_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="5889" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b6_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="6017" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b7_hdr" value="⑦ 過去のA男と同じことをしていたと気づく — 自分がA男にしたこと＝A男が自分にしたこと" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#F5C6CB;strokeColor=#C0392B;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="6152" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b7_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt; — 気づきの瞬間、何がきっかけ？ 内面の崩壊…&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="6184" width="1400" height="255" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b7_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="6184" width="960" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b7_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="6312" width="960" height="127" as="geometry"/>
+                </mxCell>
+                <mxCell id="act5_hdr" value="ACT 5 — クライマックス＆エピローグ（A男の自殺企図 / 主人公の選択 / 新しい平衡）　❓ これから設計" style="text;html=1;fontSize=13;fontStyle=1;fillColor=#F5C6CB;strokeColor=#C0392B;align=left;spacingLeft=10;rounded=1;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="6455" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a5b1_hdr" value="★① A男の自殺企図 — B子のトラウマが再燃する。主人公にとって最悪の悪夢の再現" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#FFF3CD;strokeColor=#FFC107;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="6487" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a5b1_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt; — A男はどこで？ 主人公はどう知る？ B子の記憶がどう蘇る？&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="6519" width="1400" height="305" as="geometry"/>
+                </mxCell>
+                <mxCell id="a5b1_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="6519" width="960" height="148" as="geometry"/>
+                </mxCell>
+                <mxCell id="a5b1_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="6673" width="960" height="151" as="geometry"/>
+                </mxCell>
+                <mxCell id="a5b2_hdr" value="★② クライマックス — 主人公の選択「理解できなくても傍にいる」統制概念が体現される瞬間" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="6840" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a5b2_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt; — 主人公は何をする？ 言葉か沈黙か行動か？ B子の記憶との対峙は？&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="6872" width="1400" height="305" as="geometry"/>
+                </mxCell>
+                <mxCell id="a5b2_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 台詞&lt;/b&gt; — 主人公の言葉。沈黙でもいい。&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="6872" width="960" height="148" as="geometry"/>
+                </mxCell>
+                <mxCell id="a5b2_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="7026" width="960" height="151" as="geometry"/>
+                </mxCell>
+                <mxCell id="a5b3_hdr" value="[エピローグ] — 新しい平衡。読者に残す読後感。物語の最後の一場面。" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#D4EDDA;strokeColor=#28A745;align=left;spacingLeft=10;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="7193" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="a5b3_scene" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;📝 シーン&lt;/b&gt; — 主人公のその後。最後の一場面は？&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="7225" width="1400" height="305" as="geometry"/>
+                </mxCell>
+                <mxCell id="a5b3_line" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;💬 ラスト一文&lt;/b&gt; — 物語の最後の言葉。これが読後感を決める。&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="7225" width="960" height="148" as="geometry"/>
+                </mxCell>
+                <mxCell id="a5b3_vis" value="&lt;font color=&#39;#BBB&#39;&gt;&lt;b&gt;🎬 映像・場所・時間帯&lt;/b&gt;&lt;/font&gt;" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" vertex="1" parent="1">
+                    <mxGeometry x="1425" y="7379" width="960" height="151" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

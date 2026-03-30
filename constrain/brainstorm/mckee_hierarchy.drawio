@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="65bd71144e">
+  <diagram id="d_hier" name="McKee構造階層">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="title" value="McKee 物語構造の階層（Story Structure Hierarchy）" style="text;html=1;align=center;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="10" y="10" width="1580" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="sub" value="小さい単位から大きい単位へ。すべての階層が同じフラクタル構造（価値変化＋クライマックス）を持つ。振幅だけが異なる。" style="text;html=1;align=center;fontSize=10;fillColor=none;strokeColor=none;fontColor=#888888;" vertex="1" parent="1">
+          <mxGeometry x="10" y="40" width="1580" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== HIERARCHY BOXES (bottom to top, left to right) ===== -->
+
+        <!-- Event -->
+        <mxCell id="ev" value="&lt;b&gt;Event（イベント）&lt;/b&gt;&lt;hr/&gt;物理的行動・発話の最小単位&lt;br&gt;&lt;br&gt;例: ドアを開ける、一言発する&lt;br&gt;&lt;br&gt;&lt;font color=&apos;#999&apos;&gt;価値シフト: 微小&lt;/font&gt;" style="rounded=1;fillColor=#F5F5F5;strokeColor=#BDBDBD;fontSize=10;align=center;verticalAlign=top;html=1;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="30" y="510" width="220" height="130" as="geometry"/>
+        </mxCell>
+
+        <!-- Beat -->
+        <mxCell id="bt" value="&lt;b&gt;Beat（ビート）&lt;/b&gt;&lt;hr/&gt;アクション／リアクションの交換単位&lt;br&gt;&lt;br&gt;例: 「質問する → 答える」&lt;br&gt;「殴る → よろける」&lt;br&gt;&lt;br&gt;&lt;font color=&apos;#999&apos;&gt;価値シフト: 小&lt;/font&gt;" style="rounded=1;fillColor=#E8F5E9;strokeColor=#66BB6A;fontSize=10;align=center;verticalAlign=top;html=1;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="280" y="480" width="220" height="160" as="geometry"/>
+        </mxCell>
+
+        <!-- Scene -->
+        <mxCell id="sc" value="&lt;b&gt;Scene（シーン）&lt;/b&gt;&lt;hr/&gt;連続する時空間内で&lt;br&gt;&lt;b&gt;価値が変化する&lt;/b&gt;単位&lt;br&gt;&lt;br&gt;= ビートの集合&lt;br&gt;必ず Before/After で&lt;br&gt;感情が変わっている&lt;br&gt;&lt;br&gt;&lt;font color=&apos;#999&apos;&gt;価値シフト: 中&lt;/font&gt;" style="rounded=1;fillColor=#E3F2FD;strokeColor=#42A5F5;fontSize=10;align=center;verticalAlign=top;html=1;spacingTop=4;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="440" width="220" height="200" as="geometry"/>
+        </mxCell>
+
+        <!-- Sequence -->
+        <mxCell id="sq" value="&lt;b&gt;Sequence（シーケンス）&lt;/b&gt;&lt;hr/&gt;シーンの連なり&lt;br&gt;&lt;b&gt;独自の小クライマックス&lt;/b&gt;を持つ&lt;br&gt;&lt;br&gt;= シーンの集合&lt;br&gt;一つのサブゴールに向かう&lt;br&gt;まとまり&lt;br&gt;&lt;br&gt;&lt;font color=&apos;#999&apos;&gt;価値シフト: 大&lt;/font&gt;" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFA726;fontSize=10;align=center;verticalAlign=top;html=1;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="780" y="400" width="220" height="240" as="geometry"/>
+        </mxCell>
+
+        <!-- Act -->
+        <mxCell id="ac" value="&lt;b&gt;Act（幕）&lt;/b&gt;&lt;hr/&gt;シーケンスの連なり&lt;br&gt;&lt;b&gt;重大な価値変化&lt;/b&gt;を持つ&lt;br&gt;&lt;br&gt;= シーケンスの集合&lt;br&gt;物語の大きな転換点で区切る&lt;br&gt;&lt;br&gt;Constrainでは 5幕構成&lt;br&gt;ACT1〜ACT5&lt;br&gt;&lt;br&gt;&lt;font color=&apos;#999&apos;&gt;価値シフト: 特大&lt;/font&gt;" style="rounded=1;fillColor=#FCE4EC;strokeColor=#EF5350;fontSize=10;align=center;verticalAlign=top;html=1;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="350" width="220" height="290" as="geometry"/>
+        </mxCell>
+
+        <!-- Story -->
+        <mxCell id="st" value="&lt;b&gt;Story（物語全体）&lt;/b&gt;&lt;hr/&gt;全体。最大のクライマックスで&lt;br&gt;&lt;b&gt;統制概念が証明&lt;/b&gt;される&lt;br&gt;&lt;br&gt;= 幕の集合&lt;br&gt;テーマの到達点で完結&lt;br&gt;&lt;br&gt;Constrain:&lt;br&gt;「理解できなくても&lt;br&gt;寄り添える」の証明&lt;br&gt;&lt;br&gt;&lt;font color=&apos;#999&apos;&gt;価値シフト: 最大&lt;/font&gt;" style="rounded=1;fillColor=#EDE7F6;strokeColor=#7E57C2;fontSize=10;align=center;verticalAlign=top;html=1;spacingTop=4;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="300" width="220" height="340" as="geometry"/>
+        </mxCell>
+
+        <!-- ARROWS -->
+        <mxCell id="arr_ev_bt" value="含まれる" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#BDBDBD;fontSize=9;fontColor=#999;" edge="1" source="ev" target="bt" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr_bt_sc" value="含まれる" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#66BB6A;fontSize=9;fontColor=#999;" edge="1" source="bt" target="sc" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr_sc_sq" value="含まれる" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#42A5F5;fontSize=9;fontColor=#999;" edge="1" source="sc" target="sq" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr_sq_ac" value="含まれる" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#FFA726;fontSize=9;fontColor=#999;" edge="1" source="sq" target="ac" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="arr_ac_st" value="含まれる" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#EF5350;fontSize=9;fontColor=#999;" edge="1" source="ac" target="st" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- FRACTAL NOTE -->
+        <mxCell id="fractal" value="&lt;b&gt;フラクタル構造&lt;/b&gt;&lt;br&gt;&lt;br&gt;すべての階層が同じ構造を持つ:&lt;br&gt;&lt;br&gt;1. &lt;b&gt;価値変化&lt;/b&gt;（Before → After）&lt;br&gt;2. &lt;b&gt;クライマックス&lt;/b&gt;（最大の変化点）&lt;br&gt;3. &lt;b&gt;葛藤&lt;/b&gt;（欲求 vs 敵対力）&lt;br&gt;&lt;br&gt;違うのは&lt;b&gt;振幅&lt;/b&gt;だけ。&lt;br&gt;ビートは小さく揺れ、&lt;br&gt;幕は大きく揺れ、&lt;br&gt;物語全体が最大に揺れる。" style="rounded=1;fillColor=#FFFDE7;strokeColor=#FFC107;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="30" y="70" width="280" height="230" as="geometry"/>
+        </mxCell>
+
+        <!-- COMMON INTERFACE NOTE -->
+        <mxCell id="iface" value="&lt;b&gt;全階層の共通インターフェース&lt;/b&gt;&lt;br&gt;&lt;br&gt;どの階層でも以下を持つ:&lt;br&gt;&lt;br&gt;• &lt;b&gt;summary&lt;/b&gt; — 何が起きるか（1行）&lt;br&gt;• &lt;b&gt;value_change&lt;/b&gt; — 価値軸 / from / to / 原因&lt;br&gt;• &lt;b&gt;continuity&lt;/b&gt; — 時間 / 場所 / 視点&lt;br&gt;• &lt;b&gt;children&lt;/b&gt; — 下位の子要素リスト" style="rounded=1;fillColor=#FFFDE7;strokeColor=#FFC107;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="340" y="70" width="280" height="190" as="geometry"/>
+        </mxCell>
+
+        <!-- CONSTRAIN MAPPING -->
+        <mxCell id="cmap_hdr" value="&lt;b&gt;Constrainでの対応&lt;/b&gt;" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#F0F0F0;strokeColor=#AAA;align=left;spacingLeft=8;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="70" width="850" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="cmap" value="&lt;b&gt;Story&lt;/b&gt; = Constrain全体（5幕）&lt;br&gt;　└ &lt;b&gt;Act&lt;/b&gt; = ACT1小学生 / ACT2中学 / ACT3灘〜東大 / ACT4 Google / ACT5クライマックス&lt;br&gt;　　└ &lt;b&gt;Sequence&lt;/b&gt; = 各ACT内のまとまり（例: ACT2の「いじめ激化→B子との幸福→B子の死」）&lt;br&gt;　　　└ &lt;b&gt;Scene&lt;/b&gt; = scene_canvas.drawio の各枠（例:「参観日」「保健室での出会い」）&lt;br&gt;　　　　└ &lt;b&gt;Beat&lt;/b&gt; = scene_triggers.drawio で埋めている単位（アクション/リアクション）&lt;br&gt;　　　　　└ &lt;b&gt;Event&lt;/b&gt; = 実際の文章で書く最小動作（ドアを開ける、目が合う、等）" style="rounded=1;fillColor=#FAFAFA;strokeColor=#DDD;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="650" y="100" width="850" height="155" as="geometry"/>
+        </mxCell>
+
+        <!-- AMPLITUDE GRADIENT (visual bar) -->
+        <mxCell id="amp_label" value="価値シフトの振幅 →" style="text;html=1;fontSize=9;fontColor=#999;align=center;" vertex="1" parent="1">
+          <mxGeometry x="30" y="660" width="1470" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="amp_bar" value="" style="rounded=1;fillColor=none;strokeColor=none;gradientColor=#7E57C2;fillColor=#E8F5E9;gradientDirection=east;" vertex="1" parent="1">
+          <mxGeometry x="30" y="680" width="1470" height="12" as="geometry"/>
+        </mxCell>
+        <mxCell id="amp_s" value="微小" style="text;html=1;fontSize=9;fontColor=#999;align=left;" vertex="1" parent="1">
+          <mxGeometry x="30" y="695" width="50" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="amp_e" value="最大" style="text;html=1;fontSize=9;fontColor=#999;align=right;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="695" width="50" height="16" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

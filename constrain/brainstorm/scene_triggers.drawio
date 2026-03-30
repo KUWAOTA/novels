@@ -1,0 +1,607 @@
+<mxfile host="65bd71144e">
+    <diagram id="d_t2" name="McKee逆算トリガー">
+        <mxGraphModel dx="1087" dy="464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="7200" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="Constrain — McKee理論から逆算したシーン書き出しトリガー" style="text;html=1;align=center;fontSize=17;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="10" width="2380" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend" value="&lt;b&gt;McKee理論からの逆算 — なぜこの問いか？&lt;/b&gt;&lt;br&gt;&lt;br&gt;シーンが機能するための5条件:&lt;br&gt;&lt;br&gt;&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; 前後で感情が変わらなければそのシーンは存在意義がない → &lt;b&gt;Before/After&lt;/b&gt;を問う&lt;br&gt;&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; キャラが欲しがっていなければ行動が生まれない → &lt;b&gt;一番欲しいもの&lt;/b&gt;を問う&lt;br&gt;&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; 欲求を阻む力がなければドラマにならない → &lt;b&gt;阻むもの&lt;/b&gt;を問う&lt;br&gt;&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待と結果の落差こそが推進力 → &lt;b&gt;期待/現実&lt;/b&gt;を問う&lt;br&gt;&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; 選び行動しなければ物語は進まない → &lt;b&gt;どう行動するか&lt;/b&gt;を問う&lt;br&gt;&lt;br&gt;&lt;font color=&#39;#999&#39;&gt;各欄は色分けでMcKee概念と対応。+たたき台の一文つき&lt;/font&gt;" style="rounded=1;fillColor=#FFFDE7;strokeColor=#FFC107;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=8;spacingLeft=10;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="55" width="2380" height="195" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1h" value="ACT 1 小学生" style="text;html=1;fontSize=13;fontStyle=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;align=left;spacingLeft=10;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="260" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="b11h" value="ASD傾向で浮いている" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="296" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b11bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="326" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b11af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="326" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b11ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="380" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b11an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="380" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b11ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="434" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b11re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="434" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b11ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「休み時間、主人公だけが自分の席に座っている。隣の子が話しかけてきたが何と返せばいいかわからない。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="488" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b12h" value="父に論理・数式を教わる — 父の鮮やかな導き" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="561" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b12bf" value="&lt;font color=&quot;#1565C0&quot;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="591" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b12af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="591" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b12ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="645" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b12an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="645" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b12ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="699" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b12re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="699" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b12ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「父がノートに数式を書き始める。車椅子から少し身を乗り出して。なあ、これが何に見える？」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="753" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b13h" value="いじめっ子が嫉妬 — 父に愛されている主人公" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#FDEBD0;strokeColor=#E67E22;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="826" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b13bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="856" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b13af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="856" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b13ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="910" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b13an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="910" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b13ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="964" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b13re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="964" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b13ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「参観日。車椅子の父が教室に入る。A男はその光景を握りしめた拳の向こうに見ている。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1018" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b14h" value="中学入学直後、父の死" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#F5C6CB;strokeColor=#C0392B;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1091" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b14bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1121" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b14af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="1121" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b14ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1175" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b14an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="1175" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b14ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1229" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b14re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="1229" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b14ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「電話が鳴った。母の声がいつもと違う。まだ制服に慣れていない体で病院へ走った。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1283" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2h" value="ACT 2 中学時代" style="text;html=1;fontSize=13;fontStyle=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;align=left;spacingLeft=10;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1356" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="b21h" value="保健室登校でB子と知り合う" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1392" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b21bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1422" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b21af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="1422" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b21ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1476" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b21an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="1476" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b21ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1530" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b21re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="1530" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b21ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「保健室のドアを開けると窓際に見たことのない女の子が座っていた。こちらを見て少し笑った。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1584" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b22h" value="A男への教育虐待が加速 / いじめ過激化" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#FDEBD0;strokeColor=#E67E22;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1657" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b22bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1687" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b22af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="1687" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b22ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1741" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b22an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="1741" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b22ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1795" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b22re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="1795" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b22ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「A男の腕にまた新しい痣があった。でもA男は笑っている。クラスメイトの前ではいつも笑っている。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1849" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b23h" value="B子が心のよりどころに / 主人公が論理で防御" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1922" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b23bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="1952" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b23af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="1952" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b23ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2006" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b23an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="2006" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b23ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2060" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b23re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="2060" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b23ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「B子が保健室で泣いている。主人公はどうすればいいかわからないが隣に座った。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2114" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b24h" value="B子とのデート — 幸せの絶頂" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2187" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b24bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2217" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b24af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="2217" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b24ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2271" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b24an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="2271" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b24ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2325" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b24re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="2325" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b24ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「帰り道、B子の手が自分の手に触れた。たぶん偶然じゃない。握り返すことができた。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2379" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b25h" value="B子の自殺 — 主人公は苦しみの末と誤解" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#F5C6CB;strokeColor=#C0392B;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2452" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b25bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2482" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b25af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="2482" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b25ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2536" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b25an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="2536" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b25ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2590" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b25re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="2590" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b25ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「朝、学校に着くと教室が騒がしかった。昨日笑っていた彼女がもういないことをまだ知らない。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2644" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3h" value="ACT 3 灘〜東大" style="text;html=1;fontSize=13;fontStyle=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;align=left;spacingLeft=10;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2717" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="b31h" value="灘に合格（Aは落ちる）" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2753" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b31bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2783" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b31af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="2783" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b31ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2837" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b31an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="2837" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b31ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2891" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b31re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="2891" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b31ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「合格発表のボードの前。自分の番号はある。喜びより先にB子のことを思い出した。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="2945" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b32h" value="エリート環境で打ち解ける — 初めて通じる体験" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="3018" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b32bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="3048" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b32af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="3048" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b32ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="3102" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b32an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="3102" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b32ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="3156" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b32re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="3156" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b32ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「灘の教室で初めて自分の話が最後まで聞かれた。それだけで涙が出そうになった。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="3210" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b33h" value="B子をここに連れてこれれば — 後悔" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="3283" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b33bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="3313" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b33af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="3313" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b33ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="3367" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b33an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="3367" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b33ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="3421" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b33re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="3421" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b33ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「友人と数学の話をしている。ふと思う。彼女がここにいたら笑う人はいなかったかもしれない。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="3475" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b34h" value="厳密＝救済の確信を深める" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="3548" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b34bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="3578" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b34af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="3578" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b34ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="3632" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b34an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="3632" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b34ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="3686" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b34re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="3686" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b34ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「数式を解くように人間関係も解けるはずだ。灘の仲間との成功体験がその確信を裏付けている。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="3740" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b35h" value="東大合格（Aは後期東工大）" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#FDEBD0;strokeColor=#E67E22;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="3813" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b35bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="3843" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b35af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="3843" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b35ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="3897" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b35an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="3897" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b35ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="3951" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b35re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="3951" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b35ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「東大の合格通知を手にして思う。父が教えてくれた方法で来れた。この力で世界を正しくするだけだ。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4005" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4h" value="ACT 4 Google Japan" style="text;html=1;fontSize=13;fontStyle=1;fillColor=#FDEBD0;strokeColor=#E67E22;align=left;spacingLeft=10;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4078" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="b41h" value="Google就職 — 主人公は実力、A男はコミュ力" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#FDEBD0;strokeColor=#E67E22;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4114" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b41bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4144" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b41af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="4144" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b41ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4198" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b41an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="4198" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b41ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4252" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b41re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="4252" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b41ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「Googleのオフィスに初めて足を踏み入れた日、受付の向こうに見覚えのある横顔があった。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4306" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b42h" value="過去トラウマの想起 / 清算への葛藤" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#FDEBD0;strokeColor=#E67E22;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4379" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b42bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4409" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b42af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="4409" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b42ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4463" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b42an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="4463" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b42ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4517" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b42re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="4517" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b42ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「ふとした瞬間に教室の光景がフラッシュバックする。A男の顔。B子の笑顔。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4571" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b43h" value="Aのストーキング — 負けたくなくて同じ職場に" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#FDEBD0;strokeColor=#E67E22;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4644" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b43bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4674" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b43af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="4674" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b43ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4728" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b43an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="4728" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b43ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4782" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b43re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="4782" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b43ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「社内ですれ違ったときA男は笑顔で挨拶してきた。その笑顔の奥にある何かに気づけなかった。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4836" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b44h" value="主人公が先に昇進 A男が部下に" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#FDEBD0;strokeColor=#E67E22;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4909" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b44bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4939" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b44af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="4939" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b44ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="4993" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b44an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="4993" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b44ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="5047" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b44re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="5047" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b44ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「昇進の辞令の翌日、A男がおめでとうございますと言った。その声には何の感情もなかった。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="5101" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b45h" value="善意の教育 無自覚な加害 いじめの再現" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#F5C6CB;strokeColor=#C0392B;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="5174" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b45bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="5204" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b45af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="5204" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b45ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="5258" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b45an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="5258" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b45ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="5312" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b45re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="5312" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b45ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「もう一回説明するよ。主人公はホワイトボードに向き直る。A男は黙って座っている。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="5366" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b46h" value="A男崩壊 出社拒否" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#F5C6CB;strokeColor=#C0392B;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="5439" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b46bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="5469" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b46af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="5469" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b46ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="5523" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b46an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="5523" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b46ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="5577" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b46re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="5577" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b46ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「A男のデスクに今日も誰も座っていない。PCの電源ランプが消えたまま一週間になる。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="5631" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b47h" value="過去のA男と同じことをしていたと気づく" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#F5C6CB;strokeColor=#C0392B;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="5704" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b47bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="5734" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b47af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="5734" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b47ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="5788" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b47an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="5788" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b47ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="5842" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b47re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="5842" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b47ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「ふと気づく。自分がA男に向けていた言葉はA男が自分に向けていた暴力と同じ構造をしている。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="5896" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="a5h" value="ACT 5 クライマックス" style="text;html=1;fontSize=13;fontStyle=1;fillColor=#F5C6CB;strokeColor=#C0392B;align=left;spacingLeft=10;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="5969" width="2380" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="b51h" value="A男の自殺企図 B子のトラウマが再燃" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#FFF3CD;strokeColor=#FFC107;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="6005" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b51bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="6035" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b51af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="6035" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b51ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="6089" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b51an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="6089" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b51ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="6143" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b51re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="6143" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b51ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「深夜、スマホが震えた。画面にA男の名前。出ると声が聞こえない。B子の時と同じだ。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="6197" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b52h" value="クライマックス 理解できなくても傍にいる" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="6270" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b52bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="6300" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b52af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="6300" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b52ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="6354" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b52an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="6354" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b52ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="6408" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b52re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="6408" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b52ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「主人公は立ち尽くしている。正しい言葉が見つからない。でも足が動いた。ただ隣に座った。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="6462" width="2375" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="b53h" value="エピローグ 新しい平衡" style="text;html=1;fontSize=11;fontStyle=1;fillColor=#D4EDDA;strokeColor=#28A745;align=left;spacingLeft=10;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="6535" width="2380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="b53bf" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; Before — 開始時のキャラの気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="6565" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b53af" value="&lt;font color=&#39;#1565C0&#39;&gt;&lt;b&gt;① 価値変化&lt;/b&gt;&lt;/font&gt; After — 終了時の気持ちは？" style="rounded=1;fillColor=#E8F0FE;strokeColor=#90CAF9;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="6565" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b53ds" value="&lt;font color=&#39;#2E7D32&#39;&gt;&lt;b&gt;② 欲求&lt;/b&gt;&lt;/font&gt; — このキャラが一番欲しいものは？" style="rounded=1;fillColor=#E8F5E9;strokeColor=#A5D6A7;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="6619" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b53an" value="&lt;font color=&#39;#C62828&#39;&gt;&lt;b&gt;③ 敵対力&lt;/b&gt;&lt;/font&gt; — 何がそれを阻んでいる？" style="rounded=1;fillColor=#FFEBEE;strokeColor=#EF9A9A;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="6619" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b53ex" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 期待 — 何を期待して行動した？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="6673" width="1185" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b53re" value="&lt;font color=&#39;#E65100&#39;&gt;&lt;b&gt;④ ギャップ&lt;/b&gt;&lt;/font&gt; 現実 — 実際に何が起きた？" style="rounded=1;fillColor=#FFF3E0;strokeColor=#FFCC80;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="1205" y="6673" width="1180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="b53ch" value="&lt;font color=&#39;#6A1B9A&#39;&gt;&lt;b&gt;⑤ 選択&lt;/b&gt;&lt;/font&gt; — キャラはどう行動する？ ｜ &lt;font color=&#39;#AAA&#39;&gt;たたき台:「朝の光が部屋に差し込む。主人公は窓を開ける。何も解決していない。でも今日も生きている。」書き直すだけでOK&lt;/font&gt;" style="rounded=1;fillColor=#F3E5F5;strokeColor=#CE93D8;fontSize=10;align=left;verticalAlign=top;html=1;spacingTop=4;spacingLeft=6;overflow=auto;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="6727" width="2375" height="65" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
