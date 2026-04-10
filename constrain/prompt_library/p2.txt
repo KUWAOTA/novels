@@ -1,0 +1,32 @@
+## 背景
+黒田からのレビュー
+C:\Users\ukowu\Desktop\novel\constrain\review\kuroda\2026-03-28\review.md
+を踏まえてプロットに肉付けをしていきました。
+様々なアドバイスをもらい、
+C:\Users\ukowu\Desktop\novel\constrain\settings\plot.drawio
+に記入しました。
+また、
+C:\Users\ukowu\Desktop\novel\daily\plot練ってく
+のなかにざっくばらんに肉付けする設定や、アイデアのもととなりそうなことを書いていきました。
+
+
+## 指示1
+C:\Users\ukowu\Desktop\novel\constrain\settings\characters.drawio
+C:\Users\ukowu\Desktop\novel\constrain\settings\plot.drawio
+C:\Users\ukowu\Desktop\novel\constrain\settings\theme.drawio
+を肉付けして、よりリッチな情報にしたものを作り直してください。
+
+C:\Users\ukowu\Desktop\novel\constrain\review\kuroda\2026-03-28\review.md
+を踏まえて作ること
+
+## 指示2
+旧式版をC:\Users\ukowu\Desktop\novel\constrain\settings\old\v1\
+に入れてください。
+
+## 制約
+ただし、
+C:\Users\ukowu\Desktop\novel\daily\plot練ってく
+
+## Claudeアドバイス
+
+の内容は勝手に含めないこと

@@ -1,0 +1,27 @@
+## 背景
+あなたの出力を見ました。
+C:\Users\ukowu\Desktop\novel\constrain\prompt_library\p2.txt
+の指示内容があまり反映されておらず、残念でした。
+もう一度全て読み直してください。
+
+そして特に反映させてほしい貰ったアドバイスを
+C:\Users\ukowu\Desktop\novel\constrain\review\2026-04-08\discord.txt
+にまとめました。
+
+## 指示
+C:\Users\ukowu\Desktop\novel\constrain\review\2026-04-08\discord.txtを反映して、もっとplotもtheme説明も、characterもリッチなものにしてください。
+情報密度が薄いです。長くて多少みづらくなってもいいので情報量が多いものにしてください。
+参考として黒田がくれたplotはこれです。
+C:\Users\ukowu\Desktop\novel\constrain\review\kuroda\プロット【いびつなドアをノックして】.pdf
+
+それにここが足りないって箇所は勝手に仮のセリフとか埋めるのではなく穴として明示してください。
+
+後、
+C:\Users\ukowu\Desktop\novel\daily\plot練ってく\episodes\ACT1\A男_嫉妬の核心_二重の羨望.md
+のエピソードや
+C:\Users\ukowu\Desktop\novel\daily\plot練ってく\episodes\ACT1\主人公_ASD傾向で孤立.md
+のエピソード
+C:\Users\ukowu\Desktop\novel\daily\plot練ってく\episodes\ACT1\主人公_父から仮説を学ぶ.md
+のエピソード
+などなどC:\Users\ukowu\Desktop\novel\daily\plot練ってく
+の内容もきちんと盛り込んで

@@ -160,7 +160,7 @@
                 <mxCell id="am5ab" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#28A745;strokeWidth=1.5;" parent="1" source="m5a" target="m5b" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="a1a" value="&lt;b&gt;嫉妬の核心：二重の羨望&lt;/b&gt;&lt;br&gt;才能型の主人公が努力せず良い成績を取る&lt;br&gt;父から無条件の愛を受けている&lt;br&gt;自分は百点でなければ殴られる家庭で育ち&lt;br&gt;その愛を知らない&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#784212&quot;&gt;↳ A男は悪役でなく傷ついた人間&lt;br&gt;読者がA男の側にも苦しめる設計&lt;/font&gt;" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;align=left;spacingLeft=8;spacingTop=8;spacingBottom=8;html=1;verticalAlign=top;" parent="1" vertex="1">
+                <mxCell id="a1a" value="&lt;b&gt;嫉妬の核心：二重の羨望【更新】&lt;/b&gt;&lt;br&gt;才能型の瀬野たくやが努力せず良い成績を取る&lt;br&gt;父から無条件の愛を受けている&lt;br&gt;広瀬こうすけは母（短大出・学歴コンプ）から&lt;br&gt;100点でも「瀬野君に何回負けた」と叩かれ&lt;br&gt;泣きながら「おかあさんのために頑張って」とすがられる&lt;br&gt;→ 暴力＋罪悪感の二重束縛&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#784212&quot;&gt;↳ A男は悪役でなく傷ついた人間&lt;br&gt;読者がA男の側にも苦しめる設計&lt;br&gt;↳ ACT1時点ではいじめはまだない可能性あり&lt;/font&gt;" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;align=left;spacingLeft=8;spacingTop=8;spacingBottom=8;html=1;verticalAlign=top;" parent="1" vertex="1">
                     <mxGeometry x="140" y="652" width="300" height="150" as="geometry"/>
                 </mxCell>
                 <mxCell id="a1b" value="&lt;b&gt;いじめを開始&lt;/b&gt;&lt;br&gt;評判操作・孤立・精神攻撃が中心&lt;br&gt;親から受けた暴力だけは主人公にも再現してしまう&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#784212&quot;&gt;↳ 受けた暴力が次の人間に連鎖する構造&lt;/font&gt;" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;align=left;spacingLeft=8;spacingTop=8;spacingBottom=8;html=1;verticalAlign=top;" parent="1" vertex="1">
@@ -184,7 +184,7 @@
                 <mxCell id="a4a" value="&lt;b&gt;主人公を追いGoogle Japan入社&lt;/b&gt;&lt;br&gt;「今度こそ勝つ」という動機で入社&lt;br&gt;しかし昇進できず主人公の部下になる&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#784212&quot;&gt;↳ 追跡が最悪の形で終わる&lt;/font&gt;" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;align=left;spacingLeft=8;spacingTop=8;spacingBottom=8;html=1;verticalAlign=top;" parent="1" vertex="1">
                     <mxGeometry x="1100" y="652" width="300" height="110" as="geometry"/>
                 </mxCell>
-                <mxCell id="a4b" value="&lt;b&gt;「厳密な指導」が虐待の再現として刺さる&lt;/b&gt;&lt;br&gt;「なぜ理解できないのか」という詰めが&lt;br&gt;父からの「なぜ百点でないのか」&lt;br&gt;と同じ暴力として体験される&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#784212&quot;&gt;↳ 同じ行動が立場で全く異なる意味を持つ&lt;/font&gt;" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;align=left;spacingLeft=8;spacingTop=8;spacingBottom=8;html=1;verticalAlign=top;" parent="1" vertex="1">
+                <mxCell id="a4b" value="&lt;b&gt;「厳密な指導」が虐待の再現として刺さる&lt;/b&gt;&lt;br&gt;「なぜ理解できないのか」という詰めが&lt;br&gt;母からの「なぜ百点でないのか」&lt;br&gt;と同じ暴力として体験される&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#784212&quot;&gt;↳ 同じ行動が立場で全く異なる意味を持つ&lt;/font&gt;" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;align=left;spacingLeft=8;spacingTop=8;spacingBottom=8;html=1;verticalAlign=top;" parent="1" vertex="1">
                     <mxGeometry x="1100" y="772" width="300" height="130" as="geometry"/>
                 </mxCell>
                 <mxCell id="a4t" value="⚡ 崩壊・出社不能" style="rounded=1;fillColor=#C0392B;strokeColor=#922B21;fontColor=#ffffff;fontStyle=1;fontSize=10;align=center;spacingTop=6;verticalAlign=middle;" parent="1" vertex="1">
@@ -202,10 +202,10 @@
                 <mxCell id="b1e" value="（登場なし）" style="text;strokeColor=none;fillColor=none;fontSize=10;fontColor=#aaaaaa;" parent="1" vertex="1">
                     <mxGeometry x="140" y="1060" width="300" height="28" as="geometry"/>
                 </mxCell>
-                <mxCell id="b2a" value="&lt;b&gt;保健室で主人公と出会う&lt;/b&gt;&lt;br&gt;知的障害により周りの空気が読めず、孤立した存在&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;これ以上誰にも攻撃されないように、優しい振舞いしかしなく&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;なる、それでもいじめは収まらない&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;主人公のキツい言い方を「優しい」と感じる&lt;br&gt;（「けなされて当然」という自己観から）&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#4A235A&quot;&gt;↳ 通じ合っているように見えて実はズレている&lt;br&gt;主人公の誤信念の穴を体現する存在&lt;/font&gt;&lt;/div&gt;" style="rounded=1;fillColor=#E8DAEF;strokeColor=#8E44AD;fontSize=10;align=left;spacingLeft=8;spacingTop=8;spacingBottom=8;html=1;verticalAlign=top;" parent="1" vertex="1">
+                <mxCell id="b2a" value="&lt;b&gt;保健室で主人公と出会う【設定更新】&lt;/b&gt;&lt;br&gt;知的障害により周りの空気が読めず、孤立した存在&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;学校ではいじめ、家庭では性的虐待を受けている&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;知的障害のため虐待を「異常」と認識できていない&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;主人公のキツい言い方を「優しい」と感じる&lt;br&gt;（「けなされて当然」という自己観から）&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#4A235A&quot;&gt;↳ 通じ合っているように見えて実はズレている&lt;br&gt;↳ 学校以外のB子の側面（家庭）が自殺の核心&lt;br&gt;主人公の誤信念の穴を体現する存在&lt;/font&gt;&lt;/div&gt;" style="rounded=1;fillColor=#E8DAEF;strokeColor=#8E44AD;fontSize=10;align=left;spacingLeft=8;spacingTop=8;spacingBottom=8;html=1;verticalAlign=top;" parent="1" vertex="1">
                     <mxGeometry x="460" y="1032" width="300" height="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="b2t" value="★ 幸せの絶頂で自殺&#xa;主人公とのデートで人生最大の幸せを感じた直後&#xa;「このまま死にたい」と自殺&#xa;苦しみからの逃避でなく&#xa;幸福の頂点での自己完結&#xa;&#xa;↳ 主人公は「苦しみの末に死んだ」と誤解&#xa;⚠️ 設定として伝わるか要確認" style="rounded=1;fillColor=#C0392B;strokeColor=#922B21;fontColor=#ffffff;fontStyle=1;fontSize=10;align=left;spacingLeft=8;spacingTop=8;spacingBottom=8;verticalAlign=top;whiteSpace=wrap;" parent="1" vertex="1">
+                <mxCell id="b2t" value="★ デート後の自殺【確定】&#xa;母の交際相手による性的虐待（「優しいふり」で洗脳）&#xa;B子は「優しさ＝性的な関係」と刷り込まれている&#xa;デートでB子が主人公を性的に誘う&#xa;→ 主人公「大切な人とするのは付き合ってから」と断る&#xa;→ 初めて搾取のない優しさを知り虐待の異常さに気づく&#xa;→ デート帰りの電車に飛び込み（「帰りたくない」）&#xa;&#xa;↳「偽の優しさ」vs「本当の優しさ」の対比が核心&#xa;↳ 主人公は真実を知らず誤信念を確立" style="rounded=1;fillColor=#C0392B;strokeColor=#922B21;fontColor=#ffffff;fontStyle=1;fontSize=10;align=left;spacingLeft=8;spacingTop=8;spacingBottom=8;verticalAlign=top;whiteSpace=wrap;" parent="1" vertex="1">
                     <mxGeometry x="460" y="1200" width="300" height="165" as="geometry"/>
                 </mxCell>
                 <mxCell id="ab2at" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#8E44AD;strokeWidth=1.5;" parent="1" source="b2a" target="b2t" edge="1">
@@ -241,7 +241,7 @@
                 <mxCell id="w2" value="ACT5：「理解できなくても愛する」を&#xa;具体的にどんな行動で示すか未設計&#xa;最重要課題" style="rounded=1;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=10;align=left;spacingLeft=8;spacingTop=6;whiteSpace=wrap;verticalAlign=top;" parent="1" vertex="1">
                     <mxGeometry x="345" y="1442" width="290" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="w3" value="B子の「幸せの頂点で自殺」：&#xa;読者・黒田に伝わるか？&#xa;設定として成立するか？" style="rounded=1;fillColor=#F5EEF8;strokeColor=#8E44AD;fontSize=10;align=left;spacingLeft=8;spacingTop=6;whiteSpace=wrap;verticalAlign=top;" parent="1" vertex="1">
+                <mxCell id="w3" value="B子の自殺【設定更新済】：&#xa;家庭内性的虐待＋デートの対比で&#xa;「もう帰りたくない」→ 死を選ぶ&#xa;旧設定「幸せの頂点で自殺」より自然" style="rounded=1;fillColor=#D5F5E3;strokeColor=#28A745;fontSize=10;align=left;spacingLeft=8;spacingTop=6;whiteSpace=wrap;verticalAlign=top;" parent="1" vertex="1">
                     <mxGeometry x="650" y="1442" width="290" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="w4" value="大きなプロット vs ACT1から書く問題：&#xa;大枠は羅針盤、ACT1から書き始める方針&#xa;でいいか黒田に確認したい" style="rounded=1;fillColor=#EBF5FB;strokeColor=#2E86C1;fontSize=10;align=left;spacingLeft=8;spacingTop=6;whiteSpace=wrap;verticalAlign=top;" parent="1" vertex="1">

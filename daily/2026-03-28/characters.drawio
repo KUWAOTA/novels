@@ -4,7 +4,7 @@
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="title" value="③ 登場人物リスト — たたき台（黒田向け）" style="text;html=1;align=center;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                <mxCell id="title" value="③ 登場人物リスト — たたき台（黒田向け）※2026-04-03更新" style="text;html=1;align=center;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
                     <mxGeometry x="40" y="20" width="1280" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="tri" value="3人の関係図" style="swimlane;startSize=26;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontSize=12;" parent="1" vertex="1">
@@ -13,10 +13,10 @@
                 <mxCell id="tri_b" value="B子（主人公と似た境遇）&#xa;空気が読めない＋社会に弾かれた&#xa;→ 主人公に「あれは厳密な言葉があれば救えた」&#xa;　という誤解を残して死ぬ" style="rounded=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontSize=11;" parent="tri" vertex="1">
                     <mxGeometry x="90" y="40" width="290" height="110" as="geometry"/>
                 </mxCell>
-                <mxCell id="tri_p" value="主人公&#xa;B子の死を誤解して背負い、A男を傷つけてしまう&#xa;→ 最終的に「理解できなくても愛せる」にたどり着く" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontStyle=1;fontSize=11;" parent="tri" vertex="1">
+                <mxCell id="tri_p" value="瀬野たくや（主人公）&#xa;B子の死を誤解して背負い、A男を傷つけてしまう&#xa;→ 最終的に「理解できなくても愛せる」にたどり着く" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontStyle=1;fontSize=11;" parent="tri" vertex="1">
                     <mxGeometry x="490" y="40" width="300" height="110" as="geometry"/>
                 </mxCell>
-                <mxCell id="tri_a" value="A男（主人公と正反対の育ち）&#xa;厳しすぎる親（虐待）によって壊された&#xa;→ 主人公の「善意の指導」が&#xa;　「暴力だった」と証明される人物" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=11;" parent="tri" vertex="1">
+                <mxCell id="tri_a" value="広瀬こうすけ〈A男〉（主人公と正反対の育ち）&#xa;母の教育虐待（短大出の学歴コンプ）で壊された&#xa;→ 主人公の「善意の指導」が&#xa;　「暴力だった」と証明される人物" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=11;" parent="tri" vertex="1">
                     <mxGeometry x="900" y="40" width="290" height="110" as="geometry"/>
                 </mxCell>
                 <mxCell id="te1" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#7B4F9E;strokeWidth=2;" parent="tri" source="tri_b" target="tri_p" edge="1">
@@ -25,7 +25,7 @@
                 <mxCell id="te2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#E67E22;strokeWidth=2;" parent="tri" source="tri_a" target="tri_p" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="protag" value="主人公（名前未定）" style="swimlane;startSize=26;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                <mxCell id="protag" value="主人公 — 瀬野たくや" style="swimlane;startSize=26;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontStyle=1;fontSize=12;" parent="1" vertex="1">
                     <mxGeometry x="40" y="265" width="380" height="435" as="geometry"/>
                 </mxCell>
                 <mxCell id="p_role" value="物語での装置としての役割" style="swimlane;startSize=20;fillColor=#b8d4ed;strokeColor=#2E6EA6;fontSize=10;fontStyle=1;" parent="protag" vertex="1">
@@ -82,7 +82,7 @@
                 <mxCell id="b1" value="属性" style="swimlane;startSize=20;fillColor=#f3e8ff;strokeColor=#9673a6;fontSize=10;" parent="bko" vertex="1">
                     <mxGeometry x="10" y="165" width="270" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="b1a" value="知的障害（空気が読めない ≠ ASD）&#xa;非常に優しく自己肯定感が低い&#xa;主人公のきつい言い方を「優しい」と感じる" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="b1" vertex="1">
+                <mxCell id="b1a" value="知的障害（空気が読めない ≠ ASD）&#xa;非常に優しく自己肯定感が低い&#xa;主人公のきつい言い方を「優しい」と感じる&#xa;母：知的障害気味、娘をお荷物扱い&#xa;母の交際相手から性的虐待（「優しいふり」で洗脳）&#xa;→「優しさ＝性的な関係」と刷り込まれている" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="b1" vertex="1">
                     <mxGeometry x="5" y="22" width="260" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="b2" value="この人物がいる理由（主人公との関係）" style="swimlane;startSize=20;fillColor=#f3e8ff;strokeColor=#9673a6;fontSize=10;" parent="bko" vertex="1">
@@ -94,10 +94,10 @@
                 <mxCell id="b3" value="自殺の構造（ここが核心）" style="swimlane;startSize=20;fillColor=#f3e8ff;strokeColor=#9673a6;fontSize=10;" parent="bko" vertex="1">
                     <mxGeometry x="10" y="355" width="270" height="115" as="geometry"/>
                 </mxCell>
-                <mxCell id="b3a" value="凄惨ないじめを受けるも自分を責め続ける&#xa;主人公と会い、幸せの頂点で&#xa;「このまま死にたい」と思い自殺&#xa;&#xa;※ 主人公はB子が苦しみの果てに&#xa;　死んだと誤解している（← これが核心的な誤解）" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="b3" vertex="1">
+                <mxCell id="b3a" value="【確定】母の交際相手による性的虐待&#xa;母：知的障害気味（望まぬ出産）、娘をお荷物扱い&#xa;交際相手：「優しいふり」で洗脳し性的搾取&#xa;→ B子は「優しさ＝性的な関係」と刷り込まれている&#xa;&#xa;デートでB子が主人公を性的に誘う&#xa;→ 主人公「大切な人とするのは付き合ってから」と断る&#xa;→ 初めて搾取のない優しさを知り、虐待の異常さに気づく&#xa;→ デート帰りの電車に飛び込み（「帰りたくない」）&#xa;&#xa;※ 主人公はこの真実を知らず誤信念を確立" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="b3" vertex="1">
                     <mxGeometry x="5" y="22" width="260" height="85" as="geometry"/>
                 </mxCell>
-                <mxCell id="aman" value="A男（第1幕→第4幕→第5幕）" style="swimlane;startSize=26;fillColor=#FDEBD0;strokeColor=#E67E22;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                <mxCell id="aman" value="広瀬こうすけ〈A男〉（第1幕→第4幕→第5幕）" style="swimlane;startSize=26;fillColor=#FDEBD0;strokeColor=#E67E22;fontStyle=1;fontSize=12;" parent="1" vertex="1">
                     <mxGeometry x="1050" y="265" width="280" height="580" as="geometry"/>
                 </mxCell>
                 <mxCell id="am_role" value="物語での装置としての役割" style="swimlane;startSize=20;fillColor=#f8d4a0;strokeColor=#C06010;fontSize=10;fontStyle=1;" parent="aman" vertex="1">
@@ -115,7 +115,7 @@
                 <mxCell id="am2" value="背景・傷" style="swimlane;startSize=20;fillColor=#fef3e2;strokeColor=#d79b00;fontSize=10;" parent="aman" vertex="1">
                     <mxGeometry x="10" y="250" width="260" height="115" as="geometry"/>
                 </mxCell>
-                <mxCell id="am2a" value="教育虐待（学年1位でないと暴力）&#xa;主人公への嫉妬の核心：&#xa;　「百点取れなくてもいい子」という&#xa;　無条件の愛を自分は知らない&#xa;才能型の主人公への「努力って何だったんだ」感" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="am2" vertex="1">
+                <mxCell id="am2a" value="教育虐待（母による）：&#xa;　母は短大出で学歴コンプレックスが強い&#xa;　100点を取っても「今まで何回負けた」と叩く&#xa;　泣きながら「お母さんのために頑張って」とすがる&#xa;主人公への嫉妬の核心：&#xa;　「百点取れなくてもいい子」という&#xa;　無条件の愛を自分は知らない&#xa;才能型の主人公への「努力って何だったんだ」感" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="am2" vertex="1">
                     <mxGeometry x="5" y="22" width="250" height="85" as="geometry"/>
                 </mxCell>
                 <mxCell id="am3" value="いじめの手口" style="swimlane;startSize=20;fillColor=#fef3e2;strokeColor=#d79b00;fontSize=10;" parent="aman" vertex="1">
@@ -148,13 +148,13 @@
                 <mxCell id="ba_a" value="B子" style="swimlane;startSize=22;fillColor=#f3e8ff;strokeColor=#9673a6;fontSize=10;fontStyle=1;" parent="1" vertex="1">
                     <mxGeometry x="740" y="895" width="290" height="175" as="geometry"/>
                 </mxCell>
-                <mxCell id="ba_a_t" value="「否定されるのが当たり前すぎた」&#xa;→ それでもこちらを向いてくれた人が珍しくて好きになった&#xa;&#xa;・主人公のきつい言い方も「自分はけなされて当然」&#xa;　と思っているから退けようとしない&#xa;　なんなら優しいとすら思っている&#xa;・参考キャラクター：初恋、ざらりの主人公&#xa;・主人公と一緒に過ごした日、「今日死んでもよかった」と思った&#xa;・主人公が「論理で訂正」したとき、B子は感情を引っ込めた&#xa;・B子にとって死は解放・幸せ&#xa;　主人公は苦しみの果てと誤解している" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="ba_a" vertex="1">
+                <mxCell id="ba_a_t" value="「否定されるのが当たり前すぎた」&#xa;→ それでもこちらを向いてくれた人が珍しくて好きになった&#xa;&#xa;・参考キャラクター：初恋、ざらりの主人公&#xa;・母：知的障害気味（望まぬ出産）、娘をお荷物扱い&#xa;・母の交際相手：「優しいふり」で洗脳し性的搾取&#xa;　→ B子は「優しさ＝性的な関係」と刷り込まれている&#xa;・デートでB子が主人公を性的に誘う&#xa;　→ 主人公「大切な人とするのは付き合ってから」と断る&#xa;　→ 初めて搾取のない優しさを知る&#xa;　→ 「偽の優しさ」と「本当の優しさ」の対比&#xa;・デート帰りの電車に飛び込み（「帰りたくない」）&#xa;・主人公は真実を知らず誤信念を確立" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="ba_a" vertex="1">
                     <mxGeometry x="5" y="24" width="278" height="112" as="geometry"/>
                 </mxCell>
                 <mxCell id="aa_a" value="A男｜両親との関係（重要な背景）" style="swimlane;startSize=22;fillColor=#fef3e2;strokeColor=#d79b00;fontSize=10;fontStyle=1;" parent="1" vertex="1">
                     <mxGeometry x="1050" y="895" width="280" height="155" as="geometry"/>
                 </mxCell>
-                <mxCell id="aa_a_t" value="・暴力を振るってきた両親に依存・離れられない&#xa;　→ 現在も介護している&#xa;・リモートワークできる仕事を選んだ理由：&#xa;　田舎の親元を離れずに稼ぐため&#xa;&#xa;参考キャラクター：「タコピーの原罪」東くん" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="aa_a" vertex="1">
+                <mxCell id="aa_a_t" value="・【更新】虐待者は母（父ではない）&#xa;　母：短大出で学歴コンプレックスが強い&#xa;　100点でも「瀬野君に何回負けた」と叩く&#xa;　泣きながら「おかあさんのために頑張って」とすがる&#xa;　→ 暴力＋罪悪感の二重束縛&#xa;・暴力を振るってきた母に依存・離れられない&#xa;　→ 現在も介護している&#xa;・リモートワークできる仕事を選んだ理由：&#xa;　田舎の親元を離れずに稼ぐため&#xa;&#xa;参考キャラクター：「タコピーの原罪」東くん" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="aa_a" vertex="1">
                     <mxGeometry x="5" y="24" width="268" height="122" as="geometry"/>
                 </mxCell>
             </root>

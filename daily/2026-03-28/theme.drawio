@@ -62,7 +62,7 @@
     <mxCell id="resc2" value="B子の死の真実（読者だけが知る）" style="swimlane;startSize=22;fillColor=#E8DAEF;strokeColor=#8E44AD;fontSize=11;" parent="rescue_box" vertex="1">
       <mxGeometry x="295" y="38" width="310" height="195" as="geometry"/>
     </mxCell>
-    <mxCell id="resc2a" value="B子の死は「苦しみの果て」ではない。&#xa;&#xa;主人公と過ごした幸せの絶頂で&#xa;「このまま明日が来なければいい」と感じ、&#xa;自ら選んだ解放・幸福としての死。&#xa;&#xa;つまり主人公の「説明が届かなかったから死んだ」&#xa;という解釈は根本的に間違い。&#xa;&#xa;→「救えなかった」という罪悪感自体が&#xa;　誤りだが、主人公はそれを知らないまま生きる。" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="resc2" vertex="1">
+    <mxCell id="resc2a" value="B子の死は「苦しみの果て」ではない。【設定更新】&#xa;&#xa;B子は家庭内で日常的に性的虐待を受けていた。&#xa;知的障害のため「これが普通」と受容していた。&#xa;主人公とのデートで初めて「本当の優しさ」を体験し、&#xa;帰宅後の虐待との対比が生じ&#xa;「もう帰りたくない」という単純な拒絶として死を選んだ。&#xa;&#xa;つまり主人公の善意（デート）自体が引き金。&#xa;「説明が届かなかったから死んだ」という解釈は的外れ。&#xa;&#xa;→「救えなかった」という罪悪感自体が&#xa;　誤りだが、主人公はそれを知らないまま生きる。" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=6;" parent="resc2" vertex="1">
       <mxGeometry x="5" y="26" width="295" height="160" as="geometry"/>
     </mxCell>
     <mxCell id="resc3" value="ACT5での「救う」の再定義" style="swimlane;startSize=22;fillColor=#d5e8d4;strokeColor=#28A745;fontStyle=1;fontSize=11;" parent="rescue_box" vertex="1">
@@ -84,7 +84,7 @@
     <mxCell id="ep1" value="① 父と数式（ACT1）&#xa;&#xa;「なぜそうなるか」まで説明してくれた父。&#xa;「問いの言い換え」という手法を学ぶ。&#xa;&#xa;→ 厳密さ信仰の起源" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=10;align=left;spacingLeft=8;" parent="episode_box" vertex="1">
       <mxGeometry x="10" y="38" width="200" height="150" as="geometry"/>
     </mxCell>
-    <mxCell id="ep2" value="② B子の自殺（ACT2）&#xa;&#xa;厳密な言語が届かない&#xa;空気読みの社会で適応できず死んだ恋人。&#xa;&#xa;主人公の解釈：&#xa;「明快な言葉があれば生きられた」&#xa;→「救えなかった」誤信念が確立&#xa;&#xa;（真実：B子は幸福の中で選んだ死）" style="rounded=1;fillColor=#E8DAEF;strokeColor=#7B4F9E;fontSize=10;align=left;spacingLeft=8;" parent="episode_box" vertex="1">
+    <mxCell id="ep2" value="② B子の自殺（ACT2）【更新】&#xa;&#xa;家庭内性的虐待を受けていたB子が&#xa;主人公とのデートで「本当の優しさ」を知り&#xa;虐待との対比から「もう帰りたくない」と死を選ぶ&#xa;&#xa;主人公の解釈：&#xa;「明快な言葉があれば生きられた」&#xa;→「救えなかった」誤信念が確立&#xa;&#xa;（真実：主人公の善意自体が引き金）" style="rounded=1;fillColor=#E8DAEF;strokeColor=#7B4F9E;fontSize=10;align=left;spacingLeft=8;" parent="episode_box" vertex="1">
       <mxGeometry x="225" y="38" width="200" height="150" as="geometry"/>
     </mxCell>
     <mxCell id="ep3" value="③ A男への指導（ACT4）&#xa;&#xa;善意の厳密な指導がA男を壊す。&#xa;「正しく説明したのに人が壊れた」&#xa;という体験。&#xa;&#xa;→ 厳密さが暴力になる証拠&#xa;→「救う」の誤定義が露呈する" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;align=left;spacingLeft=8;" parent="episode_box" vertex="1">
