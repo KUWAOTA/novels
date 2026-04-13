@@ -1,0 +1,24 @@
+## 背景
+黒田のレビューが終わり、一旦plotだけを詰める作業は終了し、
+具体的な各ACTのシーケンスを進めていくことになりました。
+
+> 参考：
+> C:\Users\ukowu\Desktop\novel\constrain\review\kuroda\rule.txt
+> C:\Users\ukowu\Desktop\novel\constrain\review\kuroda\2026-04-12\review.md
+
+以下にv3のキャラクタ造形、plot、テーマがあります。
+C:\Users\ukowu\Desktop\novel\constrain\settings\v3\characters.drawio
+C:\Users\ukowu\Desktop\novel\constrain\settings\v3\plot.drawio
+C:\Users\ukowu\Desktop\novel\constrain\settings\v3\theme.drawio
+
+黒田とのMTG前までに肉付けするつもりで、書いた設定が、以下にあります。
+C:\Users\ukowu\Desktop\novel\importantReport\plot_take2
+（あなたが作成した穴埋めシートを一部埋めていっただけ）
+
+## 指示
+
+C:\Users\ukowu\Desktop\novel\importantReport\plot_take2の設定を反映させた、v4の
+C:\Users\ukowu\Desktop\novel\constrain\settings\v4\characters.drawio
+C:\Users\ukowu\Desktop\novel\constrain\settings\v4\plot.drawio
+C:\Users\ukowu\Desktop\novel\constrain\settings\v4\theme.drawio
+を作ってください。

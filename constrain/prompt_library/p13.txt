@@ -1,0 +1,30 @@
+## 地の文
+案1+2+4で全然いいと思います。
+
+## 指示1
+案1+2+4を
+C:\Users\ukowu\Desktop\novel\constrain\settings\v4\characters.drawio
+C:\Users\ukowu\Desktop\novel\constrain\settings\v4\plot.drawio
+C:\Users\ukowu\Desktop\novel\constrain\settings\v4\theme.drawio
+に反映させちゃってください。
+
+## 指示2
+この場合以下のアイデアを適用させようと思っています・
+
+```
+エピローグが
+シュモクバエに関する考察の内的独白
+
+プロローグが
+シュモクバエを樹と秀斗がケニアに取りに行くシーン
+で余韻
+```
+
+これはストーリーコンパイラ的にも問題はなさそうですか？
+なさそうだったらそれで行きたいと思います。
+これを判断したマークダウンのレポートを作成してください。
+
+## 指示3
+火は熱いうちに打ちたいのですが、
+エピローグなんかを最初に書いてしまうのってアンチパターンでしょうか？
+さっきのレポートにこの旨も書き加えてください。

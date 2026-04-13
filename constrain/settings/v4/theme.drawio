@@ -1,0 +1,148 @@
+<mxfile host="65bd71144e">
+    <diagram id="wjclCQA-mw7N3x6G5hsB" name="Page-1">
+        <mxGraphModel dx="1251" dy="464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="3600" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="① テーマ文 — v4（plot_take2 穴埋め反映版）" style="text;html=1;align=center;fontSize=16;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="20" width="1100" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="theme_box" value="テーマ文（統制概念）" style="swimlane;startSize=24;fillColor=#dae8fc;strokeColor=#4A7FB5;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="70" width="1100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="theme_text" value="「厳密に定義された言葉」こそが人を救うと考えた主人公が、&#xa;曖昧さとディスコミュニケーションだらけの人間社会を、受け入れれるようになる話" style="rounded=1;fillColor=#ffffff;strokeColor=#4A7FB5;fontSize=14;fontStyle=1;align=center;" parent="theme_box" vertex="1">
+                    <mxGeometry x="15" y="32" width="1070" height="52" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr1" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" parent="1" source="theme_box" target="explain_box" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="explain_box" value="テーマの3要素 — 分解" style="swimlane;startSize=26;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="230" width="1100" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex1" value="「厳密さ」とは" style="swimlane;startSize=22;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" parent="explain_box" vertex="1">
+                    <mxGeometry x="10" y="35" width="340" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex1a" value="言語を正確に・再現可能に定義することで人を理解し救えると信じること。&#xa;&#xa;「決まりだから」「空気を読め」では納得できない。&#xa;「なぜそうなるか」まで言葉で明快に説明できれば&#xa;誰でも理解できる――という信仰。&#xa;&#xa;起源：父・須藤孝則の教え（仮説を立て検証する方法）&#xa;強化：灘・東大で「論理が通じる集団」を体験&#xa;誤用：田中あんずの死を「言語の欠如」のせいと解釈&#xa;暴走：皆瀬秀斗への「善意の厳密な指導」" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="ex1" vertex="1">
+                    <mxGeometry x="5" y="25" width="330" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex2" value="「曖昧さとディスコミュニケーション」とは" style="swimlane;startSize=22;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" parent="explain_box" vertex="1">
+                    <mxGeometry x="365" y="35" width="370" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex2a" value="言葉の解釈は話者の間で必ずズレる。&#xa;それを補うのが感情・空気読みだが、読めない人は置いてけぼり。&#xa;この「ズレ」こそが争いや迫害を生むと主人公は思っている。&#xa;&#xa;しかし物語が示す真実：&#xa;・あんずと樹は「通じ合っている」と思っていたが根本的にズレていた&#xa;　（樹：論理が通じる / あんず：性的に搾取しない＝安全）&#xa;・秀斗と樹も完全にズレている&#xa;　（樹：教育 / 秀斗：仕返し・虐待の再演）&#xa;・曖昧さは危険だが、曖昧さの中にしかない救済もある" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="ex2" vertex="1">
+                    <mxGeometry x="5" y="25" width="360" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex3" value="「受け入れる」とは" style="swimlane;startSize=22;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" parent="explain_box" vertex="1">
+                    <mxGeometry x="750" y="35" width="340" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="ex3a" value="理解できなくても、それでも関わり続けることを選ぶこと。&#xa;&#xa;「正しく説明できれば救える」から&#xa;「説明できなくても受け入れる・そこにいる」へ。&#xa;&#xa;厳密さを「捨てる」のではない。&#xa;「理解の外にある他者を、それでも受け入れる」という選択。&#xa;&#xa;★ あんずはACT2で既にこの答えを体現していた：&#xa;　「言語なき共存」＝教室での沈黙の共有（あんずちゃん係）" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="ex3" vertex="1">
+                    <mxGeometry x="5" y="25" width="330" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr1b" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" parent="1" source="explain_box" target="rescue_box" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rescue_box" value="「救う」とは何か — 主人公の定義と変化（テーマの核心）" style="swimlane;startSize=26;fillColor=#f8cecc;strokeColor=#C0392B;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="510" width="1100" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="resc1" value="樹にとっての「救う」（誤信念）" style="swimlane;startSize=22;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=11;" parent="rescue_box" vertex="1">
+                    <mxGeometry x="10" y="38" width="340" height="245" as="geometry"/>
+                </mxCell>
+                <mxCell id="resc1a" value="「救う」＝「正しく・厳密に理解させること」&#xa;&#xa;「相手が正確に理解できれば、生きられる。&#xa;言葉が届かない故に人と分かりあえないから、人は苦しむ。&#xa;だから厳密な言語が人を救う」&#xa;&#xa;根拠：あんずを「救えなかった」のは空気読み社会が&#xa;彼女に正確な言語を与えなかったから、という誤解。&#xa;&#xa;ACT4での具体的台詞：&#xa;「分からないなら言って、もっと丁寧に説明するから」&#xa;→ 100%善意 ＝ 100%断罪" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="resc1" vertex="1">
+                    <mxGeometry x="5" y="26" width="330" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="resc2" value="あんずの死の真実（読者だけが知る）" style="swimlane;startSize=22;fillColor=#E8DAEF;strokeColor=#8E44AD;fontSize=11;" parent="rescue_box" vertex="1">
+                    <mxGeometry x="365" y="38" width="370" height="245" as="geometry"/>
+                </mxCell>
+                <mxCell id="resc2a" value="あんずの死は「苦しみの果て」ではない。&#xa;&#xa;樹とのデート（石切公園・夜景）で初めて「本当の優しさ」を知った。&#xa;帰宅後、母の彼氏からの性的虐待が再開した時に初めて&#xa;「これは優しさじゃない」と認識してしまった。&#xa;しかし知的障害のため助けを求める言葉を持たない。&#xa;逃げ方もわからない。できることは一つだけ。&#xa;&#xa;帰りの電車：樹の白く清潔な手 vs おじさんの脂っぽく毛深い手&#xa;→「手」のイメージが対比の核心" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="resc2" vertex="1">
+                    <mxGeometry x="5" y="26" width="360" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="resc3" value="ACT5での「救う」の再定義" style="swimlane;startSize=22;fillColor=#d5e8d4;strokeColor=#28A745;fontStyle=1;fontSize=11;" parent="rescue_box" vertex="1">
+                    <mxGeometry x="750" y="38" width="340" height="245" as="geometry"/>
+                </mxCell>
+                <mxCell id="resc3a" value="旧：「救う」＝理解させること（完全に正確に説明し、わからせる）&#xa;新：「救う」＝理解できなくても共にいること&#xa;&#xa;第三の選択：&#xa;厳密さを捨てるのでも、諦めるのでもない。&#xa;理解できなくても関わり続けるという選択。&#xa;&#xa;★ 具体的行動（2段階）：&#xa;　❶ ケニア行き航空券を買う（「シュモクバエ、見に行かん？」）&#xa;　　→ 論理では説明できない行動。「俺もわからん」＝初めて「わからない」と言う。&#xa;　　→ ACT1の昆虫図鑑の記憶が、ここで救済の道具に変わる。&#xa;　❷「辛かったやろ」（関西弁＝論理の鎧が外れる瞬間）&#xa;　　→ 父・孝則の①の回収。感情が論理を突き破る。&#xa;&#xa;★ 中核イメージ：シュモクバエ（統制概念の象徴的結晶）&#xa;　「恣意的なルールで生きている小さな虫」＝人間も同じ。&#xa;　理解できなくても、笑い合えればそれでいい。" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="resc3" vertex="1">
+                    <mxGeometry x="5" y="26" width="330" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr2" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" parent="1" source="rescue_box" target="gray_box" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="gray_box" value="テーマの弁証法 — 「白黒」から「灰色」へ" style="swimlane;startSize=26;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="870" width="1100" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="gray1" value="樹の出発点：白黒思考" style="swimlane;startSize=22;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=11;" parent="gray_box" vertex="1">
+                    <mxGeometry x="10" y="35" width="340" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="gray1a" value="白黒はっきりさせる → どっちかが黒になる → それは攻撃。&#xa;意見の衝突は対立になりうる。&#xa;樹は「正しいか間違いか」でしか世界を切れない。&#xa;&#xa;★ 灘で初めて「指摘≠攻撃」の世界を知る（回想で描写）&#xa;　「分解→再構成→満足」の体験が白黒思考を補強" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="gray1" vertex="1">
+                    <mxGeometry x="5" y="25" width="330" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="gray2" value="到達点①：灰色の発見" style="swimlane;startSize=22;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" parent="gray_box" vertex="1">
+                    <mxGeometry x="365" y="35" width="370" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="gray2a" value="灰色＝どっちも傷つけない、どっちつかずの結論で平和的解決を導ける。&#xa;曖昧さの方が平和的になりうる。&#xa;&#xa;ただし樹は「濁すことを知る」のではなく、&#xa;「そういう方法もあると理解する」。← 樹の言葉としてはこれが近い。&#xa;白黒の世界に灰色を「追加」する感覚。厳密さを捨てるのではない。" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="gray2" vertex="1">
+                    <mxGeometry x="5" y="25" width="360" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="gray3" value="到達点②：わからないまま動く" style="swimlane;startSize=22;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=11;" parent="gray_box" vertex="1">
+                    <mxGeometry x="750" y="35" width="340" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="gray3a" value="「わからないけど、とりあえずそうする」&#xa;← 樹にはこれが最も抵抗感がある行動。&#xa;論理的根拠なしに行動すること。理解の外にある他者に、&#xa;説明できないままそれでも手を伸ばすこと。&#xa;&#xa;★ ACT5：秀斗の自殺未遂の報せを聞いて走り出す&#xa;　初めて論理より先に体が動く。&#xa;　あんずの顔が浮かぶ。「今度は間に合うかもしれない」&#xa;　→ 航空券を買う行動＝「わからないまま動く」の極致" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="gray3" vertex="1">
+                    <mxGeometry x="5" y="25" width="330" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr3" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" parent="1" source="gray_box" target="pattern_box" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="pattern_box" value="テーマの構造的パターン — 「善意が人を殺す」三重構造" style="swimlane;startSize=26;fillColor=#f8cecc;strokeColor=#C0392B;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1150" width="1100" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="pat1" value="① ACT2：樹のデート → あんずの死&#xa;&#xa;樹はあんずに性欲のない好意を向けた。&#xa;あんずはそれを「本物の愛情」と感じた。&#xa;初めて知った本当の優しさが、&#xa;帰宅後の性的虐待を「異常」と認識させた。&#xa;&#xa;場所：石切公園（夜景）→ 大和西大寺駅（帰り）" style="rounded=1;fillColor=#E8DAEF;strokeColor=#7B4F9E;fontSize=9;align=left;spacingLeft=8;spacingTop=6;" parent="pattern_box" vertex="1">
+                    <mxGeometry x="10" y="35" width="340" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="pat2" value="② ACT3：樹の教育 → 秀斗の崩壊&#xa;&#xa;樹は父の教え②③（翻訳・提案）で指導。&#xa;しかし①（感情の受容）を省略。&#xa;客観的には正しい。ハラスメントに見えない。&#xa;しかし秀斗の傷を通じて暴力がリプレイされる。&#xa;&#xa;場所：Google Japan オフィス / 深夜Slack" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=9;align=left;spacingLeft=8;spacingTop=6;" parent="pattern_box" vertex="1">
+                    <mxGeometry x="365" y="35" width="370" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="pat3" value="③ ACT1：秀斗の母・綾の「愛」→ 秀斗の破壊&#xa;&#xa;「お願いだから、おかあさんのために頑張って」&#xa;主観的には善意＝息子の将来を思っている。&#xa;実際は夫・晃を振り向かせたい焦りが主軸。&#xa;しかしその善意が教育虐待になっている。" style="rounded=1;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=9;align=left;spacingLeft=8;spacingTop=6;" parent="pattern_box" vertex="1">
+                    <mxGeometry x="750" y="35" width="340" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr4" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" parent="1" source="pattern_box" target="arc_box" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arc_box" value="価値変化弧（確定）— 樹の内的変化" style="swimlane;startSize=26;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1410" width="1100" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="arc1" value="理解すれば救える&#xa;（ACT1-2＋回想）" style="rounded=1;fillColor=#f8cecc;strokeColor=#C0392B;fontSize=11;" parent="arc_box" vertex="1">
+                    <mxGeometry x="30" y="35" width="280" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="arc2" value="理解しても救えない&#xa;（ACT3：秀斗崩壊）" style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;" parent="arc_box" vertex="1">
+                    <mxGeometry x="410" y="35" width="280" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="arc3" value="理解できなくても寄り添える&#xa;（ACT4：第三の選択）" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=1;" parent="arc_box" vertex="1">
+                    <mxGeometry x="790" y="35" width="280" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="arc12" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" parent="arc_box" source="arc1" target="arc2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arc23" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" parent="arc_box" source="arc2" target="arc3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="echo_title" value="構造的エコー — あんずがACT2で既に体現した答え" style="text;html=1;align=left;fontSize=12;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1560" width="600" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="echo_box" value="あんず → 樹 への「言語なき教え」" style="swimlane;startSize=24;fillColor=#E8DAEF;strokeColor=#7B4F9E;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1590" width="1100" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="echo1" value="ACT2：教室での沈黙（あんずちゃん係）&#xa;&#xa;あんずは言葉を持たないが、&#xa;樹の隣にいるだけで安全を感じていた。&#xa;「ただそこにいる」ことが十分だった。&#xa;→ これがACT4の答えそのもの。" style="rounded=1;fillColor=#f3e8ff;strokeColor=#9673a6;fontSize=9;align=left;spacingLeft=8;spacingTop=6;" parent="echo_box" vertex="1">
+                    <mxGeometry x="10" y="32" width="340" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="echo2" value="ACT5：樹が秀斗を止める → 沈黙する&#xa;&#xa;航空券を買った後。秀斗の隣に座る。何を言えばいいかわからない。&#xa;あんずの記憶がフラッシュバック：&#xa;教室での沈黙、「…優しいね」、デートの夕方。&#xa;→ 樹はここで初めて、あんずが教えてくれたことを学ぶ。" style="rounded=1;fillColor=#d5e8d4;strokeColor=#28A745;fontSize=9;align=left;spacingLeft=8;spacingTop=6;" parent="echo_box" vertex="1">
+                    <mxGeometry x="365" y="32" width="370" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="echo3" value="父の①「受容」の回収&#xa;&#xa;ACT1：父が樹に「辛いやろ」と受け止めた。&#xa;ACT4：樹が秀斗に対して初めて①を使う。&#xa;→ 父の本当の遺産は「厳密さ」ではなく「受容」。&#xa;【候補】「辛かったやろ」（関西弁に戻る＝論理の鎧が外れる）&#xa;【穴】具体的台詞の有無・内容は未確定" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=9;align=left;spacingLeft=8;spacingTop=6;" parent="echo_box" vertex="1">
+                    <mxGeometry x="750" y="32" width="340" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="hole_title" value="【穴】テーマ関連の未設計箇所（v4時点）" style="text;html=1;align=left;fontSize=12;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1790" width="500" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="hole1" value="v3→v4 で解決・進展した穴：&#xa;　✅ ACT5「理解できなくても愛する」の具体的行動 → 病室で沈黙し、隣に座る&#xa;　△ 主人公が秀斗に言う台詞 → 【候補】「辛かったやろ」だが未確定&#xa;&#xa;v4→v4.1 で解決した穴：&#xa;　✅ ACT5の具体的行動 → 航空券購入＋「辛かったやろ」&#xa;　✅ プロローグ → 幼少期の日記（シュモクバエの内的独白）を大人の樹が読み返す&#xa;　✅ エピローグ → カカメガの森でシュモクバエを見つけて笑い合う（未来へ開く余韻）&#xa;　✅ 中核イメージ → シュモクバエ（全幕を貫く象徴）&#xa;&#xa;v4.1 でも残る穴：&#xa;　・視点ポリシーが未定義（一人称？三人称限定？視点移動あり？）&#xa;　・旧ACT3（灘〜東大）をACT2/3のどこに回想として配置するか&#xa;　・あんずの真実を樹がいつ・どう知るか（読者 vs 樹の情報格差の設計）&#xa;　・秀斗の台詞後のリアクションの具体（ハグ？沈黙？）" style="rounded=1;fillColor=#FEF9E7;strokeColor=#d6b656;fontSize=9;align=left;spacingLeft=8;spacingTop=6;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1820" width="800" height="150" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,0 +1,193 @@
+<mxfile host="65bd71144e">
+    <diagram id="iFK_qkvWtXflIoaEG1u1" name="Page-1">
+        <mxGraphModel dx="993" dy="287" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="4800" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="② プロット — 幕構造マップ v4（plot_take2 穴埋め反映版・名前確定）" style="text;html=1;align=left;fontSize=15;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="40" width="1900" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="sb0" value="物語の骨格" style="rounded=0;fillColor=#2C3E50;strokeColor=#2C3E50;fontColor=#ffffff;fontStyle=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="42" width="90" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="sb1" value="日常世界と引き金前夜" style="rounded=0;fillColor=#5D6D7E;strokeColor=#2C3E50;fontColor=#ffffff;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="42" width="380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="sb2" value="★ 引き金となる出来事" style="rounded=0;fillColor=#C0392B;strokeColor=#922B21;fontColor=#ffffff;fontStyle=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="510" y="42" width="380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="sb3" value="誤信念の強化・確信" style="rounded=0;fillColor=#5D6D7E;strokeColor=#2C3E50;fontColor=#ffffff;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="890" y="42" width="380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="sb4" value="★ 誤信念の崩壊・転換" style="rounded=0;fillColor=#E67E22;strokeColor=#A04000;fontColor=#ffffff;fontStyle=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="1270" y="42" width="380" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="sb5" value="★★ 最高潮・決定的選択" style="rounded=0;fillColor=#C0392B;strokeColor=#922B21;fontColor=#ffffff;fontStyle=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="1650" y="42" width="350" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="hl0" value="時系列" style="rounded=0;fillColor=#f5f5f5;strokeColor=#666;fontStyle=1;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="68" width="90" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="h1" value="ACT 1 — 小学生（1997年生・6年春〜）&#xa;場所：三碓小学校 / 京大病院" style="rounded=0;fillColor=#1B3A5C;strokeColor=#1B3A5C;fontColor=#ffffff;fontStyle=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="68" width="380" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="h2" value="ACT 2 — 中学時代（〜13歳・夏）&#xa;場所：富雄南中学校 / 大和西大寺駅" style="rounded=0;fillColor=#1B3A5C;strokeColor=#1B3A5C;fontColor=#ffffff;fontStyle=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="510" y="68" width="380" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="h3" value="ACT 3 — 灘〜東大（高校〜大学）&#xa;場所：灘高校 / 東京大学" style="rounded=0;fillColor=#1B3A5C;strokeColor=#1B3A5C;fontColor=#ffffff;fontStyle=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="890" y="68" width="380" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="h4" value="ACT 4 — 社会人（28歳）&#xa;場所：Google Japan / 桜新町" style="rounded=0;fillColor=#1B3A5C;strokeColor=#1B3A5C;fontColor=#ffffff;fontStyle=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="1270" y="68" width="380" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="h5" value="ACT 5 — クライマックス（28歳）&#xa;場所：Google屋上 / 病院" style="rounded=0;fillColor=#C0392B;strokeColor=#C0392B;fontColor=#ffffff;fontStyle=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="1650" y="68" width="350" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="sl0" value="各幕の役割" style="rounded=0;fillColor=#2C3E50;strokeColor=#2C3E50;fontColor=#ffffff;fontStyle=1;fontSize=10;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="102" width="90" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="s1" value="樹の弱点・信念・喪失の起源を描く。&#xa;「なぜこの人物がこうなったか」を&#xa;読者が体感する幕。秀斗の嫉妬の種もここで撒かれる。" style="rounded=0;fillColor=#ECF0F1;strokeColor=#BDC3C7;fontSize=10;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="102" width="380" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="s2" value="物語の最大の引き金が発射される幕。&#xa;あんずの自殺によって樹の誤信念が確立し、&#xa;以後の全行動の根拠になる。" style="rounded=0;fillColor=#FDEDEC;strokeColor=#F5B7B1;fontSize=10;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="510" y="102" width="380" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="s3" value="誤信念が証拠によって強化され確信に至る幕。&#xa;「指摘≠攻撃」の世界を知る。&#xa;（構造上の弱点あり：外的イベント不足・要検討）。" style="rounded=0;fillColor=#ECF0F1;strokeColor=#BDC3C7;fontSize=10;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="890" y="102" width="380" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="s4" value="誤信念が現実に敗北し崩壊が始まる幕。&#xa;樹が「自分は秀斗と同じことをしている」&#xa;と気づく転換点がここ。" style="rounded=0;fillColor=#FEF5E7;strokeColor=#FAD7A0;fontSize=10;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="1270" y="102" width="380" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="s5" value="全ての伏線が一点に交わる最高潮。&#xa;あんずの死（引き金）と秀斗の崩壊（転換点）が重なり、&#xa;樹が「理解できなくても寄り添う」を選択する。" style="rounded=0;fillColor=#FDEDEC;strokeColor=#F5B7B1;fontSize=10;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="1650" y="102" width="350" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="rl_p" value="樹&#xa;（メイン）" style="rounded=0;fillColor=#2E86C1;strokeColor=#2E86C1;fontColor=#ffffff;fontStyle=1;fontSize=11;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="192" width="90" height="700" as="geometry"/>
+                </mxCell>
+                <mxCell id="m1a" value="ASD傾向で孤立（三碓小）&#xa;&#xa;シュモクバエの比喩：昆虫図鑑で恣意的ルールを知り&#xa;「自分の孤立も同じか」と少し楽になる → ピロティ&#xa;★ 昆虫図鑑のシュモクバエのページに付箋を貼る&#xa;　→ 全幕を貫く中核小道具の起点&#xa;感情・空気が読めずクラスに馴染めない。&#xa;最初は浮いていないが、性質が露わになるにつれ&#xa;周りが「おや？」となっていく。&#xa;仲良くしたいのに仲良くできない。" style="rounded=1;fillColor=#D6EAF8;strokeColor=#2E86C1;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="202" width="370" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="m1b" value="父から「仮説を立てること」を学ぶ（京大病院）&#xa;&#xa;月1回の病院面会。母・裕子のプリントを持参。&#xa;父「辛いやろ」→①受け止め②翻訳③提案の3ステップ。&#xa;母やクラスメイトと違い、樹を同じ人間として受容。&#xa;唯一自分を理解してくれる存在。&#xa;&#xa;★ 対話：「テストには、できない問題が必要なんだ」&#xa;　→ 無条件の受容。ACT5で回収される伏線。" style="rounded=1;fillColor=#D6EAF8;strokeColor=#2E86C1;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="352" width="370" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="m1t" value="★ 父の死（中1直後）&#xa;「来月もまた来る」約束を残して死去。&#xa;唯一の理解者を失う。孤立がさらに深まる。&#xa;あっさり描く（あんずの死を食わないため）。&#xa;「空っぽの日曜日」— 死後の不在を描く。&#xa;「辛いやろ」が人生から消える。" style="rounded=1;fillColor=#C0392B;strokeColor=#922B21;fontColor=#ffffff;fontStyle=1;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="522" width="370" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="m2a" value="あんず係に任命される（富雄南中・保健室）&#xa;&#xa;樹→あんずは親しさ（恋愛ではない）。性欲のない好意。&#xa;あんず→樹は恋。「本物の愛情」と思い込む。" style="rounded=1;fillColor=#D6EAF8;strokeColor=#2E86C1;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="202" width="370" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="m2b" value="論理でいじめをかわす / あんずの相談を流す&#xa;&#xa;秀斗の攻撃パターンをノートに記録・分析して対処。&#xa;「仮説と検証で身を守れる」と確信する。&#xa;→ 読者には樹の冷徹な観察が不気味に見える（温度差）&#xa;&#xa;あんずの相談→「おじさんに相談してみたら？」とかわす&#xa;→ 樹は善良な大人を想定。世の父が皆立派とは限らない。&#xa;→ 雑談のような会話があれば虐待に気づけたかもしれない。" style="rounded=1;fillColor=#D6EAF8;strokeColor=#2E86C1;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="372" width="370" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="m2t" value="★ 引き金：あんずの自殺&#xa;&#xa;あんずが勇気を振り絞って「一緒に遊びに行こう」。&#xa;デート場所：石切公園（夜景）→ 帰路は大和西大寺駅。&#xa;帰宅後、虐待再開→「これは優しさじゃない」と初認識。&#xa;電車で飛び込み。&#xa;樹は「苦しみの末に死んだ」と誤解。&#xa;「厳密な言語があれば救えた」という誤信念を確立。&#xa;&#xa;【穴】樹への情報到達経路（何だけ知るか）&#xa;【穴】自殺に至る経路を丁寧に（性的虐待→即自殺は飛躍の指摘）" style="rounded=1;fillColor=#C0392B;strokeColor=#922B21;fontColor=#ffffff;fontStyle=1;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="542" width="370" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="m3a" value="灘・東大で「証明」される&#xa;&#xa;論理が通じる集団に初めて入る。&#xa;★「分解→再構成→満足」エピソード：&#xa;　「指摘≠攻撃」の世界を知る。コードが合う会話の体験。&#xa;「厳密な言語が通じる世界は実在する」と確信。&#xa;&#xa;「あんずをここに連れてこれれば死ななかった」&#xa;→「厳密な言語を社会に広めることが使命」という確信。&#xa;&#xa;★「論理が通じない」前兆：友人が恋愛の話になると黙る&#xa;&#xa;⚠️ 構造上の課題：外的事件が少ない&#xa;【穴】外的イベントを追加するか要検討" style="rounded=1;fillColor=#D6EAF8;strokeColor=#2E86C1;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="202" width="370" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="m3b" value="あんずへの後悔が使命に変わる&#xa;&#xa;あんずを思い出すトリガー → 「あんずがここにいれば」&#xa;「厳密な言語を広めれば人を救える」= 使命の形成。&#xa;善意だが選択的（自分の周囲だけ）。" style="rounded=1;fillColor=#D6EAF8;strokeColor=#2E86C1;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="442" width="370" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4a" value="秀斗と共にGoogle Japan入社 → 昇進 → 秀斗が部下に&#xa;&#xa;「善意」から明確な言葉で報告するよう指導開始。&#xa;加害の自覚はない。あんずの死のトラウマからの贖罪が動機。&#xa;&#xa;★ 父の教え①（受け止め）が完全に抜けている。&#xa;　②翻訳③提案だけで指導している。&#xa;★ 象徴的台詞：「分からないなら言って、もっと丁寧に説明するから」&#xa;　→ 100%善意 ＝ 100%断罪" style="rounded=1;fillColor=#D6EAF8;strokeColor=#2E86C1;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="1280" y="202" width="370" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4b" value="正しく説明したのに人が壊れた&#xa;&#xa;秀斗が崩壊・出社不能になる。&#xa;上司が樹を呼び出す：「廣瀬くんが壊れたのはお前の指導のせいかも」&#xa;樹「正しく教えたはずです」→ 上司「正しさは問題じゃない」&#xa;→ この一言が樹の全世界観を崩壊させる。&#xa;★「正しいのに有害」を樹は処理できない。&#xa;帰路であんずの記憶が浮上？" style="rounded=1;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="1280" y="362" width="370" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4t" value="★ 転換点：鏡像認識&#xa;&#xa;電車の窓に映る自分の顔 → 秀斗の中学時代の顔が重なる。&#xa;秀斗は「嫌い」から攻撃、樹は「あなたのために」から攻撃&#xa;→ 動機が逆、暴力は同じ。&#xa;★ 秀斗は一度手を見て止まった（ACT2）。&#xa;　樹は一度も疑わなかった（確信のほうが危険）。&#xa;矛盾の中で立ちすくむ。" style="rounded=1;fillColor=#C0392B;strokeColor=#922B21;fontColor=#ffffff;fontStyle=1;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="1280" y="522" width="370" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="m5a" value="★★ 秀斗の自殺未遂&#xa;&#xa;報せを聞いて走り出す。あんずの顔が浮かぶ。&#xa;「今度は間に合うかもしれない」&#xa;初めて論理より先に体が動く。&#xa;ピュアだからわけもわからず止めようとする。&#xa;&#xa;何を言えばいいかわからない。&#xa;スマホでナイロビ行きを検索。震える手で。&#xa;「シュモクバエ、見に行かん？」「俺もわからん」&#xa;（初めて「わからない」と言う＝樹の変容の核心）&#xa;ケニア行き航空券を買う＝論理では説明できない行動。&#xa;秀斗「お前……頭おかしいんか」→ 力が抜ける。" style="rounded=1;fillColor=#C0392B;strokeColor=#922B21;fontColor=#ffffff;fontStyle=1;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="1660" y="202" width="340" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="m5b" value="「理解できなくても寄り添う」選択&#xa;&#xa;航空券を買った後の沈黙。&#xa;あんずのフラッシュバック：保健室の沈黙、「…優しいね」、デートの夕方&#xa;→ あんずが教えてくれたことに気づく。&#xa;&#xa;父の①を初めて使う：「辛かったやろ」（関西弁＝論理の鎧が外れる）&#xa;&#xa;いじめられた時に泣くことはないのに、&#xa;元いじめっ子を止めれたときにほっとして涙が出る。&#xa;正しい事だけを言ってくる冷淡な樹が泣いている → 秀斗が驚く。&#xa;&#xa;秀斗が樹をハグする。樹わけがわからなくなる。&#xa;「仕返しだと思ってた」→樹「え？何で？」&#xa;&#xa;理知的でない行動でも人は反応し、いい結果に繋がることを知る。&#xa;正しさを持てない人がいるということに気づく。&#xa;&#xa;プロローグ：幼少期の樹の日記を大人の樹が読み返す。&#xa;　シュモクバエと自分についての内的独白。&#xa;　→ 樹の「声」と象徴が冒頭で確立。読者に問いを与える。&#xa;エピローグ：カカメガの森（ケニア）でシュモクバエを見つけて笑い合う。&#xa;　「こんなんのためにGoogleクビになったぞ」「あほやな」&#xa;　→ 未来に向かって開く余韻。タイトル回収。" style="rounded=1;fillColor=#D4EFDF;strokeColor=#28A745;fontStyle=1;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="1660" y="412" width="340" height="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="rl_a" value="秀斗&#xa;（サブ）" style="rounded=0;fillColor=#E67E22;strokeColor=#E67E22;fontColor=#ffffff;fontStyle=1;fontSize=11;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="920" width="90" height="650" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1a" value="嫉妬の核心：二重の羨望（テスト返却日クロスカット）&#xa;&#xa;才能型の樹が努力せず良い成績を取る。&#xa;父・孝則から無条件の愛を受けている。&#xa;自分は百点でも殴られる家庭で育ち、その愛を知らない。&#xa;&#xa;★ 参観日：孝則「百点取れなくても、お前はいい子なんだよ」&#xa;→ 秀斗は教室の隅でこれを聞く。&#xa;→ 帰宅後、100点のテストを綾に見せる。「当たり前でしょ」&#xa;→ 98点の日：綾が泣きすがる「おかあさんのために頑張って」&#xa;→ 綾の劣等感：「短大しか出てないおかあさんにはなにもわからない」&#xa;&#xa;★ 深夜2時の勉強シーン：綾「よくがんばってるね」＝唯一の優しさ" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="930" width="370" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1b" value="いじめを開始（拒絶フェーズ）&#xa;&#xa;塾も一緒だからと樹に話しかける。&#xa;樹の性質に「おや？」→絶妙なラインでいじり始める。&#xa;友達に「あいつ嫌いやねん、いつも人を見下してる」&#xa;→ 樹のASD的行動が「見下し」と誤読される。&#xa;&#xa;秀斗もムキになっているだけで、クラスメイトには優しく、人気者。" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="1150" width="370" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2a" value="教育虐待の加速（中学）&#xa;&#xa;中学に入り要求エスカレート：100点→学年1位＋灘受験。&#xa;母の泣きが叩きより効果的になる。&#xa;★ 深夜2時の勉強中「よくがんばってるね」＝勉強中にだけ訪れる優しさ。&#xa;「努力＝愛」の信念が完成。" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="930" width="370" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2b" value="いじめが過激化（双方が苦しい）&#xa;&#xa;樹への攻撃が激化する一方、秀斗自身も家庭で暴力を受けている。&#xa;加害者でありながら被害者でもある。&#xa;秀斗が空気を作れる → 周りもそれに倣いエスカレート。&#xa;&#xa;★ 秀斗が殴った後、自分の手を見て凍りつく（候補シーン）&#xa;→「自分がやられていることをやっている」認識" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="1060" width="370" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3a" value="連敗の蓄積&#xa;&#xa;灘落ち → 奈良高校（父「奈良高からなんて医学部入れんのかいな」）&#xa;東大落ち → 慶応理工（父「慶応で医学部以外って遊びすぎやでｗ」）&#xa;母の反応：泣く→叩く→沈黙（沈黙が最も恐ろしい）&#xa;慰めてほしい母を自分が慰める側に回る。&#xa;★ 常に樹を追っているが、実は母の承認を追っている。" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="930" width="370" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4a" value="樹を追いGoogle Japan入社&#xa;&#xa;内定で母は泣いて喜ぶ。父も「すげーじゃん」。束の間。&#xa;→ 樹が転職してきて昇進、秀斗は部下になる。&#xa;面接では完璧な笑顔 → 席に着いた瞬間笑みが消える。&#xa;母「いまのあなたなら大丈夫よ」→ 樹昇進後「あの子は別格だったもんね」" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="1280" y="930" width="370" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4b" value="「厳密な指導」が虐待の再現として刺さる&#xa;&#xa;「なぜこう設計した？」→ 父の「なぜ百点でないのか」と重なる。&#xa;1on1で「考え直して」。深夜Slackで長文フィードバック。&#xa;→ 秀斗はベッドで手が震え、返信を3回書いて消し、&#xa;　2時に「了解、直します」と送る。&#xa;&#xa;★ 客観的には正しい。ハラスメントに見えない。&#xa;　同じ言葉が受け手の傷を通じて別の暴力になる。" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="1280" y="1050" width="370" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="a4t" value="⚡ 崩壊・出社不能（3段階）&#xa;&#xa;① 会議で声が出なくなる&#xa;② トイレで吐くが笑顔で席に戻る（コミュ力が崩壊を隠す）&#xa;③ 2日間欠勤。Slackに既読がつかない。&#xa;部屋：清潔＆おしゃれ → ゴミが散乱。&#xa;★ あんず「帰りたくない」/ 秀斗「行けない」→ 並行構造" style="rounded=1;fillColor=#C0392B;strokeColor=#922B21;fontColor=#ffffff;fontStyle=1;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="1280" y="1210" width="370" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="a5t" value="★★ 自殺を企図&#xa;&#xa;3つの圧力が同時に限界を超える：&#xa;① 父の暴力＋母の愛の条件&#xa;② 樹への嫉妬（一生追いつけない）&#xa;③ 職場での再虐待体験&#xa;&#xa;あんずと違い、なぜ壊れているか言語化できるが止められない。&#xa;「あいつは何も悪くない。それが一番腹が立つ」&#xa;★ あんずの電車飛び込みと構造的にエコー" style="rounded=1;fillColor=#C0392B;strokeColor=#922B21;fontColor=#ffffff;fontStyle=1;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="1660" y="930" width="340" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="rl_b" value="あんず&#xa;（サブ）" style="rounded=0;fillColor=#8E44AD;strokeColor=#8E44AD;fontColor=#ffffff;fontStyle=1;fontSize=11;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1600" width="90" height="500" as="geometry"/>
+                </mxCell>
+                <mxCell id="b1e" value="（登場なし）" style="text;strokeColor=none;fillColor=none;fontSize=10;fontColor=#aaaaaa;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="1640" width="370" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="b2a" value="あんず係として樹と出会う（保健室）&#xa;&#xa;知的障害で不潔（生乾きの服をそのまま着る等）。&#xa;B子菌呼ばわり。先生にも厄介者扱い。&#xa;攻撃されないよう優しい振る舞いだけする→効果なし。&#xa;保健室＝「誰も触らない場所」＝安全地帯。&#xa;家庭で母・加奈の交際相手から性的虐待。&#xa;樹の裏表のないきつい言い方を「優しい」と感じる。&#xa;（性的に搾取しない＝安全）&#xa;&#xa;★ 象徴的台詞：「…優しいね」「…しなくていいの？」" style="rounded=1;fillColor=#E8DAEF;strokeColor=#8E44AD;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="1610" width="370" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="b2t" value="★ デート後の自殺&#xa;&#xa;あんずが勇気を振り絞って「一緒に遊びに行こう」。&#xa;石切公園（夜景）でデート。人生最高の瞬間。&#xa;デート中：樹の手に触れようとして止める。「…しなくていいの？」&#xa;帰宅後、おじさんの虐待再開。&#xa;初めて「これは優しさじゃない」と認識してしまう。&#xa;帰りの電車で飛び込み。&#xa;&#xa;帰路の内的対比：樹の手 vs おじさんの手&#xa;「帰りたくない」→ 本能的拒否 → 電車への飛び込み&#xa;&#xa;【穴】自殺までの経路を丁寧に（飛躍対処）&#xa;【穴】自殺タイミングの統一&#xa;【穴】樹への情報到達経路" style="rounded=1;fillColor=#C0392B;strokeColor=#922B21;fontColor=#ffffff;fontStyle=1;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="1810" width="370" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="b3g" value="（故人 — 回想のみ）" style="rounded=1;fillColor=#F5EEF8;strokeColor=#D7BDE2;fontSize=10;fontColor=#aaaaaa;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="900" y="1640" width="370" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="b4g" value="（故人 — 回想のみ）" style="rounded=1;fillColor=#F5EEF8;strokeColor=#D7BDE2;fontSize=10;fontColor=#aaaaaa;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="1280" y="1640" width="370" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="b5" value="秀斗の自殺未遂であんずが想起される&#xa;&#xa;フラッシュバック：保健室の沈黙→「…優しいね」→デートの夕方&#xa;あんずは言葉を持たなかったが、樹の隣にいるだけで安全を感じていた。&#xa;「ただそこにいる」ことが十分だった。&#xa;★ あんずはACT2で既にACT5の答えを体現していた。&#xa;→ 樹はここで初めてそれを学ぶ。" style="rounded=1;fillColor=#E8DAEF;strokeColor=#8E44AD;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="1660" y="1610" width="340" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="cross1" value="" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#8E44AD;strokeWidth=2;dashed=1;" parent="1" source="b2t" target="m2t" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="cross2" value="" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#8E44AD;strokeWidth=2;dashed=1;" parent="1" source="b2t" target="b5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="scene_title" value="象徴的台詞・具体的場面メモ" style="text;html=1;align=left;fontSize=12;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="2140" width="500" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="sc_dialogue" value="象徴的台詞一覧（plot_take2確定分）&#xa;&#xa;ACT1：「辛いやろ」— 孝則（樹への受容）&#xa;ACT1：「お母さんのためにがんばって」— 綾（秀斗への条件付き愛）&#xa;ACT2：「…優しいね」— あんず（樹への安全確認）&#xa;ACT2：「…しなくていいの？」— あんず（性的搾取の前提を露呈）&#xa;ACT4：「分からないなら言って、もっと丁寧に説明するから」— 樹（100%善意＝100%断罪）&#xa;ACT5：「シュモクバエ、見に行かん？」— 樹（論理では説明できない行動）&#xa;ACT5：「辛かったやろ」— 樹（関西弁＝父の①の回収）" style="rounded=1;fillColor=#D6EAF8;strokeColor=#2E86C1;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="2170" width="500" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="sc_act1" value="ACT1 具体的場面&#xa;&#xa;・樹が秀斗に勉強を教える場面：&#xa;「前の授業で言ってたじゃん」&#xa;「なんで覚えてないの？問題はそこかも、授業のきき方をまず直そう」&#xa;（秀斗にとっては皮肉に聞こえる）&#xa;&#xa;・秀斗にスポーツのことを聞く場面：&#xa;秀斗「前の授業で言ってたじゃん」→皮肉かえし&#xa;樹「何をいってたの？」（純粋な疑問）→秀斗むっとする&#xa;&#xa;・「お前のせいでみんな迷惑している」→樹はなんとかしないと" style="rounded=1;fillColor=#D6EAF8;strokeColor=#2E86C1;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="2170" width="500" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="sc_act5" value="ACT5 具体的場面&#xa;&#xa;・秀斗「お前の理詰めは仕返しだろ」&#xa;　樹「え？何で？」（呑気に聞き返す）&#xa;&#xa;・秀斗が、ののしってきた樹をハグする&#xa;　樹わけがわからなくなる&#xa;&#xa;・樹は理性的ではない行動をとった&#xa;　思いがけず何かをそこで話す" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="2380" width="500" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="props_title" value="小道具・場所（plot_take2確定分）" style="text;html=1;align=left;fontSize=12;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="2570" width="500" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="props" value="確定小道具：&#xa;　・昆虫図鑑（ACT1→2→4→5を貫く中核小道具）&#xa;　　ACT1：シュモクバエのページに付箋 / ACT2：あんず「…へんなの」と笑う&#xa;　　ACT4：Googleデスクに。秀斗「くだらな」 / ACT5：病室に持ち込む&#xa;　・分析ノート（樹がいじめパターンを記録）&#xa;　・母のプリント（裕子が樹に添削させる教材）&#xa;　・ケニア行き航空券（ACT5：樹が秀斗を止めるために購入）&#xa;&#xa;場所一覧：&#xa;　ACT1：三碓小学校（ピロティ）/ 京大病院&#xa;　ACT2：富雄南中学校（保健室）/ 石切公園（夜景・デート）/ 大和西大寺駅&#xa;　ACT3：灘高校 / 東京大学&#xa;　ACT4：Google Japan オフィス / 桜新町（秀斗の自宅？）&#xa;　ACT5：Google屋上（自殺企図場所？）/ 病院&#xa;&#xa;【TODO】樹の個人アイテム / 秀斗のアイテム / あんずのアイテム&#xa;【TODO】孝則のアイテム / 裕子のアイテム / ACT間の小道具リレー" style="rounded=1;fillColor=#EBF5FB;strokeColor=#2E86C1;fontSize=9;align=left;spacingLeft=8;spacingTop=6;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="2600" width="800" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="holes" value="【穴】全体の未設計箇所（v4時点）&#xa;&#xa;v3→v4 で解決・進展した穴：&#xa;　✅ 名前が確定（須藤樹・皆瀬秀斗・田中あんず等）&#xa;　✅ 場所が具体化（三碓小・富雄南中・石切公園・京大病院等）&#xa;　✅ 象徴的台詞の一部確定&#xa;　✅ 秀斗の崩壊3段階が設計された&#xa;　✅ 時間軸が明確化（1997年生まれ・28歳時点）&#xa;&#xa;v4→v4.1 で解決した穴：&#xa;　✅ ACT5の具体的行動 → ケニア行き航空券＋「辛かったやろ」&#xa;　✅ 小道具リレー → 昆虫図鑑（シュモクバエ）が全幕を貫く&#xa;　✅ プロローグ・エピローグ設計 → プロローグ＝ケニア / エピローグ＝内的独白&#xa;　✅ 中核イメージ → シュモクバエ（統制概念の象徴的結晶）&#xa;&#xa;v4.1 でも残る穴：&#xa;　・ACT3の外的イベント（内的変化のみで物語が止まる）&#xa;　・あんずの自殺までの経路の丁寧な描写&#xa;　・あんずの真実の判明タイミング（読者 vs 樹の情報格差）&#xa;　・視点ポリシー（一人称？三人称？視点移動？）&#xa;　・樹への情報到達経路（あんずの死をどう知るか）&#xa;　・秀斗のGoogle入社の具体的動機の詳細&#xa;　・コミカルシーンの配置&#xa;　・書き始めるACTの順番" style="rounded=1;fillColor=#FEF9E7;strokeColor=#d6b656;fontSize=9;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="2840" width="800" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="adv_title" value="執筆アドバイスまとめ" style="text;html=1;align=left;fontSize=12;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="3170" width="500" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="adv1" value="アドバイス① まず書いた方がいい。書いてみなきゃわからない要素が多い。&#xa;アドバイス② 間違ってたと思っていたことが実は正しいエピソードがあってもいい。&#xa;アドバイス③ 書くとしたらクライマックスかエピローグを先に。読後感の設計→逆算。&#xa;B子の死のような出来事のインパクトから書き始めてはどうか。&#xa;ACT3から書いたほうがいいのでは？の意見ももらっている。&#xa;&#xa;黒田レビュー(2026-04-12)：&#xa;　・書き始めることが大事で、順序はあとでもいい&#xa;　・イメージがついているところから書けるところから始める&#xa;　・まずパーツを作ってみる。剪定は後から&#xa;　・１シーケンス/１weekで進めていく" style="rounded=1;fillColor=#EBF5FB;strokeColor=#2E86C1;fontSize=9;align=left;spacingLeft=8;spacingTop=6;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="3200" width="800" height="170" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

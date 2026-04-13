@@ -1,0 +1,13 @@
+設定：
+C:\Users\ukowu\Desktop\novel\constrain\settings
+C:\Users\ukowu\Desktop\novel\importantReport\plot_take2
+
+名前の案と、その意図を、
+C:\Users\ukowu\Desktop\novel\importantReport\plot_take2\episodes\名前の案.md
+に書きました。
+それぞれの名前をレビューし、
+設定に即した名前設計になっているかを考えてください。
+もし別の名前でいいのがあれば、その案を何個か提示してください。
+出力先は、
+C:\Users\ukowu\Desktop\novel\importantReport\plot_take2\episodes\名前の案.md
+の中に追記して下さい

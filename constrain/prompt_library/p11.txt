@@ -1,0 +1,10 @@
+C:\Users\ukowu\Desktop\novel\constrain\main\ACT2\SEQ2_引き金\S3_あんずとのデート\togaki_v1.md
+
+にとりあえずsceneのト書きのたたき台を書いてみました。
+
+これをストーリーコンパイラに一行一行かけて
+一行ごとにレビューを挟んだマークダウンを書いてください。
+
+C:\Users\ukowu\Desktop\novel\constrain\main\ACT2\SEQ2_引き金\S3_あんずとのデート\togaki_v1_review.md
+
+それを踏まえてなんどかト書きを修正したり、いろんなアクションの案を考えていきます。

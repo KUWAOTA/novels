@@ -1,0 +1,11 @@
+以下に私の小説の構造や設定集があります。
+C:\Users\ukowu\Desktop\novel\constrain\settings\characters.drawio
+C:\Users\ukowu\Desktop\novel\constrain\settings\plot.drawio
+C:\Users\ukowu\Desktop\novel\constrain\settings\theme.drawio
+C:\Users\ukowu\Desktop\novel\importantReport\plot_take2\episodes
+
+全体を通して設計意図をくみ取り、
+設計の意図通りになってないところをアドバイスをし、改善案を加えてください。
+それを全て含んだmarkdownを
+C:\Users\ukowu\Desktop\novel\constrain\review
+に作成してください。

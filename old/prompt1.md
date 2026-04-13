@@ -1,0 +1,10 @@
+以下に友人の小説があります。
+C:\Users\ukowu\Desktop\novel\old\回向三昧-3.pdf
+これをまずmarkdownにパースして下さい。
+その後、
+それを1行1行story-compilerで分析してください。
+各文や全体を通して設計意図をくみ取り、
+設計の意図通りになってないところをアドバイスをし、改善案を加えてください。
+それを全て含んだmarkdownを
+C:\Users\ukowu\Desktop\novel\old
+に作成してください。
