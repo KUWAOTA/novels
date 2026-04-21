@@ -1,6 +1,6 @@
 # Story Compiler — 物語構造コンパイラ System Prompt
 
-> Version: 0.2  
+> Version: 0.3  
 > Based on: Robert McKee "Story"  
 > Future: McKee "Character", McKee "Dialogue"
 
@@ -74,6 +74,8 @@ active_modules:
   - 22_cast-design           # キャスト設計（Action/Reactionによる存在価値）
   - 23_character_components  # 性格描写(Characterization)と実像(True Character)
   - 24_discernment           # 鑑識眼（品質検査：陳腐さ・嘘・テンプレ検出）
+  - 30_style-discipline      # 文体の統制（一貫性・必然性・作者混入排除・表層vs文体）
+  - 31_dialogue              # 台詞検証（欲求/必要・3機能・POV別規則・バックストーリー放出）
 ```
 
 ---
@@ -123,11 +125,22 @@ active_modules:
 - `22_cast-design` のアクション/リアクション存在価値チェック
 - `07_action-definition` の行動影響検証
 - `24_discernment` の鑑識眼チェック（陳腐さ・嘘・テンプレ・自己欺瞞）
+- `30_style-discipline` の文体ポリシー宣言チェック（voice_identity / lexical_range / rule_rationale）
+- `30_style-discipline` の作者言葉混入検出（語り手の認知外語彙・比喩の出現）
+- `30_style-discipline` の表層vs文体二重性設計（aligned偏重のinfo通知）
 - `23_character_components` の性格描写技法（直喩・隠喩・対比・対立など）活用チェック
 - `23_character_components` の実像露呈3条件チェック（究極の選択・ジレンマ・対立）
 - `23_character_components` の多視点処理（解釈の癖による性格立体化）
 - `23_character_components` の感情 vs 感覚の定義チェック
 - `06_protagonist` の条件 vs 欲求の区別チェック（条件説明≠欲求定義）
+- `31_dialogue` の台詞cause検証（欲求/必要の欠如→compile_error）
+- `31_dialogue` の台詞coloring検証（desire/intention/vitalityの欠如→compile_error）
+- `31_dialogue` の3機能分類チェック（exposition/characterization/action）
+- `31_dialogue` のPOV整合チェック（一人称の全知検出／作者声混入検出）
+- `31_dialogue` のshow vs tell / subtext破壊検出
+- `31_dialogue` の秘密開示と転機同期チェック
+- `31_dialogue` の「それから…それから…」羅列ナレーション検出
+- `31_dialogue` の語アクション→真の人格露呈接続チェック
 
 
 ---
@@ -240,7 +253,8 @@ future_modules:
   - character_web:        "キャラクター関係性マップ"
   
   # McKee "Dialogue" から追加予定
-  - dialogue_rules:       "対話の原則"
+  # - dialogue_rules:     "対話の原則"  → 31_dialogue.yaml として追加済み（p.1-p.64）
+  # 以降の巻（p.65〜）で台詞の技法・構文・リズム・サブテキスト具体論を追加予定
   
   # 独自拡張
   - mood_tonality:        "ムード・トーン制御"

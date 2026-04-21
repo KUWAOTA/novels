@@ -16,5 +16,5 @@ value_change:
 
 # S2: 論理でいじめをかわす
 
-- [[togaki]] — ト書き
+- [[kyakuhon]] — 脚本
 - [[omote]] — 表視点（僕・樹）

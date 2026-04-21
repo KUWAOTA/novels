@@ -1,0 +1,330 @@
+# ============================================================
+# Module: Style Discipline (文体の統制)
+# Source: 1次審査 / 純文学レビュー知見の一般化（現役選考者筋）
+# Version: 0.2
+# ============================================================
+# 純文学の1次審査は「文体」だけで通過/落選が決まる。
+# 審査員は速読するため、構造や物語ではなく「文体の一貫性」
+# しか観測されない。2次審査以降で初めて物語と問いが見られる。
+#
+# 本モジュールは文体を設計可能な構造対象として扱い、
+# 「一貫性 / 必然性 / 充足性 / 作者混入排除 / 文体による意味」
+# の5軸で検証する。
+#
+# POV（28_pov.yaml）は「誰の目で見るか」を扱うが、
+# 本モジュールは「語り手がどんな言葉で語るか」を扱う。
+# POVが宣言された後、その語り手の voice_policy を確定させる。
+# ============================================================
+
+module_id: style_discipline
+module_name: "文体の統制（Style Discipline）"
+source: "純文学1次審査知見の一般化"
+
+# ============================================================
+# 核心原則
+# ============================================================
+core_principles:
+
+  - principle: "文体は語り手の人格である"
+    description: >
+      文体とは装飾ではなく、語り手という人格が
+      世界をどう切り取るかの表明。
+      語り手の出自・年齢・職業・教養・認知解像度から
+      導出可能な語彙・比喩・統語だけを選ぶ。
+      そこから逸脱する要素を消していく作業が文体統制。
+
+  - principle: "文体は物語の表面と独立して意味を作る"
+    description: >
+      物語の表層が示す価値判断（達成／喪失、和解／断絶など）と、
+      文体が示す価値判断は独立して動きうる。
+      表層の出来事と、文体に滲む語り手の態度との間に
+      意図された差分を設計できる。
+      この「表面 vs 文体」の二重性が純文学の射程。
+
+  - principle: "1次審査は文体だけが観測対象"
+    description: >
+      速読審査では物語は読まれない。一貫性だけが観測される。
+      逆に言えば、文体が一貫していれば物語は読まれるまで
+      残る。2次審査以降で物語と問いが審査される。
+
+  - principle: "一貫性は同一性ではない"
+    description: >
+      同じ文章を書き続けることが一貫性ではない。
+      語り手の内的必然（成熟段階の推移、価値観の転回、
+      決定的経験の前後など）に伴う文体変化は、
+      むしろ一貫性の表現形に含まれる。
+      変化には必ず語り手側の必然が要求される。
+
+  - principle: "作者の言葉は文体の汚染源"
+    description: >
+      そのキャラクターの視点からはありえない語彙・比喩・
+      思想の混入は「作者が出た」と読まれる。
+      自分のことを書くときほど、作者の言葉が
+      キャラクターの言葉に化けて入り込みやすい。
+
+  - principle: "文体は物語設計より先に決めるべき"
+    description: >
+      物語の設計図（プロット）に先に縛られると、
+      設計図に奉仕する文体になり、語り手が死ぬ。
+      文体のイメージを先に持ってから物語を載せる。
+      設計図に縛られて書ける幅が狭まるならば、
+      設計図は捨てても良い。
+
+# ============================================================
+# 文体ポリシー宣言（必須フィールド）
+# ============================================================
+style_policy:
+  declaration_required: true
+  applies_to: [Story, Act, Scene]
+
+  fields:
+
+    voice_identity:
+      required: true
+      type: string
+      description: >
+        語り手は誰か。年齢・職業・成熟度・教養レベルを
+        具体的に記述する。POV の camera_subject と必ずしも
+        一致しない（三人称でも語り手格が存在する）。
+
+    lexical_range:
+      required: true
+      type: object
+      description: >
+        語り手が使用可能な語彙域と、使用禁止の語彙域。
+      fields:
+        allowed:
+          description: >
+            語り手の出自・所属・認知から導出可能な語彙カテゴリ
+            （専門領域語彙・地域/世代語・生活圏語など）。
+        forbidden:
+          description: >
+            語り手の教養・認知・経験範囲からは
+            導出しえない語彙カテゴリ
+            （語り手の年齢や知識水準を超える抽象語・
+            観念語・文芸的常套句など）。
+
+    sentence_rhythm:
+      required: true
+      type: string
+      description: >
+        文の長短パターン・句読点運用・体言止めの頻度など
+        リズム上のルール。
+
+    metaphor_policy:
+      required: true
+      type: enum
+      values:
+        - native_only          # 語り手が経験しうる比喩のみ
+        - elevated_sparingly   # 語り手を超える比喩を稀に許可（要理由）
+        - authorial_explicit   # 作者視点の比喩を明示的に使う（特殊技法）
+      description: "比喩が語り手の経験から導出可能か"
+
+    rule_rationale:
+      required: true
+      type: string
+      description: >
+        なぜその文体ルールなのか、語り手の人格に照らした理由。
+        統語の偏りが語り手側の必然を伴わずに
+        導入されている状態を排除する。
+
+    evolution_schedule:
+      required: false
+      type: list
+      description: >
+        語り手の成長・変化に伴う文体推移の設計。
+        各フェーズについて、遷移の契機（成熟／経験／価値転回）と、
+        変化する文体特徴（語彙域／リズム／比喩方針）を定義する。
+        未定義でも可だが、長編で語り手が成長・変質するなら必須。
+
+# ============================================================
+# 二重性設計（表層 vs 文体）
+# ============================================================
+surface_vs_style_layer:
+  description: >
+    物語の表層（出来事の流れ）と、文体が語るもの（語り手の内面）
+    の意図的な乖離を設計する純文学の中核技法。
+
+  configuration:
+    surface_arc:
+      required: true
+      description: "出来事のレベルで描かれる物語の動き"
+
+    style_arc:
+      required: true
+      description: >
+        文体のレベルで読み取れる語り手の動き。
+        surface_arc と一致/対立/ずれのいずれかを意図的に選ぶ。
+
+    relationship:
+      required: true
+      type: enum
+      values:
+        - aligned       # 表層と文体が一致（最も素朴）
+        - ironic        # 表層は肯定／文体は否定 などの反転
+        - displaced     # 表層の観察対象とは別の対象（語り手自身など）を文体が暴露する
+        - evolving      # 表層は停滞／文体だけが変化
+
+# ============================================================
+# コンパイル検証ルール
+# ============================================================
+compile_time_checks:
+
+  style_policy_not_declared:
+    description: "voice_identity / lexical_range / metaphor_policy / rule_rationale のいずれかが未宣言"
+    action: compile_error
+    message: >
+      文体ポリシーが未宣言です。
+      voice_identity / lexical_range / sentence_rhythm /
+      metaphor_policy / rule_rationale を定義してください。
+
+  rule_without_rationale:
+    description: >
+      統語の偏りが宣言されているが、
+      rule_rationale が空または語り手の必然と結びついていない。
+    action: compile_error
+    message: >
+      文体ルールが導入されていますが必然性（rule_rationale）が
+      未記述です。統語の偏りが語り手側の必然なしに
+      導入されている状態は、1次審査で最も落とされる構成です。
+
+  authorial_voice_contamination:
+    description: >
+      語り手の lexical_range.forbidden に含まれる語彙・比喩が
+      本文に出現している。
+    action: compile_error
+    message: >
+      作者の言葉がキャラクター/語り手の口に入り込んでいます。
+      そのキャラクターの視点からありえない語彙・思想が
+      出ていないか確認してください。
+
+  metaphor_beyond_voice:
+    description: >
+      metaphor_policy: native_only 宣言下で、
+      語り手が経験しえない比喩が使われている。
+    action: warning
+    message: >
+      比喩が語り手の経験の射程を超えています。
+      語り手の認知から導出可能か、または
+      metaphor_policy を変更すべきか検討してください。
+
+  style_inconsistency_within_voice:
+    description: >
+      同一語り手内で、文体ルール（リズム・語彙域）が
+      必然性なしに揺れている。
+    action: compile_error
+    message: >
+      文体が一貫していません。
+      1次審査では速読審査員に一貫性だけが観測されます。
+      変化させるならば語り手側の必然（成長・心理変化）を
+      evolution_schedule に定義してください。
+
+  surface_and_style_aligned_only:
+    description: >
+      surface_vs_style_layer.relationship が aligned のみ。
+      純文学では表層と文体の乖離が深度を生む。
+    action: info
+    message: >
+      文体と物語表層が完全一致しています。
+      純文学の深さは表層と文体の乖離から生まれます。
+      ironic / displaced / evolving の採用を検討してください。
+
+  plot_first_style_derivation:
+    description: >
+      物語プロットが確定してから voice_policy が遅れて宣言されている。
+    action: warning
+    message: >
+      プロットが先・文体が後で設計されています。
+      プロットに奉仕する文体は語り手を殺します。
+      文体イメージを先行させる設計順序を検討してください。
+
+  missing_evolution_for_growth_arc:
+    description: >
+      長編で主人公が年齢・成熟度・価値観を跨いで変質するのに
+      evolution_schedule が未定義。
+    action: warning
+    message: >
+      成長アーク設計に対し文体推移が未設計です。
+      語り手の成熟段階や価値転回を跨ぐ物語は、
+      文体推移によってこそ説得力が生まれます。
+
+  summary_feedback_trap:
+    description: >
+      「読みづらい」「冗長」「誰が話しているかわからない」
+      タイプの感想に基づき、文体を素朴に修正しようとしている。
+    action: warning
+    message: >
+      それらの感想は表層（物語）のみを読んだ読者の感想です。
+      文体で意味を作る設計（displaced / ironic）を採用している場合、
+      真に受けて修正すると文体設計が崩壊します。
+      フィードバック受容前に surface_vs_style_layer を再確認してください。
+
+# ============================================================
+# 参考パターン（設計例）
+# ============================================================
+reference_patterns:
+
+  displaced_observer:
+    description: >
+      表層：語り手は第三の対象を観察し描写する。
+      文体：観察する語り手自身の歪み・欠落・固着が
+      語彙と視線の選択に露出する。
+      observation_subject ≠ style_subject の乖離構造。
+
+  ironic_happy_ending:
+    description: >
+      表層：主人公が目的を達成する肯定的な結末。
+      文体：語りの温度・距離感・リズムが、
+      その達成の空虚さや代償を裏側から告発する。
+
+  evolving_voice_through_growth:
+    description: >
+      同一主人公の文体が、複数の成熟段階・価値転回を
+      またいで、語彙域・統語・比喩方針の面で
+      段階的に変化する。各遷移点には語り手側の
+      必然（経験・喪失・獲得）が紐づく。
+
+# ============================================================
+# 他モジュールとの連動
+# ============================================================
+integrations:
+
+  with_pov:
+    module: "28_pov.yaml"
+    relationship: >
+      POV で camera_subject / resolution_mode を宣言した後に、
+      本モジュールの voice_identity / lexical_range を固定する。
+      resolution_mode: subject_native は lexical_range.forbidden を
+      より厳格にする。
+
+  with_choice_and_expression:
+    module: "16_choice-and-expression.yaml"
+    relationship: >
+      テキスト過剰説明の検出は本モジュールの
+      authorial_voice_contamination と一部重なる。
+      作者の思想が説明として露出する現象を共同で検出する。
+
+  with_discernment:
+    module: "24_discernment.yaml"
+    relationship: >
+      鑑識眼の「嘘の検出」のうち、
+      語り手視点からの逸脱による嘘は本モジュールが担当する。
+
+  with_interpretation_layer:
+    module: "20_interpretation-layer.yaml"
+    relationship: >
+      文体から読者が再構成する解釈は、
+      表層 vs 文体 の乖離設計と直接連動する。
+
+# ============================================================
+# 自己トレーニング指針（プロセス）
+# ============================================================
+self_training_guidance:
+  description: >
+    文体感性は選評読解と比較読書で育つ。
+    コンパイラはこれを強制しないが、info として示唆する。
+  practices:
+    - "自分が読んだ小説から、語り手がどんな人格かを逆算する"
+    - "選評（芥川賞など）を読み、物語ではなく問いと文体が評価されていることを確認する"
+    - "カクヨム等の一次創作と出版物の文体差を比較読みする"
+    - "書いている最中に『違和感』を感じる感性を訓練する"

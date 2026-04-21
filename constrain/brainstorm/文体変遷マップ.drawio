@@ -1,0 +1,65 @@
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <mxCell id="2" value="graph TD
+    subgraph 樹の文体変遷
+        T_PRO[&quot;PROLOGUE&lt;br/&gt;回想→子どもの語彙に退行&lt;br/&gt;虫・事物への精密描写&lt;br/&gt;感情は推量形&quot;]
+        T_A1S1[&quot;ACT1 SEQ1&lt;br/&gt;観察日記トーン&lt;br/&gt;小学生語彙+理科用語&lt;br/&gt;感情→身体感覚&quot;]
+        T_A1S2[&quot;ACT1 SEQ2&lt;br/&gt;父との会話→文が伸びる&lt;br/&gt;S5:父の死→極端な短文&lt;br/&gt;感情語ゼロ・知覚のみ&quot;]
+        T_A2S1[&quot;ACT2 SEQ1&lt;br/&gt;あんずにより文体が軟化&lt;br/&gt;S3:五感が全開&lt;br/&gt;初めて人間を味わう文体&quot;]
+        T_A2S2[&quot;ACT2 SEQ2&lt;br/&gt;S4:聴覚偏重&lt;br/&gt;S5:論文的構文が出現&lt;br/&gt;感情→論理に変換＝防衛的退行&quot;]
+        T_A3[&quot;ACT3&lt;br/&gt;学術語彙が支配&lt;br/&gt;比喩ほぼ消滅&lt;br/&gt;条件文が骨格&lt;br/&gt;あんずの記憶→構文が一瞬崩れる&quot;]
+        T_A4S1[&quot;ACT4 SEQ1&lt;br/&gt;ビジネス語彙混入&lt;br/&gt;最も整った文体&lt;br/&gt;読みやすさ＝暴力の伏線&quot;]
+        T_A4S2[&quot;ACT4 SEQ2&lt;br/&gt;S3:鏡像認識&lt;br/&gt;短文連打が回帰&lt;br/&gt;論理の構文が崩壊&quot;]
+        T_A5S1[&quot;ACT5 SEQ1&lt;br/&gt;語彙が全時代混在&lt;br/&gt;語順崩壊&lt;br/&gt;身体が思考を追い越す&quot;]
+        T_A5S2[&quot;ACT5 SEQ2&lt;br/&gt;全編で最も静かな文体&lt;br/&gt;不完全な言葉を選ぶ&lt;br/&gt;わからない＝受容&quot;]
+        T_EPI[&quot;EPILOGUE&lt;br/&gt;日常語に回帰&lt;br/&gt;分類→共有の比喩&lt;br/&gt;初めての軽さと笑い&quot;]
+
+        T_PRO --&gt; T_A1S1 --&gt; T_A1S2 --&gt; T_A2S1 --&gt; T_A2S2 --&gt; T_A3 --&gt; T_A4S1 --&gt; T_A4S2 --&gt; T_A5S1 --&gt; T_A5S2 --&gt; T_EPI
+    end
+
+    subgraph あんずの文体変遷
+        A_A2S1[&quot;ACT2 SEQ1&lt;br/&gt;樹の視点で描かれる&lt;br/&gt;声・仕草の感覚的描写&lt;br/&gt;樹の文体を変える存在&quot;]
+        A_FB2[&quot;FB2:最後の夜&lt;br/&gt;語彙の極端な貧困&lt;br/&gt;短文⇔句読点なし長文&lt;br/&gt;思考の断裂&lt;br/&gt;感覚の断片のみ&lt;br/&gt;言語以前の苦しみ&quot;]
+        A_A2S4[&quot;ACT2 S4:電話&lt;br/&gt;声だけの存在&lt;br/&gt;樹の聴覚描写に変換&lt;br/&gt;あんず自身の言葉は最小限&quot;]
+        A_AFTER[&quot;以降:不在&lt;br/&gt;樹の記憶の中でのみ存在&lt;br/&gt;構文の一瞬の乱れとして&lt;br/&gt;残響する&quot;]
+
+        A_A2S1 --&gt; A_A2S4 --&gt; A_FB2 --&gt; A_AFTER
+    end
+
+    subgraph 秀斗の文体変遷
+        S_FB1[&quot;FB1:二重の羨望&lt;br/&gt;社会的語彙&lt;br/&gt;反復構文＝母の条件付き愛&lt;br/&gt;温度の比喩&lt;br/&gt;感情は直接的&quot;]
+        S_A4[&quot;ACT4:樹の視点&lt;br/&gt;データの異常値として処理&lt;br/&gt;秀斗の内面は不可視&lt;br/&gt;樹の文体の限界が露呈&quot;]
+        S_FB3[&quot;FB3:全貌&lt;br/&gt;前半:制御された長文&lt;br/&gt;母の言葉が混入&lt;br/&gt;重さの比喩&lt;br/&gt;後半:短文に崩壊&lt;br/&gt;樹の言葉＝母の言葉が重なる&quot;]
+        S_A5[&quot;ACT5&lt;br/&gt;樹の視点に戻る&lt;br/&gt;秀斗は沈黙&lt;br/&gt;沈黙＝共在として記述&quot;]
+
+        S_FB1 --&gt; S_A4 --&gt; S_FB3 --&gt; S_A5
+    end
+
+    style T_PRO fill:#D6E4F0,stroke:#4A7FB5
+    style T_A1S1 fill:#D6E4F0,stroke:#4A7FB5
+    style T_A1S2 fill:#D6E4F0,stroke:#4A7FB5
+    style T_A2S1 fill:#D6E4F0,stroke:#4A7FB5
+    style T_A2S2 fill:#D6E4F0,stroke:#4A7FB5
+    style T_A3 fill:#D6E4F0,stroke:#4A7FB5
+    style T_A4S1 fill:#D6E4F0,stroke:#4A7FB5
+    style T_A4S2 fill:#D6E4F0,stroke:#4A7FB5
+    style T_A5S1 fill:#D6E4F0,stroke:#4A7FB5
+    style T_A5S2 fill:#D6E4F0,stroke:#4A7FB5
+    style T_EPI fill:#D6E4F0,stroke:#4A7FB5
+
+    style A_A2S1 fill:#E8DAF0,stroke:#7B4F9E
+    style A_FB2 fill:#E8DAF0,stroke:#7B4F9E
+    style A_A2S4 fill:#E8DAF0,stroke:#7B4F9E
+    style A_AFTER fill:#E8DAF0,stroke:#7B4F9E
+
+    style S_FB1 fill:#FDEBD0,stroke:#E67E22
+    style S_A4 fill:#FDEBD0,stroke:#E67E22
+    style S_FB3 fill:#FDEBD0,stroke:#E67E22
+    style S_A5 fill:#FDEBD0,stroke:#E67E22
+" style="shape=mxgraph.flowchart.start_2;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="40" y="40" width="600" height="400" as="geometry"/>
+    </mxCell>
+  </root>
+</mxGraphModel>

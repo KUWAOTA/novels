@@ -17,5 +17,5 @@ value_change:
 
 # S5: 父の死（ACT1クライマックス）
 
-- [[togaki]] — ト書き
+- [[kyakuhon]] — 脚本
 - [[omote]] — 表視点（僕・樹）

@@ -1,0 +1,250 @@
+<mxfile host="65bd71144e">
+    <diagram id="s3_diagnosis" name="S3 デート — なぜつまらないか・本当に描きたいもの">
+        <mxGraphModel dx="806" dy="344" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="4800" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="S3「あんずとのデート」— 診断マップ" style="text;html=1;align=center;fontSize=18;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="20" width="2100" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="subtitle" value="togaki_v1.md + togaki_v1_review.md + settings/v4 を統合した問題分析と設計方針" style="text;html=1;align=center;fontSize=11;fillColor=none;strokeColor=none;fontColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="56" width="2100" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="sec1_title" value="1. なぜこのシーンはつまらないか — 4つの根本原因" style="text;html=1;align=left;fontSize=14;fontStyle=1;fillColor=none;strokeColor=none;fontColor=#C0392B;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="100" width="800" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="cause1" value="原因① ギャルゲーヒロイン化" style="swimlane;startSize=24;fillColor=#FADBD8;strokeColor=#C0392B;fontStyle=1;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="140" width="500" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="cause1_now" value="【現状】あんずが「普通のかわいい女の子」として振る舞う&#xa;&#xa;・「一緒に帰らへん？」「顔を赤らめる」「満面の笑み」&#xa;・ストレートに誘える／自分の気持ちを明確に言語化できる&#xa;・「そういうことやなくて」とメタ認知できている&#xa;&#xa;【settings/v4 のあんず像との乖離】&#xa;・知的障害で言語化が苦手。声が小さい。ひらがなを好む&#xa;・手を伸ばしかけて止める癖（触れることへの条件反射）&#xa;・自己肯定感が極端に低い&#xa;・これ以上攻撃されないよう優しい振る舞いだけする&#xa;&#xa;→ 設定上のあんずと、脚本上のあんずが別人" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="cause1" vertex="1">
+                    <mxGeometry x="5" y="28" width="490" height="205" as="geometry"/>
+                </mxCell>
+                <mxCell id="cause2" value="原因② テーマの直接言語化（説教化）" style="swimlane;startSize=24;fillColor=#FADBD8;strokeColor=#C0392B;fontStyle=1;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="140" width="500" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="cause2_now" value="【E002/E003: コンパイルエラー】&#xa;&#xa;・L95「大事な人へのやさしさってさ、対価がいるものなの？」&#xa;  → テーマ命題そのものをセリフで宣言&#xa;・L97「田中さんが大切だからしてるだけ」&#xa;  → 作者が読者に伝えたいことを樹に代弁させている&#xa;&#xa;【McKee原則】&#xa;テーマは行動で語る。台詞で語った瞬間、物語は死ぬ。&#xa;&#xa;【樹のASD傾向との矛盾】&#xa;「大切だからしている」と自己の感情を正確に言語化できるなら&#xa;ASD傾向の設定と整合しない。&#xa;樹は自分の優しさに無自覚であるべき。" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="cause2" vertex="1">
+                    <mxGeometry x="5" y="28" width="490" height="205" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_c1" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#C0392B;strokeWidth=2;" parent="cause2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-25" y="120" as="sourcePoint"/>
+                        <mxPoint x="495" y="300" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="495" y="120"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="cause3" value="原因③ 樹側の価値変化ゼロ" style="swimlane;startSize=24;fillColor=#FADBD8;strokeColor=#C0392B;fontStyle=1;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="1080" y="140" width="500" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="cause3_now" value="【W001/E004: シーン最大の構造欠陥】&#xa;&#xa;Before: あんずは「田中さん係」の対象&#xa;After:  あんずは「田中さん係」の対象（変化なし）&#xa;&#xa;・あんずは変化する（無償の優しさに触れて泣く）&#xa;・樹は何も変わらない。いつも通り論理的に行動しただけ&#xa;&#xa;【なぜこれが致命的か】&#xa;主人公に変化がないシーン＝読者にとって退屈&#xa;「いい話」にはなるが「面白い話」にはならない&#xa;&#xa;【theme.drawio との接続】&#xa;このシーンは「理解すれば救える」信念の強化期。&#xa;樹に微細な違和感（後で回収する伏線）が残るべき。" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="cause3" vertex="1">
+                    <mxGeometry x="5" y="28" width="490" height="205" as="geometry"/>
+                </mxCell>
+                <mxCell id="cause4" value="原因④ 認知のねじれが描けていない" style="swimlane;startSize=24;fillColor=#FADBD8;strokeColor=#C0392B;fontStyle=1;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="1600" y="140" width="500" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="cause4_now" value="【著者メモ + W005/W009/W013】&#xa;&#xa;統制概念の核心：「厳密な言語の外にある訴えを受け取れない」&#xa;&#xa;・樹は表層の要求（夜景見たい）には応じるが&#xa;  深層の欲求（一緒にいたい）を受け取れない&#xa;・しかし現状では「鈍い男」としか読めない&#xa;&#xa;【本当に描きたかったこと】&#xa;二人は同じ場所にいるのに、完全に違う世界を見ている&#xa;&#xa;樹の世界：光の配列、論理的な会話、タスクとしての散歩&#xa;あんずの世界：初めての安全な人との時間、恋、恐怖と幸福の混在&#xa;&#xa;このズレが読者に見えなければ、ただの「鈍感ラブコメ」" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="cause4" vertex="1">
+                    <mxGeometry x="5" y="28" width="490" height="205" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_c2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#C0392B;strokeWidth=2;" parent="1" source="cause2" target="core_problem" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_c3" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#C0392B;strokeWidth=2;" parent="1" source="cause3" target="core_problem" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_c4" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#C0392B;strokeWidth=2;" parent="1" source="cause4" target="core_problem" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="core_problem" value="根本問題：「幸せなデート」として書いてしまっている&#xa;→ 幸せは物語ではない。非対称性こそが物語。" style="rounded=1;fillColor=#C0392B;strokeColor=#922B21;fontSize=14;fontStyle=1;fontColor=#FFFFFF;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="420" width="1000" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_to_sec2" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" parent="1" source="core_problem" target="sec2_box" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="sec2_title" value="2. 本当に描きたいもの — 「同じ場所の二つの世界」" style="text;html=1;align=left;fontSize=14;fontStyle=1;fillColor=none;strokeColor=none;fontColor=#4A7FB5;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="520" width="800" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="sec2_box" value="" style="rounded=1;fillColor=#F8F9FA;strokeColor=#ADB5BD;strokeWidth=2;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="560" width="2060" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="tree_world" value="樹の世界（表視点）" style="swimlane;startSize=24;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="580" width="480" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="tree_w_t" value="【認知モード】情報処理・パターン認識・タスク遂行&#xa;&#xa;教室：ノルマ完了→離脱。あんずの表情変化は知覚しない&#xa;道路：地図で最短経路を計算。一人で先に歩く&#xa;夜景：光量の分布。「33万カンデラくらい？」的な処理&#xa;電車：聴覚過敏。音に顔をしかめる&#xa;手をつなぐ：「音が嫌だったんだ」と因果を誤帰属&#xa;たい焼き：「味は条件で変わるのか」と定量比較&#xa;あんずの涙：「目が赤い。泣いている。なぜ？」&#xa;&#xa;【樹にとってのこの夜】&#xa;珍しく楽しかった。光が綺麗だった。&#xa;田中さんがなぜか泣いた。理由はよくわからない。&#xa;でも今日のノルマは達成したし、まあいいか。&#xa;&#xa;→ 樹は何も得ていないと思っている&#xa;→ しかし読者だけが「樹はすでに答えを持っている」と気づく" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="tree_world" vertex="1">
+                    <mxGeometry x="5" y="28" width="470" height="285" as="geometry"/>
+                </mxCell>
+                <mxCell id="gap_box" value="断&#xa;絶&#xa;&#xa;同&#xa;じ&#xa;場&#xa;所&#xa;&#xa;違&#xa;う&#xa;世&#xa;界" style="rounded=1;fillColor=#2C3E50;strokeColor=#1A252F;fontSize=11;fontStyle=1;fontColor=#FFFFFF;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="570" y="600" width="50" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="anzu_world" value="あんずの世界（裏視点＝読者が推察する）" style="swimlane;startSize=24;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="650" y="580" width="480" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="anzu_w_t" value="【認知モード】感覚・安全／危険の判定・身体記憶&#xa;&#xa;教室：「この人がいると安全」。勉強の内容は半分わからない&#xa;誘い：何を言えばいいかわからない。「あの…えっと…」&#xa;道路：手をつなぎたい。でも「触ったらダメ」の条件反射&#xa;　→ 電車の音をきっかけに勇気を出す&#xa;夜景：お父さんがまだ優しかった頃の記憶。幸せの残像&#xa;たい焼き：お母さんが買ってくれた最後の幸福な記憶&#xa;「…しなくていいの？」：おじさんとの関係が「普通」だと&#xa;　思っていたのに、樹が何も求めない。混乱。&#xa;&#xa;【あんずにとってのこの夜】&#xa;人生で一番幸せな瞬間。&#xa;初めて「優しさに対価がない」ことを知った。&#xa;これが「引き金」。帰宅後、虐待を虐待と認識してしまう。&#xa;&#xa;→ あんずの人生最良の夜が、あんずを殺す&#xa;→ 善意が人を殺す構造（テーマの三重構造①）" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="anzu_world" vertex="1">
+                    <mxGeometry x="5" y="28" width="470" height="285" as="geometry"/>
+                </mxCell>
+                <mxCell id="reader_box" value="読者の体験設計" style="swimlane;startSize=24;fillColor=#D4EDDA;strokeColor=#28A745;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="1160" y="580" width="480" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="reader_t" value="【1周目（ACT2読了時点）】&#xa;・樹の視点で読むと「ちょっと楽しい散歩」&#xa;・あんずの微細な身体反応に違和感を覚える&#xa;・「…帰りたくない」の重みがわからない&#xa;・S4であんずの死を知り、振り返ると全てが反転する&#xa;&#xa;【2周目（ACT5読了後）】&#xa;・デートの全ビートが「善意が引き金」の証拠になっている&#xa;・樹の「ほら立って」が、実はあんずの人生を変えた瞬間&#xa;・樹の鈍さが「愛の別の形」だったことに気づく&#xa;・「帰りたくない」= 虐待への恐怖、と再解釈&#xa;&#xa;【1周目で植える必要がある違和感】&#xa;❶ あんずの身体が時々硬直する（理由は後でわかる）&#xa;❷ 「手」への反応が過剰（触れようとして止める）&#xa;❸ 「帰りたくない」の声のトーン&#xa;❹ 樹が「わからない」と処理する何か" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="reader_box" vertex="1">
+                    <mxGeometry x="5" y="28" width="470" height="285" as="geometry"/>
+                </mxCell>
+                <mxCell id="settings_box" value="settings/v4 核心設定との接続" style="swimlane;startSize=24;fillColor=#FEF9E7;strokeColor=#d6b656;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="1670" y="580" width="410" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="settings_t" value="【theme.drawio】&#xa;・善意が人を殺す三重構造 → このシーンは①&#xa;・「厳密な言語の外にある訴えを受け取れない」&#xa;&#xa;【characters.drawio — あんず】&#xa;・「…しなくていいの？」= 性加害の刷り込み凝縮&#xa;・樹の手を自分の体に導く → 学習された行動&#xa;・「触れることへの条件反射」で手を伸ばしかけて止める&#xa;・石切公園 = 父がまだ優しかった頃の場所&#xa;&#xa;【characters.drawio — 樹】&#xa;・自分の優しさに無自覚&#xa;・目を合わせない&#xa;・感覚過敏&#xa;・タスク完了→即離脱&#xa;&#xa;【plot.drawio】&#xa;・「帰りたくない」はACT5「出社したくない」と並行&#xa;・デート帰り、大和西大寺駅で飛び込み自殺" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="settings_box" vertex="1">
+                    <mxGeometry x="5" y="28" width="400" height="285" as="geometry"/>
+                </mxCell>
+                <mxCell id="sec3_title" value="3. ビート再設計 — 残すもの・変えるもの・加えるもの" style="text;html=1;align=left;fontSize=14;fontStyle=1;fillColor=none;strokeColor=none;fontColor=#28A745;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="960" width="800" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="keep_box" value="残す（レビューで高評価のビート）" style="swimlane;startSize=24;fillColor=#D4EDDA;strokeColor=#28A745;fontStyle=1;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1000" width="660" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="keep_t" value="✅✅ L37: 携帯を見ながら一人で先に歩く → ASD傾向が行動で完璧に出ている&#xa;✅✅ L54:「あんずも大きい音苦手なん？」→ 統制概念の核心。相手の行動を自分の論理で誤帰属&#xa;✅✅ L72:「それはなんで」→ 感情的共感でなく因果質問。樹の認知パターン&#xa;✅✅ L104:「須藤君の手って、ほんま白うて細うて綺麗やな」→「手」の象徴が有機的に機能&#xa;✅  L28: あんずが腕をつかむ → 言語でなく身体で伝える&#xa;✅  L38:「待ってや！」→ あんず追いかける側の力学&#xa;✅  L52: 感覚過敏で顔をしかめる → 行動で示す&#xa;&#xa;→ これらのビートを骨格として、弱いビートを削ぎ落とす" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="keep_box" vertex="1">
+                    <mxGeometry x="5" y="28" width="650" height="225" as="geometry"/>
+                </mxCell>
+                <mxCell id="change_box" value="変える（構造エラー・紋切り型の修正）" style="swimlane;startSize=24;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="720" y="1000" width="660" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="change_t" value="❌→✅ L95/L97: テーマ直接言語化 → サブテキスト化&#xa;  旧:「対価がいるものなの？」「大切だからしてる」&#xa;  新: 樹は全て論理で説明する。「ノートを見せるのは次の授業に遅れるから合理的」&#xa;      読者だけがその根底の愛に気づく構造&#xa;&#xa;❌→✅ L90-91: フラッシュバック直接説明 → 身体反応で示す&#xa;  旧:（おじさんにまたがって犯されてたことをフラッシュバック）&#xa;  新: 身体の硬直→呼吸停止→瞳孔散大。読者が推察する&#xa;&#xa;⚠→✅ あんずのセリフ全般: 明瞭すぎる → 断片的・不正確に&#xa;  「セックスしたいとか思うん？」→「…しなくていいの？」（settings/v4準拠）&#xa;  「顔を赤らめる」×2 → あんず特有の身体表現に置換&#xa;&#xa;⚠→✅ L98:「目を見つめながら」→「夜景を見ながら」（ASD傾向に合致）" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="change_box" vertex="1">
+                    <mxGeometry x="5" y="28" width="650" height="225" as="geometry"/>
+                </mxCell>
+                <mxCell id="add_box" value="加える（欠落している要素）" style="swimlane;startSize=24;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontStyle=1;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="1400" y="1000" width="700" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="add_t" value="➕ 樹側の微細な価値変化（本人は気づかない）&#xa;  候補A:「汚れている」の意味が論理的に処理できない違和感が残る&#xa;  候補B: 帰り道、あんずの「帰りたくない」の声のトーンが消えない&#xa;  候補C:「今日は普段と違う何かがあった気がする」→ でも言語化できない&#xa;  → ACT4/5で回収する伏線。読者は2周目で気づく&#xa;&#xa;➕ あんずの身体記憶・フラッシュバックの伏線&#xa;  ・樹が服を拭く瞬間 → あんずの身体が一瞬硬直する&#xa;  ・手を伸ばしかけて止める癖（settings/v4に明記）&#xa;  ・「帰りたくない」の声が急に小さくなる&#xa;&#xa;➕ 石切公園の夜景を「データ」として処理する樹&#xa;  → ACT5で「データでは捉えられないもの」に転換する前振り&#xa;&#xa;➕ 帰路の分岐点（マスター設計にあるが未実装）&#xa;  「…帰りたくない」→ 樹「遅くなるし帰ろう」→「またね」" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="add_box" vertex="1">
+                    <mxGeometry x="5" y="28" width="690" height="225" as="geometry"/>
+                </mxCell>
+                <mxCell id="sec4_title" value="4. 再設計後のビートフロー — 認知の非対称性を軸にした構造" style="text;html=1;align=left;fontSize=14;fontStyle=1;fillColor=none;strokeColor=none;fontColor=#7B4F9E;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1300" width="900" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="beat1" value="BEAT 1: 教室（タスク完了→離脱）" style="swimlane;startSize=22;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1340" width="350" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="beat1_t" value="樹：「第3章の問題全部終わった。ノルマ完了」→ 去ろうとする&#xa;あんず：腕をつかむ。「あの…えっと…」（言葉が出ない）&#xa;　何度か口を開けては閉じる。最後に「…一緒に、いかへん？」&#xa;樹：「いいよ。どこ」（要求が明確だから応じる）&#xa;&#xa;★ あんずの誘い方に知的障害の質感を出す&#xa;★ 樹のタスク完了→即離脱でASD傾向を示す" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="beat1" vertex="1">
+                    <mxGeometry x="5" y="26" width="340" height="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_b12" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#7B4F9E;" parent="1" source="beat1" target="beat2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="beat2" value="BEAT 2: 線路沿いの道（手をつなぐ）" style="swimlane;startSize=22;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontSize=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="1340" width="350" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="beat2_t" value="樹：携帯の地図を見ながら先に歩く。あんず追いかける&#xa;電車の轟音。樹が顔をしかめる&#xa;あんず：手を伸ばしかけて→止める→伸ばす（条件反射との闘い）&#xa;樹：「あんずも大きい音苦手なん？」（誤帰属）&#xa;あんず：「……」（言語化できない。手を握り直すだけ）&#xa;&#xa;★ 手を伸ばしかけて止める癖（settings/v4）を使う&#xa;★ あんずは説明せず身体で応答" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="beat2" vertex="1">
+                    <mxGeometry x="5" y="26" width="340" height="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_b23" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#7B4F9E;" parent="1" source="beat2" target="beat3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="beat3" value="BEAT 3: 展望台 — たい焼きと夜景" style="swimlane;startSize=22;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="1340" width="350" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="beat3_t" value="たい焼き。あんずがカスをこぼす→樹が拭く→あんず一瞬硬直&#xa;あんず：お母さんがくれた記憶。声のトーンが変わる（父の不在）&#xa;樹：「それはなんで」（因果質問。共感でなく分析）&#xa;夜景。樹：光を「データ」として処理（光量・配列・分布）&#xa;あんず：「あっちが大阪で、こっちが神戸やねんて」&#xa;→ 樹の視界に入るが「意味」を与えない情報が増えていく&#xa;&#xa;★ 夜景＝データ処理 → ACT5で転換する前振り" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="beat3" vertex="1">
+                    <mxGeometry x="5" y="26" width="340" height="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_b34" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#7B4F9E;" parent="1" source="beat3" target="beat4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="beat4" value="BEAT 4: 「…しなくていいの？」（シーン核心）" style="swimlane;startSize=22;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1180" y="1340" width="400" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="beat4_t" value="あんず転倒→樹が横から抱き起こそうとする→顔が近い&#xa;あんず：身体硬直。呼吸停止。（フラッシュバック＝身体反応のみ）&#xa;あんず：樹の手を自分の体に導く&#xa;あんず：「…しなくていいの？」（断片的。意味がずれている）&#xa;樹：「何を？」（本気でわからない）&#xa;樹：「怪我してないか見せて」（論理。別の文脈で処理）&#xa;あんず：目に涙。「……ごめん」（触れることへの条件反射の謝罪）&#xa;樹：「何が。ほら立って」（手を差し伸べる）&#xa;&#xa;★ テーマを行動で語る。樹は「何も求めない」を無自覚に体現する" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="beat4" vertex="1">
+                    <mxGeometry x="5" y="26" width="390" height="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="arr_b45" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#7B4F9E;" parent="1" source="beat4" target="beat5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="beat5" value="BEAT 5: 帰路の分岐点（伏線＋樹の微変化）" style="swimlane;startSize=22;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontSize=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1610" y="1340" width="400" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="beat5_t" value="あんず：「須藤君の手って、ほんま白うて細うて綺麗やな」&#xa;帰路。分岐点であんずが止まる&#xa;あんず：「…帰りたくない」（声が急に小さい。別の意味）&#xa;樹：「遅くなるし帰ろう」（論理。「帰りたくない」を処理できない）&#xa;別れ際。「…またね」&#xa;&#xa;★ 樹の微変化（本人は気づかない）：&#xa;  帰り道、あんずの声のトーンが消えない。なぜだろう。&#xa;  論理で処理できない残響。→ ACT4/5の伏線" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="beat5" vertex="1">
+                    <mxGeometry x="5" y="26" width="390" height="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="sec5_title" value="5. 再設計 Before/After — シーンの価値変化" style="text;html=1;align=left;fontSize=14;fontStyle=1;fillColor=none;strokeColor=none;fontColor=#E67E22;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1540" width="800" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_header" value="" style="swimlane;startSize=0;fillColor=#2C3E50;strokeColor=#1A252F;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1580" width="1200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_h1" value="人物" style="text;fillColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=10;align=center;" parent="ba_header" vertex="1">
+                    <mxGeometry width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_h2" value="Before" style="text;fillColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=10;align=center;" parent="ba_header" vertex="1">
+                    <mxGeometry x="120" width="360" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_h3" value="After" style="text;fillColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=10;align=center;" parent="ba_header" vertex="1">
+                    <mxGeometry x="480" width="360" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_h4" value="回収先" style="text;fillColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontSize=10;align=center;" parent="ba_header" vertex="1">
+                    <mxGeometry x="840" width="360" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_tree" value="" style="swimlane;startSize=0;fillColor=#D6E4F0;strokeColor=#4A7FB5;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1610" width="1200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_t1" value="樹" style="text;fillColor=none;strokeColor=none;fontSize=10;fontStyle=1;align=center;" parent="ba_tree" vertex="1">
+                    <mxGeometry width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_t2" value="田中さんは「係の対象」&#xa;世界は論理で処理可能" style="text;fillColor=none;strokeColor=none;fontSize=9;align=left;spacingLeft=8;" parent="ba_tree" vertex="1">
+                    <mxGeometry x="120" width="360" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_t3" value="論理で処理できない残響が一つだけ残る&#xa;（「帰りたくない」の声。本人は気づかない）" style="text;fillColor=none;strokeColor=none;fontSize=9;align=left;spacingLeft=8;" parent="ba_tree" vertex="1">
+                    <mxGeometry x="480" width="360" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_t4" value="ACT5: あんずの記憶がフラッシュバック&#xa;「帰りたくない」＝「出社したくない」の並行" style="text;fillColor=none;strokeColor=none;fontSize=9;align=left;spacingLeft=8;" parent="ba_tree" vertex="1">
+                    <mxGeometry x="840" width="360" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_anzu" value="" style="swimlane;startSize=0;fillColor=#E8DAF0;strokeColor=#7B4F9E;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1660" width="1200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_a1" value="あんず" style="text;fillColor=none;strokeColor=none;fontSize=10;fontStyle=1;align=center;" parent="ba_anzu" vertex="1">
+                    <mxGeometry width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_a2" value="「優しさ＝性的対価」が常識&#xa;樹は安全な人（性欲がない）" style="text;fillColor=none;strokeColor=none;fontSize=9;align=left;spacingLeft=8;" parent="ba_anzu" vertex="1">
+                    <mxGeometry x="120" width="360" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_a3" value="「対価のない優しさ」が存在すると初めて知る&#xa;→ 帰宅後、虐待を虐待と認識する引き金" style="text;fillColor=none;strokeColor=none;fontSize=9;align=left;spacingLeft=8;" parent="ba_anzu" vertex="1">
+                    <mxGeometry x="480" width="360" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_a4" value="S4: 大和西大寺駅で飛び込み自殺&#xa;善意が引き金（テーマ三重構造①）" style="text;fillColor=none;strokeColor=none;fontSize=9;align=left;spacingLeft=8;" parent="ba_anzu" vertex="1">
+                    <mxGeometry x="840" width="360" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_reader" value="" style="swimlane;startSize=0;fillColor=#D4EDDA;strokeColor=#28A745;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1710" width="1200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_r1" value="読者" style="text;fillColor=none;strokeColor=none;fontSize=10;fontStyle=1;align=center;" parent="ba_reader" vertex="1">
+                    <mxGeometry width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_r2" value="「ちょっと不器用な二人の散歩」と思っている&#xa;微かな違和感がいくつかある" style="text;fillColor=none;strokeColor=none;fontSize=9;align=left;spacingLeft=8;" parent="ba_reader" vertex="1">
+                    <mxGeometry x="120" width="360" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_r3" value="「何か見落としている」感覚が残る&#xa;あんずの身体反応の意味がわからない" style="text;fillColor=none;strokeColor=none;fontSize=9;align=left;spacingLeft=8;" parent="ba_reader" vertex="1">
+                    <mxGeometry x="480" width="360" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_r4" value="S4→ACT5で全ビートが反転&#xa;2周目で「人生最良の夜が人を殺した」と気づく" style="text;fillColor=none;strokeColor=none;fontSize=9;align=left;spacingLeft=8;" parent="ba_reader" vertex="1">
+                    <mxGeometry x="840" width="360" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="sec6_title" value="6. 執筆時の指針" style="text;html=1;align=left;fontSize=14;fontStyle=1;fillColor=none;strokeColor=none;fontColor=#2C3E50;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1800" width="400" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="principle1" value="原則①: 樹はテーマを語らない" style="swimlane;startSize=22;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1840" width="500" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="principle1_t" value="樹の全ての行動は論理的説明がつく。&#xa;しかしその論理の根底にある「あんずを大切に思っている」に&#xa;樹だけが気づいていない。読者だけが気づく。&#xa;&#xa;「なぜ拭いてあげるの？」→「服が汚れたままだと風邪をひくから」&#xa;「なぜノートを見せるの？」→「次の授業に遅れるから合理的」" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="principle1" vertex="1">
+                    <mxGeometry x="5" y="26" width="490" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="principle2" value="原則②: あんずは言語化できない" style="swimlane;startSize=22;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontSize=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="1840" width="500" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="principle2_t" value="あんずの感情は全て身体で出る。言葉は断片的で、的外れで、途切れる。&#xa;&#xa;読者はあんずの身体反応から「何が起きているか」を推察する。&#xa;直接説明しない。「…しなくていいの？」が限界。&#xa;それ以上の言語化（「セックスしたら男の人は喜ぶ」等）は削除。" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="principle2" vertex="1">
+                    <mxGeometry x="5" y="26" width="490" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="principle3" value="原則③: 「幸せ」を描くな。「非対称」を描け" style="swimlane;startSize=22;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=10;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1080" y="1840" width="500" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="principle3_t" value="同じたい焼きを食べている。同じ夜景を見ている。手をつないでいる。&#xa;しかし二人は完全に別の世界にいる。&#xa;&#xa;樹：データ処理。あんず：人生で最も安全な瞬間。&#xa;この非対称性が読者の胸を締め付ける。&#xa;幸せなデートを書くのではなく、「幸せの非対称」を書く。" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="principle3" vertex="1">
+                    <mxGeometry x="5" y="26" width="490" height="88" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

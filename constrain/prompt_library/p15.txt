@@ -1,0 +1,20 @@
+## 背景
+友人からもらったアドバイスが、　C:\Users\ukowu\Desktop\novel\constrain\review\takayasan.md　にメモされています。
+とりあえず、各sceneで文体設計した方がいいという話になりました。
+
+## 指示1
+C:\Users\ukowu\Desktop\novel\constrain\main　
+の各フォルダに文体設計.mdを作ってください。
+
+## 指示2
+C:\Users\ukowu\Desktop\novel\constrain\review\takayasan.md
+を鑑みて、
+それぞれのシーンにおいて、
+（1人称でかきます）
+樹視点文体
+あんず視点文体
+秀斗視点文体
+がどんな文体を成長や出来事によって変化していくか
+たたき台をdrawioで出力してください。
+あくまで、これは想像をするためのたたき台です。
+出力先はC:\Users\ukowu\Desktop\novel\constrain\brainstorm　です。

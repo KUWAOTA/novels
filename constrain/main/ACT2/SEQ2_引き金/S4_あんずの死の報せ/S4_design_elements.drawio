@@ -1,0 +1,251 @@
+<mxfile host="65bd71144e">
+    <diagram id="s4-design-elements" name="S4 必要要素マップ">
+        <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="4000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+
+                <!-- ====== TITLE ====== -->
+                <mxCell id="title" value="S4「あんずの死の報せ」— 必要要素の設計マップ" style="text;html=1;align=center;fontSize=18;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="20" width="1520" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="subtitle" value="目的：「何を書くか」ではなく「何がこのシーンを機能させるか」を可視化し、アイデアの種にする" style="text;html=1;align=center;fontSize=11;fontStyle=2;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="56" width="1520" height="24" as="geometry"/>
+                </mxCell>
+
+                <!-- ====== SECTION 1: このシーンの構造的役割 ====== -->
+                <mxCell id="sec1" value="① このシーンが物語全体の中で果たす役割（＝代替不可能な機能）" style="swimlane;startSize=28;fillColor=#F5C6CB;strokeColor=#C0392B;fontStyle=1;fontSize=13;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="100" width="1520" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="fn1" value="【機能A】誤信念のインストール&#xa;&#xa;「精密な言語があれば救えた」を&#xa;樹の脳にインストールする瞬間。&#xa;&#xa;これはACT3-5全体のエンジン。&#xa;ここが弱いと物語が動かない。" style="rounded=1;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec1" vertex="1">
+                    <mxGeometry x="10" y="38" width="290" height="148" as="geometry"/>
+                </mxCell>
+                <mxCell id="fn2" value="【機能B】読者の「知らない状態」を作る&#xa;&#xa;読者はまだあんずの虐待を知らない。&#xa;S4では樹と同じ位置に立たせる。&#xa;直後のFB2で「真実」が炸裂するために、&#xa;ここで「樹の誤解」を読者にも共有させる。&#xa;&#xa;→ 読者が樹と一緒に間違える必要がある" style="rounded=1;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec1" vertex="1">
+                    <mxGeometry x="315" y="38" width="290" height="148" as="geometry"/>
+                </mxCell>
+                <mxCell id="fn3" value="【機能C】S3の「幸福」を毒に変える&#xa;&#xa;S3で描かれた全てのディテールが&#xa;死の文脈で意味を変える瞬間。&#xa;&#xa;「帰りたくない」「手」「線路」「夜景」&#xa;→ 遡及的に汚染される。&#xa;&#xa;これがないとS3の存在意義も薄れる" style="rounded=1;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec1" vertex="1">
+                    <mxGeometry x="620" y="38" width="290" height="148" as="geometry"/>
+                </mxCell>
+                <mxCell id="fn4" value="【機能D】樹の「処理不能」を初めて見せる&#xa;&#xa;父の死（S5）ではまだ幼くて処理できなかった。&#xa;今回は「処理しようとして、間違える」。&#xa;分析脳が初めて誤作動する瞬間。&#xa;&#xa;ASD特性が「強み」から「呪い」に&#xa;反転するターニングポイント" style="rounded=1;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec1" vertex="1">
+                    <mxGeometry x="925" y="38" width="290" height="148" as="geometry"/>
+                </mxCell>
+                <mxCell id="fn5" value="【機能E】&#xa;ACT5との&#xa;対称構造&#xa;&#xa;秀斗の自殺&#xa;未遂の報せ&#xa;と対になる。&#xa;同じ構造で&#xa;違う反応。" style="rounded=1;fillColor=#FADBD8;strokeColor=#C0392B;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec1" vertex="1">
+                    <mxGeometry x="1230" y="38" width="130" height="148" as="geometry"/>
+                </mxCell>
+                <mxCell id="fn5_note" value="S4(失敗)&#xa;↕&#xa;ACT5(成功)&#xa;同じ「死の報せ」&#xa;で違う行動" style="text;fontSize=8;fontStyle=2;align=center;fillColor=none;strokeColor=none;" parent="sec1" vertex="1">
+                    <mxGeometry x="1370" y="60" width="130" height="80" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="arr_sec1_2" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#C0392B;" parent="1" source="sec1" target="sec2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+
+                <!-- ====== SECTION 2: 前提の問い ====== -->
+                <mxCell id="sec2" value="② なぜ前回の案が全部弱かったか — 問題の診断" style="swimlane;startSize=28;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=13;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="340" width="1520" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="diag1" value="❌ 全案が「情報の到達経路」を設計していた&#xa;&#xa;先生に言われる / 放送で知る / 保健室で気づく / 噂で聞く&#xa;→ これは「どのチャンネルで届くか」の問題。&#xa;&#xa;でも衝撃の本質は到達経路じゃない。&#xa;同じ言葉「田中さんが電車に飛び込んだ」を&#xa;先生が言おうが放送で流れようが、&#xa;それだけでは読者の心は動かない。" style="rounded=1;fillColor=#FFF8E1;strokeColor=#d6b656;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec2" vertex="1">
+                    <mxGeometry x="10" y="38" width="480" height="128" as="geometry"/>
+                </mxCell>
+                <mxCell id="diag2" value="❌ 「衝撃」を情報のサプライズとして設計していた&#xa;&#xa;読者はS3を読んでいるので、あんずが死ぬことは予感できる。&#xa;（タイトルが「あんずの死の報せ」な時点で隠せない）&#xa;&#xa;→ 情報的サプライズはゼロ。&#xa;→ だからサプライズ以外の何かで殴る必要がある。" style="rounded=1;fillColor=#FFF8E1;strokeColor=#d6b656;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec2" vertex="1">
+                    <mxGeometry x="505" y="38" width="480" height="128" as="geometry"/>
+                </mxCell>
+                <mxCell id="diag3" value="→ では何で殴るのか？&#xa;&#xa;読者が既に知っている事実が、&#xa;別の文脈に置かれることで&#xa;耐えられなくなる瞬間。&#xa;&#xa;＝「意味の遡及的変化」&#xa;＝ドラマティック・アイロニー" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;fontStyle=1;align=left;spacingLeft=8;spacingTop=4;" parent="sec2" vertex="1">
+                    <mxGeometry x="1010" y="38" width="280" height="128" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="arr_sec2_3" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#d6b656;" parent="1" source="sec2" target="sec3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+
+                <!-- ====== SECTION 3: 衝撃の力学 ====== -->
+                <mxCell id="sec3" value="③ 衝撃を生む力学 — 何が読者の心を動かすか" style="swimlane;startSize=28;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontStyle=1;fontSize=13;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="560" width="1520" height="320" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="force_label" value="4つの力" style="text;fontSize=11;fontStyle=5;align=center;fillColor=none;strokeColor=none;" parent="sec3" vertex="1">
+                    <mxGeometry x="10" y="32" width="1500" height="20" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="force1" value="【力1】不可逆性の実感&#xa;&#xa;「もう取り返しがつかない」が&#xa;抽象でなく身体に落ちる瞬間。&#xa;&#xa;死の報せ自体ではなく、&#xa;「死んだ後の世界で日常が続いている」&#xa;という事実が不可逆性を叩きつける。&#xa;&#xa;例：あんずの席に誰かの荷物が置かれている。&#xa;例：保健室のプリントがそのまま。&#xa;例：自分が今朝食べた朝食の記憶。" style="rounded=1;fillColor=#f3e8ff;strokeColor=#7B4F9E;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec3" vertex="1">
+                    <mxGeometry x="10" y="56" width="360" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="force2" value="【力2】因果の錯覚（＝誤信念の土壌）&#xa;&#xa;「あの時こうしていれば」と思える&#xa;具体的な分岐点が必要。&#xa;&#xa;S3の「帰りたくない」→「帰ろう」は最有力。&#xa;だがこれだけでは「言語の問題」に変換しにくい。&#xa;&#xa;樹が「僕の言葉が足りなかった」と&#xa;結論づけるためには、&#xa;彼女が何かを伝えようとして失敗した&#xa;（と樹が解釈できる）エピソードが&#xa;S3にもう一つ必要かもしれない。&#xa;&#xa;→ S3の設計にフィードバックすべき要素" style="rounded=1;fillColor=#f3e8ff;strokeColor=#7B4F9E;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec3" vertex="1">
+                    <mxGeometry x="385" y="56" width="360" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="force3" value="【力3】感情の不在が生む不気味さ&#xa;&#xa;樹が泣かない。分析する。&#xa;これ自体が読者に不安を与える。&#xa;&#xa;ただし「泣かないASDキャラ」は&#xa;テンプレ化しやすい。&#xa;&#xa;必要なのは：&#xa;・泣かないことに樹自身が気づく瞬間&#xa;・「正しい反応」を探して見つからない&#xa;・周囲の感情と自分の乖離を観測する&#xa;&#xa;→ 樹の内面を「空白」として描く技術が必要&#xa;→ ACT5で初めて泣く/走るとの対比が効く" style="rounded=1;fillColor=#f3e8ff;strokeColor=#7B4F9E;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec3" vertex="1">
+                    <mxGeometry x="760" y="56" width="360" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="force4" value="【力4】読者だけが持つ予感&#xa;&#xa;読者はS3で「帰りたくない」を聞いている。&#xa;樹は聞き流した。読者は引っかかっている。&#xa;&#xa;S4で死を知った瞬間、&#xa;読者の中で「帰りたくない」が爆発する。&#xa;樹より先に。&#xa;&#xa;→ 樹がその台詞を思い出すまでの&#xa;タイムラグが重要。&#xa;読者は既に気づいている。&#xa;樹はまだ分析している。&#xa;このズレが「もどかしさ」＝感情を生む。&#xa;&#xa;→ これがドラマティック・アイロニーの正体" style="rounded=1;fillColor=#f3e8ff;strokeColor=#7B4F9E;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec3" vertex="1">
+                    <mxGeometry x="1135" y="56" width="370" height="250" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="arr_sec3_4" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#7B4F9E;" parent="1" source="sec3" target="sec4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+
+                <!-- ====== SECTION 4: S3から引き継ぐ「弾薬」 ====== -->
+                <mxCell id="sec4" value="④ S3が装填した弾薬 — S4で発火させるべき伏線・象徴" style="swimlane;startSize=28;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontStyle=1;fontSize=13;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="920" width="1520" height="260" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="ammo1" value="「帰りたくない」&#xa;&#xa;S3：あんずが小さく呟く。&#xa;樹は「遅いから帰ろう」。&#xa;&#xa;S4での変化：&#xa;→ 死を知った後に思い出す&#xa;→ 「帰りたくない＝死にたかった？」&#xa;→ 樹の誤読（本当は虐待への恐怖）&#xa;&#xa;★ 二重の誤読：&#xa;樹「苦しくて死にたかった」&#xa;真実「家に帰ると犯される」" style="rounded=1;fillColor=#EBF5FB;strokeColor=#4A7FB5;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec4" vertex="1">
+                    <mxGeometry x="10" y="38" width="240" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="ammo2" value="「手」の象徴&#xa;&#xa;S3：あんずが樹の手を繋ぐ。&#xa;「白くて細くて綺麗」と言う。&#xa;&#xa;S4での変化：&#xa;→ その手はもう繋がれない&#xa;→ 樹は手を見る（自分の手）&#xa;→ 何も変わっていない手&#xa;&#xa;★ FB2で爆発：&#xa;樹の手 vs 義父の手&#xa;読者だけが知る対比" style="rounded=1;fillColor=#EBF5FB;strokeColor=#4A7FB5;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec4" vertex="1">
+                    <mxGeometry x="265" y="38" width="230" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="ammo3" value="「線路」「電車の音」&#xa;&#xa;S3：石切公園への道で線路沿い。&#xa;阪神1000系の通過音。&#xa;あんずが手を繋いだきっかけ。&#xa;&#xa;S4での変化：&#xa;→ 「電車に飛び込んだ」&#xa;→ 昨日一緒に歩いた線路と&#xa;　同じものが凶器になった&#xa;&#xa;★ 感覚記憶の汚染：&#xa;電車の音＝手を繋いだ記憶&#xa;→ 電車の音＝あんずが死んだ音" style="rounded=1;fillColor=#EBF5FB;strokeColor=#4A7FB5;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec4" vertex="1">
+                    <mxGeometry x="510" y="38" width="240" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="ammo4" value="「夜景の光」&#xa;&#xa;S3：石切公園の夜景。&#xa;あんずが「綺麗やろ！」と指差す。&#xa;人生最高の瞬間。&#xa;&#xa;S4での変化：&#xa;→ あの光を見ていた数時間後に死んだ&#xa;→ 光の美しさが残酷さに変わる&#xa;&#xa;★ 使い方の問い：&#xa;樹はこの記憶をどう処理する？&#xa;分析対象？それとも処理不能？" style="rounded=1;fillColor=#EBF5FB;strokeColor=#4A7FB5;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec4" vertex="1">
+                    <mxGeometry x="765" y="38" width="230" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="ammo5" value="「セックスしたいとか思うん？」&#xa;&#xa;S3：あんずが突然聞く。&#xa;樹は意味がわからず否定。&#xa;&#xa;S4での変化：&#xa;→ 死を知った後、この発言の&#xa;　意味を考え直す可能性&#xa;→ だが樹には性的虐待の&#xa;　フレームがないので接続不能&#xa;&#xa;★ これはS4では発火しない弾薬。&#xa;→ FB2で読者だけが回収する。&#xa;→ 樹は最後まで意味を知らない？" style="rounded=1;fillColor=#EBF5FB;strokeColor=#4A7FB5;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec4" vertex="1">
+                    <mxGeometry x="1010" y="38" width="240" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="ammo6" value="S3にまだ&#xa;足りないもの？&#xa;&#xa;S4で誤信念を&#xa;成立させるには&#xa;S3で「言葉の&#xa;失敗」がもう一つ&#xa;必要かもしれない。&#xa;&#xa;「帰りたくない」&#xa;だけでは樹が&#xa;「言語の問題」&#xa;と結論づける&#xa;根拠が弱い？&#xa;&#xa;→ S3への逆要求" style="rounded=1;fillColor=#FCF3CF;strokeColor=#d6b656;fontSize=9;fontStyle=1;align=left;spacingLeft=8;spacingTop=4;" parent="sec4" vertex="1">
+                    <mxGeometry x="1265" y="38" width="140" height="210" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="arr_sec4_5" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#4A7FB5;" parent="1" source="sec4" target="sec5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+
+                <!-- ====== SECTION 5: 誤信念の論理チェーン ====== -->
+                <mxCell id="sec5" value="⑤ 誤信念が成立する論理チェーン — 樹の脳内で何が起きるか" style="swimlane;startSize=28;fillColor=#FDEBD0;strokeColor=#E67E22;fontStyle=1;fontSize=13;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1220" width="1520" height="280" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="chain_label" value="樹の推論（全て間違っているが、全て論理的に正しい）" style="text;fontSize=10;fontStyle=6;align=center;fillColor=none;strokeColor=none;" parent="sec5" vertex="1">
+                    <mxGeometry x="10" y="32" width="1500" height="18" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="ch1" value="前提1（事実）&#xa;&#xa;あんずは昨晩&#xa;電車に飛び込んだ" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;align=center;" parent="sec5" vertex="1">
+                    <mxGeometry x="10" y="60" width="170" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="ch2" value="前提2（事実）&#xa;&#xa;昨日の夕方まで&#xa;僕と一緒にいた" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;align=center;" parent="sec5" vertex="1">
+                    <mxGeometry x="220" y="60" width="170" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="ch3" value="推論1&#xa;&#xa;別れてから死ぬまでの&#xa;間に何かが起きた" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=10;align=center;" parent="sec5" vertex="1">
+                    <mxGeometry x="430" y="60" width="190" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="ch4" value="想起&#xa;&#xa;「帰りたくない」&#xa;と彼女は言った" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=10;fontStyle=1;align=center;" parent="sec5" vertex="1">
+                    <mxGeometry x="660" y="60" width="170" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="ch5" value="★ 誤った推論2&#xa;&#xa;「帰りたくない」は&#xa;「死にたい」の&#xa;言い換えだった？" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=10;fontStyle=1;align=center;" parent="sec5" vertex="1">
+                    <mxGeometry x="870" y="60" width="190" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="ch6" value="★ 誤った結論&#xa;&#xa;彼女は苦しみを&#xa;言葉にできなかった。&#xa;僕が正確に聞いて&#xa;いれば救えた" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=10;fontStyle=1;align=center;" parent="sec5" vertex="1">
+                    <mxGeometry x="1100" y="60" width="190" height="70" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="ch_arr1" style="strokeWidth=1;" parent="sec5" source="ch1" target="ch2" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="ch_arr2" style="strokeWidth=1;" parent="sec5" source="ch2" target="ch3" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="ch_arr3" style="strokeWidth=1;" parent="sec5" source="ch3" target="ch4" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="ch_arr4" style="strokeWidth=1;" parent="sec5" source="ch4" target="ch5" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="ch_arr5" style="strokeWidth=1;" parent="sec5" source="ch5" target="ch6" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+                <!-- 真実の対比 -->
+                <mxCell id="truth_label" value="真実（読者はFB2で知る / 樹は知らないまま）" style="text;fontSize=10;fontStyle=6;align=center;fillColor=none;strokeColor=none;fontColor=#7B4F9E;" parent="sec5" vertex="1">
+                    <mxGeometry x="10" y="150" width="1500" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="tr1" value="真の前提&#xa;&#xa;あんずは帰宅後&#xa;義父に犯された" style="rounded=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontSize=10;align=center;" parent="sec5" vertex="1">
+                    <mxGeometry x="100" y="178" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="tr2" value="真の因果&#xa;&#xa;樹の優しさで初めて&#xa;「虐待は異常」と認識した" style="rounded=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontSize=10;align=center;" parent="sec5" vertex="1">
+                    <mxGeometry x="420" y="178" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="tr3" value="真の「帰りたくない」&#xa;&#xa;「帰ったら犯される」&#xa;という恐怖の叫び" style="rounded=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontSize=10;align=center;" parent="sec5" vertex="1">
+                    <mxGeometry x="760" y="178" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="tr4" value="真の結論&#xa;&#xa;言葉の問題ではなかった。&#xa;精密に聞いても救えなかった。&#xa;社会構造の問題。" style="rounded=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontSize=10;align=center;" parent="sec5" vertex="1">
+                    <mxGeometry x="1100" y="178" width="220" height="70" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="tr_arr1" style="strokeWidth=1;strokeColor=#7B4F9E;" parent="sec5" source="tr1" target="tr2" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="tr_arr2" style="strokeWidth=1;strokeColor=#7B4F9E;" parent="sec5" source="tr2" target="tr3" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="tr_arr3" style="strokeWidth=1;strokeColor=#7B4F9E;" parent="sec5" source="tr3" target="tr4" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+                <!-- 対比の矢印 -->
+                <mxCell id="vs1" style="strokeWidth=1;dashed=1;strokeColor=#999999;" parent="sec5" source="ch4" target="tr3" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="vs2" style="strokeWidth=1;dashed=1;strokeColor=#999999;" parent="sec5" source="ch6" target="tr4" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+                <mxCell id="arr_sec5_6" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#E67E22;" parent="1" source="sec5" target="sec6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+
+                <!-- ====== SECTION 6: 制約条件 ====== -->
+                <mxCell id="sec6" value="⑥ 制約条件 — このシーンが「やってはいけないこと」" style="swimlane;startSize=28;fillColor=#D5E8D4;strokeColor=#28A745;fontStyle=1;fontSize=13;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1540" width="1520" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="con1" value="🚫 虐待の事実を出さない&#xa;&#xa;S4時点で読者は知らない。&#xa;樹も知らない。&#xa;虐待はFB2で初めて明かされる。&#xa;ここで匂わせすぎるとFB2が死ぬ。" style="rounded=1;fillColor=#E8F5E9;strokeColor=#28A745;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec6" vertex="1">
+                    <mxGeometry x="10" y="38" width="280" height="118" as="geometry"/>
+                </mxCell>
+                <mxCell id="con2" value="🚫 樹を泣かせない&#xa;&#xa;泣くのはACT5のために取っておく。&#xa;S4では「泣けない」こと自体が&#xa;樹の特性であり、演出。&#xa;ただし「冷たい人間」に見えてはいけない。" style="rounded=1;fillColor=#E8F5E9;strokeColor=#28A745;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec6" vertex="1">
+                    <mxGeometry x="305" y="38" width="280" height="118" as="geometry"/>
+                </mxCell>
+                <mxCell id="con3" value="🚫 樹に「正しい解釈」をさせない&#xa;&#xa;樹は必ず間違える。&#xa;「言語の問題だった」と結論する。&#xa;ここで「もしかして家庭の問題？」&#xa;と思わせてはいけない。&#xa;そうすると誤信念が成立しない。" style="rounded=1;fillColor=#E8F5E9;strokeColor=#28A745;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec6" vertex="1">
+                    <mxGeometry x="600" y="38" width="280" height="118" as="geometry"/>
+                </mxCell>
+                <mxCell id="con4" value="🚫 直接的な死の描写をしない&#xa;&#xa;あんずが飛び込む場面はない。&#xa;死体も見ない。葬式も（多分）ない。&#xa;全て「報せ」＝言語を通じて知る。&#xa;→ 言語で知る＝樹の世界の文法に合う" style="rounded=1;fillColor=#E8F5E9;strokeColor=#28A745;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec6" vertex="1">
+                    <mxGeometry x="895" y="38" width="280" height="118" as="geometry"/>
+                </mxCell>
+                <mxCell id="con5" value="🚫 感傷的にしない&#xa;&#xa;純文学のトーン。&#xa;メロドラマにしない。&#xa;BGMが聞こえるような&#xa;演出は禁止。&#xa;乾いた筆致で、&#xa;乾いているからこそ痛い。" style="rounded=1;fillColor=#E8F5E9;strokeColor=#28A745;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec6" vertex="1">
+                    <mxGeometry x="1190" y="38" width="280" height="118" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="arr_sec6_7" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#28A745;" parent="1" source="sec6" target="sec7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+
+                <!-- ====== SECTION 7: 未解決の設計問い ====== -->
+                <mxCell id="sec7" value="⑦ 未解決の設計問い — アイデアが必要なポイント" style="swimlane;startSize=28;fillColor=#FCF3CF;strokeColor=#d6b656;fontStyle=1;fontSize=13;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="1750" width="1520" height="340" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="q1" value="【問い1】時間の使い方&#xa;&#xa;S3のデートとS4の報せの間に&#xa;どれくらいの時間を置くか？&#xa;&#xa;a) 翌朝すぐ → 昨日の余韻と直結&#xa;b) 数日後 → 忘れかけた頃に来る残酷さ&#xa;c) 翌朝だが知るのは放課後&#xa;　→ 一日の時間差がASD特性を活かす&#xa;&#xa;時間の長さが衝撃の質を変える。&#xa;「昨日のことなのに」vs&#xa;「もう数日経っていたのに」" style="rounded=1;fillColor=#FFF8E1;strokeColor=#d6b656;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec7" vertex="1">
+                    <mxGeometry x="10" y="38" width="290" height="285" as="geometry"/>
+                </mxCell>
+                <mxCell id="q2" value="【問い2】樹の「処理」をどこまで見せるか&#xa;&#xa;分析ログ形式で内語を書く？&#xa;→ 技巧的すぎるリスク&#xa;&#xa;淡々と行動を描写するだけ？&#xa;→ 内面が見えないリスク&#xa;&#xa;第三の道：&#xa;樹が「何をすべきかわからない」まま&#xa;行動する（or 行動しない）描写？&#xa;&#xa;→ 処理の「途中」を書くのか&#xa;→ 処理の「失敗」を書くのか&#xa;→ 処理の「拒否」を書くのか&#xa;それぞれ全く違うシーンになる" style="rounded=1;fillColor=#FFF8E1;strokeColor=#d6b656;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec7" vertex="1">
+                    <mxGeometry x="315" y="38" width="290" height="285" as="geometry"/>
+                </mxCell>
+                <mxCell id="q3" value="【問い3】誤信念はS4内で言語化するか&#xa;&#xa;a) S4の最後に独白で明示する&#xa;→ 「僕がもっと正確に…」と言わせる&#xa;→ わかりやすいが、説教臭いリスク&#xa;&#xa;b) S4では言語化せず、&#xa;　ACT3冒頭で行動として表れる&#xa;→ 「精密さに没頭する樹」を見せて&#xa;　読者に推論させる&#xa;→ 余韻はあるが伝わらないリスク&#xa;&#xa;c) 半言語化：独り言の断片だけ&#xa;→ 「……言葉が、足りなかった」&#xa;→ 完全な文にならない＝処理途中" style="rounded=1;fillColor=#FFF8E1;strokeColor=#d6b656;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec7" vertex="1">
+                    <mxGeometry x="620" y="38" width="290" height="285" as="geometry"/>
+                </mxCell>
+                <mxCell id="q4" value="【問い4】シーンの「体」は何か&#xa;&#xa;衝撃を与える方法論以前に、&#xa;このシーンの「体（からだ）」＝&#xa;読者が体験する物理的な時間は何か？&#xa;&#xa;a) 朝の登校〜報せ〜帰路（一日もの）&#xa;b) 報せの瞬間だけ（数分の凝縮）&#xa;c) 報せの後の空白（教室/保健室で一人）&#xa;&#xa;★ どの「体」を選ぶかで&#xa;力1〜4のどれが主軸になるか決まる。&#xa;&#xa;a→力1（不可逆性）が主&#xa;b→力4（読者の予感）が主&#xa;c→力3（感情の不在）が主" style="rounded=1;fillColor=#FFF8E1;strokeColor=#d6b656;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="sec7" vertex="1">
+                    <mxGeometry x="925" y="38" width="290" height="285" as="geometry"/>
+                </mxCell>
+                <mxCell id="q5" value="【問い5】&#xa;S3は十分か？&#xa;&#xa;S4が機能する&#xa;ためにS3に&#xa;追加すべき&#xa;要素はないか。&#xa;&#xa;特に：&#xa;・あんずが&#xa;　「何か言おうと&#xa;　して言えない」&#xa;　場面の強化&#xa;・樹が「聞かない」&#xa;　選択の明確化&#xa;・別れ際の&#xa;　最後の言葉" style="rounded=1;fillColor=#FCF3CF;strokeColor=#E67E22;fontSize=9;fontStyle=1;align=left;spacingLeft=8;spacingTop=4;" parent="sec7" vertex="1">
+                    <mxGeometry x="1230" y="38" width="140" height="285" as="geometry"/>
+                </mxCell>
+
+                <!-- ====== SECTION 8: ACT5との対称 ====== -->
+                <mxCell id="arr_sec7_8" style="edgeStyle=orthogonalEdgeStyle;strokeWidth=2;strokeColor=#d6b656;" parent="1" source="sec7" target="sec8" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="sec8" value="⑧ ACT5との対称構造 — S4の全てがACT5で反転する" style="swimlane;startSize=28;fillColor=#D5E8D4;strokeColor=#28A745;fontStyle=1;fontSize=13;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="2130" width="1520" height="200" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="sym1" value="S4: あんずの死の報せ" style="swimlane;startSize=22;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=11;" parent="sec8" vertex="1">
+                    <mxGeometry x="10" y="38" width="700" height="148" as="geometry"/>
+                </mxCell>
+                <mxCell id="sym1a" value="・報せを受ける → 動けない&#xa;・分析する → 間違った結論&#xa;・泣かない → 感情が処理できない&#xa;・「帰りたくない」を思い出す → 遅すぎる&#xa;・一人で教室/保健室にいる → 孤立&#xa;・「僕がもっと正確に言葉を使えていたら」→ 誤信念" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=8;" parent="sym1" vertex="1">
+                    <mxGeometry x="5" y="26" width="690" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="sym2" value="ACT5: 秀斗の自殺未遂の報せ" style="swimlane;startSize=22;fillColor=#D5E8D4;strokeColor=#28A745;fontSize=11;fontStyle=1;" parent="sec8" vertex="1">
+                    <mxGeometry x="770" y="38" width="700" height="148" as="geometry"/>
+                </mxCell>
+                <mxCell id="sym2a" value="・報せを受ける → 走り出す（初めて論理より先に体が動く）&#xa;・分析しない → 「わからないけど行く」&#xa;・泣く？ → 感情が論理を突き破る&#xa;・あんずの顔が浮かぶ → 「今度は間に合うかもしれない」&#xa;・秀斗の隣に座る → 寄り添い&#xa;・「辛かったやろ」→ 父の①（受容）の回収" style="text;strokeColor=none;fillColor=none;fontSize=10;align=left;spacingLeft=8;" parent="sym2" vertex="1">
+                    <mxGeometry x="5" y="26" width="690" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="sym_arr" value="全て反転" style="strokeWidth=3;strokeColor=#28A745;fontSize=12;fontStyle=1;" parent="sec8" source="sym1" target="sym2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

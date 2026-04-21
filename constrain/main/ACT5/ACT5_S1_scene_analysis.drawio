@@ -1,0 +1,193 @@
+<mxfile host="65bd71144e">
+    <diagram id="act5-s1-analysis" name="S1 シーン分析マップ">
+        <mxGraphModel dx="2070" dy="2120" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="&lt;b&gt;ACT5-SEQ1-S1 シーン分析マップ&lt;/b&gt;&lt;br&gt;「描かねばならないもの」「描けていないもの」「どうたどれるか」" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=16;fontColor=#1B3A5C;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="-30" width="700" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="lane1_title" value="&lt;b&gt;ACT5で描かねばならないもの（McKee必須条件）&lt;/b&gt;" style="text;html=1;align=left;fontSize=14;fontColor=#1B4332;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="40" width="500" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="must1" value="&lt;b&gt;① 価値軸の決着&lt;/b&gt;&lt;br&gt;&lt;br&gt;理解すれば救える&lt;br&gt;→ 理解しても救えない&lt;br&gt;→ &lt;font color=&quot;#C0392B&quot;&gt;&lt;b&gt;理解できなくても寄り添える&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;S1での位置: まだ②の段階。&lt;br&gt;「正しい言葉がない」ことに&lt;br&gt;初めて直面する" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontColor=#1B4332;fontSize=10;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="80" width="220" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="must2" value="&lt;b&gt;② 統制概念の体現&lt;/b&gt;&lt;br&gt;&lt;br&gt;「精密さで世界を守ろうとした&lt;br&gt;人間が、誤解と傷でできた&lt;br&gt;社会を、完全な理解なしに&lt;br&gt;愛せるようになる」&lt;br&gt;&lt;br&gt;S1での位置: 精密さが&lt;br&gt;&lt;font color=&quot;#C0392B&quot;&gt;完全に無力&lt;/font&gt;であることの証明" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontColor=#1B4332;fontSize=10;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="80" width="220" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="must3" value="&lt;b&gt;③ 因果連鎖の完結&lt;/b&gt;&lt;br&gt;&lt;br&gt;ACT1: 父の論理を学ぶ&lt;br&gt;ACT2: あんずを救えなかった&lt;br&gt;ACT3: 精密さ=救済と確信&lt;br&gt;ACT4: 善意の教育が人を壊す&lt;br&gt;&lt;font color=&quot;#C0392B&quot;&gt;&lt;b&gt;ACT5: 全てが一点に交わる&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;S1は「あんずの時と同じ状況」&lt;br&gt;が再来する瞬間" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontColor=#1B4332;fontSize=10;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="510" y="80" width="220" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="must4" value="&lt;b&gt;④ S1固有のvalue_change&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;axis:&lt;/b&gt; 理性⇔本能&lt;br&gt;&lt;b&gt;from:&lt;/b&gt; 鏡像認識後の立ちすくみ&lt;br&gt;&lt;b&gt;to:&lt;/b&gt; &lt;font color=&quot;#C0392B&quot;&gt;論理より先に体が動く（初めて）&lt;/font&gt;&lt;br&gt;&lt;br&gt;「走る」= 樹が28年間で&lt;br&gt;一度も経験したことのない&lt;br&gt;身体先行の行動" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontColor=#1B4332;fontSize=10;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="750" y="80" width="220" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="must5" value="&lt;b&gt;⑤ 期待と結果の最大ギャップ&lt;/b&gt;&lt;br&gt;&lt;br&gt;読者の期待: 樹なら論理的に&lt;br&gt;正しいことを言って救う&lt;br&gt;&lt;br&gt;結果: &lt;font color=&quot;#C0392B&quot;&gt;何も言えない&lt;/font&gt;&lt;br&gt;精密な言語の持ち主が&lt;br&gt;言葉を失う = 最大の反転" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontColor=#1B4332;fontSize=10;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="990" y="80" width="220" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="must6" value="&lt;b&gt;⑥ あんずとの構造的エコー&lt;/b&gt;&lt;br&gt;&lt;br&gt;ACT2: あんずの自死&lt;br&gt;→ 報せを聞いた時にはもう遅い&lt;br&gt;→ 「もっと厳密だったら」&lt;br&gt;&lt;br&gt;ACT5: 秀斗の自殺企図&lt;br&gt;→ &lt;font color=&quot;#C0392B&quot;&gt;今度はまだ間に合う&lt;/font&gt;&lt;br&gt;→ だが「厳密さ」では止められない" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontColor=#3D1F5C;fontSize=10;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="1230" y="80" width="220" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="lane2_title" value="&lt;b&gt;たたき台の脚本で描けていないもの&lt;/b&gt;" style="text;html=1;align=left;fontSize=14;fontColor=#C0392B;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="290" width="500" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="fail1" value="&lt;b&gt;❌ 「走る」が消えている&lt;/b&gt;&lt;br&gt;&lt;br&gt;現脚本: 秀斗が樹の家に来る&lt;br&gt;→ 樹は走る必要がない&lt;br&gt;→ value_change④の核心が不在&lt;br&gt;&lt;br&gt;「体が先に動いた」を描くには&lt;br&gt;物理的に&lt;b&gt;距離&lt;/b&gt;が必要" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontColor=#5C1B1B;fontSize=10;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="330" width="220" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="fail2" value="&lt;b&gt;❌ S2の要素を先食い&lt;/b&gt;&lt;br&gt;&lt;br&gt;S1脚本にケニア・シュモクバエ・&lt;br&gt;和解が全て入っている&lt;br&gt;→ S2と重複して2シーンに分ける&lt;br&gt;   意味がなくなる&lt;br&gt;&lt;br&gt;S1 = 問題提起&lt;br&gt;S2 = 解決&lt;br&gt;この分離が必要" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontColor=#5C1B1B;fontSize=10;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="330" width="220" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="fail3" value="&lt;b&gt;❌ 樹のジレンマが不在&lt;/b&gt;&lt;br&gt;&lt;br&gt;現脚本の樹:&lt;br&gt;焦る → 変なこと言う → 結果オーライ&lt;br&gt;&lt;br&gt;必要なのは:&lt;br&gt;• 選択肢が複数ある&lt;br&gt;• どちらも何かを失う&lt;br&gt;• &lt;font color=&quot;#C0392B&quot;&gt;選べない苦しみ&lt;/font&gt;が描かれる&lt;br&gt;&lt;br&gt;偶然ではなく選択で物語は動く" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontColor=#5C1B1B;fontSize=10;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="510" y="330" width="220" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="fail4" value="&lt;b&gt;❌ 秀斗の矛盾が単純化&lt;/b&gt;&lt;br&gt;&lt;br&gt;現脚本: 殺意→殺せない→自殺&lt;br&gt;→ 動機が一直線すぎる&lt;br&gt;&lt;br&gt;秀斗の矛盾（設定007）:&lt;br&gt;「憎んでいるのに認められたい」&lt;br&gt;「殺したいのに止めてほしい」&lt;br&gt;&lt;br&gt;この矛盾が露呈する瞬間が必要" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontColor=#6E3B0A;fontSize=10;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="750" y="330" width="220" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="fail5" value="&lt;b&gt;❌ 鑑識眼: 陳腐さの検出&lt;/b&gt;&lt;br&gt;&lt;br&gt;• 包丁→手が震える→涙 = 紋切り型&lt;br&gt;• 「死ぬくらいなら○○」= TV的&lt;br&gt;• 笑い出して和解 = ご都合主義&lt;br&gt;• 「恨んでたんだろ」「なんで？」&lt;br&gt;   = 説明的すぎる台詞&lt;br&gt;&lt;br&gt;McKee鑑識眼: 嘘くさくないか？" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontColor=#5C1B1B;fontSize=10;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="990" y="330" width="220" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="fail6" value="&lt;b&gt;❌ あんずのエコーが弱い&lt;/b&gt;&lt;br&gt;&lt;br&gt;「あんずのトラウマを思い出し、&lt;br&gt;（なんかいいアクション）する」&lt;br&gt;→ 具体性ゼロ&lt;br&gt;&lt;br&gt;あんずの死は樹を走らせる&lt;br&gt;&lt;b&gt;燃料&lt;/b&gt;であり、&lt;br&gt;ACT5の全因果の起点" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontColor=#3D1F5C;fontSize=10;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="1230" y="330" width="220" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="f1m4" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#C0392B;strokeWidth=1;dashed=1;entryX=0.5;entryY=1;exitX=0.5;exitY=0;" parent="1" source="fail1" target="must4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f3m5" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#C0392B;strokeWidth=1;dashed=1;entryX=0.5;entryY=1;exitX=0.5;exitY=0;" parent="1" source="fail3" target="must5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f4m5" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#E67E22;strokeWidth=1;dashed=1;entryX=0.7;entryY=1;exitX=0.5;exitY=0;" parent="1" source="fail4" target="must5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f6m6" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#7B4F9E;strokeWidth=1;dashed=1;entryX=0.5;entryY=1;exitX=0.5;exitY=0;" parent="1" source="fail6" target="must6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="lane3_title" value="&lt;b&gt;改善シナリオ: S1 ビート構造案&lt;/b&gt;" style="text;html=1;align=left;fontSize=14;fontColor=#4A7FB5;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="530" width="500" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="ph1_box" value="&lt;b&gt;Phase 1: 報せ&lt;/b&gt;&lt;br&gt;━━━━━━━━━━&lt;br&gt;&lt;br&gt;樹の自室。ACT4の鏡像認識から&lt;br&gt;数日。何もできず立ちすくんでいる。&lt;br&gt;&lt;br&gt;スマホが鳴る。&lt;br&gt;「秀斗が橋の上にいる」&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#C0392B&quot;&gt;&lt;b&gt;★ 電話を最後まで聞く前に走り出す&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;あんずの顔が浮かぶ。&lt;br&gt;「あの時は間に合わなかった」&lt;br&gt;「今度は——」&lt;br&gt;&lt;br&gt;&lt;b&gt;value_change発火点:&lt;/b&gt;&lt;br&gt;なぜ走っているか自分でわからない&lt;br&gt;= 理性→本能の転換" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontColor=#1B3A5C;fontSize=10;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="570" width="260" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="ph2_box" value="&lt;b&gt;Phase 2: 対峙&lt;/b&gt;&lt;br&gt;━━━━━━━━━━&lt;br&gt;&lt;br&gt;橋の上。秀斗が欄干の外側にいる。&lt;br&gt;樹が息を切らして到着。&lt;br&gt;&lt;br&gt;&lt;b&gt;秀斗の呪詛（3層構造）:&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#E67E22&quot;&gt;第1層: 怒り&lt;/font&gt;&lt;br&gt;「お前のレビューは父親の採点と&lt;br&gt;同じだった。正しいから逃げ場がない」&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#E67E22&quot;&gt;第2層: 嫉妬の暴露&lt;/font&gt;&lt;br&gt;「お前の親父は百点じゃなくても&lt;br&gt;いいって笑ってた。俺の家には&lt;br&gt;その法律がなかった」&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#C0392B&quot;&gt;第3層: 致命的な質問&lt;/font&gt;&lt;br&gt;「お前、俺を人間だと思ってたか？&lt;br&gt;それとも直すべきバグか？」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontColor=#6E3B0A;fontSize=10;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="570" width="280" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="ph3_box" value="&lt;b&gt;Phase 3: 樹のジレンマ&lt;/b&gt;&lt;br&gt;━━━━━━━━━━&lt;br&gt;&lt;br&gt;「バグだと思ってたか？」に対して&lt;br&gt;樹は答えを探す——&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#C0392B&quot;&gt;&lt;b&gt;正直に振り返ると&lt;br&gt;「バグだと思っていた」に近い&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;━━━━━━━━━━" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontColor=#1B3A5C;fontSize=10;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="630" y="570" width="260" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="optA" value="&lt;b&gt;選択肢A: 嘘をつく&lt;/b&gt;&lt;br&gt;「そんなことない」&lt;br&gt;&lt;br&gt;→ 秀斗にはわかる&lt;br&gt;→ 精密な人間の嘘は&lt;br&gt;   余計に残酷&lt;br&gt;→ 「やっぱり嘘つきだ」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0E0;strokeColor=#C0392B;fontColor=#5C1B1B;fontSize=9;align=left;spacingLeft=6;" parent="1" vertex="1">
+                    <mxGeometry x="630" y="760" width="120" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="optB" value="&lt;b&gt;選択肢B: 正直に言う&lt;/b&gt;&lt;br&gt;「……わからない」&lt;br&gt;&lt;br&gt;→ 秀斗の怒りを確認&lt;br&gt;→ 「やっぱりそうだよな」&lt;br&gt;→ 欄干から身を&lt;br&gt;   乗り出す" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0E0;strokeColor=#C0392B;fontColor=#5C1B1B;fontSize=9;align=left;spacingLeft=6;" parent="1" vertex="1">
+                    <mxGeometry x="770" y="760" width="120" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="optC" value="&lt;b&gt;実際に起きること:&lt;/b&gt;&lt;br&gt;&lt;b&gt;選択肢C: 言葉が出ない&lt;/b&gt;&lt;br&gt;&lt;br&gt;A も B も選べない&lt;br&gt;初めて「正しい答え」が&lt;br&gt;存在しない状況に放り込まれる&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#C0392B&quot;&gt;&lt;b&gt;→ 言葉ではなく&lt;br&gt;   体で止める&lt;/b&gt;&lt;/font&gt;&lt;br&gt;（腕を掴む。ただ掴む）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=2;fontColor=#1B3A5C;fontSize=9;align=left;spacingLeft=6;" parent="1" vertex="1">
+                    <mxGeometry x="920" y="570" width="160" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="ph3optA" style="strokeColor=#C0392B;strokeWidth=1;exitX=0.3;exitY=1;entryX=0.5;entryY=0;" parent="1" source="ph3_box" target="optA" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ph3optB" style="strokeColor=#C0392B;strokeWidth=1;exitX=0.7;exitY=1;entryX=0.5;entryY=0;" parent="1" source="ph3_box" target="optB" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ph3optC" style="strokeColor=#4A7FB5;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="ph3_box" target="optC" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ph12" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#4A7FB5;strokeWidth=2;exitX=1;exitY=0.3;entryX=0;entryY=0.3;" parent="1" source="ph1_box" target="ph2_box" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ph23" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#4A7FB5;strokeWidth=2;exitX=1;exitY=0.3;entryX=0;entryY=0.3;" parent="1" source="ph2_box" target="ph3_box" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ph4_box" value="&lt;b&gt;Phase 4: S1の着地&lt;/b&gt;&lt;br&gt;━━━━━━━━━━&lt;br&gt;&lt;br&gt;樹は秀斗の腕を掴んでいる。&lt;br&gt;秀斗「離せよ」&lt;br&gt;秀斗「お前に止める権利が&lt;br&gt;あると思ってんのか」&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#C0392B&quot;&gt;&lt;b&gt;S1はここで切る&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;物理的に止めた。&lt;br&gt;だが言葉では何も止められていない。&lt;br&gt;&lt;br&gt;→ S2への完璧なセットアップ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=2;fontColor=#1B3A5C;fontSize=10;align=left;spacingLeft=8;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="920" y="780" width="240" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="optC_ph4" style="strokeColor=#4A7FB5;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="optC" target="ph4_box" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="s2_connect" value="&lt;b&gt;→ S2へ&lt;/b&gt;&lt;br&gt;━━━━━━━━━━&lt;br&gt;&lt;br&gt;S1末尾: 二人とも地面に崩れている。沈黙。&lt;br&gt;&lt;br&gt;S2冒頭: 樹は「何を言えばいいかわからない」&lt;br&gt;（初めて「正解の言葉がない」状況）&lt;br&gt;&lt;br&gt;→ スマホでナイロビ行きを検索&lt;br&gt;→ 「シュモクバエ、見に行かん？」&lt;br&gt;→ 「俺もわからん」（初めて「わからない」と言う）&lt;br&gt;→ ケニア行き航空券を買う&lt;br&gt;→ 「辛かったやろ」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;strokeWidth=2;fontColor=#1B4332;fontSize=10;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="780" width="290" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="ph4_s2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#28A745;strokeWidth=3;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="ph4_box" target="s2_connect" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="lane5_title" value="&lt;b&gt;秀斗の内面（3層の矛盾）&lt;/b&gt;" style="text;html=1;align=left;fontSize=14;fontColor=#E67E22;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="530" width="300" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="shuto_surface" value="&lt;b&gt;表面: 殺意&lt;/b&gt;&lt;br&gt;「お前が俺を壊した」&lt;br&gt;「お前を殺しに来た」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontColor=#6E3B0A;fontSize=10;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="570" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="shuto_mid" value="&lt;b&gt;中層: 嫉妬&lt;/b&gt;&lt;br&gt;「お前の家には別の法律があった」&lt;br&gt;「愛され方が違った」" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontColor=#6E3B0A;fontSize=10;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="1360" y="570" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="shuto_deep" value="&lt;b&gt;深層: 承認欲求&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#C0392B&quot;&gt;「この人に認められれば&lt;br&gt;父を超えられる」&lt;/font&gt;&lt;br&gt;= 止めてほしい" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0E0;strokeColor=#C0392B;strokeWidth=2;fontColor=#5C1B1B;fontSize=10;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="1280" y="660" width="140" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="shuto_s_m" style="strokeColor=#E67E22;strokeWidth=1;exitX=0.5;exitY=1;entryX=0;entryY=0;" parent="1" source="shuto_surface" target="shuto_deep" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="shuto_m_d" style="strokeColor=#E67E22;strokeWidth=1;exitX=0.5;exitY=1;entryX=1;entryY=0;" parent="1" source="shuto_mid" target="shuto_deep" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="shuto_note" value="&lt;i&gt;秀斗は連絡が樹に届くルートを&lt;br&gt;無意識に残している&lt;br&gt;= 止めてほしいから&lt;br&gt;だが本人は気づいていない&lt;/i&gt;" style="text;html=1;align=center;fontSize=9;fontColor=#6E3B0A;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1220" y="745" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="lane6_title" value="&lt;b&gt;S1 Before/After 対比（scene-mastery）&lt;/b&gt;" style="text;html=1;align=left;fontSize=14;fontColor=#1B3A5C;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="920" width="400" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="before_box" value="&lt;b&gt;BEFORE&lt;/b&gt;&lt;br&gt;━━━━━━━━━━&lt;br&gt;&lt;br&gt;&lt;b&gt;樹:&lt;/b&gt; 鏡像認識後、立ちすくんでいる&lt;br&gt;（ACT4末の延長。思考の中にいる）&lt;br&gt;&lt;br&gt;&lt;b&gt;秀斗:&lt;/b&gt; 橋の欄干の外側にいる&lt;br&gt;（靴だけ揃えて来た。設定012）&lt;br&gt;&lt;br&gt;&lt;b&gt;関係:&lt;/b&gt; 加害者—被害者&lt;br&gt;（樹は加害を自覚しているが&lt;br&gt;どうしていいかわからない）&lt;br&gt;&lt;br&gt;&lt;b&gt;言葉:&lt;/b&gt; まだ機能すると信じている&lt;br&gt;（正しい言葉を探している）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontColor=#1B3A5C;fontSize=10;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="960" width="280" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="after_box" value="&lt;b&gt;AFTER&lt;/b&gt;&lt;br&gt;━━━━━━━━━━&lt;br&gt;&lt;br&gt;&lt;b&gt;樹:&lt;/b&gt; 体が先に動いた（走った）&lt;br&gt;→ だが言葉は出なかった&lt;br&gt;→ 体で止めたが心では止められてない&lt;br&gt;&lt;br&gt;&lt;b&gt;秀斗:&lt;/b&gt; 欄干の内側に引き戻された&lt;br&gt;→ だが呪詛は止まっていない&lt;br&gt;→ むしろ矛盾が露呈して混乱&lt;br&gt;&lt;br&gt;&lt;b&gt;関係:&lt;/b&gt; 加害者—被害者のまま&lt;br&gt;（ただし物理的には繋がっている）&lt;br&gt;&lt;br&gt;&lt;b&gt;言葉:&lt;/b&gt; &lt;font color=&quot;#C0392B&quot;&gt;&lt;b&gt;無力であることが証明された&lt;/b&gt;&lt;/font&gt;&lt;br&gt;（正しい言葉は存在しない）" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontColor=#6E3B0A;fontSize=10;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="430" y="960" width="280" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_arrow" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#C0392B;strokeWidth=3;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="before_box" target="after_box" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ba_label" value="&lt;b&gt;S1の変換&lt;/b&gt;&lt;br&gt;理性 → 本能&lt;br&gt;（だが不完全。S2で完結）" style="text;html=1;align=center;fontSize=10;fontColor=#C0392B;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="1050" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="place_title" value="&lt;b&gt;場所の選択&lt;/b&gt;" style="text;html=1;align=left;fontSize=14;fontColor=#1B3A5C;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="920" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="place_home" value="&lt;b&gt;案A: 樹の家の前&lt;/b&gt;&lt;br&gt;（現たたき台）&lt;br&gt;&lt;br&gt;× 「走る」が描けない&lt;br&gt;× あんずエコーが弱い&lt;br&gt;× 秀斗の前夜設定012が&lt;br&gt;   活かせない&lt;br&gt;○ 親密性はある" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontColor=#5C1B1B;fontSize=10;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="960" width="180" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="place_bridge" value="&lt;b&gt;案B: 橋の上&lt;/b&gt;&lt;br&gt;（改善案）&lt;br&gt;&lt;br&gt;○ 「走る」が自然に描ける&lt;br&gt;○ あんずの飛び込みとエコー&lt;br&gt;○ 設定012「靴だけ揃える」&lt;br&gt;○ 高所=落下のイメージ&lt;br&gt;○ 物理的距離=緊張" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;strokeWidth=2;fontColor=#1B4332;fontSize=10;align=left;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="1010" y="960" width="180" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_title" value="&lt;b&gt;凡例&lt;/b&gt;" style="text;html=1;align=left;fontSize=11;fontColor=#1B3A5C;" parent="1" vertex="1">
+                    <mxGeometry x="1280" y="1020" width="50" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="leg1" value="" style="rounded=1;fillColor=#D4EDDA;strokeColor=#28A745;" parent="1" vertex="1">
+                    <mxGeometry x="1280" y="1045" width="15" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="leg1t" value="確定・達成" style="text;html=1;fontSize=9;fontColor=#1B3A5C;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1300" y="1043" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="leg2" value="" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;" parent="1" vertex="1">
+                    <mxGeometry x="1280" y="1065" width="15" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="leg2t" value="樹（主人公）" style="text;html=1;fontSize=9;fontColor=#1B3A5C;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1300" y="1063" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="leg3" value="" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;" parent="1" vertex="1">
+                    <mxGeometry x="1280" y="1085" width="15" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="leg3t" value="秀斗（A男）" style="text;html=1;fontSize=9;fontColor=#1B3A5C;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1300" y="1083" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="leg4" value="" style="rounded=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;" parent="1" vertex="1">
+                    <mxGeometry x="1280" y="1105" width="15" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="leg4t" value="あんず（B子）" style="text;html=1;fontSize=9;fontColor=#1B3A5C;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1300" y="1103" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="leg5" value="" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;" parent="1" vertex="1">
+                    <mxGeometry x="1280" y="1125" width="15" height="15" as="geometry"/>
+                </mxCell>
+                <mxCell id="leg5t" value="欠落・問題" style="text;html=1;fontSize=9;fontColor=#1B3A5C;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="1300" y="1123" width="80" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

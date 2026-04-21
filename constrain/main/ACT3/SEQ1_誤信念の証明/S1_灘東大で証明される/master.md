@@ -16,5 +16,5 @@ value_change:
 
 # S1: 灘東大で証明される
 
-- [[togaki]] — ト書き
+- [[kyakuhon]] — 脚本
 - [[omote]] — 表視点（僕・樹）

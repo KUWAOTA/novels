@@ -1,0 +1,117 @@
+<mxGraphModel dx="2200" dy="3000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="3000" math="0" shadow="0">
+    <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="&lt;b style='font-size:20px'&gt;ACT5-SEQ2-S2 シーン分析マップ&lt;/b&gt;&lt;br&gt;&lt;b style='font-size:16px;color:#C0392B'&gt;「理解できなくても寄り添う」選択 = STORY CLIMAX&lt;/b&gt;&lt;br&gt;&lt;br&gt;ID: ACT5-SEQ2-S2 | climax: STORY | 表視点: 樹&lt;br&gt;価値変化: 理解⇔受容 | from:「理解できなければ救えない」→ to:「理解できなくても寄り添える」" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#1B3A5C;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+            <mxGeometry x="300" y="20" width="1600" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="sec1_title" value="&lt;b&gt;SECTION 1: このシーンが達成すべきこと（物語全体のクライマックス）&lt;/b&gt;" style="text;html=1;align=left;fontSize=15;fontColor=#1B4332;fontStyle=1;" parent="1" vertex="1">
+            <mxGeometry x="30" y="160" width="800" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="must1" value="&lt;b&gt;① 価値軸の最終決着&lt;/b&gt;&lt;br&gt;&lt;br&gt;理解すれば救える&lt;br&gt;→ 理解しても救えない&lt;br&gt;→ &lt;font color='#C0392B'&gt;&lt;b&gt;理解できなくても寄り添える&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;S1で「正解の言葉がない」に直面。&lt;br&gt;S2で「言葉がなくても行動できる」&lt;br&gt;に到達する。&lt;br&gt;&lt;br&gt;全5ACTの頂点。ここで決着。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontColor=#1B4332;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="30" y="200" width="260" height="220" as="geometry"/>
+        </mxCell>
+        <mxCell id="must2" value="&lt;b&gt;② 統制概念の体現&lt;/b&gt;&lt;br&gt;&lt;br&gt;「精密さで世界を守ろうとした&lt;br&gt;人間が、誤解と傷でできた&lt;br&gt;社会を、完全な理解なしに&lt;br&gt;愛せるようになる」&lt;br&gt;&lt;br&gt;&lt;font color='#C0392B'&gt;&lt;b&gt;「俺もわからん」= 精密さの放棄&lt;/b&gt;&lt;/font&gt;&lt;br&gt;= 理解を手放して寄り添う&lt;br&gt;= 統制概念そのもの" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontColor=#1B4332;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="310" y="200" width="260" height="220" as="geometry"/>
+        </mxCell>
+        <mxCell id="must3" value="&lt;b&gt;③ 父の①の回収&lt;/b&gt;&lt;br&gt;&lt;br&gt;ACT1-S4で父から学んだ仮説の①&lt;br&gt;= 受容のことば&lt;br&gt;&lt;br&gt;&lt;font color='#C0392B'&gt;&lt;b&gt;「辛かったやろ」&lt;/b&gt;&lt;/font&gt;&lt;br&gt;= 関西弁に戻る&lt;br&gt;= 論理の鎧が外れる&lt;br&gt;= 父の教えの中で唯一「論理でない」部分&lt;br&gt;&lt;br&gt;ACT1で種を蒔き、ACT5で花開く&lt;br&gt;最長の因果連鎖" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontColor=#1B3A5C;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="590" y="200" width="260" height="220" as="geometry"/>
+        </mxCell>
+        <mxCell id="must4" value="&lt;b&gt;④ あんずのエコー回収&lt;/b&gt;&lt;br&gt;&lt;br&gt;★ あんずはACT2で既にACT5の&lt;br&gt;答えを体現していた:&lt;br&gt;&lt;br&gt;&lt;font color='#7B4F9E'&gt;&lt;b&gt;教室での沈黙 = 言語なき共存&lt;/b&gt;&lt;/font&gt;&lt;br&gt;= 「理解できなくても寄り添う」&lt;br&gt;&lt;br&gt;あんずのフラッシュバック:&lt;br&gt;教室で黙って隣にいた記憶&lt;br&gt;「…優しいね」&lt;br&gt;&lt;br&gt;樹がやっと&lt;b&gt;あんずと同じこと&lt;/b&gt;を&lt;br&gt;できるようになる瞬間" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontColor=#3D1F5C;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="870" y="200" width="270" height="260" as="geometry"/>
+        </mxCell>
+        <mxCell id="must5" value="&lt;b&gt;⑤ シュモクバエの解決&lt;/b&gt;&lt;br&gt;&lt;br&gt;「シュモクバエ、見に行かん？」&lt;br&gt;= PROLOGUEからの最長伏線回収&lt;br&gt;&lt;br&gt;• 子供の頃の幻想 → 大人の行動&lt;br&gt;• 論理では説明できない行動&lt;br&gt;• 航空券を買う = 理性の放棄&lt;br&gt;&lt;br&gt;&lt;font color='#28A745'&gt;&lt;b&gt;理解を求めて始まった物語が&lt;br&gt;「わからないまま行く」で&lt;br&gt;クライマックスを迎える&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontColor=#1B4332;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="1160" y="200" width="270" height="240" as="geometry"/>
+        </mxCell>
+        <mxCell id="must6" value="&lt;b&gt;⑥ 秀斗との和解&lt;/b&gt;&lt;br&gt;&lt;br&gt;秀斗「お前……頭おかしいんか」&lt;br&gt;→ 力が抜ける&lt;br&gt;→ ハグ&lt;br&gt;&lt;br&gt;「仕返しだと思ってた」&lt;br&gt;→ 樹「え？何で？」&lt;br&gt;= 樹の無自覚が逆に救いになる&lt;br&gt;&lt;br&gt;&lt;font color='#E67E22'&gt;&lt;b&gt;秀斗の矛盾（憎しみ＋渇望）が&lt;br&gt;樹の「わからなさ」で溶ける&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontColor=#6E3B0A;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="1450" y="200" width="270" height="240" as="geometry"/>
+        </mxCell>
+        <mxCell id="sec2_title" value="&lt;b&gt;SECTION 2: 現在の課題 / 注意点&lt;/b&gt;" style="text;html=1;align=left;fontSize=15;fontColor=#C0392B;fontStyle=1;" parent="1" vertex="1">
+            <mxGeometry x="30" y="490" width="600" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="issue1" value="&lt;b&gt;⚠ 陳腐さ回避が最重要課題&lt;/b&gt;&lt;br&gt;&lt;br&gt;クライマックスで最も危険なのは&lt;br&gt;「TV的な感動シーン」に堕すこと&lt;br&gt;&lt;br&gt;回避すべきパターン:&lt;br&gt;• 涙 → ハグ → 音楽的盛り上がり&lt;br&gt;• 「お前は一人じゃない」的セリフ&lt;br&gt;• 全てが綺麗に解決する安易さ&lt;br&gt;&lt;br&gt;&lt;font color='#C0392B'&gt;&lt;b&gt;McKee鑑識眼: 嘘くさくないか？&lt;/b&gt;&lt;/font&gt;&lt;br&gt;→ 不器用さ、沈黙、ズレを残す" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontColor=#5C1B1B;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="30" y="530" width="280" height="240" as="geometry"/>
+        </mxCell>
+        <mxCell id="issue2" value="&lt;b&gt;⚠ S1との分離を維持&lt;/b&gt;&lt;br&gt;&lt;br&gt;S1 = 問題提起（走る、対峙、言葉を失う）&lt;br&gt;S2 = 解決（言葉なしで行動する）&lt;br&gt;&lt;br&gt;S1のビート構造案では:&lt;br&gt;・秀斗の自殺企図 → 樹が走る&lt;br&gt;・対峙 → 言葉が出ない&lt;br&gt;・沈黙で終わる&lt;br&gt;&lt;br&gt;S2はその沈黙の&lt;b&gt;後&lt;/b&gt;から始まる&lt;br&gt;&lt;font color='#4A7FB5'&gt;&lt;b&gt;場所: S1の橋から移動後？&lt;br&gt;時間経過をどう処理するか&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontColor=#5C1B1B;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="340" y="530" width="280" height="260" as="geometry"/>
+        </mxCell>
+        <mxCell id="issue3" value="&lt;b&gt;⚠ 関西弁の扱い&lt;/b&gt;&lt;br&gt;&lt;br&gt;「辛かったやろ」= 関西弁に戻る&lt;br&gt;= 論理の鎧が外れた証拠&lt;br&gt;&lt;br&gt;物語の大半で樹は標準語。&lt;br&gt;ここで初めて関西弁が出る。&lt;br&gt;&lt;br&gt;課題:&lt;br&gt;• 読者が関西弁の意味に気づくか？&lt;br&gt;• ACT1で関西弁→標準語の変化を&lt;br&gt;  描いておく必要がある&lt;br&gt;• さりげなく、でも確実に伝える&lt;br&gt;&lt;br&gt;&lt;font color='#4A7FB5'&gt;&lt;b&gt;秀斗は大阪出身なので&lt;br&gt;関西弁の意味がわかるはず&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontColor=#1B3A5C;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="650" y="530" width="280" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="issue4" value="&lt;b&gt;⚠ テキスト未執筆&lt;/b&gt;&lt;br&gt;&lt;br&gt;脚本（確定ディテール）は存在するが&lt;br&gt;本文は未執筆。&lt;br&gt;&lt;br&gt;脚本の確定要素:&lt;br&gt;✅ 「シュモクバエ、見に行かん？」&lt;br&gt;✅ 「俺もわからん」&lt;br&gt;✅ 航空券を買う&lt;br&gt;✅ 「辛かったやろ」&lt;br&gt;✅ 秀斗のハグ&lt;br&gt;✅ 「仕返しだと思ってた」&lt;br&gt;&lt;br&gt;&lt;font color='#C0392B'&gt;&lt;b&gt;執筆時の最大課題:&lt;br&gt;ビート間の「空気」をどう書くか&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=#856404;fontColor=#856404;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="960" y="530" width="280" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_i1_m2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#C0392B;strokeWidth=1;dashed=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" parent="1" source="issue1" target="must2" edge="1">
+            <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_i2_m1" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#C0392B;strokeWidth=1;dashed=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" parent="1" source="issue2" target="must1" edge="1">
+            <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="sec3_title" value="&lt;b&gt;SECTION 3: ビート構造案 / 確定脚本フロー&lt;/b&gt;" style="text;html=1;align=left;fontSize=15;fontColor=#4A7FB5;fontStyle=1;" parent="1" vertex="1">
+            <mxGeometry x="30" y="850" width="600" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="ph1" value="&lt;b&gt;Phase 1: 沈黙の中で&lt;/b&gt;&lt;br&gt;━━━━━━━━━━━━&lt;br&gt;&lt;br&gt;S1の対峙の後。&lt;br&gt;何を言えばいいかわからない。&lt;br&gt;&lt;br&gt;&lt;font color='#C0392B'&gt;&lt;b&gt;初めて「正解の言葉がない」状況&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;樹の28年間の武器（精密な言語）が&lt;br&gt;完全に無力であることの体験。&lt;br&gt;&lt;br&gt;沈黙。長い沈黙。&lt;br&gt;この沈黙こそがS2の始まり。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontColor=#1B3A5C;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="30" y="900" width="280" height="250" as="geometry"/>
+        </mxCell>
+        <mxCell id="ph2" value="&lt;b&gt;Phase 2: スマホ検索&lt;/b&gt;&lt;br&gt;━━━━━━━━━━━━&lt;br&gt;&lt;br&gt;言葉が出ない代わりに、&lt;br&gt;スマホでナイロビ行きを検索。&lt;br&gt;&lt;font color='#C0392B'&gt;&lt;b&gt;震える手で。&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;論理では説明できない行動。&lt;br&gt;なぜケニアなのか自分でもわからない。&lt;br&gt;→ シュモクバエが子供の頃からの&lt;br&gt;   無意識の錨だった。&lt;br&gt;&lt;br&gt;言葉の代わりに&lt;b&gt;行動&lt;/b&gt;が先に出る&lt;br&gt;= S1の「走る」と同じ構造" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontColor=#1B3A5C;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="340" y="900" width="280" height="270" as="geometry"/>
+        </mxCell>
+        <mxCell id="ph3" value="&lt;b&gt;Phase 3: 核心のセリフ&lt;/b&gt;&lt;br&gt;━━━━━━━━━━━━&lt;br&gt;&lt;br&gt;&lt;font color='#C0392B'&gt;&lt;b&gt;「シュモクバエ、見に行かん？」&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color='#C0392B'&gt;&lt;b&gt;「俺もわからん」&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;★ 初めて「わからない」と言う&lt;br&gt;= 樹の変容の核心&lt;br&gt;&lt;br&gt;精密な言語の使い手が、&lt;br&gt;「わからない」を&lt;b&gt;武器ではなく告白&lt;/b&gt;として使う。&lt;br&gt;&lt;br&gt;ケニア行き航空券を買う&lt;br&gt;= 論理では説明できない行動&lt;br&gt;= 「理解」から「寄り添い」への転換" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontColor=#5C1B1B;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="650" y="900" width="280" height="300" as="geometry"/>
+        </mxCell>
+        <mxCell id="ph4" value="&lt;b&gt;Phase 4: 秀斗の反応と崩壊&lt;/b&gt;&lt;br&gt;━━━━━━━━━━━━&lt;br&gt;&lt;br&gt;秀斗「お前……頭おかしいんか」&lt;br&gt;→ 力が抜ける&lt;br&gt;&lt;br&gt;沈黙。&lt;br&gt;&lt;br&gt;あんずのフラッシュバック:&lt;br&gt;&lt;font color='#7B4F9E'&gt;教室での沈黙。「…優しいね」&lt;/font&gt;&lt;br&gt;&lt;br&gt;父の①を初めて使う:&lt;br&gt;&lt;font color='#C0392B'&gt;&lt;b&gt;「辛かったやろ」&lt;/b&gt;&lt;/font&gt;&lt;br&gt;= 関西弁 = 論理の鎧が外れる&lt;br&gt;&lt;br&gt;涙。&lt;br&gt;秀斗がハグ。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontColor=#6E3B0A;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="960" y="900" width="280" height="290" as="geometry"/>
+        </mxCell>
+        <mxCell id="ph5" value="&lt;b&gt;Phase 5: 和解と反転&lt;/b&gt;&lt;br&gt;━━━━━━━━━━━━&lt;br&gt;&lt;br&gt;「仕返しだと思ってた」&lt;br&gt;→ 樹「え？何で？」&lt;br&gt;&lt;br&gt;樹は本気でわからない。&lt;br&gt;= ASD傾向ゆえの無自覚&lt;br&gt;= だがそれが逆に救いになる&lt;br&gt;&lt;br&gt;&lt;font color='#E67E22'&gt;&lt;b&gt;秀斗が想定していた「悪意」が&lt;br&gt;存在しなかったという衝撃&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;完全な和解ではない。&lt;br&gt;でも&lt;b&gt;一緒にいることを選んだ&lt;/b&gt;。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontColor=#6E3B0A;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="1270" y="900" width="280" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_ph1_ph2" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#4A7FB5;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="ph1" target="ph2" edge="1">
+            <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_ph2_ph3" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#4A7FB5;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="ph2" target="ph3" edge="1">
+            <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_ph3_ph4" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#C0392B;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="ph3" target="ph4" edge="1">
+            <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_ph4_ph5" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#E67E22;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="ph4" target="ph5" edge="1">
+            <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="sec4_title" value="&lt;b&gt;SECTION 4: 他シーンとの接続&lt;/b&gt;" style="text;html=1;align=left;fontSize=15;fontColor=#7B4F9E;fontStyle=1;" parent="1" vertex="1">
+            <mxGeometry x="30" y="1250" width="600" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="conn_act2s1" value="&lt;b&gt;← ACT2-S1 保健室の沈黙&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;font color='#7B4F9E'&gt;あんずが黙って隣に座った&lt;/font&gt;&lt;br&gt;= 言語なき共存の原型&lt;br&gt;&lt;br&gt;ACT2: あんずが樹に与えた&lt;br&gt;ACT5: 樹が秀斗に与える&lt;br&gt;&lt;br&gt;同じ行為の&lt;b&gt;継承&lt;/b&gt;。&lt;br&gt;あんずは死んだが、&lt;br&gt;その「寄り添い方」は&lt;br&gt;樹の中に残っていた。&lt;br&gt;&lt;br&gt;&lt;font color='#7B4F9E'&gt;&lt;b&gt;★ ACT2の答えがACT5で花開く&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontColor=#3D1F5C;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="30" y="1300" width="300" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="conn_act1s4" value="&lt;b&gt;← ACT1-S4 父から仮説を学ぶ&lt;/b&gt;&lt;br&gt;&lt;br&gt;父の①（受容）を初めて使用。&lt;br&gt;&lt;br&gt;ACT1: 父が樹に教えた&lt;br&gt;ACT3-4: 樹は②③だけ使った&lt;br&gt;（分析・解決 = 論理的な部分だけ）&lt;br&gt;ACT5: &lt;font color='#C0392B'&gt;&lt;b&gt;①（受容）を初めて使う&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;「辛かったやろ」は分析ではない。&lt;br&gt;受容。ただそこにいること。&lt;br&gt;&lt;br&gt;父の教えの中で最も「非論理的」な&lt;br&gt;部分が、最も重要だった。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontColor=#1B3A5C;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="370" y="1300" width="300" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="conn_prologue" value="&lt;b&gt;← PROLOGUE シュモクバエ&lt;/b&gt;&lt;br&gt;&lt;br&gt;PROLOGUE: 子供が図鑑で見た幻想&lt;br&gt;ACT5-S2: 「見に行かん？」= 行動化&lt;br&gt;&lt;br&gt;子供の夢 → 大人の選択&lt;br&gt;幻想 → 現実&lt;br&gt;理解 → 寄り添い&lt;br&gt;&lt;br&gt;&lt;font color='#28A745'&gt;&lt;b&gt;シュモクバエは「理解したい」の&lt;br&gt;象徴だったが、「見に行く」ことで&lt;br&gt;「理解しなくても行動する」に転換&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontColor=#1B4332;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="710" y="1300" width="300" height="260" as="geometry"/>
+        </mxCell>
+        <mxCell id="conn_act5s1" value="&lt;b&gt;← ACT5-S1 自殺未遂の対峙&lt;/b&gt;&lt;br&gt;&lt;br&gt;S1: 走る → 対峙 → 言葉を失う&lt;br&gt;S2: 沈黙 → 行動 → 寄り添う&lt;br&gt;&lt;br&gt;S1の「言葉の敗北」が&lt;br&gt;S2の「行動の勝利」を生む。&lt;br&gt;&lt;br&gt;S1 = 理性→本能&lt;br&gt;S2 = 理解→受容&lt;br&gt;&lt;br&gt;&lt;font color='#C0392B'&gt;&lt;b&gt;二段階の変容で&lt;br&gt;クライマックスが完成する&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontColor=#5C1B1B;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="1050" y="1300" width="280" height="250" as="geometry"/>
+        </mxCell>
+        <mxCell id="conn_epilogue" value="&lt;b&gt;→ EPILOGUE ケニアの森&lt;/b&gt;&lt;br&gt;&lt;br&gt;S2の航空券購入 → EPILOGUEの到着&lt;br&gt;&lt;br&gt;S2:「シュモクバエ、見に行かん？」&lt;br&gt;EPILOGUE: 実際に見つける&lt;br&gt;→ 「こんなんのためにケニアまで」&lt;br&gt;→ 二人で笑う&lt;br&gt;&lt;br&gt;S2の選択がEPILOGUEの景色を作る。&lt;br&gt;&lt;br&gt;&lt;font color='#28A745'&gt;&lt;b&gt;重さ → 軽さ&lt;br&gt;涙 → 笑い&lt;br&gt;この落差が物語の完成形&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D4EDDA;strokeColor=#28A745;fontColor=#1B4332;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="1370" y="1300" width="300" height="260" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_act2_ph4" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#7B4F9E;strokeWidth=1;dashed=1;exitX=0.5;exitY=0;entryX=0.2;entryY=1;" parent="1" source="conn_act2s1" target="ph4" edge="1">
+            <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_act1_ph4" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#4A7FB5;strokeWidth=1;dashed=1;exitX=0.5;exitY=0;entryX=0.8;entryY=1;" parent="1" source="conn_act1s4" target="ph4" edge="1">
+            <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e_pro_ph3" style="edgeStyle=orthogonalEdgeStyle;strokeColor=#28A745;strokeWidth=1;dashed=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" parent="1" source="conn_prologue" target="ph3" edge="1">
+            <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="sec5_title" value="&lt;b&gt;SECTION 5: 構造的意義 / 制作メモ&lt;/b&gt;" style="text;html=1;align=left;fontSize=15;fontColor=#856404;fontStyle=1;" parent="1" vertex="1">
+            <mxGeometry x="30" y="1630" width="600" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="significance" value="&lt;b&gt;このシーンの構造的意義&lt;/b&gt;&lt;br&gt;&lt;br&gt;全スレッドの収束点:&lt;br&gt;• PROLOGUE のシュモクバエ → 「見に行かん？」&lt;br&gt;• ACT1 の父の教え → 「辛かったやろ」&lt;br&gt;• ACT2 のあんずの沈黙 → 樹が同じことをする&lt;br&gt;• ACT3-4 の精密さの暴力 → 精密さを手放す&lt;br&gt;• ACT5-S1 の言葉の敗北 → 行動の選択&lt;br&gt;&lt;br&gt;&lt;font color='#C0392B'&gt;&lt;b&gt;5ACT全ての因果がこの1シーンに集約する。&lt;br&gt;これが物語のストーリー・クライマックス。&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=#856404;fontColor=#856404;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="30" y="1680" width="450" height="250" as="geometry"/>
+        </mxCell>
+        <mxCell id="memo" value="&lt;b&gt;執筆メモ&lt;/b&gt;&lt;br&gt;&lt;br&gt;• 脚本は確定済み。本文未執筆。&lt;br&gt;• 沈黙の描写が最重要。言葉の間を書く。&lt;br&gt;• 関西弁は1箇所だけ。過剰に使わない。&lt;br&gt;• あんずのフラッシュバックは短く（2-3文）&lt;br&gt;• ハグの描写は身体的に。感情語は最小限。&lt;br&gt;• 航空券検索の「震える手」= 樹の不安の身体化&lt;br&gt;• 「え？何で？」= 樹のASD傾向が救いになる瞬間&lt;br&gt;  → 無自覚のまま。説明しない。&lt;br&gt;&lt;br&gt;&lt;font color='#C0392B'&gt;&lt;b&gt;最終チェック: 全てが「必然」に見えるか？&lt;br&gt;偶然の一致ではなく因果の帰結として。&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3CD;strokeColor=#856404;fontColor=#856404;fontSize=11;align=left;spacingLeft=10;" parent="1" vertex="1">
+            <mxGeometry x="520" y="1680" width="420" height="250" as="geometry"/>
+        </mxCell>
+    </root>
+</mxGraphModel>

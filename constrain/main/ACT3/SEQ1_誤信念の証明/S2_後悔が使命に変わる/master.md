@@ -17,5 +17,5 @@ value_change:
 
 # S2: 後悔が使命に変わる（ACT3クライマックス）
 
-- [[togaki]] — ト書き
+- [[kyakuhon]] — 脚本
 - [[omote]] — 表視点（僕・樹）

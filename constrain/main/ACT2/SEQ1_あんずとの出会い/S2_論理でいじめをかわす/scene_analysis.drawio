@@ -1,0 +1,58 @@
+<mxfile host="65bd71144e">
+    <diagram id="act2-s2" name="S2 論理でいじめをかわす — シーン分析">
+        <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="2400" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="ACT2-S2「論理でいじめをかわす」— シーン分析マップ" style="text;html=1;align=center;fontSize=18;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="20" width="2100" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="sub" value="樹の「正しさ」が人を取りこぼす最初の瞬間 — ACT4のプロトタイプ" style="text;html=1;align=center;fontSize=11;fontStyle=2;fontColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="56" width="2100" height="24" as="geometry"/>
+                </mxCell>
+
+                <!-- SEC1 -->
+                <mxCell id="s1t" value="1. 二重構造 — 成功と失敗が同時に起きるシーン" style="text;html=1;align=left;fontSize=14;fontStyle=1;fontColor=#C0392B;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="100" width="800" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="success" value="A面：成功（いじめ分析）" style="swimlane;startSize=24;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="140" width="520" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="sc" value="秀斗の攻撃パターンをノートに記録。&#xa;仮説→検証→対処。父の方法が機能する。&#xa;&#xa;例：&#xa;「秀斗は金曜の放課後に攻撃する」&#xa;→ 金曜は早く帰る → 攻撃を回避&#xa;&#xa;「秀斗は集団でいる時だけ攻撃する」&#xa;→ 一人の時に話しかける → 攻撃されない&#xa;&#xa;★ 読者には不気味に見える。&#xa;「この子、人間の行動をバグ報告みたいに分析してる」&#xa;→ ACT4でのコードレビューと完全に並行。" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="success" vertex="1">
+                    <mxGeometry x="5" y="28" width="510" height="185" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="failure" value="B面：失敗（あんずの相談を流す）" style="swimlane;startSize=24;fillColor=#F5C6CB;strokeColor=#C0392B;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="140" width="520" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="fl" value="あんずが何かを相談しようとする。&#xa;（虐待を間接的に伝えようとしている）&#xa;&#xa;あんず「…おじさんがな、夜に…」&#xa;樹「おじさんに相談してみたら？」&#xa;&#xa;★ 致命的な一言。&#xa;樹には「家庭の問題は保護者に相談」&#xa;という論理しかない。&#xa;虐待のフレームを持っていない。&#xa;&#xa;→ 「おじさんに相談」＝加害者に相談しろ&#xa;→ あんずはここで「この人にも言えない」と学ぶ&#xa;→ S4の死に至る因果の一つ" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="failure" vertex="1">
+                    <mxGeometry x="5" y="28" width="510" height="185" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="parallel" value="A面とB面の構造的意味&#xa;&#xa;同じ「論理的対処」が&#xa;いじめには有効、虐待には無効。&#xa;&#xa;樹は成功体験だけを記憶する。&#xa;失敗（あんずを取りこぼした）には気づかない。&#xa;&#xa;→ ACT4で同じことが起きる：&#xa;コードレビューは正しい。&#xa;でも秀斗の傷には届かない。" style="rounded=1;fillColor=#FCF3CF;strokeColor=#d6b656;fontSize=9;fontStyle=1;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="1140" y="140" width="400" height="220" as="geometry"/>
+                </mxCell>
+
+                <!-- SEC2: ビート -->
+                <mxCell id="s2t" value="2. ビート構造案" style="text;html=1;align=left;fontSize=14;fontStyle=1;fontColor=#4A7FB5;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="400" width="400" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="b1" value="Beat 1: 分析ノート&#xa;&#xa;樹がノートに秀斗のパターンを書いている。&#xa;表形式。日時、場所、攻撃方法、仮説。&#xa;&#xa;読者に見せる：&#xa;「この子は自分を守るために&#xa;　科学的方法を使っている」&#xa;感心と不安が混ざる感覚。" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="440" width="340" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="b2" value="Beat 2: 回避成功&#xa;&#xa;分析に基づいて攻撃を回避する場面。&#xa;秀斗が来ると思った場所を避ける。&#xa;または秀斗の前で予想外の行動を取る。&#xa;&#xa;「仮説と検証で身を守れる」確信。&#xa;★ value_changeの半分がここで起きる。" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="440" width="340" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="b3" value="Beat 3: あんずの相談&#xa;&#xa;保健室。あんずが何か言おうとする。&#xa;樹は分析ノートを書いている。&#xa;半分聞き流す。&#xa;&#xa;あんず「…おじさんがな…」&#xa;樹「おじさんに相談してみたら？」&#xa;あんず「……うん」（諦めの声）&#xa;&#xa;★ 樹は自分が何をしたか気づかない。" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="440" width="340" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="b4" value="Beat 4: 確信の固定&#xa;&#xa;帰り道。いじめを回避できた達成感。&#xa;「仮説と検証。これがあれば大丈夫だ」&#xa;&#xa;あんずの「……うん」は&#xa;記憶に残らない。&#xa;&#xa;★ 書きやすさ：高&#xa;A面B面の対比が明確。&#xa;具体的行動（ノート、回避、相談）がある。" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="1180" y="440" width="340" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" style="strokeWidth=1;" parent="1" source="b1" target="b2" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="e2" style="strokeWidth=1;" parent="1" source="b2" target="b3" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="e3" style="strokeWidth=1;" parent="1" source="b3" target="b4" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

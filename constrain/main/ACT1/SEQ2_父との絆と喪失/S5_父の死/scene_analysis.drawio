@@ -1,0 +1,53 @@
+<mxfile host="65bd71144e">
+    <diagram id="act1-s5" name="S5 父の死 — シーン分析">
+        <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="2400" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="ACT1-S5「父の死」— シーン分析マップ（ACT1クライマックス）" style="text;html=1;align=center;fontSize=18;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="20" width="2100" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="sub" value="あっさり描く — あんずの死を食わないために。淡々と不在を描く。" style="text;html=1;align=center;fontSize=11;fontStyle=2;fontColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="56" width="2100" height="24" as="geometry"/>
+                </mxCell>
+
+                <!-- SEC1 -->
+                <mxCell id="s1t" value="1. 必須機能 + 演出上の制約" style="text;html=1;align=left;fontSize=14;fontStyle=1;fontColor=#28A745;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="100" width="600" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="f1" value="【A】唯一の理解者の喪失&#xa;&#xa;value_change:&#xa;from: 父との月1回のつながり&#xa;to: 完全な孤立&#xa;&#xa;父が死ぬ＝「辛いやろ」が&#xa;人生から消える。&#xa;ACT5まで誰も言ってくれない。" style="rounded=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="140" width="330" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="f2" value="【B】①受け止めの消失&#xa;&#xa;父の3ステップのうち&#xa;①は父の人格と不可分だった。&#xa;父が死ぬと①も消える。&#xa;②③は「方法」として残る。&#xa;&#xa;→ 樹が②③だけの人間になる&#xa;構造的な必然をここで作る。" style="rounded=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="140" width="330" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="f3" value="【制約】あんずの死を食わない&#xa;&#xa;ACT2-S4（あんずの死）が&#xa;物語最大の転換点。&#xa;S5が重すぎるとS4が霞む。&#xa;&#xa;演出方針：&#xa;・感情的に描かない&#xa;・淡々と「不在」を描く&#xa;・「空っぽの日曜日」が核心&#xa;・泣かない（泣くのはACT5のため）" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=9;fontStyle=1;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="740" y="140" width="330" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="f4" value="【C】ACT5との対称設計&#xa;&#xa;S5: 父の死の報せ → 樹は何もできない&#xa;ACT5: 秀斗の自殺未遂 → 樹は走る&#xa;&#xa;S5: 「来月もまた来る」→ 来月は来ない&#xa;ACT5: 「シュモクバエ見に行かん？」→ 未来を作る&#xa;&#xa;S5: 病院で父を失う&#xa;ACT5: 病院で秀斗に寄り添う" style="rounded=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="1090" y="140" width="330" height="170" as="geometry"/>
+                </mxCell>
+
+                <!-- SEC2: ビート -->
+                <mxCell id="s2t" value="2. ビート構造案 — 「空っぽの日曜日」" style="text;html=1;align=left;fontSize=14;fontStyle=1;fontColor=#4A7FB5;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="350" width="600" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="b1" value="Beat 1: 約束の反復&#xa;&#xa;いつもの面会日。&#xa;樹が病院に向かう準備をしている。&#xa;（or 前回の面会の終わりから始める）&#xa;&#xa;「来月もまた来る」&#xa;&#xa;★ 読者はS4で約束を聞いている。&#xa;ここでその約束が反復される。&#xa;そして破られる。" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="390" width="340" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="b2" value="Beat 2: 知らせ&#xa;&#xa;★ あっさり。&#xa;電話が鳴る。母が出る。&#xa;母の顔が変わる。&#xa;&#xa;「お父さんが——」&#xa;&#xa;以上。&#xa;詳細は書かない。&#xa;死因も経緯も省略していい。" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="390" width="340" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="b3" value="Beat 3: 空っぽの日曜日&#xa;&#xa;次の面会日曜日。&#xa;樹は行く場所がない。&#xa;&#xa;部屋にいる。図鑑を開いている。&#xa;シュモクバエのページ。&#xa;&#xa;「シュモクバエは繁殖期に死ぬ。&#xa;　でも卵は残る。&#xa;　お父さんの仮説は残っている」&#xa;&#xa;→ ②③が「遺産」として固定される。" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="390" width="340" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="b4" value="Beat 4: 沈黙&#xa;&#xa;樹は泣かない。&#xa;何をすればいいかわからない。&#xa;&#xa;（S4であんずの死を知った時と&#xa;　同じ反応パターン。&#xa;　ただしS5の方が「軽く」描く）&#xa;&#xa;★ 書きやすさ：高&#xa;短く淡々と。1000字未満でも可。&#xa;「足りない」くらいがちょうどいい。" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="1180" y="390" width="340" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" style="strokeWidth=1;" parent="1" source="b1" target="b2" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="e2" style="strokeWidth=1;" parent="1" source="b2" target="b3" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="e3" style="strokeWidth=1;" parent="1" source="b3" target="b4" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

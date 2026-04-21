@@ -46,6 +46,14 @@ Robert McKee『Story』『Character』に基づく**物語構造検証システ�
 | `21_character-dimension.yaml` | キャラクターの次元・矛盾 |
 | `22_cast-design.yaml` | アンサンブル設計 |
 | `23_character-components.yaml` | 性格描写コンポーネント |
+| `24_discernment.yaml` | 鑑識眼（品質検査） |
+| `25_narrative-techniques/` | 手札テクニックカード |
+| `26_opening.yaml` | 冒頭設計 |
+| `27_show-vs-tell.yaml` | 描写 vs 語り |
+| `28_pov.yaml` | 視点管理 |
+| `29_setting-as-mirror.yaml` | 舞台=内面の鏡 |
+| `30_style-discipline.yaml` | 文体の統制（一貫性・必然性・作者混入排除） |
+| `31_dialogue.yaml` | 台詞検証（McKee "Dialogue" p.1-64：欲求/必要・3機能・POV規則・バックストーリー放出） |
 | `_EXTENSION_TEMPLATE.yaml` | 新モジュール追加用テンプレート |
 
 ## 新しいモジュールを追加する手順

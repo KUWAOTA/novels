@@ -1,0 +1,78 @@
+<mxfile host="65bd71144e">
+    <diagram id="act2-s1" name="S1 あんず係に任命 — シーン分析">
+        <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="2800" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="ACT2-S1「あんず係に任命」— シーン分析マップ" style="text;html=1;align=center;fontSize=18;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="20" width="2100" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="sub" value="「言語なき共存」の原型 — ACT5の答えがここに既に存在する" style="text;html=1;align=center;fontSize=11;fontStyle=2;fontColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="56" width="2100" height="24" as="geometry"/>
+                </mxCell>
+
+                <!-- SEC1 -->
+                <mxCell id="s1t" value="1. このシーンの構造的重要性 — 答えが先に提示されるパラドックス" style="text;html=1;align=left;fontSize=14;fontStyle=1;fontColor=#28A745;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="100" width="800" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="f1" value="【機能A】あんずとの出会い&#xa;&#xa;保健室。あんず係（知的障害の子の&#xa;勉強を見る係）に任命される。&#xa;&#xa;樹にとって：&#xa;・タスクとして受ける&#xa;・あんずは「対象」&#xa;・特別な感情はない&#xa;&#xa;あんずにとって：&#xa;・「触らない人」＝安全な人&#xa;・性的に搾取しない＝異常な安全" style="rounded=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="140" width="330" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="f2" value="【機能B】「言語なき共存」の原型&#xa;&#xa;保健室で樹は読書。あんずはぼんやり。&#xa;二人は特に話さない。&#xa;ただ同じ空間にいる。&#xa;&#xa;★ これがACT5の答えそのもの。&#xa;「理解できなくても寄り添える」の&#xa;最も純粋な形がここにある。&#xa;&#xa;ただし樹はこの価値に気づいていない。&#xa;ACT5まで気づかない。&#xa;→ 読者は2周目で「ここだったのか」と気づく。" style="rounded=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=9;fontStyle=1;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="140" width="330" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="f3" value="【機能C】「手」の象徴の開始&#xa;&#xa;あんずが樹の手に触れようとして止める。&#xa;条件反射（男性の手＝危険）。&#xa;&#xa;でも樹の手は違う。&#xa;白くて、細くて、何も求めない。&#xa;&#xa;→ S3デート「白うて細うて綺麗」回収&#xa;→ FB2 義父の手との対比&#xa;→ ACT5 樹が秀斗の腕を掴む" style="rounded=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="740" y="140" width="330" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="f4" value="【機能D】「…しなくていいの？」&#xa;&#xa;あんずがこの言葉を言う。&#xa;樹は意味がわからない。&#xa;&#xa;表面：「勉強しなくていいの？」程度の意味？&#xa;真実（FB2で判明）：&#xa;「優しくしてくれたお礼に&#xa;セックスしなくていいの？」&#xa;&#xa;★ 性加害の刷り込みが凝縮された一言。&#xa;読者はFB2まで気づかない。&#xa;→ 読み返した時に最も痛い台詞。" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="1090" y="140" width="330" height="210" as="geometry"/>
+                </mxCell>
+
+                <!-- SEC2: 二つの世界 -->
+                <mxCell id="s2t" value="2. 二つの世界 — 同じ保健室で完全に違う体験" style="text;html=1;align=left;fontSize=14;fontStyle=1;fontColor=#4A7FB5;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="390" width="600" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="tree_w" value="樹の保健室" style="swimlane;startSize=24;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="430" width="500" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="tw" value="・静か。邪魔されない。読書できる。&#xa;・あんずは手がかからない（ぼんやりしてるだけ）&#xa;・たまに質問される。答える。それだけ。&#xa;・「…優しいね」と言われて困惑する&#xa;　（何が優しいのかわからない）&#xa;・父を亡くした後の空白を、&#xa;　ルーティンで埋めている&#xa;&#xa;★ 樹にとってこの時間は「無」に近い。&#xa;でもその「無」こそがあんずを救っている。&#xa;樹の無自覚な優しさ。" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="tree_w" vertex="1">
+                    <mxGeometry x="5" y="28" width="490" height="185" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="anzu_w" value="あんずの保健室" style="swimlane;startSize=24;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="430" width="500" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="aw" value="・安全。この人は触らない。&#xa;・家にいると「おじさん」が来る。学校は安全。&#xa;・この人の隣にいると怖くない。&#xa;・手が白くて綺麗。触りたい。でも怖い。&#xa;・「…しなくていいの？」&#xa;　→ 優しくされた＝お礼が要る。&#xa;　→ お礼＝体。それしか知らない。&#xa;&#xa;★ あんずにとってこの時間は「人生で最も安全」。&#xa;保健室の沈黙＝唯一の聖域。" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="anzu_w" vertex="1">
+                    <mxGeometry x="5" y="28" width="490" height="185" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="act5_echo" value="→ ACT5での回収&#xa;&#xa;樹が秀斗の隣に座る。黙って座る。&#xa;あんずのフラッシュバック：&#xa;保健室の沈黙。「…優しいね」。&#xa;&#xa;→ 樹はここで初めて気づく：&#xa;「あの時の沈黙が、あんずにとっては&#xa;　救いだったのかもしれない」&#xa;&#xa;★ S1の保健室 = ACT5の病室&#xa;同じ構造。同じ沈黙。&#xa;でも今度は樹が自覚的に選んでいる。" style="rounded=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=9;fontStyle=1;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="1160" y="430" width="400" height="220" as="geometry"/>
+                </mxCell>
+
+                <!-- SEC3: ビート + 書きやすさ -->
+                <mxCell id="s3t" value="3. ビート案 + 書きやすさ評価" style="text;html=1;align=left;fontSize=14;fontStyle=1;fontColor=#E67E22;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="690" width="600" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="bb1" value="Beat 1: 任命&#xa;先生「須藤、田中さんの&#xa;勉強見てあげてくれる？」&#xa;樹「はい」（タスクとして受理）" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="730" width="260" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="bb2" value="Beat 2: 沈黙の共有&#xa;保健室。樹は本。あんずはぼんやり。&#xa;静かな時間が流れる。&#xa;あんずが樹の手に目をやる。" style="rounded=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="730" width="260" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="bb3" value="Beat 3: 「優しいね」&#xa;あんず「…優しいね」&#xa;樹「何が？」&#xa;あんず（答えない。微笑む）" style="rounded=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="730" width="260" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="bb4" value="Beat 4: 「…しなくていいの？」&#xa;あんず「…しなくていいの？」&#xa;樹「何を？」&#xa;あんず「……ううん、なんでもない」" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="940" y="730" width="260" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="rating" value="★ 書きやすさ：最高&#xa;&#xa;場所固定（保健室）。登場人物2人。&#xa;会話は最小限。沈黙が主体。&#xa;1000字以内で全ビート可能。&#xa;感情描写少なめでASD特性と一致。" style="rounded=1;fillColor=#FCF3CF;strokeColor=#d6b656;fontSize=10;fontStyle=1;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="1240" y="730" width="300" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="be1" style="strokeWidth=1;" parent="1" source="bb1" target="bb2" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="be2" style="strokeWidth=1;" parent="1" source="bb2" target="bb3" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="be3" style="strokeWidth=1;" parent="1" source="bb3" target="bb4" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

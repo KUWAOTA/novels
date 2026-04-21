@@ -1,0 +1,499 @@
+# ============================================================
+# Module: Dialogue Validation (台詞検証)
+# Source: Robert McKee "Dialogue" (p.1 - p.64)
+# Version: 0.1
+# ============================================================
+# 台詞は「欲求」「意図」「活力」に彩られた言語行為である。
+# 原因（欲求・必要）と性格（意図・活力）を備えない発話は
+# 物語上の台詞ではない。
+#
+# 本モジュールは McKee "Dialogue" 前半（〜p.64）で扱われる
+# 台詞の定義、3機能（明瞭化・性格描写・アクション）、
+# POV と台詞の関係、バックストーリー放出のルールを検証する。
+#
+# 関連モジュール:
+#   - 12_exposition.yaml  (情報提示制約。本モジュールは台詞側から補強)
+#   - 13_scene-transition.yaml (バックストーリー放出ルール)
+#   - 27_show-vs-tell.yaml (見せる/語るの判断軸)
+#   - 28_pov.yaml (視点タイプと台詞の関係)
+# ============================================================
+
+module_id: dialogue
+module_name: "台詞検証（Dialogue Validation）"
+source: "Robert McKee 'Dialogue' p.1 - p.64"
+
+# ============================================================
+# Part 1: 台詞の定義（Definition of Dialogue）
+# ============================================================
+dialogue_definition:
+  description: >
+    McKeeにおける台詞とは「発話を通じた行為」であり、
+    キャラクターの欲求（desire）と必要（need）から生じ、
+    そのキャラクターの意図・活力・人格に色づけられた言語行為。
+    単なる情報伝達や会話の模写は「台詞」ではない。
+
+  required_causes:
+    - desire        # 欲求（何を得たいか / 避けたいか）
+    - need          # 必要（キャラクターが欠いているもの）
+
+  required_color:
+    - desire        # 欲求の色づけ
+    - intention     # 意図（何をしようとしているか）
+    - vitality      # 活力（発話の勢い・トーン・エネルギー）
+
+  through_speech_causes:
+    - characterize_speaker           # 話者の性格を露呈する
+    - exert_power_on_object          # 対象（他者/自己/聴衆）に作用する
+
+# ============================================================
+# Part 2: 台詞の宛先3タイプ（Addressee Types）
+# ============================================================
+addressee_types:
+  description: "台詞は誰に向けて発せられているかで3タイプに分類される。"
+  enum:
+    - to_other         # 他者への台詞
+    - to_self          # 自己への台詞（内的独白）
+    - to_audience      # 聴衆/読者への台詞（破壁・語り）
+
+# ============================================================
+# Part 3: 台詞の形態2タイプ（Form Types）
+# ============================================================
+form_types:
+  description: >
+    台詞はシーン内のドラマ台詞か、シーン外のナレーション（語り）の
+    いずれかの形態を取る。どちらも観客/読者を感情的に動かす。
+  enum:
+    - drama         # シーン内のドラマ台詞
+    - narration     # シーン外のナレーション（読者への語り、自己への語り含む）
+
+# ============================================================
+# Part 4: メディア別の制約（Media Constraints）
+# ============================================================
+media_constraints:
+  description: >
+    メディアによって使える台詞モードが異なる。
+    小説はすべてのタイプを使える「mind media」。
+  mapping:
+    theater:
+      primary_channel: sound
+      allowed: [drama, narration]
+    film:
+      primary_channel: visual
+      allowed: [drama, narration]
+    novel:
+      primary_channel: mind
+      allowed: [drama, narration, to_self, to_audience]
+      note: "小説は制約が最も少なく、あらゆる台詞タイプを自由に混在させられる。"
+
+# ============================================================
+# Part 5: POV別の台詞原則（POV-Specific Rules）
+# ============================================================
+pov_dialogue_rules:
+
+  first_person:
+    description: "一人称の語り手の台詞・語り"
+    scope:
+      allowed:
+        - events                     # 外的出来事
+        - dramatic_narration_in_dialogue  # 対話中の劇的語り
+        - self_talk                  # 自分自身への語り
+    depicted_as:
+      role: "不十分な観測者"
+      of: [出来事, 周囲の日常]
+    focus:
+      strong_interest_of: self
+      audience_reads:
+        - "語り手の推察を通じて他者の内面を間接的に読む"
+    anti_pattern:
+      omniscient_first_person:
+        description: >
+          一人称なのに他者の内面を無制限に知っている状態。
+        severity: compile_error
+        exception: "ジャンル的/構造的に必然性がある場合のみ許容（明示必須）"
+
+  third_person:
+    description: "三人称の語り手"
+    narrator_attributes:
+      knowledge: [ignorant, semi_knowing, omniscient]     # 無知〜全知
+      stance: [neutral, critical]                          # 中立〜批判
+      reliability: [unreliable, partially_reliable, reliable]  # 信頼不可〜可
+    may_have:
+      - social_ethical_viewpoint   # 社会倫理観
+      - personal_opinion           # 意見
+    critical_rule:
+      third_person_narration_is_not_dialogue:
+        description: >
+          三人称の語りは「キャラクターによる発話」ではないため、
+          ダイアローグの定義から外れる（台詞ではない）。
+          台詞検証ルールは三人称ナレーション本体には適用しない。
+    anti_patterns:
+      author_voice_intrusion:
+        description: >
+          語り手が作者の声として立ち上がり、
+          読者と物語キャラクターへの共感や好奇心を削ぐ。
+        severity: warning
+        message: >
+          三人称の語りが「作者の声」として直接的に露出しています。
+          読者の共感・好奇心を削ぐ可能性があります。
+    sub_modes:
+      objective_third_person:
+        principle:
+          - show_over_tell            # 見せる > 語る
+          - no_interpretation         # 解釈を差し込まない
+      subjective_third_person:
+        principle:
+          - see_through_characters    # 人物を見透かす
+          - has_emotion_and_thought   # 感情・思考を描ける
+
+  second_person:
+    description: "二人称（稀有）"
+    definition: >
+      二人称は一人称または三人称の変種であり、
+      「きみ」を「わたし」または「彼」に置換すると
+      化けの皮が剥がれる（独立した本格視点ではない）。
+    check:
+      severity: info
+      message: >
+        二人称視点を採用しています。
+        「きみ」を「わたし」または「彼」に置換しても
+        台詞として成立するか確認してください。
+
+# ============================================================
+# Part 6: 台詞の3つの機能（3 Functions of Dialogue）
+# ============================================================
+dialogue_functions:
+  description: "あらゆる台詞は以下の3つの機能のいずれか（複数）を果たす。"
+  enum:
+    - exposition        # 明瞭化（情報提示）
+    - characterization  # 性格描写
+    - action            # アクション（価値や関係への作用）
+
+  required_annotation:
+    function_tags:
+      applies_to: [Dialogue]
+      description: >
+        各台詞に、その台詞がどの機能を果たしているかをタグ付けする。
+        3機能のいずれにも該当しない台詞は存在意義が疑わしい。
+
+  compile_time_checks:
+    no_function_assigned:
+      action: warning
+      message: >
+        この台詞はexposition/characterization/actionのいずれにも
+        分類されていません。存在意義を確認してください。
+
+# ============================================================
+# Part 7: 明瞭化（Exposition）の最小化原則
+# ============================================================
+exposition_minimization:
+  description: >
+    台詞による明瞭化は「少すぎると理解不能、多すぎると興醒め」。
+    必要最小限に抑え、読者に伝わる閾値で切る。
+
+  principles:
+
+    minimize_exposition:
+      rule: >
+        明瞭化する前に、明瞭化に必要な事実を価値順に並べ、
+        読者に伝わる最小閾値で切ること。
+      applies_to: [Scene, Dialogue]
+
+    repeat_only_critical_facts:
+      rule: >
+        反復して明瞭化してよいのは重要事実のみ。
+        反復対象の選定ミスは読者を退屈させる。
+
+    show_dont_tell:
+      rule: >
+        ドラマ台詞においては「語らず見せろ」。
+        キャラクターの内的状態は行為の中で顕在化させる。
+      scope: drama
+
+  tell_definition:
+    description: >
+      「語り」の悪手パターンの定義。
+      以下の2段階が揃うと tell アンチパターンとして検出する。
+    signs:
+      - stops_character_inquiry        # キャラクターの探求を止める
+      - dumps_excess_information       # 不要な情報を大量に流し込む
+    severity: warning
+    message: >
+      台詞が「語り」に陥っています。
+      キャラクターの探求を停止させ、過剰な情報を流し込んでいます。
+      行動・葛藤の中で見せる形に書き換えてください。
+
+  show_definition:
+    description: >
+      「見せる」の台詞は、願望（desire）を満たすために
+      もがくキャラクターのリアルな発話として露出する。
+    signs:
+      - character_is_struggling_for_desire
+      - information_revealed_through_conflict
+
+  necessity_vs_exposition:
+    description: >
+      必然性が強いほど見せる（show）、
+      必然性が弱いほど語る（tell）に傾く。
+      語り（tell）はサブテキストを破壊する。
+    principle:
+      strong_necessity: show
+      weak_necessity: tell
+    side_effect:
+      tell_destroys_subtext: true
+
+# ============================================================
+# Part 8: 重要事実と台詞の配分（Critical Facts Placement）
+# ============================================================
+critical_facts_placement:
+  description: >
+    「大切な事実」は必然的ストーリーの中で、
+    効果的なタイミングで露出させる。
+    手段は「語りの疾走感」または「弾薬としての明瞭化」。
+
+  mechanisms:
+
+    narrative_velocity:
+      name: "語りの疾走感"
+      description: >
+        受け手の心と物語の良いコミュニケーションによって生じる副作用。
+        「次は何が起こる？」という感覚が読者を牽引する。
+      mechanism: >
+        明瞭化が「スパイス」として機能し、
+        読者の好奇心（疑問）を生成する。
+        読者はその答えを探し求めることで疾走感を得る。
+      flow:
+        - "明瞭化 → 疑問の発生 → 読者の探索 → 疾走感"
+
+    exposition_as_ammunition:
+      name: "弾薬としての明瞭化"
+      description: >
+        共感による結びつきで好奇心が動機付けられた状態で、
+        決定的なタイミングで明瞭化を放つ。
+      trigger_condition:
+        - curiosity_motivated_by_empathy: true
+        - timing_is_decisive: true
+      effect: >
+        その知識がさらに観客/読者を引き込むタイミングで
+        明瞭化を撃ち込む。
+      implements:
+        - secret_revelation   # 秘密の暴露
+      usual_case:
+        description: >
+          通常、キャラクターは秘密を隠している。
+          秘密を晒すのはジレンマ/転機の発動時。
+        rule: >
+          秘密の開示は転機（turning point）と同期すべき。
+
+# ============================================================
+# Part 9: バックストーリーと秘密（Backstory & Secrets）
+# ============================================================
+backstory_and_secrets:
+  description: >
+    秘密はバックストーリーから生まれ、
+    バックストーリーは「過去のすべて」ではなく、
+    大きな転機で使用する衝撃のための素材である。
+
+  definitions:
+    secret:
+      made_by: backstory
+    backstory:
+      is_not: "過去のすべて"
+      is: "大きな転機のために使う衝撃の素材"
+
+  compile_time_checks:
+
+    backstory_as_trivia:
+      description: >
+        バックストーリーが転機と結びつかない雑多な情報として
+        散在している。
+      severity: warning
+      message: >
+        バックストーリーが転機（turning point）に結びついていません。
+        「大きな転機のために使う衝撃」として機能しているか確認してください。
+
+    secret_without_turning_point:
+      description: >
+        秘密が開示されているが、対応する転機/ジレンマがない。
+      severity: warning
+      message: >
+        秘密の開示が転機/ジレンマと同期していません。
+        弾薬としての明瞭化の効力が失われます。
+
+# ============================================================
+# Part 10: ナレーションによる直接語り（Narration-Direct Exposition）
+# ============================================================
+narration_direct_exposition:
+  description: >
+    ナレーションでの直接的な明瞭化は許容される。
+    2つの強みがある。
+  strengths:
+    - speed            # スピード（圧縮）
+    - focus_by_contrast  # 対比による焦点化
+
+  speedy_exposition:
+    anti_patterns:
+      and_then_chaining:
+        description: >
+          「それから…それから…」で情報を並列に繋ぐ羅列型。
+        severity: warning
+        message: >
+          ナレーションが「それから…それから…」型の羅列になっています。
+          読者を置き去りにする速度になっている可能性があります。
+        solution: >
+          「○○は言った…XXは答えた…」のような台詞付加で
+          シーン化する、または語り手を挿入して対話に変える。
+
+    speed_requires_necessity:
+      rule: >
+        疾走感のある明瞭化には必然性が必要。
+        必然性のない高速明瞭化は単なる info dump。
+      compile_time_check:
+        severity: warning
+        message: >
+          明瞭化が高速ですが、必然性が定義されていません。
+          キャラクターが本来喋らないはずの内容を明瞭性のために
+          入れていないか確認してください。
+
+# ============================================================
+# Part 11: アクションとしての台詞（Dialogue as Action）
+# ============================================================
+dialogue_as_action:
+  description: >
+    アクションは mind / physical / word の3種に分類される。
+    各アクションは「真の人格（True Character）」から
+    humanity または its lack を露呈する。
+
+  action_enum:
+    - mind        # 思考行為
+    - physical    # 身体行為
+    - word        # 発話行為（=台詞）
+
+  principle:
+    each_action_reveals:
+      - humanity
+      - lack_of_humanity
+    source_of_reveal: true_character
+    related_module: "23_character-components.yaml (True Character)"
+
+  compile_time_checks:
+    word_action_without_true_character_link:
+      description: >
+        発話アクションが真の人格と結びついていない。
+      severity: warning
+      message: >
+        台詞が「真の人格」の露呈と結びついていません。
+        発話は mind/physical と並ぶ action の一種であり、
+        humanity または its lack を露わにすべきです。
+
+# ============================================================
+# Part 12: コンパイル検証ルール（統合）
+# ============================================================
+validation:
+
+  dialogue_without_desire_or_need:
+    severity: compile_error
+    message: >
+      この台詞は欲求（desire）または必要（need）から発生していません。
+      McKee定義上、物語的台詞として成立しません。
+    applies_to: [Dialogue]
+
+  dialogue_without_coloring:
+    severity: compile_error
+    message: >
+      この台詞は desire / intention / vitality の
+      いずれの彩りも持っていません。
+      キャラクターの発話として彩りのない平板な台詞は
+      物語的台詞とみなせません。
+    applies_to: [Dialogue]
+
+  dialogue_function_unclassified:
+    severity: warning
+    message: >
+      台詞が exposition / characterization / action の
+      いずれの機能にも分類されていません。
+    applies_to: [Dialogue]
+
+  exposition_overload:
+    severity: warning
+    message: >
+      明瞭化が過剰です。重要度順に並べ、閾値で切ってください。
+    applies_to: [Scene, Dialogue]
+
+  drama_dialogue_tells_instead_of_shows:
+    severity: warning
+    message: >
+      ドラマ形態の台詞が「語り」になっています。
+      行動と葛藤の中で見せる形に書き換えてください。
+    applies_to: [Dialogue]
+    condition:
+      form_type: drama
+      show_or_tell: tell
+
+  subtext_killed_by_telling:
+    severity: warning
+    message: >
+      台詞が「語り」に偏った結果、サブテキストが消失しています。
+    applies_to: [Dialogue]
+
+  omniscient_first_person_detected:
+    severity: compile_error
+    message: >
+      一人称でありながら他者の内面を無制限に描写しています。
+      特別な事情がない限りエラーです（明示が必要）。
+    applies_to: [Scene, NarrativeBlock]
+    condition:
+      pov_type: first_person
+      reveals_other_character_internals_directly: true
+
+  author_voice_in_third_person:
+    severity: warning
+    message: >
+      三人称の語りに「作者の声」が混入しています。
+      読者と物語キャラクターへの共感を削ぐ可能性があります。
+    applies_to: [NarrativeBlock]
+
+  and_then_chaining_narration:
+    severity: warning
+    message: >
+      ナレーションが「それから…それから…」の羅列になっています。
+      シーン化または語り手挿入を検討してください。
+    applies_to: [NarrativeBlock]
+
+  speed_exposition_without_necessity:
+    severity: warning
+    message: >
+      高速明瞭化に必然性がありません。
+      キャラクターが本来発しないはずの情報になっていないか確認してください。
+    applies_to: [Dialogue, NarrativeBlock]
+
+  secret_revelation_without_turning_point:
+    severity: warning
+    message: >
+      秘密の開示が転機/ジレンマと同期していません。
+    applies_to: [Scene]
+
+  word_action_disconnected_from_true_character:
+    severity: warning
+    message: >
+      台詞アクションが真の人格の露呈と結びついていません。
+    applies_to: [Dialogue]
+
+# ============================================================
+# Part 13: 推奨アノテーション（Dialogue Block Annotation）
+# ============================================================
+recommended_annotation:
+  description: >
+    台詞ブロックに対して以下のメタ情報を付与することで
+    本モジュールの検証が有効化される。
+
+  fields:
+    desire:         "この発話の根にある欲求"
+    need:           "この発話の根にある必要"
+    intention:      "この発話の意図（何をしようとしているか）"
+    vitality:       "発話のエネルギー/トーン（低〜高）"
+    addressee:      "to_other | to_self | to_audience"
+    form_type:      "drama | narration"
+    functions:      "[exposition, characterization, action] の一つ以上"
+    show_or_tell:   "show | tell"
+    reveals:        "humanity | lack_of_humanity | none"
+    linked_to_turning_point: "このシーン/幕の転機と接続しているか (true/false)"

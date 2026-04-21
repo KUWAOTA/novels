@@ -1,0 +1,64 @@
+<mxfile host="65bd71144e">
+    <diagram id="act1-s3" name="S3 いじめの開始 — シーン分析">
+        <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="2600" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="ACT1-S3「いじめの開始」— シーン分析マップ" style="text;html=1;align=center;fontSize=18;fontStyle=1;fillColor=none;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="20" width="2100" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="sub" value="秀斗との最初の接触 — 「見下し」の誤読が20年後のACT5まで響く" style="text;html=1;align=center;fontSize=11;fontStyle=2;fontColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="56" width="2100" height="24" as="geometry"/>
+                </mxCell>
+
+                <!-- SEC1 -->
+                <mxCell id="s1t" value="1. 必須機能" style="text;html=1;align=left;fontSize=14;fontStyle=1;fontColor=#28A745;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="100" width="400" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="f1" value="【A】秀斗の登場&#xa;&#xa;秀斗が樹に話しかける最初の場面。&#xa;樹のASD的反応（目を合わせない、&#xa;応答がずれる）を秀斗が&#xa;「見下し」と誤読する。&#xa;&#xa;★ 読者には「誤読」だとわかるように&#xa;S1で樹のキャラを確立済みであること。" style="rounded=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="140" width="340" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="f2" value="【B】いじめの構造を示す&#xa;&#xa;秀斗→友達「あいつ嫌いやねん、&#xa;いつも人を見下してる」&#xa;&#xa;集団の排除が始まる。&#xa;しかし樹は「なぜ」がわからない。&#xa;&#xa;★ 秀斗の動機が「嫉妬」であることは&#xa;このシーンでは見せない。&#xa;直後のFB1で初めて明かされる。" style="rounded=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="140" width="340" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="f3" value="【C】ACT4-5への種蒔き&#xa;&#xa;ここでの「見下し」誤読が&#xa;ACT4で再燃する：&#xa;樹のコードレビュー＝「見下し」&#xa;&#xa;ACT5秀斗の致命的質問：&#xa;「お前、俺を人間だと思ってたか？」&#xa;の根はこのシーンにある。&#xa;&#xa;★ 書き手として意識：&#xa;S3のdialogeがACT5で回収可能か" style="rounded=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="760" y="140" width="340" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="f4" value="【D】value_change&#xa;&#xa;axis: つながり⇔孤立&#xa;from: 浮いているが攻撃されない&#xa;to: 積極的排除・いじめの標的&#xa;&#xa;S1は「無視」、S3は「攻撃」。&#xa;質的な変化。" style="rounded=1;fillColor=#D4EDDA;strokeColor=#28A745;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="1120" y="140" width="340" height="170" as="geometry"/>
+                </mxCell>
+
+                <!-- SEC2: ビート -->
+                <mxCell id="s2t" value="2. ビート構造案" style="text;html=1;align=left;fontSize=14;fontStyle=1;fontColor=#4A7FB5;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="350" width="400" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="b1" value="Beat 1: 秀斗が近づく&#xa;&#xa;休み時間 or 放課後。&#xa;秀斗が樹に話しかける。&#xa;「なあ須藤、お前いつも一人やな」&#xa;&#xa;秀斗の動機（この時点では見えない）：&#xa;・参観日で樹の父を見た&#xa;・100点の答案を樹がぼんやり見ていた&#xa;・「なぜこいつは平気なんだ」&#xa;&#xa;★ 表面上は「話しかけている」だけ。" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="390" width="340" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="b2" value="Beat 2: 誤読の瞬間&#xa;&#xa;樹の反応（ASD的）：&#xa;・目を合わせない&#xa;・質問に質問で返す&#xa;・秀斗の感情を読まない&#xa;&#xa;秀斗「おい、聞いてんのか」&#xa;樹「聞いてるよ。何？」&#xa;&#xa;★ この「何？」が致命的。&#xa;秀斗にとっては「お前の話に&#xa;興味がない」と聞こえる。&#xa;→ 「見下し」の確信が生まれる。" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="390" width="340" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="b3" value="Beat 3: 排除の宣言&#xa;&#xa;秀斗が友達のところに戻る。&#xa;「あいつあかんわ。人を見下してる」&#xa;&#xa;樹は少し離れたところで聞いている&#xa;（or 聞いていない）。&#xa;&#xa;★ 設計問い：&#xa;樹はこの言葉を聞くか？&#xa;a) 聞く → 「見下す」の意味がわからない&#xa;b) 聞かない → 突然いじめが始まる困惑" style="rounded=1;fillColor=#F5C6CB;strokeColor=#C0392B;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="390" width="340" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="b4" value="Beat 4: 最初の攻撃&#xa;&#xa;具体的ないじめの開始。&#xa;（靴を隠す？ ノートに落書き？&#xa;　無視の組織化？）&#xa;&#xa;樹の反応：&#xa;困惑。怒りではなく分析。&#xa;「なぜこうなったのか」を考え始める。&#xa;→ ACT2-S2の「分析ノート」に接続。&#xa;&#xa;★ 書きやすさ：高&#xa;外的事件が明確、4ビートで1000字可能。" style="rounded=1;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="1180" y="390" width="340" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" style="strokeWidth=1;" parent="1" source="b1" target="b2" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="e2" style="strokeWidth=1;" parent="1" source="b2" target="b3" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+                <mxCell id="e3" style="strokeWidth=1;" parent="1" source="b3" target="b4" edge="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+                <!-- SEC3: 接続 -->
+                <mxCell id="s3t" value="3. FB1との接続 — 直後に入るフラッシュバック" style="text;html=1;align=left;fontSize=14;fontStyle=1;fontColor=#7B4F9E;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="630" width="600" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="fb_conn" value="S3 → FB1 の接続設計&#xa;&#xa;S3終了時点で読者は思う：&#xa;「なんで秀斗はこんなに敵意を？」&#xa;&#xa;直後にFB1が入る。秀斗視点。&#xa;参観日で樹の父を見た。&#xa;100点でも「当たり前」と言われる自分。&#xa;&#xa;→ 「いじめ」が「嫉妬」に再定義される。&#xa;→ 読者の秀斗への印象が変わる。&#xa;&#xa;★ S3の「秀斗の敵意」が不自然すぎると&#xa;FB1の衝撃が弱まる。&#xa;適度に「なぜ？」と思わせるバランス。" style="rounded=1;fillColor=#E8DAF0;strokeColor=#7B4F9E;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="670" width="500" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="act4_echo" value="S3 → ACT4 の構造エコー&#xa;&#xa;S3：秀斗が樹を「見下し」と解釈→攻撃&#xa;ACT4：樹が秀斗を「バグ」と解釈→指導&#xa;&#xa;S3の秀斗の攻撃動機：嫌悪＋嫉妬&#xa;ACT4の樹の指導動機：善意＋使命感&#xa;&#xa;動機は真逆。暴力は同じ。&#xa;&#xa;★ S3で秀斗のある行動（手を止める？&#xa;一瞬迷う？）を入れておくと、&#xa;ACT5「秀斗は一度手を見て止まった」&#xa;の伏線になる。" style="rounded=1;fillColor=#FDEBD0;strokeColor=#E67E22;fontSize=9;align=left;spacingLeft=8;spacingTop=4;" parent="1" vertex="1">
+                    <mxGeometry x="580" y="670" width="500" height="220" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

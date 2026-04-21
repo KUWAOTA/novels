@@ -1,0 +1,208 @@
+ダイアローグ
+
+caused by
+・欲求
+・必要
+
+彩られる by
+・欲求
+・意図
+・活力
+（これがない場合エラー出して）
+
+def as
+through speech
+
+↑cause
+・彩る by the character
+・power to some object
+
+3 type
+・to other
+・to myself
+・to audience
+
+2 type
+・drama (in scene)
+・narration (outside of scene)
+　　leads audience to affected(same in talk myself)
+　　
+演劇 → sound media
+movie → visonal media
+novel → mind media (free to use any type dialogue)
+
+＊一人称
+
+scope
+- 出来事
+- 対話の中の劇的な語り
+- 自分自身への語り
+
+depicted as
+不十分な観測者　of 出来事、周囲の日常
+
+focus strong 関心 of myself
+→ audience read 他者の内面 from 語り手の語りからの推察
+
+antipattern as
+全知一人称（特別な事情でない限りエラー）
+
+＊三人称
+
+語り手
+
+be
+無知〜全知
+中立〜批判
+信頼不可〜可
+
+sometimes to have
+社会倫理観　意見
+
+三人称の語り ≠ ダイアローグ
+cause not by character
+
+antipattern
+be 作者の声
+
+audience not
+共感 好奇語手的運命
+
+客観的な三人称
+見せる>語る
+not解釈
+
+主観的な三人称
+見透かす
+感情 思考ある
+
+＊二人称
+
+def by
+変種　of 1 or3
+
+きみ→わたし or 彼にすれば化けの皮が剥がれる
+
+
+ダイアローグ
+have 3 function
+- 明瞭化
+- 性格描写
+- アクション
+
+明瞭化
+少⇔多
+難　興醒め
+
+have to minimumize 明瞭化
+
+principle 明瞭化する前に明瞭化に必要なものを価値順に並べること、読者に伝わる閾値で切ること
+反復して明瞭化するのは、重要な事実のみに絞ること
+
+principle 語らず見せろ
+at drama type dialogue
+
+語る (エラー)
+def as
+1. stop character's inquery
+2. then give too much non need information
+
+見せる
+"realful" character dialogue to struggle to 満たす 願望
+
+必然性
+強　見せる
+弱　語る
+
+語る delete subtext
+
+大切な事実
+must included in
+必然的なストーリー
+@効果的なタイミング
+by
+- 語りの疾走感
+- 弾薬としての明瞭化
+
+＊語りの疾走感
+副作用 by
+good communication between 受けての心 and story
+example as
+次は何が起こる?が気になる
+def as
+some 明瞭化 turns spice
+then
+improve curiousity
+
+example as
+明瞭化によって疑問が生じる
+↓
+答えを見つけようとaudienceが探し求めることで語りの疾走感が増していく
+
+＊弾薬としての明瞭化
+shown while motivated 好奇心
+by 共感による結びつき
+
+弾薬としての明瞭化
+def as
+決定的なタイミング(
+def as
+その1知識がさらに引き込むタイミング
+)での明瞭化
+
+弾薬としての明瞭化
+implement 秘密の暴露
+
+if usually
+キャラクター hide 秘密
+else dilenma
+show 秘密 then 転機
+
+秘密
+made by 
+バックストーリー
+
+バックストーリー
+≠
+過去全て
+
+バックストーリー
+used to
+大きな転機のために使う衝撃
+
+@narration 直接語る is ok
+it's good at
+- speed
+- focus by contrast
+
+＊＊speed
+
+narration type 明瞭化 
+antipattern
+それから....それから...
+
+1 solution is
+○○ says... XX says...
+語り手を加えることでシーンにせよ
+
+just speedy 明瞭化
+is antipattern 
+needs 必然性
+
+必然性
+example as
+キャラクターが本来喋らないはずの内容を明瞭性のために入れている
+
+
+### action
+
+action
+enum as
+- mind
+- physical
+- word
+
+each action
+reveal humanity / .the lack
+from
+真の人格
