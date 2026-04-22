@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="iFK_qkvWtXflIoaEG1u1" name="Page-1">
-        <mxGraphModel dx="392" dy="244" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="4800" background="#FFFFFF" math="0" shadow="0">
+        <mxGraphModel dx="993" dy="287" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="4800" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -52,7 +52,7 @@
                 <mxCell id="s2" value="物語の最大の引き金が発射される幕。&#xa;あんずの自殺によって樹の誤信念が確立し、&#xa;以後の全行動の根拠になる。" style="rounded=0;fillColor=#FDEDEC;strokeColor=#F5B7B1;fontSize=10;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;whiteSpace=wrap;" parent="1" vertex="1">
                     <mxGeometry x="510" y="102" width="380" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="s3" value="誤信念が証拠によって強化され確信に至る幕。&#xa;「指摘≠攻撃」の世界を知る。&#xa;（構造上の弱点あり：外的イベント不足・要検討）。" style="rounded=0;fillColor=#ECF0F1;strokeColor=#BDC3C7;fontSize=10;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;whiteSpace=wrap;" parent="1" vertex="1">
+                <mxCell id="s3" value="誤信念が証拠によって強化され確信に至る幕。&#xa;「指摘≠攻撃」の世界を知る。&#xa;（構造上の弱点あり：外的イベント不足・要検討）。&#xa;&#xa;-&gt;　イベント自体は起こせる　例）体育祭×主人公の" style="rounded=0;fillColor=#ECF0F1;strokeColor=#BDC3C7;fontSize=10;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;whiteSpace=wrap;" parent="1" vertex="1">
                     <mxGeometry x="890" y="102" width="380" height="90" as="geometry"/>
                 </mxCell>
                 <mxCell id="s4" value="誤信念が現実に敗北し崩壊が始まる幕。&#xa;樹が「自分は秀斗と同じことをしている」&#xa;と気づく転換点がここ。" style="rounded=0;fillColor=#FEF5E7;strokeColor=#FAD7A0;fontSize=10;align=left;spacingLeft=8;spacingTop=6;verticalAlign=top;whiteSpace=wrap;" parent="1" vertex="1">

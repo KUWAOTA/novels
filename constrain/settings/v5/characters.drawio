@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="oC5IHE3WH6aJU0VUZvO9" name="Page-1">
-        <mxGraphModel dx="392" dy="244" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="6000" background="#FFFFFF" math="0" shadow="0">
+        <mxGraphModel dx="528" dy="237" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="6000" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -250,7 +250,7 @@
                 <mxCell id="am_father" value="父 水無瀬 晃（あきら）" style="swimlane;startSize=20;fillColor=#fef3e2;strokeColor=#d79b00;fontSize=10;" parent="aman" vertex="1">
                     <mxGeometry x="10" y="585" width="320" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="am_father_t" value="・開業医（慶応医卒）。代々病院を継いでいる&#xa;・不倫をしている。家庭は母に丸投げ&#xa;・「2点足りないところに人生の崩壊がある」という教え&#xa;・A男に暴力→A男は自分の手を見て凍る（ACT2候補D案）&#xa;・笑いながら「慶応で医学部以外って遊びすぎやでｗ」&#xa;・主人公の父（須藤孝則）と対極的な父親像" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="am_father" vertex="1">
+                <mxCell id="am_father_t" value="・開業医（慶応医卒）。代々病院を継いでいる&#xa;・不倫をしている。家庭は母に丸投げ&#xa;・笑いながら「慶応で医学部以外って遊びすぎやでｗ」&#xa;・主人公の父（須藤孝則）と対極的な父親像" style="text;strokeColor=none;fillColor=none;fontSize=9;align=left;spacingLeft=6;" parent="am_father" vertex="1">
                     <mxGeometry x="5" y="22" width="310" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="am_envy" value="嫉妬の核心：二重の羨望" style="swimlane;startSize=20;fillColor=#fef3e2;strokeColor=#d79b00;fontSize=10;" parent="aman" vertex="1">
