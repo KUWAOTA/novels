@@ -79,7 +79,7 @@ Robert McKee『Story』『Character』に基づく**物語構造検証システ�
 
 ## 関連プロジェクト
 
-- `../constrain/brainstorm/` — 小説「Constrain」のブレインストーミング
+- `../diopsidae/_内部/old/brainstorm/` — 小説「diopsidae」の旧ブレインストーミング資料
 - `../novel_construct.yaml` — 小説全体構造（概要レベル）
 
 ## AGスキル参照

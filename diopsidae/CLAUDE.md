@@ -1,4 +1,4 @@
-# Constrain — 小説プロジェクト コンテキスト
+# diopsidae — 小説プロジェクト コンテキスト
 
 ## 概要
 
@@ -36,17 +36,12 @@
 
 | ファイル | 役割 | 編集者 |
 |----------|------|--------|
-| `brainstorm/current_plot.md` | 現在のプロット（マスター） | **ユーザーのみ** |
-| `brainstorm/plot_history.md` | 全プロット履歴データベース | AG / Claude Code |
-| `brainstorm/mckee_structure.drawio` | McKee構造分析の可視化 | AG / Claude Code |
-| `brainstorm/writing_issues.md` | 未解決の設定問題リスト | AG / Claude Code |
-| `brainstorm/generated_drafts/agents_story/ACT1/` | ACT1本文（5シーン）⚠️ AI生成草稿・参考のみ | AG / Claude Code |
-| `brainstorm/generated_drafts/agents_story/ACT2/` | ACT2本文（5シーン）⚠️ AI生成草稿・参考のみ | AG / Claude Code |
-
-## agents_story の扱いについて
-
-`brainstorm/generated_drafts/agents_story/ACT1/` および `ACT2/` のシーンファイルは**AIが生成した草稿**であり、ユーザーが承認した正式原稿ではない。
-設定・描写・台詞を「確定した事実」として前提にしないこと。詳細は `agents_story/README.md` を参照。
+| `_内部/old/brainstorm/current_plot.md` | 旧プロット（参照のみ） | **ユーザーのみ** |
+| `_内部/old/brainstorm/plot_history.md` | 全プロット履歴データベース | AG / Claude Code |
+| `_内部/old/brainstorm/mckee_structure.drawio` | McKee構造分析の可視化 | AG / Claude Code |
+| `本文/PROLOGUE/本文.txt` | プロローグ本文（現在の執筆対象） | ユーザー / 黒田 |
+| `settings/v5/` | 最新の設定資料（drawio） | AG / Claude Code |
+| `settings/v5/review_insights.md` | レビューから得た設定上の知見 | AG / Claude Code |
 
 ## 執筆フォーマット規約
 
@@ -56,10 +51,10 @@
 
 ## プロット更新時の手順
 
-`current_plot.md` が更新されたら（`.agent/skills/constrain-plot-sync/SKILL.md` 参照）:
-1. `plot_history.md` に変更記録を追記
-2. `mckee_structure.drawio` を配色規約に従って更新
-3. `git commit -m "sync: current_plot.md YYYY-MM-DD 更新反映"`
+プロットを更新したら（`../.agent/skills/constrain-plot-sync/SKILL.md` 参照）:
+1. `_内部/old/brainstorm/plot_history.md` に変更記録を追記
+2. `settings/v5/plot.drawio` を配色規約に従って更新
+3. `git commit -m "sync: plot YYYY-MM-DD 更新反映"`
 
 ## draw.io 配色規約（主要のみ）
 
@@ -71,11 +66,11 @@
 | 喪失 / 転換点 | `#F5C6CB` | `#C0392B` |
 | 確定項目 | `#D4EDDA` | `#28A745` |
 
-詳細は `.agent/skills/constrain-plot-sync/SKILL.md` を参照。
+詳細は `../.agent/skills/constrain-plot-sync/SKILL.md` を参照。
 
 ## Antigravity スキル
 
-- `.agent/instructions.md` — プロジェクトレベルのエージェント指示（日本語）
+- `_内部/.agent/instructions.md` — プロジェクトレベルのエージェント指示（日本語）
 - `../.agent/skills/prompt-refinement/SKILL.md` — 雑な依頼を実行前に構造化する共通テンプレート
 
 ## Prompt Normalization Rule
@@ -83,5 +78,5 @@
 依頼が短文、抽象的、または断片的な場合は、`../.agent/skills/prompt-refinement/SKILL.md` を先に適用する。
 
 - まず候補出しか確定更新かを判定する
-- `current_plot.md` に触れる恐れがある場合だけ確認する
+- プロット（`_内部/old/brainstorm/`）に触れる恐れがある場合だけ確認する
 - 致命的な不足がなければ、既存テーマに沿う候補として進める

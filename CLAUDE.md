@@ -6,7 +6,7 @@
 
 | フォルダ | 内容 |
 |----------|------|
-| `constrain/` | 小説「Constrain（制約）」の本文・設定・ブレインストーミング |
+| `diopsidae/` | 小説「diopsidae（制約）」の本文・設定・ブレインストーミング |
 | `story-compiler/` | Robert McKee理論ベースの物語構造検証システム |
 
 ## Antigravity (AG) スキル・ワークフロー
@@ -23,7 +23,7 @@ Claude Codeからも同じ操作を行う際は、これらの定義を参照す
 
 ## 絶対ルール
 
-- `constrain/brainstorm/current_plot.md` は **ユーザーのみ編集**。AIは絶対に変更しない
+- `diopsidae/本文/` 内のファイルは慎重に扱う。プロット変更はユーザー確認を取ること
 - HTMLファイル（`value_map.html`等）は使用しない。可視化はすべて `.drawio` で行う
 - コミットメッセージは `feat:`, `fix:`, `sync:`, `style:` 等のprefixをつける
 - **全応答は日本語**で行う
@@ -40,11 +40,11 @@ Claude Codeからも同じ操作を行う際は、これらの定義を参照す
 - 目的、対象、制約、成果物を抽出してから着手する
 - 不足情報が致命的な場合のみ、短く質問する
 - 致命的でなければ、仮定を明示してそのまま進める
-- `constrain` では候補出しと確定更新を混同しない
+- `diopsidae` では候補出しと確定更新を混同しない
 
 ## サブプロジェクト詳細
 
-- `constrain/CLAUDE.md` — 小説プロジェクトの詳細コンテキスト
+- `diopsidae/CLAUDE.md` — 小説プロジェクトの詳細コンテキスト
 - `story-compiler/CLAUDE.md` — story-compilerの詳細コンテキスト
 ## Editor And Knowledge DB Rule
 

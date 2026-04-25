@@ -11,8 +11,8 @@ description: current_plot.md更新時にplot_history.mdとmckee_structure.drawio
 
 | ファイル | 役割 |
 |---------|------|
-| `constrain/brainstorm/plot_history.md` | プロットの全履歴・思考軌跡データベース |
-| `constrain/brainstorm/mckee_structure.drawio` | McKee構造分析の可視化（draw.io形式） |
+| `diopsidae/_内部/old/brainstorm/plot_history.md` | プロットの全履歴・思考軌跡データベース |
+| `diopsidae/_内部/old/brainstorm/mckee_structure.drawio` | McKee構造分析の可視化（draw.io形式） |
 
 ## トリガー
 
@@ -108,8 +108,11 @@ git push
 ## ファイル構成
 
 ```
-constrain/brainstorm/
-├── current_plot.md           # 現在プロット（ユーザー直接編集）
-├── plot_history.md           # 全履歴データベース（AG更新）
-└── mckee_structure.drawio    # McKee構造分析の可視化（AG更新）
+diopsidae/
+├── 本文/                     # 執筆フォルダ（ACT1〜5, PROLOGUE, EPILOGUE）
+├── settings/v5/              # 最新設定資料（drawio）
+└── _内部/old/brainstorm/     # 旧プロット資料
+    ├── current_plot.md       # 旧プロット（参照のみ）
+    ├── plot_history.md       # 全履歴データベース（AG更新）
+    └── mckee_structure.drawio # McKee構造分析の可視化（AG更新）
 ```

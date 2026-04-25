@@ -133,3 +133,58 @@ compile_time_checks:
     message: >
       シーンごとにPOVを切り替えていますが、その理由が定義されていません。
       各シーンのPOV選択に意図はありますか？
+
+# ============================================================
+# 三人称一視点選択の根拠と運用原則
+# （実作レビュー知見 2026-04）
+# ============================================================
+third_person_single_pov_rationale:
+  description: >
+    三人称一視点（third_person_limited）を選択する根拠と、
+    その運用上の制約・例外を整理する。
+    一人称に比べた優位性と限界を把握して設計に活かす。
+
+  why_third_over_first:
+    principle: >
+      一人称（first_person）は語り手が主人公を「完全に理解している」
+      という前提を読者に要求する。
+      作者自身が主人公を完全に把握しきれていない場合、
+      一人称では語りに矛盾・空白・作者の投影が露出しやすい。
+    recommendation: >
+      作者が主人公と距離を保ちながら書く必要がある段階では、
+      三人称一視点を選ぶ。
+      三人称なら「語り手が見えていないこと」を自然に描ける。
+
+  length_and_pov_stability:
+    principle: >
+      長編では視点を変える余裕がない。
+      視点変更はそれだけで読者の方向感覚を乱す負荷を生む。
+      大きな物語であるほど、一視点を貫くことが読者の没入を支える。
+    exception: >
+      物語の重要シーンで「相手側の目線を一部差し込む」ことは許容される。
+      ただしこれは例外的な技法として意識的に用いること。
+      per_scene_override: true に相当するが、理由の明示が必須。
+
+  compile_time_checks_extension:
+    first_person_with_incomplete_understanding:
+      description: >
+        pov_type: first_person で宣言されているが、
+        語り手（＝作者）が camera_subject を完全に理解していると
+        断言できない状態。
+      action: warning
+      message: >
+        一人称視点は、語り手が主人公を「完全に理解している」
+        前提を読者に課します。
+        作者が主人公と距離を保って書きたい場合は
+        third_person_limited への変更を検討してください。
+
+    pov_shift_without_reason_in_long_form:
+      description: >
+        長編（word_count > 50000）で per_scene_override: true のとき、
+        視点変更のシーンが多数になっている。
+      action: warning
+      message: >
+        長編では視点変更が読者負荷を高めます。
+        大事なシーンでの相手目線の差し込みは有効ですが、
+        多用すると一視点の没入感が失われます。
+        各視点変更シーンに明確な理由を付与してください。

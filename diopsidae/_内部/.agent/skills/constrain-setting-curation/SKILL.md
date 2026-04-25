@@ -9,9 +9,9 @@ description: Constrain の setting_idea、scene 案、character 案、象徴案�
 
 ## 必須前提
 
-- `constrain/brainstorm/current_plot.md` は編集しない
-- 先に `constrain/CLAUDE.md`、`constrain/AGENTS.md`、`story-compiler/AGENTS.md` を確認する
-- 必要に応じて `constrain/brainstorm/generated_drafts/setting_idea/00_idea_evaluation_framework.md` を参照する
+- `diopsidae/本文/` 内のファイルは慎重に扱い、変更前にユーザーに確認する
+- 先に `diopsidae/CLAUDE.md`、`story-compiler/AGENTS.md` を確認する
+- 必要に応じて `diopsidae/_内部/old/brainstorm/old/generated_drafts/setting_idea/00_idea_evaluation_framework.md` を参照する
 
 ## 目的
 
