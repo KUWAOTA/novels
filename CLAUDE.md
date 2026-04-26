@@ -27,7 +27,7 @@ Claude Codeからも同じ操作を行う際は、これらの定義を参照す
 - HTMLファイル（`value_map.html`等）は使用しない。可視化はすべて `.drawio` で行う
 - コミットメッセージは `feat:`, `fix:`, `sync:`, `style:` 等のprefixをつける
 - **全応答は日本語**で行う
-- **実質的な回答（3行以上）は `diary/YYYY-MM-DD/claude_HH-MM-SS_topic.md` に書き込む**（グローバルCLAUDE.mdの回答出力ルール参照）
+- **実質的な回答（3行以上）は `daily/YYYY-MM-DD/claude_HH-MM-SS_topic.md` に書き込む**（`diary/` は廃止、`daily/` に統合済み）
 
 ## 言語設定
 

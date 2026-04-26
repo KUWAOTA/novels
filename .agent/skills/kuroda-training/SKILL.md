@@ -13,7 +13,7 @@ description: 黒田（執筆メンター）との連携作業 — 状況整理�
 | `kuroda-training/prompt/` | 素材・指示文（入力） | 変更しない |
 | `kuroda-training/muramasa/` | 村正案件 | 案件単位で完結 |
 | `daily/YYYY-MM-DD/` | 草案・分析・たたき台 | Claudeの作業はここ |
-| `diary/` | ユーザーの日記 | AIは絶対に書かない |
+| `daily/` | 草案・日記（個人メモ含む） | claude_prefixのファイルのみ作成可 |
 
 ## draw.io 作成ルール
 
@@ -40,6 +40,6 @@ description: 黒田（執筆メンター）との連携作業 — 状況整理�
 
 ## 禁止事項
 
-- `diary/` への書き込み
+- `daily/` への個人日記ファイル（today.md、diary.md 等）への書き込み
 - `kuroda-training/` 直下への草案ファイル作成
 - ファイルの無断削除
