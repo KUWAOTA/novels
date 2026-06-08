@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="wjclCQA-mw7N3x6G5hsB" name="Page-1">
-        <mxGraphModel dx="392" dy="244" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="3600" background="#FFFFFF" math="0" shadow="0">
+        <mxGraphModel dx="1328" dy="488" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="3600" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -140,7 +140,7 @@
                     <mxGeometry x="40" y="1790" width="500" height="24" as="geometry"/>
                 </mxCell>
                 <mxCell id="hole1" value="v3→v4 で解決・進展した穴：&#xa;　✅ ACT5「理解できなくても愛する」の具体的行動 → 病室で沈黙し、隣に座る&#xa;　△ 主人公が秀斗に言う台詞 → 未確定（「辛かったやろ」は不採用）&#xa;&#xa;v4→v4.1 で解決した穴：&#xa;　✅ ACT5の具体的行動 → 航空券購入（クライマックス台詞は未確定）&#xa;　✅ プロローグ → 幼少期の日記（シュモクバエの内的独白）を大人の樹が読み返す&#xa;　✅ エピローグ → カカメガの森でシュモクバエを見つけて笑い合う（未来へ開く余韻）&#xa;　✅ 中核イメージ → シュモクバエ（全幕を貫く象徴）&#xa;&#xa;v4.1 でも残る穴：&#xa;　・視点ポリシーが未定義（一人称？三人称限定？視点移動あり？）&#xa;　・旧ACT3（灘〜東大）をACT2/3のどこに回想として配置するか&#xa;　・あんずの真実を樹がいつ・どう知るか（読者 vs 樹の情報格差の設計）&#xa;　・秀斗の台詞後のリアクションの具体（ハグ？沈黙？）" style="rounded=1;fillColor=#FEF9E7;strokeColor=#d6b656;fontSize=9;align=left;spacingLeft=8;spacingTop=6;" parent="1" vertex="1">
-                    <mxGeometry x="40" y="1820" width="800" height="150" as="geometry"/>
+                    <mxGeometry x="40" y="1820" width="800" height="210" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
