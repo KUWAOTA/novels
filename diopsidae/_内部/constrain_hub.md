@@ -8,6 +8,12 @@ tags:
 
 `Constrain` 関連の構想、プロンプト、下書き、補助資料の親 hub です。
 
+## Current Manuscript
+
+- [[diopsidae/本文/README|本文の運用方針]]
+- `diopsidae/本文/本文.txt` — プロローグとエピローグに挟まれた自由記述原稿
+- `diopsidae/本文/シーン素材/` — 順序未確定の既存シーン
+
 ## Brainstorm Core
 
 - [[constrain/brainstorm/README]]
