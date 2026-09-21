@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="iFK_qkvWtXflIoaEG1u1" name="Page-1">
-        <mxGraphModel dx="2075" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="4800" background="#FFFFFF" math="0" shadow="0">
+        <mxGraphModel dx="4960" dy="2300" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="4800" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -186,12 +186,6 @@
                 </mxCell>
                 <mxCell id="adv1" parent="1" style="rounded=1;fillColor=#EBF5FB;strokeColor=#2E86C1;fontSize=9;align=left;spacingLeft=8;spacingTop=6;" value="アドバイス① まず書いた方がいい。書いてみなきゃわからない要素が多い。&#xa;アドバイス② 間違ってたと思っていたことが実は正しいエピソードがあってもいい。&#xa;アドバイス③ 書くとしたらクライマックスかエピローグを先に。読後感の設計→逆算。&#xa;B子の死のような出来事のインパクトから書き始めてはどうか。&#xa;ACT3から書いたほうがいいのでは？の意見ももらっている。&#xa;&#xa;黒田レビュー(2026-04-12)：&#xa;　・書き始めることが大事で、順序はあとでもいい&#xa;　・イメージがついているところから書けるところから始める&#xa;　・まずパーツを作ってみる。剪定は後から&#xa;　・１シーケンス/１weekで進めていく" vertex="1">
                     <mxGeometry height="170" width="800" x="40" y="3200" as="geometry"/>
-                </mxCell>
-                <mxCell id="pmVpqR4EyuTOAbx6xTPA-1" parent="1" style="whiteSpace=wrap;html=1;" value="" vertex="1">
-                    <mxGeometry height="732" width="180" x="1280" y="8" as="geometry"/>
-                </mxCell>
-                <mxCell id="pmVpqR4EyuTOAbx6xTPA-2" parent="1" style="whiteSpace=wrap;html=1;" value="" vertex="1">
-                    <mxGeometry height="732" width="360" x="510" y="8" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
