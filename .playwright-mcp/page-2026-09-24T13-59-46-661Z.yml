@@ -1,0 +1,727 @@
+- generic [ref=f5e1]:
+  - generic [ref=f5e21]:
+    - log
+    - log
+  - generic [ref=f5e26]:
+    - generic [ref=f5e29]:
+      - generic [ref=f5e30]:
+        - generic [ref=f5e32]:
+          - generic [ref=f5e977]: えあちf
+          - generic [ref=f5e36]: えあち's factory
+        - generic [ref=f5e37]:
+          - button [ref=f5e7656] [cursor=pointer]
+          - link [ref=f5e7657] [cursor=pointer]:
+            - /url: https://support.discord.com
+            - button [ref=f5e7658]
+      - generic [ref=f5e49]:
+        - generic [ref=f5e50]:
+          - navigation [ref=f5e7659]:
+            - tree [ref=f5e52]:
+              - generic [ref=f5e53]:
+                - treeitem [level=1] [ref=f5e7660] [cursor=pointer]:
+                  - generic [ref=f5e63]: ダイレクトメッセージ
+                - group [ref=f5e7661]:
+                  - generic [ref=f5e70]:
+                    - treeitem [level=1] [selected] [ref=f5e7662] [cursor=pointer]:
+                      - generic [ref=f5e81]: えあち's factory
+                      - generic [aria-hidden] [ref=f5e82]: えあちf
+                    - generic [ref=f5e83]: えあち's factory
+                  - generic [ref=f5e84]:
+                    - treeitem [level=1] [ref=f5e7663] [cursor=pointer]:
+                      - generic [ref=f5e95]: 未読メッセージ（1's server）
+                    - generic [ref=f5e96]: 1's server
+                  - generic [ref=f5e97]:
+                    - treeitem [level=1] [ref=f5e7664] [cursor=pointer]:
+                      - generic [ref=f5e108]: 未読メッセージ（機電情アダルトサーバ）, 画面共有アクティビティ 音声通話がアクティブ
+                    - generic [ref=f5e109]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 2
+                              - generic: 7 ブースト
+                  - generic [ref=f5e110]:
+                    - treeitem [level=1] [ref=f5e7665] [cursor=pointer]:
+                      - generic [ref=f5e121]: 未読メッセージ（不知火燈の知り合いの集い）, 画面共有アクティビティ 音声通話がアクティブ
+                    - generic [ref=f5e122]: 不知火燈の知り合いの集い
+                  - treeitem [level=1] [ref=f5e7666] [cursor=pointer]:
+                    - generic [ref=f5e134]: 未読メッセージ（A.R.P.L.A.VIP）
+                    - generic [aria-hidden] [ref=f5e135]: A.R.P.L.A.V
+                  - generic [ref=f5e142]:
+                    - treeitem [level=1] [ref=f5e7667] [cursor=pointer]:
+                      - generic [ref=f5e148]: 10 件のメンション、灰信【映画・文学・思想・哲学】
+                    - generic: "10"
+                  - generic [ref=f5e150]:
+                    - generic [ref=f5e155]:
+                      - treeitem [level=1] [ref=f5e7668] [cursor=pointer]:
+                        - generic [ref=f5e161]: 1 件のメンション、🇯🇵日韓学校・한일학교🇰🇷, 画面共有アクティビティ 音声通話がアクティブ
+                      - generic: "1"
+                    - generic [ref=f5e162]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 3
+                              - generic: 17 ブースト
+                        - generic: "+9"
+                  - generic [ref=f5e163]:
+                    - treeitem [level=1] [ref=f5e7669] [cursor=pointer]:
+                      - generic [ref=f5e174]: 未読メッセージ（小説家になろう＠非公式）
+                    - generic [ref=f5e175]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 1
+                              - generic: 2 ブースト
+                  - generic [ref=f5e176]:
+                    - treeitem [level=1] [ref=f5e7670] [cursor=pointer]:
+                      - generic [ref=f5e187]: 未読メッセージ（【創作/読書】カクヨム運営公式）, 音声通話がアクティブ
+                    - generic [ref=f5e188]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 2
+                              - generic: 7 ブースト
+                        - generic: "+2"
+                  - generic [ref=f5e189]:
+                    - treeitem [level=1] [ref=f5e7671] [cursor=pointer]:
+                      - generic [ref=f5e200]: 未読メッセージ（ドロワドロワ）, 画面共有アクティビティ ビデオ通話がアクティブ 音声通話がアクティブ
+                    - generic [ref=f5e201]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 3
+                              - generic: 17 ブースト
+                        - generic: "+40"
+                  - generic [ref=f5e202]:
+                    - treeitem [level=1] [ref=f5e7672] [cursor=pointer]:
+                      - generic [ref=f5e213]: 未読メッセージ（思想・哲学・文学・芸術の会）
+                    - generic [ref=f5e214]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 3
+                              - generic: 20 ブースト
+                  - generic [ref=f5e215]:
+                    - treeitem [level=1] [ref=f5e7673] [cursor=pointer]:
+                      - generic [ref=f5e226]: 未読メッセージ（作業村）, 画面共有アクティビティ 音声通話がアクティブ
+                    - generic [ref=f5e227]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 1
+                              - generic: 3 ブースト
+                        - generic: "+3"
+                  - generic [ref=f5e228]:
+                    - treeitem [level=1] [ref=f5e7674] [cursor=pointer]:
+                      - generic [ref=f5e239]: 未読メッセージ（わくせい）, 画面共有アクティビティ 音声通話がアクティブ
+                    - generic [ref=f5e240]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 3
+                              - generic: 18 ブースト
+                        - generic: "+13"
+                  - generic [ref=f5e241]:
+                    - treeitem [level=1] [ref=f5e7675] [cursor=pointer]:
+                      - generic [ref=f5e252]: 未読メッセージ（仲間｜NAKAMA）
+                    - generic [ref=f5e253]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 1
+                              - generic: 5 ブースト
+                  - generic [ref=f5e254]:
+                    - treeitem [level=1] [ref=f5e7676] [cursor=pointer]:
+                      - generic [ref=f5e265]: 未読メッセージ（Japanese English International School/日英国際学校）, 画面共有アクティビティ 音声通話がアクティブ
+                    - generic [ref=f5e266]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 3
+                              - generic: 18 ブースト
+                  - generic [ref=f5e267]:
+                    - treeitem [level=1] [ref=f5e7677] [cursor=pointer]:
+                      - generic [ref=f5e278]: 未読メッセージ（知らない言葉）
+                    - generic [ref=f5e279]: 知らない言葉
+                  - generic [ref=f5e280]:
+                    - generic [ref=f5e285]:
+                      - treeitem [level=1] [ref=f5e7678] [cursor=pointer]:
+                        - generic [ref=f5e291]: 40 件のメンション、Project RTTS 創作鯖
+                      - generic: "40"
+                    - generic [ref=f5e292]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベルなし
+                              - generic: 2 ブースト
+                  - generic [ref=f5e293]:
+                    - treeitem [level=1] [ref=f5e7679] [cursor=pointer]:
+                      - generic [ref=f5e304]: 未読メッセージ（ネット小説執筆経験者のつどい）
+                    - generic [ref=f5e305]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 1
+                              - generic: 3 ブースト
+                  - generic [ref=f5e306]:
+                    - generic [ref=f5e311]:
+                      - treeitem [level=1] [ref=f5e7680] [cursor=pointer]:
+                        - generic [ref=f5e317]: 33 件のメンション、グリルチキン
+                      - generic: "33"
+                    - generic [ref=f5e318]: グリルチキン
+                  - generic [ref=f5e319]:
+                    - treeitem [level=1] [ref=f5e7681] [cursor=pointer]:
+                      - generic [ref=f5e330]: 「競争社会からの脱出！」PJT
+                      - generic [aria-hidden] [ref=f5e331]: 「競争社会からの脱出！」P
+                    - generic [ref=f5e332]: 「競争社会からの脱出！」PJT
+                  - generic [ref=f5e333]:
+                    - generic [ref=f5e338]:
+                      - treeitem [level=1] [ref=f5e7682] [cursor=pointer]:
+                        - generic [ref=f5e344]: 1 件のメンション、魔神界
+                      - generic: "1"
+                    - generic [ref=f5e345]: 魔神界
+                  - generic [ref=f5e346]:
+                    - treeitem [level=1] [ref=f5e7683] [cursor=pointer]:
+                      - generic [ref=f5e357]: 七夕会
+                    - generic [ref=f5e358]: 七夕会
+                - treeitem [level=1] [ref=f5e7684] [cursor=pointer]
+                - treeitem [level=1] [ref=f5e7685] [cursor=pointer]
+                - treeitem [level=1] [ref=f5e7686] [cursor=pointer]
+            - generic: 新規
+          - navigation [ref=f5e8077]:
+            - generic [ref=f5e986]:
+              - button [ref=f5e8078] [cursor=pointer]:
+                - heading [level=2] [ref=f5e8079]: えあち's factory
+              - button [ref=f5e8080] [cursor=pointer]
+            - heading [level=2] [ref=f5e8081]: チャンネル
+            - list [ref=f5e8082]:
+              - listitem [ref=f5e1003]:
+                - generic [aria-hidden] [ref=f5e1009] [cursor=pointer]: イベント
+              - listitem [ref=f5e1010]:
+                - generic [aria-hidden] [ref=f5e1016] [cursor=pointer]: サーバーブースト
+              - listitem [ref=f5e1018]:
+                - generic [ref=f5e1019] [cursor=pointer]:
+                  - button [expanded] [ref=f5e8083]:
+                    - heading [level=3] [ref=f5e8084]:
+                      - generic [ref=f5e1022]: はじめに
+                  - generic [ref=f5e1025]:
+                    - button [ref=f5e8085]
+                    - generic [ref=f5e1029]: チャンネルを作成
+              - listitem [ref=f5e1030]:
+                - link [ref=f5e8086] [cursor=pointer]:
+                  - /url: /channels/1552553988140961892/1552553988610596875
+                  - generic [ref=f5e1034]:
+                    - generic [ref=f5e1038]: テキスト
+                    - generic [aria-hidden] [ref=f5e1039]: ルールと権利
+                    - generic [ref=f5e1046]: チャンネルに招待
+                    - generic [ref=f5e1051]: チャンネルの編集
+              - listitem [ref=f5e1052]:
+                - link [ref=f5e8088] [cursor=pointer]:
+                  - /url: /channels/1552553988140961892/1552553988610596876
+                  - generic [ref=f5e1056]:
+                    - generic [ref=f5e1060]: テキスト
+                    - generic [aria-hidden] [ref=f5e1061]: お知らせ
+                    - generic [ref=f5e1062]: チャンネルに招待
+                    - generic [ref=f5e1063]: チャンネルの編集
+              - listitem [ref=f5e6691]:
+                - link [ref=f5e8090] [cursor=pointer]:
+                  - /url: /channels/1552553988140961892/1552680325086187530
+                  - generic [ref=f5e6695]:
+                    - generic [ref=f5e6699]: テキスト
+                    - generic [aria-hidden] [ref=f5e6700]: はじめに
+                    - generic [ref=f5e6707]: チャンネルに招待
+                    - generic [ref=f5e6712]: チャンネルの編集
+              - listitem [ref=f5e1064]:
+                - generic [ref=f5e1065] [cursor=pointer]:
+                  - button [expanded] [ref=f5e8092]:
+                    - heading [level=3] [ref=f5e8093]:
+                      - generic [ref=f5e1068]: 交流
+                  - generic [ref=f5e1071]:
+                    - button [ref=f5e8094]
+                    - generic [ref=f5e1075]: チャンネルを作成
+              - listitem [ref=f5e1076]:
+                - link [ref=f5e8095] [cursor=pointer]:
+                  - /url: /channels/1552553988140961892/1552553988610596878
+                  - generic [ref=f5e1080]:
+                    - generic [ref=f5e1084]: テキスト
+                    - generic [aria-hidden] [ref=f5e1085]: 雑談
+                    - generic [ref=f5e1086]: チャンネルに招待
+                    - generic [ref=f5e1087]: チャンネルの編集
+              - listitem [ref=f5e1088]:
+                - link [ref=f5e8097] [cursor=pointer]:
+                  - /url: /channels/1552553988140961892/1552553988610596879
+                  - generic [ref=f5e1092]:
+                    - generic [ref=f5e1096]: テキスト
+                    - generic [aria-hidden] [ref=f5e1097]: 作品チャンネル申請
+                    - generic [ref=f5e1098]: チャンネルに招待
+                    - generic [ref=f5e1099]: チャンネルの編集
+              - listitem [ref=f5e1100]:
+                - link [ref=f5e8099] [cursor=pointer]:
+                  - /url: /channels/1552553988140961892/1552553988610596880
+                  - generic [ref=f5e1104]:
+                    - generic [ref=f5e1108]: テキスト
+                    - generic [aria-hidden] [ref=f5e1109]: 創作相談
+                    - generic [ref=f5e1110]: チャンネルに招待
+                    - generic [ref=f5e1111]: チャンネルの編集
+              - listitem [ref=f5e7004]:
+                - link [ref=f5e8101] [cursor=pointer]:
+                  - /url: /channels/1552553988140961892/1552680466052546560
+                  - generic [ref=f5e7008]:
+                    - generic [ref=f5e7012]: テキスト
+                    - generic [aria-hidden] [ref=f5e7013]: 自己紹介
+                    - generic [ref=f5e7014]:
+                      - button [ref=f5e8103]
+                      - generic [ref=f5e7020]: チャンネルに招待
+                      - button [ref=f5e8104]
+                      - generic [ref=f5e7025]: チャンネルの編集
+              - listitem [ref=f5e1112]:
+                - generic [ref=f5e1113] [cursor=pointer]:
+                  - button [expanded] [ref=f5e8105]:
+                    - heading [level=3] [ref=f5e8106]:
+                      - generic [ref=f5e1116]: 作業通話
+                  - generic [ref=f5e1119]:
+                    - button [ref=f5e8107]
+                    - generic [ref=f5e1123]: チャンネルを作成
+              - listitem [ref=f5e1124]:
+                - button [ref=f5e8108] [cursor=pointer]:
+                  - generic [ref=f5e1129]:
+                    - generic [ref=f5e1134]: 音声
+                    - generic [aria-hidden] [ref=f5e1135]: 作業室
+                    - generic [ref=f5e1136]: チャットを開く
+                    - generic [ref=f5e1137]: ボイスに招待
+                    - generic [ref=f5e1138]: チャンネルの編集
+              - listitem [ref=f5e1139]:
+                - button [ref=f5e8110] [cursor=pointer]:
+                  - generic [ref=f5e1144]:
+                    - generic [ref=f5e1149]: 音声
+                    - generic [aria-hidden] [ref=f5e1150]: 相談室
+                    - generic [ref=f5e1151]: チャットを開く
+                    - generic [ref=f5e1152]: ボイスに招待
+                    - generic [ref=f5e1153]: チャンネルの編集
+              - listitem [ref=f5e1154]:
+                - button [ref=f5e8112] [cursor=pointer]:
+                  - generic [ref=f5e1159]:
+                    - generic [ref=f5e1164]: 音声
+                    - generic [aria-hidden] [ref=f5e1165]: 配信ルーム
+                    - generic [ref=f5e1166]: チャットを開く
+                    - generic [ref=f5e1167]: ボイスに招待
+                    - generic [ref=f5e1168]: チャンネルの編集
+          - separator [ref=f5e7738]
+          - region [ref=f5e7739]:
+            - generic [ref=f5e728]:
+              - generic [ref=f5e732] [cursor=pointer]:
+                - generic [ref=f5e733]: えあち
+                - generic [ref=f5e737]:
+                  - generic: kuins_air__
+                  - generic:
+                    - generic: オンライン
+                    - generic: 画面共有しています
+              - generic [ref=f5e738]:
+                - generic [ref=f5e739]:
+                  - switch [checked] [ref=f5e7740] [cursor=pointer]
+                  - generic [ref=f5e761]: ミュート解除
+                  - button [ref=f5e7741] [cursor=pointer]
+                - generic [ref=f5e766]:
+                  - switch [ref=f5e7742] [cursor=pointer]
+                  - button [ref=f5e7743] [cursor=pointer]
+                - button [ref=f5e7744] [cursor=pointer]
+        - generic [ref=f5e7026]:
+          - region [ref=f5e7745]:
+            - generic [ref=f5e7029]:
+              - generic [ref=f5e7030]:
+                - generic [ref=f5e7034]: テキストチャンネル
+                - heading [level=1] [ref=f5e7746]:
+                  - generic [ref=f5e7037]: "えあち's factory:"
+                  - text: 自己紹介
+              - generic [ref=f5e7038]:
+                - button [ref=f5e7747] [cursor=pointer]
+                - button [ref=f5e7748] [cursor=pointer]
+                - button [ref=f5e7749] [cursor=pointer]
+                - button [ref=f5e7750] [cursor=pointer]
+                - generic [ref=f5e7053]:
+                  - combobox [ref=f5e7751]:
+                    - generic [ref=f5e7055]: えあち's factoryを検索
+                  - button [aria-hidden] [ref=f5e7056]
+          - main [ref=f5e8181]:
+            - heading [level=2] [ref=f5e7752]: 自己紹介チャット
+            - group [ref=f5e7067]:
+              - list [ref=f5e7753]:
+                - generic [ref=f5e7070]:
+                  - heading [level=3] [aria-hidden] [ref=f5e7074]: "#自己紹介へようこそ！"
+                  - generic [ref=f5e7075]: これはチャンネル「#自己紹介」の始まりです。
+                  - button [ref=f5e7754] [cursor=pointer]:
+                    - generic [ref=f5e7078]: チャンネルの編集
+                - separator:
+                  - generic: 2026年9月24日
+                - listitem [ref=f5e7162]:
+                  - article [ref=f5e7755]:
+                    - generic [ref=f5e7164]:
+                      - img [aria-hidden] [ref=f5e7165] [cursor=pointer]
+                      - heading [level=3] [ref=f5e7756]:
+                        - button [ref=f5e7757]: えあち
+                        - generic [ref=f5e7273]:
+                          - time [ref=f5e7275]:
+                            - generic [aria-hidden] [ref=f5e7276]: —
+                            - text: 22:58
+                          - generic [ref=f5e7277]: 2026年9月24日木曜日 22:58
+                      - generic [ref=f5e7169]: ようこそ。呼ばれたい名前、作っているもの・好きなジャンル、ここで話したいことを、書ける範囲で紹介してください。作品をまだ公開していなくても参加できます。
+            - generic [ref=f5e7088]:
+              - button [ref=f5e7758] [cursor=pointer]
+              - generic [ref=f5e7095]:
+                - generic [aria-hidden]: "#自己紹介へメッセージを送信"
+                - textbox [ref=f5e7759]
+              - generic [ref=f5e7098]:
+                - generic [ref=f5e7099]:
+                  - button [ref=f5e7760] [cursor=pointer]
+                  - generic [ref=f5e7116]: フレンドに Nitro のステキなチャット特典をプレゼント！
+                - button [ref=f5e7761] [cursor=pointer]
+                - generic [ref=f5e7128]: GIFを送信
+                - button [ref=f5e7762] [cursor=pointer]
+                - button [ref=f5e7763] [cursor=pointer]
+                - button [ref=f5e7764] [cursor=pointer]
+    - dialog "チャンネル設定" [ref=f5e8182]:
+      - generic [ref=f5e8183]:
+        - navigation [ref=f5e8186]:
+          - tablist [ref=f5e8187]:
+            - generic [ref=f5e8188]: 作業室作業通話
+            - tab "概要" [ref=f5e8193] [cursor=pointer]
+            - tab "権限" [selected] [ref=f5e8194]
+            - tab "招待" [ref=f5e8195] [cursor=pointer]
+            - tab "連携サービス" [ref=f5e8196] [cursor=pointer]
+            - button "チャンネルを削除" [ref=f5e8198] [cursor=pointer]
+        - generic [ref=f5e8204]:
+          - generic [ref=f5e8205]:
+            - tabpanel [ref=f5e8206]:
+              - heading "チャンネルの権限" [level=2] [ref=f5e8378]
+              - generic [ref=f5e8379]: 権限を使ってこのチャンネルで誰が何をできるかをカスタマイズしてください。
+              - generic [ref=f5e8385]:
+                - text: "カテゴリーと同期した権限:"
+                - strong [ref=f5e8386]: 作業通話
+              - generic [ref=f5e8388]:
+                - generic [ref=f5e8389]:
+                  - generic [ref=f5e8392]: プライベートチャンネル
+                  - switch [ref=f5e8400]
+                - generic [ref=f5e8401]: チャンネルを「プライベート」に設定すると、選択したメンバーおよびロールの人のみに、当該チャンネルの閲覧や接続が許可されます。
+              - generic [ref=f5e8403]:
+                - button "高度な権限" [expanded] [ref=f5e8404] [cursor=pointer]
+                - group "高度な権限" [ref=f5e8408]:
+                  - generic [ref=f5e8409]:
+                    - complementary [ref=f5e8410]:
+                      - tablist [ref=f5e8413]:
+                        - button "ロール/メンバー" [ref=f5e8414]
+                        - tab "@everyone" [selected] [ref=f5e8418]
+                        - link "アクセス権限についてお困りですか？" [ref=f5e8423] [cursor=pointer]:
+                          - /url: https://support.discord.com/hc/ja/articles/206029707
+                    - generic [ref=f5e8425]:
+                      - group "チャンネル全般の権限" [ref=f5e8427]:
+                        - generic [ref=f5e8429]:
+                          - generic [ref=f5e8431]:
+                            - generic [ref=f5e8432]:
+                              - generic [ref=f5e8433]: チャンネルを見る
+                              - generic [ref=f5e8434]: この権限を持つメンバーは、デフォルトでこのチャンネルを閲覧できます。この権限ならびに「接続」権限を @everyone に対して無効にした場合、このチャンネルはプライベート設定になります。
+                            - radiogroup "チャンネルを見る" [ref=f5e8436]:
+                              - radio "チャンネルを見る, 拒否" [ref=f5e8437] [cursor=pointer]
+                              - radio "チャンネルを見る, 無視" [checked] [ref=f5e8440] [cursor=pointer]
+                              - radio "チャンネルを見る, 許可" [ref=f5e8443] [cursor=pointer]
+                          - generic [ref=f5e8448]:
+                            - generic [ref=f5e8449]:
+                              - generic [ref=f5e8450]: チャンネルの管理
+                              - generic [ref=f5e8451]: この権限を持つメンバーは、このチャンネルの名前、説明、ボイス設定を変更できます。また、このチャンネルを削除することもできます。
+                            - radiogroup "チャンネルの管理" [ref=f5e8453]:
+                              - radio "チャンネルの管理, 拒否" [ref=f5e8454] [cursor=pointer]
+                              - radio "チャンネルの管理, 無視" [checked] [ref=f5e8457] [cursor=pointer]
+                              - radio "チャンネルの管理, 許可" [ref=f5e8460] [cursor=pointer]
+                          - generic [ref=f5e8465]:
+                            - generic [ref=f5e8466]:
+                              - generic [ref=f5e8467]: 権限の管理
+                              - generic [ref=f5e8468]: この権限を持つメンバーは、このチャンネルの権限を変更できます。
+                            - radiogroup "権限の管理" [ref=f5e8470]:
+                              - radio "権限の管理, 拒否" [ref=f5e8471] [cursor=pointer]
+                              - radio "権限の管理, 無視" [checked] [ref=f5e8474] [cursor=pointer]
+                              - radio "権限の管理, 許可" [ref=f5e8477] [cursor=pointer]
+                          - generic [ref=f5e8482]:
+                            - generic [ref=f5e8483]:
+                              - generic [ref=f5e8484]: ウェブフックの管理
+                              - generic [ref=f5e8485]: この権限を持つメンバーは、このチャンネル内でウェブフックを作成・編集・削除できます。ウェブフックを使うと、他のアプリやサイトからメッセージを投稿できます。
+                            - radiogroup "ウェブフックの管理" [ref=f5e8487]:
+                              - radio "ウェブフックの管理, 拒否" [ref=f5e8488] [cursor=pointer]
+                              - radio "ウェブフックの管理, 無視" [checked] [ref=f5e8491] [cursor=pointer]
+                              - radio "ウェブフックの管理, 許可" [ref=f5e8494] [cursor=pointer]
+                      - group "メンバーシップ権限" [ref=f5e8498]:
+                        - generic [ref=f5e8502]:
+                          - generic [ref=f5e8503]:
+                            - generic [ref=f5e8504]: 招待を作成
+                            - generic [ref=f5e8505]: この権限を持つメンバーは、このチャンネルへの直接招待リンクを介して、このサーバーに新メンバーを招待できます。招待を受け取った人は、接続する権限を持っていれば、自動的にボイスチャンネルに参加となります。
+                          - radiogroup "招待を作成" [ref=f5e8507]:
+                            - radio "招待を作成, 拒否" [ref=f5e8508] [cursor=pointer]
+                            - radio "招待を作成, 無視" [checked] [ref=f5e8511] [cursor=pointer]
+                            - radio "招待を作成, 許可" [ref=f5e8514] [cursor=pointer]
+                      - group "ボイスチャンネル権限" [ref=f5e8518]:
+                        - generic [ref=f5e8520]:
+                          - generic [ref=f5e8522]:
+                            - generic [ref=f5e8523]:
+                              - generic [ref=f5e8524]: 接続
+                              - generic [ref=f5e8525]: この権限を持つメンバーは、デフォルトでこのボイスチャンネルに参加して他の人の会話を聞けます。この権限ならびに「チャンネルを見る」権限を @everyone に対して無効にした場合、このチャンネルはプライベート設定になります。
+                            - radiogroup "接続" [ref=f5e8527]:
+                              - radio "接続, 拒否" [ref=f5e8528] [cursor=pointer]
+                              - radio "接続, 無視" [ref=f5e8531] [cursor=pointer]
+                              - radio "接続, 許可" [checked] [active] [ref=f5e8534] [cursor=pointer]
+                          - generic [ref=f5e8539]:
+                            - generic [ref=f5e8540]:
+                              - generic [ref=f5e8541]: 発言
+                              - generic [ref=f5e8542]: この権限を持つメンバーは、このボイスチャンネルで話せます。この権限を無効にした場合、メンバーはデフォルトでミュート状態となり、「メンバーをミュート」権限を持つ他メンバーによってミュート状態を解除されなければ話すことはできません。
+                            - radiogroup "発言" [ref=f5e8544]:
+                              - radio "発言, 拒否" [ref=f5e8545] [cursor=pointer]
+                              - radio "発言, 無視" [checked] [ref=f5e8548] [cursor=pointer]
+                              - radio "発言, 許可" [ref=f5e8551] [cursor=pointer]
+                          - generic [ref=f5e8556]:
+                            - generic [ref=f5e8557]:
+                              - generic [ref=f5e8558]: WEB カメラ
+                              - generic [ref=f5e8559]: この権限を持つメンバーは、このボイスチャンネルで動画を共有したり、画面共有を行ったり、ゲームを配信したりできます。
+                            - radiogroup "WEB カメラ" [ref=f5e8561]:
+                              - radio "WEB カメラ, 拒否" [ref=f5e8562] [cursor=pointer]
+                              - radio "WEB カメラ, 無視" [checked] [ref=f5e8565] [cursor=pointer]
+                              - radio "WEB カメラ, 許可" [ref=f5e8568] [cursor=pointer]
+                          - generic [ref=f5e8573]:
+                            - generic [ref=f5e8574]:
+                              - generic [ref=f5e8575]: サウンドボードを使用
+                              - generic [ref=f5e8576]:
+                                - text: この権限を持つメンバーは、このボイスチャンネルでサーバーサウンドボードからサウンドを送信できます。
+                                - link "詳しくはこちら。" [ref=f5e8577] [cursor=pointer]:
+                                  - /url: https://support.discord.com/hc/ja/articles/12612888127767
+                            - radiogroup "サウンドボードを使用" [ref=f5e8579]:
+                              - radio "サウンドボードを使用, 拒否" [ref=f5e8580] [cursor=pointer]
+                              - radio "サウンドボードを使用, 無視" [checked] [ref=f5e8583] [cursor=pointer]
+                              - radio "サウンドボードを使用, 許可" [ref=f5e8586] [cursor=pointer]
+                          - generic [ref=f5e8591]:
+                            - generic [ref=f5e8592]:
+                              - generic [ref=f5e8593]: 外部のサウンドの使用
+                              - generic [ref=f5e8594]: この権限を持つメンバーは、他のサーバーのサウンドを使用できます（Discord Nitroサブスクライバーに限る）。
+                            - radiogroup "外部のサウンドの使用" [ref=f5e8596]:
+                              - radio "外部のサウンドの使用, 拒否" [ref=f5e8597] [cursor=pointer]
+                              - radio "外部のサウンドの使用, 無視" [checked] [ref=f5e8600] [cursor=pointer]
+                              - radio "外部のサウンドの使用, 許可" [ref=f5e8603] [cursor=pointer]
+                          - generic [ref=f5e8608]:
+                            - generic [ref=f5e8609]:
+                              - generic [ref=f5e8610]: 音声検出を使用
+                              - generic [ref=f5e8611]: この権限を持つメンバーは、このボイスチャンネルで話す際、普通に話し始める以外の操作を必要としません。この権限を無効にした場合、プッシュツートークの使用が求められます。騒音やうるさいメンバーへの対処に便利です。
+                            - radiogroup "音声検出を使用" [ref=f5e8613]:
+                              - radio "音声検出を使用, 拒否" [ref=f5e8614] [cursor=pointer]
+                              - radio "音声検出を使用, 無視" [checked] [ref=f5e8617] [cursor=pointer]
+                              - radio "音声検出を使用, 許可" [ref=f5e8620] [cursor=pointer]
+                          - generic [ref=f5e8625]:
+                            - generic [ref=f5e8626]:
+                              - generic [ref=f5e8627]: 優先スピーカー
+                              - generic [ref=f5e8628]:
+                                - text: この権限を持つメンバーは、このボイスチャンネルで声が聞き取られやすくなります。有効にすると、この権限を持たないメンバーの音量が自動的に下がります。優先スピーカーを有効にするには、キーバインド
+                                - strong [ref=f5e8629]:
+                                  - link "プッシュツートーク(優先)" [ref=f5e8630] [cursor=pointer]
+                                - text: を使用してください。
+                            - radiogroup "優先スピーカー" [ref=f5e8632]:
+                              - radio "優先スピーカー, 拒否" [ref=f5e8633] [cursor=pointer]
+                              - radio "優先スピーカー, 無視" [checked] [ref=f5e8636] [cursor=pointer]
+                              - radio "優先スピーカー, 許可" [ref=f5e8639] [cursor=pointer]
+                          - generic [ref=f5e8644]:
+                            - generic [ref=f5e8645]:
+                              - generic [ref=f5e8646]: メンバーをミュート
+                              - generic [ref=f5e8647]: この権限を持つメンバーは、このボイスチャンネルで他メンバーを全員に対してミュートできます。
+                            - radiogroup "メンバーをミュート" [ref=f5e8649]:
+                              - radio "メンバーをミュート, 拒否" [ref=f5e8650] [cursor=pointer]
+                              - radio "メンバーをミュート, 無視" [checked] [ref=f5e8653] [cursor=pointer]
+                              - radio "メンバーをミュート, 許可" [ref=f5e8656] [cursor=pointer]
+                          - generic [ref=f5e8661]:
+                            - generic [ref=f5e8662]:
+                              - generic [ref=f5e8663]: メンバーのスピーカーをミュート
+                              - generic [ref=f5e8664]: この権限を持つメンバーは、このボイスチャンネルで他メンバーをスピーカーミュートにできます。スピーカーミュートされたメンバーは、話したり他メンバーの声を聞いたりできなくなります。
+                            - radiogroup "メンバーのスピーカーをミュート" [ref=f5e8666]:
+                              - radio "メンバーのスピーカーをミュート, 拒否" [ref=f5e8667] [cursor=pointer]
+                              - radio "メンバーのスピーカーをミュート, 無視" [checked] [ref=f5e8670] [cursor=pointer]
+                              - radio "メンバーのスピーカーをミュート, 許可" [ref=f5e8673] [cursor=pointer]
+                          - generic [ref=f5e8678]:
+                            - generic [ref=f5e8679]:
+                              - generic [ref=f5e8680]: メンバーを移動
+                              - generic [ref=f5e8681]: この権限を持つメンバーは、このチャンネルから他メンバーを切断できます。また他メンバーを他のチャンネルへ移動させることができます（権限をもつメンバーがアクセスできるチャンネルに限る）。
+                            - radiogroup "メンバーを移動" [ref=f5e8683]:
+                              - radio "メンバーを移動, 拒否" [ref=f5e8684] [cursor=pointer]
+                              - radio "メンバーを移動, 無視" [checked] [ref=f5e8687] [cursor=pointer]
+                              - radio "メンバーを移動, 許可" [ref=f5e8690] [cursor=pointer]
+                          - generic [ref=f5e8695]:
+                            - generic [ref=f5e8696]:
+                              - generic [ref=f5e8697]: ボイスチャンネルステータスを設定
+                              - generic [ref=f5e8698]: この権限を持つメンバーは、ボイスチャンネルステータスを作成・編集できます。
+                            - radiogroup "ボイスチャンネルステータスを設定" [ref=f5e8700]:
+                              - radio "ボイスチャンネルステータスを設定, 拒否" [ref=f5e8701] [cursor=pointer]
+                              - radio "ボイスチャンネルステータスを設定, 無視" [checked] [ref=f5e8704] [cursor=pointer]
+                              - radio "ボイスチャンネルステータスを設定, 許可" [ref=f5e8707] [cursor=pointer]
+                      - group "ボイスチャンネル チャット権限" [ref=f5e8711]:
+                        - generic [ref=f5e8713]:
+                          - text: 自動管理（AutoMod）でボイスチャンネル内のテキストチャットの監視が簡単にできます。
+                          - link "AutoMod を有効にする" [ref=f5e8714] [cursor=pointer]
+                        - generic [ref=f5e8715]:
+                          - generic [ref=f5e8717]:
+                            - generic [ref=f5e8718]:
+                              - generic [ref=f5e8719]: メッセージを送信
+                              - generic [ref=f5e8720]: この権限を持つメンバーは、このチャンネルでメッセージを送れます。
+                            - radiogroup "メッセージを送信" [ref=f5e8722]:
+                              - radio "メッセージを送信, 拒否" [ref=f5e8723] [cursor=pointer]
+                              - radio "メッセージを送信, 無視" [checked] [ref=f5e8726] [cursor=pointer]
+                              - radio "メッセージを送信, 許可" [ref=f5e8729] [cursor=pointer]
+                          - generic [ref=f5e8734]:
+                            - generic [ref=f5e8735]:
+                              - generic [ref=f5e8736]: 埋め込みリンク
+                              - generic [ref=f5e8737]: メンバーがこのチャンネルで共有する、埋め込みコンテンツを表示するリンクを許可します。
+                            - radiogroup "埋め込みリンク" [ref=f5e8739]:
+                              - radio "埋め込みリンク, 拒否" [ref=f5e8740] [cursor=pointer]
+                              - radio "埋め込みリンク, 無視" [checked] [ref=f5e8743] [cursor=pointer]
+                              - radio "埋め込みリンク, 許可" [ref=f5e8746] [cursor=pointer]
+                          - generic [ref=f5e8751]:
+                            - generic [ref=f5e8752]:
+                              - generic [ref=f5e8753]: ファイルを添付
+                              - generic [ref=f5e8754]: この権限を持つメンバーは、このチャンネルにファイルやメディアをアップロードできます。
+                            - radiogroup "ファイルを添付" [ref=f5e8756]:
+                              - radio "ファイルを添付, 拒否" [ref=f5e8757] [cursor=pointer]
+                              - radio "ファイルを添付, 無視" [checked] [ref=f5e8760] [cursor=pointer]
+                              - radio "ファイルを添付, 許可" [ref=f5e8763] [cursor=pointer]
+                          - generic [ref=f5e8768]:
+                            - generic [ref=f5e8769]:
+                              - generic [ref=f5e8770]: リアクションの追加
+                              - generic [ref=f5e8771]: この権限を持つメンバーは、このチャンネル内のメッセージに新しい絵文字リアクションを追加すること、ボイスチャンネルでリアクションを送ることができます。この権限を無効にした場合でも、既存のリアクションの使用は可能です。
+                            - radiogroup "リアクションの追加" [ref=f5e8773]:
+                              - radio "リアクションの追加, 拒否" [ref=f5e8774] [cursor=pointer]
+                              - radio "リアクションの追加, 無視" [checked] [ref=f5e8777] [cursor=pointer]
+                              - radio "リアクションの追加, 許可" [ref=f5e8780] [cursor=pointer]
+                          - generic [ref=f5e8785]:
+                            - generic [ref=f5e8786]:
+                              - generic [ref=f5e8787]: 外部の絵文字を使用する
+                              - generic [ref=f5e8788]: この権限を持つメンバーは、このチャンネル内で他のサーバーの絵文字を使用できます（Discord Nitroサブスクライバーに限る）。
+                            - radiogroup "外部の絵文字を使用する" [ref=f5e8790]:
+                              - radio "外部の絵文字を使用する, 拒否" [ref=f5e8791] [cursor=pointer]
+                              - radio "外部の絵文字を使用する, 無視" [checked] [ref=f5e8794] [cursor=pointer]
+                              - radio "外部の絵文字を使用する, 許可" [ref=f5e8797] [cursor=pointer]
+                          - generic [ref=f5e8802]:
+                            - generic [ref=f5e8803]:
+                              - generic [ref=f5e8804]: 外部のスタンプを使用する
+                              - generic [ref=f5e8805]: この権限を持つメンバーは、このチャンネル内で他のサーバーのスタンプを使用できます（Discord Nitroサブスクライバーに限る）。
+                            - radiogroup "外部のスタンプを使用する" [ref=f5e8807]:
+                              - radio "外部のスタンプを使用する, 拒否" [ref=f5e8808] [cursor=pointer]
+                              - radio "外部のスタンプを使用する, 無視" [checked] [ref=f5e8811] [cursor=pointer]
+                              - radio "外部のスタンプを使用する, 許可" [ref=f5e8814] [cursor=pointer]
+                          - generic [ref=f5e8819]:
+                            - generic [ref=f5e8820]:
+                              - generic [ref=f5e8821]: "@everyone、@here、全てのロールにメンション"
+                              - generic [ref=f5e8822]: この権限を持つメンバーは、このチャンネル内で @everyone または @here（オンラインのメンバーのみ）を使用できます。また、このチャンネル内で全てのロールに @mention できます（ロールの「全員がこのロールにメンションすることを許可する」権限が無効化されている場合でも有効）。
+                            - radiogroup "@everyone、@here、全てのロールにメンション" [ref=f5e8824]:
+                              - radio "@everyone、@here、全てのロールにメンション, 拒否" [ref=f5e8825] [cursor=pointer]
+                              - radio "@everyone、@here、全てのロールにメンション, 無視" [checked] [ref=f5e8828] [cursor=pointer]
+                              - radio "@everyone、@here、全てのロールにメンション, 許可" [ref=f5e8831] [cursor=pointer]
+                          - generic [ref=f5e8836]:
+                            - generic [ref=f5e8837]:
+                              - generic [ref=f5e8838]: メッセージの管理
+                              - generic [ref=f5e8839]: メンバーに対し、このチャンネルで他のメンバーによるメッセージから埋め込みを削除または取り除くことを許可します。
+                            - radiogroup "メッセージの管理" [ref=f5e8841]:
+                              - radio "メッセージの管理, 拒否" [ref=f5e8842] [cursor=pointer]
+                              - radio "メッセージの管理, 無視" [checked] [ref=f5e8845] [cursor=pointer]
+                              - radio "メッセージの管理, 許可" [ref=f5e8848] [cursor=pointer]
+                          - generic [ref=f5e8853]:
+                            - generic [ref=f5e8854]:
+                              - generic [ref=f5e8855]: 低速モードを回避
+                              - generic [ref=f5e8856]: メンバーが低速モードの影響を受けずにこのチャンネルでメッセージを送信できるようにします。
+                            - radiogroup "低速モードを回避" [ref=f5e8858]:
+                              - radio "低速モードを回避, 拒否" [ref=f5e8859] [cursor=pointer]
+                              - radio "低速モードを回避, 無視" [checked] [ref=f5e8862] [cursor=pointer]
+                              - radio "低速モードを回避, 許可" [ref=f5e8865] [cursor=pointer]
+                          - generic [ref=f5e8870]:
+                            - generic [ref=f5e8871]:
+                              - generic [ref=f5e8872]: メッセージ履歴を読む
+                              - generic [ref=f5e8873]: この権限を持つメンバーは、過去にこのチャンネルで送られたメッセージを読むことができます。この権限を無効にした場合、メンバーが読めるのはオンライン中に送られたメッセージのみとなります。
+                            - radiogroup "メッセージ履歴を読む" [ref=f5e8875]:
+                              - radio "メッセージ履歴を読む, 拒否" [ref=f5e8876] [cursor=pointer]
+                              - radio "メッセージ履歴を読む, 無視" [checked] [ref=f5e8879] [cursor=pointer]
+                              - radio "メッセージ履歴を読む, 許可" [ref=f5e8882] [cursor=pointer]
+                          - generic [ref=f5e8887]:
+                            - generic [ref=f5e8888]:
+                              - generic [ref=f5e8889]: テキスト読み上げメッセージを送信する
+                              - generic [ref=f5e8890]: この権限を持つメンバーは、/ttsをメッセージの始めに付けることで、このチャンネルでテキスト読み上げ機能のメッセージを送れます。これらのメッセージは、このチャンネルにフォーカスしていれば誰でも聞くことができます。
+                            - radiogroup "テキスト読み上げメッセージを送信する" [ref=f5e8892]:
+                              - radio "テキスト読み上げメッセージを送信する, 拒否" [ref=f5e8893] [cursor=pointer]
+                              - radio "テキスト読み上げメッセージを送信する, 無視" [checked] [ref=f5e8896] [cursor=pointer]
+                              - radio "テキスト読み上げメッセージを送信する, 許可" [ref=f5e8899] [cursor=pointer]
+                          - generic [ref=f5e8904]:
+                            - generic [ref=f5e8905]:
+                              - generic [ref=f5e8906]: ボイスメッセージを送信
+                              - generic [ref=f5e8907]: この権限を持つメンバーは、このチャンネルでボイスメッセージを送れます。なお「ファイルを添付」の権限も必要となります。
+                            - radiogroup "ボイスメッセージを送信" [ref=f5e8909]:
+                              - radio "ボイスメッセージを送信, 拒否" [ref=f5e8910] [cursor=pointer]
+                              - radio "ボイスメッセージを送信, 無視" [checked] [ref=f5e8913] [cursor=pointer]
+                              - radio "ボイスメッセージを送信, 許可" [ref=f5e8916] [cursor=pointer]
+                          - generic [ref=f5e8921]:
+                            - generic [ref=f5e8922]:
+                              - generic [ref=f5e8923]: 投票の作成
+                              - generic [ref=f5e8924]: メンバーがこのチャンネルで投票を作成できるようにします。
+                            - radiogroup "投票の作成" [ref=f5e8926]:
+                              - radio "投票の作成, 拒否" [ref=f5e8927] [cursor=pointer]
+                              - radio "投票の作成, 無視" [checked] [ref=f5e8930] [cursor=pointer]
+                              - radio "投票の作成, 許可" [ref=f5e8933] [cursor=pointer]
+                      - group "イベントの権限" [ref=f5e8937]:
+                        - generic [ref=f5e8939]:
+                          - generic [ref=f5e8941]:
+                            - generic [ref=f5e8942]:
+                              - generic [ref=f5e8943]: イベントを作成
+                              - generic [ref=f5e8944]: この権限を持つメンバーは、このチャンネルでイベントを作成できます。
+                            - radiogroup "イベントを作成" [ref=f5e8946]:
+                              - radio "イベントを作成, 拒否" [ref=f5e8947] [cursor=pointer]
+                              - radio "イベントを作成, 無視" [checked] [ref=f5e8950] [cursor=pointer]
+                              - radio "イベントを作成, 許可" [ref=f5e8953] [cursor=pointer]
+                          - generic [ref=f5e8958]:
+                            - generic [ref=f5e8959]:
+                              - generic [ref=f5e8960]: イベントの管理
+                              - generic [ref=f5e8961]: この権限を持つメンバーは、このチャンネルでイベントを編集またはキャンセルできます。
+                            - radiogroup "イベントの管理" [ref=f5e8963]:
+                              - radio "イベントの管理, 拒否" [ref=f5e8964] [cursor=pointer]
+                              - radio "イベントの管理, 無視" [checked] [ref=f5e8967] [cursor=pointer]
+                              - radio "イベントの管理, 許可" [ref=f5e8970] [cursor=pointer]
+                      - group "アプリの権限" [ref=f5e8974]:
+                        - generic [ref=f5e8976]:
+                          - generic [ref=f5e8978]:
+                            - generic [ref=f5e8979]:
+                              - generic [ref=f5e8980]: アプリコマンドを使う
+                              - generic [ref=f5e8981]: この権限を持つメンバーは、スラッシュコマンドやコンテキストメニュー・コマンドなど、このチャンネル内のアプリのコマンドの使用が可能です。
+                            - radiogroup "アプリコマンドを使う" [ref=f5e8983]:
+                              - radio "アプリコマンドを使う, 拒否" [ref=f5e8984] [cursor=pointer]
+                              - radio "アプリコマンドを使う, 無視" [checked] [ref=f5e8987] [cursor=pointer]
+                              - radio "アプリコマンドを使う, 許可" [ref=f5e8990] [cursor=pointer]
+                          - generic [ref=f5e8995]:
+                            - generic [ref=f5e8996]:
+                              - generic [ref=f5e8997]: ユーザーアクティビティ
+                              - generic [ref=f5e8998]: この権限を持つメンバーは、このチャンネルでアクティビティを使用できます。
+                            - radiogroup "ユーザーアクティビティ" [ref=f5e9000]:
+                              - radio "ユーザーアクティビティ, 拒否" [ref=f5e9001] [cursor=pointer]
+                              - radio "ユーザーアクティビティ, 無視" [checked] [ref=f5e9004] [cursor=pointer]
+                              - radio "ユーザーアクティビティ, 許可" [ref=f5e9007] [cursor=pointer]
+                          - generic [ref=f5e9012]:
+                            - generic [ref=f5e9013]:
+                              - generic [ref=f5e9014]: 外部のアプリを使用
+                              - generic [ref=f5e9015]: メンバーが自分のアカウントに追加したアプリに対し、このチャンネル内でのメッセージ投稿を許可します。無効にした場合、メッセージはプライベートになります。
+                            - radiogroup "外部のアプリを使用" [ref=f5e9017]:
+                              - radio "外部のアプリを使用, 拒否" [ref=f5e9018] [cursor=pointer]
+                              - radio "外部のアプリを使用, 無視" [checked] [ref=f5e9021] [cursor=pointer]
+                              - radio "外部のアプリを使用, 許可" [ref=f5e9024] [cursor=pointer]
+            - generic [ref=f5e8373]:
+              - button "閉じる" [ref=f5e8374] [cursor=pointer]
+              - generic [aria-hidden] [ref=f5e8377]: ESC
+          - generic [ref=f5e9029]:
+            - generic [ref=f5e9030]: 注意：保存していない変更があります！
+            - generic [ref=f5e9032]:
+              - button "リセット" [ref=f5e9033] [cursor=pointer]
+              - button "変更を保存する" [ref=f5e9035] [cursor=pointer]

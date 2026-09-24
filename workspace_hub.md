@@ -22,6 +22,7 @@ tags:
 - [[softwareKnowlegde/software_knowledge_hub]]
 - [[friends_novel/friends_novel_hub]]
 - [[school/school_hub]]
+- [[discord_project/サーバー設計|創作 Discord サーバー設計]]（元の構想: [構想.txt](discord_project/構想.txt)）
 
 ## Detailed Hubs
 

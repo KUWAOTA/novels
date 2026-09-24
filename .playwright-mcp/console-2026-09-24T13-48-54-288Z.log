@@ -1,0 +1,381 @@
+[     103ms] [LOG] [FAST CONNECT] wss://gateway.discord.gg/?encoding=json&v=9&compress=zlib-stream, encoding: json, version: 9 @ https://discord.com/login:28
+[     328ms] [INFO] %c[libdiscore] 
+font-weight: bold;
+color: purple;
+ [experiment_manager] Loaded experiments from cache @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[     361ms] [LOG] %c[ProcessUtilsElectron] 
+font-weight: bold;
+color: purple;
+ setMemoryInformation not available. @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[     432ms] [LOG] %c[default] 
+font-weight: bold;
+color: purple;
+ [BUILD INFO] Release Channel: stable, Build Number: 619060, Version Hash: 3bd55650bd256418bd7833c1d5e6bf6a08bf7ebe @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[     436ms] [LOG] AppCrashedFatalReport: getLastCrash not supported. @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[     477ms] [INFO] %c[libdiscore] 
+font-weight: bold;
+color: purple;
+ The answer for life the universe and everything is: 42 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[     486ms] [LOG] [FAST CONNECT] session is not required, skipping fast connect early identify @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    1204ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionTo - Transitioning to /app @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    1211ms] [LOG] %c[KeybindsStore] 
+font-weight: bold;
+color: purple;
+ Default overlay keybind is unsupported {tags: Object, extra: Object} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    1211ms] [LOG] %c[KeybindsStore] 
+font-weight: bold;
+color: purple;
+ Default overlay keybind is unsupported {tags: Object, extra: Object} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    1216ms] [INFO] %c[GatewaySocket] 
+font-weight: bold;
+color: purple;
+ [CONNECT] wss://gateway.discord.gg, encoding: json, version: 9, compression: zlib-stream @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    1217ms] [LOG] %c[GatewaySocket] 
+font-weight: bold;
+color: purple;
+ [FAST CONNECT] successfully took over websocket, state: {open: true, identify: false, gateway: wss://gateway.discord.gg/?encoding=json&v=9&compress=zlib-stream, messages: 1} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    1217ms] [INFO] %c[GatewaySocket] 
+font-weight: bold;
+color: purple;
+ [CONNECTED] wss://gateway.discord.gg/?encoding=json&v=9&compress=zlib-stream in 1 ms @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    2712ms] [INFO] %c[GatewaySocket] 
+font-weight: bold;
+color: purple;
+ [READY] took 1496ms, as f2e2f59f06bafc5865420f8822d96b7d @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    2734ms] [LOG] %c[Flux] 
+font-weight: bold;
+color: purple;
+ Dispatching CONNECTION_OPEN @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    2739ms] [LOG] %c[DatabaseManager] 
+font-weight: bold;
+color: purple;
+ removing database (user: 498506238133403652, database: undefined) @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    2765ms] [LOG] %c[KeybindsStore] 
+font-weight: bold;
+color: purple;
+ Default overlay keybind is unsupported {tags: Object, extra: Object} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    3596ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://discord.com/api/v9/users/@me/survey?disable_auto_seen=true:0
+[    3604ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://discord.com/api/v9/users/@me/referrals/eligibility:0
+[    3613ms] [INFO] %c[GatewaySocket] 
+font-weight: bold;
+color: purple;
+ [READY_SUPPLEMENTAL] took 2397ms @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    5341ms] [LOG] %c[MessageActionCreators] 
+font-weight: bold;
+color: purple;
+ Fetching messages for 1552553988610596875 between undefined and undefined. jump={"jumpType":"ANIMATED"} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    5393ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionTo - Transitioning to /channels/1552553988140961892/1552553988610596875 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    5641ms] [LOG] %c[MessageActionCreators] 
+font-weight: bold;
+color: purple;
+ Fetched 0 messages for 1552553988610596875 isBefore:false isAfter:false @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    5644ms] [INFO] %c[ChannelMessages] 
+font-weight: bold;
+color: purple;
+ loadComplete: resetting state for channelId=1552553988610596875, sending.length=0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    5927ms] [INFO] %c[OverlayKeybindExperimentManager] 
+font-weight: bold;
+color: purple;
+ Experiments initializing... @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    5928ms] [LOG] %c[KeybindsStore] 
+font-weight: bold;
+color: purple;
+ Default overlay keybind is unsupported {tags: Object, extra: Object} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    5937ms] [INFO] %c[OverlayKeybindExperimentManager] 
+font-weight: bold;
+color: purple;
+ Experiments initialized @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    6156ms] [INFO] %c[LibDaveManager] 
+font-weight: bold;
+color: purple;
+ DAVE loaded @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    6156ms] [INFO] %c[LibDaveManager] 
+font-weight: bold;
+color: purple;
+ Successfully initialized DAVE @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    6157ms] [INFO] %c[MediaEngineWebRTC] 
+font-weight: bold;
+color: purple;
+ Successfully initialized DAVE, version: 1 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    6171ms] [INFO] %c[SignalHelpers.web] 
+font-weight: bold;
+color: purple;
+ signalAllAcceptedCredentials {rpId: discord.com, encodedUserId: MPMD-4wmT1MG6wzISkIABA, allAcceptedCredentialIds: Array(0)} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    8964ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionTo - Transitioning to /channels/1552553988140961892/1552553988610596875 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[   12768ms] [LOG] %c[ReadStateStore] 
+font-weight: bold;
+color: purple;
+ Deleting ReadState 1177993629223104613 0 {remote: true, persisted: true, channelMissing: true, isOld: true, validType: false} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[   12876ms] [LOG] %c[ReadStateStore] 
+font-weight: bold;
+color: purple;
+ Deleting ReadState 1304474688835031080 0 {remote: true, persisted: true, channelMissing: true, isOld: true, validType: false} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[   16494ms] [INFO] %c[libdiscore] 
+font-weight: bold;
+color: purple;
+ [BlockedDomainsStore] Successfully fetched blocked domains @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  236468ms] [INFO] %c[MessageQueue] 
+font-weight: bold;
+color: purple;
+ Queueing message to be sent LogId:2425 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  236469ms] [LOG] %c[MessageQueue] 
+font-weight: bold;
+color: purple;
+ Draining message from queue LogId:2425 QueueLength: 0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  236469ms] [LOG] %c[MessageQueue] 
+font-weight: bold;
+color: purple;
+ Draining Message Queue with:  0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  237065ms] [LOG] %c[MessageQueue] 
+font-weight: bold;
+color: purple;
+ Finished draining message from queue LogId:2425 QueueLength: 0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  275201ms] [LOG] %c[discord_protos.discord_users.v1.FrecencyUserSettings] 
+font-weight: bold;
+color: purple;
+ Loading proto @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  306176ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://discord.com/api/v9/users/@me/meaningfully-online:0
+[  341749ms] [LOG] %c[MessageActionCreators] 
+font-weight: bold;
+color: purple;
+ Fetching messages for 1552553988610596876 between undefined and undefined. jump={"jumpType":"ANIMATED"} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  341764ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionTo - Transitioning to /channels/1552553988140961892/1552553988610596876 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  342064ms] [LOG] %c[MessageActionCreators] 
+font-weight: bold;
+color: purple;
+ Fetched 0 messages for 1552553988610596876 isBefore:false isAfter:false @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  342067ms] [INFO] %c[ChannelMessages] 
+font-weight: bold;
+color: purple;
+ loadComplete: resetting state for channelId=1552553988610596876, sending.length=0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  393426ms] [LOG] %c[MessageActionCreators] 
+font-weight: bold;
+color: purple;
+ Fetching messages for 1552553988610596878 between undefined and undefined. jump={"jumpType":"ANIMATED"} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  393445ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionTo - Transitioning to /channels/1552553988140961892/1552553988610596878 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  393719ms] [LOG] %c[MessageActionCreators] 
+font-weight: bold;
+color: purple;
+ Fetched 0 messages for 1552553988610596878 isBefore:false isAfter:false @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  393720ms] [INFO] %c[ChannelMessages] 
+font-weight: bold;
+color: purple;
+ loadComplete: resetting state for channelId=1552553988610596878, sending.length=0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  423031ms] [LOG] %c[MessageActionCreators] 
+font-weight: bold;
+color: purple;
+ Fetching messages for 1552553988610596879 between undefined and undefined. jump={"jumpType":"ANIMATED"} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  423038ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionTo - Transitioning to /channels/1552553988140961892/1552553988610596879 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  423294ms] [LOG] %c[MessageActionCreators] 
+font-weight: bold;
+color: purple;
+ Fetched 0 messages for 1552553988610596879 isBefore:false isAfter:false @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  423295ms] [INFO] %c[ChannelMessages] 
+font-weight: bold;
+color: purple;
+ loadComplete: resetting state for channelId=1552553988610596879, sending.length=0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  455611ms] [INFO] %c[MessageQueue] 
+font-weight: bold;
+color: purple;
+ Queueing message to be sent LogId:8979 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  455611ms] [LOG] %c[MessageQueue] 
+font-weight: bold;
+color: purple;
+ Draining message from queue LogId:8979 QueueLength: 0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  455611ms] [LOG] %c[MessageQueue] 
+font-weight: bold;
+color: purple;
+ Draining Message Queue with:  0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  456012ms] [LOG] %c[MessageQueue] 
+font-weight: bold;
+color: purple;
+ Finished draining message from queue LogId:8979 QueueLength: 0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  464079ms] [LOG] %c[MessageActionCreators] 
+font-weight: bold;
+color: purple;
+ Fetching messages for 1552553988610596880 between undefined and undefined. jump={"jumpType":"ANIMATED"} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  464103ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionTo - Transitioning to /channels/1552553988140961892/1552553988610596880 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  464323ms] [LOG] %c[MessageActionCreators] 
+font-weight: bold;
+color: purple;
+ Fetched 0 messages for 1552553988610596880 isBefore:false isAfter:false @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  464324ms] [INFO] %c[ChannelMessages] 
+font-weight: bold;
+color: purple;
+ loadComplete: resetting state for channelId=1552553988610596880, sending.length=0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  503389ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionToGuild - Transitioning to {"guildId":"1552553988140961892","channelId":"1552680325086187530"} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  503390ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionTo - Transitioning to /channels/1552553988140961892/1552680325086187530 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  503405ms] [LOG] %c[MessageActionCreators] 
+font-weight: bold;
+color: purple;
+ Fetching messages for 1552680325086187530 between undefined and undefined. jump={"jumpType":"ANIMATED"} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  503880ms] [LOG] %c[MessageActionCreators] 
+font-weight: bold;
+color: purple;
+ Fetched 0 messages for 1552680325086187530 isBefore:false isAfter:false @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  503881ms] [INFO] %c[ChannelMessages] 
+font-weight: bold;
+color: purple;
+ loadComplete: resetting state for channelId=1552680325086187530, sending.length=0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  503905ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ Replacing route with /channels/1552553988140961892/1552680325086187530 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  517307ms] [INFO] %c[MessageQueue] 
+font-weight: bold;
+color: purple;
+ Queueing message to be sent LogId:4796 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  517307ms] [LOG] %c[MessageQueue] 
+font-weight: bold;
+color: purple;
+ Draining message from queue LogId:4796 QueueLength: 0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  517307ms] [LOG] %c[MessageQueue] 
+font-weight: bold;
+color: purple;
+ Draining Message Queue with:  0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  518123ms] [LOG] %c[MessageQueue] 
+font-weight: bold;
+color: purple;
+ Finished draining message from queue LogId:4796 QueueLength: 0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  536910ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionToGuild - Transitioning to {"guildId":"1552553988140961892","channelId":"1552680466052546560"} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  536911ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionTo - Transitioning to /channels/1552553988140961892/1552680466052546560 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  536915ms] [LOG] %c[MessageActionCreators] 
+font-weight: bold;
+color: purple;
+ Fetching messages for 1552680466052546560 between undefined and undefined. jump={"jumpType":"ANIMATED"} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  537248ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ Replacing route with /channels/1552553988140961892/1552680466052546560 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  537284ms] [LOG] %c[MessageActionCreators] 
+font-weight: bold;
+color: purple;
+ Fetched 0 messages for 1552680466052546560 isBefore:false isAfter:false @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  537284ms] [INFO] %c[ChannelMessages] 
+font-weight: bold;
+color: purple;
+ loadComplete: resetting state for channelId=1552680466052546560, sending.length=0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  547439ms] [INFO] %c[MessageQueue] 
+font-weight: bold;
+color: purple;
+ Queueing message to be sent LogId:4565 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  547439ms] [LOG] %c[MessageQueue] 
+font-weight: bold;
+color: purple;
+ Draining message from queue LogId:4565 QueueLength: 0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  547439ms] [LOG] %c[MessageQueue] 
+font-weight: bold;
+color: purple;
+ Draining Message Queue with:  0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  547907ms] [LOG] %c[MessageQueue] 
+font-weight: bold;
+color: purple;
+ Finished draining message from queue LogId:4565 QueueLength: 0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  743716ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionToGuild - Transitioning to {"guildId":"1552553988140961892","channelId":"1552681333405393018"} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  743717ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionTo - Transitioning to /channels/1552553988140961892/1552681333405393018 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  743721ms] [LOG] %c[MessageActionCreators] 
+font-weight: bold;
+color: purple;
+ Fetching messages for 1552681333405393018 between undefined and undefined. jump={"jumpType":"ANIMATED"} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  743982ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ Replacing route with /channels/1552553988140961892/1552681333405393018 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  744002ms] [LOG] %c[MessageActionCreators] 
+font-weight: bold;
+color: purple;
+ Fetched 0 messages for 1552681333405393018 isBefore:false isAfter:false @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[  744002ms] [INFO] %c[ChannelMessages] 
+font-weight: bold;
+color: purple;
+ loadComplete: resetting state for channelId=1552681333405393018, sending.length=0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[ 1034265ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionTo - Transitioning to /channels/1552553988140961892/1552680325086187530 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[ 1093054ms] [ERROR] Error: <svg> attribute height: Expected length, "auto". @ https://discord.com/assets/192743.883920cc41783fd8.js:0
+[ 1093194ms] [ERROR] Error: <svg> attribute height: Expected length, "auto". @ https://discord.com/assets/192743.883920cc41783fd8.js:0
+[ 1093510ms] [ERROR] Could not find a View Model linked to Artboard BaseGlowRemapped. @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[ 1093514ms] [ERROR] Could not find a View Model linked to Artboard BaseGlowRemapped. @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[ 1122453ms] [LOG] %c[discord_protos.discord_users.v1.PreloadedUserSettings] 
+font-weight: bold;
+color: purple;
+ Updating userContent with delay 0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[ 1122467ms] [LOG] %c[discord_protos.discord_users.v1.PreloadedUserSettings] 
+font-weight: bold;
+color: purple;
+ Scheduling save from markDirty @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[ 1122500ms] [LOG] %c[discord_protos.discord_users.v1.PreloadedUserSettings] 
+font-weight: bold;
+color: purple;
+ Persisting proto @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[ 1199777ms] [ERROR] Error: <svg> attribute height: Expected length, "auto". @ https://discord.com/assets/192743.883920cc41783fd8.js:0
+[ 1199859ms] [ERROR] Could not find a View Model linked to Artboard BaseGlowRemapped. @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[ 1199863ms] [ERROR] Could not find a View Model linked to Artboard BaseGlowRemapped. @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[ 1396434ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionToGuild - Transitioning to {"guildId":"1552553988140961892","channelId":"1552684071195385936"} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[ 1396436ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionTo - Transitioning to /channels/1552553988140961892/1552684071195385936 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[ 1396445ms] [LOG] %c[MessageActionCreators] 
+font-weight: bold;
+color: purple;
+ Fetching messages for 1552684071195385936 between undefined and undefined. jump={"jumpType":"ANIMATED"} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[ 1396697ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ Replacing route with /channels/1552553988140961892/1552684071195385936 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[ 1396726ms] [LOG] %c[MessageActionCreators] 
+font-weight: bold;
+color: purple;
+ Fetched 0 messages for 1552684071195385936 isBefore:false isAfter:false @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[ 1396727ms] [INFO] %c[ChannelMessages] 
+font-weight: bold;
+color: purple;
+ loadComplete: resetting state for channelId=1552684071195385936, sending.length=0 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[ 1658755ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionTo - Transitioning to /channels/1552553988140961892/1552681333405393018 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464

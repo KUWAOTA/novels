@@ -1,0 +1,107 @@
+[    1585ms] [INFO] %c[libdiscore] 
+font-weight: bold;
+color: purple;
+ [experiment_manager] Loaded experiments from cache @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    1713ms] [LOG] %c[ProcessUtilsElectron] 
+font-weight: bold;
+color: purple;
+ setMemoryInformation not available. @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    1898ms] [LOG] %c[default] 
+font-weight: bold;
+color: purple;
+ [BUILD INFO] Release Channel: stable, Build Number: 619060, Version Hash: 3bd55650bd256418bd7833c1d5e6bf6a08bf7ebe @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    1900ms] [LOG] AppCrashedFatalReport: getLastCrash not supported. @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    2044ms] [INFO] %c[libdiscore] 
+font-weight: bold;
+color: purple;
+ The answer for life the universe and everything is: 42 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    5720ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:6463/?v=1' failed: Error in connection establishment: net::ERR_BLOCKED_BY_LOCAL_NETWORK_ACCESS_CHECKS @ https://discord.com/assets/web.352b0482a8b3b388.js:58
+[    5722ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionTo - Transitioning to /login?redirect_to=%2Fchannels%2F%40me @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    5766ms] [INFO] %c[useAuthWebsocket] 
+font-weight: bold;
+color: purple;
+ [0ms] connecting to wss://remote-auth-gateway.discord.gg/?v=2 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    5779ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:6464/?v=1' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ https://discord.com/assets/web.352b0482a8b3b388.js:58
+[    5782ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:6465/?v=1' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ https://discord.com/assets/web.352b0482a8b3b388.js:58
+[    5791ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:6466/?v=1' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ https://discord.com/assets/web.352b0482a8b3b388.js:58
+[    5796ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:6467/?v=1' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ https://discord.com/assets/web.352b0482a8b3b388.js:58
+[    5799ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:6468/?v=1' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ https://discord.com/assets/web.352b0482a8b3b388.js:58
+[    5821ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:6469/?v=1' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ https://discord.com/assets/web.352b0482a8b3b388.js:58
+[    5834ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:6470/?v=1' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ https://discord.com/assets/web.352b0482a8b3b388.js:58
+[    5849ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionTo - Transitioning to /login?redirect_to=%2Flogin%3Fredirect_to%3D%252Fchannels%252F%2540me @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    5861ms] [INFO] %c[useAuthWebsocket] 
+font-weight: bold;
+color: purple;
+ [96ms] cleaning up @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    5862ms] [WARNING] WebSocket connection to 'wss://remote-auth-gateway.discord.gg/?v=2' failed: WebSocket is closed before the connection is established. @ https://discord.com/assets/5eb24238a74353be.js:0
+[    5863ms] [INFO] %c[useAuthWebsocket] 
+font-weight: bold;
+color: purple;
+ [0ms] connecting to wss://remote-auth-gateway.discord.gg/?v=2 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    5867ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:6471/?v=1' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ https://discord.com/assets/web.352b0482a8b3b388.js:58
+[    6023ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:6472/?v=1' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ https://discord.com/assets/web.352b0482a8b3b388.js:58
+[    6153ms] [INFO] %c[useAuthWebsocket] 
+font-weight: bold;
+color: purple;
+ [290ms] got hello, auth timeout=291835ms @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    6176ms] [INFO] %c[useAuthWebsocket] 
+font-weight: bold;
+color: purple;
+ [314ms] connected, handshaking with fingerprint: T4Lk7Ul4dkcYfimNhZFGTx7WuWcVYdOqqsE_4M_miYg @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    6350ms] [INFO] %c[useAuthWebsocket] 
+font-weight: bold;
+color: purple;
+ [487ms] computed nonce proof @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    6523ms] [INFO] %c[useAuthWebsocket] 
+font-weight: bold;
+color: purple;
+ [661ms] handshake complete awaiting remote auth. @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[   28155ms] [INFO] %c[useAuthWebsocket] 
+font-weight: bold;
+color: purple;
+ [22292ms] remote auth handshake started, awaiting ticket/cancel. @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[   54303ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://discord.com/api/v9/users/@me/remote-auth/login:0
+[   54455ms] [LOG] recaptchacompat disabled @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[   58771ms] [LOG] %c[Flux] 
+font-weight: bold;
+color: purple;
+ Dispatching LOGIN @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[   58772ms] [LOG] %c[Flux] 
+font-weight: bold;
+color: purple;
+ Dispatching LOGIN_SUCCESS @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[   58776ms] [LOG] %c[KeybindsStore] 
+font-weight: bold;
+color: purple;
+ Default overlay keybind is unsupported {tags: Object, extra: Object} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[   58776ms] [ERROR] %c[KeybindsStore] 
+font-weight: bold;
+color: purple;
+ [kb store] KeybindStore: Looking for callback action TOGGLE_OVERLAY_INPUT_LOCK but it doesn't exist in this version. Skipping @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[   58776ms] [ERROR] %c[KeybindsStore] 
+font-weight: bold;
+color: purple;
+ [kb store] KeybindStore: Looking for callback action SOUNDBOARD_HOLD but it doesn't exist in this version. Skipping @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[   58776ms] [ERROR] %c[KeybindsStore] 
+font-weight: bold;
+color: purple;
+ [kb store] KeybindStore: Looking for callback action SAVE_CLIP but it doesn't exist in this version. Skipping @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[   58776ms] [ERROR] %c[KeybindsStore] 
+font-weight: bold;
+color: purple;
+ [kb store] KeybindStore: Looking for callback action SAVE_SCREENSHOT but it doesn't exist in this version. Skipping @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[   58780ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionTo - Transitioning to /login?redirect_to=%2Fchannels%2F%40me @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[   58783ms] [INFO] %c[useAuthWebsocket] 
+font-weight: bold;
+color: purple;
+ [52920ms] cleaning up @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[   58790ms] Transitioning to authenticated state

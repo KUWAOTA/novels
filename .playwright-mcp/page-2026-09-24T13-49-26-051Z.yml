@@ -1,0 +1,661 @@
+- generic [ref=f5e1]:
+  - generic [ref=f5e21]:
+    - log
+    - log
+  - generic [ref=f5e26]:
+    - generic [aria-hidden]:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic: えあちf
+                - generic: えあち's factory
+            - generic:
+              - generic:
+                - generic:
+                  - button
+              - link:
+                - /url: https://support.discord.com
+                - button
+          - generic:
+            - generic:
+              - navigation:
+                - tree:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - treeitem [level=1]:
+                                  - generic: ダイレクトメッセージ
+                    - group:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1] [selected]:
+                                        - generic: えあち's factory
+                                        - generic [aria-hidden]: えあちf
+                        - generic: えあち's factory
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 未読メッセージ（1's server）
+                        - generic: 1's server
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 未読メッセージ（機電情アダルトサーバ）, 画面共有アクティビティ 音声通話がアクティブ
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic: レベル 2
+                                  - generic: 7 ブースト
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 不知火燈の知り合いの集い, 画面共有アクティビティ 音声通話がアクティブ
+                        - generic: 不知火燈の知り合いの集い
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 未読メッセージ（A.R.P.L.A.VIP）
+                                        - generic [aria-hidden]: A.R.P.L.A.V
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 10 件のメンション、灰信【映画・文学・思想・哲学】
+                              - generic: "10"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 1 件のメンション、🇯🇵日韓学校・한일학교🇰🇷, 画面共有アクティビティ 音声通話がアクティブ
+                              - generic: "1"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic: レベル 3
+                                  - generic: 17 ブースト
+                            - generic: "+8"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 未読メッセージ（小説家になろう＠非公式）
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic: レベル 1
+                                  - generic: 2 ブースト
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 未読メッセージ（【創作/読書】カクヨム運営公式）, 音声通話がアクティブ
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic: レベル 2
+                                  - generic: 7 ブースト
+                            - generic: "+5"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 未読メッセージ（ドロワドロワ）, 画面共有アクティビティ ビデオ通話がアクティブ 音声通話がアクティブ
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic: レベル 3
+                                  - generic: 17 ブースト
+                            - generic: "+40"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 未読メッセージ（思想・哲学・文学・芸術の会）
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic: レベル 3
+                                  - generic: 20 ブースト
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 未読メッセージ（作業村）, 画面共有アクティビティ 音声通話がアクティブ
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic: レベル 1
+                                  - generic: 3 ブースト
+                            - generic: "+3"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 未読メッセージ（わくせい）, 画面共有アクティビティ 音声通話がアクティブ
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic: レベル 3
+                                  - generic: 18 ブースト
+                            - generic: "+11"
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 未読メッセージ（仲間｜NAKAMA）
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic: レベル 1
+                                  - generic: 5 ブースト
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 未読メッセージ（Japanese English International School/日英国際学校）, 音声通話がアクティブ
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic: レベル 3
+                                  - generic: 18 ブースト
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 未読メッセージ（知らない言葉）
+                        - generic: 知らない言葉
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 40 件のメンション、Project RTTS 創作鯖
+                              - generic: "40"
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic: レベルなし
+                                  - generic: 2 ブースト
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 未読メッセージ（ネット小説執筆経験者のつどい）
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic: レベル 1
+                                  - generic: 3 ブースト
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 33 件のメンション、グリルチキン
+                              - generic: "33"
+                        - generic: グリルチキン
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 「競争社会からの脱出！」PJT
+                                        - generic [aria-hidden]: 「競争社会からの脱出！」P
+                        - generic: 「競争社会からの脱出！」PJT
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 1 件のメンション、魔神界
+                              - generic: "1"
+                        - generic: 魔神界
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - treeitem [level=1]:
+                                        - generic: 七夕会
+                        - generic: 七夕会
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - treeitem [level=1]
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - treeitem [level=1]
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - treeitem [level=1]
+                - generic: 新規
+              - generic:
+                - navigation:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - button [active]:
+                          - generic:
+                            - heading [level=2]: えあち's factory
+                        - generic:
+                          - button
+                  - generic:
+                    - heading [level=2]: チャンネル
+                  - generic:
+                    - list:
+                      - listitem:
+                        - generic:
+                          - generic:
+                            - generic [aria-hidden]: イベント
+                      - listitem:
+                        - generic:
+                          - generic:
+                            - generic [aria-hidden]: サーバーブースト
+                      - listitem:
+                        - generic:
+                          - button [expanded]:
+                            - heading [level=3]:
+                              - generic: インフォメーション
+                          - generic:
+                            - button
+                            - generic: チャンネルを作成
+                      - listitem:
+                        - generic:
+                          - generic:
+                            - link:
+                              - /url: /channels/1552553988140961892/1552553988610596875
+                              - generic:
+                                - generic: テキスト
+                                - generic [aria-hidden]: 挨拶と規則
+                                - generic:
+                                  - generic:
+                                    - button
+                                  - generic: チャンネルに招待
+                                  - generic:
+                                    - button
+                                  - generic: チャンネルの編集
+                      - listitem:
+                        - generic:
+                          - generic:
+                            - link:
+                              - /url: /channels/1552553988140961892/1552553988610596876
+                              - generic:
+                                - generic: テキスト
+                                - generic [aria-hidden]: アナウンス
+                                - generic: チャンネルに招待
+                                - generic: チャンネルの編集
+                      - listitem:
+                        - generic:
+                          - button [expanded]:
+                            - heading [level=3]:
+                              - generic: テキストチャンネル
+                          - generic:
+                            - button
+                            - generic: チャンネルを作成
+                      - listitem:
+                        - generic:
+                          - generic:
+                            - link:
+                              - /url: /channels/1552553988140961892/1552553988610596878
+                              - generic:
+                                - generic: テキスト
+                                - generic [aria-hidden]: 一般
+                                - generic: チャンネルに招待
+                                - generic: チャンネルの編集
+                      - listitem:
+                        - generic:
+                          - generic:
+                            - link:
+                              - /url: /channels/1552553988140961892/1552553988610596879
+                              - generic:
+                                - generic: テキスト
+                                - generic [aria-hidden]: イベント
+                                - generic: チャンネルに招待
+                                - generic: チャンネルの編集
+                      - listitem:
+                        - generic:
+                          - generic:
+                            - link:
+                              - /url: /channels/1552553988140961892/1552553988610596880
+                              - generic:
+                                - generic: テキスト
+                                - generic [aria-hidden]: アイデアとフィードバック
+                                - generic: チャンネルに招待
+                                - generic: チャンネルの編集
+                      - listitem:
+                        - generic:
+                          - button [expanded]:
+                            - heading [level=3]:
+                              - generic: ボイスチャンネル
+                          - generic:
+                            - button
+                            - generic: チャンネルを作成
+                      - listitem:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button:
+                                - generic:
+                                  - generic: 音声
+                                  - generic [aria-hidden]: ラウンジ
+                                  - generic: チャットを開く
+                                  - generic: ボイスに招待
+                                  - generic: チャンネルの編集
+                      - listitem:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button:
+                                - generic:
+                                  - generic: 音声
+                                  - generic [aria-hidden]: コミュニティ交流
+                                  - generic: チャットを開く
+                                  - generic: ボイスに招待
+                                  - generic: チャンネルの編集
+                      - listitem:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button:
+                                - generic:
+                                  - generic: 音声
+                                  - generic [aria-hidden]: 配信ルーム
+                                  - generic: チャットを開く
+                                  - generic: ボイスに招待
+                                  - generic: チャンネルの編集
+              - separator
+              - region:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: えあち
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: kuins_air__
+                            - generic:
+                              - generic: オンライン
+                              - generic: 画面共有しています
+                  - generic:
+                    - generic:
+                      - switch [checked]
+                      - generic: ミュート解除
+                      - button
+                    - generic:
+                      - switch
+                      - button
+                    - button
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - region:
+                      - generic:
+                        - generic:
+                          - generic: テキストチャンネル
+                          - generic:
+                            - heading [level=1]:
+                              - generic: "えあち's factory:"
+                              - text: 挨拶と規則
+                        - generic:
+                          - button
+                          - button
+                          - button
+                          - button
+                          - generic:
+                            - generic:
+                              - generic:
+                                - combobox:
+                                  - generic: えあち's factoryを検索
+                                - button [aria-hidden]
+                  - generic:
+                    - main:
+                      - generic:
+                        - heading [level=2]: 挨拶と規則チャット
+                      - generic:
+                        - group:
+                          - generic:
+                            - list:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - heading [level=3]: えあち's factoryへようこそ
+                                      - generic:
+                                        - text: ここは新しくてピカピカの、あなたのサーバーです。 ご紹介するステップで、最初の一歩を踏み出しましょう！ さらに詳しい情報は
+                                        - link:
+                                          - /url: https://support.discord.com/hc/ja/articles/360045138571?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm
+                                          - text: はじめてのDiscordガイド
+                                        - text: まで。
+                                    - generic:
+                                      - button:
+                                        - generic: フレンドを招待する
+                                    - generic:
+                                      - button:
+                                        - generic: アイコンを設定してサーバーをカスタマイズ
+                                    - generic:
+                                      - button:
+                                        - generic: 初めてのメッセージを送ってみる
+                                    - generic:
+                                      - button:
+                                        - generic: Discordアプリをダウンロード
+                                    - generic:
+                                      - button:
+                                        - generic: 最初のアプリを追加
+                                    - generic:
+                                      - button:
+                                        - generic: ブーストでみんなに特典をアンロック
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - button
+                                  - generic:
+                                    - generic:
+                                      - generic [aria-hidden]: "#挨拶と規則へメッセージを送信"
+                                      - textbox
+                                  - generic:
+                                    - generic:
+                                      - button
+                                      - generic: フレンドに Nitro のステキなチャット特典をプレゼント！
+                                    - generic:
+                                      - button
+                                    - generic: GIFを送信
+                                    - generic:
+                                      - button
+                                    - generic:
+                                      - button
+                                    - generic:
+                                      - button
+    - dialog:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - navigation:
+                - tablist "えあち's factory":
+                  - tab "サーバープロフィール" [selected]
+                  - tab "サーバータグ"
+                  - tab "Engagement（エンゲージメント）"
+                  - tab "ブースト特典"
+                  - generic: エクスプレッション
+                  - tab "絵文字"
+                  - tab "スタンプ"
+                  - tab "サウンドボード"
+                  - generic: 人物
+                  - tab "メンバー"
+                  - tab "ロールの管理": ロール
+                  - tab "招待"
+                  - tab "アクセス"
+                  - generic: アプリ
+                  - tab "連携サービス"
+                  - button "Appディレクトリ"
+                  - generic: 管理
+                  - tab "安全設定"
+                  - tab "監査ログ"
+                  - tab "BANしたユーザー"
+                  - tab "AutoMod"
+                  - tab "コミュニティを有効にする"
+                  - tab "サーバーテンプレート"
+                  - button "サーバーを削除"
+          - generic:
+            - generic:
+              - generic:
+                - main:
+                  - img "読み込み中"
+              - generic:
+                - generic:
+                  - generic:
+                    - button "閉じる"
+                    - generic [aria-hidden]: ESC

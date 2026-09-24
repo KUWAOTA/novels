@@ -1,0 +1,496 @@
+- generic [ref=f5e4]:
+  - generic [ref=f5e26]:
+    - generic [ref=f5e29]:
+      - generic [ref=f5e30]:
+        - generic [ref=f5e32]:
+          - generic [ref=f5e977]: えあちf
+          - generic [ref=f5e36]: えあち's factory
+        - generic [ref=f5e37]:
+          - button [ref=f5e1436] [cursor=pointer]
+          - link [ref=f5e1437] [cursor=pointer]:
+            - /url: https://support.discord.com
+            - button [ref=f5e1438]
+      - generic [ref=f5e49]:
+        - generic [ref=f5e50]:
+          - navigation [ref=f5e1439]:
+            - tree [ref=f5e52]:
+              - generic [ref=f5e53]:
+                - treeitem [level=1] [ref=f5e1440] [cursor=pointer]:
+                  - generic [ref=f5e63]: ダイレクトメッセージ
+                - group [ref=f5e1441]:
+                  - generic [ref=f5e70]:
+                    - treeitem [level=1] [selected] [ref=f5e1442] [cursor=pointer]:
+                      - generic [ref=f5e81]: えあち's factory
+                      - generic [aria-hidden] [ref=f5e82]: えあちf
+                    - generic [ref=f5e83]: えあち's factory
+                  - generic [ref=f5e84]:
+                    - treeitem [level=1] [ref=f5e1443] [cursor=pointer]:
+                      - generic [ref=f5e95]: 未読メッセージ（1's server）
+                    - generic [ref=f5e96]: 1's server
+                  - generic [ref=f5e97]:
+                    - treeitem [level=1] [ref=f5e1444] [cursor=pointer]:
+                      - generic [ref=f5e108]: 未読メッセージ（機電情アダルトサーバ）, 画面共有アクティビティ 音声通話がアクティブ
+                    - generic [ref=f5e109]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 2
+                              - generic: 7 ブースト
+                  - generic [ref=f5e110]:
+                    - treeitem [level=1] [ref=f5e1445] [cursor=pointer]:
+                      - generic [ref=f5e121]: 未読メッセージ（不知火燈の知り合いの集い）, 画面共有アクティビティ 音声通話がアクティブ
+                    - generic [ref=f5e122]: 不知火燈の知り合いの集い
+                  - treeitem [level=1] [ref=f5e1446] [cursor=pointer]:
+                    - generic [ref=f5e134]: 未読メッセージ（A.R.P.L.A.VIP）
+                    - generic [aria-hidden] [ref=f5e135]: A.R.P.L.A.V
+                  - generic [ref=f5e142]:
+                    - treeitem [level=1] [ref=f5e1447] [cursor=pointer]:
+                      - generic [ref=f5e148]: 10 件のメンション、灰信【映画・文学・思想・哲学】
+                    - generic: "10"
+                  - generic [ref=f5e150]:
+                    - generic [ref=f5e155]:
+                      - treeitem [level=1] [ref=f5e1448] [cursor=pointer]:
+                        - generic [ref=f5e161]: 1 件のメンション、🇯🇵日韓学校・한일학교🇰🇷, 画面共有アクティビティ 音声通話がアクティブ
+                      - generic: "1"
+                    - generic [ref=f5e162]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 3
+                              - generic: 17 ブースト
+                        - generic: "+9"
+                  - generic [ref=f5e163]:
+                    - treeitem [level=1] [ref=f5e1449] [cursor=pointer]:
+                      - generic [ref=f5e174]: 未読メッセージ（小説家になろう＠非公式）
+                    - generic [ref=f5e175]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 1
+                              - generic: 2 ブースト
+                  - generic [ref=f5e176]:
+                    - treeitem [level=1] [ref=f5e1450] [cursor=pointer]:
+                      - generic [ref=f5e187]: 未読メッセージ（【創作/読書】カクヨム運営公式）, 音声通話がアクティブ
+                    - generic [ref=f5e188]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 2
+                              - generic: 7 ブースト
+                        - generic: "+5"
+                  - generic [ref=f5e189]:
+                    - treeitem [level=1] [ref=f5e1451] [cursor=pointer]:
+                      - generic [ref=f5e200]: 未読メッセージ（ドロワドロワ）, 画面共有アクティビティ ビデオ通話がアクティブ 音声通話がアクティブ
+                    - generic [ref=f5e201]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 3
+                              - generic: 17 ブースト
+                        - generic: "+41"
+                  - generic [ref=f5e202]:
+                    - treeitem [level=1] [ref=f5e1452] [cursor=pointer]:
+                      - generic [ref=f5e213]: 未読メッセージ（思想・哲学・文学・芸術の会）
+                    - generic [ref=f5e214]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 3
+                              - generic: 20 ブースト
+                  - generic [ref=f5e215]:
+                    - treeitem [level=1] [ref=f5e1453] [cursor=pointer]:
+                      - generic [ref=f5e226]: 未読メッセージ（作業村）, 画面共有アクティビティ 音声通話がアクティブ
+                    - generic [ref=f5e227]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 1
+                              - generic: 3 ブースト
+                        - generic: "+3"
+                  - generic [ref=f5e228]:
+                    - treeitem [level=1] [ref=f5e1454] [cursor=pointer]:
+                      - generic [ref=f5e239]: 未読メッセージ（わくせい）, 画面共有アクティビティ 音声通話がアクティブ
+                    - generic [ref=f5e240]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 3
+                              - generic: 18 ブースト
+                        - generic: "+11"
+                  - generic [ref=f5e241]:
+                    - treeitem [level=1] [ref=f5e1455] [cursor=pointer]:
+                      - generic [ref=f5e252]: 未読メッセージ（仲間｜NAKAMA）
+                    - generic [ref=f5e253]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 1
+                              - generic: 5 ブースト
+                  - generic [ref=f5e254]:
+                    - treeitem [level=1] [ref=f5e1456] [cursor=pointer]:
+                      - generic [ref=f5e265]: 未読メッセージ（Japanese English International School/日英国際学校）, 画面共有アクティビティ 音声通話がアクティブ
+                    - generic [ref=f5e266]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 3
+                              - generic: 18 ブースト
+                  - generic [ref=f5e267]:
+                    - treeitem [level=1] [ref=f5e1457] [cursor=pointer]:
+                      - generic [ref=f5e278]: 未読メッセージ（知らない言葉）
+                    - generic [ref=f5e279]: 知らない言葉
+                  - generic [ref=f5e280]:
+                    - generic [ref=f5e285]:
+                      - treeitem [level=1] [ref=f5e1458] [cursor=pointer]:
+                        - generic [ref=f5e291]: 40 件のメンション、Project RTTS 創作鯖
+                      - generic: "40"
+                    - generic [ref=f5e292]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベルなし
+                              - generic: 2 ブースト
+                  - generic [ref=f5e293]:
+                    - treeitem [level=1] [ref=f5e1459] [cursor=pointer]:
+                      - generic [ref=f5e304]: 未読メッセージ（ネット小説執筆経験者のつどい）
+                    - generic [ref=f5e305]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic: レベル 1
+                              - generic: 3 ブースト
+                  - generic [ref=f5e306]:
+                    - generic [ref=f5e311]:
+                      - treeitem [level=1] [ref=f5e1460] [cursor=pointer]:
+                        - generic [ref=f5e317]: 33 件のメンション、グリルチキン
+                      - generic: "33"
+                    - generic [ref=f5e318]: グリルチキン
+                  - generic [ref=f5e319]:
+                    - treeitem [level=1] [ref=f5e1461] [cursor=pointer]:
+                      - generic [ref=f5e330]: 「競争社会からの脱出！」PJT
+                      - generic [aria-hidden] [ref=f5e331]: 「競争社会からの脱出！」P
+                    - generic [ref=f5e332]: 「競争社会からの脱出！」PJT
+                  - generic [ref=f5e333]:
+                    - generic [ref=f5e338]:
+                      - treeitem [level=1] [ref=f5e1462] [cursor=pointer]:
+                        - generic [ref=f5e344]: 1 件のメンション、魔神界
+                      - generic: "1"
+                    - generic [ref=f5e345]: 魔神界
+                  - generic [ref=f5e346]:
+                    - treeitem [level=1] [ref=f5e1463] [cursor=pointer]:
+                      - generic [ref=f5e357]: 七夕会
+                    - generic [ref=f5e358]: 七夕会
+                - treeitem [level=1] [ref=f5e1464] [cursor=pointer]
+                - treeitem [level=1] [ref=f5e1465] [cursor=pointer]
+                - treeitem [level=1] [ref=f5e1466] [cursor=pointer]
+            - generic: 新規
+          - navigation [ref=f5e1467]:
+            - generic [ref=f5e986]:
+              - button [ref=f5e1468] [cursor=pointer]:
+                - heading [level=2] [ref=f5e1469]: えあち's factory
+              - button [ref=f5e1472] [cursor=pointer]
+            - heading [level=2] [ref=f5e1473]: チャンネル
+            - list [ref=f5e1474]:
+              - listitem [ref=f5e1003]:
+                - generic [aria-hidden] [ref=f5e1009] [cursor=pointer]: イベント
+              - listitem [ref=f5e1010]:
+                - generic [aria-hidden] [ref=f5e1016] [cursor=pointer]: サーバーブースト
+              - listitem [ref=f5e1018]:
+                - generic [ref=f5e1019] [cursor=pointer]:
+                  - button [expanded] [ref=f5e1475]:
+                    - heading [level=3] [ref=f5e1476]:
+                      - generic [ref=f5e1022]: インフォメーション
+                  - generic [ref=f5e1025]:
+                    - button [ref=f5e1477]
+                    - generic [ref=f5e1029]: チャンネルを作成
+              - listitem [ref=f5e1030]:
+                - link [ref=f5e1478] [cursor=pointer]:
+                  - /url: /channels/1552553988140961892/1552553988610596875
+                  - generic [ref=f5e1034]:
+                    - generic [ref=f5e1038]: テキスト
+                    - generic [aria-hidden] [ref=f5e1039]: 挨拶と規則
+                    - generic [ref=f5e1040]:
+                      - button [ref=f5e1480]
+                      - generic [ref=f5e1046]: チャンネルに招待
+                      - button [ref=f5e1481]
+                      - generic [ref=f5e1051]: チャンネルの編集
+              - listitem [ref=f5e1052]:
+                - link [ref=f5e1482] [cursor=pointer]:
+                  - /url: /channels/1552553988140961892/1552553988610596876
+                  - generic [ref=f5e1056]:
+                    - generic [ref=f5e1060]: テキスト
+                    - generic [aria-hidden] [ref=f5e1061]: アナウンス
+                    - generic [ref=f5e1062]: チャンネルに招待
+                    - generic [ref=f5e1063]: チャンネルの編集
+              - listitem [ref=f5e1064]:
+                - generic [ref=f5e1065] [cursor=pointer]:
+                  - button [expanded] [ref=f5e1484]:
+                    - heading [level=3] [ref=f5e1485]:
+                      - generic [ref=f5e1068]: テキストチャンネル
+                  - generic [ref=f5e1071]:
+                    - button [ref=f5e1486]
+                    - generic [ref=f5e1075]: チャンネルを作成
+              - listitem [ref=f5e1076]:
+                - link [ref=f5e1487] [cursor=pointer]:
+                  - /url: /channels/1552553988140961892/1552553988610596878
+                  - generic [ref=f5e1080]:
+                    - generic [ref=f5e1084]: テキスト
+                    - generic [aria-hidden] [ref=f5e1085]: 一般
+                    - generic [ref=f5e1086]: チャンネルに招待
+                    - generic [ref=f5e1087]: チャンネルの編集
+              - listitem [ref=f5e1088]:
+                - link [ref=f5e1489] [cursor=pointer]:
+                  - /url: /channels/1552553988140961892/1552553988610596879
+                  - generic [ref=f5e1092]:
+                    - generic [ref=f5e1096]: テキスト
+                    - generic [aria-hidden] [ref=f5e1097]: イベント
+                    - generic [ref=f5e1098]: チャンネルに招待
+                    - generic [ref=f5e1099]: チャンネルの編集
+              - listitem [ref=f5e1100]:
+                - link [ref=f5e1491] [cursor=pointer]:
+                  - /url: /channels/1552553988140961892/1552553988610596880
+                  - generic [ref=f5e1104]:
+                    - generic [ref=f5e1108]: テキスト
+                    - generic [aria-hidden] [ref=f5e1109]: アイデアとフィードバック
+                    - generic [ref=f5e1110]: チャンネルに招待
+                    - generic [ref=f5e1111]: チャンネルの編集
+              - listitem [ref=f5e1112]:
+                - generic [ref=f5e1113] [cursor=pointer]:
+                  - button [expanded] [ref=f5e1493]:
+                    - heading [level=3] [ref=f5e1494]:
+                      - generic [ref=f5e1116]: ボイスチャンネル
+                  - generic [ref=f5e1119]:
+                    - button [ref=f5e1495]
+                    - generic [ref=f5e1123]: チャンネルを作成
+              - listitem [ref=f5e1124]:
+                - button [ref=f5e1496] [cursor=pointer]:
+                  - generic [ref=f5e1129]:
+                    - generic [ref=f5e1134]: 音声
+                    - generic [aria-hidden] [ref=f5e1135]: ラウンジ
+                    - generic [ref=f5e1136]: チャットを開く
+                    - generic [ref=f5e1137]: ボイスに招待
+                    - generic [ref=f5e1138]: チャンネルの編集
+              - listitem [ref=f5e1139]:
+                - button [ref=f5e1498] [cursor=pointer]:
+                  - generic [ref=f5e1144]:
+                    - generic [ref=f5e1149]: 音声
+                    - generic [aria-hidden] [ref=f5e1150]: コミュニティ交流
+                    - generic [ref=f5e1151]: チャットを開く
+                    - generic [ref=f5e1152]: ボイスに招待
+                    - generic [ref=f5e1153]: チャンネルの編集
+              - listitem [ref=f5e1154]:
+                - button [ref=f5e1500] [cursor=pointer]:
+                  - generic [ref=f5e1159]:
+                    - generic [ref=f5e1164]: 音声
+                    - generic [aria-hidden] [ref=f5e1165]: 配信ルーム
+                    - generic [ref=f5e1166]: チャットを開く
+                    - generic [ref=f5e1167]: ボイスに招待
+                    - generic [ref=f5e1168]: チャンネルの編集
+          - separator [ref=f5e1502]
+          - region [ref=f5e1503]:
+            - generic [ref=f5e728]:
+              - generic [ref=f5e732] [cursor=pointer]:
+                - generic [ref=f5e733]: えあち
+                - generic [ref=f5e737]:
+                  - generic: kuins_air__
+                  - generic:
+                    - generic: オンライン
+                    - generic: 画面共有しています
+              - generic [ref=f5e738]:
+                - generic [ref=f5e739]:
+                  - switch [checked] [ref=f5e1504] [cursor=pointer]
+                  - generic [ref=f5e761]: ミュート解除
+                  - button [ref=f5e1505] [cursor=pointer]
+                - generic [ref=f5e766]:
+                  - switch [ref=f5e1506] [cursor=pointer]
+                  - button [ref=f5e1507] [cursor=pointer]
+                - button [ref=f5e1508] [cursor=pointer]
+        - generic [ref=f5e1170]:
+          - region [ref=f5e1509]:
+            - generic [ref=f5e1173]:
+              - generic [ref=f5e1174]:
+                - generic [ref=f5e1178]: テキストチャンネル
+                - heading [level=1] [ref=f5e1510]:
+                  - generic [ref=f5e1181]: "えあち's factory:"
+                  - text: 挨拶と規則
+              - generic [ref=f5e1182]:
+                - button [ref=f5e1511] [cursor=pointer]
+                - button [ref=f5e1512] [cursor=pointer]
+                - button [ref=f5e1513] [cursor=pointer]
+                - button [ref=f5e1514] [cursor=pointer]
+                - generic [ref=f5e1197]:
+                  - combobox [ref=f5e1515]:
+                    - generic [ref=f5e1199]: えあち's factoryを検索
+                  - button [aria-hidden] [ref=f5e1200]
+          - main [ref=f5e1516]:
+            - heading [level=2] [ref=f5e1517]: 挨拶と規則チャット
+            - group [ref=f5e1211]:
+              - list [ref=f5e1518]:
+                - generic [ref=f5e1216]:
+                  - generic [ref=f5e1217]:
+                    - heading [level=3] [ref=f5e1519]: えあち's factoryへようこそ
+                    - generic [ref=f5e1219]:
+                      - text: ここは新しくてピカピカの、あなたのサーバーです。 ご紹介するステップで、最初の一歩を踏み出しましょう！ さらに詳しい情報は
+                      - link [ref=f5e1520] [cursor=pointer]:
+                        - /url: https://support.discord.com/hc/ja/articles/360045138571?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm
+                        - text: はじめてのDiscordガイド
+                      - text: まで。
+                  - button [ref=f5e1521] [cursor=pointer]:
+                    - generic [ref=f5e1223]: フレンドを招待する
+                  - button [ref=f5e1522] [cursor=pointer]:
+                    - generic [ref=f5e1228]: アイコンを設定してサーバーをカスタマイズ
+                  - button [ref=f5e1523] [cursor=pointer]:
+                    - generic [ref=f5e1233]: 初めてのメッセージを送ってみる
+                  - button [ref=f5e1524] [cursor=pointer]:
+                    - generic [ref=f5e1238]: Discordアプリをダウンロード
+                  - button [ref=f5e1525] [cursor=pointer]:
+                    - generic [ref=f5e1243]: 最初のアプリを追加
+                  - button [ref=f5e1526] [cursor=pointer]:
+                    - generic [ref=f5e1248]: ブーストでみんなに特典をアンロック
+            - generic [ref=f5e1256]:
+              - button [ref=f5e1527] [cursor=pointer]
+              - generic [ref=f5e1263]:
+                - generic [aria-hidden]: "#挨拶と規則へメッセージを送信"
+                - textbox [ref=f5e1528]
+              - generic [ref=f5e1266]:
+                - generic [ref=f5e1267]:
+                  - button [ref=f5e1529] [cursor=pointer]
+                  - generic [ref=f5e1284]: フレンドに Nitro のステキなチャット特典をプレゼント！
+                - button [ref=f5e1530] [cursor=pointer]
+                - generic [ref=f5e1296]: GIFを送信
+                - button [ref=f5e1531] [cursor=pointer]
+                - button [ref=f5e1532] [cursor=pointer]
+                - button [ref=f5e1533] [cursor=pointer]
+    - dialog [ref=f5e1534]:
+      - generic [ref=f5e1535]:
+        - navigation [ref=f5e1538]:
+          - tablist "えあち's factory" [ref=f5e1539]:
+            - tab "サーバープロフィール" [ref=f5e1542] [cursor=pointer]
+            - tab "サーバータグ" [ref=f5e1543] [cursor=pointer]
+            - tab "Engagement（エンゲージメント）" [ref=f5e1544] [cursor=pointer]
+            - tab "ブースト特典" [ref=f5e1545] [cursor=pointer]
+            - generic [ref=f5e1547]: エクスプレッション
+            - tab "絵文字" [ref=f5e1549] [cursor=pointer]
+            - tab "スタンプ" [ref=f5e1550] [cursor=pointer]
+            - tab "サウンドボード" [ref=f5e1551] [cursor=pointer]
+            - generic [ref=f5e1553]: 人物
+            - tab "メンバー" [ref=f5e1555] [cursor=pointer]
+            - tab "ロールの管理" [ref=f5e1559] [cursor=pointer]: ロール
+            - tab "招待" [ref=f5e1560] [cursor=pointer]
+            - tab "アクセス" [ref=f5e1561] [cursor=pointer]
+            - generic [ref=f5e1563]: アプリ
+            - tab "連携サービス" [ref=f5e1565] [cursor=pointer]
+            - button "Appディレクトリ" [ref=f5e1566] [cursor=pointer]
+            - generic [ref=f5e1574]: 管理
+            - tab "安全設定" [ref=f5e1576] [cursor=pointer]
+            - tab "監査ログ" [ref=f5e1577] [cursor=pointer]
+            - tab "BANしたユーザー" [ref=f5e1578] [cursor=pointer]
+            - tab "AutoMod" [ref=f5e1579] [cursor=pointer]
+            - tab "コミュニティを有効にする" [selected] [ref=f5e1583]
+            - tab "サーバーテンプレート" [ref=f5e1585] [cursor=pointer]
+            - button "サーバーを削除" [ref=f5e1586] [cursor=pointer]
+        - generic [ref=f5e1592]:
+          - generic [ref=f5e1593]:
+            - tabpanel [ref=f5e1781]:
+              - generic [ref=f5e1782]:
+                - generic [ref=f5e1783]:
+                  - group "既存のDiscordコミュニティの例":
+                    - generic [ref=f5e1784]: Pokemon GO Paris
+                    - generic [ref=f5e1787]: Python
+                    - generic [ref=f5e1790]: Learn Latin
+                    - generic [ref=f5e1793]: r/leagueoflegends
+                    - generic [ref=f5e1796]: Sneaker Fans
+                    - generic [ref=f5e1799]: Hogwarts School
+                - heading "コミュニティを管理しているあなたへ！" [level=2] [ref=f5e1802]
+                - generic [ref=f5e1803]:
+                  - text: コミュニティサーバーに切り替えると、サーバーの管理や成長に役立つ新しい管理ツールを使えます。
+                  - link "詳しくはこちら。" [ref=f5e1804] [cursor=pointer]:
+                    - /url: https://support.discord.com/hc/ja/articles/14078261239831
+                - button "コミュニティを有効にする" [ref=f5e1806] [cursor=pointer]
+                - separator [ref=f5e1810]
+                - generic [ref=f5e1811]: コミュニティサーバーは、興味関心を共有する人々が集まれる大規模なスペースです。
+                - generic [ref=f5e1812]:
+                  - text: コミュニティを有効化しても、サーバーはサーバーディスカバリーには表示されません。
+                  - link "詳しくはこちらをご覧ください。" [ref=f5e1813] [cursor=pointer]:
+                    - /url: https://support.discord.com/hc/ja/articles/360047132851
+                - generic [ref=f5e1814]:
+                  - generic [ref=f5e1815]:
+                    - heading "コミュニティを広げよう" [level=2] [ref=f5e1819]
+                    - generic [ref=f5e1820]:
+                      - text: 新しいユーザーにDiscordから直接サーバーを見つけてもらうため、
+                      - strong [ref=f5e1821]:
+                        - strong [ref=f5e1822]: サーバーディスカバリー
+                      - text: への掲載を申し込みましょう。
+                  - generic [ref=f5e1823]:
+                    - heading "メンバーを惹きつける" [level=2] [ref=f5e1827]
+                    - generic [ref=f5e1828]:
+                      - strong [ref=f5e1829]:
+                        - strong [ref=f5e1830]: サーバーインサイト
+                        - img "メンバー数が500名を超えるサーバーのみ" [ref=f5e1831] [cursor=pointer]
+                      - text: などのツールにアクセスして、サーバーを管理してユーザーを惹きつけましょう。
+                  - generic [ref=f5e1835]:
+                    - heading "最新情報をゲットしよう" [level=2] [ref=f5e1840]
+                    - generic [ref=f5e1841]: コミュニティ用の新機能について、最新情報をDiscordから直接受け取れます。
+            - generic [ref=f5e1776]:
+              - button "閉じる" [ref=f5e1777] [cursor=pointer]
+              - generic [aria-hidden] [ref=f5e1780]: ESC
+          - generic [ref=f5e1905]:
+            - generic [ref=f5e1906]: 注意：保存していない変更があります！
+            - generic [ref=f5e1908]:
+              - button "リセット" [ref=f5e1909] [cursor=pointer]
+              - button "変更を保存する" [ref=f5e1911] [cursor=pointer]
+  - generic:
+    - generic:
+      - dialog "コミュニティサーバーを設定しましょう。":
+        - generic:
+          - generic:
+            - log
+            - log
+        - generic [ref=f5e1842]:
+          - generic [ref=f5e1843]:
+            - heading "コミュニティサーバーを設定しましょう。" [level=1] [ref=f5e1844]
+            - list [ref=f5e1845]:
+              - listitem [ref=f5e1846]:
+                - generic [aria-hidden] [ref=f5e1847]: "1"
+                - generic [ref=f5e1848]: セーフティチェック
+              - listitem [ref=f5e1849]:
+                - generic [aria-hidden] [ref=f5e1850]: "2"
+                - generic [ref=f5e1851]: 基本設定
+              - listitem [ref=f5e1852]:
+                - generic [aria-hidden] [ref=f5e1853]: "3"
+                - generic [ref=f5e1854]: 最後の仕上げ
+          - generic [ref=f5e1855]:
+            - generic [ref=f5e1856]:
+              - button "閉じる" [ref=f5e1857] [cursor=pointer]
+              - generic [ref=f5e1864]:
+                - generic [ref=f5e1865]:
+                  - heading "コミュニティの安全のため" [level=2] [ref=f5e1866]
+                  - generic [ref=f5e1867]: ユーザーの安全を守るため、コミュニティサーバーでは以下の管理設定を有効にしてください。
+                - generic [ref=f5e1869]:
+                  - generic [ref=f5e1870]:
+                    - generic [ref=f5e1871]: 認証済みメールアドレスが必要です。
+                    - generic [ref=f5e1872]: スパムを防ぐため、サーバーのメンバーがメッセージを送るには認証済みのメールアドレスが必要になります。ただしロールのあるメンバーは例外となります。
+                  - generic [ref=f5e1874] [cursor=pointer]:
+                    - checkbox "認証済みメールアドレスが必要です。" [checked] [active] [ref=f5e1876]
+                    - generic [ref=f5e1882]: 認証済みメールアドレスが必要です。
+                - generic [ref=f5e1886]:
+                  - generic [ref=f5e1887]:
+                    - generic [ref=f5e1888]: 不適切なメディアコンテンツフィルター
+                    - generic [ref=f5e1889]: Discordはこのサーバーで送信されたメディアから不適切な表現を含むものをスキャンし、自動的に削除します（ただし年齢制限チャンネルを除く）。
+                  - generic [ref=f5e1891]:
+                    - checkbox "全てのメンバーのメディアコンテンツをスキャンします。" [ref=f5e1893]
+                    - generic [ref=f5e1899]: 全てのメンバーのメディアコンテンツをスキャンします。
+            - generic [ref=f5e1902]:
+              - button "次へ" [disabled]
