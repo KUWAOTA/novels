@@ -48,6 +48,8 @@ diopsidae/
 
 ファイルは [draw.io](https://app.diagrams.net/) で開けます。
 
+本文に書かれた場面と日記の年代順は、[本文時系列.svg](設定資料/本文時系列.svg) で確認できます。SVG はブラウザや Obsidian でも表示できます。
+
 ---
 
 ## バージョン管理について

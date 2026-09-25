@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1710" viewBox="0 0 1600 1710" role="img" aria-labelledby="title desc">
+<title id="title">シュモクバエのこと、笑ってやろうぜ　本文時系列</title>
+<desc id="desc">2008年の父の病室から2011年の日記と中学の回想、2025年の赴任、2026年の秀斗の欠勤とケニア旅行、9月23日から24日の日記再読までを時系列に並べた図。</desc>
+<rect width="1600" height="1710" fill="#fbfaf7"/>
+<style>text{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;fill:#263247} .title{font-size:39px;font-weight:700}.sub{font-size:20px;fill:#536075}.date{font-size:23px;font-weight:700}.age{font-size:18px;fill:#596b81}.event{font-size:25px;font-weight:700}.detail{font-size:19px;fill:#47576a}.tag{font-size:16px;fill:#66758a}.year{font-size:22px;font-weight:700;fill:#66758a}.note{font-size:18px;fill:#536075}</style>
+<text x="80" y="77" class="title">本文時系列｜シュモクバエのこと、笑ってやろうぜ</text>
+<text x="80" y="117" class="sub">物語内の順序。プロローグ・本文・エピローグ・日記を横断して配置</text>
+<rect x="80" y="143" width="1440" height="67" rx="15" fill="#edf0f5"/>
+<text x="104" y="172" class="note">樹・秀斗：1997年生まれ。中2＝2011年度、終盤＝2026年29歳。</text>
+<text x="104" y="198" class="note">誕生日は4月2日〜8月4日を仮定。既定日付以外の年月日は配置案。</text>
+<line x1="355" y1="252" x2="355" y2="1500" stroke="#ccd5dd" stroke-width="5"/>
+<text x="82" y="275" class="date">2008.06.12</text>
+<text x="82" y="302" class="age">小学生</text>
+<circle cx="355" cy="284" r="12" fill="#a4a9b5"/>
+<rect x="392" y="232" width="1128" height="97" rx="16" fill="#f2f3f6" stroke="#a4a9b5" stroke-width="1.5"/>
+<text x="416" y="265" class="event">父の病室</text>
+<text x="416" y="296" class="detail">樹が父・孝則と過ごす。「父から仮説を学ぶ」素材。</text>
+<text x="1398" y="265" class="tag" text-anchor="end">配置日：仮</text>
+<text x="82" y="389" class="date">2011.05.13</text>
+<text x="82" y="416" class="age">中学2年</text>
+<circle cx="355" cy="398" r="12" fill="#ba7541"/>
+<rect x="392" y="346" width="1128" height="97" rx="16" fill="#fff0e0" stroke="#ba7541" stroke-width="1.5"/>
+<text x="416" y="379" class="event">最初の日記</text>
+<text x="416" y="410" class="detail">昆虫図鑑のシュモクバエと「ニンゲン」への違和感を書く。</text>
+<text x="1398" y="379" class="tag" text-anchor="end">原稿の既定日付</text>
+<text x="82" y="503" class="date">2011.10.14</text>
+<text x="82" y="530" class="age">中学2年</text>
+<circle cx="355" cy="512" r="12" fill="#59807d"/>
+<rect x="392" y="460" width="1128" height="97" rx="16" fill="#e7f2ef" stroke="#59807d" stroke-width="1.5"/>
+<text x="416" y="493" class="event">コーラスコンクール</text>
+<text x="416" y="524" class="detail">秀斗に勧められたギャグが滑り、担任がいじめを疑う。</text>
+<text x="1398" y="493" class="tag" text-anchor="end">配置日：仮</text>
+<text x="82" y="617" class="date">2025.08.04</text>
+<text x="82" y="644" class="age">28歳</text>
+<circle cx="355" cy="626" r="12" fill="#5671ac"/>
+<rect x="392" y="574" width="1128" height="97" rx="16" fill="#eaf0fc" stroke="#5671ac" stroke-width="1.5"/>
+<text x="416" y="607" class="event">前藤への指導と異動の打診</text>
+<text x="416" y="638" class="detail">樹が後輩に会話を教え、部長から大阪への赴任を頼まれる。</text>
+<text x="1398" y="607" class="tag" text-anchor="end">配置日：仮</text>
+<text x="82" y="731" class="date">2025.08.18</text>
+<text x="82" y="758" class="age">28歳</text>
+<circle cx="355" cy="740" r="12" fill="#5671ac"/>
+<rect x="392" y="688" width="1128" height="97" rx="16" fill="#eaf0fc" stroke="#5671ac" stroke-width="1.5"/>
+<text x="416" y="721" class="event">向日製作所への赴任</text>
+<text x="416" y="752" class="detail">初日の会議で秀斗と再会。樹が秀斗の上につく。</text>
+<text x="1398" y="721" class="tag" text-anchor="end">配置日：仮</text>
+<text x="82" y="845" class="date">2025.09.18–19</text>
+<text x="82" y="872" class="age">28歳</text>
+<circle cx="355" cy="854" r="12" fill="#5671ac"/>
+<rect x="392" y="802" width="1128" height="97" rx="16" fill="#eaf0fc" stroke="#5671ac" stroke-width="1.5"/>
+<text x="416" y="835" class="event">赴任1か月・秀斗への指導</text>
+<text x="416" y="866" class="detail">職場への適応後、障害報告の「事実・推測・未確認」を教える。</text>
+<text x="1398" y="835" class="tag" text-anchor="end">配置日：仮</text>
+<text x="82" y="959" class="date">2026.08.17</text>
+<text x="82" y="986" class="age">29歳</text>
+<circle cx="355" cy="968" r="12" fill="#5671ac"/>
+<rect x="392" y="916" width="1128" height="97" rx="16" fill="#eaf0fc" stroke="#5671ac" stroke-width="1.5"/>
+<text x="416" y="949" class="event">赴任約1年・秀斗の欠勤</text>
+<text x="416" y="980" class="detail">月曜10時の検証結果の会議に秀斗が現れない。</text>
+<text x="1398" y="949" class="tag" text-anchor="end">配置日：仮</text>
+<text x="82" y="1073" class="date">2026.08.31</text>
+<text x="82" y="1100" class="age">29歳</text>
+<circle cx="355" cy="1082" r="12" fill="#5671ac"/>
+<rect x="392" y="1030" width="1128" height="97" rx="16" fill="#eaf0fc" stroke="#5671ac" stroke-width="1.5"/>
+<text x="416" y="1063" class="event">実家へ走る／会社からの電話</text>
+<text x="416" y="1094" class="detail">休職中の秀斗を案じて実家へ。会社から「本社に来い」と呼ばれる。</text>
+<text x="1398" y="1063" class="tag" text-anchor="end">配置日：仮</text>
+<text x="82" y="1187" class="date">2026.09.21</text>
+<text x="82" y="1214" class="age">29歳</text>
+<circle cx="355" cy="1196" r="12" fill="#63885c"/>
+<rect x="392" y="1144" width="1128" height="97" rx="16" fill="#edf5e9" stroke="#63885c" stroke-width="1.5"/>
+<text x="416" y="1177" class="event">ケニアでシュモクバエを発見</text>
+<text x="416" y="1208" class="detail">樹と秀斗が現物を見て笑う。</text>
+<text x="1398" y="1177" class="tag" text-anchor="end">配置日：仮</text>
+<text x="82" y="1301" class="date">2026.09.23</text>
+<text x="82" y="1328" class="age">29歳</text>
+<circle cx="355" cy="1310" r="12" fill="#63885c"/>
+<rect x="392" y="1258" width="1128" height="97" rx="16" fill="#edf5e9" stroke="#63885c" stroke-width="1.5"/>
+<text x="416" y="1291" class="event">帰国後、渋谷駅で別れる</text>
+<text x="416" y="1322" class="detail">秀斗の「丸くなった」に樹が引っかかる。</text>
+<text x="1398" y="1291" class="tag" text-anchor="end">配置日：仮</text>
+<text x="82" y="1415" class="date">09.23夜–24未明</text>
+<text x="82" y="1442" class="age">29歳</text>
+<circle cx="355" cy="1424" r="12" fill="#ba7541"/>
+<rect x="392" y="1372" width="1128" height="97" rx="16" fill="#fff0e0" stroke="#ba7541" stroke-width="1.5"/>
+<text x="416" y="1405" class="event">北新地で日記を開く</text>
+<text x="416" y="1436" class="detail">プロローグとエピローグが合流。2011年の日記を読み返す。</text>
+<text x="1398" y="1405" class="tag" text-anchor="end">帰宅日は原稿の既定日付</text>
+<line x1="80" y1="1514" x2="1520" y2="1514" stroke="#d8dde3"/>
+<text x="80" y="1553" class="note">補足：会社ジャック・自殺阻止そのものは、この原稿ではまだ本文シーンとして書かれていない。</text>
+<text x="80" y="1584" class="note">8月31日の場面は、秀斗が会社にいると知り、樹が呼び出されるところで終わる。</text>
+<text x="80" y="1625" class="note">日記の初回は2011年5月13日。2026年9月23日の帰宅後、午前0時を過ぎて再読する。</text>
+<text x="80" y="1660" class="tag">出典：diopsidae/本文/シュモクバエのこと、笑ってやろうぜ.md</text>
+</svg>
