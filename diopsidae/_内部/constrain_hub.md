@@ -10,6 +10,7 @@ tags:
 
 ## Current Manuscript
 
+- [[diopsidae/README|diopsidae の資料案内]] — v5 の図と Discord 添付用 PNG
 - [[diopsidae/本文/README|本文の運用方針]]
 - [[diopsidae/本文/シュモクバエのこと、笑ってやろうぜ|執筆中の本文]]
 - [[diopsidae/設定資料/本文時系列.svg|本文時系列（図）]] — 日記・中学時代・社会人・ケニア帰還を時系列で確認

@@ -48,6 +48,8 @@ diopsidae/
 
 ファイルは [draw.io](https://app.diagrams.net/) で開けます。
 
+Discord に添付する高解像度 PNG は [人物関係図](設定資料/v5/discord/characters.png)、[プロット構造図](設定資料/v5/discord/plot.png)、[テーマ図](設定資料/v5/discord/theme.png) です。各 draw.io 原本から２倍の解像度で書き出しています。
+
 本文に書かれた場面と日記の年代順は、[本文時系列.svg](設定資料/本文時系列.svg) で確認できます。SVG はブラウザや Obsidian でも表示できます。
 
 ---
