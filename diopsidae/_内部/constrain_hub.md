@@ -11,13 +11,13 @@ tags:
 ## Current Manuscript
 
 - [[diopsidae/README|diopsidae の資料案内]] — v5 の図と Discord 添付用 PNG
-- [[diopsidae/本文/README|本文の運用方針]]
-- [[diopsidae/本文/シュモクバエのこと、笑ってやろうぜ|執筆中の本文]]
+- [[diopsidae/本文/README|場面一覧と現行版]]
+- [[diopsidae/本文/シュモクバエのこと、笑ってやろうぜ|分割時点の統合原稿]]
 - [[diopsidae/本文/シーンの配置方針|シーンの配置方針]]
 - [[diopsidae/本文/Story Compiler構造分析_2026-09-29|契機事件・欲求・価値変化の構造分析]]
 - [[diopsidae/設定資料/本文時系列.svg|本文時系列（図）]] — 日記・中学時代・社会人・ケニア帰還を時系列で確認
-- `diopsidae/本文/本文.txt` — プロローグとエピローグに挟まれた自由記述原稿
-- `diopsidae/本文/シーン素材/` — 順序未確定の既存シーン
+- `diopsidae/本文/番号.シーン名/vN/本文.txt` — 場面ごとの原稿
+- `diopsidae/本文/旧素材/` — 旧構成の参考資料
 
 ## Brainstorm Core
 
