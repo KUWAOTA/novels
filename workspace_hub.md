@@ -23,6 +23,10 @@ tags:
 - [[friends_novel/friends_novel_hub]]
 - [[school/school_hub]]
 - [[discord_project/サーバー設計|創作 Discord サーバー設計]]（元の構想: [構想.txt](discord_project/構想.txt)）
+- [[subproject/小っちゃい石鹸/未定事項3つのマインドマップ|小っちゃい石鹸：未定事項3つのアイデア]]（元の構想: [構想.txt](subproject/小っちゃい石鹸/構想.txt)、前の案: [[subproject/小っちゃい石鹸/連想マインドマップ|ごっこ遊びの連想]]）
+- [[subproject/小っちゃい石鹸/本文_StoryCompiler添削_2026-10-02|小っちゃい石鹸：本文の行別添削と全体講評]]（原稿の版: [本文v1.txt](subproject/小っちゃい石鹸/本文v1.txt)／[本文v2.txt](subproject/小っちゃい石鹸/本文v2.txt)）
+- [[subproject/小っちゃい石鹸/感想と読解_本文v2_2026-10-02|小っちゃい石鹸：一読者としての感想と読解]]
+- [[subproject/小っちゃい石鹸/本文v2_再レビュー_2026-10-03|小っちゃい石鹸：本文v2再レビュー・なたねあぶらの幼さ]]
 
 ## Detailed Hubs
 

@@ -1,0 +1,926 @@
+- generic [ref=e8]:
+  - generic [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e13]: air incubator
+      - generic [ref=e17]:
+        - button [ref=e1434] [cursor=pointer]
+        - link [ref=e1435] [cursor=pointer]:
+          - /url: https://support.discord.com
+          - button [ref=e1436]
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - navigation [ref=e1437]:
+          - tree [ref=e32]:
+            - generic [ref=e33]:
+              - treeitem [level=1] [ref=e1438] [cursor=pointer]:
+                - generic [ref=e43]: ダイレクトメッセージ
+              - group [ref=e1439]:
+                - generic [ref=e50]:
+                  - treeitem [level=1] [selected] [ref=e1440] [cursor=pointer]:
+                    - generic [ref=e61]: air incubator, 音声通話がアクティブ
+                  - generic [ref=e62]: air incubator
+                - generic [ref=e63]:
+                  - treeitem [level=1] [ref=e1441] [cursor=pointer]:
+                    - generic [ref=e74]: 未読メッセージ（1 の家）
+                  - generic [ref=e75]: 1 の家
+                - treeitem [level=1] [ref=e1442] [cursor=pointer]:
+                  - generic [ref=e87]: 未読メッセージ（匏／PÁO）
+                - generic [ref=e89]:
+                  - treeitem [level=1] [ref=e1443] [cursor=pointer]:
+                    - generic [ref=e100]: 未読メッセージ（機電情アダルトサーバ）
+                  - generic [ref=e101]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: レベル 2
+                            - generic: 7 ブースト
+                - generic [ref=e102]:
+                  - treeitem [level=1] [ref=e1444] [cursor=pointer]:
+                    - generic [ref=e113]: 未読メッセージ（不知火燈の知り合いの集い）
+                  - generic [ref=e114]: 不知火燈の知り合いの集い
+                - treeitem [level=1] [ref=e1445] [cursor=pointer]:
+                  - generic [ref=e126]: 未読メッセージ（A.R.P.L.A.VIP）, 音声通話がアクティブ
+                  - generic [aria-hidden] [ref=e127]: A.R.P.L.A.V
+                - treeitem [level=1] [ref=e1446] [cursor=pointer]:
+                  - generic [ref=e140]: 未読メッセージ（灰信【映画・文学・思想・哲学】）
+                - generic [ref=e142]:
+                  - treeitem [level=1] [ref=e1447] [cursor=pointer]:
+                    - generic [ref=e153]: 未読メッセージ（🇯🇵日韓学校・한일학교🇰🇷）, 画面共有アクティビティ 音声通話がアクティブ
+                  - generic [ref=e154]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: レベル 2
+                            - generic: 15 ブースト
+                      - generic: "+2"
+                - generic [ref=e155]:
+                  - treeitem [level=1] [ref=e1448] [cursor=pointer]:
+                    - generic [ref=e166]: 未読メッセージ（小説家になろう＠非公式）, 音声通話がアクティブ
+                  - generic [ref=e167]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: レベル 1
+                            - generic: 2 ブースト
+                - generic [ref=e168]:
+                  - treeitem [level=1] [ref=e1449] [cursor=pointer]:
+                    - generic [ref=e179]: 未読メッセージ（思想・哲学・文学・芸術の会）, スケジューリング済みのイベント 画面共有アクティビティ 音声通話がアクティブ
+                  - generic [ref=e180]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: レベル 3
+                            - generic: 20 ブースト
+                      - generic: "+8"
+                - generic [ref=e181]:
+                  - treeitem [level=1] [ref=e1450] [cursor=pointer]:
+                    - generic [ref=e192]: 未読メッセージ（仲間｜NAKAMA）
+                  - generic [ref=e193]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: レベル 1
+                            - generic: 4 ブースト
+                - generic [ref=e194]:
+                  - treeitem [level=1] [ref=e1451] [cursor=pointer]:
+                    - generic [ref=e205]: 未読メッセージ（Japanese English International School/日英国際学校）, 音声通話がアクティブ
+                  - generic [ref=e206]:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic: レベル 3
+                            - generic: 17 ブースト
+                - generic [ref=e207]:
+                  - treeitem [level=1] [ref=e1452] [cursor=pointer]:
+                    - generic [ref=e218]: 知らない言葉
+                  - generic [ref=e219]: 知らない言葉
+                - generic [ref=e220]:
+                  - generic [ref=e225]:
+                    - treeitem [level=1] [ref=e1453] [cursor=pointer]:
+                      - generic [ref=e231]: 35 件のメンション、グリルチキン
+                    - generic: "35"
+                  - generic [ref=e232]: グリルチキン
+                - generic [ref=e233]:
+                  - generic [ref=e238]:
+                    - treeitem [level=1] [ref=e1454] [cursor=pointer]:
+                      - generic [ref=e244]: 1 件のメンション、魔神界
+                    - generic: "1"
+                  - generic [ref=e245]: 魔神界
+                - generic [ref=e246]:
+                  - treeitem [level=1] [ref=e1455] [cursor=pointer]:
+                    - generic [ref=e257]: 七夕会
+                  - generic [ref=e258]: 七夕会
+              - treeitem [level=1] [ref=e1456] [cursor=pointer]
+              - treeitem [level=1] [ref=e1457] [cursor=pointer]
+              - treeitem [level=1] [ref=e1458] [cursor=pointer]
+          - generic: 新規
+        - navigation [ref=e1459]:
+          - generic [ref=e412]:
+            - button [ref=e1460] [cursor=pointer]:
+              - heading [level=2] [ref=e1461]: air incubator
+            - button [ref=e1462] [cursor=pointer]
+          - heading [level=2] [ref=e1463]: チャンネル
+          - list [ref=e1464]:
+            - listitem [ref=e429]:
+              - link [ref=e1465] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1552553988610596878
+                - generic [ref=e433]:
+                  - generic [ref=e437]: テキスト
+                  - generic [aria-hidden] [ref=e438]: 入り口
+                  - generic [ref=e439]: チャンネルに招待
+                  - generic [ref=e440]: チャンネルの編集
+            - listitem [ref=e441]:
+              - link [ref=e1467] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1552680466052546560
+                - generic [ref=e445]:
+                  - generic [ref=e449]: テキスト
+                  - generic [aria-hidden] [ref=e450]: 自己紹介
+                  - generic [ref=e451]: チャンネルに招待
+                  - generic [ref=e452]: チャンネルの編集
+            - listitem [ref=e453]:
+              - link [ref=e1469] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554054524648296498
+                - generic [ref=e457]:
+                  - generic [ref=e461]: テキスト
+                  - generic [aria-hidden] [ref=e462]: 自作品紹介-ダイジェスト
+                  - generic [ref=e463]: チャンネルに招待
+                  - generic [ref=e464]: チャンネルの編集
+            - listitem [ref=e465]:
+              - link [ref=e1471] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554264179697782854
+                - generic [ref=e469]:
+                  - generic [ref=e473]: テキスト
+                  - generic [aria-hidden] [ref=e474]: 雑談
+                  - generic [ref=e475]: チャンネルに招待
+                  - generic [ref=e476]: チャンネルの編集
+            - listitem [ref=e477]:
+              - link [ref=e1473] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554441403688558704
+                - generic [ref=e481]:
+                  - generic [ref=e486]: テキスト（年齢制限あり）
+                  - generic [aria-hidden] [ref=e487]: r-18
+                  - generic [ref=e488]: チャンネルに招待
+                  - generic [ref=e489]: チャンネルの編集
+            - listitem [ref=e490]:
+              - link [ref=e1475] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554511920818552932
+                - generic [ref=e494]:
+                  - generic [ref=e498]: テキスト
+                  - generic [aria-hidden] [ref=e499]: おすすめ作品紹介
+                  - generic [ref=e500]: チャンネルに招待
+                  - generic [ref=e501]: チャンネルの編集
+            - listitem [ref=e502]:
+              - generic [ref=e503] [cursor=pointer]:
+                - button [expanded] [ref=e1477]:
+                  - heading [level=3] [ref=e1478]:
+                    - generic [ref=e506]: 運営関係
+                - generic [ref=e509]:
+                  - button [ref=e1479]
+                  - generic [ref=e513]: チャンネルを作成
+            - listitem [ref=e514]:
+              - link [ref=e1480] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554410467630252042
+                - generic [ref=e518]:
+                  - generic [ref=e522]: テキスト
+                  - generic [aria-hidden] [ref=e523]: 運営への要望
+                  - generic [ref=e524]: チャンネルに招待
+                  - generic [ref=e525]: チャンネルの編集
+            - listitem [ref=e526]:
+              - link [ref=e1482] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554821924377329704
+                - generic [ref=e530]:
+                  - generic [ref=e534]: テキスト
+                  - generic [aria-hidden] [ref=e535]: 運営が考えていること-ch
+                  - generic [ref=e536]: チャンネルに招待
+                  - generic [ref=e537]: チャンネルの編集
+            - listitem [ref=e538]:
+              - generic [ref=e539] [cursor=pointer]:
+                - button [expanded] [ref=e1484]:
+                  - heading [level=3] [ref=e1485]:
+                    - generic [ref=e542]: 個人チャンネル（鯖内Twitter）
+                - generic [ref=e545]:
+                  - button [ref=e1486]
+                  - generic [ref=e549]: チャンネルを作成
+            - listitem [ref=e550]:
+              - link [ref=e1487] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554406482949312602
+                - generic [ref=e554]:
+                  - generic [ref=e558]: テキスト
+                  - generic [aria-hidden] [ref=e559]: 不知火燈-ch
+                  - generic [ref=e560]: チャンネルに招待
+                  - generic [ref=e561]: チャンネルの編集
+            - listitem [ref=e562]:
+              - link [ref=e1489] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554406526863810560
+                - generic [ref=e566]:
+                  - generic [ref=e570]: テキスト
+                  - generic [aria-hidden] [ref=e571]: luna-ch
+                  - generic [ref=e572]: チャンネルに招待
+                  - generic [ref=e573]: チャンネルの編集
+            - listitem [ref=e574]:
+              - link [ref=e1491] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554406566885851186
+                - generic [ref=e578]:
+                  - generic [ref=e582]: テキスト
+                  - generic [aria-hidden] [ref=e583]: yossy-ch
+                  - generic [ref=e584]: チャンネルに招待
+                  - generic [ref=e585]: チャンネルの編集
+            - listitem [ref=e586]:
+              - link [ref=e1493] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554406627216457759
+                - generic [ref=e590]:
+                  - generic [ref=e594]: テキスト
+                  - generic [aria-hidden] [ref=e595]: ゆの-ch
+                  - generic [ref=e596]: チャンネルに招待
+                  - generic [ref=e597]: チャンネルの編集
+            - listitem [ref=e598]:
+              - link [ref=e1495] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554406657830690876
+                - generic [ref=e602]:
+                  - generic [ref=e606]: テキスト
+                  - generic [aria-hidden] [ref=e607]: ぐっちょむ-ch
+                  - generic [ref=e608]: チャンネルに招待
+                  - generic [ref=e609]: チャンネルの編集
+            - listitem [ref=e610]:
+              - link [ref=e1497] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554406837464596510
+                - generic [ref=e614]:
+                  - generic [ref=e618]: テキスト
+                  - generic [aria-hidden] [ref=e619]: タカヤ-ch
+                  - generic [ref=e620]: チャンネルに招待
+                  - generic [ref=e621]: チャンネルの編集
+            - listitem [ref=e622]:
+              - link [ref=e1499] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554406874135134269
+                - generic [ref=e626]:
+                  - generic [ref=e630]: テキスト
+                  - generic [aria-hidden] [ref=e631]: えあ-ch
+                  - generic [ref=e632]: チャンネルに招待
+                  - generic [ref=e633]: チャンネルの編集
+            - listitem [ref=e634]:
+              - link [ref=e1501] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554406923921793084
+                - generic [ref=e638]:
+                  - generic [ref=e642]: テキスト
+                  - generic [aria-hidden] [ref=e643]: psyche-ch
+                  - generic [ref=e644]: チャンネルに招待
+                  - generic [ref=e645]: チャンネルの編集
+            - listitem [ref=e646]:
+              - link [ref=e1503] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554407100304723988
+                - generic [ref=e650]:
+                  - generic [ref=e654]: テキスト
+                  - generic [aria-hidden] [ref=e655]: ヒビキ-ch
+                  - generic [ref=e656]: チャンネルに招待
+                  - generic [ref=e657]: チャンネルの編集
+            - listitem [ref=e658]:
+              - link [ref=e1505] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554407188586434590
+                - generic [ref=e662]:
+                  - generic [ref=e666]: テキスト
+                  - generic [aria-hidden] [ref=e667]: 316-ch
+                  - generic [ref=e668]: チャンネルに招待
+                  - generic [ref=e669]: チャンネルの編集
+            - listitem [ref=e670]:
+              - link [ref=e1507] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554407394937798717
+                - generic [ref=e674]:
+                  - generic [ref=e678]: テキスト
+                  - generic [aria-hidden] [ref=e679]: nn缶-ch
+                  - generic [ref=e680]: チャンネルに招待
+                  - generic [ref=e681]: チャンネルの編集
+            - listitem [ref=e682]:
+              - link [ref=e1509] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554407428601159720
+                - generic [ref=e686]:
+                  - generic [ref=e690]: テキスト
+                  - generic [aria-hidden] [ref=e691]: よぞ-ch
+                  - generic [ref=e692]: チャンネルに招待
+                  - generic [ref=e693]: チャンネルの編集
+            - listitem [ref=e694]:
+              - link [ref=e1511] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554407634516574218
+                - generic [ref=e698]:
+                  - generic [ref=e702]: テキスト
+                  - generic [aria-hidden] [ref=e703]: aijouhenge-ch
+                  - generic [ref=e704]: チャンネルに招待
+                  - generic [ref=e705]: チャンネルの編集
+            - listitem [ref=e706]:
+              - link [ref=e1513] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554407662622605403
+                - generic [ref=e710]:
+                  - generic [ref=e714]: テキスト
+                  - generic [aria-hidden] [ref=e715]: ルトリナ-ch
+                  - generic [ref=e716]: チャンネルに招待
+                  - generic [ref=e717]: チャンネルの編集
+            - listitem [ref=e718]:
+              - link [ref=e1515] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554428280822571029
+                - generic [ref=e722]:
+                  - generic [ref=e726]: テキスト
+                  - generic [aria-hidden] [ref=e727]: 使い方
+                  - generic [ref=e728]: チャンネルに招待
+                  - generic [ref=e729]: チャンネルの編集
+            - listitem [ref=e730]:
+              - link [ref=e1517] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554646902505476197
+                - generic [ref=e734]:
+                  - generic [ref=e738]: テキスト
+                  - generic [aria-hidden] [ref=e739]: 長谷川-ch
+                  - generic [ref=e740]: チャンネルに招待
+                  - generic [ref=e741]: チャンネルの編集
+            - listitem [ref=e742]:
+              - link [ref=e1519] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554646945568653392
+                - generic [ref=e746]:
+                  - generic [ref=e750]: テキスト
+                  - generic [aria-hidden] [ref=e751]: タカハシ-ch
+                  - generic [ref=e752]: チャンネルに招待
+                  - generic [ref=e753]: チャンネルの編集
+            - listitem [ref=e754]:
+              - link [ref=e1521] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554850337834409984
+                - generic [ref=e758]:
+                  - generic [ref=e762]: テキスト
+                  - generic [aria-hidden] [ref=e763]: ブルーアイランド-ch
+                  - generic [ref=e764]: チャンネルに招待
+                  - generic [ref=e765]: チャンネルの編集
+            - listitem [ref=e766]:
+              - link [ref=e1523] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554868936141570068
+                - generic [ref=e770]:
+                  - generic [ref=e774]: テキスト
+                  - generic [aria-hidden] [ref=e775]: うさねこ-ch
+                  - generic [ref=e776]: チャンネルに招待
+                  - generic [ref=e777]: チャンネルの編集
+            - listitem [ref=e778]:
+              - link [ref=e1525] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554869801036423198
+                - generic [ref=e782]:
+                  - generic [ref=e786]: テキスト
+                  - generic [aria-hidden] [ref=e787]: ゲボ-ch
+                  - generic [ref=e788]: チャンネルに招待
+                  - generic [ref=e789]: チャンネルの編集
+            - listitem [ref=e790]:
+              - link [ref=e1527] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1555218606285918228
+                - generic [ref=e794]:
+                  - generic [ref=e798]: テキスト
+                  - generic [aria-hidden] [ref=e799]: くろだ-ch
+                  - generic [ref=e800]: チャンネルに招待
+                  - generic [ref=e801]: チャンネルの編集
+            - listitem [ref=e802]:
+              - generic [ref=e803] [cursor=pointer]:
+                - button [expanded] [ref=e1529]:
+                  - heading [level=3] [ref=e1530]:
+                    - generic [ref=e806]: 作品群
+                - generic [ref=e809]:
+                  - button [ref=e1531]
+                  - generic [ref=e813]: チャンネルを作成
+            - listitem [ref=e814]:
+              - link [ref=e1532] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1552681333405393018
+                - generic [ref=e818]:
+                  - generic [ref=e823]: フォーラム
+                  - generic [aria-hidden] [ref=e824]: （えあち-小説-執筆中）シュモクバエのこと、笑ってやろうぜ
+                  - generic [ref=e825]:
+                    - button [ref=e1534]
+                    - generic [ref=e831]: チャンネルに招待
+                    - button [ref=e1535]
+                    - generic [ref=e836]: チャンネルの編集
+            - listitem [ref=e837]:
+              - group [ref=e1536]:
+                - listitem [ref=e840]:
+                  - button [ref=e1537] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e851]: 進捗報告
+                - listitem [ref=e852]:
+                  - button [ref=e1538] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e863]: "#7 父から仮説を学ぶシーン"
+                - listitem [ref=e864]:
+                  - button [ref=e1539] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e875]: "#6 自作プリントを作り、樹をしばる母"
+                - listitem [ref=e876]:
+                  - button [ref=e1540] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e887]: 使えそうな素材
+                - listitem [ref=e888]:
+                  - button [ref=e1541] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e899]: シーン配置方針
+                - listitem [ref=e900]:
+                  - button [ref=e1542] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e911]: テーマ図
+                - listitem [ref=e912]:
+                  - button [ref=e1543] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e923]: プロット図
+                - listitem [ref=e924]:
+                  - button [ref=e1544] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e935]: キャラクター設定図
+                - listitem [ref=e936]:
+                  - button [ref=e1545] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e947]: "#5 数学の返却シーン"
+                - listitem [ref=e948]:
+                  - button [ref=e1546] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e959]: "#4 いじめのシーン"
+                - listitem [ref=e960]:
+                  - button [ref=e1547] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e968]: "#3 秀斗の家に向かって走るシーン"
+            - listitem [ref=e969]:
+              - link [ref=e1548] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554466951768707192
+                - generic [ref=e973]:
+                  - generic [ref=e978]: フォーラム
+                  - generic [aria-hidden] [ref=e979]: （えあち-小説-未完）マチアプで振られるのにハマっている話
+                  - generic [ref=e980]: チャンネルに招待
+                  - generic [ref=e981]: チャンネルの編集
+            - listitem [ref=e982]:
+              - link [ref=e1550] [cursor=pointer]:
+                - /url: /channels/1552553988140961892/1554430987927298139
+                - generic [ref=e986]:
+                  - generic [ref=e991]: フォーラム
+                  - generic [aria-hidden] [ref=e992]: （えあち-ゲーム-構想段階）競争社会からの脱出
+                  - generic [ref=e993]: チャンネルに招待
+                  - generic [ref=e994]: チャンネルの編集
+        - separator [ref=e1552]
+        - region [ref=e1553]:
+          - generic [ref=e338]:
+            - generic [ref=e342] [cursor=pointer]:
+              - generic [ref=e343]: えあ〜ち
+              - generic [ref=e347]:
+                - generic: kuins_air__
+                - generic: オンライン
+            - generic [ref=e348]:
+              - generic [ref=e349]:
+                - switch [checked] [ref=e1554] [cursor=pointer]
+                - generic [ref=e371]: ミュート解除
+                - button [ref=e1555] [cursor=pointer]
+              - generic [ref=e376]:
+                - switch [ref=e1556] [cursor=pointer]
+                - button [ref=e1557] [cursor=pointer]
+              - button [ref=e1558] [cursor=pointer]
+      - generic [ref=e996]:
+        - region [ref=e1559]:
+          - generic [ref=e999]:
+            - generic [ref=e1000]:
+              - generic [ref=e1005]: フォーラムチャンネル
+              - heading [level=1] [ref=e1560]:
+                - generic [ref=e1008]: "air incubator:"
+                - text: （えあち-小説-執筆中）シュモクバエのこと、笑ってやろうぜ
+            - generic [ref=e1009]:
+              - button [ref=e1561] [cursor=pointer]
+              - button [ref=e1562] [cursor=pointer]
+              - button [ref=e1563] [cursor=pointer]
+              - generic [ref=e1022]:
+                - combobox [ref=e1564]:
+                  - generic [ref=e1024]: air incubatorを検索
+                - button [aria-hidden] [ref=e1025]
+        - generic [ref=e1032]:
+          - heading [level=2] [ref=e1565]: スレッド
+          - list [ref=e1035]:
+            - list [ref=e1036]:
+              - generic [ref=e1037]:
+                - generic [ref=e1043]:
+                  - button [aria-hidden] [ref=e1045]
+                  - generic [ref=e1052]:
+                    - textbox [ref=e1567]:
+                      - /placeholder: 投稿を検索または作成……
+                    - generic [ref=e1055]:
+                      - button [ref=e1568] [cursor=pointer]
+                      - generic [ref=e1061]: 投稿ガイドライン
+                      - button [ref=e1569] [cursor=pointer]:
+                        - generic [ref=e1063]: 新しい投稿
+                - generic [ref=e1068]:
+                  - button [ref=e1570] [cursor=pointer]:
+                    - generic [ref=e1070]: 並び替え&表示
+                  - list [ref=e1078]:
+                    - button [ref=e1571]:
+                      - generic [ref=e1080]: 人物
+                    - button [ref=e1572]:
+                      - generic [ref=e1082]: シーン
+                    - button [ref=e1573]:
+                      - generic [ref=e1084]: 世界・設定
+                    - button [ref=e1574]:
+                      - generic [ref=e1086]: 相談中
+                    - button [ref=e1575]:
+                      - generic [ref=e1088]: ファンアート
+                    - button [ref=e1576]:
+                      - generic [ref=e1090]: 二次創作
+                    - button [ref=e1577]:
+                      - generic [ref=e1092]: ネタバレ
+                    - button [ref=e1578]:
+                      - generic [ref=e1094]: 採用済み
+                    - button [ref=e1579]:
+                      - generic [ref=e1096]: 進捗報告
+                  - button [ref=e1580] [cursor=pointer]:
+                    - generic [ref=e1098]: 全て表示
+              - listitem [ref=e1101]:
+                - generic [ref=e1103] [cursor=pointer]:
+                  - generic [ref=e1104]:
+                    - generic [ref=e1105]: 進捗報告
+                    - heading [level=3] [ref=e1581]: 進捗報告
+                    - generic [ref=e1111]:
+                      - generic [ref=e1112]:
+                        - link [ref=e1582]:
+                          - generic [ref=e1114]: えあ〜ち
+                        - text: ":"
+                      - generic [ref=e1117]: 黒田への報告を書いていきます
+                  - generic [ref=e1121]:
+                    - button [ref=e1583]
+                    - generic [ref=e1127]: "3"
+                    - generic [ref=e1132]: •
+                    - generic [ref=e1133]: 4 時間前
+                    - generic [ref=e1134]: 2026年10月1日木曜日 22:55 に投稿しました
+              - listitem [ref=e1135]:
+                - generic [ref=e1137] [cursor=pointer]:
+                  - generic [ref=e1138]:
+                    - generic [ref=e1139]: シーン
+                    - heading [level=3] [ref=e1585]: "#5 数学の返却シーン"
+                    - generic [ref=e1145]:
+                      - generic [ref=e1146]:
+                        - link [ref=e1586]:
+                          - generic [ref=e1148]: えあ〜ち
+                        - text: ":"
+                      - generic [ref=e1151]: クリックして添付ファイルを表示
+                  - generic [ref=e1153]:
+                    - button [ref=e1587]
+                    - generic [ref=e1159]: "2"
+                    - generic [ref=e1164]: •
+                    - generic [ref=e1165]: 3 日前
+                    - generic [ref=e1166]: 2026年9月29日火曜日 19:44 に投稿しました
+              - listitem [ref=e1167]:
+                - generic [ref=e1169] [cursor=pointer]:
+                  - generic [ref=e1170]:
+                    - generic [ref=e1171]: 世界・設定
+                    - heading [level=3] [ref=e1589]: シーン配置方針
+                    - generic [ref=e1177]:
+                      - generic [ref=e1178]:
+                        - link [ref=e1590]:
+                          - generic [ref=e1180]: えあ〜ち
+                        - text: ":"
+                      - generic [ref=e1185]:
+                        - heading [level=2] [ref=e1591]:
+                          - generic [ref=e1187]: 設計方針
+                          - generic [ref=e1188]: ","
+                        - heading [level=3] [ref=e1592]:
+                          - generic [ref=e1190]: 0.プロローグ
+                          - generic [ref=e1191]: ","
+                        - text: 描きたいこと：
+                        - list [ref=e1192]:
+                          - listitem [ref=e1193]:
+                            - text: •
+                            - generic [ref=e1194]: 日記：樹主観の世界の息苦しさ
+                            - generic [ref=e1195]: ","
+                        - text: 伏線・謎：
+                        - list [ref=e1196]:
+                          - listitem [ref=e1197]:
+                            - text: •
+                            - generic [ref=e1198]: ケニアってなに？なんでこんなことをしているの？
+                            - generic [ref=e1199]: ","
+                        - heading [level=3] [ref=e1593]:
+                          - generic [ref=e1201]: 1.後輩に対する的確な指導をするシーン
+                          - generic [ref=e1202]: ","
+                        - text: 描きたいこと
+                        - list [ref=e1203]:
+                          - listitem [ref=e1204]:
+                            - text: •
+                            - generic [ref=e1205]: 樹の言語化おばけ-主観の世界の見え方を見せて、鮮やかな論理で分解された世界を見せる
+                            - generic [ref=e1206]: ","
+                        - heading [level=3] [ref=e1594]:
+                          - generic [ref=e1208]: 2.樹が向日製作所にコンサルタントとして派遣され、秀斗の上につくシーン
+                          - generic [ref=e1209]: ","
+                        - text: 伏線：
+                        - list [ref=e1210]:
+                          - listitem [ref=e1211]:
+                            - text: •
+                            - generic [ref=e1212]: 秀斗の敬語
+                            - generic [ref=e1213]: ","
+                          - listitem [ref=e1214]:
+                            - text: •
+                            - generic [ref=e1215]: 樹がやってたことは実はロジハラ
+                            - generic [ref=e1216]: ","
+                        - text: 明瞭化：
+                        - list [ref=e1217]:
+                          - listitem [ref=e1218]:
+                            - text: •
+                            - generic [ref=e1219]: 秀斗の休職を
+                            - generic [ref=e1220]: ","
+                        - heading [level=3] [ref=e1595]:
+                          - generic [ref=e1222]: 3.中学生時代回想 いじめのシーン
+                          - generic [ref=e1223]: ","
+                        - text: 明瞭化：
+                        - list [ref=e1224]:
+                          - listitem [ref=e1225]:
+                            - text: •
+                            - generic [ref=e1226]: 秀斗が樹をいじめていた
+                            - generic [ref=e1227]: ","
+                        - text: 描きたいこと：
+                        - list [ref=e1228]:
+                          - listitem [ref=e1229]:
+                            - text: •
+                            - generic [ref=e1230]: 幼少期の樹の世界認識の不安定さ
+                            - generic [ref=e1231]: ","
+                        - heading [level=3] [ref=e1596]:
+                          - generic [ref=e1233]: 4.中学生時代回想 数学の返却シーン
+                          - generic [ref=e1234]: ","
+                        - text: 伏線：
+                        - list [ref=e1235]:
+                          - listitem [ref=e1236]:
+                            - text: •
+                            - generic [ref=e1237]: 秀斗の順位への確執
+                            - generic [ref=e1238]: ","
+                        - text: 明瞭化：
+                        - list [ref=e1239]:
+                          - listitem [ref=e1240]:
+                            - text: •
+                            - generic [ref=e1241]: なぜ樹が嫌われてしまうか
+                            - generic [ref=e1242]: ","
+                        - text: ちょっと情報が圧縮されていないというか、無駄なシーンが多い気がする。
+                        - heading [level=3] [ref=e1597]:
+                          - list [ref=e1245]:
+                            - listitem [ref=e1246]:
+                              - generic [ref=e1247]: 母親が付きっ切りでプリント作るシーン
+                              - generic [ref=e1248]: ","
+                          - generic [ref=e1249]: ","
+                        - text: 明瞭化：
+                        - list [ref=e1250]:
+                          - listitem [ref=e1251]:
+                            - text: •
+                            - generic [ref=e1252]: 母が心配しているだけ
+                            - generic [ref=e1253]: ","
+                        - text: （ここの情報量がうすいかも）
+                        - heading [level=3] [ref=e1598]:
+                          - list [ref=e1256]:
+                            - listitem [ref=e1257]:
+                              - generic [ref=e1258]: 父親から人の心をとらえるための仮説を学ぶシーン
+                              - generic [ref=e1259]: ","
+                          - generic [ref=e1260]: ","
+                        - text: 明瞭化：
+                        - list [ref=e1261]:
+                          - listitem [ref=e1262]:
+                            - text: •
+                            - generic [ref=e1263]: 樹の仮説の源泉
+                            - generic [ref=e1264]: ","
+                          - listitem [ref=e1265]:
+                            - text: •
+                            - generic [ref=e1266]: 樹の心の支えが父親であること
+                            - generic [ref=e1267]: ","
+                        - heading [level=3] [ref=e1599]:
+                          - list [ref=e1270]:
+                            - listitem [ref=e1271]:
+                              - generic [ref=e1272]: 参観で、秀斗が勝ったのに樹が父親に愛されるシーン
+                              - generic [ref=e1273]: ","
+                          - generic [ref=e1274]: ","
+                        - text: 明瞭化：
+                        - list [ref=e1275]:
+                          - listitem [ref=e1276]:
+                            - text: •
+                            - generic [ref=e1277]: 秀斗の嫉妬の原因
+                            - generic [ref=e1278]: ","
+                          - listitem [ref=e1279]:
+                            - text: •
+                            - generic [ref=e1280]: 樹と秀斗の親からの愛のコントラスト
+                            - generic [ref=e1281]: ","
+                        - heading [level=3] [ref=e1600]:
+                          - generic [ref=e1283]: N.エピローグ
+                          - generic [ref=e1284]: ","
+                  - generic [ref=e1286]:
+                    - button [ref=e1601]
+                    - generic [ref=e1292]: "7"
+                    - generic [ref=e1297]: •
+                    - generic [ref=e1298]: 3 日前
+                    - generic [ref=e1299]: 2026年9月29日火曜日 21:00 に投稿しました
+              - listitem [ref=e1300]:
+                - generic [ref=e1302] [cursor=pointer]:
+                  - generic [ref=e1303]:
+                    - generic [ref=e1304]: シーン
+                    - heading [level=3] [ref=e1603]: "#7 父から仮説を学ぶシーン"
+                    - generic [ref=e1310]:
+                      - generic [ref=e1311]:
+                        - link [ref=e1604]:
+                          - generic [ref=e1313]: えあ〜ち
+                        - text: ":"
+                      - generic [ref=e1316]: 2012年8月8日 カーテンが揺れている。 天井から吊られたレースの白が、外から入る風で、ふくらんで、戻って、また少しふくらむ。 そのわずかな隙間から、眩しい空の青が現れては消える。 その光が、白すぎる病室の壁を少しだけやわらげていた。 反対側の壁には、レースの影だけが薄く残っていた。 きい、と鳴った。 少し遅れて、床がこつ、と鳴った。 きい。 こつ。 きい。 こつ。 カーテンの裾の下を、樹の靴先が横切った。 右足で床を蹴ると、丸い椅子は半分だけ回った。 もう一度蹴ると、白い壁と、窓と、カーテンと、ベッド、そして父さんの顔が樹の視界に順番に流れた。 父さんは樹に対して何も言わなかった。 「じっとしなさい」が口癖の母さんとは対照的に。 病院の簡素な椅子はよく回る。 ステンレスの丸い縁の、中に黒い合皮が敷かれただけの、安っぽい椅子なのだが、軽く蹴とばすだけでなかなかのスピードが出る。 母さんが樹に買った、本革の勉強用椅子よりもはるかに滑らかに。 樹は、早く回すことに夢中になっていた。 頬に当たる風が弱くなる前に、右足が次の床を探した。 床は、さっきと同じところに来なかった。 つま先が少し先へ出た。 椅子はまだ回っていた。 鞄が、一拍遅れて横に振れた。 樹の体が、椅子の外へ落ちた。 どん、と音がした。 父さんの指が、シーツを押した。 ベッドの上の体が、ほんの少しだけこちらへ傾いた。 樹は床に尻もちをついた。 鞄でずれて、肩紐が片方だけ肘のところまで落ちていた。 父さんは何も言わなかった。 樹の顔を見て、手を見て、膝を見た。 その目が一度止まって、それから戻ってきた。 シーツのしわが、父さんの指の下で少し戻った。 背中で、かたん、と鳴った。 鞄のふたが開いていた。 教科書の角が床に当たり、筆箱がその横へすべった。 赤い下敷きが、半分だけ口から出た。 その奥から、細い紙が落ちた。 一枚ではなかった。 緑の線が入った端。 赤い字が途中で切れた端。 くしゃくしゃのしわだけが残った、白い端。 樹は手を伸ばした。 <ここから先ガーっと書いているから、あんまり描写に力いれていない 後で、台詞とか描写とかその辺補強する> けれど、どれを先に拾えばいいのかわからなかった。 「その紙、どうしたの？」 やっと父さんは口を開いた。 「母さんが朝から頑張って作ってくれだんだ。なのに僕の目の前でやぶいたんだ」 父さんは微笑みを崩ず、小さく頷いて樹の話を聞いていた。 「別にこんなことまでしなくていいのに、時間の無駄じゃん」 「それは樹も困るなぁ」 顎髭を指で押さえながら、ゆっくりと父さんは話を切り出す。 「樹は、樹のペースで勉強したいもんなぁ」 「そう、そうなんだよ父さん。もはや、自分で勉強した方が早いんだよ。なんで母さんは効率が悪い方法を押し付けるの」
+                  - generic [ref=e1320]:
+                    - button [ref=e1605]
+                    - generic [ref=e1326]: "0"
+                    - generic [ref=e1331]: •
+                    - generic [ref=e1332]: 3 日前
+                    - generic [ref=e1333]: 2026年10月1日木曜日 22:40 に投稿しました
+              - listitem [ref=e1334]:
+                - generic [ref=e1336] [cursor=pointer]:
+                  - generic [ref=e1337]:
+                    - generic [ref=e1338]: シーン
+                    - heading [level=3] [ref=e1607]: "#1 後輩に対する的確な指導をするシーン"
+                    - generic [ref=e1344]:
+                      - generic [ref=e1345]:
+                        - link [ref=e1608]:
+                          - generic [ref=e1347]: えあ〜ち
+                        - text: ":"
+                      - generic [ref=e1350]: クリックして添付ファイルを表示
+                  - generic [ref=e1352]:
+                    - button [ref=e1609]
+                    - generic [ref=e1358]: "6"
+                    - generic [ref=e1363]: •
+                    - generic [ref=e1364]: 3 日前
+                    - generic [ref=e1365]: 2026年9月29日火曜日 19:32 に投稿しました
+              - listitem [ref=e1366]:
+                - generic [ref=e1368] [cursor=pointer]:
+                  - generic [ref=e1369]:
+                    - generic [ref=e1370]: シーン
+                    - heading [level=3] [ref=e1611]: "#6 自作プリントを作り、樹をしばる母"
+                    - generic [ref=e1376]:
+                      - generic [ref=e1377]:
+                        - link [ref=e1612]:
+                          - generic [ref=e1379]: えあ〜ち
+                        - text: ":"
+                      - generic [ref=e1382]: 2011年 8月7日 額にしたたる汗越しに、青い空と入道雲を見つめてみようとする。 樹は目をぴくぴく動かして、汗で入道雲をゆらゆら動かしてみた。 ぶうんと目の前を横切ったハチに驚いてしまい、思わず目を閉じてしまう。 目を開けると、蜂はもういなかった。代わりに半透明の糸くずが、青空の上に浮いていた。 目だけを右に動かすと、透明な糸くずみたいな物も右へ滑った。急に止めると、少し遅れて下がってくる。 同じところを見つめていると、よくわからないけど、いつも現れる糸くずだ。 樹はそれを入道雲のてっぺんに載せようとした。けれど、糸くずを見ようとするたびに糸くずも逃げて、雲の輪郭を通り抜けた。 目をつむって太陽の方に顔を向けてみる。真っ暗なはずの閉じた視界に赤い筋が浮かび上がってくる。 クマゼミとアブラゼミが奏でる不協和音が音を遮ってくれる。 人の声すら聞かなくていい気がする。 だから、樹は夏休みが好きだった。 こういう瞬間だけは、自分のものにできたように感じた。 突然、母さんが樹にまたがり、肩を揺さぶる。 「あんた！はよ社会の勉強やるで」 社会と僕を隔てていた薄い膜が、破られてしまった。 「あんたの取り柄は勉強やねんから！」 「743年に制定された、田んぼを、ずっと、自分のものにしていいっていう法律は何。答えて、樹」 母・裕子<ゆうこ>が読み上げるあいだ、樹はしきりに消しゴムを頭上に投げている。 落ちてきた消しゴムを、キャラクター柄の下敷きで跳ね返す。 「じいっとしなさい！樹、最後のチャンスやで。ほら、さっきの。743年。田んぼのやつは何？」 用語だけ緑マーカーで塗られた手書きのプリントに、赤フィルムをかざしながら裕子が問う。 「墾田永年私財法でしょ。もう飽きた。なんでずっと同じことやらなきゃだめなの」 消しゴムを左手で受けながら樹は答える。 「その問題、さっきも正解したし。先生も、動きながらの方が覚えるって言ってたよ」 消しゴムをケースと中身に分解して、樹はケースと中身を交互に投げ始める。 ケースが畳に落ちた。 中身の白い方だけが、教科書の角で変な方向へ跳ねた。 裕子の頬に当たって、赤フィルムの上に落ちた。 赤フィルムが少しずれて、答えの赤字が半分だけ見えていた 「もうええわ」 裕子はプリントの端を握った。緑の線がしわで曲がった。 「お母さん、これ作るために五時に起きてんねんで」 「でも、これ教科書写しただけだよ。作る必要あった？」 樹は裕子の手の中の消しゴムに指を伸ばした。 裕子が離さないので、ケースだけが先に抜けた。 「じゃあ、いらんってこと？」 「そんなこと言ってないよ」 「せやったらこんなん、作らんかったらよかった」 裕子はごみ箱の上でくしゃくしゃにしたプリントを伸ばして、樹の前で細く裂いて見せた。 「なんで破るの。まだ使えるのに」 樹は、散り散りになったプリントを拾い集めた。 どれがどの順番かわからなかった。 それを鞄の奥に入れた。 「お父さんに電話する。明日の面会で、ちゃんと話してもらうから」 裕子はそう言って、リビングを出ていった。 廊下の奥で、部屋のドアが閉まった。
+                  - generic [ref=e1386]:
+                    - button [ref=e1613]
+                    - generic [ref=e1392]: "2"
+                    - generic [ref=e1397]: •
+                    - generic [ref=e1398]: 3 日前
+                    - generic [ref=e1399]: 2026年9月30日水曜日 21:16 に投稿しました
+              - listitem [ref=e1400]:
+                - generic [ref=e1402] [cursor=pointer]:
+                  - generic [ref=e1403]:
+                    - generic [ref=e1404]: 世界・設定
+                    - heading [level=3] [ref=e1615]: 使えそうな素材
+                    - generic [ref=e1410]:
+                      - generic [ref=e1411]:
+                        - link [ref=e1616]:
+                          - generic [ref=e1413]: えあ〜ち
+                        - text: ":"
+                      - generic [ref=e1416]: 興味のない人の話を途中で遮って、もうわかったという わからない時に人の話を止めて、そこがわからないちゃんと教えてと尋問していく
+                  - generic [ref=e1420]:
+                    - button [ref=e1617]
+                    - generic [ref=e1426]: "2"
+                    - generic [ref=e1431]: •
+                    - generic [ref=e1432]: 4 日前
+                    - generic [ref=e1433]: 2026年9月29日火曜日 23:44 に投稿しました
+  - dialog "チャンネル設定" [ref=e1619]:
+    - generic [ref=e1620]:
+      - navigation [ref=e1623]:
+        - tablist [ref=e1624]:
+          - generic [ref=e1625]: （えあち-小説-執筆中）シュモクバエのこと、笑ってやろうぜ作品群
+          - tab "概要" [selected] [ref=e1630]
+          - tab "権限" [ref=e1631] [cursor=pointer]
+          - tab "招待" [ref=e1632] [cursor=pointer]
+          - tab "連携サービス" [ref=e1633] [cursor=pointer]
+          - button "チャンネルを削除" [ref=e1635] [cursor=pointer]
+      - generic [ref=e1642]:
+        - tabpanel [ref=e1643]:
+          - group [ref=e1644]:
+            - generic [ref=e1645]:
+              - heading "概要" [level=2] [ref=e1646]
+              - generic [ref=e1647]:
+                - generic [ref=e1648]:
+                  - generic [ref=e1649]: チャンネル名
+                  - generic [ref=e1653]:
+                    - textbox "チャンネル名" [ref=e1654]:
+                      - /placeholder: ""
+                      - text: （えあち-小説-執筆中）シュモクバエのこと、笑ってやろうぜ
+                    - button "絵文字を追加" [ref=e1656] [cursor=pointer]
+                - generic [ref=e1660]:
+                  - generic [ref=e1661]: 投稿ガイドライン
+                  - generic [ref=e1663]:
+                    - generic [ref=e1664]:
+                      - generic [ref=e1666]:
+                        - button "太字" [ref=e1667] [cursor=pointer]
+                        - button "イタリック" [ref=e1670] [cursor=pointer]
+                        - button "下線" [ref=e1673] [cursor=pointer]
+                        - button "取り消し線" [ref=e1676] [cursor=pointer]
+                        - button "引用" [ref=e1680] [cursor=pointer]
+                        - button "コード" [ref=e1683] [cursor=pointer]
+                        - button "ネタバレ" [ref=e1686] [cursor=pointer]
+                      - button "絵文字を追加" [ref=e1690] [cursor=pointer]
+                    - generic [ref=e1694]:
+                      - textbox "皆にこのチャンネルの使い方を教えてあげましょう！" [active] [ref=e1699]:
+                        - generic [ref=e1700]: 小説「シュモクバエのこと、笑ってやろうぜ」の相談・アイデアノートです。人物、シーン、設定、相談、ファンアート、二次創作を話題ごとに投稿してください。ネタバレはタグか冒頭で知らせ、批評の強さは投稿者の希望に合わせてください。ここで出た案は作品主が明示して採用するまで公式設定ではありません。二次創作・外部公開・AI利用は作品主に確認してください。原稿や設定を無断で転載しないでください。
+                      - generic [ref=e1703]:
+                        - generic [ref=e1704]:
+                          - generic [aria-hidden] [ref=e1705]: "3904"
+                          - generic [ref=e1706]: 残り3904文字
+                        - generic [ref=e1707]: 残り3904文字
+                - generic [ref=e1709]:
+                  - generic [ref=e1710]:
+                    - generic [ref=e1711]: タグ
+                    - generic [ref=e1712]: タグを作成することで、投稿をサブカテゴリーに整理できます。
+                  - generic [ref=e1714]:
+                    - button "人物、タグを編集" [ref=e1716]:
+                      - generic [ref=e1717]: 人物
+                    - button "シーン、タグを編集" [ref=e1719]:
+                      - generic [ref=e1720]: シーン
+                    - button "世界・設定、タグを編集" [ref=e1722]:
+                      - generic [ref=e1723]: 世界・設定
+                    - button "相談中、タグを編集" [ref=e1725]:
+                      - generic [ref=e1726]: 相談中
+                    - button "ファンアート、タグを編集" [ref=e1728]:
+                      - generic [ref=e1729]: ファンアート
+                    - button "二次創作、タグを編集" [ref=e1731]:
+                      - generic [ref=e1732]: 二次創作
+                    - button "ネタバレ、タグを編集" [ref=e1734]:
+                      - generic [ref=e1735]: ネタバレ
+                    - button "採用済み、タグを編集" [ref=e1737]:
+                      - generic [ref=e1738]: 採用済み
+                    - button "進捗報告、タグを編集" [ref=e1740]:
+                      - generic [ref=e1741]: 進捗報告
+                    - button [ref=e1742] [cursor=pointer]:
+                      - img "タグを作成" [ref=e1743]
+                - generic [ref=e1745]:
+                  - checkbox "投稿時にタグの選択を必須にする" [checked] [ref=e1747]
+                  - text: 投稿時にタグの選択を必須にする
+                - generic [ref=e1754]:
+                  - generic [ref=e1755]:
+                    - generic [ref=e1756]: デフォルトのリアクション
+                    - generic [ref=e1757]: このチャンネルの投稿にメンバーがリアクションする際のデフォルトの絵文字を選んでください。
+                  - generic [ref=e1759]:
+                    - generic [ref=e1761]:
+                      - button "絵文字を選択" [ref=e1762] [cursor=pointer]
+                      - button "削除" [ref=e1766] [cursor=pointer]
+                    - generic [ref=e1777]:
+                      - img "🤓" [ref=e1778]
+                      - generic [ref=e1779]: "17"
+                - group "低速モード" [ref=e1784]:
+                  - generic [ref=e1786]:
+                    - generic [ref=e1788]:
+                      - generic [ref=e1789]: 投稿
+                      - generic [ref=e1791]:
+                        - generic [ref=e1793]:
+                          - generic [ref=e1796]:
+                            - generic [ref=e1797]: オフ
+                            - combobox "投稿" [ref=e1800]: オフ
+                          - button [aria-hidden] [ref=e1801] [cursor=pointer]
+                        - generic [ref=e1805]: メンバーは、「低速モードを回避」の権限がない限り、投稿の作成はこの間隔ごとに1回しかできません。
+                    - generic [ref=e1808]:
+                      - generic [ref=e1809]: メッセージ
+                      - generic [ref=e1811]:
+                        - generic [ref=e1813]:
+                          - generic [ref=e1816]:
+                            - generic [ref=e1817]: オフ
+                            - combobox "メッセージ" [ref=e1820]: オフ
+                          - button [aria-hidden] [ref=e1821] [cursor=pointer]
+                        - generic [ref=e1825]: メンバーは、「低速モードを回避」の権限がない限り、それぞれの投稿について、この間隔ごとに1回しかメッセージを送信できません。
+                - generic [ref=e1830]:
+                  - generic [ref=e1831]:
+                    - generic [ref=e1832]: デフォルトのレイアウト
+                    - generic [ref=e1833]: デフォルトのレイアウトを、メディアが見やすいギャラリー、またはテキストが見やすいリストに設定します。メンバーはデフォルト設定から自由に切替可能です。
+                  - generic [ref=e1837]:
+                    - generic [ref=e1839]:
+                      - combobox "デフォルトのレイアウト":
+                        - generic: リスト表示
+                      - generic [ref=e1840]: デフォルトのレイアウト,
+                      - generic [ref=e1841] [cursor=pointer]: リスト表示
+                    - button [aria-hidden] [ref=e1843] [cursor=pointer]
+                - generic [ref=e1860]:
+                  - generic [ref=e1861]:
+                    - generic [ref=e1862]: 並び替え順
+                    - generic [ref=e1863]: 新しい投稿のデフォルト並び順を設定してください。メンバーはデフォルト設定から自由に切替可能です。
+                  - generic [ref=e1867]:
+                    - generic [ref=e1869]:
+                      - combobox "並び替え順":
+                        - generic: 最近のアクティビティ
+                      - generic [ref=e1870]: 並び替え順,
+                      - generic [ref=e1871] [cursor=pointer]: 最近のアクティビティ
+                    - button [aria-hidden] [ref=e1873] [cursor=pointer]
+                - generic [ref=e1877]:
+                  - generic [ref=e1878]:
+                    - generic [ref=e1879]: タグマッチング
+                    - generic [ref=e1880]: デフォルトのタグマッチングの動作を設定します。メンバーはデフォルト設定から自由に切替可能です。
+                  - generic [ref=e1884]:
+                    - generic [ref=e1886]:
+                      - combobox "タグマッチング":
+                        - generic: 部分一致
+                      - generic [ref=e1887]: タグマッチング,
+                      - generic [ref=e1888] [cursor=pointer]: 部分一致
+                    - button [aria-hidden] [ref=e1890] [cursor=pointer]
+                - generic [ref=e1895]:
+                  - generic [ref=e1896]: コンテンツの可視性
+                  - radiogroup "コンテンツの可視性" [ref=e1899]:
+                    - generic [ref=e1900]:
+                      - radio "デフォルト" [checked] [ref=e1902]
+                      - text: デフォルト
+                      - generic [ref=e1907]: チャンネルコンテンツは常に表示されます。
+                    - generic [ref=e1908]:
+                      - radio "ネタバレチャンネル" [ref=e1910]
+                      - text: ネタバレチャンネル
+                      - generic [ref=e1915]: このチャンネルをネタバレを含むものとしてマークすると、ストーリーの予期せぬ展開や重いトピックなどの重大な事柄に関する議論は、ユーザーが表示するよう選択するまで非表示になります。
+                    - generic [ref=e1916]:
+                      - radio "年齢制限のあるチャンネル" [ref=e1918]
+                      - text: 年齢制限のあるチャンネル
+                      - generic [ref=e1923]: ユーザーがこのチャンネル内のコンテンツを閲覧する際に、年齢確認が求められるようになります。 年齢制限のあるチャンネル内では不適切な表現に対するフィルターは適用されません。
+                - generic [ref=e1925]:
+                  - generic [ref=e1926]: 活動がなかった場合、非表示になります
+                  - generic [ref=e1928]:
+                    - generic [ref=e1930]:
+                      - generic [ref=e1933]:
+                        - generic [ref=e1934]: 1 週間
+                        - combobox "活動がなかった場合、非表示になります" [ref=e1937]: 1 週間
+                      - button [aria-hidden] [ref=e1938] [cursor=pointer]
+                    - generic [ref=e1942]: 指定された期間、活動がなかった新しい投稿は、チャンネルリストに表示されません。
+        - generic [ref=e1947]:
+          - button "閉じる" [ref=e1948] [cursor=pointer]
+          - generic [aria-hidden] [ref=e1951]: ESC
