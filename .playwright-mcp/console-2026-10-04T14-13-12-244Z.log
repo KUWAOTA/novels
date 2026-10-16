@@ -1,0 +1,101 @@
+[     252ms] [LOG] [FAST CONNECT] wss://gateway.discord.gg/?encoding=json&v=9&compress=zlib-stream, encoding: json, version: 9 @ https://discord.com/channels/1552553988140961892/1552681333405393018:28
+[     800ms] [LOG] [FAST CONNECT] connected in 547ms @ https://discord.com/channels/1552553988140961892/1552681333405393018:28
+[     872ms] [LOG] [FAST CONNECT] sending identify @ https://discord.com/assets/fast-connect.25d91c40e1f62452.js:0
+[    1552ms] [INFO] %c[libdiscore] 
+font-weight: bold;
+color: purple;
+ [experiment_manager] Loaded experiments from cache @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    1700ms] [LOG] %c[ProcessUtilsElectron] 
+font-weight: bold;
+color: purple;
+ setMemoryInformation not available. @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    1946ms] [LOG] %c[default] 
+font-weight: bold;
+color: purple;
+ [BUILD INFO] Release Channel: stable, Build Number: 627798, Version Hash: 01ad17390800dffe4fbc9791dab1081e4b5290fd @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    1953ms] [LOG] AppCrashedFatalReport: getLastCrash not supported. @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    2091ms] [INFO] %c[libdiscore] 
+font-weight: bold;
+color: purple;
+ The answer for life the universe and everything is: 42 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    2860ms] [LOG] %c[KeybindsStore] 
+font-weight: bold;
+color: purple;
+ Default overlay keybind is unsupported {tags: Object, extra: Object} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    2878ms] [LOG] %c[KeybindsStore] 
+font-weight: bold;
+color: purple;
+ Default overlay keybind is unsupported {tags: Object, extra: Object} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    2897ms] [INFO] %c[GatewaySocket] 
+font-weight: bold;
+color: purple;
+ [CONNECT] wss://gateway.discord.gg, encoding: json, version: 9, compression: zlib-stream @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    2898ms] [LOG] %c[GatewaySocket] 
+font-weight: bold;
+color: purple;
+ [FAST CONNECT] successfully took over websocket, state: {open: true, identify: true, gateway: wss://gateway.discord.gg/?encoding=json&v=9&compress=zlib-stream, messages: 4} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    2898ms] [INFO] %c[GatewaySocket] 
+font-weight: bold;
+color: purple;
+ [CONNECTED] wss://gateway.discord.gg/?encoding=json&v=9&compress=zlib-stream in 1 ms @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    2954ms] [INFO] %c[GatewaySocket] 
+font-weight: bold;
+color: purple;
+ [READY] took 55ms, as 11040f8298c821e4f3b4024fcf4defe2 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    2959ms] [INFO] %c[GatewaySocket] 
+font-weight: bold;
+color: purple;
+ [READY_SUPPLEMENTAL] took 61ms @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    3069ms] [LOG] %c[Flux] 
+font-weight: bold;
+color: purple;
+ Dispatching CONNECTION_OPEN @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    3077ms] [LOG] %c[DatabaseManager] 
+font-weight: bold;
+color: purple;
+ removing database (user: 498506238133403652, database: undefined) @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    3122ms] [LOG] %c[KeybindsStore] 
+font-weight: bold;
+color: purple;
+ Default overlay keybind is unsupported {tags: Object, extra: Object} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    3855ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://discord.com/api/v9/users/@me/survey?disable_auto_seen=true:0
+[    3868ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ Replacing route with /channels/1552553988140961892/1552681333405393018 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    5430ms] [INFO] %c[OverlayKeybindExperimentManager] 
+font-weight: bold;
+color: purple;
+ Experiments initializing... @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    5448ms] [INFO] %c[OverlayKeybindExperimentManager] 
+font-weight: bold;
+color: purple;
+ Experiments initialized @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    5904ms] [INFO] %c[SignalHelpers.web] 
+font-weight: bold;
+color: purple;
+ signalAllAcceptedCredentials {rpId: discord.com, encodedUserId: MPMD-4wmT1MG6wzISkIABA, allAcceptedCredentialIds: Array(0)} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    5923ms] [INFO] %c[LibDaveManager] 
+font-weight: bold;
+color: purple;
+ DAVE loaded @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    5923ms] [INFO] %c[LibDaveManager] 
+font-weight: bold;
+color: purple;
+ Successfully initialized DAVE @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[    5924ms] [INFO] %c[MediaEngineWebRTC] 
+font-weight: bold;
+color: purple;
+ Successfully initialized DAVE, version: 1 @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[   13127ms] [LOG] %c[ReadStateStore] 
+font-weight: bold;
+color: purple;
+ Deleting ReadState 847687652316282880 0 {remote: true, persisted: true, channelMissing: true, isOld: true, validType: false} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[   13233ms] [LOG] %c[ReadStateStore] 
+font-weight: bold;
+color: purple;
+ Deleting ReadState 1528359220771295232 0 {remote: true, persisted: true, channelMissing: true, isOld: true, validType: false} @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
+[   15525ms] [INFO] %c[libdiscore] 
+font-weight: bold;
+color: purple;
+ [BlockedDomainsStore] Successfully fetched blocked domains @ https://discord.com/assets/556707.bb1a25f3c212ce8f.js:464
