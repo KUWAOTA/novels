@@ -1,0 +1,734 @@
+<mxfile host="65bd71144e">
+    <diagram id="v7-1" name="01｜因果・価値・サブプロット">
+        <mxGraphModel dx="2896" dy="2116" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1840" pageHeight="2130" background="#FFFFFF" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="n1" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=31;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="v7 改訂案｜クリアに世界を読む体験と、人への視線の転換" vertex="1">
+                    <mxGeometry height="50" width="1740" x="50" y="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="n2" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="精密な言語化を全編の読み味にする。出来事 → 選択 → 反作用の中で、二つのコアを体験させる。" vertex="1">
+                    <mxGeometry height="34" width="1740" x="50" y="78" as="geometry"/>
+                </mxCell>
+                <mxCell id="n3" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;align=center;verticalAlign=middle;spacing=8;fontStyle=1;rounded=1;arcSize=8;strokeWidth=1.5;fillColor=#D6E4F0;strokeColor=#4A7FB5;fontColor=#1B3A5C;fontSize=22;" value="読書体験の核&#xa;精密に言語化された世界が、クリアに見える" vertex="1">
+                    <mxGeometry height="78" width="850" x="50" y="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="n4" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#1B3A5C;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="112" width="850" x="50" y="227" as="geometry"/>
+                </mxCell>
+                <mxCell id="n5" parent="n4" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=22;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="樹の一本の欲求" vertex="1">
+                    <mxGeometry height="38" width="826" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n6" parent="n4" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=19;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="人間の規則を解き、自力で居場所を守りたい。&#xa;教室で排除されない → 職場で認められる → 引継ぎを成功させる。" vertex="1">
+                    <mxGeometry height="61" width="826" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="n7" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#5C1B1B;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FADBD8;strokeColor=#E74C6F;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="112" width="850" x="940" y="227" as="geometry"/>
+                </mxCell>
+                <mxCell id="n8" parent="n7" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=22;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="中央価値｜孤立（−）⇄ つながり（＋）" vertex="1">
+                    <mxGeometry height="38" width="826" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n9" parent="n7" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=19;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="論理は実際に人を助け、最後まで役に立つ。&#xa;精密な見通しの上で、人への関わり方を選び直す。" vertex="1">
+                    <mxGeometry height="61" width="826" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="n10" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="A｜本筋：樹の行動と、その結果" vertex="1">
+                    <mxGeometry height="32" width="650" x="50" y="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="n11" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="B｜秀斗：親の承認 → 自分で選ぶ" vertex="1">
+                    <mxGeometry height="32" width="480" x="760" y="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="n12" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="価値変化／言語化で見えるもの" vertex="1">
+                    <mxGeometry height="32" width="490" x="1300" y="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="seq-1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#1B3A5C;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="650" x="50" y="398" as="geometry"/>
+                </mxCell>
+                <mxCell id="n14" parent="seq-1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="01 契機事件｜唯一の相談相手を失う" vertex="1">
+                    <mxGeometry height="38" width="626" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n15" parent="seq-1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="父となら、相手の気持ちを一緒に考えられた。&#xa;父を失い、ノートの仮説を教室で試し始める。&#xa;人間の規則を解いて、居場所を守ろうとする。" vertex="1">
+                    <mxGeometry height="81" width="626" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="sub-1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FDEBD0;strokeColor=#E67E22;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="480" x="760" y="398" as="geometry"/>
+                </mxCell>
+                <mxCell id="n17" parent="sub-1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="B1｜勝って、親に認められたい" vertex="1">
+                    <mxGeometry height="38" width="456" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n18" parent="sub-1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=17;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="成績で負けると、家で責められる。&#xa;樹の知性と、父に受け入れられる姿を見る。&#xa;自分も同じように認められたい。" vertex="1">
+                    <mxGeometry height="81" width="456" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="value-1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#1B3A5C;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="490" x="1300" y="398" as="geometry"/>
+                </mxCell>
+                <mxCell id="n20" parent="value-1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="つながり：父との＋ → 孤立−" vertex="1">
+                    <mxGeometry height="38" width="466" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n21" parent="value-1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="読者の体験：&#xa;言動の観察／意図の仮説を分ける。&#xa;わからなさの形まで、具体的に見える。" vertex="1">
+                    <mxGeometry height="81" width="466" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="n22" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=15;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="だから、自分で人間の規則を試す" vertex="1">
+                    <mxGeometry height="30" width="305" x="390" y="534" as="geometry"/>
+                </mxCell>
+                <mxCell id="seq-2" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#1B3A5C;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="650" x="50" y="568" as="geometry"/>
+                </mxCell>
+                <mxCell id="n24" parent="seq-2" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="02 第1幕終｜学力で居場所を得る" vertex="1">
+                    <mxGeometry height="38" width="626" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n25" parent="seq-2" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="怒りの理由を本人に示すと、見下しだと返される。&#xa;母の勉強支援を足場に進学し、新しい所属を得る。&#xa;関係の傷は、成績では解けないまま持ち越す。" vertex="1">
+                    <mxGeometry height="81" width="626" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="sub-2" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FDEBD0;strokeColor=#E67E22;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="480" x="760" y="568" as="geometry"/>
+                </mxCell>
+                <mxCell id="n27" parent="sub-2" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="B2｜別の物差しで、樹に勝つ" vertex="1">
+                    <mxGeometry height="38" width="456" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n28" parent="sub-2" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=17;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="勉強で勝てず、空気読みの優位を使う。&#xa;樹を傷つけ、教室の居場所を奪う。&#xa;樹の進路選択を押し進める。" vertex="1">
+                    <mxGeometry height="81" width="456" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="value-2" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#1B3A5C;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="490" x="1300" y="568" as="geometry"/>
+                </mxCell>
+                <mxCell id="n30" parent="value-2" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="所属：教室の− → 進学の＋" vertex="1">
+                    <mxGeometry height="38" width="466" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n31" parent="value-2" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="読者の体験：&#xa;学力／対人の器用さを分ける。&#xa;同じ人でも、物差しで評価が変わる。" vertex="1">
+                    <mxGeometry height="81" width="466" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="e32" edge="1" parent="1" source="seq-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#4A7FB5;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="seq-2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e33" edge="1" parent="1" source="sub-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#E67E22;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="sub-2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="n34" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=15;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="学力で通じた方法を、職場へ持ち込む" vertex="1">
+                    <mxGeometry height="30" width="305" x="390" y="704" as="geometry"/>
+                </mxCell>
+                <mxCell id="seq-3" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#1B3A5C;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="650" x="50" y="738" as="geometry"/>
+                </mxCell>
+                <mxCell id="n36" parent="seq-3" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="03 第2幕前半｜賢さだけでは通じない" vertex="1">
+                    <mxGeometry height="38" width="626" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n37" parent="seq-3" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="正解を出して評価された方法を、職場で使う。&#xa;説明が伝わらず、論理的でないと否定される。&#xa;学力だけでは、居場所を守れない。" vertex="1">
+                    <mxGeometry height="81" width="626" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="sub-3" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FDEBD0;strokeColor=#E67E22;strokeWidth=1.5;dashed=1;dashPattern=6 4;" value="" vertex="1">
+                    <mxGeometry height="132" width="480" x="760" y="738" as="geometry"/>
+                </mxCell>
+                <mxCell id="n39" parent="sub-3" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="B3｜在学・就職期は舞台裏" vertex="1">
+                    <mxGeometry height="38" width="456" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n40" parent="sub-3" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=17;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="家の期待を、学歴や就職で満たそうとする。&#xa;再会後の会話・着信から、必要分を示す。&#xa;別視点の章は増やさない。" vertex="1">
+                    <mxGeometry height="81" width="456" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="value-3" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#1B3A5C;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="490" x="1300" y="738" as="geometry"/>
+                </mxCell>
+                <mxCell id="n42" parent="value-3" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="所属：進学の＋ → 職場の孤立−" vertex="1">
+                    <mxGeometry height="38" width="466" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n43" parent="value-3" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="読者の体験：&#xa;内容の正しさ／読みやすさを分ける。&#xa;能力と評価がずれる理由が見えてくる。" vertex="1">
+                    <mxGeometry height="81" width="466" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="e44" edge="1" parent="1" source="seq-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#4A7FB5;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="seq-3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e45" edge="1" parent="1" source="sub-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#E67E22;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="sub-3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="n46" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=15;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="だから、伝わらない理由を学び直す" vertex="1">
+                    <mxGeometry height="30" width="305" x="390" y="874" as="geometry"/>
+                </mxCell>
+                <mxCell id="seq-4" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#1B3A5C;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="650" x="50" y="908" as="geometry"/>
+                </mxCell>
+                <mxCell id="n48" parent="seq-4" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="04 第2幕終｜論理のメガネを得る" vertex="1">
+                    <mxGeometry height="38" width="626" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n49" parent="seq-4" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="発言の内容・目的・相手の前提を分け、伝え方を試す。&#xa;同じ会話が読めるようになり、成果・信頼・指導権を得る。&#xa;言葉にできた構造を、他人にも渡せると確信する。" vertex="1">
+                    <mxGeometry height="81" width="626" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="sub-4" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FDEBD0;strokeColor=#E67E22;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="480" x="760" y="908" as="geometry"/>
+                </mxCell>
+                <mxCell id="n51" parent="sub-4" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="B4｜仕事の肩書を、承認の証しにする" vertex="1">
+                    <mxGeometry height="38" width="456" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n52" parent="sub-4" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=17;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="現場の次期責任者を目指す。&#xa;昇進を、母に認めさせるための証しにする。&#xa;樹とは別に、この欲求で動く。" vertex="1">
+                    <mxGeometry height="81" width="456" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="value-4" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#1B3A5C;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="490" x="1300" y="908" as="geometry"/>
+                </mxCell>
+                <mxCell id="n54" parent="value-4" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="自力・協力：不全− → 成果＋" vertex="1">
+                    <mxGeometry height="38" width="466" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n55" parent="value-4" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="読者の体験：&#xa;言葉の内容／会話の目的／前提を分ける。&#xa;同じ会話の構造が、鮮やかに見える。" vertex="1">
+                    <mxGeometry height="81" width="466" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="e56" edge="1" parent="1" source="seq-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#4A7FB5;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="seq-4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e57" edge="1" parent="1" source="sub-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#E67E22;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="sub-4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="n58" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=15;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="成功した方法を、次の職場でも使う" vertex="1">
+                    <mxGeometry height="30" width="305" x="390" y="1044" as="geometry"/>
+                </mxCell>
+                <mxCell id="seq-5" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FDEBD0;strokeColor=#E67E22;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="650" x="50" y="1078" as="geometry"/>
+                </mxCell>
+                <mxCell id="n60" parent="seq-5" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="05 第3幕前半｜元いじめ相手を教える" vertex="1">
+                    <mxGeometry height="38" width="626" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n61" parent="seq-5" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="赴任先で、秀斗の上に立つことになる。&#xa;一人で引継ぎできれば、樹は研究開発へ戻れる。&#xa;秀斗も指導を受け入れ、チームの成果は上がる。" vertex="1">
+                    <mxGeometry height="81" width="626" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="sub-5" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FDEBD0;strokeColor=#E67E22;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="480" x="760" y="1078" as="geometry"/>
+                </mxCell>
+                <mxCell id="n63" parent="sub-5" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="B5｜できないとは言えない" vertex="1">
+                    <mxGeometry height="38" width="456" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n64" parent="sub-5" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=17;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="指導を受け入れ、昇進候補に残ろうとする。&#xa;苦手を隠し、樹が求める答えを返す。&#xa;うなずきが、樹の指導をさらに強める。" vertex="1">
+                    <mxGeometry height="81" width="456" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="value-5" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FDEBD0;strokeColor=#E67E22;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="490" x="1300" y="1078" as="geometry"/>
+                </mxCell>
+                <mxCell id="n66" parent="value-5" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="関係：警戒− → 見かけの協力＋" vertex="1">
+                    <mxGeometry height="38" width="466" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n67" parent="value-5" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="読者の体験：&#xa;事実／仮説／未確認を分ける。&#xa;迷っていた仕事が、予測して進められる。" vertex="1">
+                    <mxGeometry height="81" width="466" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="e68" edge="1" parent="1" source="seq-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#E67E22;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="seq-5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e69" edge="1" parent="1" source="sub-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#E67E22;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="sub-5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="n70" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=15;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="うなずきを習得と見て、指導を増やす" vertex="1">
+                    <mxGeometry height="30" width="305" x="390" y="1214" as="geometry"/>
+                </mxCell>
+                <mxCell id="seq-6" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#5C1B1B;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#F5C6CB;strokeColor=#C0392B;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="650" x="50" y="1248" as="geometry"/>
+                </mxCell>
+                <mxCell id="n72" parent="seq-6" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="06 第3幕終｜助けているはずが、拒まれる" vertex="1">
+                    <mxGeometry height="38" width="626" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n73" parent="seq-6" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="伝わったはずなのに、秀斗は自力で動けない。&#xa;樹は説明と訓練を増やすが、最終試行に秀斗が来ない。&#xa;引継ぎが止まり、指導を続けられないと拒まれる。" vertex="1">
+                    <mxGeometry height="81" width="626" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="sub-6" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FDEBD0;strokeColor=#E67E22;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="480" x="760" y="1248" as="geometry"/>
+                </mxCell>
+                <mxCell id="n75" parent="sub-6" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="B6｜取り繕うことが続かなくなる" vertex="1">
+                    <mxGeometry height="38" width="456" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n76" parent="sub-6" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=17;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="わかった、と答えて弱音を隠す。&#xa;ついに出勤できず、指導の中止を求める。&#xa;樹の方法と、二人の案件を止める。" vertex="1">
+                    <mxGeometry height="81" width="456" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="value-6" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#5C1B1B;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#F5C6CB;strokeColor=#C0392B;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="490" x="1300" y="1248" as="geometry"/>
+                </mxCell>
+                <mxCell id="n78" parent="value-6" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="関係・案件：順調＋ → 停止−" vertex="1">
+                    <mxGeometry height="38" width="466" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n79" parent="value-6" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="読者の体験：&#xa;同意／理解／実行を分け直す。&#xa;見えていた成功の意味が、変わり始める。" vertex="1">
+                    <mxGeometry height="81" width="466" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="e80" edge="1" parent="1" source="seq-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#C0392B;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="seq-6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e81" edge="1" parent="1" source="sub-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#E67E22;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="sub-6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="n82" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=15;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="説明を足す方法が尽き、本人の望みを聞く" vertex="1">
+                    <mxGeometry height="30" width="305" x="390" y="1384" as="geometry"/>
+                </mxCell>
+                <mxCell id="seq-7" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#5C1B1B;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#F5C6CB;strokeColor=#C0392B;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="650" x="50" y="1418" as="geometry"/>
+                </mxCell>
+                <mxCell id="n84" parent="seq-7" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="07 危機への到達｜別案にも代価がある" vertex="1">
+                    <mxGeometry height="38" width="626" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n85" parent="seq-7" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="理解と実行を分け、自分の「なぜできない」を疑う。&#xa;秀斗の望みから分担案を作り、仕事が動くと確かめる。&#xa;ただし延長が必要で、樹の異動と両立できない。" vertex="1">
+                    <mxGeometry height="81" width="626" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="sub-7" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FDEBD0;strokeColor=#E67E22;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="480" x="760" y="1418" as="geometry"/>
+                </mxCell>
+                <mxCell id="n87" parent="sub-7" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="B7｜望みと、してきたことを語る" vertex="1">
+                    <mxGeometry height="38" width="456" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n88" parent="sub-7" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=17;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="苦手と望みを、自分の言葉で伝える。&#xa;過去に樹を傷つけた責任も引き受ける。&#xa;直されるだけの位置を降り、別案を提案する。" vertex="1">
+                    <mxGeometry height="81" width="456" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="value-7" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#5C1B1B;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#F5C6CB;strokeColor=#C0392B;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="490" x="1300" y="1418" as="geometry"/>
+                </mxCell>
+                <mxCell id="n90" parent="value-7" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="関係は＋／異動の見込みは−" vertex="1">
+                    <mxGeometry height="38" width="466" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n91" parent="value-7" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="読者の体験：&#xa;理解力／実行の負荷・条件を分ける。&#xa;自分と相手のできなさが、地続きに見える。" vertex="1">
+                    <mxGeometry height="81" width="466" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="e92" edge="1" parent="1" source="seq-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#C0392B;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="seq-7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e93" edge="1" parent="1" source="sub-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#E67E22;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="sub-7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="n94" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=15;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="二案の利益・代価と、決断の期限が残る" vertex="1">
+                    <mxGeometry height="30" width="305" x="390" y="1554" as="geometry"/>
+                </mxCell>
+                <mxCell id="seq-8" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#5C1B1B;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FADBD8;strokeColor=#E74C6F;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="650" x="50" y="1588" as="geometry"/>
+                </mxCell>
+                <mxCell id="n96" parent="seq-8" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="08 クライマックス｜二人が、公に選ぶ" vertex="1">
+                    <mxGeometry height="38" width="626" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n97" parent="seq-8" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="樹は移管延期を引き受け、今回の異動を手放す。&#xa;秀斗は単独の責任者候補を辞退し、役割変更を選ぶ。&#xa;正式な承認で、二人の地位と責任が変わる。" vertex="1">
+                    <mxGeometry height="81" width="626" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="sub-8" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FDEBD0;strokeColor=#E67E22;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="480" x="760" y="1588" as="geometry"/>
+                </mxCell>
+                <mxCell id="n99" parent="sub-8" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="B8｜昇進より、続けられる役割を選ぶ" vertex="1">
+                    <mxGeometry height="38" width="456" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n100" parent="sub-8" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=17;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="単独責任者の候補を、自分で辞退する。&#xa;新しい役割を、自分から申請する。&#xa;母には、許可ではなく決定を伝える。" vertex="1">
+                    <mxGeometry height="81" width="456" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="value-8" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#5C1B1B;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FADBD8;strokeColor=#E74C6F;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="490" x="1300" y="1588" as="geometry"/>
+                </mxCell>
+                <mxCell id="n102" parent="value-8" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="つながり＋／異動・昇進−" vertex="1">
+                    <mxGeometry height="38" width="466" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n103" parent="value-8" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="読者の体験：&#xa;守るもの／失うもの／相手の望みが見える。&#xa;そのうえで、相手の幸福を願う側を選ぶ。" vertex="1">
+                    <mxGeometry height="81" width="466" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="e104" edge="1" parent="1" source="seq-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#E74C6F;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="seq-8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e105" edge="1" parent="1" source="sub-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#E67E22;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="sub-8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="n106" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=15;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="選んだ結果を、日常で引き受ける" vertex="1">
+                    <mxGeometry height="30" width="305" x="390" y="1724" as="geometry"/>
+                </mxCell>
+                <mxCell id="seq-9" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#5C1B1B;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FADBD8;strokeColor=#E74C6F;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="650" x="50" y="1758" as="geometry"/>
+                </mxCell>
+                <mxCell id="n108" parent="seq-9" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="09 解決｜同じ世界を、違う目で見る" vertex="1">
+                    <mxGeometry height="38" width="626" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n109" parent="seq-9" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="分け直した役割で、二人が働く姿を確かめる。&#xa;不得手は残るが、わからないと言い合える。&#xa;ノートと、シュモクバエを巡る笑いで閉じる。" vertex="1">
+                    <mxGeometry height="81" width="626" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="sub-9" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FDEBD0;strokeColor=#E67E22;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="480" x="760" y="1758" as="geometry"/>
+                </mxCell>
+                <mxCell id="n111" parent="sub-9" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="B9｜自分から関係を選び続ける" vertex="1">
+                    <mxGeometry height="38" width="456" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n112" parent="sub-9" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=17;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="家の評価を待たず、新しい役割を生きる。&#xa;樹との関係にも、自分から働きかける。&#xa;嫉妬や不安が消えたことにはしない。" vertex="1">
+                    <mxGeometry height="81" width="456" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="value-9" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#5C1B1B;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FADBD8;strokeColor=#E74C6F;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="132" width="490" x="1300" y="1758" as="geometry"/>
+                </mxCell>
+                <mxCell id="n114" parent="value-9" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="関係：持続への不安 → 協働＋" vertex="1">
+                    <mxGeometry height="38" width="466" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n115" parent="value-9" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="読者の体験：&#xa;観測／推測／未理解を分けて受け取る。&#xa;世界は精密なまま、人への視線が変わる。" vertex="1">
+                    <mxGeometry height="81" width="466" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="e116" edge="1" parent="1" source="seq-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#E74C6F;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="seq-9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e117" edge="1" parent="1" source="sub-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#E67E22;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="sub-9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e118" edge="1" parent="1" source="sub-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#E67E22;strokeWidth=2;endArrow=block;endFill=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="seq-2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e119" edge="1" parent="1" source="sub-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#E67E22;strokeWidth=2;endArrow=block;endFill=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="seq-5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e120" edge="1" parent="1" source="sub-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#E67E22;strokeWidth=2;endArrow=block;endFill=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="seq-6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e121" edge="1" parent="1" source="sub-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#E67E22;strokeWidth=2;endArrow=block;endFill=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="seq-7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e122" edge="1" parent="1" source="seq-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#4A7FB5;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="sub-5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="n123" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#333333;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#F4F5F7;strokeColor=#CBD2D9;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="125" width="550" x="50" y="1980" as="geometry"/>
+                </mxCell>
+                <mxCell id="n124" parent="n123" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="契機と転換を区別する" vertex="1">
+                    <mxGeometry height="38" width="526" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n125" parent="n123" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=17;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="全編の契機＝父の死。&#xa;社会人編の転換＝秀斗との再会。&#xa;最終幕へ押す事件＝欠勤と指導拒否。" vertex="1">
+                    <mxGeometry height="74" width="526" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="n126" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#1B3A5C;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="125" width="550" x="645" y="1980" as="geometry"/>
+                </mxCell>
+                <mxCell id="n127" parent="n126" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="二つのコアを、全編で働かせる" vertex="1">
+                    <mxGeometry height="38" width="526" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n128" parent="n126" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=17;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="言語化で世界が見える快感を、全編に通す。&#xa;その上で、相手の幸福を願う選択を描く。&#xa;精密さと、人への関わり方を共に更新する。" vertex="1">
+                    <mxGeometry height="74" width="526" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="n129" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#333333;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#F4F5F7;strokeColor=#CBD2D9;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="125" width="550" x="1240" y="1980" as="geometry"/>
+                </mxCell>
+                <mxCell id="n130" parent="n129" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="骨子の粒度と、候補の範囲" vertex="1">
+                    <mxGeometry height="38" width="526" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n131" parent="n129" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=17;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="各行はSequence相当。シーン分割は次工程。&#xa;あんずなし。性別・外見は未固定。&#xa;人事・移管の条件は、この改訂で置く仮設定。" vertex="1">
+                    <mxGeometry height="74" width="526" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="core-theme" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;align=center;verticalAlign=middle;spacing=8;fontStyle=1;rounded=1;arcSize=8;strokeWidth=1.5;fontSize=22;fillColor=#FADBD8;strokeColor=#E74C6F;fontColor=#5C1B1B;" value="感情の転換の核&#xa;他者を裁く → 自他の不完全さを受容 → 他者の幸福を願う" vertex="1">
+                    <mxGeometry height="78" width="850" x="940" y="122" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="v7-2" name="02｜二つの読書体験・読み順">
+        <mxGraphModel dx="4080" dy="1729" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1840" pageHeight="1770" background="#FFFFFF" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="n1" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=31;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="二つのコア｜世界がクリアに見える快感と、人を裁く視線の転換。" vertex="1">
+                    <mxGeometry height="50" width="1740" x="50" y="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="n2" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="高解像度の言語化を全編の読み味にする。プロローグはノート数行、本編は中学から時系列で進む。" vertex="1">
+                    <mxGeometry height="34" width="1740" x="50" y="78" as="geometry"/>
+                </mxCell>
+                <mxCell id="n3" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=25;fontColor=#1B3A5C;align=center;verticalAlign=middle;spacing=8;fontStyle=1;rounded=1;arcSize=8;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=1.5;" value="ノート抜粋 → 中学 → 進学・就職 → 論理の獲得 → 秀斗との再会 → 対決と選択" vertex="1">
+                    <mxGeometry height="65" width="1740" x="50" y="132" as="geometry"/>
+                </mxCell>
+                <mxCell id="n4" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#1B3A5C;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="208" width="920" x="50" y="226" as="geometry"/>
+                </mxCell>
+                <mxCell id="n5" parent="n4" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=24;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="プロローグ案｜人間分析ノート（3行）" vertex="1">
+                    <mxGeometry height="38" width="896" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n6" parent="n4" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=23;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="観測：訂正の内容には、反論されなかった。&#xa;結果：僕の態度を叱られた。&#xa;仮説：内容への評価と、人への評価は別に動く。" vertex="1">
+                    <mxGeometry height="157" width="896" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="n7" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#333333;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#F4F5F7;strokeColor=#CBD2D9;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="208" width="780" x="1010" y="226" as="geometry"/>
+                </mxCell>
+                <mxCell id="n8" parent="n7" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=23;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="最初の場面で、足場を体験させる" vertex="1">
+                    <mxGeometry height="38" width="756" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n9" parent="n7" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="教室では、樹の疑問が侮辱と受け取られる。&#xa;父は、起きたことと樹の推測を一緒に分ける。&#xa;ここなら考えられる、を先に体験させる。&#xa;その足場を、契機事件で失う。" vertex="1">
+                    <mxGeometry height="157" width="756" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="n10" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="ノートは精密な見方の予告。本編では、言語化 → 関係が見える → 行動が変わる、を要所で体験させる。" vertex="1">
+                    <mxGeometry height="36" width="1740" x="50" y="451" as="geometry"/>
+                </mxCell>
+                <mxCell id="n11" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="いま起きること" vertex="1">
+                    <mxGeometry height="34" width="480" x="50" y="507" as="geometry"/>
+                </mxCell>
+                <mxCell id="n12" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="読者が追う問い" vertex="1">
+                    <mxGeometry height="34" width="500" x="590" y="507" as="geometry"/>
+                </mxCell>
+                <mxCell id="n13" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="言語化で見えるもの／行動の変化" vertex="1">
+                    <mxGeometry height="34" width="640" x="1150" y="507" as="geometry"/>
+                </mxCell>
+                <mxCell id="n14" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#1B3A5C;align=center;verticalAlign=middle;spacing=8;fontStyle=1;rounded=1;arcSize=8;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=1.5;" value="父を失い、仮説を試す" vertex="1">
+                    <mxGeometry height="108" width="480" x="50" y="557" as="geometry"/>
+                </mxCell>
+                <mxCell id="n15" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#3D1F5C;align=center;verticalAlign=middle;spacing=8;fontStyle=1;rounded=1;arcSize=8;fillColor=#E8DAF0;strokeColor=#7B4F9E;strokeWidth=1.5;" value="一人で、人間の規則を解けるか？" vertex="1">
+                    <mxGeometry height="108" width="500" x="590" y="557" as="geometry"/>
+                </mxCell>
+                <mxCell id="n16" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=19;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#F4F5F7;strokeColor=#CBD2D9;strokeWidth=1.5;" value="言動の観察と、意図の仮説を分ける。&#xa;父の教えを実際に試し、相手の反応を確かめる。" vertex="1">
+                    <mxGeometry height="108" width="640" x="1150" y="557" as="geometry"/>
+                </mxCell>
+                <mxCell id="e17" edge="1" parent="1" source="n14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#4A7FB5;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="n15">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="n18" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=15;fontColor=#333333;align=center;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="その結果、次の問いが生まれる" vertex="1">
+                    <mxGeometry height="27" width="500" x="590" y="668" as="geometry"/>
+                </mxCell>
+                <mxCell id="n19" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#1B3A5C;align=center;verticalAlign=middle;spacing=8;fontStyle=1;rounded=1;arcSize=8;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=1.5;" value="教室を離れ、学力で成功する" vertex="1">
+                    <mxGeometry height="108" width="480" x="50" y="699" as="geometry"/>
+                </mxCell>
+                <mxCell id="n20" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#3D1F5C;align=center;verticalAlign=middle;spacing=8;fontStyle=1;rounded=1;arcSize=8;fillColor=#E8DAF0;strokeColor=#7B4F9E;strokeWidth=1.5;" value="賢くなれば、もう否定されないか？" vertex="1">
+                    <mxGeometry height="108" width="500" x="590" y="699" as="geometry"/>
+                </mxCell>
+                <mxCell id="n21" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=19;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#F4F5F7;strokeColor=#CBD2D9;strokeWidth=1.5;" value="学力／対人の器用さという、別の軸を見せる。&#xa;進学では通じた方法が、職場では通じない。" vertex="1">
+                    <mxGeometry height="108" width="640" x="1150" y="699" as="geometry"/>
+                </mxCell>
+                <mxCell id="e22" edge="1" parent="1" source="n19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#4A7FB5;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="n20">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="n23" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=15;fontColor=#333333;align=center;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="その結果、次の問いが生まれる" vertex="1">
+                    <mxGeometry height="27" width="500" x="590" y="810" as="geometry"/>
+                </mxCell>
+                <mxCell id="n24" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#1B3A5C;align=center;verticalAlign=middle;spacing=8;fontStyle=1;rounded=1;arcSize=8;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=1.5;" value="伝え方を変えると、評価が変わる" vertex="1">
+                    <mxGeometry height="108" width="480" x="50" y="841" as="geometry"/>
+                </mxCell>
+                <mxCell id="n25" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#3D1F5C;align=center;verticalAlign=middle;spacing=8;fontStyle=1;rounded=1;arcSize=8;fillColor=#E8DAF0;strokeColor=#7B4F9E;strokeWidth=1.5;" value="同じ内容なのに、なぜ今は通る？" vertex="1">
+                    <mxGeometry height="108" width="500" x="590" y="841" as="geometry"/>
+                </mxCell>
+                <mxCell id="n26" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=19;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#F4F5F7;strokeColor=#CBD2D9;strokeWidth=1.5;" value="「論理的でない」を、読む負荷から見直す。&#xa;内容の整合性と、読み手の理解しやすさを分ける。&#xa;同じ報告の組み直しで、反応の差を見せる。" vertex="1">
+                    <mxGeometry height="108" width="640" x="1150" y="841" as="geometry"/>
+                </mxCell>
+                <mxCell id="e27" edge="1" parent="1" source="n24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#4A7FB5;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="n25">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="n28" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=15;fontColor=#333333;align=center;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="その結果、次の問いが生まれる" vertex="1">
+                    <mxGeometry height="27" width="500" x="590" y="952" as="geometry"/>
+                </mxCell>
+                <mxCell id="n29" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#1B3A5C;align=center;verticalAlign=middle;spacing=8;fontStyle=1;rounded=1;arcSize=8;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=1.5;" value="秀斗を指導し、成果も上がる" vertex="1">
+                    <mxGeometry height="108" width="480" x="50" y="983" as="geometry"/>
+                </mxCell>
+                <mxCell id="n30" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#3D1F5C;align=center;verticalAlign=middle;spacing=8;fontStyle=1;rounded=1;arcSize=8;fillColor=#E8DAF0;strokeColor=#7B4F9E;strokeWidth=1.5;" value="この方法は、あの相手にも効くか？" vertex="1">
+                    <mxGeometry height="108" width="500" x="590" y="983" as="geometry"/>
+                </mxCell>
+                <mxCell id="n31" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=19;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#F4F5F7;strokeColor=#CBD2D9;strokeWidth=1.5;" value="事実／仮説／未確認を分け、仕事が進む。&#xa;その一方で、秀斗の「わかった」も観察する。&#xa;得たメガネが鮮明にするものと、見落とすものを置く。" vertex="1">
+                    <mxGeometry height="108" width="640" x="1150" y="983" as="geometry"/>
+                </mxCell>
+                <mxCell id="e32" edge="1" parent="1" source="n29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#4A7FB5;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="n30">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="n33" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=15;fontColor=#333333;align=center;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="その結果、次の問いが生まれる" vertex="1">
+                    <mxGeometry height="27" width="500" x="590" y="1094" as="geometry"/>
+                </mxCell>
+                <mxCell id="n34" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#5C1B1B;align=center;verticalAlign=middle;spacing=8;fontStyle=1;rounded=1;arcSize=8;fillColor=#F5C6CB;strokeColor=#C0392B;strokeWidth=1.5;" value="秀斗が最終試行に来ず、拒む" vertex="1">
+                    <mxGeometry height="108" width="480" x="50" y="1125" as="geometry"/>
+                </mxCell>
+                <mxCell id="n35" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#3D1F5C;align=center;verticalAlign=middle;spacing=8;fontStyle=1;rounded=1;arcSize=8;fillColor=#E8DAF0;strokeColor=#7B4F9E;strokeWidth=1.5;" value="わかったと言ったのに、なぜ来ない？" vertex="1">
+                    <mxGeometry height="108" width="500" x="590" y="1125" as="geometry"/>
+                </mxCell>
+                <mxCell id="n36" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=19;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#F4F5F7;strokeColor=#CBD2D9;strokeWidth=1.5;" value="同意／理解／実行を分け、失敗の意味を変える。&#xa;技能・負荷・望みを、本人との対話で確かめる。&#xa;支援の意図と受け手への効果を、別々に見る。" vertex="1">
+                    <mxGeometry height="108" width="640" x="1150" y="1125" as="geometry"/>
+                </mxCell>
+                <mxCell id="e37" edge="1" parent="1" source="n34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#4A7FB5;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="n35">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="n38" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=15;fontColor=#333333;align=center;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="その結果、次の問いが生まれる" vertex="1">
+                    <mxGeometry height="27" width="500" x="590" y="1236" as="geometry"/>
+                </mxCell>
+                <mxCell id="n39" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#5C1B1B;align=center;verticalAlign=middle;spacing=8;fontStyle=1;rounded=1;arcSize=8;fillColor=#F5C6CB;strokeColor=#C0392B;strokeWidth=1.5;" value="二案と、その代価を前にする" vertex="1">
+                    <mxGeometry height="108" width="480" x="50" y="1267" as="geometry"/>
+                </mxCell>
+                <mxCell id="n40" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#3D1F5C;align=center;verticalAlign=middle;spacing=8;fontStyle=1;rounded=1;arcSize=8;fillColor=#E8DAF0;strokeColor=#7B4F9E;strokeWidth=1.5;" value="相手を外すか、条件を作り直すか？" vertex="1">
+                    <mxGeometry height="108" width="500" x="590" y="1267" as="geometry"/>
+                </mxCell>
+                <mxCell id="n41" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=19;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#F4F5F7;strokeColor=#CBD2D9;strokeWidth=1.5;" value="選択肢の利益・代価・負担の所在を見える形にする。&#xa;読者もその見取り図で迷い、二人の選択を見届ける。" vertex="1">
+                    <mxGeometry height="108" width="640" x="1150" y="1267" as="geometry"/>
+                </mxCell>
+                <mxCell id="e42" edge="1" parent="1" source="n39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#4A7FB5;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="n40">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="n43" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#1B3A5C;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="150" width="550" x="50" y="1450" as="geometry"/>
+                </mxCell>
+                <mxCell id="n44" parent="n43" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="残す素材" vertex="1">
+                    <mxGeometry height="38" width="526" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n45" parent="n43" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="空気が読めない苦しさ／父と母の異なる助け。&#xa;社会人の学習と成功／秀斗への指導。&#xa;観察ノート／シュモクバエの結末。" vertex="1">
+                    <mxGeometry height="99" width="526" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="n46" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#333333;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#F4F5F7;strokeColor=#CBD2D9;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="150" width="550" x="645" y="1450" as="geometry"/>
+                </mxCell>
+                <mxCell id="n47" parent="n46" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="語りの解像度を、全編へ通す" vertex="1">
+                    <mxGeometry height="38" width="526" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n48" parent="n46" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="論理が働く対話・観察を、全編へ通す。&#xa;混線 → 区別 → 予測 → 反応を、場面で見せる。&#xa;説明の量より、見え方の差を確かめる。" vertex="1">
+                    <mxGeometry height="99" width="526" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="n49" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#5C1B1B;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FADBD8;strokeColor=#E74C6F;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="150" width="550" x="1240" y="1450" as="geometry"/>
+                </mxCell>
+                <mxCell id="n50" parent="n49" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="言語化の快感を作る" vertex="1">
+                    <mxGeometry height="38" width="526" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n51" parent="n49" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="混ざっていたものを、区別できる言葉で示す。&#xa;関係が見えたことで、予測や行動が変わる。&#xa;読者自身も、同じ世界を読み直せるようにする。" vertex="1">
+                    <mxGeometry height="99" width="526" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="n52" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="目安：第1幕0–25％／第2幕25–50％／第3幕50–78％／最終幕78–100％。章数・字数の固定値ではない。" vertex="1">
+                    <mxGeometry height="35" width="1740" x="50" y="1635" as="geometry"/>
+                </mxCell>
+                <mxCell id="n53" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="父の死より前に、父だけができなさを責めずに受け止める場面を置く。喪失の強さだけで物語を動かさない。" vertex="1">
+                    <mxGeometry height="30" width="1740" x="50" y="1680" as="geometry"/>
+                </mxCell>
+                <mxCell id="clarity-voice" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="精密さは、観測と仮説を区別するところまで含める。他人の内面は、対話や行動で確かめながら更新する。" vertex="1">
+                    <mxGeometry height="30" width="1740" x="50" y="1723" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="v7-3" name="03｜危機・選択・不可逆の決着">
+        <mxGraphModel dx="4200" dy="1779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1840" pageHeight="1820" background="#FFFFFF" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="n1" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=31;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="クライシスとクライマックスを分け、二人の選択で決着する。" vertex="1">
+                    <mxGeometry height="50" width="1740" x="50" y="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="n2" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="関係の変化だけで終えず、仕事・進路・責任の配置も変える。旅行は、その後の解決部に置く。" vertex="1">
+                    <mxGeometry height="34" width="1740" x="50" y="78" as="geometry"/>
+                </mxCell>
+                <mxCell id="n3" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=23;fontColor=#1B3A5C;align=center;verticalAlign=middle;spacing=8;fontStyle=1;rounded=1;arcSize=8;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=1.5;" value="前から置く条件｜引継ぎが完了すれば、樹は研究開発へ異動する。&#xa;最終審査日と人事の確定日は固定。役割分担案には、試行と延長が必要。" vertex="1">
+                    <mxGeometry height="90" width="1740" x="50" y="132" as="geometry"/>
+                </mxCell>
+                <mxCell id="n4" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#1B3A5C;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="150" width="840" x="50" y="251" as="geometry"/>
+                </mxCell>
+                <mxCell id="n5" parent="n4" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=23;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="樹の欲求と恐れ" vertex="1">
+                    <mxGeometry height="38" width="816" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n6" parent="n4" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="表：案件を終え、研究開発へ戻りたい。&#xa;恐れ：できない自分を、また否定されたくない。&#xa;問われるもの：成功の証明と、相手との関係。" vertex="1">
+                    <mxGeometry height="99" width="816" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="n7" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FDEBD0;strokeColor=#E67E22;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="150" width="840" x="950" y="251" as="geometry"/>
+                </mxCell>
+                <mxCell id="n8" parent="n7" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=23;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="秀斗の欲求と恐れ〈独立したBプロット〉" vertex="1">
+                    <mxGeometry height="38" width="816" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n9" parent="n7" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="表：現場責任者となり、母に認めさせたい。&#xa;恐れ：できないと認めれば、自分の価値が消える。&#xa;問われるもの：承認のための役職と、続けられる仕事。" vertex="1">
+                    <mxGeometry height="99" width="816" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="n10" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=25;fontColor=#333333;align=center;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="クライシス｜どちらにも、選べる理由と、取り戻せない喪失がある" vertex="1">
+                    <mxGeometry height="44" width="1740" x="50" y="428" as="geometry"/>
+                </mxCell>
+                <mxCell id="n11" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#333333;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#F4F5F7;strokeColor=#CBD2D9;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="215" width="840" x="50" y="495" as="geometry"/>
+                </mxCell>
+                <mxCell id="n12" parent="n11" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=24;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="A｜代替要員で、予定どおり移管する" vertex="1">
+                    <mxGeometry height="38" width="816" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n13" parent="n11" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="守れる：現場の納期・チームの負担・樹の異動。&#xa;失う：秀斗の候補資格／二人で再設計する機会。&#xa;理由：一人のために、全員の予定は変えられない。&#xa;結果：樹は去り、秀斗の処遇を会社の判断へ渡す。" vertex="1">
+                    <mxGeometry height="164" width="816" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="n14" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#5C1B1B;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FADBD8;strokeColor=#E74C6F;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="215" width="840" x="950" y="495" as="geometry"/>
+                </mxCell>
+                <mxCell id="n15" parent="n14" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=24;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="B｜役割を分け、延長して移管する" vertex="1">
+                    <mxGeometry height="38" width="816" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n16" parent="n14" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="守れる：秀斗の得意を生かし、二人で働く可能性。&#xa;失う：樹の今回の異動／秀斗の単独責任者の地位。&#xa;理由：試行で仕事が動き、本人もこの役割を望む。&#xa;条件：品質を守れる体制を、二人で示せること。" vertex="1">
+                    <mxGeometry height="164" width="816" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="n17" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=17;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="補足〈前半で準備〉｜代替要員は既存方式の担当。新方式は全体検証が未了で、完了までは設計責任者の樹が残る。" vertex="1">
+                    <mxGeometry height="28" width="1740" x="50" y="716" as="geometry"/>
+                </mxCell>
+                <mxCell id="n18" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=23;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="Bを実行可能にする準備〈最終会議より前に行う〉" vertex="1">
+                    <mxGeometry height="37" width="1740" x="50" y="753" as="geometry"/>
+                </mxCell>
+                <mxCell id="n19" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FDEBD0;strokeColor=#E67E22;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="150" width="520" x="50" y="798" as="geometry"/>
+                </mxCell>
+                <mxCell id="n20" parent="n19" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="1｜秀斗が、自分の望みを言う" vertex="1">
+                    <mxGeometry height="38" width="496" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n21" parent="n19" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=19;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="一人で背負う役は降りたい。&#xa;現場と技術をつなぐ役は続けたい。&#xa;役割変更は、本人も選ぶ。" vertex="1">
+                    <mxGeometry height="99" width="496" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="n22" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#1B3A5C;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#D6E4F0;strokeColor=#4A7FB5;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="150" width="520" x="660" y="798" as="geometry"/>
+                </mxCell>
+                <mxCell id="n23" parent="n22" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="2｜二人で試し、条件を確かめる" vertex="1">
+                    <mxGeometry height="38" width="496" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n24" parent="n22" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=19;fontColor=#1B3A5C;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="秀斗が現場調整、樹が技術判断。&#xa;技能・負荷・責任の境界を言語化する。&#xa;見通しが、具体的な働き方を変える。" vertex="1">
+                    <mxGeometry height="99" width="496" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="n25" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#333333;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#F4F5F7;strokeColor=#CBD2D9;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="150" width="520" x="1270" y="798" as="geometry"/>
+                </mxCell>
+                <mxCell id="n26" parent="n25" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=21;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="3｜承認可能な二案に整える" vertex="1">
+                    <mxGeometry height="38" width="496" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n27" parent="n25" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=19;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="自社上司と顧客へ、利益と代価を示す。&#xa;実施条件を事前に合意する。&#xa;最後に残すのは、二人の意思。" vertex="1">
+                    <mxGeometry height="99" width="496" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="e28" edge="1" parent="1" source="n19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#4A7FB5;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="n22">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e29" edge="1" parent="1" source="n22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#4A7FB5;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="n25">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="n30" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#5C1B1B;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FADBD8;strokeColor=#E74C6F;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="150" width="1740" x="50" y="1000" as="geometry"/>
+                </mxCell>
+                <mxCell id="n31" parent="n30" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=25;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="クライマックス｜最終会議で、双方が署名・申告する" vertex="1">
+                    <mxGeometry height="38" width="1716" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n32" parent="n30" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=23;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="樹：延期と追加担当を引き受け、自分の異動を見送る案に署名する。&#xa;秀斗：単独責任者の候補を辞退し、新しい役割を自分の言葉で申請する。&#xa;関係者：事前に合意した条件で変更を承認し、人事と責任の配置を確定する。" vertex="1">
+                    <mxGeometry height="99" width="1716" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="e33" edge="1" parent="1" source="n25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#E74C6F;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="n30">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="n34" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=25;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="不可逆な変更｜気持ちが変わった、では済ませない" vertex="1">
+                    <mxGeometry height="40" width="1740" x="50" y="1172" as="geometry"/>
+                </mxCell>
+                <mxCell id="n35" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#5C1B1B;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FADBD8;strokeColor=#E74C6F;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="175" width="550" x="50" y="1238" as="geometry"/>
+                </mxCell>
+                <mxCell id="n36" parent="n35" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=23;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="進路・案件" vertex="1">
+                    <mxGeometry height="38" width="526" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n37" parent="n35" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=19;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="今回の研究開発枠は、別の人に確定する。&#xa;単独移管の約束は、正式に変更される。&#xa;心変わりしても、同じ機会には戻れない。" vertex="1">
+                    <mxGeometry height="124" width="526" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="n38" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#6E3B0A;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FDEBD0;strokeColor=#E67E22;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="175" width="550" x="645" y="1238" as="geometry"/>
+                </mxCell>
+                <mxCell id="n39" parent="n38" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=23;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="秀斗の地位・家族への態度" vertex="1">
+                    <mxGeometry height="38" width="526" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n40" parent="n38" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=19;fontColor=#6E3B0A;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="今回の昇進候補を、自分で取り下げる。&#xa;母の承認を待たず、自分の役割を選ぶ。&#xa;辞退と申告が、他人にも知られた事実になる。" vertex="1">
+                    <mxGeometry height="124" width="526" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="n41" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#3D1F5C;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#E8DAF0;strokeColor=#7B4F9E;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="175" width="550" x="1240" y="1238" as="geometry"/>
+                </mxCell>
+                <mxCell id="n42" parent="n41" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=23;fontColor=#3D1F5C;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="二人の関係と、職場の配置" vertex="1">
+                    <mxGeometry height="38" width="526" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n43" parent="n41" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=19;fontColor=#3D1F5C;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="指導・判定を、樹一人へ集中させない。&#xa;新しい分担と確認者を、職場の約束にする。&#xa;樹が相手を直すだけの上下関係を解く。" vertex="1">
+                    <mxGeometry height="124" width="526" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="n44" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=20;fontColor=#5C1B1B;align=center;verticalAlign=middle;spacing=8;rounded=1;arcSize=8;fillColor=#FADBD8;strokeColor=#E74C6F;strokeWidth=1.5;" value="" vertex="1">
+                    <mxGeometry height="150" width="1740" x="50" y="1450" as="geometry"/>
+                </mxCell>
+                <mxCell id="n45" parent="n44" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=24;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fontStyle=1;fillColor=none;strokeColor=none;" value="二つのコアが合流する決着" vertex="1">
+                    <mxGeometry height="38" width="1716" x="12" y="7" as="geometry"/>
+                </mxCell>
+                <mxCell id="n46" parent="n44" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=22;fontColor=#5C1B1B;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="体験の核：意図・能力・負荷・条件が言語化され、同じ人と出来事が精密に見え直す。&#xa;感情の核：その見取り図の上で、裁いていた相手が苦しまずに済む選択をする。&#xa;価値の決着：孤立 → 能力で保つ所属 → 決裂 → できないと言えても続く関係。" vertex="1">
+                    <mxGeometry height="99" width="1716" x="12" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="n47" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="構造上の確認｜01価値変化／03不可逆性／05対立概念／08契機／09副線／12情報提示／14因果／16選択／26冒頭" vertex="1">
+                    <mxGeometry height="34" width="1740" x="50" y="1630" as="geometry"/>
+                </mxCell>
+                <mxCell id="n48" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="既存案から採る：父の死・進学・論理の獲得・秀斗との再会。新設候補：異動の条件・移管審査・役割再編の決着。" vertex="1">
+                    <mxGeometry height="34" width="1740" x="50" y="1670" as="geometry"/>
+                </mxCell>
+                <mxCell id="n49" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="次工程：具体業務と品質基準／承認者と手続き／進学・就職の場面分割。樹一人が人事や契約を決める設定にはしない。" vertex="1">
+                    <mxGeometry height="34" width="1740" x="50" y="1710" as="geometry"/>
+                </mxCell>
+                <mxCell id="n50" parent="1" style="text;whiteSpace=wrap;html=0;fontFamily=Hiragino Sans;fontSize=18;fontColor=#333333;align=left;verticalAlign=middle;spacing=8;fillColor=none;strokeColor=none;" value="論理は最後まで世界の見通しをよくする。更新するのは、人の条件の捉え方と、その人への関わり方。" vertex="1">
+                    <mxGeometry height="34" width="1740" x="50" y="1750" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

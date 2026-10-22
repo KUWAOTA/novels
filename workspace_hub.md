@@ -10,7 +10,7 @@ tags:
 
 ## Main Clusters
 
-- [[constrain/constrain_hub]]
+- [[diopsidae/_内部/constrain_hub|Constrain / シュモクバエのこと、笑ってやろうぜ]]
 - [[story-compiler/story_compiler_hub]]
 - [[author/author_hub]]
 - [[diary/diary_hub]]
