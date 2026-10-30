@@ -1,0 +1,292 @@
+<mxfile host="65bd71144e">
+    <diagram id="arc" name="01_短編の骨格">
+        <mxGraphModel dx="1898" dy="2304" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1360" pageHeight="970" math="0" shadow="0" adaptiveColors="auto">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0" value="Love Hunter"/>
+                <object label="&lt;b&gt;LOVE HUNTER｜仮ルート&lt;/b&gt;&lt;br&gt;相手を受け入れる人まで惚れさせ、&lt;br&gt;対等な関係を支配関係に変える。" tooltip="このページは三幕での因果のたたき台。男になる展開は、このルートには置かない。登場人物名、場所、年齢は未設定。" id="title">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="40" y="36" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;話の価値軸&lt;/b&gt;&lt;br&gt;相互的なつながり&lt;br&gt;⇄ 狩る側／獲物の非対称" tooltip="物語全体の価値変化は「対等なつながりの欠如 → 一度は手に入りそうになる → 主人公が支配関係を選び失う」。別の軸として、自己認識は「王子を探していると思う → 狩る快感が欲しいと認める」へ進む。" id="axis">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="350" y="36" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;主人公の思い違い&lt;/b&gt;&lt;br&gt;憧れの王子様に出会えば&lt;br&gt;性的な嫌悪も消えるはず" tooltip="主人公は自分の性的な欲求や反応をまだ理解していない。恋の話についていけない不安から「理想の人に選ばれたい」と願う。" id="misread">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="660" y="36" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;狩りの快感&lt;/b&gt;&lt;br&gt;性行為より、振り向かせ&lt;br&gt;特別扱いさせる瞬間" tooltip="相手に惚れられる予感、視線を独占する感覚、相手がこちらを優先する変化を快感として描く。主人公が本人の中で「本能」と呼ぶ欲求。性欲や性行為への欲求と同じものにしない。" id="prize">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="970" y="36" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;第1幕・始まり&lt;/b&gt;&lt;br&gt;王子様への憧れ" tooltip="各段階の起きたことと、主人公の見方の変化を短く記録する。" id="row0">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="40" y="205" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;恋の会話に入れない&lt;/b&gt;&lt;br&gt;恋の話が分からず&lt;br&gt;劣等感と不安を抱える" tooltip="恋愛の話題で自分だけ反応できず、他の子と違うという不安を抱く。本人は理由をまだ知らず、安心させてくれる「王子様」を求める。恋愛感情の有無や種類は未決定。" id="a11">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="142" width="280" x="40" y="205" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;初めての王子様&lt;/b&gt;&lt;br&gt;憧れのイケメンが近づき&lt;br&gt;「選ばれた」と浮き立つ" tooltip="主人公がイケメンを狙って近づき、相手からも好意を示される。手に入りかけた期待に高揚し、「やっと理想の恋が始まる」と思う。" id="a12">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="142" width="280" x="350" y="205" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;契機事件：カエル化&lt;/b&gt;&lt;br&gt;性的な関係を求められ&lt;br&gt;一転して気持ちが冷める" tooltip="彼が性的な関係へ進もうとすることをきっかけに、主人公は気持ちが冷え、相手をカエルのように感じる。これは主人公の反応として描く。彼の性欲が間違いだと作品全体が断定する必要はない。契機事件はこの落差で、次の相手を追う欲求を生む。" id="a13">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="142" width="280" x="660" y="205" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;次こそ理想の人&lt;/b&gt;&lt;br&gt;「彼が違っただけ」と考え&lt;br&gt;次のイケメンを自ら狙う" tooltip="主人公は一度の冷めを「相手選びの失敗」と誤解し、もっと条件のいいイケメンなら恋ができると次を探す。追いかけ、特別扱いを引き出す最中に高揚を覚え、ハントを繰り返す。" id="a14">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="142" width="280" x="970" y="205" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;第2幕・拡大&lt;/b&gt;&lt;br&gt;獲物の格を上げる" tooltip="各段階の起きたことと、主人公の見方の変化を短く記録する。" id="row1">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="40" y="390" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;転：芸能人も王子ではない&lt;/b&gt;&lt;br&gt;接触を迫られ、またカエル化&lt;br&gt;狩る快感は消えず強まる" tooltip="最高格の芸能人を獲得したと思っても、性的な関係を望まれれば再び気持ちが冷える。主人公は「正しい王子様探し」では解決しないと気づく一方、相手を振り向かせたい欲求がさらに広がっている。転は「どんな相手なら恋が叶うか」から「自分は何を狩っているか」への問いの反転。" id="a24">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="142" width="280" x="970" y="390" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;YouTuberから芸能人へ&lt;/b&gt;&lt;br&gt;肩書きと難度を上げて&lt;br&gt;「今度こそ」を追い続ける" tooltip="募集ツイートからYouTuberなど手が届きそうな有名人へ接触する。規模の反復にせず「特別な人に選ばれる」証拠を更新しようとする場面にする。" id="a23">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="142" width="280" x="660" y="390" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;外見と接点&lt;/b&gt;&lt;br&gt;資金を使って魅力を磨き&lt;br&gt;次の標的へ近づく" tooltip="外見を整える費用に資金を回す。変化は標的へ近づくための投資として描く。整形の具体的な内容、必要性、身体観は未決定。" id="a22">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="142" width="280" x="350" y="390" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;資金と手段&lt;/b&gt;&lt;br&gt;おじさんに貢がせるが&lt;br&gt;高揚より金策とリスク" tooltip="「おじさんに貢がせる」は資金を得る手段。相手を口説き落とす達成感は薄く、返礼や秘密の露見などのリスクが先に立つ。主人公は金をより理想に近い標的へ届く手段とみなす。" id="a21">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="142" width="280" x="40" y="390" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;第3幕・選択&lt;/b&gt;&lt;br&gt;受容者との関係" tooltip="各段階の起きたことと、主人公の見方の変化を短く記録する。" id="row2">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="40" y="575" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;対等さを求める人&lt;/b&gt;&lt;br&gt;主人公の境界を尊重し&lt;br&gt;対等な関係を望む" tooltip="主人公を攻略対象ではなく一人の人間として見て、性的な境界も尊重しながら対等さを望む人物が近づく。性別や人物像は未設定。" id="a31">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="142" width="280" x="40" y="575" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;受け入れられる&lt;/b&gt;&lt;br&gt;初めて安堵する一方&lt;br&gt;相手の好意を意識する" tooltip="この人となら恋愛や性行為を装わずにいられる、という安堵を主人公が感じる。安堵が恋愛感情を意味するかは決めず、受容される心地よさを行動で表す。" id="a32">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="142" width="280" x="350" y="575" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;相手を惚れさせていく&lt;/b&gt;&lt;br&gt;主人公が主導権を握り&lt;br&gt;相手は主人公を優先する" tooltip="主人公は相手の好意に応えないまま、好意を独占しようとする。返事を待たせ、相手が主人公の予定や機嫌を優先するようになる。相手がいつ変わるか、主人公がいつ自覚するかを場面で組み立てる。" id="a33">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="142" width="280" x="660" y="575" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;危機：両立しない願い&lt;/b&gt;&lt;br&gt;対等な相手を選ぶか&lt;br&gt;支配する快感を選ぶか" tooltip="主人公の「等しい相手に受け入れられたい」という願いと、「自分を求め続ける人を支配したい」という快感がぶつかる。どちらを取るかの選択が、クライマックスを呼ぶ。" id="a34">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="142" width="280" x="970" y="575" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;クライマックス&lt;/b&gt;&lt;br&gt;支配を選び、本能を認める" tooltip="結末案の具体化。第2ページで、同じ危機から分かれる別ルートと比較する。" id="finish-head">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="40" y="760" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;選択を言葉にする&lt;/b&gt;&lt;br&gt;対等な恋は返せない&lt;br&gt;それでも好意を手元に置く" tooltip="yellow" id="f1">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="970" y="760" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;関係が傾く&lt;/b&gt;&lt;br&gt;相手は主人公を選び&lt;br&gt;自分を合わせ始める" tooltip="yellow" id="f2">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="660" y="760" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;余波：狩る側を選ぶ&lt;/b&gt;&lt;br&gt;自分の欲求を認める&lt;br&gt;対等さは失われる" tooltip="yellow" id="f3">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="350" y="760" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;最後の像&lt;/b&gt;&lt;br&gt;相手が返事を待つ&lt;br&gt;主人公はその視線を味わう" tooltip="yellow" id="f4">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="40" y="760" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;未決：相手が残る理由&lt;/b&gt;&lt;br&gt;なぜ対等さを譲る？&lt;br&gt;何に惚れている？" tooltip="相手が対等な関係から支配される関係へ移るには、相手自身の欲求と代償も要る。主人公が求めるもの、相手が受け取るもの、相手が失うものを分けて決める。未決欄。" id="open1">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;dashed=1;dashPattern=6 4;" vertex="1">
+                        <mxGeometry height="138" width="280" x="40" y="-110" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;未決：関係の合意&lt;/b&gt;&lt;br&gt;相互に選んだ非対称？&lt;br&gt;一方的に利用する？" tooltip="「支配・被支配」を二人の合意した役割として描くか、主人公だけが得をする関係として描くか。どちらにするかで結末の受け取り方が変わる。" id="open2">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;dashed=1;dashPattern=6 4;" vertex="1">
+                        <mxGeometry height="138" width="280" x="350" y="-110" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;未決：主人公の自覚&lt;/b&gt;&lt;br&gt;いつ狩猟欲に気づく？&lt;br&gt;アセクの理解は？" tooltip="性行為への嫌悪、性的な惹かれの乏しさ、好意を求めること、相手を支配したい欲求をどう区別して自覚するか。本人が呼ぶ言葉と、物語が示す事実を分けて検討する。" id="open3">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;dashed=1;dashPattern=6 4;" vertex="1">
+                        <mxGeometry height="138" width="280" x="660" y="-110" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;未決：転の一撃&lt;/b&gt;&lt;br&gt;芸能人の何がだめ？&lt;br&gt;受容者は何を変える？" tooltip="芸能人の接近が王子様願望をどう終わらせるか。受容者が現れるだけでなく、主人公の中に膨らんだ狩猟欲をどんな行動で際立たせるか。" id="open4">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;dashed=1;dashPattern=6 4;" vertex="1">
+                        <mxGeometry height="138" width="280" x="970" y="-110" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="e0" edge="1" parent="1" source="a11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#77808a;strokeWidth=1.5;endArrow=block;" target="a12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" edge="1" parent="1" source="a12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#77808a;strokeWidth=1.5;endArrow=block;" target="a13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" edge="1" parent="1" source="a13" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#77808a;strokeWidth=1.5;endArrow=block;" target="a14">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" edge="1" parent="1" source="a24" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#77808a;strokeWidth=1.5;endArrow=block;" target="a23">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" edge="1" parent="1" source="a23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#77808a;strokeWidth=1.5;endArrow=block;" target="a22">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" edge="1" parent="1" source="a22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#77808a;strokeWidth=1.5;endArrow=block;" target="a21">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6" edge="1" parent="1" source="a14" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#77808a;strokeWidth=1.5;endArrow=block;" target="a24">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e7" edge="1" parent="1" source="a31" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#77808a;strokeWidth=1.5;endArrow=block;" target="a32">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e8" edge="1" parent="1" source="a32" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#77808a;strokeWidth=1.5;endArrow=block;" target="a33">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e9" edge="1" parent="1" source="a33" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#77808a;strokeWidth=1.5;endArrow=block;" target="a34">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e10" edge="1" parent="1" source="a21" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#77808a;strokeWidth=1.5;endArrow=block;" target="a31">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e11" edge="1" parent="1" source="f1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#77808a;strokeWidth=1.5;endArrow=block;" target="f2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e12" edge="1" parent="1" source="f2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#77808a;strokeWidth=1.5;endArrow=block;" target="f3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e13" edge="1" parent="1" source="f3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#77808a;strokeWidth=1.5;endArrow=block;" target="f4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="choice" name="02_危機・クライマックス・分岐">
+        <mxGraphModel dx="1266" dy="890" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1360" pageHeight="800" math="0" shadow="0" adaptiveColors="auto">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0" value="Love Hunter"/>
+                <object label="&lt;b&gt;選択の設計&lt;/b&gt;&lt;br&gt;本能を受け入れる結末を主案に&lt;br&gt;対等を選ぶ分岐と比べる" tooltip="クライマックスと余波の二案。どちらも主人公が行動して結末を変える。Aがユーザーの今回の希望に沿う主案。" id="qtitle">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="40" y="36" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;価値の二層&lt;/b&gt;&lt;br&gt;関係：相互性 → 非対称&lt;br&gt;自覚：思い違い → 自認" tooltip="Aは自分への理解が進む一方で、相手との対等なつながりを失う。自己受容を単純な幸福・善とせず、何が得られ何を失うかを両方見せる。" id="qaxis">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="350" y="36" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;転の候補&lt;/b&gt;&lt;br&gt;最高の相手でも解決せず&lt;br&gt;受容者の愛を支配する" tooltip="一撃の反転案：相手の好意が深まるほど、主人公は安堵より「自分なしでいられない人を作れた」高揚に気づく。芸能人の不発をきっかけにするか、受容者との関係の進展をきっかけにするか、短編に残す場面を決める。" id="qtrigger">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="660" y="36" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;混同しない&lt;/b&gt;&lt;br&gt;性行為を嫌がることと&lt;br&gt;人を惚れさせたい欲求" tooltip="性的な惹かれと、人を惚れさせて優越感を得る欲求を別々に設計する。王子様願望、恋愛感情、受容されたい気持ちも同じとは限らない。" id="qready">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="970" y="36" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;危機：二者択一&lt;/b&gt;&lt;br&gt;高揚を取れば、&lt;br&gt;相互性を失う。" tooltip="主人公は両方が欲しい。相手の愛を自分への忠誠へ変えれば支配の高揚を得る一方、対等な愛情を返せない事実が残る。相手を解放すれば相手の自由を尊重できる一方、狩る喜びと自分を必要とする視線を失う。" id="qcrisis">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="40" y="205" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;A｜本能を選ぶ&lt;/b&gt;&lt;br&gt;好きになれないと知りつつ&lt;br&gt;相手の好意を手放さない" tooltip="主案。主人公は相手の愛を返せない事実を認めたうえで、自分に尽くしてほしいと伝える。駆け引きを続け、相手の好意を主導権に変える。人を支配したい欲求を、自分の本能として受け入れて生きる。" id="A1">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="350" y="205" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;B｜相手を自由にする&lt;/b&gt;&lt;br&gt;自分の好意は同じでないと伝え&lt;br&gt;相手を引き留めない" tooltip="別の決着。愛情を装って相手を従わせることをやめる。相手を失う可能性と、勝利・支配の高揚を得られない代償がある。自己理解を保ちながら、相互性を選ぶ。" id="B1">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="660" y="205" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;選択を迫る前の事実&lt;/b&gt;&lt;br&gt;相手が望む関係&lt;br&gt;主人公が返せるもの" tooltip="二人の望みのずれを具体化する。相手は何を求めるか。主人公は恋愛・性・一緒にいること・独占のどれを望むか。主人公が相手を惚れさせる過程に、どの程度の意図があるか。" id="qtruth">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;dashed=1;dashPattern=6 4;" vertex="1">
+                        <mxGeometry height="138" width="280" x="970" y="205" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;絶頂の行動&lt;/b&gt;&lt;br&gt;選択を実行する" tooltip="結末を決めるのは気づきだけでなく、主人公の行動。どちらの道を進んだか一目で分かる動作を置く。" id="qact">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="40" y="390" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;A｜関係を支配する&lt;/b&gt;&lt;br&gt;本心を告げて残るよう求める&lt;br&gt;相手の服従を受け入れる" tooltip="主人公は「恋人として同じように好きにはなれない。それでもあなたの好意を手元に置きたい」と明かし、相手が残ることを選ぶ。主人公は対等でない関係が成立した瞬間に、高揚を味わう。告白への返答と、二人が何に合意したかを描く。" id="A2">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="350" y="390" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;B｜対等を諦めない&lt;/b&gt;&lt;br&gt;欲求のずれを告げて手放す&lt;br&gt;相手の返事を尊重する" tooltip="主人公は同じ恋愛を返せないことと、支配したくなる自分の欲求を明かし、相手を引き留めない。相手が去るか、対等でない形を選ぶかは相手にも決定権を残す。" id="B2">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="660" y="390" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;選んだ代償&lt;/b&gt;&lt;br&gt;A：相互性を失い&lt;br&gt;B：狩りの高揚を失う" tooltip="両案とも主人公が何かを得て何かを失う。Aをただの解放や幸福に、Bを無傷の正しさにしない。" id="qcost">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="970" y="390" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;余波で示す&lt;/b&gt;&lt;br&gt;価値がどう変わったか" tooltip="クライマックス後の一動作で、決着を読者に見せる。" id="qend">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="40" y="575" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;A｜支配関係の継続&lt;/b&gt;&lt;br&gt;相手は主人公の返事を待ち&lt;br&gt;主人公はその視線に満たされる" tooltip="主案の着地。相手は対等な関係を求めて近づいたが、主人公の好意を得るために自分を合わせ始める。主人公はその非対称を理解している。性的な欲求が満たされる結末にはせず、狩りの充足を残す。" id="A3">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="350" y="575" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;B｜相互性を守る&lt;/b&gt;&lt;br&gt;相手は自分の道へ戻る&lt;br&gt;主人公は狩猟欲を自覚する" tooltip="分岐の着地。相手を手元に置けない結末でも、主人公は自分が何を欲していたか理解する。孤独が残る一方で、相手を獲物にしなかった選択は保たれる。" id="B3">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="660" y="575" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object label="&lt;b&gt;本案の結末の意味&lt;/b&gt;&lt;br&gt;自己理解 ＋&lt;br&gt;相互性 −" tooltip="主人公は自分の欲求を認め、自分の生き方を選ぶ。しかし人を惚れさせ、従わせることを選んだため、対等なつながりを失う。この両面を保って終える。男になる展開はない。" id="qlast">
+                    <mxCell parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#6c7a89;fontColor=#172b4d;fontFamily=Yu Gothic UI;fontSize=14;spacing=8;verticalAlign=middle;align=center;" vertex="1">
+                        <mxGeometry height="138" width="280" x="970" y="575" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="e0" edge="1" parent="1" source="A1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#77808a;strokeWidth=1.5;endArrow=block;" target="A2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" edge="1" parent="1" source="A2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#77808a;strokeWidth=1.5;endArrow=block;" target="A3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" edge="1" parent="1" source="B1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#77808a;strokeWidth=1.5;endArrow=block;" target="B2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" edge="1" parent="1" source="B2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#77808a;strokeWidth=1.5;endArrow=block;" target="B3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

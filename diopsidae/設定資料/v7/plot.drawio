@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="yxw-01" name="01｜Y・X・W：ここから読む">
-        <mxGraphModel dx="1763" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1880" pageHeight="1680" background="#FFFFFF" math="0" shadow="0">
+        <mxGraphModel dx="1477" dy="493" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1880" pageHeight="1680" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -166,7 +166,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="yxw-02" name="02｜なぜ、このWを選ぶのか">
-        <mxGraphModel dx="1879" dy="818" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1880" pageHeight="1860" background="#FFFFFF" math="0" shadow="0">
+        <mxGraphModel dx="1477" dy="493" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1880" pageHeight="1860" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -407,7 +407,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="yxw-03" name="03｜w₁–w₁₂：体験の候補">
-        <mxGraphModel dx="3104" dy="1352" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1880" pageHeight="1660" background="#FFFFFF" math="0" shadow="0">
+        <mxGraphModel dx="2123" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1880" pageHeight="1660" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -576,7 +576,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="yxw-04" name="04｜因果・価値：物語への仮配置">
-        <mxGraphModel dx="2462" dy="1072" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1880" pageHeight="2720" background="#FFFFFF" math="0" shadow="0">
+        <mxGraphModel dx="3639" dy="1214" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1880" pageHeight="2720" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -946,7 +946,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="yxw-05" name="05｜見え方が変わる仕掛け">
-        <mxGraphModel dx="4327" dy="1885" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1880" pageHeight="1940" background="#FFFFFF" math="0" shadow="0">
+        <mxGraphModel dx="3888" dy="1935" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1880" pageHeight="1940" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -1187,7 +1187,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="yxw-06" name="06｜副線・危機・不可逆な決着">
-        <mxGraphModel dx="5100" dy="2221" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1880" pageHeight="2280" background="#FFFFFF" math="0" shadow="0">
+        <mxGraphModel dx="4574" dy="2276" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1880" pageHeight="2280" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -1428,7 +1428,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="yxw-07" name="07｜w配置表・レビューの順序">
-        <mxGraphModel dx="3400" dy="1481" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1880" pageHeight="1520" background="#FFFFFF" math="0" shadow="0">
+        <mxGraphModel dx="3049" dy="1518" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1880" pageHeight="1520" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -1980,7 +1980,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="_6j6dbjiBEEy1_zluzoi" name="ページ-8">
-        <mxGraphModel dx="491" dy="214" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1555" dy="774" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="ZafntUh8ADA6BJvUmkWk-0"/>
                 <mxCell id="ZafntUh8ADA6BJvUmkWk-1" parent="ZafntUh8ADA6BJvUmkWk-0"/>
